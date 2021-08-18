@@ -18,3 +18,6 @@ Here are some ideas to get you started:
 ## Portafolio
 -  🏆 Proyectos como emprendedor, diseñador gráfico y desarrollador web  <a href="https://luisangelmaciel.github.io/luisangelmaciel" >échale un ojo</a>
 -  💻 Debido a que tenía muchos diseños por aquí, otros por allá, algunas pruebas y prácticas entre otros, decidí bautizar la carpeta con este gran recopilado bajo el nombre de  <a href="https://luisangelmaciel.github.io/one" >How to. Code snippets para HTML, CSS & JavaScript. One</a> 
+-  🖥️ **Head-total-full** Es un <a href= "https://luisangelmaciel.github.io/head-total-full/"   >generador Web App Manifest y de las etiquetas en head. </a> Espero  te sea de gran ayuda
+-  👠 En 2016 me anime hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a> un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa, Ciudad de México.
+-  ⛱️ https://luisangelmaciel.github.io/xiiber/ 
