@@ -16,4 +16,5 @@ Here are some ideas to get you started:
 -->
 
 ## Portafolio
--  🏆 Proyectos como emprendedor, diseñador grafico y desarrollador web  <a href="https://luisangelmaciel.github.io/luisangelmaciel" >échale un ojo</a>
+-  🏆 Proyectos como emprendedor, diseñador gráfico y desarrollador web  <a href="https://luisangelmaciel.github.io/luisangelmaciel" >échale un ojo</a>
+-  💻 Debido a que tenía muchos diseños por aquí, otros por allá, algunas pruebas y prácticas entre otros, decidí bautizar la carpeta con este gran recopilado bajo el nombre de  <a href="https://luisangelmaciel.github.io/one" >How to. Code snippets para HTML, CSS & JavaScript. One</a> 
