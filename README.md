@@ -16,4 +16,4 @@ Here are some ideas to get you started:
 -->
 
 ## Portafolio
-<a href="https://luisangelmaciel.github.io/luisangelmaciel" >Proyectos como emprendedor, diseñador grafico y desarrollador web </a>
+-  🏆 Proyectos como emprendedor, diseñador grafico y desarrollador web  <a href="https://luisangelmaciel.github.io/luisangelmaciel" >échale un ojo</a>
