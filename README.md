@@ -1,5 +1,18 @@
 ### Hi there 👋
 
+
+Estudie marketing y el diseño grafico me llamo mucho la atención, por lo cual fui autodidacta en CorelDraw. 
+
+La experiencia de usuario y desarrollo de productos me ha llevado a conocer el diseño web con HTML, CSS, JS, jQuery, Node. 
+
+Prefiero trabajar con iconografías y jugar con los textos.  He realizado más logotipos y branding. 
+
+Profesionalmente me dedique al diseño de material promocional. Posteriormente en la venta de software (IBM, Oracle, SUN) y hardware (impresoras 3D), llegando a ocupar el cargo de gerente a nivel internacional. 
+
+Emprendí una revista. Un concurso Drag Queen online, que posteriormente tuvo concursos presenciales y una agencia de viajes para hombres gay (próxima a cumplir 10 años). 
+
+
+
 <!--
 **luisangelmaciel/luisangelmaciel** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
