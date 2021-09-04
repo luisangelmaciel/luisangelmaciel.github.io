@@ -37,3 +37,8 @@ Here are some ideas to get you started:
 
 ### Reach me out:
 [<img src='https://raw.githubusercontent.com/luisangelmaciel/luisangelmaciel/main/logos/cgt-logo.svg' alt='logo' height='40'>](https://www.xiiber.com)
+
+
+<!-- 
+<web development="HTML5 CSS3 JS jQuery NodeJS W3"> Graphic designer, UI-UX, Tech entrepreneur & Traveler </martech> 🏳️‍🌈 🧳 ♋ 🌮🏊‍♂️ 🧙‍ 
+-->
