@@ -35,10 +35,18 @@ Here are some ideas to get you started:
 -  👠 En 2016 me anime hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a> un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa, Ciudad de México.
 -  ⛱️ https://luisangelmaciel.github.io/xiiber/ 
 
+![stats](https://github-readme-stats.vercel.app/api?username=AdibHoque&theme=dark&count_private=true&show_icons=true)<br>
+
+
 ### Reach me out:
+
+![Page Visits](https://komarev.com/ghpvc/?username=luisangelmaciel&color=blue)
+
+
 [<img src='https://raw.githubusercontent.com/luisangelmaciel/luisangelmaciel/main/logos/cgt-logo.svg' alt='logo' height='40'>](https://www.xiiber.com)
 
-
 <!-- 
+ <br>
+
 <web development="HTML5 CSS3 JS jQuery NodeJS W3"> Graphic designer, UI-UX, Tech entrepreneur & Traveler </martech> 🏳️‍🌈 🧳 ♋ 🌮🏊‍♂️ 🧙‍ 
 -->
