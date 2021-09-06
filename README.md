@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hey y´all 👋
 
 
 Estudie marketing y el diseño grafico me llamo mucho la atención, por lo cual fui autodidacta en CorelDraw. 
