@@ -11,6 +11,10 @@ Profesionalmente me dedique al diseño de material promocional. Posteriormente e
 
 Emprendí una revista. Un concurso Drag Queen online, que posteriormente tuvo concursos presenciales y una agencia de viajes para hombres gay (próxima a cumplir 10 años). 
 
+## Languages and Tools
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
+<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
 
 
 <!--
@@ -35,7 +39,13 @@ Here are some ideas to get you started:
 -  👠 En 2016 me anime hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a> un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa, Ciudad de México.
 -  ⛱️ https://luisangelmaciel.github.io/xiiber/ 
 
-![stats](https://github-readme-stats.vercel.app/api?username=AdibHoque&theme=dark&count_private=true&show_icons=true)<br>
+
+
+![stats](https://github-readme-stats.vercel.app/api?username=AdibHoque&theme=tokyonight&count_private=true&show_icons=true)
+
+<a href="https://github.com/luisangelmaciel/luisangelmaciel">
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=luisangelmaciel&hide=java,html,tex&title_color=70a5fd&text_color=fff&icon_color=bf91f3&bg_color=1a1b27&langs_count=3" />
+</a>
 
 
 ### Reach me out:
@@ -50,3 +60,12 @@ Here are some ideas to get you started:
 
 <web development="HTML5 CSS3 JS jQuery NodeJS W3"> Graphic designer, UI-UX, Tech entrepreneur & Traveler </martech> 🏳️‍🌈 🧳 ♋ 🌮🏊‍♂️ 🧙‍ 
 -->
+
+<!-- Resources -->
+<!-- Icons: https://simpleicons.org/ -->
+<!-- GitHub Stats: https://github.com/anuraghazra/github-readme-stats -->
+<!-- Emojis: https://emojipedia.org/emoji/ -->
+<!-- HTML Emojis: https://www.fileformat.info/index.htm -->
+<!-- Shields: https://shields.io/ -->
+<!-- Awesome GitHub Profile README: https://github.com/abhisheknaiidu/awesome-github-profile-readme -->
+
