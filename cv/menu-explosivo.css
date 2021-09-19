@@ -77,12 +77,12 @@ canvas {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: inherit;
+    color: white;
 }
 
 .bg-black-negro {
