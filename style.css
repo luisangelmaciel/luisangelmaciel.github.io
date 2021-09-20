@@ -21,6 +21,26 @@ body {
     line-height: 1.5
 }
 
+.lato {
+    font-family: "Lato", sans-serif;
+}
+
+.oswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.WindSong {
+    font-family: 'WindSong', cursive;
+}
+
+.Maven {
+    font-family: 'Maven', cursive;
+}
+
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -49,7 +69,7 @@ a:hover {
 }
 
 div.scrollmenu {
-    background-color: rgb(20, 20, 20);
+    background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
     overflow: auto;
     white-space: nowrap;
     position: fixed;
@@ -110,51 +130,6 @@ div.scrollmenu p:hover {
     }
     to {
         opacity: 1;
-    }
-}
-
-*,
- ::after,
- ::before {
-    box-sizing: border-box
-}
-
-.container-publicaciones {
-    width: 100%;
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
-    margin-right: auto;
-    margin-left: auto;
-    height: 78%;
-}
-
-@media (min-width:576px) {
-    .container-publicaciones {
-        max-width: 540px
-    }
-}
-
-@media (min-width:768px) {
-    .container-publicaciones {
-        max-width: 720px
-    }
-}
-
-@media (min-width:992px) {
-    .container-publicaciones {
-        max-width: 960px
-    }
-}
-
-@media (min-width:1200px) {
-    .container-publicaciones {
-        max-width: 1140px
-    }
-}
-
-@media (min-width:1400px) {
-    .container-publicaciones {
-        max-width: 1320px
     }
 }
 
@@ -596,10 +571,6 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-body {
-    margin: 0
-}
-
 menu,
 article,
 aside,
@@ -800,3 +771,52 @@ template {
 
 
 /*# sourceMappingURL=normalize.min.css.map */
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.margines {
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container-publicaciones {
+    width: 100%;
+}
+
+@media (min-width:576px) {
+    .container-publicaciones {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container-publicaciones {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container-publicaciones {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container-publicaciones {
+        max-width: 1140px
+    }
+}
+
+@media (min-width:1400px) {
+    .container-publicaciones {
+        max-width: 1320px
+    }
+}

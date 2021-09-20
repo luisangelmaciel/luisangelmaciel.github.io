@@ -9,8 +9,6 @@
 <html lang="es-MX" prefix="og: https://ogp.me/ns#" Cache-Control: max-age=31536000>
 
 
-
-
 <head>
 
     <title>Luis Angel Maciel | Portafolio </title>
@@ -22,13 +20,15 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="vary-header" content="Accept-Encoding">
-    <meta name="description" content="Portafolio, Curriculum Vitae Luis Angel Maciel">
+
+    <meta name="description" content="Luis Angel Maciel, Diseñador grafico y web con experiencia en las herramientas de corel draw y el buscador de google. Como plus es mercadologo.. Portafolio, Curriculum Vitae Luis Angel Maciel">
     <meta name="keywords " content="portafoli, cv, curriculum vitae, luis angel maciel padilla">
     <meta name="author" content="@LuisAngelMaciel">
     <meta name="generator " content="@LuisAngelMaciel  - Content Management ">
     <meta name="rights" content="®LuisAngelMaciel">
     <link rel=" icon " href="favicon.png " sizes="192x192 ">
-
+    <meta name="theme-color " content="#017dbb ">
+    <meta name="robots " content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large " />
 
     <link rel='prefetch' href="https://hihello.monster/xiibicon/fonts/xiibicon.eot">
     <link rel="preload" href="https://hihellomonster.github.io/xiiber/xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -39,19 +39,175 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js" async></script>
     <script src="w3.js"></script>
 
-
+    <link rel="canonical " href="">
     <link rel="stylesheet" href="style.css">
 
+
+
+    <!-- Twitter -->
+    <script type="text/javascript " charset="utf-8 " src="https://platform.twitter.com/widgets.js" async></script>
+    <meta name="twitter:widgets:autoload" content="off">
+    <link rel="canonical" href="https://developer.twitter.com/en/docs/twitter-for-websites/tools-and-libraries">
+    <link rel="me " href="https://twitter.com/luisangelmaciel">
+    <meta name="twitter:widgets:border-color" content="#ff00ff">
+    <meta name="twitter:widgets:theme" content="dark">
+    <meta name="twitter:dnt" content="on">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswalddisplay=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;900&display=swap" rel="stylesheet">
+
+
+    <style>
+        .responsive-img {
+            max-width: 100%;
+            height: auto;
+            width: 600px;
+            text-shadow: 1px 1px 2px rgb(42, 252, 15), 0 0 25px white, 0 0 5px rgb(5, 240, 122);
+            box-shadow: blanchedalmond;
+        }
+        
+        .logo {
+            position: fixed;
+            bottom: 60px;
+            right: 40px;
+        }
+        /* small */
+        
+        @media (max-width:600px) {
+            .hi-hide-small {
+                display: none!important
+            }
+        }
+        /* medium */
+        
+        @media (max-width:992px) and (min-width:601px) {
+            .hi-hide-medium {
+                display: none!important
+            }
+        }
+        /* large */
+        
+        @media (min-width:993px) {
+            .hi-hide-large {
+                display: none!important
+            }
+        }
+    </style>
+    <style>
+        .cuadricula {
+            float: left;
+            text-align: center;
+            margin: 4px;
+            justify-content: center;
+            height: auto;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        /*  img {
+            height: auto;
+            width: 100%;
+        }
+        
+        .responsive_image {
+            height: auto;
+            border-style: none;
+            max-width: 100%;
+        } */
+        
+        div.gallery {
+            background-color: var(--main-dark);
+            align-items: center;
+            float: left;
+            width: 100%;
+        }
+        
+        div.gallery:hover {
+            opacity: 0.7;
+        }
+        
+        div.gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+            align-items: center;
+        }
+        
+        div.gallery img:hover {
+            opacity: 0.7;
+        }
+        /* The modalx (background) */
+        
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+        /*  PROGRESS container     */
+        
+        .progress-bar {
+            height: 8px;
+            width: 0%;
+            background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677);
+            background-position: center 0%;
+            animation: background-slide 25s infinite linear;
+        }
+        
+        .scroll-line {
+            position: fixed;
+            z-index: 999;
+            bottom: 0;
+            height: 8px;
+            width: 0%;
+            background: goldenrod;
+            transition: width 200ms ease-out;
+            text-align: right;
+            color: #fff;
+            border-radius: 0 1em 0 0;
+        }
+        
+        .scroll-line .span-scroll-line {
+            position: absolute;
+            top: -23px;
+            right: 18px;
+            font-size: 1em;
+            font-weight: 500;
+            display: block;
+            text-align: center;
+        }
+        
+        .scroll-line .span-scroll-line::after {
+            content: "%";
+            font-size: 0.7em;
+            position: absolute;
+            right: -12px;
+            bottom: -2px;
+            font-weight: 700;
+            opacity: 0.4;
+        }
+    </style>
+
+    <script src="entradas.js"></script>
+    <script src="hi.js"></script>
 </head>
 
 <body>
+
+    <a class="logo"> ❤️ </a>
+
 
 
     <footer id="Scrollmenu-🌟">
 
         <div class="container">
             <div class="scrollmenu ">
-
+                <br>
                 <i class="icon-calendario " onclick="openName(event, 'lamp')" id="defaultOpen"> <p>Sobre Luis Angel</p></i>
                 <i><p></p></i> <i><p></p></i>
                 <i class="icon-calendario " onclick="openName(event, 'experiencia')"> <p>Experiencia profesional</p></i>
@@ -61,7 +217,12 @@
                 <i class="icon-calendario " onclick="openName(event, 'apps')"> <p>Apps</p></i>
                 <i><p></p></i> <i><p></p></i>
                 <i class="icon-calendario " onclick="openName(event, 'contacto-lamp')"> <p>Contacto</p></i>
-
+                <i><p></p></i> <i><p></p></i>
+                <i class="icon-calendario " onclick="openName(event, 'lo-nuevo')"> <p>Nuevo</p></i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="icon-calendario " onclick="openName(event, 'blanco')"> <p>blanco</p></i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="icon-calendario " onclick="openName(event, 'desing')"> <p>desing</p></i>
             </div>
         </div>
 
@@ -69,17 +230,218 @@
 
     <article id="tab-por-tab-🌟">
 
-        <main class="container-publicaciones">
+        <main class="container-publicaciones margines ">
             <div id="lamp" class="tabcontent">
                 <br>
 
                 <header>
-                    <h1 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Marketing, desing & developer</h1>
-                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy"> Luis Angel Maciel </h2>
+                    <div id="🌟Name-presentation">
+                        <style>
+                            @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+                            .container-name {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                            
+                            .container-name .box {
+                                display: flex;
+                                justify-content: center;
+                                flex-direction: column;
+                                height: 450px;
+                            }
+                            
+                            .container-name .box .title {
+                                width: 100%;
+                                display: flex;
+                                align-items: center;
+                                height: 50px;
+                            }
+                            
+                            .container-name .box .title .block {
+                                width: 0%;
+                                height: inherit;
+                                background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+                                /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+                                background-position: center 0%;
+                                animation: background-slide 1s infinite linear;
+                                position: absolute;
+                                animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                display: flex;
+                            }
+                            
+                            .container-name .box .title h1 {
+                                font-family: "Poppins";
+                                color: rgb(0, 0, 0);
+                                font-size: 40px;
+                                -webkit-animation: mainFadeIn 2s forwards;
+                                -o-animation: mainFadeIn 2s forwards;
+                                animation: mainFadeIn 2s forwards;
+                                animation-delay: 1.6s;
+                                opacity: 0;
+                                display: flex;
+                                align-items: baseline;
+                                position: relative;
+                            }
+                            
+                            .container-name .box .title h1 span {
+                                width: 0px;
+                                height: 0px;
+                                -webkit-border-radius: 50%;
+                                -moz-border-radius: 50%;
+                                border-radius: 50%;
+                                background: #017db0;
+                                -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                animation-delay: 2s;
+                                margin-left: 5px;
+                                margin-top: -15px;
+                                position: absolute;
+                                bottom: 33px;
+                                right: -12px;
+                            }
+                            
+                            .container-name .box .role {
+                                width: 100%;
+                                position: relative;
+                                display: flex;
+                                align-items: center;
+                                height: 30px;
+                                margin-top: -10px;
+                            }
+                            
+                            .container-name .box .role .block {
+                                width: 0%;
+                                height: inherit;
+                                background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+                                background-position: center 0%;
+                                animation: background-slide 1s infinite linear;
+                                position: absolute;
+                                animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                animation-delay: 2s;
+                                display: flex;
+                            }
+                            
+                            .container-name .box .role p {
+                                animation: secFadeIn 2s forwards;
+                                animation-delay: 3.2s;
+                                opacity: 0;
+                                font-weight: 800;
+                                font-family: "Lato";
+                                color: #0f0101;
+                                font-size: 20px;
+                                letter-spacing: 6px;
+                                padding-top: 30px;
+                                padding-bottom: 30px;
+                                margin-top: 33px;
+                            }
+                            
+                            @keyframes mainBlock {
+                                0% {
+                                    width: 0%;
+                                    left: 0;
+                                }
+                                50% {
+                                    width: 100%;
+                                    left: 0;
+                                }
+                                100% {
+                                    width: 0;
+                                    left: 100%;
+                                }
+                            }
+                            
+                            @keyframes secBlock {
+                                0% {
+                                    width: 0%;
+                                    left: 0;
+                                }
+                                50% {
+                                    width: 100%;
+                                    left: 0;
+                                }
+                                100% {
+                                    width: 0;
+                                    left: 100%;
+                                }
+                            }
+                            
+                            @keyframes mainFadeIn {
+                                0% {
+                                    opacity: 0;
+                                }
+                                100% {
+                                    opacity: 1;
+                                }
+                            }
+                            
+                            @keyframes popIn {
+                                0% {
+                                    width: 0px;
+                                    height: 0px;
+                                    background: #ffb510;
+                                    opacity: 0;
+                                }
+                                50% {
+                                    width: 10px;
+                                    height: 10px;
+                                    background: #ffb510;
+                                    opacity: 1;
+                                    bottom: 45px;
+                                }
+                                65% {
+                                    width: 7px;
+                                    height: 7px;
+                                    bottom: 0px;
+                                    width: 15px;
+                                }
+                                80% {
+                                    width: 10px;
+                                    height: 10px;
+                                    bottom: 20px;
+                                }
+                                100% {
+                                    width: 7px;
+                                    height: 7px;
+                                    background: #ffb510;
+                                    bottom: 13px;
+                                }
+                            }
+                            
+                            @keyframes secFadeIn {
+                                0% {
+                                    opacity: 0;
+                                }
+                                100% {
+                                    opacity: 0.5;
+                                }
+                            }
+                        </style>
+                        <div class="container-name">
+                            <div class="box">
+
+                                <div class="title">
+                                    <span class="block"></span>
+                                    <h1><img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
+                                </div>
+
+                                <div class="role">
+                                    <div class="block"></div>
+                                    <br>
+                                    <p>Marketing, diseño y ventas</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <p style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">¿Luis Ángel Maciel?
+                    </p>
 
                     <p>Mercadologo con experiencia de usuario y desarrollo de productos. Diseñador grafico y fronted web. </p>
                     <p>Estudie Relaciones Comerciales en la <b>ESCA</b> <b>IPN</b>. Mi principal interes en seguir foraleziendo mis habilidades en investigación de mercados, activación comercial y desarrollo de productos (martech). me gusta aprender nuevas
-                        tecnologías y explorar soluciones creativas para ayudar a quíen pueda requerirlo.</p>
+                        tecnologías y explorar soluciones creativas para ayudar a quíen pueda requerirlo. Luis Angel Maciel, Diseñador grafico y web con experiencia en las herramientas de corel draw y el buscador de google. Como plus es mercadologo.
+                    </p>
                 </header>
                 <br>
 
@@ -97,8 +459,9 @@
                     <p>Emprendí una revista impresa. Un concurso Drag Queen, en formato online y presencial con sede en Chihuahua y CDMX. El tercer proyecto, una agencia de viajes para hombres gay, próxima a cumplir 10 años.</p>
 
                     <a href="https://www.xiiber.com " target="_blank "><b>Xiiber Travel</b>, Experiencias y viajes para hombres gay</a><br>
-                    <a href="https://dragvesti.xiiber.com/ " target="_blank "><b>Dragvesti</b>, La carrera Drag Queen online y En Vivo. Edición Chihuahua y CDMX</a> En 2016 me anime hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a>                    un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa,
-                    Ciudad de México.<br>
+                    <a href="https://dragvesti.xiiber.com/ " target="_blank "><b>Dragvesti</b>, La carrera Drag Queen online y En Vivo. Edición Chihuahua y CDMX</a> En 2016 <time datetime="2016-09-15">Thursday, September 15<sup>th</sup></time>. me anime
+                    hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a> un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más
+                    un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa, Ciudad de México.<br>
                     <a href="index.html" target="_blank "><b>EvoloZiete</b>, la revista de mente abierta</a>
                     <br>
 
@@ -193,7 +556,7 @@
 
                 <section>
                     <h2 class="pb-2 border-bottom">Apps</h2>
-                    <h3>He estructurado y diseñado las siguientes aplicaciones</h3>
+                    <h3>He estructurado y diseñado las siguientes aplicaciones. Autor de multiples proyectos de codigo abierto</h3>
 
 
                     <div id="ICON-GRIND🌟">
@@ -211,64 +574,100 @@
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://luisangelmaciel.github.io/xivit/" target="_blank ">Xivit, chat</a>Mensajería de texto y videollamada sin registro de historico. Destaca su calidad de audio.Doble view
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/xivit/" target="_blank ">Xivit, chat</a> </h4>
+                                        <p>Mensajería de texto y videollamada sin registro de historico. Destaca su calidad de audio.</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://hihellomonster.github.io/hihello/editor.online/" target="_blank ">Editor online</a>Editor HTML online
+                                        <h4 class="fw-bold mb-0"><a href="https://hihellomonster.github.io/hihello/editor.online/" target="_blank ">Editor online</a></h4>
+                                        <p>Editor HTML online.</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://hihellomonster.github.io/hihello/doble.pantalla/" target="_blank ">Doble view</a>Navegación simultanea con dos pantallas responsivas en una ventana</li>
+                                        <h4 class="fw-bold mb-0"><a href="https://hihellomonster.github.io/hihello/doble.pantalla/" target="_blank ">Doble view</a></h4>
+                                        <p> Navegación simultanea con dos pantallas responsivas en una ventana</p>
+
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://luisangelmaciel.github.io/head-total-full/" target="_blank ">Head-total-full</a>generador Web App Manifest y de las etiquetas en head.
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/head-total-full/" target="_blank ">Head-total-full</a></h4>
+                                        <p>generador Web App Manifest y de las etiquetas en head.</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://hihellomonster.github.io/hihello/glyphs/" target="_blank ">Glyps</a>
+                                        <h4 class="fw-bold mb-0"> <a href="https://hihellomonster.github.io/hihello/glyphs/" target="_blank ">Glyps</a></h4>
+                                        <p>Banderas, México, Formas de pago y generales</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://luisangelmaciel.github.io/mode.multicolor/" target="_blank ">Mode multiculor</a>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/mode.multicolor/" target="_blank ">Mode multiculor</a></h4>
+                                        <p>Fondo y texto para modo multicolor.</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0">Featured title</h4>
-                                        <p>Paragraph of text beneath the heading to explain the heading.</p>
-                                        <a href="https://luisangelmaciel.github.io/Igglybuff/" target="_blank ">Igglybuff. SGV, icons, glyps & font </a>
-                                        <a href="https://luisangelmaciel.github.io/pokerangers/" target="_blank ">Ringtone de Pokemon & PowerRanger </a>
-                                        <a href=" https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/" target="_blank ">Game</a> Goku Save the universe
-                                        <a href="https://luisangelmaciel.github.io/Xurkitree/" target="_blank ">Xurkitree</a>Versión actualizada de Linktree
-                                        <a href="https://luisangelmaciel.github.io/Toxel/" target="_blank ">Toxel. Code snippets CSS & JavaScript/a>Efectos y animaciones              
-                                            <a href="https://github.com/luisangelmaciel/quiz/adivina-la-peli" target="_blank ">Quiz</a> Adivina la pelicula
-                                        <a href="https://luisangelmaciel.github.io/directorio-de-contactos/" target="_blank ">Directorio de contactos</a>
-                                        <a href="https://luisangelmaciel.github.io/quiz/contra-tiempo" target="_blank ">Quiz</a>Contra tiempo
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/Igglybuff/" target="_blank ">Igglybuff</a></h4>
+                                        <p>SGV, icons, glyps & font </p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/pokerangers/" target="_blank ">Ringtone de Pokemon & PowerRanger </a></h4>
+                                        <p>Fondo y texto para modo multicolor.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href=" https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/" target="_blank ">Game</a> Goku Save the universe</h4>
+                                        <p>Fondo y texto para modo multicolor.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/directorio-de-contactos/" target="_blank ">Directorio de contactos</a></h4>
+                                        <p>Fondo y texto para modo multicolor.</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/Toxel/" target="_blank ">Toxel. Code snippets CSS & JavaScript</a> </h4>
+                                        <p>Efectos y animaciones</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/Xurkitree/" target="_blank ">Xurkitree</a> </h4>
+                                        <p>Versión actualizada de Linktree</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"><a href="https://github.com/luisangelmaciel/quiz/adivina-la-peli" target="_blank ">Quiz</a> </h4>
+                                        <p>Adivina la pelicula</p>
+                                    </div>
+                                </div>
+                                <div class="col d-flex align-items-start">
+                                    <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                    <div>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/quiz/contra-tiempo" target="_blank ">Quiz</a></h4>
+                                        <p>Contra tiempo</p>
                                     </div>
                                 </div>
                             </div>
@@ -283,25 +682,30 @@
                     <h2 class="pb-2 border-bottom">Portafolio</h2>
                     <p>He estructurado y diseñado las siguientes aplicaciones</p>
 
-                    <a href="https://hihellomonster.github.io/hihello/geus" target="_blank "><b>Geus.</b> Productos gourmet</a><br>
+                    <a href="https://hihellomonster.github.io/hihello/geus" target="_blank "><b>Geus Gourmé </b> Productos gourmet artesanales</a><br>
                     <a href="https://hihellomonster.github.io/hihello/guiarosi/" target="_blank "><b>Guia Rosi.</b> Directorio de negocios</a><br>
-                    <a href="https://hihellomonster.github.io/hihello/moms.pizzas" target="_blank "><b>Pizzería.</b> Mom´s Pizzas</a><br>
+                    <a href="https://hihellomonster.github.io/hihello/moms.pizzas" target="_blank "><b>Mom´s Pizzas. </b> Pizzas con extra queso. Especialidad chorihawaian</a><br>
                     <a href="http://www.xbr.pw/" target="_blank "><b>Short URL.</b> www.xbr.pw</a><br>
                     <a href="https://luisangelmaciel.github.io/dalilavelvet/" target="_blank "><b>Drag Queen, Dalila Velvet.</b> La perra más alta de Colombia.</a><br>
                     <a href="https://luisangelmaciel.github.io/irisxcqueen/" target="_blank "><b>Drag Queen, Iris XC Queen.</b> La reina de tus ojos</a><br>
                     <a href="https://luisangelmaciel.github.io/beckydvich/" target="_blank "><b>Becky D´Vich.</b> Becky with the Good hair</a><br>
-                    <a href="https://tepozspa.xiiber.com/" target="_blank "><b>Tepozspa by Xiiber.</b> Spa para hombres gay</a><br>
-
+                    <a href="https://tepozspa.xiiber.com/" target="_blank "><b>Tepozspa by Xiiber.</b> Spa para hombres gay </a><br>
+                    <a href="https://tepozspa.xiiber.com/" target="_blank "><b>SiOkey</b>  Verificadora de sitios</a><br>
+                    <a href="https://tepozspa.xiiber.com/" target="_blank "><b>Tamales </b> Tamales de Bubulubu, Cremino, Ferrero, entre otros  </a><br>
+                    <a href="https://tepozspa.xiiber.com/" target="_blank "><b>Depravex </b> Sexshop online para hombres gay  </a><br>
                 </section>
+
+
                 <br>
                 <br>
+
                 <section>
                     <br>
                     <h2 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Entre Love, RT, Me gusta, Forks y Favs</h2>
                     <h3 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">Contacto</h3>
 
                     <div class="w3-container" style="color: black;">
-                        <a href=" https://twitter.com/luisangelmaciel " target="_blank ">Twitter</a><br>
+                        <a href="https://twitter.com/intent/follow?screen_name=luisangelmaciel " target="_blank ">Twitter</a><br>
                         <a href="https://codepen.io/luisangelmaciel " target="_new ">Codepen</a><br>
                         <a href="https://github.com/luisangelmaciel " target="_new ">Github</a><br>
                         <a href="https://dribbble.com/luisangelmaciel " target="_new ">Dribble</a><br>
@@ -313,6 +717,133 @@
                         <a href="https://codestats.net/users/luisangelmaciel " target="_new ">Codestats</a><br>
                         <!-- <img src="https://codestats.net/assets/frontend/images/Logo-92e1d93256eae2d7dde539f1df59b06c.svg?vsn=d " alt=" CodeStats " width="33px " height="33px ">  -->
                     </div>
+                    <br>
+                    <br>
+                    <br>
+                    <details>
+                        <summary>
+                            Ultimos Post
+                        </summary>
+                        <div id="LONUEVO">
+                            <ul id="Activity"><br>
+                                <li hi-repeat="hiHelloMaciel" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                                    <div style="display: flex; ">
+                                        <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
+
+                                        <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem;   margin-bottom: 0; line-height: 1.25;">
+                                            <span>
+                                                    <strong>Luis Angel Maciel</strong>   <span style="color:#3f3b3b">  {{fecha-De-Publicacion}}  </span>
+                                            </span>
+                                            <br> {{el-Post}}
+                                            <span><a rel="noreferrer noopener" href="{{a-href}}" target="_blank" title="{{a-href-tittle}}" aria-label="Link de la publicación"><code style="color: grey">{{accion}} </code></span>
+                                            </a>
+                                    </div>
+                                </li>
+                            </ul>
+                            <script>
+                                hi.displayObject("Activity", myObject);
+                            </script>
+                            <br>
+                            <div class="LA.MCL🌟">
+                                <style>
+                                    .shrink-text .a-shrink-text {
+                                        display: flex;
+                                        font-size: 40px;
+                                        color: #000000;
+                                        text-decoration: unset;
+                                        align-items: center;
+                                        text-align: center;
+                                        font-weight: 600;
+                                    }
+                                    
+                                    .shrink-text .a-shrink-text:hover {
+                                        display: flex;
+                                        font-size: 40px;
+                                        color: #000000;
+                                        text-decoration: unset;
+                                    }
+                                    
+                                    .span-shrink-text:nth-child(even) {
+                                        overflow: hidden;
+                                        letter-spacing: -1em;
+                                        transition: letter-spacing 0.5s linear;
+                                    }
+                                    
+                                    .shrink-text a:hover .span-shrink-text:nth-child(even) {
+                                        letter-spacing: 0;
+                                    }
+                                    
+                                    .Maven {
+                                        font-family: 'Maven Pro', sans-serif;
+                                        font-weight: 600;
+                                    }
+                                </style>
+                                <center>
+                                    <div class="shrink-text Maven display-middle shadow margines">
+                                        <a href="https://twitter.com/intent/follow?screen_name=xiibertravel" class="a-shrink-text">
+                                            <span class="span-shrink-text">l</span><span class="span-shrink-text">uis</span>
+                                            <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
+                                            <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
+                                            <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
+                                            <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
+                                            <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
+                                        </a>
+                                    </div>
+                                </center>
+                            </div>
+                        </div>
+                    </details>
+
+                    <div id="HECHO-CONAMOR-Y-ETIQUETAS🌟">
+                        <style>
+                            @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+                            .code-hecho {
+                                font-family: Monaco, monospace;
+                                line-height: 100%;
+                                background-color: #2d2d2c;
+                                padding: 0.1em 0.4em;
+                                letter-spacing: -0.05em;
+                                word-break: normal;
+                                border-radius: 7px;
+                                color: white;
+                                font-weight: normal;
+                                font-size: 1.75rem;
+                                top: -2px;
+                            }
+                            
+                            .container-hecho {
+                                text-align: center;
+                                padding: 2em;
+                            }
+                            
+                            .container-hecho>h1 {
+                                font-weight: 700;
+                                font-size: 2rem;
+                                line-height: normal;
+                                color: #111827;
+                            }
+                            
+                            .container-hecho>p {
+                                margin-top: 2em;
+                                margin-bottom: 2em;
+                            }
+                            
+                            .container-hecho sup {
+                                font-size: 1rem;
+                                margin-left: 0.25em;
+                                opacity: 0.5;
+                                position: relative;
+                            }
+                        </style>
+
+                        <div class="container-hecho">
+                            <h1>
+                                Hecho con <code>&lt;amor&gt;</code> y muchas etiquetas<sup>(...)</sup>
+                            </h1>
+                        </div>
+                    </div>
+
+
                 </section>
                 <br>
                 <br>
@@ -337,18 +868,610 @@
                     <a href="https://dragvesti.xiiber.com/ " target="_blank "><b>Dragvesti</b>, La carrera Drag Queen online y En Vivo. Edición Chihuahua y CDMX</a> En 2016 me anime hacer <a href="https://luisangelmaciel.github.io/dragvesti/ "> Dragvesti </a>                    un concurso drag queen. Primero online y posteriormente en una edición En Vivo. Un total de 5 temporadas online, 1 En Vivo en la CDMX y 4 en Chihuahua, más un evento con una Drag de RuPaul´s Drag Race en el Teatro Hipódromo Condesa,
                     Ciudad de México.<br>
                     <a href="https://www.xiiber.com  " target="_blank "><b>EvoloZiete</b>, la revista de mente abierta</a><br>
+
+
+
+
+                    <div>
+                        <h2>Mapa de sitio (Full)</h2>
+                        <p>Aquí enlisto cada diseño de logotipo, desarrollo de web, proyectos, rediseños y más trabajo profesional que tengo archivado </p>
+
+
+
+                        <!-- MAPA DE SITIO 
+                        <div id="siteMap" style="padding: .5rem; margin-top: .5rem!;
+                        margin-bottom: 1rem!; margin-top: 1rem!; margin-bottom: 1rem; border-radius: .25rem; box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)">
+                            <h3><b>Proyectos propios</b></h3>
+                            <li hi-repeat="proyectos-propios" style="list-style-type: none;  margin: 0;  padding: 0;">
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;  ">
+                                    <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{proyecto}}</a></span>
+                                </p>
+                            </li>
+
+                            <h3><b>Proyectos</b> </h3>
+                            <li hi-repeat="proyectos" style="list-style-type: none;  margin: 0;  padding: 0;">
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;  ">
+                                    <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{proyecto}}</a></span>
+                                </p>
+                            </li>
+
+                            <h3><b>How to One</b> </h3>
+                            <li hi-repeat="one" style="list-style-type: none;  margin: 0;  padding: 0;">
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;  ">
+                                    <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a> </span>
+                                </p>
+                            </li>
+                            <h3><b>Xiiber Travel</b></h3>
+                            <li hi-repeat="Xiiber-travel" style="list-style-type: none;  margin: 0;  padding: 0;">
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;  ">
+                                    <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a></span>
+                                </p>
+                            </li>
+                            <h3> <b>Apps</b> </h3>
+                            <li hi-repeat="app" style="list-style-type: none;  margin: 0;  padding: 0;">
+                                <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;  ">
+                                    <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a></span>
+                                </p>
+                            </li>
+
+                        </div>
+
+                        <script>
+                            hi.displayObject("siteMap", myObject);
+                        </script>
+                           -->
+                    </div>
                 </div>
 
                 <div id="apps" class="tabcontent">
                     <br>
                     <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Code snippets for HTML, CSS and JavaScript</h4>
                     <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">Apps</h2>
+
+
+
+
                 </div>
 
                 <div id="contacto-lamp" class="tabcontent">
 
+                    <!--  <div class=" " style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000);">
+                        <div id="🌟Name-presentation">
+                            <style>
+                                @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+                                .container-name123 {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                }
+                                
+                                .container-name123 .box123 {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    height: 450px;
+                                }
+                                
+                                .container-name123 .box123 .title123 {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 50px;
+                                }
+                                
+                                .container-name123 .box123 .title123 .block123 {
+                                    width: 0%;
+                                    height: inherit;
+                                    background: linear-gradient( to right, #18487D, #103155, #0c243f, #071d36, #09305c, #0d427e, #1055a3);
+                                    /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+                                    background-position: center 0%;
+                                    animation: background-slide 1s infinite linear;
+                                    position: absolute;
+                                    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    display: flex;
+                                }
+                                
+                                .container-name123 .box123 .title123 h1 {
+                                    font-family: "Poppins";
+                                    color: rgb(255, 255, 255);
+                                    font-size: 40px;
+                                    -webkit-animation: mainFadeIn 2s forwards;
+                                    -o-animation: mainFadeIn 2s forwards;
+                                    animation: mainFadeIn 2s forwards;
+                                    animation-delay: 1.6s;
+                                    opacity: 0;
+                                    display: flex;
+                                    align-items: baseline;
+                                    position: relative;
+                                }
+                                
+                                .container-name123 .box123 .title123 h1 span {
+                                    width: 0px;
+                                    height: 0px;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    border-radius: 50%;
+                                    background: #017db0;
+                                    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation-delay: 2s;
+                                    margin-left: 5px;
+                                    margin-top: -15px;
+                                    position: absolute;
+                                    bottom: 33px;
+                                    right: -12px;
+                                }
+                                
+                                .container-name123 .box123 .role123 {
+                                    width: 100%;
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 30px;
+                                    margin-top: -10px;
+                                }
+                                
+                                .container-name123 .box123 .role123 .block123 {
+                                    width: 0%;
+                                    height: inherit;
+                                    background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+                                    background-position: center 0%;
+                                    animation: background-slide 1s infinite linear;
+                                    position: absolute;
+                                    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation-delay: 2s;
+                                    display: flex;
+                                }
+                                
+                                .container-name123 .box123 .role123 p {
+                                    animation: secFadeIn 2s forwards;
+                                    animation-delay: 3.2s;
+                                    opacity: 0;
+                                    font-weight: 800;
+                                    font-family: "Lato";
+                                    color: #d6d6d6;
+                                    font-size: 20px;
+                                    letter-spacing: 6px;
+                                    padding-top: 30px;
+                                    padding-bottom: 30px;
+                                    margin-top: 33px;
+                                }
+                                
+                                @keyframes mainBlock {
+                                    0% {
+                                        width: 0%;
+                                        left: 0;
+                                    }
+                                    50% {
+                                        width: 100%;
+                                        left: 0;
+                                    }
+                                    100% {
+                                        width: 0;
+                                        left: 100%;
+                                    }
+                                }
+                                
+                                @keyframes secBlock {
+                                    0% {
+                                        width: 0%;
+                                        left: 0;
+                                    }
+                                    50% {
+                                        width: 100%;
+                                        left: 0;
+                                    }
+                                    100% {
+                                        width: 0;
+                                        left: 100%;
+                                    }
+                                }
+                                
+                                @keyframes mainFadeIn {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                    }
+                                }
+                                
+                                @keyframes popIn {
+                                    0% {
+                                        width: 0px;
+                                        height: 0px;
+                                        background: #ffb510;
+                                        opacity: 0;
+                                    }
+                                    50% {
+                                        width: 10px;
+                                        height: 10px;
+                                        background: #ffb510;
+                                        opacity: 1;
+                                        bottom: 45px;
+                                    }
+                                    65% {
+                                        width: 7px;
+                                        height: 7px;
+                                        bottom: 0px;
+                                        width: 15px;
+                                    }
+                                    80% {
+                                        width: 10px;
+                                        height: 10px;
+                                        bottom: 20px;
+                                    }
+                                    100% {
+                                        width: 7px;
+                                        height: 7px;
+                                        background: #ffb510;
+                                        bottom: 13px;
+                                    }
+                                }
+                                
+                                @keyframes secFadeIn {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        opacity: 0.5;
+                                    }
+                                }
+                            </style>
+                            <div class="container-name123">
+                                <div class="box123">
+
+                                    <div class="title123">
+                                        <span class="block123 "></span>
+                                        <h1 style="  text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 104), 0 0 0.2em rgb(15, 15, 212);"><img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
+                                    </div>
+
+                                    <div class="role123">
+                                        <div class="block123"></div>
+                                        <br>
+                                        <p>Marketing, diseño y ventas</p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div> -->
                 </div>
+
+                <div id="lo-nuevo" class="tabcontent">
+
+                    <div>
+                        <br><br><br><br>
+                        <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Xiiber Travel</h2>
+                        <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">¡Vámonos de viaje!</h4>
+                        <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto "> /*made with <b style="color: red;">❤</b>, by @luisangelmaciel */</p><br>
+                        <span>
+    
+                                <style>
+                                    .aqua-button {
+                                        width: 160px;
+                                        height: 40px;
+                                        padding: 5px 16px 3px;
+                                        -webkit-border-radius: 16px;
+                                        -moz-border-radius: 16px;
+                                        border: 2px solid #ccc;
+                                        position: relative;
+                                    
+                                        /* Label */
+                                      
+                                        font-weight: 200;
+                                        color: #fff;
+                                        text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+                                        text-align: center;
+                                        vertical-align: middle;
+                                        white-space: nowrap;
+                                        text-overflow: ellipsis;
+                                        overflow: hidden;
+                                    }
+                                    
+                                    .aqua {
+                                        background-color: rgba(60, 132, 198, 0.8);
+                                        border-top-color: #8ba2c1;
+                                        border-right-color: #5890bf;
+                                        border-bottom-color: #4f93ca;
+                                        border-left-color: #768fa5;
+                                        -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
+                                        -moz-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
+                                        background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9)));
+                                        /* for FF 3.6 */
+                                        background-image: -moz-linear-gradient(rgba(28, 91, 155, 0.8) 0%, rgba(108, 191, 255, .9) 90%);
+                                    }
+                                </style>
+    
+                                <center>
+                                    <div class="aqua-button aqua">
+                                        <div class="glare"></div>
+                                        ¡Si, si quiero!
+                                    </div>
+                                </center>
+                            </span>
+                    </div>
+
+
+
+                    <div><br><br><br>
+                        <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> How To Section</h2>
+                        <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Code snippets for HTML, CSS and JavaScript</h4>
+
+
+
+                    </div>
+                </div>
+
+                <div id="blanco" class="tabcontent">
+                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Dragvesti</h2>
+                    <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">All Stars</h4>
+                    <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto ">Este <i>modo</i> es tan vacío que puede ser un espacio para la meditación.</p>
+                </div>
+
+                <div id="desing" class="tabcontent">
+                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Dragvesti</h2>
+                    <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">All Stars</h4>
+
+                    <style>
+                        div.gallery {
+                            border: 0px solid #0f8ec0;
+                        }
+                        
+                        div.gallery:hover {
+                            border: 0px solid #777;
+                        }
+                        
+                        div.gallery img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                        * {
+                            box-sizing: border-box;
+                        }
+                        
+                        .responsiveg {
+                            padding: 0 6px;
+                            margin: 6px 0;
+                            float: left;
+                            width: 16.66%;
+                            display: grid;
+                        }
+                        
+                        @media only screen and (max-width: 700px) {
+                            .responsiveg {
+                                width: 50%;
+                                margin: 6px 0;
+                                padding: 0 6px;
+                                display: grid;
+                                width: 33.33%;
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 1200px) {
+                            .responsiveg {
+                                width: 50%;
+                                margin: 6px 0;
+                                padding: 0 6px;
+                                display: grid;
+                                width: 25%;
+                            }
+                        }
+                        
+                        @media only screen and (max-width: 500px) {
+                            .responsiveg {
+                                width: 33.33%;
+                                margin: 6px 0;
+                                padding: 0 6px;
+                                display: grid;
+                            }
+                            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+                            @media screen and (max-width: 700px) {
+                                .row {
+                                    flex-direction: column;
+                                }
+                            }
+                            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+                            @media screen and (max-width: 400px) {
+                                .navbar a {
+                                    float: none;
+                                    width: 100%;
+                                }
+                            }
+                        }
+                        
+                        .img {
+                            width: 100%;
+                        }
+                        
+                        .img.responsiveg {
+                            width: 100%;
+                            max-width: 400px;
+                            height: auto;
+                            align-items: center;
+                            display: inherit;
+                        }
+                    </style>
+                    <div style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-martech.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-developer-products-and-experience.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-desing.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-services.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-1.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-2.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/logos/lamp-3.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/pokemon/mew-pokemon-sol-y-luna.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/pokemon/mew-pokemon.svg" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img class="img" src="https://luisangelmaciel.github.io/luisangelmaciel/img/favicon-hihello.png" alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/cascos-power-ranger-pokemon-version.svg " alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/logo-pokerangers.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/pokerangers-black.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/pokerangers.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/ringtone.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/logo-pokemon-pawer-ranger-pokerangers-app-ringtone.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/logo-pokemon-pawer-ranger-pokerangers-app.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/cascos-power-ranger-pokemon-version-originales.svg" alt="600x400  " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/ringtone.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/mighy-evolvin-poke-rangers-white.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/mighy-evolvin-poke-rangers.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/escudo-mamut-black-power-rangers.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/awesome-music.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/rayo-logo-power-rangers.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="responsiveg ">
+                            <div class="gallery ">
+                                <img src="https://luisangelmaciel.github.io/pokerangers/img/black-power-ranger.svg " alt="600x400 " width="600 " height="400 " loading="lazy" class="lazy">
+                            </div>
+                        </div>
+
+                        <div class="clearfix "></div>
+
+                    </div>
+
+                </div>
+            </div>
         </main>
+
+        <div style=" width: 100%; height: 15px; background: rgb(255, 255, 255); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
+            <div id="myBar " style=" height: 15px; width: 0%;background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%); background-position: center 0%; animation: background-slide 25s infinite linear; "></div>
+        </div>
+
+        <script>
+            // When the user scrolls the page, execute myFunction 
+            window.onscroll = function() {
+                myFunction()
+            };
+
+            function myFunction() {
+                var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                var scrolled = (winScroll / height) * 100;
+                document.getElementById("myBar ").style.width = scrolled + "% ";
+            }
+        </script>
 
         <script>
             function openSocial(evt, socialName) {
@@ -397,7 +1520,26 @@
         </script>
 
     </article>
+    <!-- SCROLL % 
+    <div class="scroll-line"><span class="span-scroll-line"></span></div>
+    <script>
+        ////////////////////////////
+        // Scroll Position Bar
 
+        $(document).scroll(function(e) {
+            var scrollAmount = $(window).scrollTop();
+            var documentHeight = $(document).height();
+            var windowHeight = $(window).height();
+            var scrollPercent = (scrollAmount / (documentHeight - windowHeight)) * 100;
+            var roundScroll = Math.round(scrollPercent);
+
+            $(".scroll-line").css("width", scrollPercent + "%");
+            $(".scroll-line .span-scroll-line").text(roundScroll);
+        });
+    </script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.js'></script>
+-->
 
 </body>
 
