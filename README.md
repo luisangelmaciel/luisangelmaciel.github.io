@@ -1,6 +1,7 @@
 ### Hey y´all 👋
 
 
+
 Estudie marketing y el diseño grafico me llamo mucho la atención, por lo cual fui autodidacta en CorelDraw. 
 
 La experiencia de usuario y desarrollo de productos me ha llevado a conocer el diseño web con HTML, CSS, JS, jQuery, Node. 
@@ -11,10 +12,18 @@ Profesionalmente me dedique al diseño de material promocional. Posteriormente e
 
 Emprendí una revista. Un concurso Drag Queen online, que posteriormente tuvo concursos presenciales y una agencia de viajes para hombres gay (próxima a cumplir 10 años). 
 
-## Languages and Tools
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"></code>
-<code><img height="20" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png"></code>
+
+## 🔧 Technologies
+
+![HTML5](https://img.icons8.com/color/30/html-5.png)
+![CSS3](https://img.icons8.com/color/30/css3.png)
+![JavaScript](https://img.icons8.com/color/30/javascript.png)
+![NodeJS](https://img.icons8.com/color/30/nodejs.png)
+![SASS](https://img.icons8.com/color/30/sass.png)
+![NPM](https://img.icons8.com/color/30/npm.png)
+![Github](https://img.icons8.com/material-outlined/30/github.png)
+![VSCode](https://img.icons8.com/color/30/visual-studio-code-2019.png)
+![Windows](https://img.icons8.com/color/30/windows-10.png)
 
 
 <!--
@@ -41,6 +50,7 @@ Here are some ideas to get you started:
 
 
 
+
 ![stats](https://github-readme-stats.vercel.app/api?username=AdibHoque&theme=tokyonight&count_private=true&show_icons=true)
 
 <a href="https://github.com/luisangelmaciel/luisangelmaciel">
@@ -54,6 +64,14 @@ Here are some ideas to get you started:
 
 
 [<img src='https://raw.githubusercontent.com/luisangelmaciel/luisangelmaciel/main/logos/cgt-logo.svg' alt='logo' height='40'>](https://www.xiiber.com)
+
+
+<details>
+    <summary>&#128240 <b>Latest Blogs Posts</b></summary><br/>
+
+- [xiiber.power](https://www.xbr.pw)
+
+</details>
 
 <!-- 
  <br>
