@@ -61,7 +61,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;600;900&display=swap" rel="stylesheet">
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <style>
         .responsive-img {
@@ -192,6 +192,35 @@
             opacity: 0.4;
         }
     </style>
+    <style>
+        .line-divider {
+            margin-top: 10px;
+            font: 150% "Open Sans", Arial, sans-serif;
+            color: #999;
+            text-align: center;
+            position: relative;
+            margin-bottom: 60px;
+        }
+        
+        .line-divider:before {
+            content: "";
+            display: block;
+            border-top: solid 2px #999;
+            width: 100%;
+            height: 2px;
+            position: absolute;
+            top: 17px;
+            z-index: 1;
+        }
+        
+        .line-divider .span-line-divider {
+            background: #fff;
+            padding: 0 20px;
+            position: relative;
+            z-index: 5;
+        }
+    </style>
+
 
     <script src="entradas.js"></script>
     <script src="hi.js"></script>
@@ -416,6 +445,170 @@
                                     opacity: 0.5;
                                 }
                             }
+                            /* small */
+                            
+                            @media (max-width:600px) {
+                                .container-name .box {
+                                    display: flex;
+                                    justify-content: center;
+                                    flex-direction: column;
+                                    height: 450px;
+                                }
+                                .container-name .box .title {
+                                    width: 100%;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 40px;
+                                }
+                                .container-name .box .title .block {
+                                    width: 0%;
+                                    height: inherit;
+                                    background: linear-gradient(45deg, #042461 0%, rgba(225, 5, 34, 0) 70%), linear-gradient(135deg, #340447 10%, rgba(49, 5, 209, 0) 80%), linear-gradient(225deg, #0f053a 10%, rgba(10, 219, 216, 0) 80%), linear-gradient(315deg, #050813 100%, rgba(9, 245, 5, 0) 70%);
+                                    /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+                                    background-position: center 0%;
+                                    animation: background-slide 1s infinite linear;
+                                    position: absolute;
+                                    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    display: flex;
+                                }
+                                .container-name .box .title h1 {
+                                    font-family: "Poppins";
+                                    color: rgb(0, 0, 0);
+                                    font-size: 25px;
+                                    -webkit-animation: mainFadeIn 2s forwards;
+                                    -o-animation: mainFadeIn 2s forwards;
+                                    animation: mainFadeIn 2s forwards;
+                                    animation-delay: 1.6s;
+                                    opacity: 0;
+                                    display: flex;
+                                    align-items: baseline;
+                                    position: relative;
+                                }
+                                .container-name .box .title h1 span {
+                                    width: 0px;
+                                    height: 0px;
+                                    -webkit-border-radius: 50%;
+                                    -moz-border-radius: 50%;
+                                    border-radius: 50%;
+                                    background: #017db0;
+                                    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation-delay: 2s;
+                                    margin-left: 5px;
+                                    margin-top: -15px;
+                                    position: absolute;
+                                    bottom: 33px;
+                                    right: -12px;
+                                }
+                                .container-name .box .role {
+                                    width: 100%;
+                                    position: relative;
+                                    display: flex;
+                                    align-items: center;
+                                    height: 30px;
+                                    margin-top: -10px;
+                                }
+                                .container-name .box .role .block {
+                                    width: 0%;
+                                    height: inherit;
+                                    background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+                                    background-position: center 0%;
+                                    animation: background-slide 1s infinite linear;
+                                    position: absolute;
+                                    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                                    animation-delay: 2s;
+                                    display: flex;
+                                }
+                                .container-name .box .role p {
+                                    animation: secFadeIn 2s forwards;
+                                    animation-delay: 3.2s;
+                                    opacity: 0;
+                                    font-weight: 800;
+                                    font-family: "Lato";
+                                    color: #0f0101;
+                                    font-size: 20px;
+                                    letter-spacing: 6px;
+                                    padding-top: 30px;
+                                    padding-bottom: 30px;
+                                    margin-top: 40px;
+                                }
+                                @keyframes mainBlock {
+                                    0% {
+                                        width: 0%;
+                                        left: 0;
+                                    }
+                                    50% {
+                                        width: 100%;
+                                        left: 0;
+                                    }
+                                    100% {
+                                        width: 0;
+                                        left: 100%;
+                                    }
+                                }
+                                @keyframes secBlock {
+                                    0% {
+                                        width: 0%;
+                                        left: 0;
+                                    }
+                                    50% {
+                                        width: 100%;
+                                        left: 0;
+                                    }
+                                    100% {
+                                        width: 0;
+                                        left: 100%;
+                                    }
+                                }
+                                @keyframes mainFadeIn {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                    }
+                                }
+                                @keyframes popIn {
+                                    0% {
+                                        width: 0px;
+                                        height: 0px;
+                                        background: #ffb510;
+                                        opacity: 0;
+                                    }
+                                    50% {
+                                        width: 10px;
+                                        height: 10px;
+                                        background: #ffb510;
+                                        opacity: 1;
+                                        bottom: 45px;
+                                    }
+                                    65% {
+                                        width: 7px;
+                                        height: 7px;
+                                        bottom: 0px;
+                                        width: 15px;
+                                    }
+                                    80% {
+                                        width: 10px;
+                                        height: 10px;
+                                        bottom: 20px;
+                                    }
+                                    100% {
+                                        width: 7px;
+                                        height: 7px;
+                                        background: #ffb510;
+                                        bottom: 13px;
+                                    }
+                                }
+                                @keyframes secFadeIn {
+                                    0% {
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        opacity: 0.5;
+                                    }
+                                }
+                            }
                         </style>
                         <div class="container-name">
                             <div class="box">
@@ -435,8 +628,7 @@
                         </div>
                     </div>
 
-                    <p style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">¿Luis Ángel Maciel?
-                    </p>
+                    <h2 class="line-divider "><span class="span-line-divider ">¿Luis Ángel Maciel?</span></h2>
 
                     <p>Mercadologo con experiencia de usuario y desarrollo de productos. Diseñador grafico y fronted web. </p>
                     <p>Estudie Relaciones Comerciales en la <b>ESCA</b> <b>IPN</b>. Mi principal interes en seguir foraleziendo mis habilidades en investigación de mercados, activación comercial y desarrollo de productos (martech). me gusta aprender nuevas
@@ -445,8 +637,18 @@
                 </header>
                 <br>
 
+
+
+
+
+
+
+
+
+
                 <section>
                     <h2 class="pb-2 border-bottom">Experiencia laboral</h2>
+
                     <p>En ventas, diseño y marketing</p>
                     <p>En <b>Matersys Group</b>, forme parte del equipo de diseño y marketing con actividades relaciones publicas y endomarketing. (Conocimiento de las tecnologías e IBM, Oracle, SUN)
                         <br>En <b>Targetware</b> desarrolle la función de ventas de software.
@@ -696,8 +898,8 @@
                                 <div class="col d-flex align-items-start">
                                     <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                     <div>
-                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/pokerangers/" target="_blank ">Ringtone de Pokemon & PowerRanger </a></h4>
-                                        <p>Fondo y texto para modo multicolor.</p>
+                                        <h4 class="fw-bold mb-0"> <a href="https://luisangelmaciel.github.io/pokerangers/" target="_blank ">Pokerangers</a></h4>
+                                        <p>Ringtone de Pokemon & PowerRanger.</p>
                                     </div>
                                 </div>
                                 <div class="col d-flex align-items-start">
@@ -753,6 +955,30 @@
                 <section>
                     <h2 class="pb-2 border-bottom">Portafolio</h2>
                     <p>He estructurado y diseñado las siguientes aplicaciones</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                     <a href="https://hihellomonster.github.io/hihello/geus" target="_blank "><b>Geus Gourmé </b> Productos gourmet artesanales</a><br>
                     <a href="https://hihellomonster.github.io/hihello/guiarosi/" target="_blank "><b>Guia Rosi.</b> Directorio de negocios</a><br>
@@ -1614,5 +1840,7 @@
 -->
 
 </body>
+
+</html>
 
 </html>
