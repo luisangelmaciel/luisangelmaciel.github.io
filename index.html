@@ -72,232 +72,228 @@
 <body>
 
     <div>
-        <a class="logo">
-            <p class="popup-btn">&#9776;</p>
-        </a>
 
 
-        <div class="popups-cont">
-            <div class="popups-cont__overlay"></div>
-            <div class="popup">
-                <div class="popup__pieces"></div>
-                <div class="popup__content">
-                    <div class="popup__close"></div>
-                    <h3 class="popup__heading">Menu</h3>
-                    <p class="popup__text">Contacto</p>
-                    <p class="popup__text">Codepen</p>
+        <div id="POPUS">
+            <a class="logo">
+                <p class="popup-btn">&#9776;</p>
+            </a>
 
-                    <p class="popup__text">Hornet</p>
-                    <p class="popup__text">Bbrt</p>
-                    <p class="popup__text">Facebook</p>
-                    <p class="popup__text">Instagram</p>
+            <div class="popups-cont">
+                <div class="popups-cont__overlay"></div>
+                <div class="popup">
+                    <div class="popup__pieces"></div>
+                    <div class="popup__content">
+                        <div class="popup__close"></div>
+                        <h3 class="popup__heading">Menu</h3>
+                        <p class="popup__text">Contacto</p>
+                        <p class="popup__text">Codepen</p>
+                        <p class="popup__text">Hornet</p>
+                        <p class="popup__text">Bbrt</p>
+                        <p class="popup__text">Facebook</p>
+                        <p class="popup__text">Instagram</p>
 
-                    <div id="Typing-name">
+                        <div id="Typing-name">
 
-
-                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-                        <style>
-                            .type-animation {
-                                display: inline-flex;
-                                width: 0;
-                                overflow: hidden;
-                                padding-right: 0.03em;
-                                position: relative;
-                                color: rgba(0, 0, 0, 0.788);
-                            }
-                            
-                            .type-animation:after {
-                                content: "";
-                                position: absolute;
-                                right: 0;
-                                top: -0.02em;
-                                bottom: -0.02em;
-                                width: 0.06em;
-                                border-right: 2px solid transparent;
-                            }
-                            
-                            .type-animation.animating {
-                                -webkit-animation: type 1620ms;
-                                animation: type 1620ms;
-                                -webkit-animation-fill-mode: forwards;
-                                animation-fill-mode: forwards;
-                                -webkit-animation-delay: 1s;
-                                animation-delay: 1s;
-                            }
-                            
-                            .type-animation.animating:after {
-                                -webkit-animation: cursor 320ms 8.625 ease-in-out;
-                                animation: cursor 320ms 8.625 ease-in-out;
-                            }
-                            
-                            @-webkit-keyframes cursor {
-                                0%,
-                                100% {
-                                    border-color: #f7f3ff;
-                                }
-                                50% {
-                                    border-color: #241b5b;
-                                }
-                                100% {
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+                            <style>
+                                .type-animation {
+                                    display: inline-flex;
                                     width: 0;
+                                    overflow: hidden;
+                                    padding-right: 0.03em;
+                                    position: relative;
+                                    color: rgba(0, 0, 0, 0.788);
                                 }
-                            }
-                            
-                            @keyframes cursor {
-                                0%,
-                                100% {
-                                    border-color: #f7f3ff;
+                                
+                                .type-animation:after {
+                                    content: "";
+                                    position: absolute;
+                                    right: 0;
+                                    top: -0.02em;
+                                    bottom: -0.02em;
+                                    width: 0.06em;
+                                    border-right: 2px solid transparent;
                                 }
-                                50% {
-                                    border-color: #241b5b;
+                                
+                                .type-animation.animating {
+                                    -webkit-animation: type 1620ms;
+                                    animation: type 1620ms;
+                                    -webkit-animation-fill-mode: forwards;
+                                    animation-fill-mode: forwards;
+                                    -webkit-animation-delay: 1s;
+                                    animation-delay: 1s;
                                 }
-                                100% {
-                                    width: 0;
+                                
+                                .type-animation.animating:after {
+                                    -webkit-animation: cursor 320ms 8.625 ease-in-out;
+                                    animation: cursor 320ms 8.625 ease-in-out;
                                 }
-                            }
-                            
-                            @-webkit-keyframes type {
-                                11.1111111111% {
-                                    width: 0.49em;
+                                
+                                @-webkit-keyframes cursor {
+                                    0%,
+                                    100% {
+                                        border-color: #f7f3ff;
+                                    }
+                                    50% {
+                                        border-color: #241b5b;
+                                    }
+                                    100% {
+                                        width: 0;
+                                    }
                                 }
-                                22.2222222222% {
-                                    width: 0.98em;
+                                
+                                @keyframes cursor {
+                                    0%,
+                                    100% {
+                                        border-color: #f7f3ff;
+                                    }
+                                    50% {
+                                        border-color: #241b5b;
+                                    }
+                                    100% {
+                                        width: 0;
+                                    }
                                 }
-                                33.3333333333% {
-                                    width: 1.47em;
+                                
+                                @-webkit-keyframes type {
+                                    11.1111111111% {
+                                        width: 0.49em;
+                                    }
+                                    22.2222222222% {
+                                        width: 0.98em;
+                                    }
+                                    33.3333333333% {
+                                        width: 1.47em;
+                                    }
+                                    44.4444444444% {
+                                        width: 1.96em;
+                                    }
+                                    55.5555555556% {
+                                        width: 2.45em;
+                                    }
+                                    66.6666666667% {
+                                        width: 2.94em;
+                                    }
+                                    77.7777777778% {
+                                        width: 3.43em;
+                                    }
+                                    88.8888888889% {
+                                        width: 3.92em;
+                                    }
+                                    100% {
+                                        width: 3.92em;
+                                        padding-right: 0;
+                                    }
                                 }
-                                44.4444444444% {
-                                    width: 1.96em;
+                                
+                                @keyframes type {
+                                    11.1111111111% {
+                                        width: 0.49em;
+                                    }
+                                    22.2222222222% {
+                                        width: 0.98em;
+                                    }
+                                    33.3333333333% {
+                                        width: 1.47em;
+                                    }
+                                    44.4444444444% {
+                                        width: 1.96em;
+                                    }
+                                    55.5555555556% {
+                                        width: 2.45em;
+                                    }
+                                    66.6666666667% {
+                                        width: 2.94em;
+                                    }
+                                    77.7777777778% {
+                                        width: 3.43em;
+                                    }
+                                    88.8888888889% {
+                                        width: 3.92em;
+                                    }
+                                    100% {
+                                        width: 3.30em;
+                                        padding-right: 0;
+                                    }
                                 }
-                                55.5555555556% {
-                                    width: 2.45em;
-                                }
-                                66.6666666667% {
-                                    width: 2.94em;
-                                }
-                                77.7777777778% {
-                                    width: 3.43em;
-                                }
-                                88.8888888889% {
-                                    width: 3.92em;
-                                }
-                                100% {
-                                    width: 3.92em;
-                                    padding-right: 0;
-                                }
-                            }
-                            
-                            @keyframes type {
-                                11.1111111111% {
-                                    width: 0.49em;
-                                }
-                                22.2222222222% {
-                                    width: 0.98em;
-                                }
-                                33.3333333333% {
-                                    width: 1.47em;
-                                }
-                                44.4444444444% {
-                                    width: 1.96em;
-                                }
-                                55.5555555556% {
-                                    width: 2.45em;
-                                }
-                                66.6666666667% {
-                                    width: 2.94em;
-                                }
-                                77.7777777778% {
-                                    width: 3.43em;
-                                }
-                                88.8888888889% {
-                                    width: 3.92em;
-                                }
-                                100% {
-                                    width: 3.30em;
-                                    padding-right: 0;
-                                }
-                            }
-                        </style>
+                            </style>
 
-                        <p>Luis <span class="type-animation animating"><span style="color:white">Ángel </span></span>Maciel</p>
+                            <p>Luis <span class="type-animation animating"><span style="color:white">Ángel </span></span>Maciel</ </div>
 
-
+                        </div>
                     </div>
-
                 </div>
+
+                <script>
+                    // js only creates and insert parts + click events adds classes
+                    var numOfPieces = 6 * 6;
+                    var frag = document.createDocumentFragment();
+
+                    function insertInnerPieces($el, innerPieces) {
+                        for (var i = 0; i < innerPieces; i++) {
+                            var $inner = document.createElement('div');
+                            $inner.classList.add('popup__piece-inner');
+                            $el.appendChild($inner);
+                        }
+                    }
+
+                    ;
+                    for (var i = 1; i <= numOfPieces; i++) {
+                        var $piece = document.createElement('div');
+                        $piece.classList.add('popup__piece');
+                        insertInnerPieces($piece, 3);
+                        frag.appendChild($piece);
+                    }
+
+                    document.querySelector('.popup__pieces').appendChild(frag);
+                    var $popupsCont = document.querySelector('.popups-cont');
+                    var $popup = document.querySelector('.popup');
+                    var popupAT = 900;
+                    document.querySelector('.popup-btn').addEventListener('click', function() {
+                            $popupsCont.classList.add('s--popup-active');
+                            $popup.classList.add('s--active');
+                        }
+
+                    );
+
+                    function closeHandler() {
+                        $popupsCont.classList.remove('s--popup-active');
+                        $popup.classList.remove('s--active');
+                        $popup.classList.add('s--closed');
+                        setTimeout(function() {
+                            $popup.classList.remove('s--closed');
+                        }, popupAT);
+                    }
+
+                    document.querySelector('.popup__close').addEventListener('click', closeHandler);
+                    document.querySelector('.popups-cont__overlay').addEventListener('click', closeHandler);
+                </script>
+            </div>
+        </div>
+
+        <div class="w3-top">
+            <div class="w3-bar w3-white ">
+
+                <a href="#" class="w3-bar-item  w3-padding-24">Inicio</a>
+                <a href="#" class="w3-bar-item  w3-right w3-padding-24 w3-hide-small">Contacto</a>
+                <a href="#" class="w3-bar-item  w3-right w3-padding-24 ">Apps</a>
+                <a href="#" class="w3-bar-item  w3-right w3-padding-24 ">Portafolio</a>
+                <a href="#" class="w3-bar-item  w3-right w3-padding-24 w3-hide-small">Skills</a>
+                <a href="#" class="w3-bar-item w3-right w3-padding-24 ">Proyectos</a>
+                <a href="#" class="w3-bar-item w3-right w3-padding-24 w3-hide-small ">Experiencia</a>
+                <a href="#" class="w3-bar-item w3-right w3-padding-24 w3-hide-small ">Presentación</a>
             </div>
         </div>
 
 
 
 
-        <!-- partial -->
-        <script src="./script.js"></script>
-        <script>
-            // js only creates and insert parts + click events adds classes
-            var numOfPieces = 6 * 6;
-            var frag = document.createDocumentFragment();
 
-            function insertInnerPieces($el, innerPieces) {
-                for (var i = 0; i < innerPieces; i++) {
-                    var $inner = document.createElement('div');
-                    $inner.classList.add('popup__piece-inner');
-                    $el.appendChild($inner);
-                }
-            }
-
-            ;
-            for (var i = 1; i <= numOfPieces; i++) {
-                var $piece = document.createElement('div');
-                $piece.classList.add('popup__piece');
-                insertInnerPieces($piece, 3);
-                frag.appendChild($piece);
-            }
-
-            document.querySelector('.popup__pieces').appendChild(frag);
-            var $popupsCont = document.querySelector('.popups-cont');
-            var $popup = document.querySelector('.popup');
-            var popupAT = 900;
-            document.querySelector('.popup-btn').addEventListener('click', function() {
-                    $popupsCont.classList.add('s--popup-active');
-                    $popup.classList.add('s--active');
-                }
-
-            );
-
-            function closeHandler() {
-                $popupsCont.classList.remove('s--popup-active');
-                $popup.classList.remove('s--active');
-                $popup.classList.add('s--closed');
-                setTimeout(function() {
-                    $popup.classList.remove('s--closed');
-                }, popupAT);
-            }
-
-            document.querySelector('.popup__close').addEventListener('click', closeHandler);
-            document.querySelector('.popups-cont__overlay').addEventListener('click', closeHandler);
-        </script>
-    </div>
-
-    <div class="w3-top">
-        <div class="w3-bar w3-black">
-            <a href="#" class="w3-bar-item w3-button w3-padding-32 w3-margin-left">Home</a>
-            <a href="#quienEsLuisAngelMaciel" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-32">About</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-32">Skills</a>
-            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-32">Experiencia</a>
-            <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
-        </div>
-
-        <div id="navigachion" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium">
-            <a href="#quienEsLuisAngelMaciel" class="w3-bar-item w3-button">About</a>
-            <a href="#" class="w3-bar-item w3-button">Skills</a>
-            <a href="#" class="w3-bar-item w3-button">Link 3</a>
-        </div>
 
     </div>
 
     <footer id="Scrollmenu-🌟">
-
         <div class="container">
             <div class="scrollmenu ">
                 <br>
@@ -318,18 +314,15 @@
                 <i class="icon-calendario " onclick="openName(event, 'desing')"> <p>desing</p></i>
             </div>
         </div>
-
     </footer>
 
     <article id="tab-por-tab-🌟">
 
         <main class="container-publicaciones margines ">
             <div id="lamp" class="tabcontent">
-                <br>
 
                 <header>
                     <div id="🌟Name-presentation">
-
                         <div class="container-name" id="quienEsLuisAngelMaciel">
                             <div class="box">
 
@@ -348,6 +341,10 @@
                         </div>
                     </div>
 
+                    <div class="w3-padding-top-64"> </div>
+                    <div class="w3-padding-top-64"> </div>
+                    <div class="w3-padding-top-64"> </div>
+
                     <h2 class="line-divider "><span class="span-line-divider ">¿Luis Ángel Maciel?</span></h2>
                     <p>La educación es el pasaporte para el futuro, porque el mañana pertenece a quienes se preparan hoy para él - Malcolm X</p>
                     <p>The purpose of this site is to serve as a playground for my thoughts and experiments. El propósito de este sitio es servir como un patio de recreo para mis pensamientos y experimentos.</p>
@@ -357,19 +354,17 @@
                         tecnologías y explorar soluciones creativas para ayudar a quíen pueda requerirlo. Luis Angel Maciel, Diseñador grafico y web con experiencia en las herramientas de corel draw y el buscador de google. Como plus es mercadologo.
                     </p>
                     <p>Ingeniero de front-end de producto primero. Interesado en diseño, visualización de datos, mapas, transporte público y pegatinas. Sigo a la gente agregando a mis listas (privadas).</p>
+
+
+
                 </header>
-                <br>
+
+                <div class="w3-padding-top-64"> </div>
+                <div class="w3-padding-top-64"> </div>
+                <div class="w3-padding-top-64"> </div>
 
 
-
-
-
-
-
-
-
-
-                <section>
+                <section class="w3-padding-top-64">
                     <h2 class="pb-2 border-bottom">Experiencia laboral</h2>
                     <p>Experiencia Con cada experiencia, solo tú estás pintando tu propio lienzo, pensamiento a pensamiento, elección por elección - Oprah Winfrey</p>
 
@@ -393,6 +388,119 @@
                     <a href="index.html" target="_blank "><b>EvoloZiete</b>, la revista de mente abierta</a>
                     <br>
 
+
+
+
+
+
+
+
+
+
+                    <div>
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&amp'>
+                        <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400,700&subset=latin,latin-ext'>
+                        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+                        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.6/animate.min.css'>
+                        <link rel="stylesheet" href="./style-Work-experience.css">
+
+                        <div id="workexperience" class="sectionClass">
+                            <div class="row-experience ">
+                                <div class="sectiontitle">
+                                    <h2 class="h2sectiontitle">Work experience</h2>
+                                    <span class="headerLine"></span>
+                                </div>
+                                <div class="fullWidth eight columns">
+                                    <ul class="cbp_tmtimeline">
+                                        <li>
+                                            <div class="cbp_tmicon cbp_tmicon-phone">
+                                                <i class="faPra fa-briefcase"></i>
+                                            </div>
+                                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                                <h3>Web developer</h3>
+                                                <div class="date">
+                                                    <i class="fa fa-calendar"></i>April 2014 - Current
+                                                </div>
+                                                <h4><i class="fa fa-flag"></i>Davic Company, Bratislava</h4>
+                                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit obcaecati ipsa quae, iusto laudantium qui, nisi eum modi perspiciatis quasi facilis corporis iure soluta enim incidunt itaque aspernatur sequi
+                                                    tempora.
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cbp_tmicon cbp_tmicon-screen">
+                                                <i class="faPra fa-briefcase"></i>
+                                            </div>
+                                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                                <h3>Web designer</h3>
+                                                <h4><i class="fa fa-flag"></i>Fannous Company, Prague</h4>
+                                                <div class="date"><i class="fa fa-calendar"></i>June 2012 - April 2014</div>
+                                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt quasi perspiciatis, aliquid sed maiores accusamus. Adipisci quidem nostrum quos quae doloremque esse a, ipsum earum, recusandae omnis dignissimos
+                                                    et sint.</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cbp_tmicon cbp_tmicon-mail">
+                                                <i class="faPra fa-briefcase"></i>
+                                            </div>
+                                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                                <h3>Web designer</h3>
+                                                <h4><i class="fa fa-flag"></i>Techixs Company, London</h4>
+                                                <div class="date"><i class="fa fa-calendar"></i>November 2009 - June 2012</div>
+                                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla labore atque alias ipsa, nam quod rerum repellat cumque, aliquam sequi vitae voluptatibus cum soluta incidunt tempore accusamus eius sed excepturi!Lorem
+                                                    ipsum dolor sit amet, consectetur adipisicing elit. Tempora natus veritatis aperiam repellendus dolor vel, expedita assumenda eos, mollitia quae ullam esse voluptas vero. Dolores culpa eaque vitae eum
+                                                    quibusdam?
+                                                </p>
+
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="cbp_tmicon cbp_tmicon-phone">
+                                                <i class="faPra fa-briefcase"></i>
+                                            </div>
+                                            <div class="cbp_tmlabel wow fadeInRight animated">
+                                                <h3>Freelancer</h3>
+                                                <div class="date"><i class="fa fa-calendar"></i>Januar 2006 - November 2009</div>
+                                                <p class="projectParagraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse iusto, possimus hic at quisquam, incidunt illo asperiores et nobis, qui nulla consequatur molestiae quibusdam expedita dignissimos? Iste eum
+                                                    velit quos.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+                        <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js'></script>
+                        <script src="./script-Work-experience.js"></script>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                     <h2 class="pb-2 border-bottom">Skills</h2>
                     <h3> Software Skills</h3>
 
@@ -406,13 +514,8 @@
                         <br> Boostrap, W3 School, Foundation, Flexbox Grid
                         <br> CSS3, HTML5, Greensock/GSAP, Micro-interactions, SVG and Canvas animation.
                         <br> Conocimientos p´racticos de / Working knowledge of JavaScript and jQuery, PHP & ASP.NET
-                        <br> SEO, W3C Standards, ARIA roles, Accessibility </p>
-
-
-
-
-
-
+                        <br> SEO, W3C Standards, ARIA roles, Accessibility
+                    </p>
 
 
 
@@ -424,20 +527,20 @@
                     <div class="container  px-4 py-5 " id="icon-grid">
                         <h3>
                             <div id="LOGO-GOOGLE">
-
                                 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
                                 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
                                 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
-
-                                <p class="google-logo">
-                                    <span class="span-google-logo">G</span>
-                                    <span class="span-google-logo">o</span>
-                                    <span class="span-google-logo">o</span>
-                                    <span class="span-google-logo">g</span>
-                                    <span class="span-google-logo">l</span>
-                                    <span class="span-google-logo">e &nbsp;&nbsp; </span>
-                                    <span class="span-google-logo"> Actívate</span>
-                                </p>
+                                <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">
+                                    <p class="google-logo">
+                                        <span class="span-google-logo">G</span>
+                                        <span class="span-google-logo">o</span>
+                                        <span class="span-google-logo">o</span>
+                                        <span class="span-google-logo">g</span>
+                                        <span class="span-google-logo">l</span>
+                                        <span class="span-google-logo">e &nbsp;&nbsp; </span></b>
+                                        <span class="span-google-logo"> Actívate</span>
+                                    </p>
+                                </a>
                             </div>
                         </h3>
                         <br>
@@ -445,67 +548,161 @@
                             <div class="col d-flex align-items-start">
                                 <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Desarrollo de Apps Móviles </h4>
-                                    <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code"> ID del cetificado: 9ZE 3VB 592</a>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Desarrollo de Apps Móviles</a></h4><br>
+                                    <input type="text " value="9ZE 3VB 592 " id="9ZE3VB592" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>9ZE 3VB 592 <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="desarrolloDeApps() "> </p>
+
+                                    <script>
+                                        function desarrolloDeApps() {
+                                            var copyText = document.getElementById("9ZE3VB592");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/personal-productivity.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Productividad Personal</h4>
-                                    <p>ID del cetificado: YCH Q23 C6H </p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Productividad Personal</a></h4><br>
+                                    <input type="text " value="YCH Q23 C6H" id="YCHQ23C6H" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>YCH Q23 C6H <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="ProductividadPersonal() "> </p>
+
+                                    <script>
+                                        function ProductividadPersonal() {
+                                            var copyText = document.getElementById("YCHQ23C6H");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/digital-transformation.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Transformación digital para el empleo</h4>
-                                    <p>ID del cetificado: ZPD ECL ZA2</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Transformación digital para el empleo</a>
+                                    </h4><br>
+                                    <input type="text " value="ZPD ECL ZA2" id="ZPDECLZA2" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>ZPD ECL ZA2 <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="transformacionDigital() "> </p>
+
+                                    <script>
+                                        function transformacionDigital() {
+                                            var copyText = document.getElementById("ZPDECLZA2");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/Digitaliza-paso-a-paso-tu-negocio-con-Google-My-Business-y-YouTube.png" alt="Google Activate Certificación" loading="lazy"
+                                    class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Comercio electrónico</h4>
-                                    <p>ID del cetificado: YQA VZN WWQ</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Digitaliza tu negocio con Google My Business y Youtube</a></h4><br>
+                                    <input type="text " value="DAJ QWX WTG" id="DAJQWXWTG" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>DAJ QWX WTG <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="digitalizaTuNegocio() "> </p>
+                                    <script>
+                                        function digitalizaTuNegocio() {
+                                            var copyText = document.getElementById("DAJQWXWTG");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/ecommerce.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Desarrollo de la web I/II </h4>
-                                    <p>ID del cetificado: VG7 N96 HNM</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Comercio electrónico</a></h4><br>
+                                    <input type="text " value="YQA VZN WWQ" id="YQAVZNWWQ" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>YQA VZN WWQ <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="comercioelectronico() "> </p>
+                                    <script>
+                                        function comercioelectronico() {
+                                            var copyText = document.getElementById("YQAVZNWWQ");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/web-development-I.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Competencias digitales </h4>
-                                    <p>ID del cetificado: PDR GU5 6QG</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Desarrollo de la web I/II</a> </h4><br>
+                                    <input type="text " value="VG7 N96 HNM" id="VG7N96HNM" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>VG7 N96 HNM <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="desarrolloDeLaWeb() "> </p>
+                                    <script>
+                                        function desarrolloDeLaWeb() {
+                                            var copyText = document.getElementById("VG7N96HNM");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/digital-skills.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Digitaliza tu negocio con Google My Business y Youtube</h4>
-                                    <p>ID del cetificado: DAJ QWX WTG.</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code">Competencias digitales</a> </h4><br>
+                                    <input type="text " value="PDR GU5 6QG" id="PDRGU56QG" style="border: none;" class="SusanStorm">
+                                    <p> ID del certificado
+                                        <br>PDR GU5 6QG <img src="img/copiar.svg" alt="copiar" width="18px" height="18px" onclick="competenciasDigitales() "> </p>
+                                    <script>
+                                        function competenciasDigitales() {
+                                            var copyText = document.getElementById("PDRGU56QG");
+                                            copyText.select();
+                                            copyText.setSelectionRange(0, 99999)
+                                            document.execCommand("copy ");
+                                            alert("Ha sido copiado el ID del certificado: " + copyText.value);
+                                        }
+                                    </script>
                                 </div>
                             </div>
+
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/apps.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0"> Google News Initiative.</h4>
-                                    <p>Training Center Certification</p>
+                                    <h4 class="fw-bold mb-0">
+                                        <a href="https://gweb-news-initiative-training.appspot.com/api/certificate?name=Luis%20Angel%20Maciel%20Padilla&fundamentals=null&&google-podcasts-manager=null&&introduction-to-machine-learning=null&&verification=null&&safety-and-security=null&&multimedia-storytelling=null&&data-journalism=null&&investigative-reporting=null&&publishing-and-monetization=null">Google News Initiative</a>
+                                    </h4><br>
+                                    <p>Training Center Certification
+                                    </p>
                                 </div>
                             </div>
                         </div>
-                        <h3>FreeCodeCamp.org</h3>
+                        <h3>
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/FreeCodeCamp_logo.svg/1280px-FreeCodeCamp_logo.svg.png" width="180px" height="auto" alt="FreeCodeCamp.org"></h3>
                         <br>
                         <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                             <div class="col d-flex align-items-start">
-                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/app.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
+                                <img class="bi text-muted flex-shrink-0 me-3" width="35px" height="35px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/web-development-II.png" alt="Google Activate Certificación" loading="lazy" class="lazy">
                                 <div>
-                                    <h4 class="fw-bold mb-0">Developer Certification</h4>
+                                    <h4 class="fw-bold mb-0">Developer Certification</h4><br>
                                     <a href="https://www.freecodecamp.org/certification/luisangelmaciel/responsive-web-design "> Responsive Web Design</a>
                                 </div>
                             </div>
@@ -515,9 +712,75 @@
                 <br>
                 <br>
 
-                <section>
+                <section class="w3-padding-top-64">
                     <h2 class="pb-2 border-bottom">Apps</h2>
                     <h3>He estructurado y diseñado las siguientes aplicaciones. Autor de multiples proyectos de codigo abierto</h3>
+
+
+
+
+
+                    <section class="w3-container w3-margin-right">
+
+                        <div class="container-profile-cards w3-container  w3-margin-right">
+                            <div class="row">
+
+                                <div class="col-md-4">
+                                    <div class="card profile-card-2">
+                                        <div class="card-img-block">
+                                            <img class="img-fluid img-profile-cards" src="img/Igglybuff.jpg" alt="Card image cap" width="500px" height="325px" alt="Igglybuff" loading="lazy" class="lazy">
+                                        </div>
+                                        <div class="card-body pt-5">
+                                            <img src="https://luisangelmaciel.github.io/Igglybuff/svg/pokebola.svg" alt="profile-image" class="profile img-profile-cards" width="128px" height="128px" alt="Igglybuff" loading="lazy" class="lazy" />
+                                            <h5 class="card-title h5-profile-cards"><a href="https://luisangelmaciel.github.io/Igglybuff/" target="_blank ">Igglybuff</a>
+                                            </h5>
+                                            <p class="card-text">SGV, icons, glyps & font </p>
+
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 w-100 float-left text-center"><strong></strong></p>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <div class="card profile-card-2">
+                                        <div class="card-img-block">
+                                            <img class="img-fluid img-profile-cards" src="img/Igglybuff.jpg" alt="Card image cap" width="500px" height="325px" alt="Igglybuff" loading="lazy" class="lazy">
+                                        </div>
+                                        <div class="card-body pt-5">
+                                            <img src="https://luisangelmaciel.github.io/Igglybuff/svg/logo-hornet-app-gay-color.svg" alt="profile-image" class="profile img-profile-cards" width="128px" height="128px" alt="Igglybuff" loading="lazy" class="lazy" />
+                                            <h5 class="card-title h5-profile-cards">Ringtone Pokerangers</h5>
+                                            <p class="card-text">Ringtone de Pokemon & PowerRanger</p>
+
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 w-100 float-left text-center"><strong></strong></p>
+                                </div>
+
+
+                                <div class="col-md-4">
+                                    <div class="card profile-card-2">
+                                        <div class="card-img-block">
+                                            <img class="img-fluid img-profile-cards" src="img/frases-dragonball.jpg" alt="Card image cap" width="500px" height="325px" alt="Igglybuff" loading="lazy" class="lazy">
+                                        </div>
+                                        <div class="card-body pt-5">
+                                            <img src="https://luisangelmaciel.github.io/Igglybuff/svg/sexoral-one.svg" alt="profile-image" class="profile img-profile-cards" width="128px" height="128px" alt="Igglybuff" loading="lazy" class="lazy" />
+                                            <h5 class="card-title h5-profile-cards">Las mejores frases de Goku</h5>
+                                            <p class="card-text">Generador aleatorio de frases, diseño y animación vectorial.</p>
+                                        </div>
+                                    </div>
+                                    <p class="mt-3 w-100 float-left text-center"><strong></strong></p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+
+
+
+
+
+
+
 
 
                     <div id="ICON-GRIND🌟">
@@ -639,7 +902,7 @@
                 <br>
                 <br>
 
-                <section>
+                <section class="w3-padding-top-64">
                     <h2 class="pb-2 border-bottom">Portafolio</h2>
                     <p>He estructurado y diseñado las siguientes aplicaciones</p>
                     <p></p>
@@ -681,11 +944,10 @@
                     <a href="https://tepozspa.xiiber.com/" target="_blank "><b>Depravex </b> Sexshop online para hombres gay  </a><br>
                 </section>
 
-
                 <br>
                 <br>
 
-                <section>
+                <section class="w3-padding-top-64">
                     <br>
                     <h2 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Entre Love, RT, Me gusta, Forks y Favs</h2>
                     <h3 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">Contacto</h3>
@@ -750,19 +1012,40 @@
                     </details>
 
                     <div id="HECHO-CONAMOR-Y-ETIQUETAS🌟">
-                        <div class="container-hecho">
+                        <div class="container-hecho footer--love">
                             <h1>
-                                Hecho con <code>&lt;amor&gt;</code> y muchas etiquetas<sup>(...)</sup>
+                                Hecho con <code>&lt;amor <span class=" love-heart"></span>&gt;</code> y muchas etiquetas<sup>(...)</sup>
                             </h1>
                         </div>
+
+
+                        <div class="footer--love">
+                            <style>
+                                .footer--love {
+                                    font-size: 0.85rem;
+                                    font-family: "Lato", sans-serif;
+                                }
+                                
+                                .footer--love .love-heart {
+                                    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/heart-smil.svg);
+                                    width: 16px;
+                                    height: 16px;
+                                    display: inline-block;
+                                    margin: 0 5px 0 0;
+                                    vertical-align: middle;
+                                }
+                                
+                                .footer--love a {
+                                    color: #43abf0;
+                                }
+                            </style>
+                        </div>
+
                     </div>
 
 
 
                     <div id="countdown-chronometer">
-
-
-
                         <style>
                             .container-contador-de-tiempo {
                                 justify-content: center;
@@ -848,22 +1131,58 @@
                             </div>
                         </div>
 
-
                         <script src="https://luisangelmaciel.github.io/one/Neon-Glow-countdown-chronometer/js/count-down-chronometerjavascript.js"></script>
-
 
                     </div>
 
 
 
 
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
                 </section>
+
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                </div>
 
                 <div id="experiencia" class="tabcontent">
                     <a href=" https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_blank ">Linkedin</a>
@@ -1200,50 +1519,12 @@
                 </div>
 
                 <div id="lo-nuevo" class="tabcontent">
-
                     <div>
                         <br><br><br><br>
                         <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Xiiber Travel</h2>
                         <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">¡Vámonos de viaje!</h4>
                         <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto "> /*made with <b style="color: red;">❤</b>, by @luisangelmaciel */</p><br>
                         <span>
-    
-                                <style>
-                                    .aqua-button {
-                                        width: 160px;
-                                        height: 40px;
-                                        padding: 5px 16px 3px;
-                                        -webkit-border-radius: 16px;
-                                        -moz-border-radius: 16px;
-                                        border: 2px solid #ccc;
-                                        position: relative;
-                                    
-                                        /* Label */
-                                      
-                                        font-weight: 200;
-                                        color: #fff;
-                                        text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
-                                        text-align: center;
-                                        vertical-align: middle;
-                                        white-space: nowrap;
-                                        text-overflow: ellipsis;
-                                        overflow: hidden;
-                                    }
-                                    
-                                    .aqua {
-                                        background-color: rgba(60, 132, 198, 0.8);
-                                        border-top-color: #8ba2c1;
-                                        border-right-color: #5890bf;
-                                        border-bottom-color: #4f93ca;
-                                        border-left-color: #768fa5;
-                                        -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
-                                        -moz-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
-                                        background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9)));
-                                        /* for FF 3.6 */
-                                        background-image: -moz-linear-gradient(rgba(28, 91, 155, 0.8) 0%, rgba(108, 191, 255, .9) 90%);
-                                    }
-                                </style>
-    
                                 <center>
                                     <div class="aqua-button aqua">
                                         <div class="glare"></div>
@@ -1467,7 +1748,7 @@
                     </div>
 
                 </div>
-            </div>
+                </div>
         </main>
 
         <div style=" width: 100%; height: 15px; background: rgb(255, 255, 255); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
@@ -1475,7 +1756,44 @@
         </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div id="UP PROGRES ">
+            <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css'>
+            <link rel="stylesheet" href="./progress.css">
+
+            <!-- mode 
+            <div class="switch">
+                <div class="circle"></div>
+            </div>
+            -->
+            <div class="progress-wrap">
+                <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+                </svg>
+            </div>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+            <script src="./progress.js"></script>
+
+        </div>
+
         <script>
+            /* Please ❤ this if you like it! */
+
             function myFunction() {
                 var x = document.getElementById("navigachion");
                 if (x.className.indexOf("w3-show") == -1) {
@@ -1556,3 +1874,8 @@
 </html>
 
 </html>
+
+</html>
+
+</html>
+</div>
