@@ -832,7 +832,13 @@ template {
 
 .logo {
     position: fixed;
-    bottom: 60px;
+    bottom: 90px;
+    right: 40px;
+}
+
+.logo-top {
+    position: fixed;
+    top: 60px;
     right: 20px;
 }
 
@@ -1202,7 +1208,7 @@ div.desc {
     .container-name .box .title h1 {
         font-family: "Poppins";
         color: rgb(0, 0, 0);
-        font-size: 25px;
+        font-size: 28px;
         -webkit-animation: mainFadeIn 2s forwards;
         -o-animation: mainFadeIn 2s forwards;
         animation: mainFadeIn 2s forwards;
@@ -1254,11 +1260,10 @@ div.desc {
         font-weight: 800;
         font-family: "Lato";
         color: #0f0101;
-        font-size: 14px;
-        letter-spacing: 4px;
+        font-size: 16px;
         padding-top: 30px;
         padding-bottom: 30px;
-        margin-top: 50px;
+        margin-top: 80px;
         /*  line-height: 1.5px; */
     }
     @keyframes mainBlock {
@@ -1539,12 +1544,6 @@ div.gallery img {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-.logo {
-    position: fixed;
-    bottom: 60px;
-    right: 40px;
 }
 
 body {
@@ -3620,4 +3619,340 @@ strong {
     background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9)));
     /* for FF 3.6 */
     background-image: -moz-linear-gradient(rgba(28, 91, 155, 0.8) 0%, rgba(108, 191, 255, .9) 90%);
+}
+
+.container-contador-de-tiempo {
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contador-de-tiempo .chronometer {
+    font-family: sans-serif;
+    transition: all 0.5s;
+}
+
+.container-contador-de-tiempo .chronometer .time {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container-contador-de-tiempo .chronometer .time .counter-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 12px;
+}
+
+.container-contador-de-tiempo .chronometer .time .counter-down .box {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-contador-de-tiempo .chronometer .time .counter-down .box .left,
+.container-contador-de-tiempo .chronometer .time .counter-down .box .right {
+    position: relative;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.container-contador-de-tiempo .chronometer .time .counter-down .box .left::before,
+.container-contador-de-tiempo .chronometer .time .counter-down .box .right::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 48%;
+    transition: all 0.5s;
+}
+
+.container-contador-de-tiempo .chronometer .time .counter-down .description {
+    transition: all 0.5s;
+}
+
+.div-pronostico {
+    width: 90%;
+    height: 320px;
+    position: relative;
+    top: 20px;
+    font-size: 1em;
+    line-height: 100%;
+    margin: auto;
+    padding: 0px;
+}
+
+.p-pronostico {
+    font-style: normal;
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+}
+
+#weatherdata {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.type-animation {
+    display: inline-flex;
+    width: 0;
+    overflow: hidden;
+    padding-right: 0.03em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.type-animation:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -0.02em;
+    bottom: -0.02em;
+    width: 0.06em;
+    border-right: 2px solid transparent;
+}
+
+.type-animation.animating {
+    -webkit-animation: type 1620ms;
+    animation: type 1620ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.type-animation.animating:after {
+    -webkit-animation: cursor 320ms 8.625 ease-in-out;
+    animation: cursor 320ms 8.625 ease-in-out;
+}
+
+@-webkit-keyframes cursor {
+    0%,
+    100% {
+        border-color: #f7f3ff;
+    }
+    50% {
+        border-color: #241b5b;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    0%,
+    100% {
+        border-color: #f7f3ff;
+    }
+    50% {
+        border-color: #241b5b;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes type {
+    11.1111111111% {
+        width: 0.49em;
+    }
+    22.2222222222% {
+        width: 0.98em;
+    }
+    33.3333333333% {
+        width: 1.47em;
+    }
+    44.4444444444% {
+        width: 1.96em;
+    }
+    55.5555555556% {
+        width: 2.45em;
+    }
+    66.6666666667% {
+        width: 2.94em;
+    }
+    77.7777777778% {
+        width: 3.43em;
+    }
+    88.8888888889% {
+        width: 3.92em;
+    }
+    100% {
+        width: 3.92em;
+        padding-right: 0;
+    }
+}
+
+@keyframes type {
+    11.1111111111% {
+        width: 0.49em;
+    }
+    22.2222222222% {
+        width: 0.98em;
+    }
+    33.3333333333% {
+        width: 1.47em;
+    }
+    44.4444444444% {
+        width: 1.96em;
+    }
+    55.5555555556% {
+        width: 2.45em;
+    }
+    66.6666666667% {
+        width: 2.94em;
+    }
+    77.7777777778% {
+        width: 3.43em;
+    }
+    88.8888888889% {
+        width: 3.92em;
+    }
+    100% {
+        width: 3.30em;
+        padding-right: 0;
+    }
+}
+
+.footer--love {
+    font-size: 0.85rem;
+    font-family: "Lato", sans-serif;
+}
+
+.footer--love .love-heart {
+    background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42764/heart-smil.svg);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+.footer--love a {
+    color: #43abf0;
+}
+
+.type-animation {
+    display: inline-flex;
+    width: 0;
+    overflow: hidden;
+    padding-right: 0.03em;
+    position: relative;
+    color: rgba(0, 0, 0, 0.788);
+}
+
+.type-animation:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -0.02em;
+    bottom: -0.02em;
+    width: 0.06em;
+    border-right: 2px solid transparent;
+}
+
+.type-animation.animating {
+    -webkit-animation: type 1620ms;
+    animation: type 1620ms;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.type-animation.animating:after {
+    -webkit-animation: cursor 320ms 8.625 ease-in-out;
+    animation: cursor 320ms 8.625 ease-in-out;
+}
+
+@-webkit-keyframes cursor {
+    0%,
+    100% {
+        border-color: #f7f3ff;
+    }
+    50% {
+        border-color: #241b5b;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes cursor {
+    0%,
+    100% {
+        border-color: #f7f3ff;
+    }
+    50% {
+        border-color: #241b5b;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+@-webkit-keyframes type {
+    11.1111111111% {
+        width: 0.49em;
+    }
+    22.2222222222% {
+        width: 0.98em;
+    }
+    33.3333333333% {
+        width: 1.47em;
+    }
+    44.4444444444% {
+        width: 1.96em;
+    }
+    55.5555555556% {
+        width: 2.45em;
+    }
+    66.6666666667% {
+        width: 2.94em;
+    }
+    77.7777777778% {
+        width: 3.43em;
+    }
+    88.8888888889% {
+        width: 3.92em;
+    }
+    100% {
+        width: 3.92em;
+        padding-right: 0;
+    }
+}
+
+@keyframes type {
+    11.1111111111% {
+        width: 0.49em;
+    }
+    22.2222222222% {
+        width: 0.98em;
+    }
+    33.3333333333% {
+        width: 1.47em;
+    }
+    44.4444444444% {
+        width: 1.96em;
+    }
+    55.5555555556% {
+        width: 2.45em;
+    }
+    66.6666666667% {
+        width: 2.94em;
+    }
+    77.7777777778% {
+        width: 3.43em;
+    }
+    88.8888888889% {
+        width: 3.92em;
+    }
+    100% {
+        width: 3.30em;
+        padding-right: 0;
+    }
 }
