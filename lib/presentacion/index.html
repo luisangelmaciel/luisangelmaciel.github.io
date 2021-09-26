@@ -42,9 +42,7 @@
 
     <link rel="preload" as="image" href="img/intro.jpg" imagesrcset="intro_400px.jpg 400w, intro_800px.jpg 800w, intro_1600px.jpg 1600w" imagesizes="50vw" />
 
-    <link rel="stylesheet" href="hstylex.css">
-    <script type="text/javascript" src="hscriptx.js"></script>
-    <script type="text/javascript" src="v004.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" />
 
@@ -79,242 +77,231 @@
     -->
 
 
-    <script>
-        /* Para ver la actividad en Github */
-        function updateFeed(username) {
-            GitHubActivity.feed({
-                username: username,
-                selector: '#feed'
-            });
-        }
-
-        $(document).ready(function() {
-            updateFeed('hihellomonster');
-
-            $('#update').click(function() {
-                updateFeed($("#username").val());
-            });
-            $("#username").keypress(function(e) {
-                if (e.which === 13) {
-                    updateFeed($("#username").val());
-                }
-            });
-        });
-    </script>
 
 
-    <style>
-        .header {
-            text-decoration: none;
-        }
-        
-        #navbar {
-            overflow: hidden;
-        }
-        
-        .content {
-            padding: 16px;
-        }
-        
-        .sticky {
-            position: fixed;
-            top: 0;
-            width: 100%;
-        }
-        
-        .sticky+.content {
-            padding-top: 60px;
-        }
-        
-        .scrollmenu {
-            background-color: rgb(0, 0, 0);
-            overflow: auto;
-            white-space: nowrap;
-        }
-        
-        .scrollmenu a {
-            display: inline-block;
-            color: white;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-        }
-        
-        .scrollmenu a:hover {
-            background-color: #777;
-        }
-    </style>
 
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        .row>.column {
-            padding: 0 8px;
-        }
-        
-        .row:after {
-            content: " ";
-            display: table;
-            clear: both;
-        }
-        
-        .column {
-            float: left;
-            width: 25%;
-        }
-        /* The Modal (background) */
-        
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1;
-            padding-top: 100px;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            overflow: auto;
-            background-color: black;
-        }
-        /* Modal Content */
-        
-        .modal-content {
-            position: relative;
-            background-color: #fefefe;
-            margin: auto;
-            padding: 0;
-            width: 90%;
-            max-width: 1200px;
-        }
-        /* The Close Button */
-        
-        .close {
-            color: white;
-            position: absolute;
-            top: 10px;
-            right: 25px;
-            font-size: 35px;
-            font-weight: bold;
-        }
-        
-        .close:hover,
-        .close:focus {
-            color: #999;
-            text-decoration: none;
-            cursor: pointer;
-        }
-        
-        .mySlides {
-            display: none;
-        }
-        
-        .cursor {
-            cursor: pointer;
-        }
-        /* Next & previous buttons */
-        
-        .prev,
-        .next {
-            cursor: pointer;
-            position: absolute;
-            top: 50%;
-            width: auto;
-            padding: 16px;
-            margin-top: -50px;
-            color: white;
-            font-weight: bold;
-            font-size: 20px;
-            transition: 0.6s ease;
-            border-radius: 0 3px 3px 0;
-            user-select: none;
-            -webkit-user-select: none;
-        }
-        /* Position the "next button " to the right */
-        
-        .next {
-            right: 0;
-            border-radius: 3px 0 0 3px;
-        }
-        /* On hover, add a black background color with a little bit see-through */
-        
-        .prev:hover,
-        .next:hover {
-            background-color: rgba(0, 0, 0, 0.8);
-        }
-        /* Number text (1/3 etc) */
-        
-        .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-        }
-        
-        img {
-            margin-bottom: -4px;
-            alt: inherit;
-        }
-        
-        .caption-container {
-            text-align: center;
-            background-color: black;
-            padding: 2px 16px;
-            color: white;
-        }
-        
-        .demo {
-            opacity: 0.6;
-        }
-        
-        .active,
-        .demo:hover {
-            opacity: 1;
-        }
-        
-        img.hover-shadow {
-            transition: 0.3s;
-        }
-        
-        .hover-shadow:hover {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        }
-        
-        div.scrollmenu {
-            background-color: white;
-            overflow: auto;
-            white-space: nowrap;
-        }
-        
-        div.scrollmenu a {
-            display: inline-block;
-            color: black;
-            text-align: center;
-            padding: 14px;
-            text-decoration: none;
-        }
-        
-        div.scrollmenu a:hover {
-            color: #017dbb;
-        }
-        
-        div.scrollmenu a:active {
-            color: #017dbb;
-            font-weight: bold
-        }
-    </style>
 </head>
 
 <body>
 
-    <div class="header">
+    <div>
+        <style>
+            .header {
+                text-decoration: none;
+            }
+            
+            #navbar {
+                overflow: hidden;
+            }
+            
+            .content {
+                padding: 16px;
+            }
+            
+            .sticky {
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            
+            .sticky+.content {
+                padding-top: 60px;
+            }
+            
+            .scrollmenu {
+                background-color: rgb(0, 0, 0);
+                overflow: auto;
+                white-space: nowrap;
+            }
+            
+            .scrollmenu a {
+                display: inline-block;
+                color: white;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+            
+            .scrollmenu a:hover {
+                background-color: #777;
+            }
+        </style>
 
-        <body class="about-me">
-            <nav class="navbar-menu navbar-bg-toggle" style="background-color: black;">
-                <span class='navbar-1'>     
+
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            .row>.column {
+                padding: 0 8px;
+            }
+            
+            .row:after {
+                content: " ";
+                display: table;
+                clear: both;
+            }
+            
+            .column {
+                float: left;
+                width: 25%;
+            }
+            /* The Modal (background) */
+            
+            .modal {
+                display: none;
+                position: fixed;
+                z-index: 1;
+                padding-top: 100px;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                background-color: black;
+            }
+            /* Modal Content */
+            
+            .modal-content {
+                position: relative;
+                background-color: #fefefe;
+                margin: auto;
+                padding: 0;
+                width: 90%;
+                max-width: 1200px;
+            }
+            /* The Close Button */
+            
+            .close {
+                color: white;
+                position: absolute;
+                top: 10px;
+                right: 25px;
+                font-size: 35px;
+                font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+                color: #999;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            
+            .mySlides {
+                display: none;
+            }
+            
+            .cursor {
+                cursor: pointer;
+            }
+            /* Next & previous buttons */
+            
+            .prev,
+            .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -50px;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                -webkit-user-select: none;
+            }
+            /* Position the "next button " to the right */
+            
+            .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+            }
+            /* On hover, add a black background color with a little bit see-through */
+            
+            .prev:hover,
+            .next:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+            /* Number text (1/3 etc) */
+            
+            .numbertext {
+                color: #f2f2f2;
+                font-size: 12px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            
+            img {
+                margin-bottom: -4px;
+                alt: inherit;
+            }
+            
+            .caption-container {
+                text-align: center;
+                background-color: black;
+                padding: 2px 16px;
+                color: white;
+            }
+            
+            .demo {
+                opacity: 0.6;
+            }
+            
+            .active,
+            .demo:hover {
+                opacity: 1;
+            }
+            
+            img.hover-shadow {
+                transition: 0.3s;
+            }
+            
+            .hover-shadow:hover {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            div.scrollmenu {
+                background-color: white;
+                overflow: auto;
+                white-space: nowrap;
+            }
+            
+            div.scrollmenu a {
+                display: inline-block;
+                color: black;
+                text-align: center;
+                padding: 14px;
+                text-decoration: none;
+            }
+            
+            div.scrollmenu a:hover {
+                color: #017dbb;
+            }
+            
+            div.scrollmenu a:active {
+                color: #017dbb;
+                font-weight: bold
+            }
+        </style>
+
+
+        <link rel="stylesheet" href="hstylex.css">
+        <script type="text/javascript" src="hscriptx.js"></script>
+        <script type="text/javascript" src="v004.js"></script>
+        <script src="https://jerrygoyal-firebase-project.web.app/js/main_script.js"></script>
+        <script src='https://code.jquery.com/jquery-3.5.0.min.js'></script>
+        <script src="./script.js "></script>
+
+        <div class="header">
+
+            <body class="about-me">
+                <nav class="navbar-menu navbar-bg-toggle" style="background-color: black;">
+                    <span class='navbar-1'>     
                     <a href="" class="nav-homepage" style="visibility:hidden; display:none"> Luis Angel Maciel </a>
                     <!-- mobile screen hamburger menu -->
                     <div class="nav-menu-select navbar-bg-toggle"">
@@ -333,44 +320,44 @@
                             </li>
                         </ul>
                   </span>
-            </nav>
+                </nav>
 
-            <div class="section intro">
-                <div class="overlay"></div>
-                <div class="content">
-                    <div class="hello-world">Hello, World.</div>
-                    <div class="my-name">I'm Luis Maciel</div>
-                    <p class="typewrite" data-period="3000" data-type='[ "Designer","Startup Founder","FULL STACK DEVELOPER","UI/UX DESIGNER" ]'>
-                        <span class="wrap"></span>
-                    </p>
-                    <a href="#profile" style="  position: absolute;left: 50%;bottom: 10px;margin-left: -20px;cursor: pointer;animation: down 3s ease infinite;">
-                        <i style=" padding: 50px 20px 0px 20px;position: absolute;opacity: 0.7;background: url(https://jerrygoyal-firebase-project.web.app/about-me/img/chevron-down.svg) no-repeat center;"></i>
-                    </a>
+                <div class="section intro">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <div class="hello-world">Hello, World.</div>
+                        <div class="my-name">I'm Luis Maciel</div>
+                        <p class="typewrite" data-period="3000" data-type='[ "Designer","Startup Founder","FULL STACK DEVELOPER","UI/UX DESIGNER" ]'>
+                            <span class="wrap"></span>
+                        </p>
+                        <a href="#profile" style="  position: absolute;left: 50%;bottom: 10px;margin-left: -20px;cursor: pointer;animation: down 3s ease infinite;">
+                            <i style=" padding: 50px 20px 0px 20px;position: absolute;opacity: 0.7;background: url(https://jerrygoyal-firebase-project.web.app/about-me/img/chevron-down.svg) no-repeat center;"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="main-container">
-                <div id="profile" class="section card">
-                    <div class="content row">
-                        <div class="col-12">
-                            <div class="vcard material">
-                                <div class="dp"></div>
-                                <div class="info">
-                                    <div class="main-title">Luis Angel Maciel</div>
-                                    <div class="card-subtitle">Entrepreneur | Tech | UX</div>
-                                    <div class="social ripple-effect">
-                                        <span class="container"><a class="tooltip" href="https://www.linkedin.com/in/LuisAngelMaciel/" target="_blank" rel="noopener" ><div class="social-icon in">  <span class="tooltiptext">Linkedin</span></div>
-                                    </a>
-                                    </span>
+                <div class="main-container">
+                    <div id="profile" class="section card">
+                        <div class="content row">
+                            <div class="col-12">
+                                <div class="vcard material">
+                                    <div class="dp"></div>
+                                    <div class="info">
+                                        <div class="main-title">Luis Angel Maciel</div>
+                                        <div class="card-subtitle">Entrepreneur | Tech | UX</div>
+                                        <div class="social ripple-effect">
+                                            <span class="container"><a class="tooltip" href="https://www.linkedin.com/in/LuisAngelMaciel/" target="_blank" rel="noopener" ><div class="social-icon in">  <span class="tooltiptext">Linkedin</span></div>
+                                        </a>
+                                        </span>
 
-                                    <span class="container">
+                                        <span class="container">
   <a class="tooltip" href="https://twitter.com/LuisAngelMaciel" target="_blank" rel="noopener">
     <div class="social-icon ml">
       <span class="tooltiptext">Twitter</span>
-                                </div>
-                                </a>
-                                </span>
-                                <span class="container">
+                                    </div>
+                                    </a>
+                                    </span>
+                                    <span class="container">
   <a
     class="tooltip"
     href="https://stackoverflow.com/users/3073272/Gourav"
@@ -378,10 +365,10 @@
   >
     <div class="social-icon so">
       <span class="tooltiptext">Stackoverflow</span>
-                            </div>
-                            </a>
-                            </span>
-                            <span class="container">
+                                </div>
+                                </a>
+                                </span>
+                                <span class="container">
   <a
     class="tooltip no-ripple"
     href="https://github.com/LuisAngelMaciel"
@@ -389,10 +376,10 @@
   >
     <div class="social-icon gh">
       <span class="tooltiptext">Github</span>
-                        </div>
-                        </a>
-                        </span>
-                        <span class="container">
+                            </div>
+                            </a>
+                            </span>
+                            <span class="container">
   <a
     class="tooltip no-ripple"
     href="https://medium.com/@luisangelmaciel"
@@ -400,20 +387,20 @@
   >
     <div class="social-icon md">
       <span class="tooltiptext">Medium</span>
+                        </div>
+                        </a>
+                        </span>
+
+
                     </div>
-                    </a>
-                    </span>
-
-
+                    <p>
+                        Namaste, My name isLuis Angel Maciel. I've got a knack for great UI/UX and I am fundamentally strong on the technical side. I've years of experience in building dynamic web projects, mobile apps, and desktop software. I’ve worked on many domains including
+                        Augmented Reality, CRM, Marketing Automation. I love to build new products, create great user experiences and contribute to the open source software community.
+                        <br>
+                        <!-- I am always hungry for new challenges and innovations. -->
+                    </p>
                 </div>
-                <p>
-                    Namaste, My name isLuis Angel Maciel. I've got a knack for great UI/UX and I am fundamentally strong on the technical side. I've years of experience in building dynamic web projects, mobile apps, and desktop software. I’ve worked on many domains including
-                    Augmented Reality, CRM, Marketing Automation. I love to build new products, create great user experiences and contribute to the open source software community.
-                    <br>
-                    <!-- I am always hungry for new challenges and innovations. -->
-                </p>
-            </div>
-    </div>
+        </div>
     </div>
     </div>
     </div>
@@ -451,20 +438,18 @@
         </div>
     </div>
 
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://jerrygoyal-firebase-project.web.app/js/main_script.js"></script>
+
+
 
     </body>
 
+
+
+
+
+
+
     </div>
-
-
-
-    <script src='https://code.jquery.com/jquery-3.5.0.min.js'></script>
-    <script src="./script.js "></script>
-
-
 </body>
 
 </html>
