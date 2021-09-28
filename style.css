@@ -7,13 +7,55 @@
 ╰━┻━━┻┻━━┻╯╰┻╯╰┻━╮┣━━┻━┻┻┻┻┻╯╰┻━━┻┻━━┻━╯
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━╯ code & travel 
+*/
 
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/lato.woff2
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/sourcesanspro.woff2
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/open-sans.woff2
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/unicons.woff2
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/muli.woff2
-https: //luisangelmaciel.github.io/luisangelmaciel/fonts/relaway.woff2*/
+@font-face {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Lato'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/lato.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('SourceSansPro'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/sourcesanspro.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/open-sans.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Unicons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Unicons'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/unicons.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Muli';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Muli'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/muli.woff2) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Relaway';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Relaway'), url(https://luisangelmaciel.github.io/luisangelmaciel/fonts/relaway.woff2) format('woff2');
+    font-display: swap;
+}
 
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
@@ -3972,4 +4014,320 @@ a {
     background-image: url("lamp-icon.svg"); */
     align-items: center;
     text-align: center;
+}
+
+
+/* Preloder */
+
+#preloder {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    min-height: 80vh;
+    background-color: #1B1C24;
+    background-image: url("img/lamp-icon-black-1B1C24.svg");
+    /*  background-color: #1086B5; 
+    background-image: url("lamp-icon.svg"); */
+    align-items: center;
+    text-align: center;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -13px;
+    margin-left: -13px;
+    border-radius: 60px;
+    animation: loader 0.8s linear infinite;
+    -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        border: 4px solid #673ab7;
+        border-left-color: transparent;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+}
+
+@-webkit-keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+        border: 4px solid #673ab7;
+        border-left-color: transparent;
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        border: 4px solid #f44336;
+        border-left-color: transparent;
+    }
+}
+
+.blobs {
+    filter: url(#goo);
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 70px;
+    transform-style: preserve-3d;
+    position: absolute;
+    margin-top: -13px;
+    margin-left: -13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blobs .blob-center {
+    transform-style: preserve-3d;
+    position: absolute;
+    background: #017db0;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform-origin: left top;
+    transform: scale(0.9) translate(-50%, -50%);
+    -webkit-animation: blob-grow linear 3.4s infinite;
+    animation: blob-grow linear 3.4s infinite;
+    border-radius: 50%;
+    box-shadow: 0 -10px 40px -5px #017db0;
+}
+
+.blob {
+    position: absolute;
+    background: #017db0;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    -webkit-animation: blobs ease-out 3.4s infinite;
+    animation: blobs ease-out 3.4s infinite;
+    transform: scale(0.9) translate(-50%, -50%);
+    transform-origin: center top;
+    opacity: 0;
+}
+
+.blob:nth-child(1) {
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
+}
+
+.blob:nth-child(2) {
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+}
+
+.blob:nth-child(3) {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+}
+
+.blob:nth-child(4) {
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+
+.blob:nth-child(5) {
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@-webkit-keyframes blobs {
+    0% {
+        opacity: 0;
+        transform: scale(0) translate(calc(-330px - 50%), -50%);
+    }
+    1% {
+        opacity: 1;
+    }
+    35%,
+    65% {
+        opacity: 1;
+        transform: scale(0.9) translate(-50%, -50%);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate(calc(330px - 50%), -50%);
+    }
+}
+
+@keyframes blobs {
+    0% {
+        opacity: 0;
+        transform: scale(0) translate(calc(-330px - 50%), -50%);
+    }
+    1% {
+        opacity: 1;
+    }
+    35%,
+    65% {
+        opacity: 1;
+        transform: scale(0.9) translate(-50%, -50%);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0) translate(calc(330px - 50%), -50%);
+    }
+}
+
+@-webkit-keyframes blob-grow {
+    0%,
+    39% {
+        transform: scale(0) translate(-50%, -50%);
+    }
+    40%,
+    42% {
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    43%,
+    44% {
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    45%,
+    46% {
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    47%,
+    48% {
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    52% {
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    54% {
+        transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+    58% {
+        transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+    68%,
+    70% {
+        transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+    78% {
+        transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+    80%,
+    81% {
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    82%,
+    83% {
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    84%,
+    85% {
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    86%,
+    87% {
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    90%,
+    91% {
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    92%,
+    100% {
+        transform: scale(0) translate(-50%, -50%);
+    }
+}
+
+@keyframes blob-grow {
+    0%,
+    39% {
+        transform: scale(0) translate(-50%, -50%);
+    }
+    40%,
+    42% {
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    43%,
+    44% {
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    45%,
+    46% {
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    47%,
+    48% {
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    52% {
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    54% {
+        transform: scale(1.7, 1.6) translate(-50%, -50%);
+    }
+    58% {
+        transform: scale(1.8, 1.7) translate(-50%, -50%);
+    }
+    68%,
+    70% {
+        transform: scale(1.7, 1.5) translate(-50%, -50%);
+    }
+    78% {
+        transform: scale(1.6, 1.4) translate(-50%, -50%);
+    }
+    80%,
+    81% {
+        transform: scale(1.5, 1.4) translate(-50%, -50%);
+    }
+    82%,
+    83% {
+        transform: scale(1.4, 1.3) translate(-50%, -50%);
+    }
+    84%,
+    85% {
+        transform: scale(1.3, 1.2) translate(-50%, -50%);
+    }
+    86%,
+    87% {
+        transform: scale(1.2, 1.1) translate(-50%, -50%);
+    }
+    90%,
+    91% {
+        transform: scale(1, 0.9) translate(-50%, -50%);
+    }
+    92%,
+    100% {
+        transform: scale(0) translate(-50%, -50%);
+    }
 }
