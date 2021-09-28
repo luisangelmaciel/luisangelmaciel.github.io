@@ -79,13 +79,13 @@
     <!-- Twitter -->
     <script type="text/javascript " charset="utf-8 " src="https://platform.twitter.com/widgets.js" async></script>
     <meta name="twitter:widgets:autoload" content="off">
-    <link rel="canonical" href="https://developer.twitter.com/en/docs/twitter-for-websites/tools-and-libraries">
+    <!--     <link rel="canonical" href="https://developer.twitter.com/en/docs/twitter-for-websites/tools-and-libraries"> -->
     <link rel="me " href="https://twitter.com/luisangelmaciel">
     <meta name="twitter:widgets:border-color" content="#ff00ff">
     <meta name="twitter:widgets:theme" content="dark">
     <meta name="twitter:dnt" content="on">
 
-
+    <link rel="preload" as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
@@ -96,7 +96,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
 
     <script src="entradas.js"></script>
-    <script src="hi.js"></script>
+    <!--     <script src="hi.js"></script> -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
@@ -129,6 +129,293 @@
 </head>
 
 <body>
+    <div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="preloader.js"></script>
+        <!-- Page Preloder -->
+        <div id="preloder" class=" background-icon-black-1B1C24">
+            <div class="loader"> </div>
+            <div id="🌟Name-presentation">
+                <style>
+                    @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+                    .container-name123 {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .container-name123 .box123 {
+                        display: flex;
+                        justify-content: center;
+                        flex-direction: column;
+                        height: 450px;
+                    }
+                    
+                    .container-name123 .box123 .title123 {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        height: 50px;
+                    }
+                    
+                    .container-name123 .box123 .title123 .block123 {
+                        width: 0%;
+                        height: inherit;
+                        background: linear-gradient( to right, #18487D, #103155, #0c243f, #071d36, #09305c, #0d427e, #1055a3);
+                        /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+                        background-position: center 0%;
+                        animation: background-slide 1s infinite linear;
+                        position: absolute;
+                        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                        display: flex;
+                    }
+                    
+                    .container-name123 .box123 .title123 h1 {
+                        font-family: "Poppins";
+                        color: rgb(255, 255, 255);
+                        font-size: 40px;
+                        -webkit-animation: mainFadeIn 2s forwards;
+                        -o-animation: mainFadeIn 2s forwards;
+                        animation: mainFadeIn 2s forwards;
+                        animation-delay: 1.6s;
+                        opacity: 0;
+                        display: flex;
+                        align-items: baseline;
+                        position: relative;
+                    }
+                    
+                    .container-name123 .box123 .title123 h1 span {
+                        width: 0px;
+                        height: 0px;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        border-radius: 50%;
+                        background: #017db0;
+                        -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                        animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                        animation-delay: 2s;
+                        margin-left: 5px;
+                        margin-top: -15px;
+                        position: absolute;
+                        bottom: 33px;
+                        right: -12px;
+                    }
+                    
+                    .container-name123 .box123 .role123 {
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        height: 30px;
+                        margin-top: -10px;
+                    }
+                    
+                    .container-name123 .box123 .role123 .block123 {
+                        width: 0%;
+                        height: inherit;
+                        background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+                        background-position: center 0%;
+                        animation: background-slide 1s infinite linear;
+                        position: absolute;
+                        animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                        animation-delay: 2s;
+                        display: flex;
+                    }
+                    
+                    .container-name123 .box123 .role123 p {
+                        animation: secFadeIn 2s forwards;
+                        animation-delay: 3.2s;
+                        opacity: 0;
+                        font-weight: 800;
+                        font-family: "Lato";
+                        color: #d6d6d6;
+                        font-size: 20px;
+                        letter-spacing: 6px;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                        margin-top: 33px;
+                    }
+                    
+                    @keyframes mainBlock {
+                        0% {
+                            width: 0%;
+                            left: 0;
+                        }
+                        50% {
+                            width: 100%;
+                            left: 0;
+                        }
+                        100% {
+                            width: 0;
+                            left: 100%;
+                        }
+                    }
+                    
+                    @keyframes secBlock {
+                        0% {
+                            width: 0%;
+                            left: 0;
+                        }
+                        50% {
+                            width: 100%;
+                            left: 0;
+                        }
+                        100% {
+                            width: 0;
+                            left: 100%;
+                        }
+                    }
+                    
+                    @keyframes mainFadeIn {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 1;
+                        }
+                    }
+                    
+                    @keyframes popIn {
+                        0% {
+                            width: 0px;
+                            height: 0px;
+                            background: #ffb510;
+                            opacity: 0;
+                        }
+                        50% {
+                            width: 10px;
+                            height: 10px;
+                            background: #ffb510;
+                            opacity: 1;
+                            bottom: 45px;
+                        }
+                        65% {
+                            width: 7px;
+                            height: 7px;
+                            bottom: 0px;
+                            width: 15px;
+                        }
+                        80% {
+                            width: 10px;
+                            height: 10px;
+                            bottom: 20px;
+                        }
+                        100% {
+                            width: 7px;
+                            height: 7px;
+                            background: #ffb510;
+                            bottom: 13px;
+                        }
+                    }
+                    
+                    @keyframes secFadeIn {
+                        0% {
+                            opacity: 0;
+                        }
+                        100% {
+                            opacity: 0.5;
+                        }
+                    }
+                </style>
+                <div class="container-name123">
+                    <div class="box123">
+
+                        <div class="title123">
+                            <span class="block123 "></span>
+                            <h1 style="  text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 104), 0 0 0.2em rgb(15, 15, 212);"><img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
+                        </div>
+
+                        <div class="role123">
+                            <div class="block123"></div>
+                            <br>
+                            <p>Marketing, diseño y ventas</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <style>
+            /* Preloder */
+            
+            #preloder {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 999999;
+                justify-content: center;
+                gap: 2rem;
+                padding: 3rem;
+                min-height: 80vh;
+                background-color: #1B1C24;
+                background-image: url("img/lamp-icon-black-1B1C24.svg");
+                /*  background-color: #1086B5; 
+                background-image: url("lamp-icon.svg"); */
+                align-items: center;
+                text-align: center;
+            }
+            
+            .loader {
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                margin-top: -13px;
+                margin-left: -13px;
+                border-radius: 60px;
+                animation: loader 0.8s linear infinite;
+                -webkit-animation: loader 0.8s linear infinite;
+            }
+            
+            @keyframes loader {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    transform: rotate(0deg);
+                    border: 4px solid #f44336;
+                    border-left-color: transparent;
+                }
+                50% {
+                    -webkit-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                    border: 4px solid #673ab7;
+                    border-left-color: transparent;
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                    border: 4px solid #f44336;
+                    border-left-color: transparent;
+                }
+            }
+            
+            @-webkit-keyframes loader {
+                0% {
+                    -webkit-transform: rotate(0deg);
+                    border: 4px solid #f44336;
+                    border-left-color: transparent;
+                }
+                50% {
+                    -webkit-transform: rotate(180deg);
+                    border: 4px solid #673ab7;
+                    border-left-color: transparent;
+                }
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    border: 4px solid #f44336;
+                    border-left-color: transparent;
+                }
+            }
+        </style>
+
+
+    </div>
+
+
 
     <div class="w3-top">
         <div class="w3-bar w3-white ">
@@ -909,11 +1196,10 @@
         </style>
 
 
-        <link rel="stylesheet" href="hstylex.css">
-        <script type="text/javascript" src="hscriptx.js"></script>
-        <script type="text/javascript" src="v004.js"></script>
+
+
         <script src="https://jerrygoyal-firebase-project.web.app/js/main_script.js"></script>
-        <script src='https://code.jquery.com/jquery-3.5.0.min.js'></script>
+        <!--     <script src='https://code.jquery.com/jquery-3.5.0.min.js'></script> -->
         <script src="./script.js "></script>
 
         <div class="header">
@@ -1259,8 +1545,8 @@
                         <div class="fullWidth eight columns">
                             <ul class="cbp_tmtimeline">
                                 <li>
-                                    <div class="cbp_tmicon cbp_tmicon-phone">
-                                        <img width="80px" height="80px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/atgroup.svg" loading="lazy" class="lazy" alt="AtGroup">
+                                    <div>
+                                        <img class="cbp_tmicon cbp_tmicon-phone" width="80px" height="80px" src="https://luisangelmaciel.github.io/luisangelmaciel/img/atgroup.svg" loading="lazy" class="lazy" alt="AtGroup">
                                     </div>
                                     <div class="cbp_tmlabel wow fadeInRight animated">
                                         <h3>Web developer</h3>
@@ -1581,7 +1867,7 @@
                 <br>
                 <div class=" row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 ">
                     <div class="col d-flex align-items-start ">
-                        <img class="bi text-muted flex-shrink-0 me-3 " width="35px " height="35px " src="https://luisangelmaciel.github.io/luisangelmaciel/img/web-development-II.png " alt="Google Activate Certificación " loading="lazy " class="lazy ">
+                        <img class="bi text-muted flex-shrink-0 me-3 " width="35px " height="35px " src="https://luisangelmaciel.github.io/luisangelmaciel/img/web-development-II.svg " alt="Google Activate Certificación " loading="lazy " class="lazy ">
                         <div>
                             <h4 class="fw-bold mb-0 ">Developer Certification</h4><br>
                             <a href="https://www.freecodecamp.org/certification/luisangelmaciel/responsive-web-design "> Responsive Web Design</a>
@@ -1611,7 +1897,7 @@
 
 
                                 <div class="w3-display-container w3-text-white ">
-                                    <img src="img/Igglybuff.jpg " alt="Lights " width="100% " height="225 ">
+                                    <img src="img/Igglybuff.jpg " alt="Lights " width="100% " height="225 " loading="lazy " class="lazy ">>
                                     <div class="w3-padding w3-display-topleft w3-large w3-hide-large w3-hide-medium w3-hide-small "> Top left </div>
                                     <div class="w3-padding w3-display-topright w3-hide-small w3-hide-large w3-hide-medium ">Top Right</div>
                                     <div class="w3-padding w3-display-bottomleft w3-xlarge ">¿Estás buscando una sorpresa para el Día de la Madre?</div>
@@ -1856,12 +2142,12 @@
                 </summary>
                 <div id="LONUEVO ">
 
-                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity "></i> Xiiber Travel</h2>
+                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity "></i> Xiiber Travel</h2>
                     <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">¡Vámonos de viaje!</h4>
                     <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto "> /*made with <b style="color: red; ">❤</b>, by @luisangelmaciel */</p><br>
 
                     <ul id="Activity "><br>
-                        <li hi-repeat="hiHelloMaciel " style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
+                        <li w3-repeat="hiHelloMaciel " style="list-style-type: none;margin-left: 10px; margin-right: 13px; ">
                             <div style="display: flex; ">
                                 <img src="{{img-src}} " style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; "  width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload ">
 
@@ -1876,7 +2162,7 @@
                         </li>
                     </ul>
                     <script>
-                        hi.displayObject("Activity ", myObject);
+                        w3.displayObject("Activity ", myObject);
                     </script>
                     <br>
                     <div class="LA.MCL🌟 ">
@@ -2018,7 +2304,7 @@
 
                 </summary>
 
-                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity "></i> Dragvesti</h2>
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity "></i> Dragvesti</h2>
                 <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">All Stars</h4>
                 <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto ">Este <i>modo</i> es tan vacío que puede ser un espacio para la meditación.</p>
 
@@ -2259,7 +2545,7 @@
     </script>
 
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<!--     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js'></script>
     <script src="./script-Work-experience.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
