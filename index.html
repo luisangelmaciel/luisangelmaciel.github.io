@@ -97,7 +97,7 @@
 
     <script src="entradas.js"></script>
     <!--     <script src="hi.js"></script> -->
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
@@ -113,7 +113,7 @@
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link rel="https://api.w.org/" href="wp-json/" />
-    <link rel="preload" as="image" href="img/intro.jpg" imagesrcset="intro_400px.jpg 400w, intro_800px.jpg 800w, intro_1600px.jpg 1600w" imagesizes="50vw" />
+    <!-- <link rel="preload" as="image" href="img/intro.jpg" imagesrcset="intro_400px.jpg 400w, intro_800px.jpg 800w, intro_1600px.jpg 1600w" imagesizes="50vw" /> -->
 
     <link rel="stylesheet" href="hstylex.css">
     <script type="text/javascript" src="hscriptx.js"></script>
@@ -134,207 +134,275 @@
         <script src="preloader.js"></script>
         <!-- Page Preloder -->
         <div id="preloder" class=" background-icon-black-1B1C24">
-            <div class="loader"> </div>
-            <div id="🌟Name-presentation">
+
+            <div class="loader"></div>
+            <div style="   display: flex;
+            justify-content: center;
+            align-items: center;">
                 <style>
-                    @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-                    .container-name123 {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    
-                    .container-name123 .box123 {
-                        display: flex;
-                        justify-content: center;
-                        flex-direction: column;
-                        height: 450px;
-                    }
-                    
-                    .container-name123 .box123 .title123 {
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        height: 50px;
-                    }
-                    
-                    .container-name123 .box123 .title123 .block123 {
-                        width: 0%;
-                        height: inherit;
-                        background: linear-gradient( to right, #18487D, #103155, #0c243f, #071d36, #09305c, #0d427e, #1055a3);
-                        /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
-                        background-position: center 0%;
-                        animation: background-slide 1s infinite linear;
-                        position: absolute;
-                        animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                        display: flex;
-                    }
-                    
-                    .container-name123 .box123 .title123 h1 {
-                        font-family: "Poppins";
-                        color: rgb(255, 255, 255);
-                        font-size: 40px;
-                        -webkit-animation: mainFadeIn 2s forwards;
-                        -o-animation: mainFadeIn 2s forwards;
-                        animation: mainFadeIn 2s forwards;
-                        animation-delay: 1.6s;
-                        opacity: 0;
-                        display: flex;
-                        align-items: baseline;
+                    .blobs {
+                        filter: url(#goo);
+                        width: 300px;
+                        height: 300px;
                         position: relative;
+                        overflow: hidden;
+                        border-radius: 70px;
+                        transform-style: preserve-3d;
+                        position: absolute;
+                        margin-top: -13px;
+                        margin-left: -13px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                     
-                    .container-name123 .box123 .title123 h1 span {
-                        width: 0px;
-                        height: 0px;
-                        -webkit-border-radius: 50%;
-                        -moz-border-radius: 50%;
-                        border-radius: 50%;
+                    .blobs .blob-center {
+                        transform-style: preserve-3d;
+                        position: absolute;
                         background: #017db0;
-                        -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                        animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                        animation-delay: 2s;
-                        margin-left: 5px;
-                        margin-top: -15px;
-                        position: absolute;
-                        bottom: 33px;
-                        right: -12px;
-                    }
-                    
-                    .container-name123 .box123 .role123 {
-                        width: 100%;
-                        position: relative;
-                        display: flex;
-                        align-items: center;
+                        top: 50%;
+                        left: 50%;
+                        width: 30px;
                         height: 30px;
-                        margin-top: -10px;
+                        transform-origin: left top;
+                        transform: scale(0.9) translate(-50%, -50%);
+                        -webkit-animation: blob-grow linear 3.4s infinite;
+                        animation: blob-grow linear 3.4s infinite;
+                        border-radius: 50%;
+                        box-shadow: 0 -10px 40px -5px #017db0;
                     }
                     
-                    .container-name123 .box123 .role123 .block123 {
-                        width: 0%;
-                        height: inherit;
-                        background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
-                        background-position: center 0%;
-                        animation: background-slide 1s infinite linear;
+                    .blob {
                         position: absolute;
-                        animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                        animation-delay: 2s;
-                        display: flex;
-                    }
-                    
-                    .container-name123 .box123 .role123 p {
-                        animation: secFadeIn 2s forwards;
-                        animation-delay: 3.2s;
+                        background: #017db0;
+                        top: 50%;
+                        left: 50%;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        -webkit-animation: blobs ease-out 3.4s infinite;
+                        animation: blobs ease-out 3.4s infinite;
+                        transform: scale(0.9) translate(-50%, -50%);
+                        transform-origin: center top;
                         opacity: 0;
-                        font-weight: 800;
-                        font-family: "Lato";
-                        color: #d6d6d6;
-                        font-size: 20px;
-                        letter-spacing: 6px;
-                        padding-top: 30px;
-                        padding-bottom: 30px;
-                        margin-top: 33px;
                     }
                     
-                    @keyframes mainBlock {
-                        0% {
-                            width: 0%;
-                            left: 0;
-                        }
-                        50% {
-                            width: 100%;
-                            left: 0;
-                        }
-                        100% {
-                            width: 0;
-                            left: 100%;
-                        }
+                    .blob:nth-child(1) {
+                        -webkit-animation-delay: 0.2s;
+                        animation-delay: 0.2s;
                     }
                     
-                    @keyframes secBlock {
-                        0% {
-                            width: 0%;
-                            left: 0;
-                        }
-                        50% {
-                            width: 100%;
-                            left: 0;
-                        }
-                        100% {
-                            width: 0;
-                            left: 100%;
-                        }
+                    .blob:nth-child(2) {
+                        -webkit-animation-delay: 0.4s;
+                        animation-delay: 0.4s;
                     }
                     
-                    @keyframes mainFadeIn {
+                    .blob:nth-child(3) {
+                        -webkit-animation-delay: 0.6s;
+                        animation-delay: 0.6s;
+                    }
+                    
+                    .blob:nth-child(4) {
+                        -webkit-animation-delay: 0.8s;
+                        animation-delay: 0.8s;
+                    }
+                    
+                    .blob:nth-child(5) {
+                        -webkit-animation-delay: 1s;
+                        animation-delay: 1s;
+                    }
+                    
+                    @-webkit-keyframes blobs {
                         0% {
                             opacity: 0;
+                            transform: scale(0) translate(calc(-330px - 50%), -50%);
                         }
-                        100% {
+                        1% {
                             opacity: 1;
                         }
-                    }
-                    
-                    @keyframes popIn {
-                        0% {
-                            width: 0px;
-                            height: 0px;
-                            background: #ffb510;
-                            opacity: 0;
-                        }
-                        50% {
-                            width: 10px;
-                            height: 10px;
-                            background: #ffb510;
-                            opacity: 1;
-                            bottom: 45px;
-                        }
+                        35%,
                         65% {
-                            width: 7px;
-                            height: 7px;
-                            bottom: 0px;
-                            width: 15px;
+                            opacity: 1;
+                            transform: scale(0.9) translate(-50%, -50%);
                         }
-                        80% {
-                            width: 10px;
-                            height: 10px;
-                            bottom: 20px;
+                        99% {
+                            opacity: 1;
                         }
                         100% {
-                            width: 7px;
-                            height: 7px;
-                            background: #ffb510;
-                            bottom: 13px;
+                            opacity: 0;
+                            transform: scale(0) translate(calc(330px - 50%), -50%);
                         }
                     }
                     
-                    @keyframes secFadeIn {
+                    @keyframes blobs {
                         0% {
                             opacity: 0;
+                            transform: scale(0) translate(calc(-330px - 50%), -50%);
+                        }
+                        1% {
+                            opacity: 1;
+                        }
+                        35%,
+                        65% {
+                            opacity: 1;
+                            transform: scale(0.9) translate(-50%, -50%);
+                        }
+                        99% {
+                            opacity: 1;
                         }
                         100% {
-                            opacity: 0.5;
+                            opacity: 0;
+                            transform: scale(0) translate(calc(330px - 50%), -50%);
+                        }
+                    }
+                    
+                    @-webkit-keyframes blob-grow {
+                        0%,
+                        39% {
+                            transform: scale(0) translate(-50%, -50%);
+                        }
+                        40%,
+                        42% {
+                            transform: scale(1, 0.9) translate(-50%, -50%);
+                        }
+                        43%,
+                        44% {
+                            transform: scale(1.2, 1.1) translate(-50%, -50%);
+                        }
+                        45%,
+                        46% {
+                            transform: scale(1.3, 1.2) translate(-50%, -50%);
+                        }
+                        47%,
+                        48% {
+                            transform: scale(1.4, 1.3) translate(-50%, -50%);
+                        }
+                        52% {
+                            transform: scale(1.5, 1.4) translate(-50%, -50%);
+                        }
+                        54% {
+                            transform: scale(1.7, 1.6) translate(-50%, -50%);
+                        }
+                        58% {
+                            transform: scale(1.8, 1.7) translate(-50%, -50%);
+                        }
+                        68%,
+                        70% {
+                            transform: scale(1.7, 1.5) translate(-50%, -50%);
+                        }
+                        78% {
+                            transform: scale(1.6, 1.4) translate(-50%, -50%);
+                        }
+                        80%,
+                        81% {
+                            transform: scale(1.5, 1.4) translate(-50%, -50%);
+                        }
+                        82%,
+                        83% {
+                            transform: scale(1.4, 1.3) translate(-50%, -50%);
+                        }
+                        84%,
+                        85% {
+                            transform: scale(1.3, 1.2) translate(-50%, -50%);
+                        }
+                        86%,
+                        87% {
+                            transform: scale(1.2, 1.1) translate(-50%, -50%);
+                        }
+                        90%,
+                        91% {
+                            transform: scale(1, 0.9) translate(-50%, -50%);
+                        }
+                        92%,
+                        100% {
+                            transform: scale(0) translate(-50%, -50%);
+                        }
+                    }
+                    
+                    @keyframes blob-grow {
+                        0%,
+                        39% {
+                            transform: scale(0) translate(-50%, -50%);
+                        }
+                        40%,
+                        42% {
+                            transform: scale(1, 0.9) translate(-50%, -50%);
+                        }
+                        43%,
+                        44% {
+                            transform: scale(1.2, 1.1) translate(-50%, -50%);
+                        }
+                        45%,
+                        46% {
+                            transform: scale(1.3, 1.2) translate(-50%, -50%);
+                        }
+                        47%,
+                        48% {
+                            transform: scale(1.4, 1.3) translate(-50%, -50%);
+                        }
+                        52% {
+                            transform: scale(1.5, 1.4) translate(-50%, -50%);
+                        }
+                        54% {
+                            transform: scale(1.7, 1.6) translate(-50%, -50%);
+                        }
+                        58% {
+                            transform: scale(1.8, 1.7) translate(-50%, -50%);
+                        }
+                        68%,
+                        70% {
+                            transform: scale(1.7, 1.5) translate(-50%, -50%);
+                        }
+                        78% {
+                            transform: scale(1.6, 1.4) translate(-50%, -50%);
+                        }
+                        80%,
+                        81% {
+                            transform: scale(1.5, 1.4) translate(-50%, -50%);
+                        }
+                        82%,
+                        83% {
+                            transform: scale(1.4, 1.3) translate(-50%, -50%);
+                        }
+                        84%,
+                        85% {
+                            transform: scale(1.3, 1.2) translate(-50%, -50%);
+                        }
+                        86%,
+                        87% {
+                            transform: scale(1.2, 1.1) translate(-50%, -50%);
+                        }
+                        90%,
+                        91% {
+                            transform: scale(1, 0.9) translate(-50%, -50%);
+                        }
+                        92%,
+                        100% {
+                            transform: scale(0) translate(-50%, -50%);
                         }
                     }
                 </style>
-                <div class="container-name123">
-                    <div class="box123">
-
-                        <div class="title123">
-                            <span class="block123 "></span>
-                            <h1 style="  text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 104), 0 0 0.2em rgb(15, 15, 212);"><img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
-                        </div>
-
-                        <div class="role123">
-                            <div class="block123"></div>
-                            <br>
-                            <p>Marketing, diseño y ventas</p>
-                        </div>
-
-                    </div>
+                <div class="blobs">
+                    <div class="blob-center"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
+                    <div class="blob"></div>
                 </div>
-
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+              <defs>
+                <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feBlend in="SourceGraphic" in2="goo" />
+                  </filter>
+              </defs>
+                </svg>
             </div>
+
+
         </div>
 
         <style>
@@ -511,209 +579,6 @@
 
 
 
-    <div class=" " style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000);" style="height: 100%">
-        <div id="🌟Name-presentation">
-            <style>
-                @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
-                .container-name123 {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .container-name123 .box123 {
-                    display: flex;
-                    justify-content: center;
-                    flex-direction: column;
-                    height: 450px;
-                }
-                
-                .container-name123 .box123 .title123 {
-                    width: 100%;
-                    display: flex;
-                    align-items: center;
-                    height: 50px;
-                }
-                
-                .container-name123 .box123 .title123 .block123 {
-                    width: 0%;
-                    height: inherit;
-                    background: linear-gradient( to right, #18487D, #103155, #0c243f, #071d36, #09305c, #0d427e, #1055a3);
-                    /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
-                    background-position: center 0%;
-                    animation: background-slide 1s infinite linear;
-                    position: absolute;
-                    animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                    display: flex;
-                }
-                
-                .container-name123 .box123 .title123 h1 {
-                    font-family: "Poppins";
-                    color: rgb(255, 255, 255);
-                    font-size: 40px;
-                    -webkit-animation: mainFadeIn 2s forwards;
-                    -o-animation: mainFadeIn 2s forwards;
-                    animation: mainFadeIn 2s forwards;
-                    animation-delay: 1.6s;
-                    opacity: 0;
-                    display: flex;
-                    align-items: baseline;
-                    position: relative;
-                }
-                
-                .container-name123 .box123 .title123 h1 span {
-                    width: 0px;
-                    height: 0px;
-                    -webkit-border-radius: 50%;
-                    -moz-border-radius: 50%;
-                    border-radius: 50%;
-                    background: #017db0;
-                    -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                    animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                    animation-delay: 2s;
-                    margin-left: 5px;
-                    margin-top: -15px;
-                    position: absolute;
-                    bottom: 33px;
-                    right: -12px;
-                }
-                
-                .container-name123 .box123 .role123 {
-                    width: 100%;
-                    position: relative;
-                    display: flex;
-                    align-items: center;
-                    height: 30px;
-                    margin-top: -10px;
-                }
-                
-                .container-name123 .box123 .role123 .block123 {
-                    width: 0%;
-                    height: inherit;
-                    background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
-                    background-position: center 0%;
-                    animation: background-slide 1s infinite linear;
-                    position: absolute;
-                    animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
-                    animation-delay: 2s;
-                    display: flex;
-                }
-                
-                .container-name123 .box123 .role123 p {
-                    animation: secFadeIn 2s forwards;
-                    animation-delay: 3.2s;
-                    opacity: 0;
-                    font-weight: 800;
-                    font-family: "Lato";
-                    color: #d6d6d6;
-                    font-size: 20px;
-                    letter-spacing: 6px;
-                    padding-top: 30px;
-                    padding-bottom: 30px;
-                    margin-top: 33px;
-                }
-                
-                @keyframes mainBlock {
-                    0% {
-                        width: 0%;
-                        left: 0;
-                    }
-                    50% {
-                        width: 100%;
-                        left: 0;
-                    }
-                    100% {
-                        width: 0;
-                        left: 100%;
-                    }
-                }
-                
-                @keyframes secBlock {
-                    0% {
-                        width: 0%;
-                        left: 0;
-                    }
-                    50% {
-                        width: 100%;
-                        left: 0;
-                    }
-                    100% {
-                        width: 0;
-                        left: 100%;
-                    }
-                }
-                
-                @keyframes mainFadeIn {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 1;
-                    }
-                }
-                
-                @keyframes popIn {
-                    0% {
-                        width: 0px;
-                        height: 0px;
-                        background: #ffb510;
-                        opacity: 0;
-                    }
-                    50% {
-                        width: 10px;
-                        height: 10px;
-                        background: #ffb510;
-                        opacity: 1;
-                        bottom: 45px;
-                    }
-                    65% {
-                        width: 7px;
-                        height: 7px;
-                        bottom: 0px;
-                        width: 15px;
-                    }
-                    80% {
-                        width: 10px;
-                        height: 10px;
-                        bottom: 20px;
-                    }
-                    100% {
-                        width: 7px;
-                        height: 7px;
-                        background: #ffb510;
-                        bottom: 13px;
-                    }
-                }
-                
-                @keyframes secFadeIn {
-                    0% {
-                        opacity: 0;
-                    }
-                    100% {
-                        opacity: 0.5;
-                    }
-                }
-            </style>
-            <div class="container-name123">
-                <div class="box123">
-
-                    <div class="title123">
-                        <span class="block123 "></span>
-                        <h1 style="  text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 104), 0 0 0.2em rgb(15, 15, 212);"><img src="https://luisangelmaciel.github.io/luisangelmaciel/img/etiquetas-codigo.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
-                    </div>
-
-                    <div class="role123">
-                        <div class="block123"></div>
-                        <br>
-                        <p>Marketing, diseño y ventas</p>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </div>
-
 
 
     <div class=" background-icon-black-1B1C24">
@@ -743,8 +608,8 @@
 
 
                 <!-- lamp-services -->
-                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="auto" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-                    viewBox="0 0 4538.12 2260.58" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="300px" height="" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 4538.12 2260.58"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
           <defs>
            <style type="text/css">
             <![CDATA[
@@ -990,416 +855,6 @@
     </div>
 
 
-    <div>
-        <style>
-            .header {
-                text-decoration: none;
-            }
-            
-            #navbar {
-                overflow: hidden;
-            }
-            
-            .content {
-                padding: 16px;
-            }
-            
-            .sticky {
-                position: fixed;
-                top: 0;
-                width: 100%;
-            }
-            
-            .sticky+.content {
-                padding-top: 60px;
-            }
-            
-            .scrollmenu {
-                background-color: rgb(0, 0, 0);
-                overflow: auto;
-                white-space: nowrap;
-            }
-            
-            .scrollmenu a {
-                display: inline-block;
-                color: white;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-            }
-            
-            .scrollmenu a:hover {
-                background-color: #777;
-            }
-        </style>
-
-
-        <style>
-            * {
-                box-sizing: border-box;
-            }
-            
-            .row>.column {
-                padding: 0 8px;
-            }
-            
-            .row:after {
-                content: " ";
-                display: table;
-                clear: both;
-            }
-            
-            .column {
-                float: left;
-                width: 25%;
-            }
-            /* The Modal (background) */
-            
-            .modal {
-                display: none;
-                position: fixed;
-                z-index: 1;
-                padding-top: 100px;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                overflow: auto;
-                background-color: black;
-            }
-            /* Modal Content */
-            
-            .modal-content {
-                position: relative;
-                background-color: #fefefe;
-                margin: auto;
-                padding: 0;
-                width: 90%;
-                max-width: 1200px;
-            }
-            /* The Close Button */
-            
-            .close {
-                color: white;
-                position: absolute;
-                top: 10px;
-                right: 25px;
-                font-size: 35px;
-                font-weight: bold;
-            }
-            
-            .close:hover,
-            .close:focus {
-                color: #999;
-                text-decoration: none;
-                cursor: pointer;
-            }
-            
-            .mySlides {
-                display: none;
-            }
-            
-            .cursor {
-                cursor: pointer;
-            }
-            /* Next & previous buttons */
-            
-            .prev,
-            .next {
-                cursor: pointer;
-                position: absolute;
-                top: 50%;
-                width: auto;
-                padding: 16px;
-                margin-top: -50px;
-                color: white;
-                font-weight: bold;
-                font-size: 20px;
-                transition: 0.6s ease;
-                border-radius: 0 3px 3px 0;
-                user-select: none;
-                -webkit-user-select: none;
-            }
-            /* Position the "next button " to the right */
-            
-            .next {
-                right: 0;
-                border-radius: 3px 0 0 3px;
-            }
-            /* On hover, add a black background color with a little bit see-through */
-            
-            .prev:hover,
-            .next:hover {
-                background-color: rgba(0, 0, 0, 0.8);
-            }
-            /* Number text (1/3 etc) */
-            
-            .numbertext {
-                color: #f2f2f2;
-                font-size: 12px;
-                padding: 8px 12px;
-                position: absolute;
-                top: 0;
-            }
-            
-            img {
-                margin-bottom: -4px;
-                alt: inherit;
-            }
-            
-            .caption-container {
-                text-align: center;
-                background-color: black;
-                padding: 2px 16px;
-                color: white;
-            }
-            
-            .demo {
-                opacity: 0.6;
-            }
-            
-            .active,
-            .demo:hover {
-                opacity: 1;
-            }
-            
-            img.hover-shadow {
-                transition: 0.3s;
-            }
-            
-            .hover-shadow:hover {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            
-            div.scrollmenu {
-                background-color: white;
-                overflow: auto;
-                white-space: nowrap;
-            }
-            
-            div.scrollmenu a {
-                display: inline-block;
-                color: black;
-                text-align: center;
-                padding: 14px;
-                text-decoration: none;
-            }
-            
-            div.scrollmenu a:hover {
-                color: #017dbb;
-            }
-            
-            div.scrollmenu a:active {
-                color: #017dbb;
-                font-weight: bold
-            }
-        </style>
-
-
-
-
-        <script src="https://jerrygoyal-firebase-project.web.app/js/main_script.js"></script>
-        <!--     <script src='https://code.jquery.com/jquery-3.5.0.min.js'></script> -->
-        <script src="./script.js "></script>
-
-        <div class="header">
-
-            <body class="about-me">
-
-
-                <div class="section intro">
-                    <div class="overlay"></div>
-                    <div class="content">
-                        <span class="stage-title">
-                            <div>
-                                <style>
-                                    .logo-neon { 
-                                        color: #fee;   
-                                        font-size: 2em;                                 
-                                    }
-                                    
-                                    .logo-neon b {                                         
-                                        color: #fee;
-                                        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;
-                                    }
-                                    
-                                    .logo-neon b span {
-                                        animation: blink linear infinite 1s;
-                                    }
-                                    
-                                    .logo-neon b span:nth-of-type(2) {
-                                        animation: blink linear infinite 2s;
-                                    }
-                                    
-                                    @keyframes blink {
-                                        78% {
-                                            color: inherit;
-                                            text-shadow: inherit;
-                                        }
-                                        79% {
-                                            color: #333;
-                                        }
-                                        80% {
-                                            text-shadow: none;
-                                        }
-                                        81% {
-                                            color: inherit;
-                                            text-shadow: inherit;
-                                        }
-                                        82% {
-                                            color: #333;
-                                            text-shadow: none;
-                                        }
-                                        83% {
-                                            color: inherit;
-                                            text-shadow: inherit;
-                                        }
-                                        92% {
-                                            color: #333;
-                                            text-shadow: none;
-                                        }
-                                        92.5% {
-                                            color: inherit;
-                                            text-shadow: inherit;
-                                        }
-                                    }
-                                    
-                                   
-                                </style>
-                                <script src="prefixfree.min.js"></script>
-                            
-                                <div class="logo-neon"><b>hire me<span></span> <span></span></b>
-                    </div>
-                </div>
-                </span>
-                <div class="hello-world">Hello, World.</div>
-                <div class="my-name logo-neon">I'm Luis Maciel</div>
-                <p class="typewrite" data-period="3000" data-type='[ "Designer","Startup Founder","FULL STACK DEVELOPER","UI/UX DESIGNER" ]'>
-                    <span class="wrap"></span>
-                </p>
-                <a href="#profile" style="  position: absolute;left: 50%;bottom: 10px;margin-left: -20px;cursor: pointer;animation: down 3s ease infinite;">
-                    <i style=" padding: 50px 20px 0px 20px;position: absolute;opacity: 0.7;background: url(https://jerrygoyal-firebase-project.web.app/about-me/img/chevron-down.svg) no-repeat center;"></i>
-                </a>
-        </div>
-    </div>
-
-    <div class="main-container">
-        <div id="profile" class="section card">
-            <div class="content row">
-                <div class="col-12">
-                    <div class="vcard material">
-                        <div class="dp"></div>
-                        <div class="info">
-                            <div class="main-title">Luis Angel Maciel</div>
-                            <div class="card-subtitle">Entrepreneur | Tech | UX</div>
-                            <div class="social ripple-effect">
-                                <span class="container"><a class="tooltip" href="https://www.linkedin.com/in/LuisAngelMaciel/" target="_blank" rel="noopener" ><div class="social-icon in">  <span class="tooltiptext">Linkedin</span></div>
-                            </a>
-                            </span>
-
-                            <span class="container">
-  <a class="tooltip" href="https://twitter.com/LuisAngelMaciel" target="_blank" rel="noopener">
-    <div class="social-icon ml">
-      <span class="tooltiptext">Twitter</span>
-                        </div>
-                        </a>
-                        </span>
-                        <span class="container">
-  <a
-    class="tooltip"
-    href="https://stackoverflow.com/users/3073272/Gourav"
-    target="_blank" rel="noopener"
-  >
-    <div class="social-icon so">
-      <span class="tooltiptext">Stackoverflow</span>
-                    </div>
-                    </a>
-                    </span>
-                    <span class="container">
-  <a
-    class="tooltip no-ripple"
-    href="https://github.com/LuisAngelMaciel"
-    target="_blank" rel="noopener"
-  >
-    <div class="social-icon gh">
-      <span class="tooltiptext">Github</span>
-                </div>
-                </a>
-                </span>
-                <span class="container">
-  <a
-    class="tooltip no-ripple"
-    href="https://medium.com/@luisangelmaciel"
-    target="_blank" rel="noopener"
-  >
-    <div class="social-icon md">
-      <span class="tooltiptext">Medium</span>
-            </div>
-            </a>
-            </span>
-
-
-        </div>
-        <p>
-            Namaste, My name isLuis Angel Maciel. I've got a knack for great UI/UX and I am fundamentally strong on the technical side. I've years of experience in building dynamic web projects, mobile apps, and desktop software. I’ve worked on many domains including
-            Augmented Reality, CRM, Marketing Automation. I love to build new products, create great user experiences and contribute to the open source software community.
-            <br>
-            <!-- I am always hungry for new challenges and innovations. -->
-        </p>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-
-
-
-    <div class="section contact" id="contact">
-        <div>
-            <div class="subject">
-                <div class="title">
-                    Let's Connect<br>
-                </div>
-            </div>
-            <div class="vcard content row">
-                <div class="col-12">
-                    <div class="material">
-                        <div class="card-title">
-                            <div class="card-icon"></div>
-                            <div class="card-subtitle">Luis Angel Maciel</div>
-                            <div class="card-subname">luis.angel.maciel.padilla
-                                <i>[at]</i> gmail.com</div>
-                        </div>
-                        <div class="card-content">
-                            Entusiasta en temas de emprendimiento, sexualidad, investigación de mercados rosa, diseño, UI/UX.
-                            <br><br>Me siento bien cuando recibo un like o comentario de retroalimentación o agradecimiento a mi trabajo diciendo les ha ayudado, marcado la diferencia o gustado algo que hice.
-                            <br><br>Developer experience and marketer en la agencia de viajes
-                            <a href="https://www.xiiber.com/linktr.ee" target="_blank" rel="noopener noreferrer" `title="Xiiber. Experiencias y viajes gay" aria-label="Acceso al link"><b>Xiiber</b>.</a>
-                            <!-- Siempre entusiasta -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    </body>
-
-
-
-
-
-
-
-    </div>
-
-
-
 
 
 
@@ -1459,6 +914,36 @@
             <br> PROGRAMACIÓN COMPETITIVA DESARROLLO WEB BLOGS DE TECNOLOGÍA AJEDREZ CREAR VIDEOS ASTROLOGÍA COHETES TECNOLOGÍA VERDOR ASTROFÍSICA JUEGO DE AZAR FITNESS Y MEDITACIÓN
         </p>
 
+
+        <pre>
+
+
+            Bienvenido al Domicilio personal de Internet de Kyle Mathews
+            
+            Bienvenido Internet
+            Bienvenido a mi humilde morada en Internet, donde los viajeros cansados ​​pueden venir y descansar por una temporada.
+            
+            Soy el organizador de Xiiber Travel, Dragvesti y creador del proyecto MetaGenerator-Full! 
+            
+            Actualmente vivo en la Ciudad de México.
+            
+            La vida es buena.
+            
+            Welcome to the Personal Internet Domicile of Luis Angel Maciel
+            Welcome Internet
+            Welcome to my humble abode on the internet where weary travelers may come and rest for a season.
+            
+            I'm the responsable of Xiiber Travel, Dragvesti and creator the MetaGenerator-Full!
+            
+            I'm currently residing in México, City. 
+            
+            Life is good.
+            
+            Happy coding!
+            También nos puedes encontrar en Twitter, Facebook e Instagram. Danos un toque si necesitas ayuda o te apetece decirnos hola :)
+            
+            
+            </pre>
         <p>La educación es el pasaporte para el futuro, porque el mañana pertenece a quienes se preparan hoy para él - Malcolm X</p>
         <p>The purpose of this site is to serve as a playground for my thoughts and experiments. El propósito de este sitio es servir como un patio de recreo para mis pensamientos y experimentos.</p>
         <p>Desde que era niño, me encantaba entender cómo funcionan las cosas.</p>
@@ -2111,6 +1596,20 @@
             <p>El universo es un lugar bastante grande. Mantente en contacto - Carl Sagan</p>
             <a href="trabajemos/index.html ">Trabajemos</a>
             <a href="ui/index.html ">UI</a>
+            <p>Talk to me
+                Tweet @luisangelmaciel
+                <br>
+                Please feel free to contact me...
+                for quick replies
+                <br>Email me
+                for long replies
+                <br> Follow me
+                on Twitter
+                <br>for new updates
+                on GitHub
+                <br>for new projects
+                via Feed
+                for new posts</p>
             <div class="w3-container " style="color: black; ">
                 <a href="https://twitter.com/intent/follow?screen_name=luisangelmaciel " target="_blank ">Twitter</a><br>
                 <a href="https://codepen.io/luisangelmaciel " target="_new " target="_blank " rel="noopener ">Codepen</a>Se pueden encontrar 180 ejemplos <br>
@@ -2124,6 +1623,8 @@
                 <a href="https://medium.com/@luisangelmaciel " target="_new ">Medium</a><br>
                 <a href="https://www.youtube.com/channel/UC4CiuTWvFdk6Y8qkbLvMTUQ " target="_new ">Youtube</a><br>
                 <a href="https://codestats.net/users/luisangelmaciel " target="_new ">Codestats</a><br>
+                <a href=" https://hihello.monster/luisangel.maciel/feed.xml " target="_new ">Feed</a><br>
+              
                 <!-- <img src="https://codestats.net/assets/frontend/images/Logo-92e1d93256eae2d7dde539f1df59b06c.svg?vsn=d " alt=" CodeStats " width="33px " height="33px ">  -->
             </div>
         </article>
@@ -2356,8 +1857,369 @@
                 <a href="# " class="apeek peek ">old anthems</a>
                 <a href="# " class="apeek peek ">old anthems</a>
 
+                
             </div>
 
+
+        </div>
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </main>
+
+
+
+    <div id="UP PROGRES ">
+        <style>
+            @font-face {
+                font-family: 'unicons';
+                src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.eot');
+                src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.eot') format('embedded-opentype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.woff2') format('woff2'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.ttf') format('truetype'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.svg') format('svg');
+                font-weight: normal;
+                font-style: normal;
+            }
+        </style>
+        <link rel="stylesheet " href="./progress.css ">
+
+        <!-- mode 
+            <div class="switch ">
+                <div class="circle "></div>
+            </div>
+            -->
+        <div class="progress-wrap ">
+            <svg class="progress-circle svg-content " width="100% " height="100% " viewBox="-1 -1 102 102 ">
+                    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98 "/>
+                </svg>
+        </div>
+    </div>
+
+
+    <script>
+        /* Please ❤ this if you like it! */
+
+        function myFunction() {
+            var x = document.getElementById("navigachion ");
+            if (x.className.indexOf("w3-show ") == -1) {
+                x.className += " w3-show ";
+            } else {
+                x.className = x.className.replace(" w3-show ", " ");
+            }
+        }
+
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar ").style.width = scrolled + "% ";
+        }
+        //tab 
+        function openSocial(evt, socialName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent ");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none ";
+            }
+            tablinks = document.getElementsByClassName("tablinks ");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active ", " ");
+            }
+            document.getElementById(socialName).style.display = "block ";
+            evt.currentTarget.className += " active ";
+        }
+
+        // Get the element with id="defaultOpen " and click on it
+        document.getElementById("defaultOpen ").click();
+
+        function openHi(hiName) {
+            var i;
+            var x = document.getElementsByClassName("admin ");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none ";
+            }
+            document.getElementById(hiName).style.display = "block ";
+        }
+
+
+
+        function openName(evt, Name) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent ");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none ";
+            }
+
+            tablinks = document.getElementsByClassName("tablinks ");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active ", " ");
+            }
+
+            document.getElementById(Name).style.display = "block ";
+            evt.currentTarget.className += " active ";
+        }
+
+        // js only creates and insert parts + click events adds classes
+        var numOfPieces = 6 * 6;
+        var frag = document.createDocumentFragment();
+
+        function insertInnerPieces($el, innerPieces) {
+            for (var i = 0; i < innerPieces; i++) {
+                var $inner = document.createElement('div');
+                $inner.classList.add('popup__piece-inner');
+                $el.appendChild($inner);
+            }
+        }
+
+        ;
+        for (var i = 1; i <= numOfPieces; i++) {
+            var $piece = document.createElement('div');
+            $piece.classList.add('popup__piece');
+            insertInnerPieces($piece, 3);
+            frag.appendChild($piece);
+        }
+
+        document.querySelector('.popup__pieces').appendChild(frag);
+        var $popupsCont = document.querySelector('.popups-cont');
+        var $popup = document.querySelector('.popup');
+        var popupAT = 900;
+        document.querySelector('.popup-btn').addEventListener('click', function() {
+                $popupsCont.classList.add('s--popup-active');
+                $popup.classList.add('s--active');
+            }
+
+        );
+
+        function closeHandler() {
+            $popupsCont.classList.remove('s--popup-active');
+            $popup.classList.remove('s--active');
+            $popup.classList.add('s--closed');
+            setTimeout(function() {
+                $popup.classList.remove('s--closed');
+            }, popupAT);
+        }
+
+        document.querySelector('.popup__close').addEventListener('click', closeHandler);
+        document.querySelector('.popups-cont__overlay').addEventListener('click', closeHandler);
+    </script>
+
+
+<!--     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script> -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.0/wow.min.js'></script>
+    <script src="./script-Work-experience.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js " integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin=" anonymous "></script>
+    <script src="./progress.js "></script>
+
+</body>
+
+</html>             </h1>
+                </div>
+            </div>
+
+            <div id="countdown-chronometer ">
+                <div id="container-neon ">
+                    <div class="container-contador-de-tiempo light-neon ">
+                        <div id="chronometer " class="chronometer ">
+                            <center>Tiempo que llevas leyendo esta página</center><br>
+                            <div class="time ">
+
+                                <div class="counter-down ">
+
+                                    <div class="box a-light-neon ">
+                                        <div id="hour-first-digit " class="left ">0</div>
+                                        <div id="hour-second-digit " class="right ">2</div>
+                                    </div>
+                                    <div class="description a-light-neon ">hrs</div>
+                                </div>
+                                <div class="counter-down a-light-neon ">
+                                    <div class="box ">
+                                        <div id="minute-first-digit " class="left ">0</div>
+                                        <div id="minute-second-digit " class="right ">7</div>
+                                    </div>
+                                    <div class="description ">min</div>
+                                </div>
+                                <div class="counter-down a-light-neon ">
+                                    <div class="box ">
+                                        <div id="second-first-digit " class="left ">1</div>
+                                        <div id="second-second-digit " class="right ">9</div>
+                                    </div>
+                                    <div class="description ">seg</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://luisangelmaciel.github.io/one/Neon-Glow-countdown-chronometer/js/count-down-chronometerjavascript.js "></script>
+            </div>
+        </article>
+
+        <div class="w3-padding-top-64 "> </div>
+        <div class="w3-padding-top-64 "> </div>
+        <div class="w3-padding-top-64 "> </div>
+
+        <article class="container-publicaciones margines ">
+            <div class="div-pronostico " onload="f1() ">
+
+                <p id="caption " class="p-pronostico ">
+                    <p onclick="switchCelsiusAndFahrenheit() " class="p-pronostico ">
+                        El pronóstico del tiempo
+                    </p>
+                </p>
+
+                <div>
+                    <p id="weatherdata " class="p-pronostico " onclick="switchCelsiusAndFahrenheit() ">
+                        Activa tu locación
+                    </p>
+                </div>
+
+                <script src="./weatherdata.js "></script>
+            </div>
+        </article>
+
+
+
+        <div>
+            <h4 class="fw-bold mb-0 ">
+                Santander
+            </h4><br>
+            <input type="text " value="5579070099032412 " id="5579070099032412 " style="border: none; " class="SusanStorm ">
+            <p>Titular de la cuenta:</p>
+            <p>Javier Adrian Ramos Carreto</p>
+            <br>
+
+            <p> Número de tarjeta
+                <br>5579 0700 9903 2412<img src="img/copiar.svg " alt="copiar " width="18px " height="18px " onclick="SantanderTarjeta() "> </p>
+
+            <script>
+                function SantanderTarjeta() {
+                    var copyText = document.getElementById("5579070099032412 ");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999)
+                    document.execCommand("copy ");
+                    alert("Ha sido copiado el Número de tarjeta: " + copyText.value);
+                }
+            </script>
+
+
+            <input type="text " value="014150606071539798 " id="014150606071539798 " style="border: none; " class="SusanStorm ">
+            <p> Cuenta CLABE
+                <br>014150606071539798<img src="img/copiar.svg " alt="copiar " width="18px " height="18px " onclick="SantanderCLABE() "> </p>
+
+            <script>
+                function SantanderCLABE() {
+                    var copyText = document.getElementById("014150606071539798 ");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999)
+                    document.execCommand("copy ");
+                    alert("Ha sido copiado la Cuenta CLABE: " + copyText.value);
+                }
+            </script>
+
+
+            <details>
+                <summary>
+                    Ultimos Post
+
+                </summary>
+
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity "></i> Dragvesti</h2>
+                <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">All Stars</h4>
+                <p style="font-size:16px;font-weight:100; text-align: center; font-family: Roboto ">Este <i>modo</i> es tan vacío que puede ser un espacio para la meditación.</p>
+
+                <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto "><img src="img/sign-name.svg "  width="100% " height="auto " alt="Ico " loading="lazy " class="lazyload "></h4>
+            </details>
+
+
+            <div>
+                <style>
+                    @import url(https://hihellomonster.github.io/hihello/wow.awesome/style.css);
+                    .apeek {
+                        display: inline-block;
+                        position: relative;
+                        padding: 10px 15px;
+                        color: whitesmoke;
+                        text-decoration: none;
+                    }
+                    /* ------------ */
+                    /* PEEK         */
+                    /* ------------ */
+                    
+                    .apeek.peek {
+                        border: 1px solid #017db0;
+                        background-color: rgb(255, 255, 255);
+                    }
+                    /* create GitHub kitty */
+                    
+                    .apeek.peek:after {
+                        content: '\e92a';
+                        font-family: 'wowawesome';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;
+                        color: #017db0;
+                        font-size: 25px;
+                        transition: all 500ms ease;
+                        /* easeInOutBack */
+                    }
+                    /* peek! */
+                    
+                    .apeek.peek:hover:after {
+                        transform: translate(5px, -30px);
+                    }
+                </style>
+
+
+                <a href="# " class="apeek peek ">old anthems</a>
+                <a href="# " class="apeek peek ">old anthems</a>
+                <a href="# " class="apeek peek ">old anthems</a>
+
+            </div>
+            <div style=" box-shadow: 0 25px 25px -20px hsl(200 15% 5% / 50%); padding: 2ch; display: grid; gap: 1ch; max-inline-size: 40ch; "></div>
 
         </div>
 
