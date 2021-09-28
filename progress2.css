@@ -4,20 +4,18 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin-ext');
 :root {
     font-size: 20px;
-    /* 
-	--red: #da2c4d;
-	--yellow: #f8ab37;
-	--green: #2ecc71;
-	--white: #ffffff;
-	--grey-light: #f2f7f9;
-	--grey: #ecedf3;
-	--black: #080808;
-	--black-blue: #1f2029;
-	--black-blue-light: #353746;
-	--black-blue-light-2: #404255;
-	--black-blue-light-3: #4b4d64;
-	--black-light: #424455;
-	*/
+    --red: #017db0;
+    --yellow: #017db0;
+    --green: #2ecc71;
+    --white: #ffffff;
+    --grey-light: #f2f7f9;
+    --grey: #ecedf3;
+    --black: #080808;
+    --black-blue: #1f2029;
+    --black-blue-light: #353746;
+    --black-blue-light-2: #404255;
+    --black-blue-light-3: #4b4d64;
+    --black-light: #424455;
 }
 
 body {
@@ -240,8 +238,7 @@ body.light .navbar-brand::after {
     text-align: center;
     line-height: 46px;
     font-size: 24px;
-    /*   color: var(--grey); */
-    color: #042461;
+    color: var(--grey);
     left: 0;
     top: 0;
     height: 46px;
@@ -277,7 +274,6 @@ body.light .navbar-brand::after {
     z-index: 2;
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
-    color: #042461;
 }
 
 .progress-wrap:hover::before {
@@ -289,8 +285,7 @@ body.light .navbar-brand::after {
 }
 
 .progress-wrap svg.progress-circle path {
-    /* stroke: var(--grey);*/
-    stroke: #042461;
+    stroke: var(--grey);
     stroke-width: 4;
     box-sizing: border-box;
     -webkit-transition: all 200ms linear;
@@ -302,13 +297,11 @@ body.light .progress-wrap {
 }
 
 body.light .progress-wrap::after {
-    /*color: var(--black-blue);*/
-    color: #042461;
+    color: var(--black-blue);
 }
 
 body.light .progress-wrap svg.progress-circle path {
     stroke: var(--black-blue);
-    color: #042461;
 }
 
 .switch,
