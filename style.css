@@ -96,28 +96,28 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: inherit;
 }
 
 a:after {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: inherit;
 }
 
 a:link {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: inherit;
 }
 
 a:visited {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: inherit;
     font-weight: bold;
 }
 
 a:hover {
     text-decoration: none;
-    color: rgb(7, 5, 5);
+    color: inherit;
 }
 
 div.scrollmenu {
@@ -288,7 +288,7 @@ h2 {
 
 @media (min-width:1200px) {
     h2 {
-        font-size: 2rem
+        font-size: 2rem;
     }
 }
 
@@ -896,6 +896,14 @@ template {
 .SusanStorm {
     visibility: hidden;
     display: none;
+}
+
+.alata {
+    font-family: 'Alata', sans-serif;
+}
+
+.rubik {
+    font-family: 'Rubik Mono One', sans-serif;
 }
 
 
@@ -4333,4 +4341,53 @@ a {
     }
 }
 
-*/
+.logo-neon {
+    color: #fee;
+    font-size: 2em;
+}
+
+.logo-neon b {
+    color: #fee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;
+}
+
+.logo-neon b span {
+    animation: blink linear infinite 1s;
+}
+
+.logo-neon b span:nth-of-type(2) {
+    animation: blink linear infinite 2s;
+}
+
+@keyframes blink {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79% {
+        color: #333;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
