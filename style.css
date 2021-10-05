@@ -1265,7 +1265,6 @@ div.desc {
         display: flex;
     }
     .container-name .box .title h1 {
-        font-family: "Poppins";
         color: rgb(0, 0, 0);
         font-size: 28px;
         -webkit-animation: mainFadeIn 2s forwards;
@@ -1297,7 +1296,6 @@ div.desc {
         width: 100%;
         position: relative;
         display: flex;
-        align-items: center;
         height: 30px;
         margin-top: -10px;
     }
@@ -1317,12 +1315,11 @@ div.desc {
         animation-delay: 3.2s;
         opacity: 0;
         font-weight: 800;
-        font-family: "Lato";
-        color: #0f0101;
-        font-size: 16px;
         padding-top: 30px;
         padding-bottom: 30px;
         margin-top: 80px;
+        word-spacing: 0px;
+        letter-spacing: 0px;
         /*  line-height: 1.5px; */
     }
     @keyframes mainBlock {
@@ -3637,6 +3634,25 @@ strong {
 
 /*# sourceMappingURL=bootstrap.min.css.map */
 
+.aqua-button-circle {
+    width: 40px;
+    height: 40px;
+    padding: 5px 16px 3px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border: 2px solid #ccc;
+    position: relative;
+    /* Label */
+    font-weight: 200;
+    color: #fff;
+    text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 .aqua-button {
     width: 160px;
     height: 40px;
@@ -4016,7 +4032,6 @@ a {
     justify-content: center;
     gap: 2rem;
     padding: 3rem;
-    min-height: 80vh;
     background-color: #1B1C24;
     background-image: url("img/lamp-icon-black-1B1C24.svg");
     /*  background-color: #1086B5; 
@@ -4343,7 +4358,6 @@ a {
 
 .logo-neon {
     color: #fee;
-    font-size: 2em;
 }
 
 .logo-neon b {
