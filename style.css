@@ -883,8 +883,8 @@ template {
 
 .logo {
     position: fixed;
-    bottom: 90px;
-    right: 40px;
+    bottom: 30px;
+    right: 30px;
 }
 
 .logo-top {
