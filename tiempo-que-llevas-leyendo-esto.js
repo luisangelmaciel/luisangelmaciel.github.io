@@ -26,7 +26,7 @@ function refreshTime() {
 }
 
 function updateDOM(hours, minutes, seconds) {
-    if ( hours.toString().length == 2 ) {
+    if (hours.toString().length == 2) {
         document.getElementById("hour-first-digit").innerHTML = hours.toString().split("")[0];
         document.getElementById("hour-second-digit").innerHTML = hours.toString().split("")[1];
     } else {
@@ -34,7 +34,7 @@ function updateDOM(hours, minutes, seconds) {
         document.getElementById("hour-second-digit").innerHTML = hours.toString();
     }
 
-    if ( minutes.toString().length == 2 ) {
+    if (minutes.toString().length == 2) {
         document.getElementById("minute-first-digit").innerHTML = minutes.toString().split("")[0];
         document.getElementById("minute-second-digit").innerHTML = minutes.toString().split("")[1];
     } else {
@@ -42,7 +42,7 @@ function updateDOM(hours, minutes, seconds) {
         document.getElementById("minute-second-digit").innerHTML = minutes.toString();
     }
 
-    if ( seconds.toString().length == 2 ) {
+    if (seconds.toString().length == 2) {
         document.getElementById("second-first-digit").innerHTML = seconds.toString().split("")[0];
         document.getElementById("second-second-digit").innerHTML = seconds.toString().split("")[1];
     } else {
