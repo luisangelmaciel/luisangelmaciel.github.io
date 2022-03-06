@@ -1,0 +1,35 @@
+  <h4 class="fw-bold mb-0 ">
+                Santander
+            </h4><br>
+            <input type="text " value="5579070099032412 " id="5579070099032412 " style="border: none; " class="SusanStorm ">
+            <p>Titular de la cuenta:</p>
+            <p>Javier Adrian Ramos Carreto</p>
+            <br>
+
+            <p> Número de tarjeta
+                <br>5579 0700 9903 2412<img src="img/copiar.svg " alt="copiar " width="18px " height="18px " onclick="SantanderTarjeta() "> </p>
+
+            <script>
+                function SantanderTarjeta() {
+                    var copyText = document.getElementById("5579070099032412 ");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999)
+                    document.execCommand("copy ");
+                    alert("Ha sido copiado el Número de tarjeta: " + copyText.value);
+                }
+            </script>
+
+
+            <input type="text " value="014150606071539798 " id="014150606071539798 " style="border: none; " class="SusanStorm ">
+            <p> Cuenta CLABE
+                <br>014150606071539798<img src="img/copiar.svg " alt="copiar " width="18px " height="18px " onclick="SantanderCLABE() "> </p>
+
+            <script>
+                function SantanderCLABE() {
+                    var copyText = document.getElementById("014150606071539798 ");
+                    copyText.select();
+                    copyText.setSelectionRange(0, 99999)
+                    document.execCommand("copy ");
+                    alert("Ha sido copiado la Cuenta CLABE: " + copyText.value);
+                }
+            </script>
