@@ -152,11 +152,11 @@ var myObject = {
         "pageid": "https://luisangelmaciel.github.io/dragvesti/",
     }, {
         "proyecto": "<b>How to One</b> Code snippets para HTML, CSS & JavaScript",
-        "pageid": "",
+        "pageid": "#",
     }],
     "proyectos": [{
         "proyecto": "<b>Geus Gourmé</b> Productos gourmet artesanales",
-        "pageid": "",
+        "pageid": "#",
     }, {
         "proyecto": "<b>SiOkey</b> Verificadora de sitios",
         "pageid": "/siokey/index.html",
@@ -165,7 +165,7 @@ var myObject = {
         "pageid": "/tamales/",
     }, {
         "proyecto": "<b>Mom´s Pizza</b> Pizzas con extra queso. Especialidad chorihawaian",
-        "pageid": "",
+        "pageid": "#",
     }, {
         "proyecto": "<b>Depravex</b> Sexshop online para hombres gay",
         "pageid": "/depravex/",
@@ -179,11 +179,11 @@ var myObject = {
     }],
     "Xiiber-travel": [{
         "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
-        "pageid": "",
+        "pageid": "#",
     }],
     "app": [{
         "title": "<b>Frases de Goku</b> Épico random con las frases de Goku de Dragon Ball",
-        "pageid": "",
+        "pageid": "#",
     }],
     "notas": [{
         "proyecto": "Imagen recomendada 749 x 368 px",
