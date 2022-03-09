@@ -195,7 +195,7 @@ var myObject = {
     "hiHelloMaciel": [{
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-08-28T20:11:18.929Z'>28 agosto 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "  ",
@@ -213,7 +213,7 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-08-27T20:11:18.929Z'>27 agosto 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "  ",
@@ -249,7 +249,7 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-07-02T19:20:18.929Z'>2 julio 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "  ",
@@ -285,7 +285,7 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 mayo 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "  ",
@@ -303,7 +303,7 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 abril 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "  ",
@@ -321,7 +321,7 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-03-06T20:10:18.929Z'>6 marzo 2021</time>",
-        "a-href": "",
+        "a-href": "#",
         "a-href-tittle": "Pokemon",
         "how-to-tittle": "",
         "el-Post": "♫ I wanna be the very best, like no one ever was ♫  ",

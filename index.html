@@ -75,13 +75,13 @@
     <meta name='twitter:description' content='Mercadológo, diseñador y desarrollador web. Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario.'>
     <meta name="generator" content="@luisangelmaciel" />
 
-    <script src="hi.js"></script>
-    <script src="w3.js"></script>
-    <script src="entradas.js" async></script>
+    <script src="js/hi.js" rel="preload " as="script "></script>
+    <script src="js/w3.js" rel="preload " as="script "></script>
+    <script src="js/entradas.js" async></script>
     <link rel=" icon " href="favicon.png " sizes="192x192 ">
-    <script src="lazysizes.min.js" async></script>
+    <script src="js/lazysizes.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="hi-style.css">
+    <link rel="stylesheet" href="css/hi-style.css">
     <!-- 
     <link rel='prefetch' href="lib/fonts/luisangelmaciel.eot">
     <link rel="preload" href="lib/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -90,7 +90,7 @@
     <link rel="preload" href="lib/fonts/freckle-face-v9-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
     -->
 
-    <link rel="stylesheet" href="w3.css">
+
 
 
     <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free 
@@ -99,14 +99,14 @@
     <script src="https://kit.fontawesome.com/1d9115e34a.js" crossorigin="anonymous"></script>
     <script src="js/lazysizes.min.js" async></script>
     <link rel="stylesheet" href="css/reset.min.css">
-    <link rel='stylesheet' href='css/tailwind.min.css'>
-    <link rel="stylesheet" href="css/clone.css">
+    <link rel='stylesheet' href='css/tailwind.min.css' rel="preload " as="style ">
+    <link rel="stylesheet" href="css/clone.css" rel="preload " as="style ">
     <link rel="stylesheet" href="css/w3.css">
     <link rel="stylesheet " href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
-    <link rel="canonical " href="">
+    <link rel="canonical " href="https://www.luisangelmaciel.one/">
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect " href="https://fonts.gstatic.com ">
     <link rel="https://api.w.org/" href="wp-json/" />
@@ -834,6 +834,16 @@
             background-position: center 0%;
             animation: background-slide 25s infinite linear;
         }
+        
+        .box-transparent {
+            padding: .5rem;
+            margin-top: .5rem!;
+            margin-bottom: 1rem!;
+            margin-top: 1rem!;
+            margin-bottom: 1rem;
+            border-radius: .25rem;
+            box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)
+        }
     </style>
 
     <script>
@@ -1219,7 +1229,7 @@
                                                 <p class="mb-6">Makes `apply` more useful when using !important utilities, and includes an improved default color palette:</p>
                                                 <p class="mb-4"><a href="#" class="text-teal">github.com/tailwindcss/ta...</a></p>
                                                 <p>
-                                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp alt="tweet image" class="border border-solid border-grey-light rounded-sm"></a>
+                                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="tweet image" class="border border-solid border-grey-light rounded-sm"></a>
                                                 </p>
                                             </div>
                                         </div>
@@ -1403,7 +1413,7 @@
                                                 <source src="video/iris-xc-la-mas-draga-travel.mp4 " type="video/mp4 " title="Iris XC Queen " >                                           
                                             </video>
                                                 <video autoplay loop muted playsinline width="607 " height="342 " class="  ">  
-                                                <source src="iris-xc-la-mas-draga-travel.mp4 " type="video/mp4 " title="Iris XC Queen " >                                           
+                                                <source src="video/iris-xc-la-mas-draga-travel.mp4 " type="video/mp4 " title="Iris XC Queen " >                                           
                                             </video>
                                               
                                             </a>
@@ -1509,8 +1519,7 @@
                     
     
 
-                    <div id="siteMap" style="padding: .5rem; margin-top: .5rem!;
-                    margin-bottom: 1rem!; margin-top: 1rem!; margin-bottom: 1rem; border-radius: .25rem; box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)">
+                    <div id="siteMap" class="box-transparent">
                       
                                             <h3><b>www.luisangelmaciel.one</b> </h3>
                                             <li hi-repeat="git-luisangelmacielOne" style="list-style-type: none;  margin: 0;  padding: 0;">
@@ -2116,5 +2125,7 @@
                 }
             </script>
             </body>
+
+</html>
 
 </html>
