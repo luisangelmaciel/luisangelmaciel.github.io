@@ -1,5 +1,5 @@
 var myObject = {
-    "proyectos-propios": [{
+    "git-luisangelmacielOne": [{
         "proyecto": "<b>Xiiber Travel</b> Viajes y experiencias para hombres gay ",
         "pageid": "https://luisangelmaciel.github.io/xiiber/",
     }, {
@@ -51,6 +51,5 @@ var myObject = {
     }],
 };
 
-// Breaking Bad - Walter White Blue Meth 
 
 w3.displayObject("siteMap", myObject);
