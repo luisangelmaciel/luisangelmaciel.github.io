@@ -37,7 +37,7 @@ var myObject = {
         "pageid": "https://luisangelmaciel.github.io/camaradegesell",
     }, {
         "proyecto": "<b>PWA</b>  ",
-        "pageid": "https://luisangelmaciel.github.io/pwa",
+        "pageid": "https://github.com/luisangelmaciel/pwa",
     }, {
         "proyecto": "<b>Tell me more. </b> Blog ",
         "pageid": "https://luisangelmaciel.github.io/tell-me-more",

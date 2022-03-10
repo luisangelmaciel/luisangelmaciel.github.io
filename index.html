@@ -144,7 +144,7 @@
     <meta name="twitter:card " content="summary_large_image " />
     <meta name="twitter:site " content="@luisangelmaciel " />
     <meta name="twitter:title " content="@luisangelmaciel " />
-    <meta name="twitter:image " content="img/twitterimage.png " />
+    <meta name="twitter:image " content="img/twitterimage.jpg " />
     <meta name='twitter:description' content=' Desarrollador y diseñador web, diseñador de producto, Comercializador '>
     <meta name="twitter:url " content="https://twitter.com/luisangelmaciel ">
 
@@ -163,9 +163,9 @@
 
     <!-- Fonts -->
     <link rel="preload " as="font-display: auto; ">
-    <link rel="preload " href="lib/fonts/roboto-mono-v13-latin-500.woff2 " as="font " type="font/woff2 " crossorigin>
-    <link rel="preload " href="lib/fonts/free-fa-brands-400.woff2 " as="font " type="font/woff2 " crossorigin>
-    <link rel="preload " href="lib/fonts/free-fa-solid-900.woff2 " as="font " type="font/woff2 " crossorigin>
+    <link rel="preload " href="https://www.luisangelmaciel.one/lib/fonts/roboto-mono-v13-latin-500.woff2 " as="font " type="font/woff2 " crossorigin>
+    <link rel="preload " href="https://www.luisangelmaciel.one/https://www.luisangelmaciel.one/lib/fonts/free-fa-brands-400.woff2 " as="font " type="font/woff2 " crossorigin>
+    <link rel="preload " href="https://www.luisangelmaciel.one/lib/fonts/free-fa-solid-900.woff2 " as="font " type="font/woff2 ">
 
 
     <!-- <script src="js/preloader.js " async></script> -->
@@ -174,13 +174,11 @@
     <script src="js/lazysizes.min.js" rel="preload " as="script " asyncc></script>
 
 
-
     <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free          -->
-    <script src="https://kit.fontawesome.com/1d9115e34a.js" crossorigin="anonymous"></script>
-
+    <script src="js/fontawesome-1d9115e34a.js"></script>
     <link rel="stylesheet " href="css/style.css" media="all" as="style ">
     <link rel="stylesheet" href="css/w3.css" media="all" as="style ">
-    <link rel="stylesheet " href="css/tail.css" media="all" as="style ">
+
 
 
 
@@ -364,7 +362,7 @@
                             <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
                                 <div class="w-full lg:w-1/4">
                                     <div class="w3-container">
-                                        <img src="img/luisangelmaciel_400x400.webp" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24" loading="lazy " class="lazy ">
+                                        <img src="img/luisangelmaciel_400x400.webp" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24" loading="lazy lazyload " class="lazy ">
                                     </div>
                                 </div>
                                 <div class="w-full lg:w-1/2 w3-hide-large w3-hide-small w3-hide-medium">
@@ -736,7 +734,7 @@
                                             <div class='video  '>                                    
                                                 <a href="https://twitter.com/intent/follow?screen_name=irisxcqueen " target="_blank ">
                                                     <video autoplay loop muted playsinline width="310 " height="175 " class="susan-storm-large susan-storm-medium ">  
-                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen "  loading="lazy " class="lazy ">                                           
+                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen "  loading="lazy " class="lazy " >                                           
                                                 </video>
                                                     <video autoplay loop muted playsinline width="512 " height="290 " class=" susan-storm-large susan-storm-small ">  
                                                     <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen " loading="lazy " class="lazy " >                                           
@@ -1235,6 +1233,23 @@
                     var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
                     var scrolled = (winScroll / height) * 100;
                     document.getElementById("myBar ").style.width = scrolled + "% ";
+                }
+            </script>
+            <script>
+                if ("loading" in HTMLImageElement.prototype) {
+                    // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+                    // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
+                    const images = document.querySelectorAll("img.lazyload");
+                    images.forEach((img) => {
+                        img.src = img.dataset.src;
+                    });
+                } else {
+                    // Importamos dinámicamente la libreria `lazysizes`
+                    let script = document.createElement("script");
+                    script.async = true;
+                    script.src =
+                        "/js/lazysizes.min.js";
+                    document.body.appendChild(script);
                 }
             </script>
             </body>
