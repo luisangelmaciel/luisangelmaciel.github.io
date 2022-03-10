@@ -157,24 +157,24 @@
     <meta name="twitter:player " content="video/twitter_player.webp " />
     <meta name="twitter:player:width " content="480 " />
     <meta name="twitter:player:height " content="480 " />
-    <meta name="twitter:player:stream " content="video/twitter_player_stream.mp4 " />
+    <meta name="twitter:player:stream " content="video/twitter_player_stream.webm " />
     <meta name="twitter:player:stream:content_type " content="video/mp4 " />
 
     <!-- Fonts -->
     <link rel="preload " as="font-display: auto; ">
     <link rel="preload " href="lib/fonts/roboto-mono-v13-latin-500.woff2 " as="font " type="font/woff2 " crossorigin>
 
-    <script src="js/preloader.js " async></script>
+    <!-- <script src="js/preloader.js " async></script> -->
     <script src="js/hi.js" rel="preload " as="script " async></script>
     <script src="js/w3.js" rel="preload " as="script " async></script>
     <script src="js/entradas.js" async></script>
     <script src="js/lazysizes.min.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/hi-style.css">
+
 
     <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free          -->
     <script src="https://kit.fontawesome.com/1d9115e34a.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/reset.min.css" media="all">
+    <link rel="stylesheet" href="css/reset.min.css" rel="preload " as="style ">
     <link rel='stylesheet' href='css/tailwind.min.css' rel="preload " as="style " media="all">
     <link rel="stylesheet" href="css/w3.css" media="all">
     <link rel="stylesheet " href="css/style.css" media="all">
@@ -237,21 +237,21 @@
         /* small */
         
         @media (max-width:600px) {
-            .hi-hide-small {
+            .w3-hide-small {
                 display: none!important
             }
         }
         /* medium */
         
         @media (max-width:992px) and (min-width:601px) {
-            .hi-hide-medium {
+            .w3-hide-medium {
                 display: none!important
             }
         }
         /* large */
         
         @media (min-width:993px) {
-            .hi-hide-large {
+            .w3-hide-large {
                 display: none!important
             }
         }
@@ -1017,7 +1017,7 @@
                     <body class=" font-sansx">
 
 
-                        <div class="  background-icon-black-1B1C24">
+                        <div class="  background-icon-black-1B1C24 lazy">
                             <style>
                                 .background-icon-black-1B1C24 {
                                     justify-content: center;
@@ -1104,7 +1104,7 @@
                             <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
                                 <div class="w-full lg:w-1/4">
                                     <div class="w3-container">
-                                        <img src="img/luisangelmaciel_400x400.webp" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24">
+                                        <img src="img/luisangelmaciel_400x400.webp" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24" loading="lazy " class="lazy ">
                                     </div>
                                 </div>
                                 <div class="w-full lg:w-1/2 w3-hide-large w3-hide-small w3-hide-medium">
@@ -1178,14 +1178,14 @@
 
                                 <div class="mb-4 w3-hide-large w3-hide-small w3-hide-medium">
 
-                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="avatar" class="rounded-full h-12 w-12" width="150" height="150"></a>
+                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="avatar" class="rounded-full h-12 w-12" width="150" height="150" loading="lazy " class="lazy "></a>
 
                                 </div>
 
                                 <div class="mb-4 w3-hide-large w3-hide-small w3-hide-medium"><i class="fa fa-picture-o fa-lg text-grey-dark mr-1"></i><a href="#" class="text-teal">Photos and videos</a></div>
 
                                 <div class="mb-4 w3-hide-large w3-hide-small w3-hide-medium">
-                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="photo" class="h-20 w-20 mr-1 mb-1"></a>
+                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="photo" class="h-20 w-20 mr-1 mb-1" loading="lazy " class="lazy "></a>
 
                                 </div>
                             </div>
@@ -1275,7 +1275,7 @@
                                     <div class="w-1/8 text-right pl-3 pt-3">
                                         <div><i class="fa fa-thumb-tack text-teal mr-2"></i></div>
                                         <div>
-                                            <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="avatar" class="rounded-full h-12 w-12 mr-2"></a>
+                                            <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="avatar" class="rounded-full h-12 w-12 mr-2" loading="lazy " class="lazy "></a>
                                         </div>
                                     </div>
                                     <div class="w-7/8 p-3 pl-0">
@@ -1298,7 +1298,7 @@
                                                 <p class="mb-6">Makes `apply` more useful when using !important utilities, and includes an improved default color palette:</p>
                                                 <p class="mb-4"><a href="#" class="text-teal">github.com/tailwindcss/ta...</a></p>
                                                 <p>
-                                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="tweet image" class="border border-solid border-grey-light rounded-sm"></a>
+                                                    <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="tweet image" class="border border-solid border-grey-light rounded-sm" loading="lazy " class="lazy "></a>
                                                 </p>
                                             </div>
                                         </div>
@@ -1393,7 +1393,7 @@
 
                                     <div class="flex border-b border-solid border-grey-light">
                                         <div class="py-4">
-                                            <a href="#" class=" p-1"><img src="img/luisangelmaciel_400x400.webp" alt="follow1" class="rounded h-6 w-6"></a>
+                                            <a href="#" class=" p-1"><img src="img/luisangelmaciel_400x400.webp" alt="follow1" class="rounded h-6 w-6" loading="lazy " class="lazy "></a>
                                         </div>
                                         <div class="pl-2 py-2 w-full">
                                             <div class="flex justify-between">
@@ -1462,7 +1462,7 @@
                         <div class="w3-container ">
                             <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black susan-storm-large susan-storm-medium susan-storm-small"></button>
 
-                            <div id="id01" class="w3-modal " style="background:#1B1C24;      background-image: url(' img/lamp-icon-black-1B1C24.svg ' ); ">
+                            <div id="id01" class="w3-modal lazy " style="background:#1B1C24;      background-image: url(' img/lamp-icon-black-1B1C24.svg ' ); ">
                                 <span onclick="document.getElementById( 'id01').style.display='none' " class="w3-margin w3-display-topright w3-xlarge " style=" color : white ">&times;</span>
                                 <div class="w3-modal-content ">
                                     <div class="w3-container w3-card-4 w3-black w3-center ">
@@ -1476,13 +1476,13 @@
                                             <div class='video  '>                                    
                                                 <a href="https://twitter.com/intent/follow?screen_name=irisxcqueen " target="_blank ">
                                                     <video autoplay loop muted playsinline width="310 " height="175 " class="susan-storm-large susan-storm-medium ">  
-                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.mp4" type="video/mp4 " title="Iris XC Queen " >                                           
+                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen " >                                           
                                                 </video>
                                                     <video autoplay loop muted playsinline width="512 " height="290 " class=" susan-storm-large susan-storm-small ">  
-                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.mp4" type="video/mp4 " title="Iris XC Queen " >                                           
+                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen " >                                           
                                                 </video>
                                                     <video autoplay loop muted playsinline width="607 " height="342 " class=" susan-storm-medium  susan-storm-small  ">  
-                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.mp4" type="video/mp4 " title="Iris XC Queen " >                                           
+                                                    <source src="https://www.luisangelmaciel.one/video/iris-xc-la-mas-draga-travel.webm" type="video/mp4 " title="Iris XC Queen " >                                           
                                                 </video>
                                                 </a>
                                             </div>
@@ -1535,12 +1535,12 @@
             <main class="container-publicaciones">
 
                 <div id="one" class="tabcontent" style="list-style-type: none;margin-left: 10px; margin-right: 13px;"><br><br><br>
-                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> How To Section</h2>
+                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> How To Section</h2>
                     <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Code snippets for HTML, CSS and JavaScript</h4>
 
                     
                     <ul id="Activity">
-                        <li hi-repeat="hiHelloMaciel" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                        <li w3-repeat="hiHelloMaciel" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
                             <div style="display: flex; ">
                                 <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
 
@@ -1555,7 +1555,7 @@
                         </li>
                     </ul>
                     <script>
-                        hi.displayObject("Activity", myObject);
+                        w3.displayObject("Activity", myObject);
                     </script>
 
 
@@ -1574,7 +1574,7 @@
 
             <div id="mapsite" class="tabcontent">
                 <br><br><br><br>
-                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Mapa de sitio</h2>
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> Mapa de sitio</h2>
            
                 
                 <main class="container-publicaciones">
@@ -1590,40 +1590,40 @@
                       .repeat {list-style-type: none;  margin: 0;  padding: 0;}
                     .pRepeat {margin-top: 0; margin-bottom: 1rem; padding-bottom: .10rem;  font-size: .1.25em; margin-bottom: 0;} </style>
                                             <h3><b>www.luisangelmaciel.one</b> </h3>
-                                            <li hi-repeat="git-luisangelmacielOne" class="repeat">
+                                            <li w3-repeat="git-luisangelmacielOne" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{proyecto}}</a></span>
                                                 </p>
                                             </li>
 
                                             <h3><b>Proyectos propios</b></h3>
-                                            <li hi-repeat="proyectos-propios" class="repeat">
+                                            <li w3-repeat="proyectos-propios" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{proyecto}}</a></span>
                                                 </p>
                                             </li>
 
                                             <h3><b>Proyectos</b> </h3>
-                                            <li hi-repeat="proyectos" class="repeat">
+                                            <li w3-repeat="proyectos" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{proyecto}}</a></span>
                                                 </p>
                                             </li>
 
                                             <h3><b>How to One</b> </h3>
-                                            <li hi-repeat="one" class="repeat">
+                                            <li w3-repeat="one" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a> </span>
                                                 </p>
                                             </li>
                                             <h3><b>Xiiber Travel</b></h3>
-                                            <li hi-repeat="Xiiber-travel" class="repeat">
+                                            <li w3-repeat="Xiiber-travel" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a></span>
                                                 </p>
                                             </li>
                                             <h3> <b>Apps</b> </h3>
-                                            <li hi-repeat="app" class="repeat">
+                                            <li w3-repeat="app" class="repeat">
                                                 <p class="pRepeat">
                                                     <span> <a  href="{{pageid}}"   style="text-decoration: none;" target="_blank">{{title}}</a></span>
                                                 </p>
@@ -1633,7 +1633,7 @@
 
                                     <!-- Inicia hiHelloMonster -->
                                     <script>
-                                        hi.displayObject("siteMap", myObject);
+                                        w3.displayObject("siteMap", myObject);
                                     </script>
                                     <!-- Termina hiHelloMonster  -->
 
@@ -1824,7 +1824,7 @@
 
             <div id="xiiber" class="tabcontent">
                 <<br><br><br><br>
-                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Xiiber Travel</h2>
+                    <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> Xiiber Travel</h2>
                     <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">¡Vámonos de viaje!</h4>
 
                     <div class="container-hecho body-hecho">
@@ -1862,12 +1862,12 @@
             </div>
 
             <div id="dragvesti" class="tabcontent"><br><br><br><br>
-                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Dragvesti</h2>
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> Dragvesti</h2>
                 <h4 style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">All Stars</h4>
             </div>
 
             <div id="desing" class="tabcontent"><br><br><br><br>
-                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo hi-hover-opacity"></i> Diseños</h2>
+                <h2 style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> Diseños</h2>
 
                 <style>
                     div.gallery {
