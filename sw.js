@@ -5,9 +5,9 @@ var filesToCache = [
     '/404.html',
     '/css/styles.css',
     '/js/main.js',
-    '/js_rb_polyfills',
-    '/js/_main-behavior',
-    '/js/_js__crucial-behavior',
+    '/manifest.json',
+    '/js/entradas.js',
+    '/js/lazysizes.min.js',
     '/manifest.json'
 ];
 
