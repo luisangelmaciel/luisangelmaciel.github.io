@@ -33,8 +33,8 @@ var myObject = {
         "proyecto": "<b>Curriculum</b>  ",
         "pageid": "https://luisangelmaciel.github.io/curriculum",
     }, {
-        "proyecto": "<b>Camara de Gesell</b>  ",
-        "pageid": "https://luisangelmaciel.github.io/camaradegesell",
+        "proyecto": "<b>Cámara de Gesell</b>  ",
+        "pageid": "https://github.com/luisangelmaciel/camaradegesell",
     }, {
         "proyecto": "<b>PWA</b>  ",
         "pageid": "https://github.com/luisangelmaciel/pwa",
@@ -114,8 +114,8 @@ var myObject = {
         "proyecto": "<b>Recurmental</b>  ",
         "pageid": "https://luisangelmaciel.github.io/Recurmental",
     }, {
-        "proyecto": "<b>Checklist</b>  ",
-        "pageid": "https://luisangelmaciel.github.io/checklist",
+        "proyecto": "<b>Checklist</b>. Agenda para el día a  ",
+        "pageid": "https://github.com/luisangelmaciel/checklist",
     }, {
         "proyecto": "<b>Head Total Full</b>  ",
         "pageid": "https://luisangelmaciel.github.io/head-total-full",
@@ -153,6 +153,31 @@ var myObject = {
     }, {
         "proyecto": "<b>How to One</b> Code snippets para HTML, CSS & JavaScript",
         "pageid": "#",
+    }],
+    "git-hihellomonster": [{
+        "proyecto": "<b>Diseño web</b>  ",
+        "pageid": "https://hihellomonster.github.io/desing/",
+    }, {
+        "proyecto": "<b>Vinkme. </b> Propuesta Linktree",
+        "pageid": "https://hihellomonster.github.io/vinkme/",
+    }, {
+        "proyecto": "<b>Dragvesti.</b> La revista",
+        "pageid": "https://hihellomonster.github.io/dragvesti-la-revista/",
+    }, {
+        "proyecto": "<b>Quiz. </b> Templete",
+        "pageid": "https://github.com/hihellomonster/quiz",
+    }, {
+        "proyecto": "<b>HiHello.monster!</b> Index",
+        "pageid": "https://hihellomonster.github.io/index-que-he-usado/",
+    }, {
+        "proyecto": "<b>Dragvesti.</b> ",
+        "pageid": "https://hihellomonster.github.io/dragvesti/",
+    }, {
+        "proyecto": "<b>Dragvesti.</b> ",
+        "pageid": "https://hihellomonster.github.io/dragvesti/",
+    }, {
+        "proyecto": "<b>Dragvesti.</b> ",
+        "pageid": "https://hihellomonster.github.io/dragvesti/",
     }],
     "proyectos": [{
         "proyecto": "<b>Geus Gourmé</b> Productos gourmet artesanales",
