@@ -1,14 +1,14 @@
 var cacheName = 'lamp!';
 var filesToCache = [
     '/',
+    '/manifest.json',
     '/index.html',
     '/404.html',
     '/css/styles.css',
+    '/css/w3.css',
     '/js/main.js',
-    '/manifest.json',
     '/js/entradas.js',
-    '/js/lazysizes.min.js',
-    '/manifest.json'
+    '/js/lazysizes.min.js'
 ];
 
 /* Start the service worker and cache all of the app's content */
