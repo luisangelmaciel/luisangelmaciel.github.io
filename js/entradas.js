@@ -218,13 +218,13 @@ var myObject = {
         "proyecto": "",
     }],
     "hiHelloMaciel": [{
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-08-28T20:11:18.929Z'>28 agosto 2021</time>",
-        "a-href": "#",
-        "a-href-tittle": "",
-        "how-to-tittle": "",
-        "el-Post": "  ",
-        "accion": "",
+        "a-href": "https://ok.ru/videoembed/43770120721",
+        "a-href-tittle": " Película, La vida de Adele. Subtitulos en español ",
+        "how-to-tittle": "Ver Online Download Película, La vida de Adele. Subtitulos en español",
+        "el-Post": " Película, La vida de Adele. Subtitulos en español ",
+        "accion": "Ver Online",
         "postFoto1": "",
         "altPostFoto1": "",
         "postFoto2": " ",
@@ -236,7 +236,7 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-xiiber.svg",
         "fecha-De-Publicacion": "<time datetime='2021-08-27T20:11:18.929Z'>27 agosto 2021</time>",
         "a-href": "#",
         "a-href-tittle": "",
@@ -310,11 +310,11 @@ var myObject = {
     }, {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 mayo 2021</time>",
-        "a-href": "#",
+        "a-href": "Enlace: https://terabox.com/s/1v6impARVJN0xPzrviJF4Og",
         "a-href-tittle": "",
         "how-to-tittle": "",
-        "el-Post": "  ",
-        "accion": "",
+        "el-Post": "RuPaul´s Werk the world 1 y 2 temporada + Show Las Vegas  ",
+        "accion": "Ver ahora",
         "postFoto1": "",
         "altPostFoto1": "",
         "postFoto2": " ",
@@ -329,9 +329,9 @@ var myObject = {
         "img-src": "img/avatar.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 abril 2021</time>",
         "a-href": "#",
-        "a-href-tittle": "",
+        "a-href-tittle": "Pokemon",
         "how-to-tittle": "",
-        "el-Post": "  ",
+        "el-Post": "Tatoe hi no naka mizu no naka  kusa no naka mori no naka  ",
         "accion": "",
         "postFoto1": "",
         "altPostFoto1": "",
@@ -367,7 +367,4 @@ var myObject = {
 w3.displayObject("siteMap", myObject);
 
 //   <time datetime='2021-04-29T20:10:18.429Z'>29 April 2021</time>
-// <a href = "https://github.com/alfio-event/alf.io" > Gestion de tickets < /a>>   
-// Tatoe hi no naka mizu no naka  kusa no naka mori no naka
-
-// Breaking Bad - Walter White Blue Meth
+// <a href = "https://github.com/alfio-event/alf.io" > Gestion de tickets < /a>>
