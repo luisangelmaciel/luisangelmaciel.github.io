@@ -96,9 +96,6 @@ var myObject = {
         "proyecto": "<b>How To</b>  ",
         "pageid": "https://luisangelmaciel.github.io/how-to",
     }, {
-        "proyecto": "<b>Designer Corel</b>  ",
-        "pageid": "https://luisangelmaciel.github.io/designer.corel",
-    }, {
         "proyecto": "<b>Xivit</b>  ",
         "pageid": "https://luisangelmaciel.github.io/xivit",
     }, {
@@ -254,7 +251,7 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-08-26T20:10:18.929Z'>26 agosto 2021</time>",
         "a-href": "https://luisangelmaciel.github.io/one/codigo-alien/",
         "a-href-tittle": "Código [code] alien.",
@@ -272,7 +269,7 @@ var myObject = {
         "score-lighthouse": "?/100/100/64 a ?/100/100/100",
         "img-score-lighthouse": "https://raw.githubusercontent.com/luisangelmaciel/one/main/codigo-alien/code-alien.webp",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-07-02T19:20:18.929Z'>2 julio 2021</time>",
         "a-href": "#",
         "a-href-tittle": "",
@@ -290,7 +287,7 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-06-26T20:10:18.929Z'>26 junio 2021</time>",
         "a-href": "https://www.youtube.com/watch?v=qHksy0Sa8I0&t=55s",
         "a-href-tittle": "Dalú, la niña de las mil canciones",
@@ -308,9 +305,9 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 mayo 2021</time>",
-        "a-href": "Enlace: https://terabox.com/s/1v6impARVJN0xPzrviJF4Og",
+        "a-href": "https://terabox.com/s/1v6impARVJN0xPzrviJF4Og",
         "a-href-tittle": "",
         "how-to-tittle": "",
         "el-Post": "RuPaul´s Werk the world 1 y 2 temporada + Show Las Vegas  ",
@@ -326,7 +323,7 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-05-13T20:11:18.929Z'>13 abril 2021</time>",
         "a-href": "#",
         "a-href-tittle": "Pokemon",
@@ -344,7 +341,7 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, {
-        "img-src": "img/avatar.svg",
+        "img-src": "img/avatar-esfera-4-estrellas.svg",
         "fecha-De-Publicacion": "<time datetime='2021-03-06T20:10:18.929Z'>6 marzo 2021</time>",
         "a-href": "#",
         "a-href-tittle": "Pokemon",
