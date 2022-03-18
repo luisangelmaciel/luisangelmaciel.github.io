@@ -199,6 +199,19 @@ var myObject = {
         "title": "Code snippets para HTML, CSS & JavaScript",
         "pageid": "/templetes/catalogo.html",
     }],
+    "emoji": [{
+        "title": "Match game",
+        "pageid": "https://luisemoji.github.io/gaymer/emoji-match-game/",
+    }, {
+        "title": "Anda tocale aquí",
+        "pageid": "https://luisemoji.github.io/gaymer/anda-tocale-aqui/",
+    }, {
+        "title": "Viborita",
+        "pageid": "https://luisemoji.github.io/gaymer/viborita/",
+    }, {
+        "title": "Pokefriends",
+        "pageid": "https://luisemoji.github.io/pokemon/dia-de-la-amistad/",
+    }],
     "Xiiber-travel": [{
         "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
         "pageid": "#",
