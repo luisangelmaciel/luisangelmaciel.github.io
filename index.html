@@ -167,9 +167,9 @@
     <link rel="preload " href="/lib/fonts/free-fa-solid-900.woff2 " as="font " type="font/woff2 ">
 
 
-    <script src="js/w3.js" as="script " async></script>
-    <script src="js/entradas.js" rel="preload " as="script " async></script>
-    <script src="js/lazysizes.min.js" rel="preload " as="script " asyncc></script>
+    <script src="js/w3.js" as="script " async  charset="utf-8 "></script>
+    <script src="js/entradas.js" rel="preload " as="script " async  charset="utf-8 "></script>
+    <script src="js/lazysizes.min.js" rel="preload " as="script " asyncc  charset="utf-8 "></script>
     <!-- 
          <script src="js/compressed.js"></script>
          <script src="js/jquery-3-5-0.js"></script>
@@ -293,7 +293,7 @@
                 </div>
             </div>
 
-            <div class="loader lazy"> </div>
+            <div class="loader "> </div>
         </div>
     </div>
     </div>
@@ -602,10 +602,42 @@
                             </div>
                             <br><br>
                             <p class="w3-center"> Hecho con 
-                                <span style="color: red; ">❤</span> y mucho código
+                                <span style="color: red; ">❤</span> y mucho código <small> <a href="https://luisangelmaciel.github.io/" target="_blank">=)<b>!</b></a></small>
                             </p>
-                            <br>     
-                                           
+                             
+                            <div id="messages "></div>
+                            <br>   
+                            <script src="js/head-al-full.js" rel="preload " as="script " async></script>   
+                             <style>
+                                #messages {
+                                    position: fixed;
+                                    left: 1rem;
+                                    bottom: 1.5rem;
+                                    max-width: 90%;
+                                }
+                                
+                                #messages .message {
+                                    padding: .5rem 1rem;
+                                    margin-top: .5rem;
+                                    color: #eceeef;
+                                    background-color: rgba(55, 58, 60, .9);
+                                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+                                    will-change: opacity;
+                                    opacity: 0;
+                                    transition: opacity 0.25s ease-in-out;
+                                }
+                                
+                                #messages .message i {
+                                    margin-right: .5rem;
+                                }
+                                
+                                #messages .message.active {
+                                    will-change: opacity;
+                                    opacity: 1;
+                                    transition: opacity 0.25s ease-in-out;
+                                }
+
+                             </style>              
                         </footer>
                 
                 
@@ -642,7 +674,7 @@
                                     <div class="w-1/8 text-right pl-3 pt-3">
                                         <div><i class="fa fa-thumb-tack text-teal mr-2"></i></div>
                                         <div>
-                                            <a href="#"><img src="img/luisangelmaciel_400x400.webp" alt="avatar" class="rounded-full h-12 w-12 mr-2" loading="lazy lazyload " class="lazy "></a>
+                                            <a href="#"><img src="img/avatar-esfera-4-estrellas.svg" alt="avatar" class="rounded-full h-12 w-12 mr-2" loading="lazy lazyload " class="lazy "></a>
                                         </div>
                                     </div>
                                     <div class="w-7/8 p-3 pl-0">
@@ -729,6 +761,11 @@
                                     </div> 
                             
 
+                                    <p class="p-post ">
+                                        eBooks
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/ebooks" target="_blank" title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><code style="color: grey">Descargar </code>
+                                </a>
+                                    </p>
 
 
                                     <p class="p-post ">
@@ -756,11 +793,111 @@
                                 </a>
                                     </p>
 
+                                    <p class="p-post">
+                                        La casa del Ángel
+                                        <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/la-casa-del-angel" target="_blank" title="Checklist. Agenda para hábitos" aria-label="Check list"><code style="color: grey">Menú </code>
+                                </a>
+                                    </p>
+
+
                                     <p class="p-post ">
-                                        <i>Practica de ocio que quedo al 100% en Lighthouse</i> Este fue el diseño que me inspiro para la animación de mi fondo de pantalla. El reto en este proyecto era la optimización de imagenes y animación.
+                                        <i>Práctica de ocio que quedo al 100% en Lighthouse</i> Este fue el diseño que me inspiro para la animación de mi fondo de pantalla. El reto en este proyecto era la optimización de imagenes y animación.
                                         <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/how-to/avengers-in-3d/fork/" target="_blank" title="Efectos de animación " aria-label=" Download font and live preview"><code style="color: grey">Ver proyecto mejorado</code>
                                 </a>
                                     </p>
+
+                                    <p class="p-post ">
+                                        Templete Curriculum
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/curriculum/" target="_blank" title="Curriculum " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+
+                                    <p class="p-post ">
+                                        En modo
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/en.modo/" target="_blank" title="en.modo " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+
+                                   
+
+                                    <p class="p-post ">
+                                        La magia de la herbolaria
+                                        <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/la-magia-de-la-herbolaria" target="_blank" title="Memes: RuPaul´s Drag Race " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+
+                                    <p class="p-post ">
+                                        Memes: RuPaul´s Drag Race
+                                        <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/memes" target="_blank" title="Memes: RuPaul´s Drag Race " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+
+                                    <p class="p-post ">
+                                        Font Name: Wow awesome!
+                                        <a rel="noreferrer noopener" href="https://hihellomonster.github.io/wow.awesome/" target="_blank" title=" Font Name: Wow awesome!" aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+
+                                    <p class="p-post ">
+                                        Glyps
+                                        <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/glyphs/pago.html" target="_blank" title="Memes: RuPaul´s Drag Race " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                </a>
+                                    </p>
+                                        <!-- glyphs/animales/demo.html
+                                        glyphs/banderas/demo.html
+                                        glyphs/banderas.html
+                                        glyphs/como-te-sientes-hoy/como-que-quiero-llorar.svg
+                                        glyphs/google-calendar-2020/cal_01_v2.png
+                                        glyphs/horoscope/demo.html
+                                        glyphs/mexico/demo.html
+                                        glyphs/mexico.html
+                                        glyphs/pago/demo.html
+                                        glyphs/pago.html
+                                        glyphs/siluetas/Siluetas-Glyphs-Demo.html
+                                        -->
+                                        <p class="p-post ">
+                                            metro-pokemon
+                                            <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/metro-pokemon" target="_blank" title="en.modo " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                    </a>
+                                        </p>
+
+                                        <p class="p-post ">
+                                            mode.multicolor
+                                            <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/metro-pokemon" target="_blank" title="en.modo " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                    </a>
+                                        </p>
+
+                                        <p class="p-post ">
+                                            moms.pizzas
+                                            <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/moms.pizzas" target="_blank" title="en.modo " aria-label=" Download font and live preview"><code style="color: grey">Utilizar templete</code>
+                                    </a>
+                                        </p>
+
+                                        <p class="p-post ">
+                                            papercraft
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/papercraft" target="_blank" title="One" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                                         </a>
+                                    </p>
+
+                                        <p class="p-post ">
+                                            pause.idea/snackstore
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/pause.idea/snackstore" target="_blank" title="One" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                                       </a>
+                                    </p>
+
+
+                                    <p class="p-post ">
+                                        pokerangers
+                                    <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/pokerangers" target="_blank" title="One" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                                   </a>
+                                </p>
+
+                                <p class="p-post ">
+                                    pride
+                                <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/pride" target="_blank" title="One" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                               </a>
+                            </p>
+
 
                                     <h2 id="loMasNuevo"  class="p-post"> Sobre Dragon Ball </h2>
 
@@ -774,8 +911,8 @@
                                         <div class="w-7/8 p-3 pl-0">
                                             <div class="flex justify-between">
                                                 <div>
-                                                    <span class="font-bold"><a href="https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/" class="text-black">Goku save the universe </a></span>
-                                                    <span class="text-grey-dark">Game</span>
+                                                    <span class="font-bold"><a href="https://hihellomonster.github.io/dragon.ball//" class="text-black">Frases de Goku </a></span>
+                                                    <span class="text-grey-dark">Random</span>
                                                     <span class="text-grey-dark">&middot;</span>
                                                     <span class="text-grey-dark">2021</span>
                                                 </div>
@@ -783,8 +920,8 @@
                                             </div>
                                
                                                 <div class="mb-4">
-                                                    <p class="mb-6"> El arte del juego esta inspirado en la ultima entrega de Dragon Ball Super. Goku salvanos de Moro.
-                                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/" target="_blank" title="goku-save-the-universe-game " aria-label=" goku-save-the-universe-game"><code style="color: grey">Jugar ahora </code>
+                                                    <p class="mb-6"> Random Quotes inspirados en Goku de Dragon Ball. 
+                                                        <a rel="noreferrer noopener" href="https://hihellomonster.github.io/dragon.ball/" target="_blank" title="goku-save-the-universe-game " aria-label=" goku-save-the-universe-game"><code style="color: grey">Jugar ahora </code>
                                                 </a></p>
                                                                                                      
                                                 </div>
@@ -792,9 +929,18 @@
                                         </div>
                                     </div> 
 
+                                    <p class="p-post">
+                                        El arte del juego esta inspirado en la ultima entrega de Dragon Ball Super. Goku salvanos de Moro.
+                                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/" target="_blank" title="goku-save-the-universe-game " aria-label=" goku-save-the-universe-game"><code style="color: grey">Jugar ahora </code>
+                                    </p>
+                                
 
 
-
+                                    <p class="p-post">
+                                        Download Font & Live Preview Saiyan-Sans
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/dragon.ball/download-font-and-live-preview/" target="_blank" title="download-font-and-live-preview" aria-label="Loader"><code style="color: grey">Ver práctica </code>
+                                </a>
+                                    </p>
                                 
 
                                  
@@ -813,7 +959,7 @@
 
                                     <p class="p-post">
                                         Loader Dragon Ball Super
-                                        <a rel="noreferrer noopener" href="https://github.com/luisangelmaciel/dragon.ball/loader" target="_blank" title="Loader" aria-label="Loader"><code style="color: grey">Cargando </code>
+                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/dragon.ball/loader/" target="_blank" title="Loader" aria-label="Loader"><code style="color: grey">Cargando </code>
                                  </a>
                                     </p>
 
@@ -828,7 +974,7 @@
                                     <div class="flex border-b border-solid border-grey-light ">
                                         <div class="w-1/8 text-right pl-3 pt-3">                                           
                                             <div>
-                                                <a href="#"><img src="img/avatar-hi-hello-monster.png" alt="avatar" class=" h-12 w-12 mr-2" loading="lazy lazyload " class="lazy "></a>
+                                                <a href="#"><img src="img/avatar-esfera-4-estrellas.svg" alt="avatar" class=" h-12 w-12 mr-2" loading="lazy lazyload " class="lazy "></a>
                                             </div>
                                         </div>
                                         <div class="w-7/8 p-3 pl-0">
@@ -872,8 +1018,23 @@
                                     </p>
 
        
+                                    <p class="p-post ">
+                                        <i>Niiha Villant</i>, ganadora de Dragvesti 2da temporada All Stars 
+                                       <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/niihavillant/" target="_blank" title="Niiha Villant" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                             </a>
+                                   </p>
 
                                    
+
+                                   
+                                   <p class="p-post ">
+                                        One
+                                    <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/one/" target="_blank" title="Niiha Villant" aria-label="Niiha Villant"><code style="color: grey">Ver propuesta </code>
+                                </a>
+                                    </p>
+
+                                        
+
 
                                 </div>
 
@@ -1539,7 +1700,7 @@
                     </div>
 
                     <script src="js/tiempo-que-llevas-leyendo-esto.js" rel="preload " as="script " async></script>
-
+                   
                     <br>
                 </div>
 
