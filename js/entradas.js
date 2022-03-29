@@ -168,7 +168,7 @@ var myObject = {
         "pageid": "https://hihellomonster.github.io/desing/27-marzo-dia-del-queso.html",
     }, {
         "proyecto": "Cuál es la edad de la felicidad",
-        "pageid": "cual_es_la_edad_de_la_felicidad_sexual.html",
+        "pageid": "https://hihellomonster.github.io/desing/cual_es_la_edad_de_la_felicidad_sexual.html",
     }, {
         "proyecto": "<b>Desing</b> ",
         "pageid": "https://hihellomonster.github.io/desing/",
@@ -467,8 +467,8 @@ var myObject = {
         "proyecto": "Dragon Ball Love-en-el-menu-boton ",
         "pageid": "https://hihellomonster.github.io/dragon.ball/love-en-el-menu-boton.html",
     }, {
-        "proyecto": "Dragon Ball Llove-en-la-imagen v2 ",
-        "pageid": "https://hihellomonster.github.io/dragon.ball/love-en-la-imagen-v2.html",
+        "proyecto": "Dragon Ball Llove-en-la-imagen  ",
+        "pageid": "https://hihellomonster.github.io/dragon.ball/love-en-la-imagen.html",
     }, {
         "proyecto": "Dragon Ball L ",
         "pageid": "https://hihellomonster.github.io/dragon.ball/love-en-la-imagen.html",
