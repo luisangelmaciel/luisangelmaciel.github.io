@@ -495,12 +495,12 @@ var myObject = {
         "pageid": "https://hihellomonster.github.io/mode-multicolor/multicolor-modal.html",
     }, {
         "proyecto": "Mode multicolor simple ",
-        "pageid": "https://hihellomonster.github.io/mode-multicolor/multicolor.html", 
+        "pageid": "https://hihellomonster.github.io/mode-multicolor/multicolor.html",
     }, {
         "proyecto": "Mode multicolor Multi ",
         "pageid": "https://hihellomonster.github.io/mode-multicolor/multi",
     }, {
-        "proyecto": "Mode multicolor Color ",
+        "proyecto": "Mode multicolor Color Okey",
         "pageid": "https://hihellomonster.github.io/mode-multicolor/multi/color.html",
     }, {
         "proyecto": "Mode multicolor color menu ",
@@ -574,7 +574,7 @@ var myObject = {
     }, {
         "proyecto": "Xiiber ",
         "pageid": "https://hihellomonster.github.io/xiiber",
-}],
+    }],
     "proyectos": [{
         "proyecto": "<b>Geus Gourmé</b> Productos gourmet artesanales",
         "pageid": "#",
