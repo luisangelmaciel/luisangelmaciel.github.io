@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<!-- 
+	⊙⩌⨀
+    2006 2021 © hiHello.monster! Marketing Technology Stack
+    2015 2021 © Templete HTML5 hiHello.monster 
+    
+	   ˆ⩌ˆ
+    ⪘ ¿Quién hizo todo esto? 
+       »  http://twitter.com/luisangelmaciel 
+-->
+<html lang="es-MX">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="content-encoding" content="gzip">
+    <meta http-equiv="Cache-Control" content="max-age=600">
+
+    <title>Templete HTML5 hiHello.monster </title>
+    <meta name="description" content="Templete HTML5 hiHello.monster con un 100% Score en lighthouse, desarrollado por @luisangelmaciel. Facil de usar y con todos los hacks incluidos metas y el manifest.jason para WPA">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Luis Angel Maciel">
+    <meta name="generator " content="HiHello.Monster @luisangelmaciel ">
+    <meta name="theme-color" content="#017dbb">
+
+    <meta property="og:title" content="HiHello.Monster">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="https://hihellomonster.github.io/templete/">
+    <meta property="og:image" content="https://hihellomonster.github.io/templete/imp/property-og-image.webp">
+
+    <link rel="canonical" href="https://hihellomonster.github.io/templete/">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png" sizes="192x192">
+    <link rel="icon" href="favicon.png " sizes="76x76">
+
+    <link rel="stylesheet" href="css/hi-style.css">
+
+    <link rel="preconnect " href="https://fonts.gstatic.com ">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap ">
+    <link rel="stylesheet" href="https://www.xiiber.com/lib/fonts/xiibicon.woff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="preload" href="https://www.xiiber.com/css/xiibicon.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://www.xiiber.com/css/xiibicon.css"></noscript>
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+            margin: 0;
+            background-color: white;
+            color: black;
+            font-size: 25px;
+            font-family: Arial;
+            box-sizing: border-box
+        }
+        
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+        
+        .visuallyhidden {
+            border: 0;
+            clip: rect(0 0 0 0);
+            height: 1px;
+            margin: -1px;
+            overflow: hidden;
+            padding: 0;
+            position: absolute;
+            width: 1px;
+        }
+        /* Style the tab */
+        
+        .tab {
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f1f1f1;
+        }
+        /* Style the buttons inside the tab */
+        
+        .tab button {
+            background-color: inherit;
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        /* Change background color of buttons on hover */
+        
+        .tab button:hover {
+            background-color: #ddd;
+        }
+        /* Create an active/current tablink class */
+        
+        .tab button.active {
+            background-color: #ccc;
+        }
+        /* Style the tab content */
+        
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+    </style>
+
+
+    <!--  <script>
+        function includeHTML() {
+            var z, i, elmnt, file, xhttp;
+            /*loop through a collection of all HTML elements:*/
+            z = document.getElementsByTagName("*");
+            for (i = 0; i < z.length; i++) {
+                elmnt = z[i];
+                /*search for elements with a certain atrribute:*/
+                file = elmnt.getAttribute("include-html");
+                if (file) {
+                    /*make an HTTP request using the attribute value as the file name:*/
+                    xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function() {
+                        if (this.readyState == 4) {
+                            if (this.status == 200) {
+                                elmnt.innerHTML = this.responseText;
+                            }
+                            if (this.status == 404) {
+                                elmnt.innerHTML = "Page not found.";
+                            }
+                            /*remove the attribute, and call this function once more:*/
+                            elmnt.removeAttribute("include-html");
+                            includeHTML();
+                        }
+                    }
+                    xhttp.open("GET", file, true);
+                    xhttp.send();
+                    /*exit the function:*/
+                    return;
+                }
+            }
+        };
+    </script> -->
+</head>
+
+<body>
+
+    <h2>Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+
+    <div class="tab">
+        <button class="tablinks" onclick="openMenu(event, 'London')">London</button>
+        <button class="tablinks" onclick="openMenu(event, 'Paris')">Paris</button>
+        <button class="tablinks" onclick="openMenu(event, 'Tokyo')">Tokyo</button>
+        <button class="tablinks" onclick="openMenu(event, 'index')">index</button>
+        <button class="tablinks" onclick="openMenu(event, 'menu')">menu</button>
+        <button class="tablinks" onclick="openMenu(event, 'notificaciones')">notificaciones</button>
+        <button onclick="myFunction()">Toggle dark mode</button>
+
+        <script>
+            function myFunction() {
+                var element = document.body;
+                element.classList.toggle("dark-mode");
+            }
+        </script>
+    </div>
+    <script>
+        function openMenu(evt, menuName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+
+    <div id="London" class="tabcontent">
+        <h3>London</h3>
+        <p><button onclick="clickCounter()" type="button">Click me!</button></p>
+        <div id="result"></div>
+        <p>Click the button to see the counter increase.</p>
+        <p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+        <!-- va arriba https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount   -->
+        <script>
+            function clickCounter() {
+                if (typeof(Storage) !== "undefined") {
+                    if (localStorage.clickcount) {
+                        localStorage.clickcount = Number(localStorage.clickcount) + 1;
+                    } else {
+                        localStorage.clickcount = 1;
+                    }
+                    document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+                } else {
+                    document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+                }
+            }
+        </script>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+        <h3>Paris</h3>
+        <p>última actualización</p>
+
+        <script>
+            document.write(Date());
+        </script>
+    </div>
+
+    <div id="Tokyo" class="tabcontent">
+        <h3>Tokyo</h3>
+        <h2>Toggle Dark/Light Mode</h2>
+        <p>Click the button to toggle between dark and light mode for this page.</p>
+
+
+    </div>
+
+
+    <div id="index" class="tabcontent">
+
+
+
+        <div class="hi-row hi-padding-32 hi-blue-grey ">
+            <div class="hi-content ">
+
+                <h1 style="font-weight:700 ">hiHello 1.0 Junio 2021 by @luisangelmaciel. Inspirado en W3.CSS by Jan Egil and Borge Refsnes</h1>
+
+
+
+            </div>
+        </div>
+        <p> .hi-darkmode, .hi-hide-all, https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_toggle_dark_mode </p>
+
+
+
+
+        <h3>Codespan</h3>
+        <p>The hi-codespan class is used to hightlight inline code:</p>
+        <p>© Copyright 2021. All Rights Reserved. The following HTML elements: <code class="hi-codespan ">span</code>, <code class="hi-codespan ">section</code>, and <code class="hi-codespan ">div</code> defines a section in a document.</p>
+        <!-- codigo -->
+
+
+        <div class="hi-code-card " ">
+            <h4>HTML Example</h4>
+            <div class="hi-code htmlHigh notranslate ">
+                &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br> &lt;title&gt;HTML Tutoria Yei Yujuuul&lt;/title&gt;<br> &lt;body&gt;
+                <br><br> &lt;h1&gt;This is a heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br> &lt;/body&gt;
+                <br> &lt;/html&gt;<br> .hi-darkmode { margin: 0; background-color: black; color: white; font-size: 25px; font-family: Arial; box-sizing: border-box } .hi-hide-all { visibility: hidden; display: none!important } .hi-fakeimg { background-color:
+                rgb(218, 212, 212); width: 100%; padding: 20px } .hi-code-card { padding: 0.01em 16px; margin-top: 16px; margin-bottom: 16px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); color: #000!important; background-color:
+                #f1f1f1!important } .hi-button-blue { background-color: #017dbb; color: white; border-radius: 25px; font-size: 18px; width: 200px; border: none; display: inline-block; padding: 8px 16px; vertical-align: middle; overflow: hidden; text-decoration:
+                none; text-align: center; cursor: pointer; white-space: nowrap; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } .hi-button-blue:hover
+                { background-color: #208cc2 !important; color: white!important; border-radius: 25px; font-size: 18px; width: 200px; border: none; display: inline-block; padding: 8px 16px; vertical-align: middle; overflow: hidden; text-decoration: none;
+                color: inherit; background-color: inherit; text-align: center; cursor: pointer; white-space: nowrap; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select:
+                none }
+            </div>
+    </div>
+    <p> hi-fakeimg </p>
+    <div class="hi-fakeimg " style="height:200px; ">Image</div>
+
+
+    <button class="tablink " onclick="openOne( 'wiki', this, 'red') "><span class="icon-menu " aria-hidden="true "></span>regresar a Wikidrag</button>
+    </div>
+
+    <div id="menu " class="tabcontent ">
+
+
+
+
+
+
+        <h3>Codespan</h3>
+        <p>The hi-codespan class is used to hightlight inline code:</p>
+        <p>© Copyright 2021. All Rights Reserved. The following HTML elements: <code class="hi-codespan ">span</code>, <code class="hi-codespan ">section</code>, and <code class="hi-codespan ">div</code> defines a section in a document.</p>
+        <!-- codigo -->
+
+
+        <div class="hi-code-card " ">
+            <h4>HTML Example</h4>
+            <div class="hi-code htmlHigh notranslate ">
+                &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br> &lt;title&gt;HTML Tutoria Yei Yujuuul&lt;/title&gt;<br> &lt;body&gt;
+                <br><br> &lt;h1&gt;This is a heading&lt;/h1&gt;<br> &lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br> &lt;/body&gt;
+                <br> &lt;/html&gt;<br> .hi-darkmode { margin: 0; background-color: black; color: white; font-size: 25px; font-family: Arial; box-sizing: border-box } .hi-hide-all { visibility: hidden; display: none!important } .hi-fakeimg { background-color:
+                rgb(218, 212, 212); width: 100%; padding: 20px } .hi-code-card { padding: 0.01em 16px; margin-top: 16px; margin-bottom: 16px; box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); color: #000!important; background-color:
+                #f1f1f1!important } .hi-button-blue { background-color: #017dbb; color: white; border-radius: 25px; font-size: 18px; width: 200px; border: none; display: inline-block; padding: 8px 16px; vertical-align: middle; overflow: hidden; text-decoration:
+                none; text-align: center; cursor: pointer; white-space: nowrap; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none } .hi-button-blue:hover
+                { background-color: #208cc2 !important; color: white!important; border-radius: 25px; font-size: 18px; width: 200px; border: none; display: inline-block; padding: 8px 16px; vertical-align: middle; overflow: hidden; text-decoration: none;
+                color: inherit; background-color: inherit; text-align: center; cursor: pointer; white-space: nowrap; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select:
+                none }
+            </div>
+        </div>
+        <p> hi-fakeimg </p>
+        <div class="hi-fakeimg " style="height:200px; ">Image</div>
+
+
+        <button class="tablink " onclick="openOne( 'wiki', this, 'red') "><span class="icon-menu " aria-hidden="true "></span>regresar a Wikidrag</button>
+    </div>
+
+    <div id="notificaciones " class="tabcontent ">
+
+
+
+        <h3>Codespan</h3>
+        <p>The hi-codespan class is used to hightlight inline code:</p>
+        <p>© Copyright 2021. All Rights Reserved. The following HTML elements: <code class="hi-codespan ">span</code>, <code class="hi-codespan ">section</code>, and <code class="hi-codespan ">div</code> defines a section in a document.</p>
+        <!-- codigo -->
+
+
+
+    </div>
+
+
+
+
+    <!--
+         <script>
+        includeHTML();
+    </script>
+    
+     https://web.dev/strict-csp/?utm_source=lighthouse&utm_medium=lr 
+        scrip cuando es de terceros
+
+        <script src=" " async></script>
+    -->
+
+
+
+
+</body>
+
+</html>
