@@ -531,10 +531,11 @@ background-image: url("lamp-icon.svg"); */
         }
         
         .img {
-            height: auto;
+            max-width: 200px;
             width: 100%;
             height: auto;
-            border-style: none;
+            border-radius: 5px;
+            transition: 0.3s;
         }
         /*  img {
     height: auto;
@@ -580,7 +581,6 @@ background-image: url("lamp-icon.svg"); */
         a:hover {
             text-decoration: none;
             color: inherit;
-            font-weight: bold;
         }
         
         div.scrollmenu {
@@ -595,7 +595,6 @@ background-image: url("lamp-icon.svg"); */
             padding-bottom: 10px;
             text-align: center;
             line-height: 0;
-            font-size: 12pt;
             color: white;
             background-color: #017dbb;
             font-size: 20px;
@@ -709,13 +708,6 @@ background-image: url("lamp-icon.svg"); */
         a {
             background-color: transparent;
             -webkit-text-decoration-skip: objects
-        }
-        
-        i,
-        a:active,
-        i,
-        a:hover {
-            outline-width: 0
         }
         
          ::-webkit-file-upload-button {
@@ -2156,4 +2148,107 @@ text-shadow: 0 0 2px #d456ca; */
         @media only screen and (max-width: 500px) {
             /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
             /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        }
+        
+        .responsive5 {
+            padding: 0 6px;
+            margin: 6px 0;
+            float: left;
+            width: 20%;
+            display: grid;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsive5 {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 20%;
+            }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            .responsive5 {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 20%;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsive5 {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 25%;
+            }
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+        }
+        
+        .responsiveg {
+            padding: 0 6px;
+            margin: 6px 0;
+            float: left;
+            width: 20%;
+            display: grid;
+        }
+        
+        @media only screen and (max-width: 700px) {
+            .responsiveg {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 33.33%;
+            }
+        }
+        
+        @media only screen and (max-width: 1200px) {
+            .responsiveg {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 33.33%;
+            }
+        }
+        
+        @media only screen and (max-width: 500px) {
+            .responsiveg {
+                width: 50%;
+                margin: 6px 0;
+                padding: 0 6px;
+                display: grid;
+                width: 50%;
+            }
+            /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 700px) {
+                .row {
+                    flex-direction: column;
+                }
+            }
+            /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+            @media screen and (max-width: 400px) {
+                .navbar a {
+                    float: none;
+                    width: 100%;
+                }
+            }
+        }
+        
+        .img {
+            width: 100%;
+        }
+        
+        .img.responsiveg {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            align-items: center;
+            display: inherit;
         }
