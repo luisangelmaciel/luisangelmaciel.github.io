@@ -611,6 +611,19 @@ var myObject = {
         "title": "Pokefriends",
         "pageid": "https://luisemoji.github.io/pokemon/dia-de-la-amistad/",
     }],
+    "xbr-pw": [{
+        "title": "uno",
+        "pageid": "",
+    }, {
+        "title": "",
+        "pageid": "",
+    }, {
+        "title": "",
+        "pageid": "",
+    }, {
+        "title": "",
+        "pageid": "",
+    }],
     "Xiiber-travel": [{
         "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
         "pageid": "#",
