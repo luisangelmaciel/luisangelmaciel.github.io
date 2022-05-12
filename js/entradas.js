@@ -609,20 +609,162 @@ var myObject = {
         "pageid": "https://luisemoji.github.io/gaymer/viborita/",
     }, {
         "title": "Pokefriends",
-        "pageid": "https://luisemoji.github.io/pokemon/dia-de-la-amistad/",
+        "pageid": "https://luisemoji.github.io/pokemon/",
+    }, {
+        "title": "Minion",
+        "pageid": "https://luisemoji.github.io/minion",
+    }, {
+        "title": "Viborita",
+        "pageid": "https://luisemoji.github.io/gaymer/viborita/",
+    }, {
+        "title": "Pokefriends",
+        "pageid": "https://luisemoji.github.io/pokemon/",
+    }, {
+        "title": "Minion",
+        "pageid": "https://luisemoji.github.io/minion",
+    }, {
+        "title": "Batman",
+        "pageid": "https://luisemoji.github.io/batman",
+    }, {
+        "title": "Peli Popcorn",
+        "pageid": "https://luisemoji.github.io/peli",
+    }, {
+        "title": "Letra de Magia Negra de Nick Bolt",
+        "pageid": "https://luisemoji.github.io/magia-negra-nick-bolt",
+    }, {
+        "title": "Fusionando Emojis",
+        "pageid": "https://luisemoji.github.io/fusionando-emojis",
+    }, {
+        "title": "Enchufalo",
+        "pageid": "https://luisemoji.github.io/enchufalo",
+    }, {
+        "title": "Vámonos de viaje",
+        "pageid": "https://luisemoji.github.io/caminando",
+    }, {
+        "title": "Video Post",
+        "pageid": "https://luisemoji.github.io/video-post",
+    }, {
+        "title": "Photo recuerdo",
+        "pageid": "https://luisemoji.github.io/recuerdo",
+    }, {
+        "title": "Babeando emojis",
+        "pageid": "https://luisemoji.github.io/blog/babeando",
+    }, {
+        "title": "Cómo estás hoy",
+        "pageid": "https://luisemoji.github.io/blog/como-estas-hoy",
+    }, {
+        "title": "Scroll",
+        "pageid": "https://luisemoji.github.io/blog/scroll",
+    }, {
+        "title": "Servicios",
+        "pageid": "https://luisemoji.github.io/blog/servicios",
+    }],
+    "propinita": [{
+        "title": "www.propinita.one",
+        "pageid": "www.propinita.one",
+    }, {
+        "title": "Iris XC Queen",
+        "pageid": "www.propinita.one/irisxcqueen",
+    }, {
+        "title": "Iris XC - Game Reptar",
+        "pageid": "www.propinita.one/irisxcqueen/reptar",
+    }, {
+        "title": "Papelito",
+        "pageid": "www.propinita.one/papelito",
     }],
     "xbr-pw": [{
-        "title": "uno",
-        "pageid": "",
+        "title": "All links de Xiiber Travel",
+        "pageid": "https://www.xbr.pw/alllinks",
     }, {
-        "title": "",
-        "pageid": "",
+        "title": "Face",
+        "pageid": "https://www.xbr.pw/cara",
     }, {
-        "title": "",
-        "pageid": "",
+        "title": "Dino Game",
+        "pageid": "https://www.xbr.pw/dino",
     }, {
-        "title": "",
-        "pageid": "",
+        "title": "Dispara Game",
+        "pageid": "https://www.xbr.pw/dispara",
+    }, {
+        "title": "Dragvesti",
+        "pageid": "https://www.xbr.pw/dragvesti",
+    }, {
+        "title": "Horoscopo Chino",
+        "pageid": "https://www.xbr.pw/horoscopoChino",
+    }, {
+        "title": "Linktree de Xiiber",
+        "pageid": "https://www.xbr.pw/linktree",
+    }, {
+        "title": "Portafolio de Luis Angel Maciel",
+        "pageid": "https://www.xbr.pw/luisangelmaciel",
+    }, {
+        "title": "All links de @LuisEmoji",
+        "pageid": "https://www.xbr.pw/luisemoji",
+    }, {
+        "title": "Homero meme",
+        "pageid": "https://www.xbr.pw/homero",
+    }, {
+        "title": "Miguel Romero, psicologo",
+        "pageid": "https://www.xbr.pw/migelromerox",
+    }, {
+        "title": "Grupo Guillen Barre",
+        "pageid": "https://www.xbr.pw/miguel_guillenbarre",
+    }, {
+        "title": "Museo Frida Kahlo",
+        "pageid": "https://www.xbr.pw/MuseoFridaKahlo",
+    }, {
+        "title": "Paseo en globo",
+        "pageid": "https://www.xbr.pw/paseo-en-globo",
+    }, {
+        "title": "Podomoro",
+        "pageid": "https://www.xbr.pw/podomoro",
+    }, {
+        "title": "poppers",
+        "pageid": "https://www.xbr.pw/pprs",
+    }, {
+        "title": "Pride CDMX",
+        "pageid": "https://www.xbr.pw/pride",
+    }, {
+        "title": "Quiz - Adivina la pelicula",
+        "pageid": "https://www.xbr.pw/quiz/adivina-la-peli",
+    }, {
+        "title": "Quiz - Contratiempo",
+        "pageid": "https://www.xbr.pw/quiz/contra-tiempo",
+    }, {
+        "title": "Quiz - Harry Potter",
+        "pageid": "https://www.xbr.pw/quiz/harryPotter",
+    }, {
+        "title": "Test",
+        "pageid": "https://www.xbr.pw/quiz/quien-eres-tu",
+    }, {
+        "title": "Renta de camára de Gesell en CDMX",
+        "pageid": "https://www.xbr.pw/renta-de-camara-de-gesell-cdmx",
+    }, {
+        "title": "Sexflix",
+        "pageid": "https://www.xbr.pw/sexflix",
+    }, {
+        "title": "Shop",
+        "pageid": "https://www.xbr.pw/shop",
+    }, {
+        "title": "Xiiber",
+        "pageid": "https://www.xbr.pw/xiiber",
+    }, {
+        "title": "Juego de memoria",
+        "pageid": "https://www.xbr.pw/memoria",
+    }, {
+        "title": "Juego de memoria. Pro",
+        "pageid": "https://www.xbr.pw/memoria-pro",
+    }, {
+        "title": "Pescando Pokémon",
+        "pageid": "https://www.xbr.pw/pescando-pokemon",
+    }, {
+        "title": "Piedra papel o tijeras",
+        "pageid": "https://www.xbr.pw/piedra-papel-o-tijeras",
+    }, {
+        "title": "Ping Pong Retro Arcade para PC",
+        "pageid": "https://www.xbr.pw/pong-retro-arcade",
+    }, {
+        "title": "Ruleta",
+        "pageid": "https://www.xbr.pw/ruleta",
     }],
     "Xiiber-travel": [{
         "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
@@ -784,6 +926,15 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, ]
+};
+
+w3.displayObject("siteMap", myObject);
+
+//   <time datetime='2021-04-29T20:10:18.429Z'>29 April 2021</time>
+// <a href = "https://github.com/alfio-event/alf.io" > Gestion de tickets < /a>>
+"score-lighthouse": "",
+"img-score-lighthouse": "",
+}, ]
 };
 
 w3.displayObject("siteMap", myObject);
