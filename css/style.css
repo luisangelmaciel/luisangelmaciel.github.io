@@ -699,12 +699,6 @@ background-image: url("lamp-icon.svg"); */
             }
         }
         
-        html {
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%
-        }
-        
-        i,
         a {
             background-color: transparent;
             -webkit-text-decoration-skip: objects
@@ -755,10 +749,6 @@ background-image: url("lamp-icon.svg"); */
         }
         
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-        html {
-            box-sizing: border-box;
-        }
-        
         *,
         *:before,
         *:after {
@@ -1701,7 +1691,7 @@ text-shadow: 0 0 2px #d456ca; */
         html {
             box-sizing: border-box;
             -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%
+            -webkit-text-size-adjust: 100%;
         }
         
         *,
@@ -1775,10 +1765,6 @@ text-shadow: 0 0 2px #d456ca; */
             font: inherit
         }
         /* End extract */
-        
-        html {
-            overflow-x: hidden
-        }
         
         h4 {
             font-size: 20px

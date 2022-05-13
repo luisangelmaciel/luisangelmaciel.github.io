@@ -659,18 +659,13 @@ var myObject = {
         "title": "Servicios",
         "pageid": "https://luisemoji.github.io/blog/servicios",
     }],
-    "propinita": [{
-        "title": "www.propinita.one",
-        "pageid": "www.propinita.one",
-    }, {
-        "title": "Iris XC Queen",
-        "pageid": "www.propinita.one/irisxcqueen",
-    }, {
-        "title": "Iris XC - Game Reptar",
-        "pageid": "www.propinita.one/irisxcqueen/reptar",
-    }, {
-        "title": "Papelito",
-        "pageid": "www.propinita.one/papelito",
+    "Xiiber-travel": [{
+        "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
+        "pageid": "#",
+    }],
+    "app": [{
+        "title": "<b>Frases de Goku</b> Épico random con las frases de Goku de Dragon Ball",
+        "pageid": "#",
     }],
     "xbr-pw": [{
         "title": "All links de Xiiber Travel",
@@ -766,13 +761,18 @@ var myObject = {
         "title": "Ruleta",
         "pageid": "https://www.xbr.pw/ruleta",
     }],
-    "Xiiber-travel": [{
-        "title": "<b>Tepozspa</b> Spa exclusivo para hombres",
-        "pageid": "#",
-    }],
-    "app": [{
-        "title": "<b>Frases de Goku</b> Épico random con las frases de Goku de Dragon Ball",
-        "pageid": "#",
+    "propinita": [{
+        "title": "www.propinita.one",
+        "pageid": "www.propinita.one",
+    }, {
+        "title": "Iris XC Queen",
+        "pageid": "www.propinita.one/irisxcqueen",
+    }, {
+        "title": "Iris XC - Game Reptar",
+        "pageid": "www.propinita.one/irisxcqueen/reptar",
+    }, {
+        "title": "Papelito",
+        "pageid": "www.propinita.one/papelito",
     }],
     "notas": [{
         "proyecto": "Imagen recomendada 749 x 368 px",
@@ -926,15 +926,6 @@ var myObject = {
         "score-lighthouse": "",
         "img-score-lighthouse": "",
     }, ]
-};
-
-w3.displayObject("siteMap", myObject);
-
-//   <time datetime='2021-04-29T20:10:18.429Z'>29 April 2021</time>
-// <a href = "https://github.com/alfio-event/alf.io" > Gestion de tickets < /a>>
-"score-lighthouse": "",
-"img-score-lighthouse": "",
-}, ]
 };
 
 w3.displayObject("siteMap", myObject);
