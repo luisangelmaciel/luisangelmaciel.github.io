@@ -600,22 +600,13 @@ var myObject = {
     }],
     "emoji": [{
         "title": "Match game",
-        "pageid": "https://luisemoji.github.io/gaymer/emoji-match-game/",
+        "pageid": "https://luisemoji.github.io/emoji-match-game/",
     }, {
         "title": "Anda tocale aquí",
-        "pageid": "https://luisemoji.github.io/gaymer/anda-tocale-aqui/",
+        "pageid": "https://luisemoji.github.io/anda-tocale-aqui/",
     }, {
         "title": "Viborita",
-        "pageid": "https://luisemoji.github.io/gaymer/viborita/",
-    }, {
-        "title": "Pokefriends",
-        "pageid": "https://luisemoji.github.io/pokemon/",
-    }, {
-        "title": "Minion",
-        "pageid": "https://luisemoji.github.io/minion",
-    }, {
-        "title": "Viborita",
-        "pageid": "https://luisemoji.github.io/gaymer/viborita/",
+        "pageid": "https://luisemoji.github.io/viborita/",
     }, {
         "title": "Pokefriends",
         "pageid": "https://luisemoji.github.io/pokemon/",
@@ -647,17 +638,14 @@ var myObject = {
         "title": "Photo recuerdo",
         "pageid": "https://luisemoji.github.io/recuerdo",
     }, {
-        "title": "Babeando emojis",
-        "pageid": "https://luisemoji.github.io/blog/babeando",
+        "title": "Página no encontrada, error 404!",
+        "pageid": "https://luisemoji.github.io/404.html",
     }, {
         "title": "Cómo estás hoy",
-        "pageid": "https://luisemoji.github.io/blog/como-estas-hoy",
+        "pageid": "https://luisemoji.github.io/como-estas-hoy",
     }, {
         "title": "Scroll",
-        "pageid": "https://luisemoji.github.io/blog/scroll",
-    }, {
-        "title": "Servicios",
-        "pageid": "https://luisemoji.github.io/blog/servicios",
+        "pageid": "https://luisemoji.github.io/scroll",
     }],
     "Xiiber-travel": [{
         "title": "<b>Tepozspa</b> Spa exclusivo para hombres",

@@ -429,18 +429,6 @@
             }
         }
         
-        .background-icon-black-1B1C24 {
-            justify-content: center;
-            gap: 2rem;
-            padding: 3rem;
-            background-color: #1B1C24;
-            background-image: url("img/lamp-icon-black-1B1C24.svg");
-            /*  background-color: #1086B5; 
-background-image: url("lamp-icon.svg"); */
-            align-items: center;
-            text-align: center;
-        }
-        
         .lg\:-mt-24 {
             margin-top: -6rem;
         }
@@ -538,18 +526,18 @@ background-image: url("lamp-icon.svg"); */
             transition: 0.3s;
         }
         /*  img {
-    height: auto;
-    width: 100%;
-      height: auto;
-    border-style: none;
-    max-width: 100%;
-}
-
-.responsive_image {
-    height: auto;
-    border-style: none;
-    max-width: 100%;
-} */
+            height: auto;
+            width: 100%;
+            height: auto;
+            border-style: none;
+            max-width: 100%;
+        }*/
+        
+        .responsive_image {
+            height: auto;
+            border-style: none;
+            max-width: 100%;
+        }
         /* The modalx (background) */
         
         * {
@@ -698,18 +686,6 @@ background-image: url("lamp-icon.svg"); */
                 padding: 50px;
             }
         }
-        
-        a {
-            background-color: transparent;
-            -webkit-text-decoration-skip: objects
-        }
-        
-         ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit
-        }
-        /*-------------------------------------------------------------------*/
-        /*  ICOBAR TOP    */
         /*  PROGRESS container     */
         
         .box-transparent {
@@ -824,55 +800,6 @@ letter-spacing: 0.75px;
 text-shadow: 0 0 2px #d456ca; */
             transition: all 0.5s;
         }
-        /*! tailwindcss v2.2.16 | MIT License | https://tailwindcss.com */
-        /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
-        
-        *,
-         ::after,
-         ::before {
-            box-sizing: border-box
-        }
-        
-        button {
-            font-size: 100%;
-            line-height: 1.15;
-            margin: 0
-        }
-        
-        button {
-            text-transform: none
-        }
-        
-        button {
-            -webkit-appearance: button
-        }
-        
-         ::-moz-focus-inner {
-            border-style: none;
-            padding: 0
-        }
-        
-         :-moz-focusring {
-            outline: 1px dotted ButtonText
-        }
-        
-         :-moz-ui-invalid {
-            box-shadow: none
-        }
-        
-         ::-webkit-inner-spin-button,
-         ::-webkit-outer-spin-button {
-            height: auto
-        }
-        
-         ::-webkit-search-decoration {
-            -webkit-appearance: none
-        }
-        
-         ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit
-        }
         
         summary {
             display: list-item
@@ -895,7 +822,6 @@ text-shadow: 0 0 2px #d456ca; */
         }
         
         body {
-            font-size: 15px;
             line-height: 1.5;
             font-family: "Roboto", sans-serif;
             margin: 0
@@ -1118,29 +1044,6 @@ text-shadow: 0 0 2px #d456ca; */
             text-decoration: none
         }
         
-        .hover\:underline:hover {
-            text-decoration: underline
-        }
-        
-        *,
-         ::after,
-         ::before {
-            --tw-shadow: 0 0 #0000
-        }
-        
-        *,
-         ::after,
-         ::before {
-            --tw-ring-inset: var(--tw-empty, );
-            /*!*/
-            /*!*/
-            --tw-ring-offset-width: 0px;
-            --tw-ring-offset-color: #fff;
-            --tw-ring-color: rgba(59, 130, 246, 0.5);
-            --tw-ring-offset-shadow: 0 0 #0000;
-            --tw-ring-shadow: 0 0 #0000
-        }
-        
         @media (min-width:1024px) {
             .lg\:absolute {
                 position: absolute
@@ -1237,362 +1140,6 @@ text-shadow: 0 0 2px #d456ca; */
             }
         }
         
-        button:focus:not(:focus-visible) {
-            outline: 0
-        }
-        
-        [type=button]:not(:disabled),
-        [type=reset]:not(:disabled),
-        [type=submit]:not(:disabled),
-        button:not(:disabled) {
-            cursor: pointer
-        }
-        
-         ::-moz-focus-inner {
-            padding: 0;
-            border-style: none
-        }
-        
-         ::-webkit-datetime-edit-day-field,
-         ::-webkit-datetime-edit-fields-wrapper,
-         ::-webkit-datetime-edit-hour-field,
-         ::-webkit-datetime-edit-minute,
-         ::-webkit-datetime-edit-month-field,
-         ::-webkit-datetime-edit-text,
-         ::-webkit-datetime-edit-year-field {
-            padding: 0
-        }
-        
-         ::-webkit-inner-spin-button {
-            height: auto
-        }
-        
-         ::-webkit-search-decoration {
-            -webkit-appearance: none
-        }
-        
-         ::-webkit-color-swatch-wrapper {
-            padding: 0
-        }
-        
-         ::file-selector-button {
-            font: inherit
-        }
-        
-         ::-webkit-file-upload-button {
-            font: inherit;
-            -webkit-appearance: button
-        }
-        
-        .form-control[type=file]:not(:disabled):not([readonly]) {
-            cursor: pointer
-        }
-        
-        .form-control::file-selector-button {
-            padding: .375rem .75rem;
-            margin: -.375rem -.75rem;
-            -webkit-margin-end: .75rem;
-            margin-inline-end: .75rem;
-            color: #212529;
-            background-color: #e9ecef;
-            pointer-events: none;
-            border-color: inherit;
-            border-style: solid;
-            border-width: 0;
-            border-inline-end-width: 1px;
-            border-radius: 0;
-            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
-        }
-        
-        @media (prefers-reduced-motion:reduce) {
-            .form-control::file-selector-button {
-                transition: none
-            }
-        }
-        
-        .form-control:hover:not(:disabled):not([readonly])::file-selector-button {
-            background-color: #dde0e3
-        }
-        
-        .form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
-            background-color: #dde0e3
-        }
-        
-        .form-control-sm::file-selector-button {
-            padding: .25rem .5rem;
-            margin: -.25rem -.5rem;
-            -webkit-margin-end: .5rem;
-            margin-inline-end: .5rem
-        }
-        
-        .form-control-lg::file-selector-button {
-            padding: .5rem 1rem;
-            margin: -.5rem -1rem;
-            -webkit-margin-end: 1rem;
-            margin-inline-end: 1rem
-        }
-        
-        .form-control-color:not(:disabled):not([readonly]) {
-            cursor: pointer
-        }
-        
-        .form-floating>.form-control:not(:-moz-placeholder-shown) {
-            padding-top: 1.625rem;
-            padding-bottom: .625rem
-        }
-        
-        .form-floating>.form-control:not(:-moz-placeholder-shown)~label {
-            opacity: .65;
-            transform: scale(.85) translateY(-.5rem) translateX(.15rem)
-        }
-        
-        .visually-hidden-focusable:not(:focus):not(:focus-within) {
-            position: absolute!important;
-            width: 1px!important;
-            height: 1px!important;
-            padding: 0!important;
-            margin: -1px!important;
-            overflow: hidden!important;
-            clip: rect(0, 0, 0, 0)!important;
-            white-space: nowrap!important;
-            border: 0!important
-        }
-        /* pupop */
-        /* fin popup */
-        
-        @-ms-viewport {
-            width: device-width
-        }
-        
-         ::-webkit-file-upload-button {
-            font: inherit;
-            -webkit-appearance: button
-        }
-        
-        .btn:not(:disabled):not(.disabled) {
-            cursor: pointer
-        }
-        
-        .btn:not(:disabled):not(.disabled).active,
-        .btn:not(:disabled):not(.disabled):active {
-            background-image: none
-        }
-        
-        .btn-primary:not(:disabled):not(.disabled).active,
-        .btn-primary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #0062cc;
-            border-color: #005cbf
-        }
-        
-        .btn-primary:not(:disabled):not(.disabled).active:focus,
-        .btn-primary:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
-        }
-        
-        .btn-secondary:not(:disabled):not(.disabled).active,
-        .btn-secondary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #545b62;
-            border-color: #4e555b
-        }
-        
-        .btn-secondary:not(:disabled):not(.disabled).active:focus,
-        .btn-secondary:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
-        }
-        
-        .btn-success:not(:disabled):not(.disabled).active,
-        .btn-success:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #1e7e34;
-            border-color: #1c7430
-        }
-        
-        .btn-success:not(:disabled):not(.disabled).active:focus,
-        .btn-success:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
-        }
-        
-        .btn-info:not(:disabled):not(.disabled).active,
-        .btn-info:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #117a8b;
-            border-color: #10707f
-        }
-        
-        .btn-info:not(:disabled):not(.disabled).active:focus,
-        .btn-info:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5)
-        }
-        
-        .btn-warning:not(:disabled):not(.disabled).active,
-        .btn-warning:not(:disabled):not(.disabled):active {
-            color: #212529;
-            background-color: #d39e00;
-            border-color: #c69500
-        }
-        
-        .btn-warning:not(:disabled):not(.disabled).active:focus,
-        .btn-warning:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .5)
-        }
-        
-        .btn-danger:not(:disabled):not(.disabled).active,
-        .btn-danger:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #bd2130;
-            border-color: #b21f2d
-        }
-        
-        .btn-danger:not(:disabled):not(.disabled).active:focus,
-        .btn-danger:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .5)
-        }
-        
-        .btn-light:not(:disabled):not(.disabled).active,
-        .btn-light:not(:disabled):not(.disabled):active {
-            color: #212529;
-            background-color: #dae0e5;
-            border-color: #d3d9df
-        }
-        
-        .btn-light:not(:disabled):not(.disabled).active:focus,
-        .btn-light:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(248, 249, 250, .5)
-        }
-        
-        .btn-dark:not(:disabled):not(.disabled).active,
-        .btn-dark:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #1d2124;
-            border-color: #171a1d
-        }
-        
-        .btn-dark:not(:disabled):not(.disabled).active:focus,
-        .btn-dark:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .5)
-        }
-        
-        .btn-outline-primary:not(:disabled):not(.disabled).active,
-        .btn-outline-primary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #007bff;
-            border-color: #007bff
-        }
-        
-        .btn-outline-primary:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .5)
-        }
-        
-        .btn-outline-secondary:not(:disabled):not(.disabled).active,
-        .btn-outline-secondary:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #6c757d;
-            border-color: #6c757d
-        }
-        
-        .btn-outline-secondary:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(108, 117, 125, .5)
-        }
-        
-        .btn-outline-success:not(:disabled):not(.disabled).active,
-        .btn-outline-success:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #28a745;
-            border-color: #28a745
-        }
-        
-        .btn-outline-success:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-success:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(40, 167, 69, .5)
-        }
-        
-        .btn-outline-info:not(:disabled):not(.disabled).active,
-        .btn-outline-info:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #17a2b8;
-            border-color: #17a2b8
-        }
-        
-        .btn-outline-info:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-info:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(23, 162, 184, .5)
-        }
-        
-        .btn-outline-warning:not(:disabled):not(.disabled).active,
-        .btn-outline-warning:not(:disabled):not(.disabled):active {
-            color: #212529;
-            background-color: #ffc107;
-            border-color: #ffc107
-        }
-        
-        .btn-outline-warning:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-warning:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(255, 193, 7, .5)
-        }
-        
-        .btn-outline-danger:not(:disabled):not(.disabled).active,
-        .btn-outline-danger:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #dc3545;
-            border-color: #dc3545
-        }
-        
-        .btn-outline-danger:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-danger:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(220, 53, 69, .5)
-        }
-        
-        .btn-outline-light:not(:disabled):not(.disabled).active,
-        .btn-outline-light:not(:disabled):not(.disabled):active {
-            color: #212529;
-            background-color: #f8f9fa;
-            border-color: #f8f9fa
-        }
-        
-        .btn-outline-light:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-light:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(248, 249, 250, .5)
-        }
-        
-        .btn-outline-dark:not(:disabled):not(.disabled).active,
-        .btn-outline-dark:not(:disabled):not(.disabled):active {
-            color: #fff;
-            background-color: #343a40;
-            border-color: #343a40
-        }
-        
-        .btn-outline-dark:not(:disabled):not(.disabled).active:focus,
-        .btn-outline-dark:not(:disabled):not(.disabled):active:focus {
-            box-shadow: 0 0 0 .2rem rgba(52, 58, 64, .5)
-        }
-        
-        .navbar-toggler:not(:disabled):not(.disabled) {
-            cursor: pointer
-        }
-        
-        .page-link:not(:disabled):not(.disabled) {
-            cursor: pointer
-        }
-        
-        .close:not(:disabled):not(.disabled) {
-            cursor: pointer
-        }
-        
-        @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {}
-        
-        @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {}
-        
-        @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {}
-        
-        @supports ((-webkit-transform-style:preserve-3d) or (transform-style:preserve-3d)) {}
-        
-        @supports ((position:-webkit-sticky) or (position:sticky)) {}
-        /*# sourceMappingURL=bootstrap.min.css.map */
-        
         .background-icon-black-1B1C24 {
             justify-content: center;
             gap: 2rem;
@@ -1677,12 +1224,6 @@ text-shadow: 0 0 2px #d456ca; */
             }
         }
         /* ico bar */
-        
-        a {
-            text-decoration: none !important;
-            color: #3f345f;
-            transition: all 0.3s ease 0s;
-        }
         /*socil*/
         /* #Progress
     ================================================== */
@@ -1722,47 +1263,6 @@ text-shadow: 0 0 2px #d456ca; */
         
         b {
             font-weight: bolder
-        }
-        
-        img {
-            border-style: none
-        }
-        
-        code {
-            /*    font-family: monospace, monospace;*/
-            font-size: 1em;
-            font-family: "Lato";
-        }
-        
-        button {
-            font: inherit;
-            margin: 0
-        }
-        
-        button {
-            overflow: visible
-        }
-        
-        button {
-            text-transform: none
-        }
-        
-        button {
-            -webkit-appearance: button
-        }
-        
-        button::-moz-focus-inner {
-            border-style: none;
-            padding: 0
-        }
-        
-        button:-moz-focusring {
-            outline: 1px dotted ButtonText
-        }
-        
-         ::-webkit-file-upload-button {
-            -webkit-appearance: button;
-            font: inherit
         }
         /* End extract */
         
