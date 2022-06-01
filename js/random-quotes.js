@@ -18,6 +18,7 @@ $(document).ready(function() {
         { author: "", source: "", quote: "Haces 99 cosas bien, pero si haces 1 mal, se olvidan de las 99" },
         { author: "Richard Branson", source: "", quote: "No se aprende a caminar siguiendo las reglas. Se aprende caminando y cayendo" },
         { author: "Stephen Hawking", source: "", quote: "Las personas tranquilas y silenciosas son las que tienen mentes más fuertes y ruidosas" },
+        { author: "Juan Rivera, socio y director general de Llorente y Cuenca", source: "", quote: "Las relaciones publicas adoptan un papel mucho más orientado a la consultoría y a la transformación de datos en historias que generen emociones y conexiones. Está implícito tener mucha capacidad analítica para generar alternativas de acción a los clientes. No solamente es cuestión de tener una plataforma o un software que recabe toda la información de la organización sino de incluir en esa plataforma el instinto humano que permita pulverizar los datos y traducirlos en ventajas competitivas." },
         { author: "", source: "", quote: "Sí alguién te dice que algo es imposible, no les hagas caso, está hablando de sus limintaciones, no de las tuyas." }
     ];
 
