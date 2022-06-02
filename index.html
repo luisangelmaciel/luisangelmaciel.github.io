@@ -246,6 +246,16 @@
         <div class="loader "> </div>
     </div>
 
+    <div id="one" class="tabcontent">
+        <div w3-include-html="post.html"></div>
+    </div>
+
+    <div id="desing" class="tabcontent">
+        <div w3-include-html="desing.html"></div>
+    </div>
+
+
+
     <div class="containerx">
         <div class="scrollmenu ">
             <i><p></p></i> <i><p></p></i>
@@ -262,6 +272,7 @@
             <i><p></p></i> <i><p></p></i>
             <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>
             <i><p></p></i> <i><p></p></i>
+            <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>
             <i><p></p></i> <i><p></p></i>
             <i><p></p></i> <i><p  onclick="document.location='post.html'"></p></i>
         </div>
@@ -329,8 +340,8 @@
 
                             <center>
                                 <div class="w3-row w3-container "><br>
-                                    <div class="btn-xiib shake" style="background-color: #1B1C24; color:rgb(236, 221, 221) ">
-                                        <a href="https://www.luisangelmaciel.one/desing.html " target="_new " target="_blank " rel="noopener " class="slider-nav-item "><i class="fas fa-icons"  onclick="openName(event, 'desing')"></i> Diseños y arte gráfico </a>
+                                    <div class="btn-xiib shake" style="background-color: #1B1C24; color:rgb(236, 221, 221) " onclick="openName(event, 'desing')">
+                                        <i class="fas fa-icons" onclick="openName(event, 'desing')"></i> Diseños y arte gráfico
                                     </div>
                                     <br>
                                     <div class="btn-xiib " style="background-color: #1B1C24; color:rgb(236, 221, 221) ">
@@ -510,6 +521,48 @@
                                             <li> CSS Architecture</li>
                                             <li> Semantic Markup </li>
                                         </ul>
+
+                                        <div>
+                                            <!-- partial:index.partial.html -->
+                                            <div id="container-neon">
+                                                <center>Gracias por tu tiempo
+                                                </center>
+                                                <div class="container-leyendo light-neon">
+                                                    <div id="chronometer" class="chronometer">
+                                                        <div class="time">
+                                                            <div class="counter-down">
+                                                                <div class="box a-light-neon">
+                                                                    <div id="hour-first-digit" class="left" style="font-size: 1.5em;">0</div>
+                                                                    <div id="hour-second-digit" class="right" style="font-size: 1.5em;">2</div>
+                                                                </div>
+                                                                <div class="description a-light-neon">hrs</div>
+                                                            </div>
+                                                            <div class="counter-down a-light-neon">
+                                                                <div class="box">
+                                                                    <div id="minute-first-digit" class="left" style="font-size: 1.5em;">0</div>
+                                                                    <div id="minute-second-digit" class="right" style="font-size: 1.5em;">7</div>
+                                                                </div>
+                                                                <div class="description">min</div>
+                                                            </div>
+                                                            <div class="counter-down a-light-neon">
+                                                                <div class="box">
+                                                                    <div id="second-first-digit" class="left" style="font-size: 1.5em;">1</div>
+                                                                    <div id="second-second-digit" class="right" style="font-size: 1.5em;">9</div>
+                                                                </div>
+                                                                <div class="description">seg</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <p class="w3-center">Última actualización: 31 de mayo 2021</p>
+                                            </div>
+                            
+                                            <script src="js/tiempo-que-llevas-leyendo-esto.js" rel="preload " as="script " async></script>
+                            
+                                            <br>
+                                        </div>
+                            
                                         <!-- <div class=" container">
                                             <div class="responsive5 ">
                                                 <div class="gallery ">
@@ -583,53 +636,7 @@
                             </div>
                         </div>
 
-                        <div id="dragonball-post" class="tabcontent">
-                            <div class="container mx-auto flex flex-col lg:flex-row  ">
-
-                                <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6  ">
-                                    <div class="mb-4 container">
-                                    </div>
-                                </div>
-
-
-                                <div class="w-full lg:w-1/2  mb-4 container "> <br><br><br>
-                                    <p> <span onclick="openName(event, '2021post')" class="p-post"> <i class="fa fa-suitcase" aria-hidden="true"></i> 2021 </span>
-                                        <span onclick="openName(event, 'dragonball-post')" class="p-post"> <i class="fa fa-suitcase" aria-hidden="true"></i> Dragon Ball </span>
-                                        <span onclick="openName(event, 'drag-queen')" class="p-post"> <i class="fa fa-suitcase" aria-hidden="true"></i> Drag Queen </span>
-                                    </p>
-                                    <p style="font-size: 30px" id="loMasNuevo" class="p-post"> Sobre Dragon Ball </p>
-
-
-                                    <div class="flex border-b border-solid border-grey-light ">
-                                        <div class="w-1/8 text-right pl-3 pt-3">
-
-                                     <img src="img/avatar-esfera-4-estrellas.svg" alt="avatar" class=" h-12 w-12 mr-2" loading="lazy lazyload " class="lazy ">
-
-                                        </div>
-                                        <div class="w-7/8 p-3 pl-0">
-                                            <div class="flex ">
-
-                                                <span class="font-bold"><a href="https://hihellomonster.github.io/dragon.ball//" class="text-black">Frases de Goku </a></span>
-                                                <span class="text-grey-dark"> Random</span>
-                                                <span class="text-grey-dark">&middot;</span>
-                                                <span class="text-grey-dark">2021</span>
-
-
-                                            </div>
-
-                                            <div class="mb-4">
-                                                <p class="mb-6"> Random Quotes inspirados en Goku de Dragon Ball.
-                                                    <a rel="noreferrer noopener" href="https://hihellomonster.github.io/dragon.ball/" target="_blank" title="goku-save-the-universe-game " aria-label=" goku-save-the-universe-game"><code style="color: grey">Jugar ahora </code></a>
-                                                </p>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                 
-                                </div>
-                            </div>
-                        </div>
+                       
 
                         <div id="2021post" class="tabcontent">
                             <div class="container mx-auto flex flex-col lg:flex-row  ">
@@ -697,33 +704,7 @@
                                                 <img src="img/avatar-esfera-4-estrellas.svg" alt="avatar" class="rounded-full h-12 w-12 mr-2" loading="lazy lazyload " class="lazy ">
                                             </div>
                                         </div>
-                                        <div class="w-7/8 p-3 pl-0">
-                                            <div class="text-xs text-grey-dark">Pinned Post</div>
-                                            <div class="flex justify-between">
-                                                <div>
-                                                    <span class="font-bold"><p class="text-black">Igglybuff</p></span>
-                                                    <span class="text-grey-dark">sgv,icons,font & glyps</span>
-                                                    <span class="text-grey-dark">&middot;</span>
-                                                    <span class="text-grey-dark">2021</span>
-                                                </div>
-                                                <div>
-                                                    <p class="text-grey-dark hover:text-teal"><i class="fa fa-chevron-down"></i></p>
-                                                </div>
-                                            </div>
-
-                                            <div>
-                                                <div class="mb-4">
-                                                    <p class="mb-6"> Love them, there are more than 300 designs Use the one you like the most and bring your designs to life. Thank you for downloading and / or copying them.
-
-                                                        <a rel="noreferrer noopener" href="https://luisangelmaciel.github.io/Igglybuff" target="_blank" title=" Igglybuff " aria-label=" Igglybuff"><code style="color: grey">Son gratis</code></a>
-                                                        <p>
-                                                            <img src="img/twitterimage.webp" alt="tweet image" class="border border-solid border-grey-light rounded-sm" loading="lazy lazyload " class="lazy ">
-                                                        </p>
-
-                                                </div>
-                                            </div>
-
-                                        </div>
+                                        
                                     </div>
 
 
@@ -743,9 +724,7 @@
         </div>
 
                  
-        <div id="one" class="tabcontent">
-            <div w3-include-html="post.html"></div>
-        </div>                 
+                        
 
                
 
@@ -1147,54 +1126,8 @@
             </div>
         </div>
 
-        <div id="desing" class="tabcontent"><br><br><br><br>
-            <p style="font-size: 30px" style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto "> <i class="icon-etiquetas-codigo w3-hover-opacity"></i> Logotipos y Diseños</p>
-
-          
-            <div>
-                <!-- partial:index.partial.html -->
-                <div id="container-neon">
-                    <center>Gracias por tu tiempo
-                    </center>
-                    <div class="container-leyendo light-neon">
-                        <div id="chronometer" class="chronometer">
-                            <div class="time">
-                                <div class="counter-down">
-                                    <div class="box a-light-neon">
-                                        <div id="hour-first-digit" class="left" style="font-size: 1.5em;">0</div>
-                                        <div id="hour-second-digit" class="right" style="font-size: 1.5em;">2</div>
-                                    </div>
-                                    <div class="description a-light-neon">hrs</div>
-                                </div>
-                                <div class="counter-down a-light-neon">
-                                    <div class="box">
-                                        <div id="minute-first-digit" class="left" style="font-size: 1.5em;">0</div>
-                                        <div id="minute-second-digit" class="right" style="font-size: 1.5em;">7</div>
-                                    </div>
-                                    <div class="description">min</div>
-                                </div>
-                                <div class="counter-down a-light-neon">
-                                    <div class="box">
-                                        <div id="second-first-digit" class="left" style="font-size: 1.5em;">1</div>
-                                        <div id="second-second-digit" class="right" style="font-size: 1.5em;">9</div>
-                                    </div>
-                                    <div class="description">seg</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <p class="w3-center">Última actualización: 31 de mayo 2021</p>
-                </div>
-
-                <script src="js/tiempo-que-llevas-leyendo-esto.js" rel="preload " as="script " async></script>
-
-                <br>
-            </div>
-
-        </div>
-        </div>
-
+       
+        
 
 
         <div style=" width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
