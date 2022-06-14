@@ -6,6 +6,12 @@ TODO: Rotating phone from landscape to portrait causes height issues
 TODO: Give users the ability to add quotes and/or upvote or rate their favorite quotes -- could be abused though.
 TODO: More quotes!
 TODO: Add more cyberpunk-y effects and animations
+
+
+Fingir no saber para ver hasta donde llega la hipocresia de la gente. Huason. 
+Si sabes vender y justificar a nivel nu0mérico cualquier idea, esa idea será rentable.
+Nos costó uno y la mitad del otro comprar este espacio. Pero valió la pena que lo vieras y de paso te rieras. 
+
 *****/
 
 $(document).ready(function() {
@@ -16,6 +22,12 @@ $(document).ready(function() {
         { author: "", source: "", quote: "No hables, actua. No digas, demuestra. No prometas, cumple" },
         { author: "", source: "", quote: "Nos hemos acostumbrado a decir ´estoy bien´, para ahorrarnos preguntas que no queremos contestar " },
         { author: "", source: "", quote: "Haces 99 cosas bien, pero si haces 1 mal, se olvidan de las 99" },
+        { author: "", source: "", quote: "El storydoing se trata de fomentar la participación del usuario en la historia, que interactúe y la viva en primera persona consiguiendo que la experiencia sea lo más inmersiva posible y el efecto, reacción, respuesta y experiencia por parte del usuario sea mucho más potente y por tanto efectiva.", link: "https://www.easypromosapp.com/blog/2022/05/ejemplo-storydoing-con-captacion-datos/?utm_source=Easypromos+new+newsletter&utm_campaign=3b01ce6c5c-easypromos_2022_06_01&utm_medium=email&utm_term=0_cc4558e8cf-3b01ce6c5c-326483114" },
+        { author: "", source: "", quote: "Dejame ser tu próximo departamento de mercadotecnia y comunicación." },
+        { author: "Javier Sosa. Director de mercadotecnia de PPG-COMEX (2016)", source: "", quote: "El verdadero elemento de entendimiento entre las agencias y las empresas es el nivel de involucramiento y la visión a largo plazo entre las marcas y las agencias. " },
+        { author: "", source: "", quote: "Toma agua a lo largo del día. Aunque no lo creas, la falta adecuada de hidratación obstruye la concentración y ni mente ni creatividad fluyen eficientemente." },
+        { author: "", source: "", quote: "Es  importante empezar el día con alimentos energéticos: nueces, semillas yb un buen jugo (el verde es maravilloso). Desayunar incrementa 40% tu energía (además de que acelera el metabolismo). Todo mundo lo dice, pero uno no hace caso, caray." },
+        { author: "", source: "", quote: "Yo, como Confucio, prefiero pensar que si me dedico a algo que me apasiona no tengo que trabajar ni un día de mi vida: mi amor por lo que hago lo convierte en mi hobby. I have a job that is my hobby, hence I have a jobby!" },
         { author: "", source: "", quote: "" },
         { author: "Yuri Alvarado, presidente de Alvarado Molina.", source: "", quote: "Creatividad posiblemente sea visualizar el éxito donde otras personas no ven más allá de sus narice. Un creativo imagina es como una especie de Indiana Jones, alguien que anda buscando la idea perdida.  " },
         { author: "", source: "", quote: "Creatividad visual ir más allá de una idea. Atraer consumidores por medio de la vista se vuelve más latente al considerar la apuesta creativa con la que cuentran otras marcas, así como un entorno que es asechado por numerosos anuncion que buscan acaparar las miradas del público. " },
