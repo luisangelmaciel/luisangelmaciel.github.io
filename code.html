@@ -171,7 +171,7 @@
     <script src="https://luisangelmaciel.github.io/js/compressed.js"></script>
     <script src="https://luisangelmaciel.github.io/preloader.js"></script>
 
-    <script src="https://luisangelmaciel.github.io/js/lazysizes.min.js" rel="preload " as="script " async charset="utf-8 "></script>
+
     <link rel="stylesheet " href="css/w3.css" media="all" as="style ">
     <link rel="stylesheet" href="https://www.xiiber.com/css/xiibicon-style.css">
 
@@ -872,6 +872,25 @@
                         }
                     </Style>
                     <img src="img/el chocolate choco ru edition season 7 rupaul drag race de katya zamolodchikova.jpg" width="600" height="400" alt="el chocolate choco ru edition season 7 rupaul drag race de katya zamolodchikova" class=" responsive" loading="lazy" class="lazyload  ">
+                    <script src="https://luisangelmaciel.github.io/js/lazysizes.min.js" rel="preload " as="script " async charset="utf-8 "></script>
+                    <script>
+                        if ("loading" in HTMLImageElement.prototype) {
+                            // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+                            // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
+                            const images = document.querySelectorAll("img.lazyload");
+                            images.forEach((img) => {
+                                img.src = img.dataset.src;
+                            });
+                        } else {
+                            // Importamos dinámicamente la libreria `lazysizes`
+                            let script = document.createElement("script");
+                            script.async = true;
+                            script.src =
+                                "https://luisangelmaciel.github.io/js/lazysizes.min.js";
+                            document.body.appendChild(script);
+                        }
+                    </script>
+
                 </li>
             </ul>
 
@@ -1224,24 +1243,6 @@
 
     <!-- ****************************************************************** SCRIPTS ****************************************************************** -->
 
-
-    <script>
-        if ("loading" in HTMLImageElement.prototype) {
-            // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
-            // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
-            const images = document.querySelectorAll("img.lazyload");
-            images.forEach((img) => {
-                img.src = img.dataset.src;
-            });
-        } else {
-            // Importamos dinámicamente la libreria `lazysizes`
-            let script = document.createElement("script");
-            script.async = true;
-            script.src =
-                "https://luisangelmaciel.github.io/js/lazysizes.min.js";
-            document.body.appendChild(script);
-        }
-    </script>
 
 </body>
 
