@@ -1,6 +1,6 @@
 {
-    "name": "@LuisAngelMaciel",
-    "short_name": "lamp!",
+    "name": "@LuisAngelMaciel.martech!",
+    "short_name": "martech.lamp!",
     "icons": [{
         "src": "icon/mask-icon.sgv",
         "sizes": "196x196",
@@ -58,7 +58,7 @@
         "sizes": "192x192",
         "type": "image/png"
     }, {
-        "src": "favicon.ico",
+        "src": "favicon.sgv",
         "sizes": "192x192",
         "type": "image/x-icon"
     }, {
@@ -118,21 +118,25 @@
         "type": "image/png",
         "density": 4
     }, {
-        "src": "img/msapplication-square70x70logo.png ",
+        "src": "ico/msapplication-TileImage.png",
+        "sizes": "128x128",
+        "type": "image/png"
+    }, {
+        "src": "ico/msapplication-square70x70logo.png ",
         "sizes": "70x70",
         "type": "image/png"
     }, {
-        "src": "img/msapplication-square150x150logo.png",
+        "src": "ico/msapplication-square150x150logo.png",
         "sizes": "150x150",
         "type": "image/png",
         "density": 1.5
     }, {
-        "src": "img/msapplication-wide310x150logo.png",
+        "src": "ico/msapplication-wide310x150logo.png",
         "sizes": "310x150",
         "type": "image/png",
         "density": 2
     }, {
-        "src": "img/msapplication-square310x310logo",
+        "src": "ico/msapplication-square310x310logo",
         "sizes": "310x310",
         "type": "image/png",
         "density": 3
@@ -142,15 +146,24 @@
         "type": "image/png",
         "density": 4
     }, {
-        "src": "/video/og-video.swf ",
+        "src": "img/og-imageSecureUrl.png ",
+        "sizes": "1080x400",
+        "type": "image/png",
+        "density": 4
+    }, {
+        "src": "video/og-video.swf ",
         "sizes": "300x400",
         "type": "video/mp4"
     }, {
-        "src": "img/twitterimage.jpg  ",
+        "src": "img/twitter-image.png  ",
         "sizes": "1080x400",
         "type": "image/png"
     }, {
-        "src": "/video/twitter_player.webp ",
+        "src": "img/twitterimage.png  ",
+        "sizes": "1636x887",
+        "type": "image/png"
+    }, {
+        "src": "video/twitter_player.webp ",
         "sizes": "480x480",
         "type": "video/mp4"
     }, {
@@ -159,7 +172,7 @@
         "type": "video/mp4"
     }],
     "lang": "es-MX",
-    "start_url": "https://www.luisangelmaciel.github.io/",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "black",
     "theme_color": "white"

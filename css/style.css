@@ -148,10 +148,10 @@
         
         .container-name .box .role p {
             animation: secFadeIn 2s forwards;
+            font-family: "Inter", sans-serif;
             animation-delay: 3.2s;
             opacity: 0;
             font-weight: 800;
-            font-family: "Lato";
             color: #ddcccc;
             font-size: 20px;
             letter-spacing: 6px;
@@ -1027,7 +1027,7 @@ text-shadow: 0 0 2px #d456ca; */
         }
         
         .text-xs {
-            font-size: .75rem;
+            font-size: 1rem;
             line-height: 1rem
         }
         

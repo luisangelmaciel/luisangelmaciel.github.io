@@ -1,10 +1,22 @@
 /*****
-DONE: Add author to the tweet
-TODO: Fix the 140 character tweet limit
-TODO: Random number/quote on click shouldn't sometimes be the same as the previous one, making the quote form look unresponsive/broken
-TODO: Rotating phone from landscape to portrait causes height issues
 
+
+Deberías estar desayunando pito y no avena remojada. 
+Vamo a jugar al goloso, tú te agachas y yo te lo roso. 
 Fingir no saber para ver hasta donde llega la hipocresia de la gente. Huason. 
+Quien te quiere en su vida, vuelve a buscarte. 
+Quiero ser mi versión más sana y bonita este año. 
+No se trata de enamorarlo, sino de mantenerlo enamorado. Conquistarlo aunque ya sea tu novio
+Tener la posibilidad de herir a quien nos hirió y no hacerlo eso es lo que nos distingue de la mala gente.
+Solo puede quedar uno…
+Bedoyecta Beryaerecta
+ 
+
+
+
+
+
+lamp! te hace más feliz :)
 Si sabes vender y justificar a nivel nu0mérico cualquier idea, esa idea será rentable.
 Nos costó uno y la mitad del otro comprar este espacio. Pero valió la pena que lo vieras y de paso te rieras. 
 
@@ -12,7 +24,7 @@ Nos costó uno y la mitad del otro comprar este espacio. Pero valió la pena que
 
 $(document).ready(function() {
     var quoteList = [
-        { author: "", source: "", quote: "La economía colaborativa es un fenómeno que avanza a nivel mundial con paso firme. De hecho según un informe sobre América Latina, del FOMIN del BID, el IE Business School y el Fondo de Cooperación de España, un 69 por ciento de iniciativas de este tipo se concentran en BRasil, México, Argentina y Perú " },
+        { author: "", source: "", quote: "La economía colaborativa es un fenómeno que avanza a nivel mundial con paso firme. De hecho según un informe sobre América Latina, del FOMIN del BID, el IE Business School y el Fondo de Cooperación de España, un 69 por ciento de iniciativas de este tipo se concentran en Brasil, México, Argentina y Perú " },
         { author: "Andy Worhol", source: "", quote: "La idea no es vivir para siempre. La idea es crear algo que sí lo haga" },
         { author: "", source: "", quote: "Sí buscas resultados distintos, no hagas siempre lo mismo." },
         { author: "", source: "", quote: "No hables, actúa. No digas, demuestra. No prometas, cumple" },
@@ -27,10 +39,14 @@ $(document).ready(function() {
         { author: "", source: "", quote: "Si lo visualizas... lo hacemos posible. Me gusta generar ideas para construir experiencias. Gracias por la oportunidad de que trabajemos juntos. LAMP! " },
         { author: "", source: "", quote: "Conectar con experiencias para identificar, entender, hacer crecer y mantener a tus consumidores, es mi prioridad a la hora de que trabajemos juntos. LAMP!" },
         { author: "", source: "", quote: "Contacta conmigo y te ayudaré a impactar en tus estrategias digitales. LAMP!" },
-        { author: "", source: "", quote: "" },
-        { author: "", source: "", quote: "" },
-        { author: "", source: "", quote: "" },
-        { author: "", source: "", quote: "" },
+        { author: "", source: "", quote: "En Lamp.Martech! somos una agencia chiquita pero chingona. " },
+        { author: "Eric Descombes, presidente de FCB México.", source: "", quote: "El uso de la tecnología y datos guían las decisiones. Los líderes generan un lugar de trabajo de crecimiento y desarrollo personal.  " },
+        { author: "", source: "", quote: "El tamaño de una idea no es relevante. Lo que importa es el impacto que genera." },
+        { author: "", source: "", quote: "No se trata de enamorarlo, sino de mantenerlo enamorado. Conquistarlo aunque ya sea tu novio, pasa lo mismo con los clientes. " },
+        { author: "", source: "", quote: "Tómate un descanso, te lo mereces y haz lo que mejor sabes hacer." },
+        { author: "", source: "", quote: "Estoy en CDMX, trabajo para todo el país. lamp!" },
+        { author: "", source: "", quote: "Si me buscas, es porque quieres algo diferente. lamp!" },
+        { author: "", source: "", quote: "Es increíble  qué tanto podemos hacer cuando nos ponemos de acuerdo. " },
         { author: "", source: "", quote: "" },
         { author: "", source: "", quote: "" },
         { author: "Yuri Alvarado, presidente de Alvarado Molina.", source: "", quote: "Creatividad posiblemente sea visualizar el éxito donde otras personas no ven más allá de sus narices. Un creativo imagina es como una especie de Indiana Jones, alguien que anda buscando la idea perdida.  " },
