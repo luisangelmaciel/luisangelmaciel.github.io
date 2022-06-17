@@ -235,6 +235,49 @@
                 padding-bottom: 50px;
             }
         }
+        
+        figure {
+            padding: 0;
+            margin: 0;
+            position: relative;
+            padding-bottom: 150px;
+        }
+        
+        figure img {
+            max-width: 100%;
+            display: block;
+            margin-bottom: 120px;
+        }
+        
+        figure img.top {
+            position: absolute;
+            top: 115px;
+            left: 0;
+        }
+        
+        figure figcaption {
+            border: 5px solid #18487D;
+            color: #174372;
+            text-transform: uppercase;
+            font-size: 3rem;
+            line-height: 1;
+            padding: 0.25rem;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            mix-blend-mode: color-dodge;
+        }
+        
+        figure figcaption strong {
+            display: block;
+        }
+        
+        figure+p {
+            padding-top: 20px;
+            margin-top: -280px;
+            background: white;
+            position: relative;
+        }
     </style>
 </head>
 
@@ -373,6 +416,16 @@
                 <p><dfn title="Promoción">Promoción</dfn> “Oferta - promoción” (explícita) + protagonismo del producto.</p>
                 <p><dfn title="Innovación.">Innovación.</dfn> “Nuevo” + protagonismo de marca y producto + claim y beneficios simplificados. </p>
                 <p><dfn title="Branding">Branding.</dfn> Máxima visibilidad de marca y producto + claim diferencial. </p>
+
+                <figure>
+                    <figcaption>
+                        <strong>Highway</strong> Blues
+                    </figcaption>
+                    <img src='https://images.unsplash.com/photo-1524650359799-842906ca1c06?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Woman holding guitar over shoulder'>
+                    <img src="https://res.cloudinary.com/css-tricks/image/upload/q_auto/v1580427660/guitar-woman_pfqzvc.png" alt="" class="top">
+
+                </figure>
+
 
                 <h2>Dónde ubicar la comunicación </h2>
                 <strong>ESTRATEGIA</strong>

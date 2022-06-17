@@ -584,7 +584,7 @@
             text-align: center;
             line-height: 0;
             color: white;
-            background-color: #017dbb;
+            background-color: #0a4461;
             font-size: 20px;
             transition: all 0.3s ease;
         }
@@ -613,6 +613,42 @@
             display: none;
             -webkit-animation: fadeEffect 1s;
             animation: fadeEffect 1s;
+        }
+        /* Scroll post */
+        
+        div.scrollmenu-post {
+            overflow: auto;
+            white-space: nowrap;
+            position: fixed;
+            left: 0;
+            top: 50px;
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            line-height: 0;
+            color: #0a4461;
+            background-color: white;
+            transition: all 0.3s ease;
+        }
+        
+        div.scrollmenu-post i {
+            display: inline-block;
+            text-align: center;
+            padding: 0px 0;
+            transition: all 0.3s ease;
+        }
+        
+        div.scrollmenu-post p {
+            text-align: left;
+            margin-top: 0vw;
+        }
+        
+        div.scrollmenu-post p:hover {
+            text-align: center;
+            margin-top: 0vw;
+            transition: all 0.3s ease;
+            color: black;
         }
         /* Fade in tabs */
         
@@ -1829,4 +1865,7 @@ text-shadow: 0 0 2px #d456ca; */
             outline: none;
             padding: 6px 8px;
             cursor: pointer;
+            font-size: 16px;
+            color: #0a4461;
+            background-color: white;
         }
