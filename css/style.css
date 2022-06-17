@@ -754,15 +754,10 @@ button {
 img,
 video {
     display: block;
-    vertical-align: middle
+    vertical-align: middle;
 }
 
 img,
-video {
-    max-width: 100%;
-    height: auto
-}
-
 *,
  ::after,
  ::before {
@@ -1353,7 +1348,7 @@ img {
     .susan-storm-small {
         display: none!important
     }
-    source {
+    video {
         width: 310;
         height: 175;
     }
@@ -1366,7 +1361,7 @@ img {
     .susan-storm-medium {
         display: none!important
     }
-    source {
+    video {
         width: 515;
         height: 290;
     }
@@ -1379,7 +1374,7 @@ img {
     .susan-storm-large {
         display: none!important
     }
-    source {
+    video {
         width: 607;
         height: 342;
     }
