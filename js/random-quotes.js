@@ -10,6 +10,7 @@ No se trata de enamorarlo, sino de mantenerlo enamorado. Conquistarlo aunque ya 
 Tener la posibilidad de herir a quien nos hirió y no hacerlo eso es lo que nos distingue de la mala gente.
 Solo puede quedar uno…
 Bedoyecta Beryaerecta
+Según científicos esta es la canción más feliz del mundo
  
 Original websites, better clicks.
 
@@ -21,7 +22,7 @@ Original websites, better clicks.
 lamp! te hace más feliz :)
 Si sabes vender y justificar a nivel nu0mérico cualquier idea, esa idea será rentable.
 Nos costó uno y la mitad del otro comprar este espacio. Pero valió la pena que lo vieras y de paso te rieras. 
-
+Desarrollado con mucha paciencia, investigación y creatividad.
 *****/
 
 $(document).ready(function() {
