@@ -88,7 +88,7 @@ ul:not(.menu)>li+li {
 
 .nav-sections .menu-item-link {
     display: block;
-    padding: calc(var(--space) * 1.5) var(--space);
+    padding: calc(var(--space) * 0.8) var(--space);
     text-decoration: none;
     white-space: nowrap;
     color: var(--color-link);
@@ -103,7 +103,7 @@ ul:not(.menu)>li+li {
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 4px;
+    height: 3px;
     background-color: var(--color-active);
     transition: width var(--ease) var(--duration), transform var(--ease) var(--duration);
 }
@@ -142,4 +142,37 @@ ul:not(.menu)>li+li {
     pointer-events: none;
     margin-top: calc(var(--section-offset) * -1px);
     height: calc(var(--section-offset) * 1px);
+}
+  /* Scroll post */
+    
+  div.scrollmenu-postnew {
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    line-height: 2;
+    color: #0a4461;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+div.scrollmenu-postnew i {
+    display: inline-block;
+    text-align: center;
+    padding: 0px 0;
+    transition: all 0.3s ease;
+}
+
+div.scrollmenu-postnew p {
+    text-align: left;
+    margin-top: 0vw;
+}
+
+div.scrollmenu-postnew p:hover {
+    text-align: center;
+    margin-top: 0vw;
+    transition: all 0.3s ease;
+    color: black;
 }
