@@ -454,8 +454,126 @@
                 <i class="fas fa-chevron-right footerx-icon" aria-hidden="true"></i>
             </div>
 
+            <div id="countdown-chronometer">
 
 
+
+                <style>
+                    .container-contador-de-tiempo {
+                        justify-content: center;
+                        align-items: center;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer {
+                        font-family: sans-serif;
+                        transition: all 0.5s;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time .counter-down {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 0 12px;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time .counter-down .box {
+                        display: flex;
+                        flex-direction: row;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time .counter-down .box .left,
+                    .container-contador-de-tiempo .chronometer .time .counter-down .box .right {
+                        position: relative;
+                        font-size: 16px;
+                        transition: all 0.5s;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time .counter-down .box .left::before,
+                    .container-contador-de-tiempo .chronometer .time .counter-down .box .right::before {
+                        content: "";
+                        display: block;
+                        width: 100%;
+                        position: absolute;
+                        right: 0;
+                        top: 48%;
+                        transition: all 0.5s;
+                    }
+                    
+                    .container-contador-de-tiempo .chronometer .time .counter-down .description {
+                        transition: all 0.5s;
+                    }
+                </style>
+
+                <div id="container-neon">
+                    <div class="container-contador-de-tiempo light-neon">
+                        <div id="chronometer" class="chronometer">
+                            <center>Tiempo que llevas leyendo esta página</center><br>
+                            <div class="time">
+
+                                <div class="counter-down">
+
+                                    <div class="box a-light-neon">
+                                        <div id="hour-first-digit" class="left">0</div>
+                                        <div id="hour-second-digit" class="right">2</div>
+                                    </div>
+                                    <div class="description a-light-neon">hrs</div>
+                                </div>
+                                <div class="counter-down a-light-neon">
+                                    <div class="box">
+                                        <div id="minute-first-digit" class="left">0</div>
+                                        <div id="minute-second-digit" class="right">7</div>
+                                    </div>
+                                    <div class="description">min</div>
+                                </div>
+                                <div class="counter-down a-light-neon">
+                                    <div class="box">
+                                        <div id="second-first-digit" class="left">1</div>
+                                        <div id="second-second-digit" class="right">9</div>
+                                    </div>
+                                    <div class="description">seg</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script src="https://luisangelmaciel.github.io/one/Neon-Glow-countdown-chronometer/js/count-down-chronometerjavascript.js"></script>
+
+
+            </div>
+
+            <div>
+                <p style="font-size:20px;font-weight:300; text-align: center; font-family: Roboto ">Entre Love, RT, Me gusta, Forks y Favs</p>
+                <p style="font-size:45px;font-weight:700; text-align: center; font-family: Roboto ">Contacto</p>
+                <p style="text-align: center; font-family: Roboto ">El universo es un lugar bastante grande. Mantente en contacto - Carl Sagan</p>
+            </div>
+
+            <ul id="nuevoEnModo"><br>
+                <li hi-repeat="hiHelloMaciel" style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                    <div style="display: flex; ">
+                        <img src="{{img-src}}" width="32px" height="32px" style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico" loading="lazy" class="lazyload  ">
+
+                        <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem;   margin-bottom: 0; line-height: 1.25;">
+                            <span>
+                                    <strong>Luis Angel Maciel</strong>   <span style="color:#3f3b3b">  {{fecha-De-Publicacion}}  </span>
+                            </span>
+                            <br> {{el-Post}}
+                            <span><a rel="noreferrer noopener" href="{{a-href}}" target="_blank" title="{{a-href-tittle}}" aria-label="Link de la publicación"><code style="color: grey">{{accion}} </code></span>
+                            </a>
+                    </div>
+                </li>
+            </ul>
+            <script>
+                hi.displayObject("nuevoEnModo", myObject);
+            </script>
+            <script src="nuevas-entradas.js"></script>
         </main>
 
 

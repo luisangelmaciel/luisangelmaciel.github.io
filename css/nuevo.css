@@ -143,9 +143,11 @@ ul:not(.menu)>li+li {
     margin-top: calc(var(--section-offset) * -1px);
     height: calc(var(--section-offset) * 1px);
 }
-  /* Scroll post */
-    
-  div.scrollmenu-postnew {
+
+
+/* Scroll post */
+
+div.scrollmenu-postnew {
     overflow: auto;
     white-space: nowrap;
     width: 100%;
@@ -175,4 +177,36 @@ div.scrollmenu-postnew p:hover {
     margin-top: 0vw;
     transition: all 0.3s ease;
     color: black;
+}
+
+.shrink-text .a-shrink-text {
+    display: flex;
+    font-size: 40px;
+    color: #000000;
+    text-decoration: unset;
+    align-items: center;
+    text-align: center;
+    font-weight: 600;
+}
+
+.shrink-text .a-shrink-text:hover {
+    display: flex;
+    font-size: 40px;
+    color: #000000;
+    text-decoration: unset;
+}
+
+.span-shrink-text:nth-child(even) {
+    overflow: hidden;
+    letter-spacing: -1em;
+    transition: letter-spacing 0.5s linear;
+}
+
+.shrink-text a:hover .span-shrink-text:nth-child(even) {
+    letter-spacing: 0;
+}
+
+.Maven {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 600;
 }
