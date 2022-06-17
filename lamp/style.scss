@@ -1,0 +1,191 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vgvjk1');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?vgvjk1#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?vgvjk1') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?vgvjk1') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?vgvjk1##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.lamp {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.lampdragvesti {
+  &:before {
+    content: $lampdragvesti;     
+    color: #8e8985;
+  }
+}
+.lampavatar .path1 {
+  &:before {
+    content: $lampavatar-path1;  
+    color: rgb(0, 56, 113);
+  }
+}
+.lampavatar .path2 {
+  &:before {
+    content: $lampavatar-path2;  
+    margin-left: -1em;  
+    color: rgb(23, 8, 47);
+  }
+}
+.lampavatar .path3 {
+  &:before {
+    content: $lampavatar-path3;  
+    margin-left: -1em;  
+    color: rgb(62, 64, 149);
+  }
+}
+.lampavatar .path4 {
+  &:before {
+    content: $lampavatar-path4;  
+    margin-left: -1em;  
+    color: rgb(63, 46, 100);
+  }
+}
+.lampxiiber-travel-log .path1 {
+  &:before {
+    content: $lampxiiber-travel-log-path1;  
+    color: rgb(0, 56, 113);
+  }
+}
+.lampxiiber-travel-log .path2 {
+  &:before {
+    content: $lampxiiber-travel-log-path2;  
+    margin-left: -2.537109375em;  
+    color: rgb(0, 56, 113);
+  }
+}
+.lampxiiber-travel-log .path3 {
+  &:before {
+    content: $lampxiiber-travel-log-path3;  
+    margin-left: -2.537109375em;  
+    color: rgb(23, 8, 47);
+  }
+}
+.lampxiiber-travel-log .path4 {
+  &:before {
+    content: $lampxiiber-travel-log-path4;  
+    margin-left: -2.537109375em;  
+    color: rgb(62, 64, 149);
+  }
+}
+.lampxiiber-travel-log .path5 {
+  &:before {
+    content: $lampxiiber-travel-log-path5;  
+    margin-left: -2.537109375em;  
+    color: rgb(63, 46, 100);
+  }
+}
+.lamplogo-dragvesti {
+  &:before {
+    content: $lamplogo-dragvesti; 
+  }
+}
+.lamplogo-dragvesti-blanco-letras {
+  &:before {
+    content: $lamplogo-dragvesti-blanco-letras;     
+    color: #fefefe;
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path1 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path1;  
+    color: rgb(0, 56, 113);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path2 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path2;  
+    margin-left: -3.345703125em;  
+    color: rgb(0, 56, 113);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path3 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path3;  
+    margin-left: -3.345703125em;  
+    color: rgb(23, 8, 47);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path4 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path4;  
+    margin-left: -3.345703125em;  
+    color: rgb(232, 68, 59);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path5 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path5;  
+    margin-left: -3.345703125em;  
+    color: rgb(0, 77, 253);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path6 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path6;  
+    margin-left: -3.345703125em;  
+    color: rgb(254, 237, 1);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path7 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path7;  
+    margin-left: -3.345703125em;  
+    color: rgb(255, 139, 0);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path8 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path8;  
+    margin-left: -3.345703125em;  
+    color: rgb(118, 7, 137);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path9 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path9;  
+    margin-left: -3.345703125em;  
+    color: rgb(0, 129, 37);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path10 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path10;  
+    margin-left: -3.345703125em;  
+    color: rgb(62, 64, 149);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path11 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path11;  
+    margin-left: -3.345703125em;  
+    color: rgb(63, 46, 100);
+  }
+}
+.lampxiiber-logo-horizontal-color1 .path12 {
+  &:before {
+    content: $lampxiiber-logo-horizontal-color1-path12;  
+    margin-left: -3.345703125em;  
+    color: rgb(96, 96, 98);
+  }
+}
+

@@ -1,0 +1,19 @@
+.lampdragvesti {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe904;');
+}
+.lampavatar {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe900;');
+}
+.lampxiiber-travel-log {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xe913;');
+}
+.lamplogo-dragvesti {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xf257;');
+}
+.lamplogo-dragvesti-blanco-letras {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea50;');
+}
+.lampxiiber-logo-horizontal-color1 {
+  *zoom: expression(this.runtimeStyle['zoom'] = '1', this.innerHTML = '&#xea57;');
+}
+
