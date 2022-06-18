@@ -349,7 +349,8 @@
             <i><p></p></i> <i><p></p></i>
             <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='post.html'"> Lo más nuevo </i>
             <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-sitemap" aria-hidden="true" onclick="openName(event, 'mapsite')"> Mapa de sitio </i>
+            <!-- <i class="fas fa-sitemap" aria-hidden="true" onclick="openName(event, 'mapsite')"> Mapa de sitio </i> -->
+            <i class="fas fa-sitemap" aria-hidden="true" onclick="document.location='mapadesitio.html'"> Mapa de sitio </i>
             <i><p></p></i> <i><p></p></i>
             <i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'xiiber')"> Xiiber </i>
             <i><p></p></i> <i><p></p></i>
@@ -506,10 +507,95 @@
                         <div class="w-full lg:w-1/4 pl-4">
 
                             <div class="mb-3 text-xs"><br>
+                                <div>
+                                    <style>
+                                        .alert {
+                                            padding: 5px 2px 5px 2px;
+                                            background-color: transparent;
+                                        }
+                                        
+                                        .closebtn {
+                                            color: rgb(0, 0, 0);
+                                            font-weight: bold;
+                                            float: right;
+                                            font-size: 22px;
+                                            cursor: pointer;
+                                            transition: 0.3s;
+                                        }
+                                        
+                                        .closebtn:hover {
+                                            color: black;
+                                        }
+                                    </style>
+
+
+                                    <script src="js/random-quotes.js"></script>
+                                    <div>
+                                        <p class=" quote"></p>
+                                        <p class="lead character"></p><br>
+
+                                        <span class="lead ">
+                                      <span class=" btn-force">
+                                        <i class="fa fa-plus" aria-hidden="true"  onclick="w3.hide('.city')" ></i> </span>
+                                        <a class="twitter a-white">
+                                            <span class="btn-white  btn-tweet"> <i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                                        </span>
+                                        <div class="alert city">
+                                            <span class="closebtn lead  btn-force" onclick="w3.hide('.city')">&times;</span>
+                                            <p id="quote"> </p>
+                                            <b><p id="author"></p></b>
+                                            <span class="lead" onclick="this.parentElement.style.display='none';">
+                                                <span class=" btn-force">
+                                                 
+                                            <a class="twitter a-white">
+                                                <span class="btn-white  btn-tweet"> <i class="fa fa-twitter" aria-hidden="true"></i></span></a>
+                                            </span>
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+
+
                                 <span class="mr-2 ♋ 🏊‍♂️ 🧙‍"> </span><br><br>
-                                <p id="quote"> </p>
-                                <b><p id="author"></p></b>
-                                <script src="js/random-quotes.js"></script>
+
+
+                                <style>
+                                    .a-white,
+                                    .a-white:focus,
+                                    .a-white:hover {
+                                        text-decoration: none;
+                                        color: rgb(10, 23, 48);
+                                        font-size: initial;
+                                    }
+                                    
+                                    .btn-white {
+                                        text-shadow: none;
+                                        outline: none;
+                                        font-size: initial;
+                                    }
+                                    
+                                    .quote {
+                                        background-color: transparent;
+                                        font-size: initial;
+                                    }
+                                    
+                                    .character {
+                                        background-color: transparent;
+                                        font-size: initial;
+                                        font-weight: bold;
+                                    }
+                                </style>
+
+
+
                             </div>
                         </div>
 
