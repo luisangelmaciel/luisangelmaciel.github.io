@@ -1407,6 +1407,23 @@ img {
     white-space: nowrap;
 }
 
+.btn-xiibBlanco {
+    border: solid 3px rgb(255, 255, 255);
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    width: auto;
+    height: 50px;
+    border-radius: 30px;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
 
 /* small */
 
@@ -1414,10 +1431,10 @@ img {
     .susan-storm-small {
         display: none!important
     }
-    .btn-xiib {
-        border: solid 3px black;
+    .btn-xiibBlanco {
+        border: solid 3px rgb(255, 255, 255);
         font-size: 18px;
-        color: white;
+        color: rgb(0, 0, 0);
         width: auto;
         height: 50px;
         border-radius: 30px;
@@ -1766,7 +1783,8 @@ img {
 }
 
 .cta {
-    background: #F65D7C;
+    z-index: 2;
+    background: #015A88;
     color: #fff;
     padding: 15px;
     position: fixed;
@@ -1788,6 +1806,8 @@ img {
     animation-duration: 6s;
 }
 
+
+/*
 @-webkit-keyframes newsletter-attention {
     0% {
         padding: 15px;
@@ -1822,6 +1842,7 @@ img {
     }
 }
 
+
 @keyframes newsletter-attention {
     0% {
         padding: 15px;
@@ -1850,6 +1871,76 @@ img {
     19% {
         padding: 15px;
         background: #F65D7C;
+    }
+    100% {
+        padding: 15px;
+    }
+}
+
+*/
+
+@keyframes newsletter-attention {
+    0% {
+        padding: 15px;
+        background: #015A88;
+    }
+    8% {
+        padding: 15px;
+        background: rgb(4, 69, 104);
+    }
+    11% {
+        padding: 25px 15px;
+        background: rgb(8, 84, 126);
+    }
+    13% {
+        padding: 10px;
+        background: rgb(13, 99, 145);
+    }
+    15% {
+        padding: 15px;
+        background: rgb(8, 84, 126);
+    }
+    17% {
+        padding: 12px;
+        background: rgb(4, 69, 104);
+    }
+    19% {
+        padding: 15px;
+        background: #015A88;
+    }
+    100% {
+        padding: 15px;
+    }
+}
+
+@-webkit-keyframes newsletter-attention {
+    0% {
+        padding: 15px;
+        background: #015A88;
+    }
+    8% {
+        padding: 15px;
+        background: rgb(4, 69, 104);
+    }
+    11% {
+        padding: 25px 15px;
+        background: rgb(8, 84, 126);
+    }
+    13% {
+        padding: 10px;
+        background: rgb(13, 99, 145);
+    }
+    15% {
+        padding: 15px;
+        background: rgb(8, 84, 126);
+    }
+    17% {
+        padding: 12px;
+        background: rgb(4, 69, 104);
+    }
+    19% {
+        padding: 15px;
+        background: #015A88;
     }
     100% {
         padding: 15px;

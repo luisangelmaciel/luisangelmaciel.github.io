@@ -1,0 +1,1251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+
+
+<style>
+    /* Boton banner */
+    
+    .buttonb {
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 0px;
+    }
+    
+    .buttonb span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .buttonb span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .buttonb:hover span {
+        padding-right: 25px;
+    }
+    
+    .buttonb:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+    
+    .product-name {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 22px;
+        margin-bottom: 4px;
+    }
+    
+    .product-price-discount {
+        font-size: 22px;
+        font-weight: 400;
+        clear: both;
+    }
+    
+    .product-price-discount span.line-through {
+        text-decoration: line-through;
+        margin-left: 10px;
+        font-size: 14px;
+        vertical-align: middle;
+        color: #a5a5a5;
+    }
+    
+    .product-info {
+        width: 100%;
+    }
+    
+    .reviews-counter {
+        font-size: 13px;
+    }
+    
+    .reviews-counter span {
+        vertical-align: -2px;
+    }
+    
+    .rate {
+        float: left;
+        padding: 0 10px 0 0;
+    }
+    
+    .rate:not(:checked)>input {
+        position: absolute;
+        top: -9999px;
+    }
+    
+    .rate:not(:checked)>label {
+        float: right;
+        width: 15px;
+        overflow: hidden;
+        white-space: nowrap;
+        cursor: pointer;
+        font-size: 21px;
+        color: #ccc;
+        margin-bottom: 0;
+        line-height: 21px;
+    }
+    
+    .rate:not(:checked)>label:before {
+        content: '\2605';
+    }
+    
+    .rate>input:checked~label {
+        color: #ffc700;
+    }
+    
+    .rate:not(:checked)>label:hover,
+    .rate:not(:checked)>label:hover~label {
+        color: #deb217;
+    }
+    
+    .rate>input:checked+label:hover,
+    .rate>input:checked+label:hover~label,
+    .rate>input:checked~label:hover,
+    .rate>input:checked~label:hover~label,
+    .rate>label:hover~input:checked~label {
+        color: #c59b08;
+    }
+    /* Boton banner */
+    
+    .buttonb {
+        border-radius: 12px;
+        background-color: #FFFFFF;
+        border: none;
+        color: #000000;
+        text-align: center;
+        font-size: 14px;
+        padding: 12px;
+        width: 100%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 0px;
+    }
+    
+    .buttonb span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+    }
+    
+    .buttonb span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+    }
+    
+    .buttonb:hover span {
+        padding-right: 25px;
+    }
+    
+    .buttonb:hover span:after {
+        opacity: 1;
+        right: 0;
+    }
+</style>
+<style>
+    .containerOK {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    /* small */
+    
+    @media (max-width:600px) {
+        .containerOK {
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-bottom: 50px;
+        }
+    }
+</style>
+
+<body>
+
+    <!-- Side Navigation -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-center" style="display:none" id="mySidebar">
+        <h1 class="w3-xxxlarge w3-text-theme">Side Navigation</h1>
+        <button class="w3-bar-item w3-button" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+        <a href="#" class="w3-bar-item w3-button">Link 1</a>
+        <a href="#" class="w3-bar-item w3-button">Link 2</a>
+        <a href="#" class="w3-bar-item w3-button">Link 3</a>
+        <a href="#" class="w3-bar-item w3-button">Link 4</a>
+    </nav>
+
+    <!-- Header -->
+    <header class="w3-container w3-theme w3-padding " id="myHeader">
+        <span onclick="w3_open()" class="w3-xlarge  w3-theme  w3-right"> <i onclick="w3_open()" class="fa fa-bars"></i>   </span>
+        <span onclick="w3_open()" class=" w3-xlarge   w3-theme">SHOP</span>
+    </header>
+
+    <main class="containerOK" style="padding-top:50px">
+        <div class="w3-half w3-container">
+            <div id="gallerylamp">
+                <style>
+                    .img {
+                        width: 100%;
+                        height: auto;
+                    }
+                    
+                    .boximg {
+                        transition: 0.3s;
+                        border-top-left-radius: 5px;
+                        border-top-right-radius: 5px;
+                    }
+                    
+                    .responsive {
+                        width: 100%;
+                        height: auto;
+                        max-width: 400px;
+                        align-items: center;
+                        text-align: center;
+                        vertical-align: top;
+                        display: inline-block;
+                        border-radius: 5px;
+                        transition: 0.3s;
+                        place-items: center;
+                    }
+                    /* The Modal (background) */
+                    
+                    .modalFull {
+                        display: none;
+                        position: fixed;
+                        z-index: 1;
+                        padding-top: 100px;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        overflow: auto;
+                        background-color: black;
+                        max-height: fit-content;
+                    }
+                    /* Modal Content */
+                    
+                    .modalFull-content {
+                        position: relative;
+                        margin: auto;
+                        padding: 0;
+                        width: 100%;
+                        height: 100vh;
+                    }
+                    /* The Close Button */
+                    
+                    .closeFull {
+                        color: white;
+                        position: absolute;
+                        top: 10px;
+                        right: 25px;
+                        font-size: 35px;
+                        font-weight: bold;
+                    }
+                    
+                    .closeFull:hover,
+                    .closeFull:focus {
+                        color: #999;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                    
+                    .mySlidesFull {
+                        display: none;
+                        align-items: center;
+                        position: relative
+                    }
+                    
+                    .cursorFull {
+                        cursor: pointer;
+                    }
+                    /* nextFull & prevFullious buttons */
+                    
+                    .prevFull,
+                    .nextFull {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 50%;
+                        width: auto;
+                        padding: 16px;
+                        margin-top: -50px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 20px;
+                        transition: 0.6s ease;
+                        border-radius: 0 3px 3px 0;
+                        user-select: none;
+                        -webkit-user-select: none;
+                    }
+                    /* Position the "nextFull button" to the right */
+                    
+                    .nextFull {
+                        right: 0;
+                        border-radius: 3px 0 0 3px;
+                    }
+                    /* On hover, add a black background color with a little bit see-through */
+                    
+                    .prevFull:hover,
+                    .nextFull:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+                    /* Number text (1/3 etc) */
+                    
+                    .numbertextFull {
+                        color: #f2f2f2;
+                        font-size: 12px;
+                        padding: 8px 12px;
+                        align-items: center;
+                        text-align: center;
+                    }
+                    
+                    img {
+                        margin-bottom: -4px;
+                    }
+                    
+                    .captionFull-container {
+                        text-align: center;
+                        background-color: black;
+                        padding: 2px 16px;
+                        color: white;
+                    }
+                    
+                    .demoFull {
+                        opacity: 0.6;
+                    }
+                    
+                    .activeFull,
+                    .demoFull:hover {
+                        opacity: 1;
+                    }
+                    
+                    img.hover-shadow {
+                        transition: 0.3s;
+                    }
+                    
+                    .hover-shadow:hover {
+                        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    }
+                </style>
+
+
+
+
+                <div id="myModalFull" class="modalFull containerFull ">
+                    <span class="closeFull cursorFull" onclick="closeModalFull()">&times;</span>
+                    <div class="modalFull-content ">
+
+                        <div class="mySlidesFull">
+                            <div class="numbertextFull">1 / 4</div>
+                            <center>
+                                <img src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" class="responsive img">
+                            </center>
+                        </div>
+
+                        <div class="mySlidesFull">
+                            <div class="numbertextFull">2 / 4</div>
+                            <center> <img src="https://www.xiiber.com/img/photo-preview-00.webp" style="width:100%" class="responsive img"></center>
+                        </div>
+
+                        <div class="mySlidesFull">
+                            <div class="numbertextFull">3 / 4</div>
+                            <center> <img src="https://www.xiiber.com/img/photo-preview-01.webp" style="width:100%" class="responsive img"></center>
+                        </div>
+
+                        <div class="mySlidesFull">
+                            <div class="numbertextFull">4 / 4</div>
+                            <center> <img src="https://www.xiiber.com/img/photo-preview-02.webp" style="width:100%" class="responsive img"></center>
+                        </div>
+
+                        <a class="prevFull" onclick="plusSlidesFull(-1)">&#10094;</a>
+                        <a class="nextFull" onclick="plusSlidesFull(1)">&#10095;</a>
+
+                        <div class="captionFull-container">
+                            <p id="captionFull"></p>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <script>
+                    function openModalFull() {
+                        document.getElementById("myModalFull").style.display = "block";
+                    }
+
+                    function closeModalFull() {
+                        document.getElementById("myModalFull").style.display = "none";
+                    }
+
+                    var slideIndexFull = 1;
+                    showSlidesFull(slideIndexFull);
+
+                    function plusSlidesFull(n) {
+                        showSlidesFull(slideIndexFull += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlidesFull(slideIndexFull = n);
+                    }
+
+                    function showSlidesFull(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlidesFull");
+                        var dots = document.getElementsByClassName("demoFull");
+                        var captionText = document.getElementById("captionFull");
+                        if (n > slides.length) {
+                            slideIndexFull = 1
+                        }
+                        if (n < 1) {
+                            slideIndexFull = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" activeFull", "");
+                        }
+                        slides[slideIndexFull - 1].style.display = "block";
+                        dots[slideIndexFull - 1].className += " activeFull";
+                        captionText.innerHTML = dots[slideIndexFull - 1].alt;
+                    }
+                </script>
+
+
+                <style>
+                    body {
+                        font-family: Arial;
+                        margin: 0;
+                    }
+                    
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    img {
+                        vertical-align: middle;
+                    }
+                    /* Position the image container (needed to position the left and right arrows) */
+                    
+                    .container {
+                        position: relative;
+                    }
+                    /* Hide the images by default */
+                    
+                    .mySlides {
+                        display: none;
+                    }
+                    /* Add a pointer when hovering over the thumbnail images */
+                    
+                    .cursor {
+                        cursor: pointer;
+                    }
+                    /* Next & previous buttons */
+                    
+                    .prev,
+                    .next {
+                        cursor: pointer;
+                        position: absolute;
+                        top: 40%;
+                        width: auto;
+                        padding: 16px;
+                        margin-top: -50px;
+                        color: white;
+                        font-weight: bold;
+                        font-size: 20px;
+                        border-radius: 0 3px 3px 0;
+                        user-select: none;
+                        -webkit-user-select: none;
+                    }
+                    /* Position the "next button" to the right */
+                    
+                    .next {
+                        right: 0;
+                        border-radius: 3px 0 0 3px;
+                    }
+                    /* On hover, add a black background color with a little bit see-through */
+                    
+                    .prev:hover,
+                    .next:hover {
+                        background-color: rgba(0, 0, 0, 0.8);
+                    }
+                    /* Number text (1/3 etc) */
+                    
+                    .numbertext {
+                        color: #f2f2f2;
+                        font-size: 12px;
+                        padding: 8px 12px;
+                        position: absolute;
+                        top: 0;
+                    }
+                    /* Container for image text */
+                    
+                    .caption-container {
+                        text-align: center;
+                        background-color: #222;
+                        padding: 2px 16px;
+                        color: white;
+                    }
+                    
+                    .row:after {
+                        content: "";
+                        display: table;
+                        clear: both;
+                    }
+                    /* Six columns side by side */
+                    
+                    .column {
+                        float: left;
+                        width: 16.66%;
+                    }
+                    /* Add a transparency effect for thumnbail images */
+                    
+                    .demo {
+                        opacity: 0.6;
+                    }
+                    
+                    .active,
+                    .demo:hover {
+                        opacity: 1;
+                    }
+                </style>
+
+
+
+                <div class="container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" onclick="openModalFull();currentSlide(1)" class="hover-shadow cursorFull boximg ">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="https://www.xiiber.com/img/photo-preview-00.webp" style="width:100%" onclick="openModalFull();currentSlide(2)" class="hover-shadow cursorFull">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="https://www.xiiber.com/img/photo-preview-01.webp" style="width:100%" onclick="openModalFull();currentSlide(3)" class="hover-shadow cursorFull">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="https://www.xiiber.com/img/photo-preview-02.webp" style="width:100%" onclick="openModalFull();currentSlide(4)" class="hover-shadow cursorFull">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%" onclick="openModalFull();currentSlide(5)" class="hover-shadow cursorFull">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%" onclick="openModalFull();currentSlide(6)" class="hover-shadow cursorFull">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="rowX">
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview-00.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview-01.webp" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview-02.webp" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.w3schools.com/howto/img_nature.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://www.w3schools.com/howto/img_snow.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                        </div>
+                    </div>
+                </div>
+
+                <script>
+                    let slideIndex = 1;
+                    showSlides(slideIndex);
+
+                    function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                    }
+
+                    function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                    }
+
+                    function showSlides(n) {
+                        let i;
+                        let slides = document.getElementsByClassName("mySlides");
+                        let dots = document.getElementsByClassName("demo");
+                        let captionText = document.getElementById("caption");
+                        if (n > slides.length) {
+                            slideIndex = 1
+                        }
+                        if (n < 1) {
+                            slideIndex = slides.length
+                        }
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex - 1].style.display = "block";
+                        dots[slideIndex - 1].className += " active";
+                        captionText.innerHTML = dots[slideIndex - 1].alt;
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="w3-half w3-container">
+            <div class="product-info"><br>
+                <small>Puerto Vallarta</small>
+                <div class="product-name ">Viaje en grupo</div>
+                <div class="reviews-counter">
+                    <div class="rate">
+                        <input type="radio" id="star6" name="rate" value="6" checked />
+                        <label for="star6" title="">6 stars</label>
+                        <input type="radio" id="star5" name="rate" value="5" checked />
+                        <label for="star5" title="">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" checked />
+                        <label for="star4" title="">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" checked/>
+                        <label for="star3" title="">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" checked/>
+                        <label for="star2" title="">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" checked />
+                    </div>
+                    <span>.</span>
+                </div>
+                <br>
+                <div class="product-price-discount " style="font-size:12px; "><span><b>Precio por persona</b></span></div>
+                <div class="product-price-discount "><span> $3,000</span><span class="line-through ">$3,500</span></div>
+                <div class="product-price-discount " style="font-size:12px; "><span>En ocupación cuádruple </span></div>
+                <hr>
+                <p>Viaje en grupo a Puerto Vallarta. <br>Incluye transporte redondo y hospedaje <br>Reserva con anticipación, cupo limitado. Aparta con el 50% y liquida el día de viaje
+
+
+                </p>
+
+
+                <br>
+                <button class="buttonb w3-border w3-round-large "><span><b>Reservar</b> </span>
+                </button><br> <br>
+                <b>Medios de pago</b><br><br>
+                <img src="https://www.xiiber.com/img/pagos-aceptados.png " style="width: 70%; "><br><br><br>
+            </div>
+        </div>
+    </main>
+
+    <div class="containerOK " style="padding-top:50px">
+        <div class=" ">
+            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'London')">Información</button>
+            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Paris')">Detalles</button>
+            <button class="w3-bar-item w3-button testbtn w3-padding-16" onclick="openCity(event,'Tokyo')">FAQ</button>
+        </div>
+
+        <div id="London" class="w3-container city w3-animate-opacity"><br>
+            <li style="list-style-type: none;margin-left: 10px; margin-right: 13px;">
+                <style>
+                    .w3-lamp-active {
+                        color: #fff!important;
+                        background-color: #616161!important
+                    }
+                </style>
+                <div style="display: flex; ">
+                    <img src="img/lamp-1.svg" width=" 32px " height="32px " style="vertical-align: middle; margin-right: .3rem; flex-shrink: 0; border-radius: .25rem; " alt="Ico " loading="lazy " class="lazyload ">
+
+                    <p style=" margin-top: 0; margin-bottom: 1rem; padding-bottom: 1rem; margin-bottom: 0; line-height: 1.25; ">
+                        <span>
+                                <strong>Luis Angel Maciel</strong>   <span style="color:#3f3b3b ">  19 junio 2022  </span>
+                        </span>
+                        <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat.
+                        <span><a rel="noreferrer noopener " href="# " target="_blank " title=" " aria-label="Link de la publicación "><code style="color: grey ">Ver </code></span>
+                        </a>
+                </div>
+            </li>
+            <div id="HECHO-CONAMOR-Y-ETIQUETAS🌟">
+                <style>
+                    .container-hecho {
+                        text-align: center;
+                    }
+                    
+                    .container-hecho>h1 {
+                        font-weight: 700;
+                        font-size: 1rem;
+                        line-height: normal;
+                        color: #111827;
+                    }
+                    
+                    .container-hecho sup {
+                        font-size: 0.5rem;
+                        margin-left: 0.25em;
+                        opacity: 0.5;
+                        position: relative;
+                    }
+                    
+                    * {
+                        box-sizing: border-box;
+                    }
+                    
+                    @media only screen and (max-width: 500px) {
+                        /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+                        /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+                    }
+                </style>
+                <div class="container-hecho">
+                    <h1>
+                        Hecho con <code>&lt;amor&gt;</code> y muchas etiquetas<sup>(...)</sup>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="LA.MCL🌟" class="w3-center">
+                <style>
+                    .shrink-text .a-shrink-text {
+                        display: flex;
+                        text-decoration: unset;
+                        align-items: center;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                    
+                    .shrink-text .a-shrink-text:hover {
+                        display: flex;
+                        text-decoration: unset;
+                    }
+                    
+                    .span-shrink-text:nth-child(even) {
+                        overflow: hidden;
+                        letter-spacing: -1em;
+                        transition: letter-spacing 0.5s linear;
+                    }
+                    
+                    .shrink-text a:hover .span-shrink-text:nth-child(even) {
+                        letter-spacing: 0;
+                    }
+                </style>
+                <center>
+                    <div class="shrink-text Maven display-middle shadow margines">
+                        <a href="https://twitter.com/intent/follow?screen_name=xiibertravel" class="a-shrink-text">
+                            <span class="span-shrink-text">l</span><span class="span-shrink-text">uis</span>
+                            <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
+                            <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
+                            <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
+                            <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
+                            <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+
+
+
+        </div>
+
+        <div id="Paris" class="w3-container city w3-animate-opacity">
+            <span>
+
+                <style>
+                    .aqua-button {
+                        width: 160px;
+                        height: 40px;
+                        padding: 5px 16px 3px;
+                        -webkit-border-radius: 16px;
+                        -moz-border-radius: 16px;
+                        border: 2px solid #ccc;
+                        position: relative;
+                    
+                        /* Label */
+                      
+                        font-weight: 200;
+                        color: #fff;
+                        text-shadow: rgba(10, 10, 10, 0.5) 1px 2px 2px;
+                        text-align: center;
+                        vertical-align: middle;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                    }
+                    
+                    .aqua {
+                        background-color: rgba(60, 132, 198, 0.8);
+                        border-top-color: #8ba2c1;
+                        border-right-color: #5890bf;
+                        border-bottom-color: #4f93ca;
+                        border-left-color: #768fa5;
+                        -webkit-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
+                        -moz-box-shadow: rgba(66, 140, 240, 0.5) 0px 10px 16px;
+                        background-image: -webkit-gradient(linear, 0% 0%, 0% 90%, from(rgba(28, 91, 155, 0.8)), to(rgba(108, 191, 255, .9)));
+                        /* for FF 3.6 */
+                        background-image: -moz-linear-gradient(rgba(28, 91, 155, 0.8) 0%, rgba(108, 191, 255, .9) 90%);
+                    }
+                </style>
+
+                <center><br>
+                    <div class="aqua-button aqua">
+                        <div class="glare"></div>
+                        ¡Si, si quiero!
+                    </div>
+                </center>
+            </span>
+        </div>
+
+        <div id="Tokyo" class="w3-container city w3-animate-opacity">
+
+            <div class=" " style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000);">
+                <div id="🌟Name-presentation">
+                    <style>
+                        @import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+                        .container-name123 {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                        
+                        .container-name123 .box123 {
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            height: 450px;
+                        }
+                        
+                        .container-name123 .box123 .title123 {
+                            width: 100%;
+                            display: flex;
+                            align-items: center;
+                            height: 50px;
+                        }
+                        
+                        .container-name123 .box123 .title123 .block123 {
+                            width: 0%;
+                            height: inherit;
+                            background: linear-gradient( to right, #18487D, #103155, #0c243f, #071d36, #09305c, #0d427e, #1055a3);
+                            /*   background: linear-gradient( to right, #e91e63, #d4232c, #ce6f30, #e9d51e, #23d458, #1ec0e9, #981ee9, #23d458, #1ea9e9); */
+                            background-position: center 0%;
+                            animation: background-slide 1s infinite linear;
+                            position: absolute;
+                            animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                            display: flex;
+                        }
+                        
+                        .container-name123 .box123 .title123 h1 {
+                            font-family: "Poppins";
+                            color: rgb(255, 255, 255);
+                            font-size: 40px;
+                            -webkit-animation: mainFadeIn 2s forwards;
+                            -o-animation: mainFadeIn 2s forwards;
+                            animation: mainFadeIn 2s forwards;
+                            animation-delay: 1.6s;
+                            opacity: 0;
+                            display: flex;
+                            align-items: baseline;
+                            position: relative;
+                        }
+                        
+                        .container-name123 .box123 .title123 h1 span {
+                            width: 0px;
+                            height: 0px;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            border-radius: 50%;
+                            background: #017db0;
+                            -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                            animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                            animation-delay: 2s;
+                            margin-left: 5px;
+                            margin-top: -15px;
+                            position: absolute;
+                            bottom: 33px;
+                            right: -12px;
+                        }
+                        
+                        .container-name123 .box123 .role123 {
+                            width: 100%;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            height: 30px;
+                            margin-top: -10px;
+                        }
+                        
+                        .container-name123 .box123 .role123 .block123 {
+                            width: 0%;
+                            height: inherit;
+                            background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);
+                            background-position: center 0%;
+                            animation: background-slide 1s infinite linear;
+                            position: absolute;
+                            animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+                            animation-delay: 2s;
+                            display: flex;
+                        }
+                        
+                        .container-name123 .box123 .role123 p {
+                            animation: secFadeIn 2s forwards;
+                            animation-delay: 3.2s;
+                            opacity: 0;
+                            font-weight: 800;
+                            font-family: "Lato";
+                            color: #d6d6d6;
+                            font-size: 20px;
+                            letter-spacing: 6px;
+                            padding-top: 30px;
+                            padding-bottom: 30px;
+                            margin-top: 33px;
+                        }
+                        
+                        @keyframes mainBlock {
+                            0% {
+                                width: 0%;
+                                left: 0;
+                            }
+                            50% {
+                                width: 100%;
+                                left: 0;
+                            }
+                            100% {
+                                width: 0;
+                                left: 100%;
+                            }
+                        }
+                        
+                        @keyframes secBlock {
+                            0% {
+                                width: 0%;
+                                left: 0;
+                            }
+                            50% {
+                                width: 100%;
+                                left: 0;
+                            }
+                            100% {
+                                width: 0;
+                                left: 100%;
+                            }
+                        }
+                        
+                        @keyframes mainFadeIn {
+                            0% {
+                                opacity: 0;
+                            }
+                            100% {
+                                opacity: 1;
+                            }
+                        }
+                        
+                        @keyframes popIn {
+                            0% {
+                                width: 0px;
+                                height: 0px;
+                                background: #ffb510;
+                                opacity: 0;
+                            }
+                            50% {
+                                width: 10px;
+                                height: 10px;
+                                background: #ffb510;
+                                opacity: 1;
+                                bottom: 45px;
+                            }
+                            65% {
+                                width: 7px;
+                                height: 7px;
+                                bottom: 0px;
+                                width: 15px;
+                            }
+                            80% {
+                                width: 10px;
+                                height: 10px;
+                                bottom: 20px;
+                            }
+                            100% {
+                                width: 7px;
+                                height: 7px;
+                                background: #ffb510;
+                                bottom: 13px;
+                            }
+                        }
+                        
+                        @keyframes secFadeIn {
+                            0% {
+                                opacity: 0;
+                            }
+                            100% {
+                                opacity: 0.5;
+                            }
+                        }
+                    </style>
+                    <div class="container-name123">
+                        <div class="box123">
+
+                            <div class="title123">
+                                <span class="block123 "></span>
+                                <h1 style="  text-shadow: 1px 1px 2px black, 0 0 1em rgb(5, 5, 104), 0 0 0.2em rgb(15, 15, 212);"><img src="img/lamp-1.svg" width="40" height="32" alt="codigo etiquetas " loading="lazy" class="lazy">Luis Angel Maciel<span></span></h1>
+                            </div>
+
+                            <div class="role123">
+                                <div class="block123"></div>
+                                <br>
+                                <p>Marketing, diseño y ventas</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="acordionlamp " class="containerOK ">
+        <style>
+            .accordioninfo {
+                background-color: #eee;
+                color: #444;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                font-size: 15px;
+                transition: 0.4s;
+            }
+            
+            .activeInfo,
+            .accordioninfo:hover {
+                background-color: #ccc;
+            }
+            
+            .accordioninfo:after {
+                content: '\002B';
+                color: #777;
+                font-weight: bold;
+                float: right;
+                margin-left: 5px;
+            }
+            
+            .activeInfo:after {
+                content: "\2212";
+            }
+            
+            .panelInfo {
+                padding: 0 18px;
+                background-color: white;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+            }
+        </style>
+
+
+        <button class="accordioninfo">Section 1</button>
+        <div class="panelInfo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordioninfo">Section 2</button>
+        <div class="panelInfo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordioninfo">Section 3</button>
+        <div class="panelInfo">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordioninfo");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("activeInfo");
+                    var panelInfo = this.nextElementSibling;
+                    if (panelInfo.style.maxHeight) {
+                        panelInfo.style.maxHeight = null;
+                    } else {
+                        panelInfo.style.maxHeight = panelInfo.scrollHeight + "px";
+                    }
+                });
+            }
+        </script>
+
+
+    </div>
+
+    <div style="padding-bottom:50px;padding-top:50px"></div>
+    <!-- Footer -->
+    <footer class="w3-container w3-theme-darkx w3-padding-16">
+        <div>
+            <style>
+                .totop {
+                    width: 44px;
+                    height: 44px;
+                    position: fixed;
+                    right: 20px;
+                    bottom: 20px;
+                    z-index: 99;
+                    text-align: center;
+                    cursor: pointer;
+                    display: none;
+                }
+                
+                .totop i {
+                    font-size: 40px;
+                    color: rgb(8, 8, 8);
+                    line-height: 44px;
+                    opacity: 0.5;
+                }
+                
+                .a-up {
+                    color: whitesmoke;
+                    letter-spacing: 2px;
+                    text-decoration: none;
+                }
+                
+                .a-up.lift {
+                    xborder: 1px solid whitesmoke;
+                    transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+                    /* easeInOutBack */
+                    ;
+                }
+                
+                .a-up.lift:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: 0 auto;
+                    /* and empty box makes a shadow */
+                    height: 2px;
+                    width: 30%;
+                    border-radius: 50%;
+                    background-color: rgba(10, 4, 24, 0.2);
+                    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.4);
+                    transition: all 700ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
+                }
+                
+                .a-up.lift:hover {
+                    color: rgb(14, 12, 12);
+                    transform: translateY(-5px);
+                }
+                
+                .a-up.lift:hover:after {
+                    bottom: -5px;
+                    width: 40%;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+                }
+            </style>
+
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js '></script>
+            <div class="totop a-up lift   "><i class="fa fa-chevron-circle-up a-up lift  "></i></div>
+            <script>
+                $(window).scroll(function() {
+                    if ($(this).scrollTop() > 100) {
+                        $(".totop").fadeIn();
+                    } else {
+                        $(".totop").fadeOut();
+                    }
+                });
+
+                $(".totop").click(function() {
+                    $("html,body").stop().animate({
+                        scrollTop: 0
+                    }, 1000);
+                });
+            </script>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+    <script>
+        // Side navigation
+        function w3_open() {
+            var x = document.getElementById("mySidebar");
+            x.style.width = "100%";
+            x.style.fontSize = "40px";
+            x.style.paddingTop = "10%";
+            x.style.display = "block";
+        }
+
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+        }
+
+        // Tabs
+        function openCity(evt, cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            var activebtn = document.getElementsByClassName("testbtn");
+            for (i = 0; i < x.length; i++) {
+                activebtn[i].className = activebtn[i].className.replace(" w3-lamp-active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " w3-lamp-active";
+        }
+
+        var mybtn = document.getElementsByClassName("testbtn")[0];
+        mybtn.click();
+
+        // Accordions
+        function myAccFunc(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+</html>
