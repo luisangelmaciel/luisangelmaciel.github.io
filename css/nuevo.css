@@ -151,12 +151,9 @@ div.scrollmenu-postnew {
     overflow: auto;
     white-space: nowrap;
     width: 100%;
-    padding-top: 1px;
-    padding-bottom: 1px;
     text-align: center;
-    line-height: 2;
     color: #0a4461;
-    background-color: white;
+    background-color: #0a4461;
     transition: all 0.3s ease;
 }
 
