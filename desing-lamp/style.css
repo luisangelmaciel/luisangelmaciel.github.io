@@ -1,0 +1,177 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css");
+body {
+    width: auto;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: linear-gradient(to right, #262626, #0d0d0d);
+}
+
+div {
+    width: 100%;
+    /* max-width: 400px;*/
+    height: auto;
+    position: absolute;
+    width: 50%;
+    height: auto;
+    /* border-radius: 50%;*/
+    background-color: transparent;
+    background: center no-repeat;
+    /*background-size: initial*/
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    height: 30px;
+    color: white;
+}
+
+#close-button {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+    z-index: 1;
+    visibility: hidden;
+    box-shadow: 0px 3px 2px rgb(0, 0, 0);
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+    color: white;
+    background-color: #0d0d0d;
+    border-radius: 50%;
+}
+
+#img-presenter {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    visibility: hidden;
+    z-index: 1;
+    transition: width 0.4s linear, height 0.4s linear;
+    /*border-radius: 5px;*/
+    cursor: auto;
+    /*
+    background-color: #0d0d0dbd;
+    background: center no-repeat;*/
+    /* background-size: contain;*/
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+#div1 {
+    top: 60px;
+    left: 20px;
+    width: 200px;
+    height: 100%;
+    background: center no-repeat;
+}
+
+#div2 {
+    top: 60px;
+    left: 140px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div3 {
+    top: 60px;
+    left: 260px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div4 {
+    top: 60px;
+    left: 380px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div5 {
+    top: 60px;
+    left: 500px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div6 {
+    top: 60px;
+    left: 620px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div7 {
+    top: 60px;
+    left: 740px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div8 {
+    top: 60px;
+    left: 860px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div9 {
+    top: 60px;
+    left: 980px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+#div10 {
+    top: 60px;
+    left: 1100px;
+    width: 200px;
+    height: 200px;
+    background: center no-repeat;
+}
+
+@media screen and (max-width: 400px) {
+    div {
+        width: 60px;
+        height: 60px;
+    }
+    #close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width: 401px) and (max-width: 700px) {
+    div {
+        width: 70px;
+        height: 70px;
+    }
+    #close-button {
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}

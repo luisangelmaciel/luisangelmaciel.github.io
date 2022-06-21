@@ -341,26 +341,28 @@
 
 
 
-    <div class="containerx">
-        <div class="scrollmenu ">
-            <i><p></p></i> <i><p></p></i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-home " aria-hidden="true" onclick="openName(event, 'en-modo')" id="defaultOpen"> Home  </i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='post.html'"> Lo más nuevo </i>
-            <i><p></p></i> <i><p></p></i>
-            <!-- <i class="fas fa-sitemap" aria-hidden="true" onclick="openName(event, 'mapsite')"> Mapa de sitio </i> -->
-            <i class="fas fa-sitemap" aria-hidden="true" onclick="document.location='mapadesitio.html'"> Mapa de sitio </i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'xiiber')"> Xiiber </i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-chess-queen" aria-hidden="true" onclick="openName(event, 'dragvesti')"> Dragvesti </i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>
-            <i><p></p></i> <i><p></p></i>
-            <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>
-            <i><p></p></i> <i><p onclick="document.location='post.html#TeAyudo'"></p></i>
-            <i><p></p></i> <i><p  onclick="document.location='post.html'"></p></i>
+    <div class="containerx ">
+        <div class="">
+            <div class="scrollmenu  ">
+                <i><p></p></i> <i><p></p></i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fas fa-home " aria-hidden="true" onclick="openName(event, 'en-modo')" id="defaultOpen"> Home  </i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='post.html'"> Lo más nuevo </i>
+                <i><p></p></i> <i><p></p></i>
+                <!-- <i class="fas fa-sitemap" aria-hidden="true" onclick="openName(event, 'mapsite')"> Mapa de sitio </i> -->
+                <i class="fas fa-sitemap" aria-hidden="true" onclick="document.location='mapadesitio.html'"> Mapa de sitio </i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'xiiber')"> Xiiber </i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fas fa-chess-queen" aria-hidden="true" onclick="openName(event, 'dragvesti')"> Dragvesti </i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>
+                <i><p></p></i> <i><p></p></i>
+                <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>
+                <i><p></p></i> <i><p onclick="document.location='post.html#TeAyudo'"></p></i>
+                <i><p></p></i> <i><p  onclick="document.location='post.html'"></p></i>
+            </div>
         </div>
 
         <main class=" w3-containerX ">
@@ -757,9 +759,12 @@
 
                             <style>
      :root {
-        --purple: rgb(123, 31, 162);
-        --violet: rgb(103, 58, 183);
-        --pink: rgb(244, 143, 177);
+        --purple2: rgb(123, 31, 162);
+        --violet2: rgb(103, 58, 183);
+        --pink2: rgb(244, 143, 177);
+        --purple: rgba(34, 62, 90, 0.8);
+        --violet: rgba(15, 46, 77, 0.8);
+        --pink: rgba(52, 110, 168, 0.8);
     }
     
     @keyframes background-pan {
@@ -1954,7 +1959,7 @@
                             </style>
 
                             <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js '></script>
-                            <div class="totop a-up lift   "><i class="fa fa-chevron-circle-up a-up lift  "></i></div>
+                            <div class="totop a-up lift   "><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp "></i></div>
                             <script>
                                 $(window).scroll(function() {
                                     if ($(this).scrollTop() > 100) {

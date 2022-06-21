@@ -200,9 +200,408 @@
     <!-- Header -->
     <header class="w3-container w3-theme w3-padding " id="myHeader">
         <span onclick="w3_open()" class="w3-xlarge  w3-theme  w3-right"> <i onclick="w3_open()" class="fa fa-bars"></i>   </span>
+
         <span onclick="w3_open()" class=" w3-xlarge   w3-theme">SHOP</span>
     </header>
+    <div id="drageable">
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Pacifico|Roboto:300');
+            .material-icons {
+                font-family: 'Material Icons';
+                font-weight: normal;
+                font-style: normal;
+                font-size: 24px;
+                /* Preferred icon size */
+                display: inline-block;
+                color: inherit;
+                line-height: 1;
+                text-transform: none;
+                letter-spacing: normal;
+                word-wrap: normal;
+                white-space: nowrap;
+                direction: ltr;
+                /* Support for all WebKit browsers. */
+                -webkit-font-smoothing: antialiased;
+                /* Support for Safari and Chrome. */
+                text-rendering: optimizeLegibility;
+                /* Support for Firefox. */
+                -moz-osx-font-smoothing: grayscale;
+                /* Support for IE. */
+                font-feature-settings: 'liga';
+            }
+            
+            #mydiv {
+                position: absolute;
+            }
+            
+            #mydivheader {
+                cursor: move;
+            }
+            
+            .FABMenu {
+                /*   top: 15px;
+            left: 15px;
+            bottom: 0%;
+            right: 0%;
+            margin: auto;
+            width: 600px;
+            height: 200px; */
+                top: 15%;
+                left: 0%;
+                bottom: 0%;
+                right: 50%;
+                margin: 20px;
+                width: 90%;
+                height: 95%;
+            }
+            
+            .FABMenu input {
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                width: 40px;
+                height: 40px;
+                z-index: 20;
+                border-radius: 60px;
+                opacity: 0;
+                cursor: pointer;
+            }
+            
+            .hamburgermenu {
+                position: absolute;
+                top: 0%;
+                left: 50%;
+                width: 60px;
+                height: 0px;
+                background-color: #017dbb;
+                border-radius: 100%;
+                box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+                z-index: 10;
+                cursor: pointer;
+            }
+            
+            .dots span {
+                position: absolute;
+                top: 45%;
+                width: 8px;
+                height: 8px;
+                border-radius: 8px;
+                background: #fff;
+                z-index: 20;
+                transition: all .3s ease-in-out;
+            }
+            
+            .first {
+                margin-left: 1em;
+            }
+            
+            .second {
+                margin-left: 2.3em;
+            }
+            
+            .third {
+                margin-left: 3.6em;
+            }
+            
+            .FABMenu input:checked~.hamburgermenu .dots .first {
+                top: 20px;
+                height: 60px;
+                transform-origin: top;
+                transform: rotate(-45deg);
+                transition: all .3s ease-in-out;
+            }
+            
+            .FABMenu input:checked~.hamburgermenu .dots .third {
+                top: 20px;
+                height: 60px;
+                transform-origin: top;
+                transform: rotate(45deg);
+                transition: all .3s ease-in-out;
+            }
+            
+            .action_items_bar {
+                position: absolute;
+                top: 4.5%;
+                left: 25%;
+                width: 380px;
+                height: 60px;
+                background-color: rgba(0, 0, 0, 0.15);
+                border-radius: 60px;
+                box-shadow: 0px 5px 20px #161616;
+                z-index: 5;
+                animation-name: expand-the-bar;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                transform: scaleX(0);
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                overflow: hidden;
+            }
+            
+            .FABMenu input:checked~.action_items_bar {
+                transform: scaleX(1);
+            }
+            
+            .action_items span {
+                position: absolute;
+                top: 25%;
+                width: 20px;
+                padding-left: 35px;
+                opacity: 0;
+                transition: all .2s ease-in-out;
+                cursor: pointer;
+            }
+            
+            .FABMenu input:checked~.action_items_bar .action_items .first_item {
+                opacity: 1;
+                transition-delay: .45s;
+            }
+            
+            .FABMenu input:checked~.action_items_bar .action_items .second_item {
+                opacity: 1;
+                transition-delay: .40s;
+            }
+            
+            .FABMenu input:checked~.action_items_bar .action_items .third_item {
+                opacity: 1;
+                transition-delay: .40s;
+            }
+            
+            .FABMenu input:checked~.action_items_bar .action_items .fourth_item {
+                opacity: 1;
+                transition-delay: .45s;
+            }
+            
+            .elMenu i {
+                color: white
+            }
+            
+            .elMenu i:hover {
+                color: rgb(211, 200, 200)
+            }
+            
+            #container-esfera-de-dragon {
+                width: 70px;
+                height: 70px;
+                transform: translate(-50%, -50%);
+                position: relative;
+                margin: 15px;
+                padding: 15px;
+            }
+            
+            #bolaDelDragon {
+                position: absolute;
+                left: 50%;
+                bottom: 0px;
+                transform: translate(-50%, 0%);
+                cursor: pointer;
+            }
+            
+            #shadow {
+                position: absolute;
+                width: 70%;
+                height: 10px;
+                border-radius: 50%;
+                background-color: rgba(0, 0, 0, 0.1);
+                left: 50%;
+                bottom: -2px;
+                transform: translate(-50%, 0%);
+            }
+            
+            .hearts {
+                transform: translate(-50%, -50%);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                opacity: 0;
+            }
+            
+            .circ {
+                width: 100%;
+                height: 100%;
+                border-radius: 60%;
+                position: absolute;
+                transform: translate(-4px, 0px);
+                cursor: pointer;
+                border: 4px solid rgb(182, 68, 2);
+            }
+            
+            .dots {
+                width: 7px;
+                height: 7px;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                background-color: rgb(224, 107, 11);
+                border-radius: 50%;
+            }
+            
+            #desc {
+                white-space: nowrap;
+                position: absolute;
+                transform: translate(-50%, -50%);
+                left: 50%;
+                top: 370px;
+                text-align: center;
+                font-size: 20px;
+                font-family: tahoma;
+            }
+            
+            #desc span {
+                color: rgb(0, 0, 0);
+            }
+            
+            a {
+                text-decoration: none;
+                color: inherit
+            }
+            
+            a:visited {
+                text-decoration: none;
+                color: inherit
+            }
+            
+            a:hover {
+                text-decoration: none;
+                color: inherit;
+                font-weight: 300;
+            }
+            
+            h2:hover {
+                color: inherit;
+                font-weight: 300;
+            }
+            
+            .modal-input {
+                display: none;
+            }
+            
+            .modal-input:checked+.modal {
+                visibility: visible;
+                opacity: 1;
+            }
+            
+            .modal {
+                position: fixed;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                visibility: hidden;
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+                background-color: #222;
+            }
+            
+            .modal-close {
+                position: fixed;
+                right: 2%;
+                top: 2%;
+                font-size: 3rem;
+                line-height: 2;
+                transition: 0.3s ease-in-out;
+            }
+        </style>
 
+        <div id="mydiv">
+            <div class="FABMenu" id="mydivheader">
+                <input type="checkbox" checked id="floating-menu-logo">
+
+                <div style="  position: absolute;
+                        top: 15%;
+                        left: 50%;
+                        width: 55px;
+                        height: 55px;
+                      /*   background-color: rgba(126, 59, 14, 0.15);  */ 
+                        border-radius: 50%; 
+                       /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15); */
+                        z-index: 10;
+                        font-size: 28px;
+                        cursor: pointer; ">
+                    <span class="elMenu">
+                        <i class="material-icons " style=" font-size: 35px; padding-top: 0%; " title="¡Hola, soy Goku!">  <img src="https://hihellomonster.github.io/dragon.ball/esfera.png" alt=""  width="50 " height="50 " class="">  </i>
+                            </span>
+                </div>
+
+                <div class="action_items_bar">
+                    <div class="action_items">
+                        <span class="first_item" style=" left: 5%;"> <i class="material-icons">  men </i></span>
+
+                        <label for="modal-1">
+                        <span class="second_item" style=" left: 15%;"> <i class="material-icons"> chat </i></span>
+                        </label>
+
+                        <label for="modal-2">
+                        <span class="first_item" style=" left: 30%;  "> <i class="material-icons" > apps </i>           </span>
+                        </label>
+
+                        <span class="third_item" style="left: 45%;">  <i class="material-icons"> home </i></span>
+
+
+                        <label for="modal-3">
+                        <span class="fourth_item" style=" left: 60%;"> <i class="material-icons"> favorite </i> </span>
+                        </label>
+
+                        <label for="modal-4">
+                        <span class="fourth_item" style=" left: 75%;"><i class="material-icons">share</i> </span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            //Make the DIV element draggagle:
+            dragElement(document.getElementById("mydiv"));
+
+            function dragElement(elmnt) {
+                var pos1 = 0,
+                    pos2 = 0,
+                    pos3 = 0,
+                    pos4 = 0;
+                if (document.getElementById(elmnt.id + "header")) {
+                    /* if present, the header is where you move the DIV from:*/
+                    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+                } else {
+                    /* otherwise, move the DIV from anywhere inside the DIV:*/
+                    elmnt.onmousedown = dragMouseDown;
+                }
+
+                function dragMouseDown(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+                    // get the mouse cursor position at startup:
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    document.onmouseup = closeDragElement;
+                    // call a function whenever the cursor moves:
+                    document.onmousemove = elementDrag;
+                }
+
+                function elementDrag(e) {
+                    e = e || window.event;
+                    e.preventDefault();
+                    // calculate the new cursor position:
+                    pos1 = pos3 - e.clientX;
+                    pos2 = pos4 - e.clientY;
+                    pos3 = e.clientX;
+                    pos4 = e.clientY;
+                    // set the element's new position:
+                    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+                    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+                }
+
+                function closeDragElement() {
+                    /* stop moving when mouse button is released:*/
+                    document.onmouseup = null;
+                    document.onmousemove = null;
+                }
+            }
+
+
+            /* a Pen by HiHello.Monster  : hihello.monster */
+        </script>
+
+    </div>
     <main class="containerOK" style="padding-top:50px">
         <div class="w3-half w3-container">
             <div id="gallerylamp">
@@ -259,7 +658,7 @@
                         color: white;
                         position: absolute;
                         top: 10px;
-                        right: 25px;
+                        right: 60px;
                         font-size: 35px;
                         font-weight: bold;
                     }
@@ -351,15 +750,119 @@
 
 
 
+                <div class="fullscreen">
+                    <style>
+                        /* Safari syntax */
+                        
+                         :-webkit-full-screen {
+                            background-color: black;
+                        }
+                        /* IE11 */
+                        
+                         :-ms-fullscreen {
+                            background-color: black;
+                        }
+                        /* Standard syntax */
+                        
+                         :fullscreen {
+                            background-color: black;
+                        }
+                    </style>
+
+
+                    <!-- <button onclick="openFullscreen();">Open Fullscreen</button>
+                    <button onclick="closeFullscreen();">X</button> -->
+
+                    <script>
+                        var elem = document.documentElement;
+
+                        function openFullscreen() {
+                            if (elem.requestFullscreen) {
+                                elem.requestFullscreen();
+                            } else if (elem.webkitRequestFullscreen) { /* Safari */
+                                elem.webkitRequestFullscreen();
+                            } else if (elem.msRequestFullscreen) { /* IE11 */
+                                elem.msRequestFullscreen();
+                            }
+                        }
+
+                        function closeFullscreen() {
+                            if (document.exitFullscreen) {
+                                document.exitFullscreen();
+                            } else if (document.webkitExitFullscreen) { /* Safari */
+                                document.webkitExitFullscreen();
+                            } else if (document.msExitFullscreen) { /* IE11 */
+                                document.msExitFullscreen();
+                            }
+                        }
+                    </script>
+
+
+
+                </div>
 
                 <div id="myModalFull" class="modalFull containerFull ">
-                    <span class="closeFull cursorFull" onclick="closeModalFull()">&times;</span>
-                    <div class="modalFull-content ">
+                    <div>
+                        <span onclick="openFullscreen();" class="closeFull  cursorFull">o</span></span>
+                        <span class=" closeFullscreeen cursorFull" onclick="closeModalFull()"><span onclick="closeFullscreen();">x</span></span>
+                    </div>
 
+                    <style>
+                        .closeFullscreeen {
+                            color: white;
+                            position: absolute;
+                            top: 10px;
+                            right: 25px;
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+                        
+                        .closeFullscreeen:hover,
+                        .closeFullscreeen:focus {
+                            color: #999;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                    </style>
+                    <style>
+                        .downloadphoto {
+                            color: white;
+                            position: absolute;
+                            top: -89px;
+                            right: 90px;
+                            font-size: 35px;
+                            font-weight: bold;
+                        }
+                        
+                        .downloadphoto:hover,
+                        .downloadphoto:focus {
+                            color: #999;
+                            text-decoration: none;
+                            cursor: pointer;
+                        }
+                    </style>
+
+                    <div class="modalFull-content ">
+                        <!-- de prueba love-->
                         <div class="mySlidesFull">
+
                             <div class="numbertextFull">1 / 4</div>
+                            <a href="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" download="w3logo" class="downloadphoto " style="color: white;" target="_blank">
+                                d
+                               </a>
                             <center>
-                                <img src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" class="responsive img">
+
+
+                                <img src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" style="width:100%" class="responsive img">
+                                <br><br>
+                                <div class="LOVE-HEART❤">
+                                    <link rel="stylesheet" href="css/heart-love.css">
+                                    <input id="toggle-heart" type="checkbox" />
+                                    <label for="toggle-heart" aria-label="like">❤</label></div>
+
+
+
+
                             </center>
                         </div>
 
@@ -381,9 +884,6 @@
                         <a class="prevFull" onclick="plusSlidesFull(-1)">&#10094;</a>
                         <a class="nextFull" onclick="plusSlidesFull(1)">&#10095;</a>
 
-                        <div class="captionFull-container">
-                            <p id="captionFull"></p>
-                        </div>
 
 
 
@@ -435,18 +935,6 @@
 
 
                 <style>
-                    body {
-                        font-family: Arial;
-                        margin: 0;
-                    }
-                    
-                    * {
-                        box-sizing: border-box;
-                    }
-                    
-                    img {
-                        vertical-align: middle;
-                    }
                     /* Position the image container (needed to position the left and right arrows) */
                     
                     .container {
@@ -535,14 +1023,28 @@
 
 
                 <div class="container">
-                    <div class="mySlides">
+
+                    <div class="mySlides" onclick="openModalFull();currentSlide(1)">
                         <div class="numbertext">1 / 6</div>
-                        <img src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" onclick="openModalFull();currentSlide(1)" class="hover-shadow cursorFull boximg ">
+                        <center>
+                            <figure class="efectoPhoto" itemprop="associatedMedia" itemscope="" itemtype="http://schemspan.org/ImageObject">
+                                <span>
+                        <img class="image-lazyloaded lazypreload fadein hover-shadow cursorFull"   
+                        src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" 
+                        style="width:100%"
+                        data-src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" itemprop="thumbnail" alt="Image description" itemprop="contentUrl  "
+                            data-size="1000x1000" />
+                        <figcaption class="" itemprop="caption description"></figcaption>
+                    </span>
+                            </figure>
+                        </center>
+
                     </div>
+
 
                     <div class="mySlides">
                         <div class="numbertext">2 / 6</div>
-                        <img src="https://www.xiiber.com/img/photo-preview-00.webp" style="width:100%" onclick="openModalFull();currentSlide(2)" class="hover-shadow cursorFull">
+                        <img src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" style="width:100%" onclick="openModalFull();currentSlide(2)" class="hover-shadow cursorFull">
                     </div>
 
                     <div class="mySlides">
@@ -574,7 +1076,7 @@
 
                     <div class="rowX">
                         <div class="column">
-                            <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview.webp" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
+                            <img class="demo cursor" src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
                         </div>
                         <div class="column">
                             <img class="demo cursor" src="https://www.xiiber.com/img/photo-preview-00.webp" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
@@ -655,7 +1157,72 @@
                 <div class="product-price-discount "><span> $3,000</span><span class="line-through ">$3,500</span></div>
                 <div class="product-price-discount " style="font-size:12px; "><span>En ocupación cuádruple </span></div>
                 <hr>
-                <p>Viaje en grupo a Puerto Vallarta. <br>Incluye transporte redondo y hospedaje <br>Reserva con anticipación, cupo limitado. Aparta con el 50% y liquida el día de viaje
+                <div class="poinHere">
+                    <style>
+                        /*body {
+                      background: rebeccapurple;
+                      display: flex;
+                      align-items: center;
+                      justify-content: center;
+                      width: 100%;
+                      height: 100vh;
+                    }*/
+                        
+                        .e-marker {
+                            cursor: pointer;
+                        }
+                        
+                        .e-marker__marker {
+                            fill: rgb(0, 0, 0);
+                        }
+                        
+                        .e-marker__icon {
+                            fill: #fff;
+                            transform: scale(1);
+                            transform-origin: 50% 50%;
+                        }
+                        
+                        .e-marker__image {
+                            transform: scale(0);
+                            transform-origin: 50% 50%;
+                        }
+                        
+                        .e-marker__circle {
+                            display: none;
+                            fill: #ec008c;
+                            opacity: 0.5;
+                        }
+                        
+                        .e-marker__loader {
+                            fill: #fff;
+                            transform-origin: 50% 50%;
+                            transform: scale(0);
+                        }
+                        
+                        .e-marker__text {
+                            font-size: 12px;
+                            font-family: brandon-grotesque, verdana, helvetica, sans-serif;
+                            text-align: center;
+                            color: #fff;
+                            fill: #fff;
+                            transform-origin: 50% 50%;
+                            alignment-baseline: middle;
+                            text-anchor: middle;
+                        }
+                    </style>
+
+
+                    <!-- partial:index.partial.html -->
+                    <div id="root"></div>
+                    <!-- partial -->
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/react/16.12.0/umd/react.production.min.js'></script>
+                    <script src='https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.production.min.js'></script>
+                    <script src='https://unpkg.com/framer-motion@1.8.3/dist/framer-motion.js'></script>
+
+                    <script src="js/pointHere.js"></script>
+
+                </div>
+                <p>Viaje en grupo a Puerto Vallarta. <span></span><br>Incluye transporte redondo y hospedaje <br>Reserva con anticipación, cupo limitado. Aparta con el 50% y liquida el día de viaje
 
 
                 </p>
@@ -663,7 +1230,7 @@
 
                 <br>
                 <button class="buttonb w3-border w3-round-large "><span><b>Reservar</b> </span>
-                </button><br> <br>
+                    </button><br> <br>
                 <b>Medios de pago</b><br><br>
                 <img src="https://www.xiiber.com/img/pagos-aceptados.png " style="width: 70%; "><br><br><br>
             </div>
@@ -761,14 +1328,14 @@
                 </style>
                 <center>
                     <div class="shrink-text Maven display-middle shadow margines">
-                        <a href="https://twitter.com/intent/follow?screen_name=xiibertravel" class="a-shrink-text">
+                        <span class="a-shrink-text">
                             <span class="span-shrink-text">l</span><span class="span-shrink-text">uis</span>
-                            <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
-                            <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
-                            <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
-                            <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
-                            <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
-                        </a>
+                        <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
+                        <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
+                        <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
+                        <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
+                        <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
+                        </span>
                     </div>
                 </center>
             </div>
@@ -779,7 +1346,6 @@
 
         <div id="Paris" class="w3-container city w3-animate-opacity">
             <span>
-
                 <style>
                     .aqua-button {
                         width: 160px;
@@ -1196,10 +1762,95 @@
             </script>
         </div>
     </footer>
+    <div class="EfectoFoto">
+        <!--  <figure class="efectoPhoto" itemprop="associatedMedia" itemscope="" itemtype="http://schemspan.org/ImageObject">
+            <span>
+        <img class="image-lazyloaded lazypreload fadein responsive " src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" data-src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp" itemprop="thumbnail" alt="Image description" itemprop="contentUrl"
+            data-size="1000x1000" />
+        <figcaption class="" itemprop="caption description"></figcaption>
+    </span>
+        </figure> -->
 
-
-
-
+        <style>
+            .efectoPhoto {
+                position: relative;
+            }
+            
+            .efectoPhoto span:before,
+            .efectoPhoto span:after {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                /*border: 0 solid rgba(0, 0, 0, 0.1);*/
+                transition: all 0.2s;
+                will-change: border;
+                z-index: 0;
+            }
+            
+            .efectoPhoto span.active:before,
+            .lazy-images .efectoPhoto span.image-lazyloaded:before,
+            html:not(.lazy-images) .efectoPhoto span:before {
+                border-width: 0.0rem;
+            }
+            
+            .efectoPhoto span.active:after,
+            .lazy-images .efectoPhoto span.image-lazyloaded:after,
+            html:not(.lazy-images) .efectoPhoto span:after {
+                border-width: 2px;
+            }
+            
+            .efectoPhoto span:after {
+                margin: 1rem;
+                border: 3px solid rgba(255, 255, 255, 0.5);
+                -webkit-clip-path: polygon(0 calc(100% - 1rem), 0 100%, 1rem 100%, 1rem 0, 0 0, 0 1rem, 100% 1rem, 100% 0, calc(100% - 1rem) 0, calc(100% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem));
+                clip-path: polygon(0 calc(100% - 1rem), 0 100%, 1rem 100%, 1rem 0, 0 0, 0 1rem, 100% 1rem, 100% 0, calc(100% - 1rem) 0, calc(100% - 1rem) 100%, 100% 100%, 100% calc(100% - 1rem));
+            }
+            
+            .efectoPhoto span:hover:after {
+                transform: scale(0.9);
+                border-color: white;
+            }
+            
+            .efectoPhoto {
+                position: relative;
+                background-color: rgba(0, 0, 0, 0.904);
+                overflow: hidden;
+                /*                 align-items: center;
+                text-align: center;
+                vertical-align: top;*/
+                display: inline-block;
+                border-radius: 5px;
+                transition: 0.3s;
+                place-items: center;
+            }
+            
+            .efectoPhoto img,
+            .efectoPhoto span {
+                display: block;
+            }
+            
+            .vertical.efectoPhoto {
+                grid-row: span 1;
+            }
+            
+            .horizontal.efectoPhoto {
+                grid-column: span;
+            }
+            
+            .efectoPhoto span {
+                display: block;
+                align-items: center;
+                text-align: center;
+                display: inline-block;
+                border-radius: 5px;
+                transition: 0.3s;
+                place-items: center;
+            }
+        </style>
+    </div>
     <!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
     <script>
         // Side navigation

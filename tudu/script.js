@@ -1,207 +1,112 @@
-$("#new-todo").keypress(function (event) {
-	var keycode = event.keyCode ? event.keyCode : event.which;
-	if (keycode == "13") {
-		console.log("pressed");
+/* 
+A ton of eases are available in the core GSAP library - but we have some fun bonus eases too, including "SlowMo" ease, "RoughEase", "ExpoScaleEase", and custom eases ("CustomEase", "CustomBounce", and "CustomWiggle")
 
-		if ($(this).val().length !== 0) {
-			var toDoCount = $("span.box").length + 1;
+We've loaded all the eases and GSAP plugins into this pen - so go wild!
 
-			$("#todos").prepend(
-				'<li><input id="checkbox-' +
-					toDoCount +
-					'" type="checkbox"><label for="checkbox-' +
-					toDoCount +
-					'">' +
-					$(this).val() +
-					'<span class="box"></span></label></li>'
-			);
-			$(this).val("");
-		}
-	}
+Check out all the eases available here -> https://greensock.com/docs/v3/Eases 
+
+https://greensock.com/customwiggle/
+*/
+
+const tl1 = gsap.timeline({
+  paused: true
+});
+const tl2 = gsap.timeline({
+  paused: true
+});
+const btn = document.getElementById("switch");
+const rodL = document.getElementsByClassName("rodL")[0];
+const rodR = document.getElementsByClassName("rodR")[0];
+let state = true;
+let height = document.getElementsByClassName("glass")[0].clientHeight - 45;
+
+btn.classList.add("orange");
+rodL.classList.add("orange");
+rodR.classList.add("orange");
+
+gsap.registerPlugin(CustomEase, CustomBounce); // register
+
+//Create a custom bounce ease:
+CustomBounce.create("myBounce", {
+  strength: 0.75,
+  squash: 3,
+  squashID: "myBounce-squash"
 });
 
-function growPlant() {
-	var stage = $("svg").data("stage");
-	if (stage < 11) {
-		playTimeline(stage);
-		$("aside p").text(changeMotivation(stage));
-		$("svg").data("stage", stage + 1);
-	}
-}
+tl1
+  .to(".ball", { duration: 2, y: -height, ease: "myBounce" }, 0)
+  .to(
+    ".ball",
+    {
+      duration: 2,
+      scaleX: 1.4,
+      scaleY: 0.6,
+      ease: "myBounce-squash",
+      transformOrigin: "center top",
+      onStart: function () {
+        btn.classList.add("disable", "blue");
+        btn.classList.remove("orange");
+        rodL.classList.add("disable", "blue");
+        rodR.classList.add("disable", "blue");
+        rodL.classList.remove("orange");
+        rodR.classList.remove("orange");
+      },
+      onComplete: function () {
+        btn.classList.remove("disable");
+        rodL.classList.remove("disable");
+        rodR.classList.remove("disable");
+      }
+    },
+    0
+  )
+  .to(
+    "#switch",
+    {
+      duration: 2,
+      rotation: 180,
+      ease: "elastic.out(1, 0.3)"
+    },
+    0
+  );
 
-function changeMotivation(number) {
-	switch (number) {
-		case 1:
-			return "Just. Do. It.";
-			break;
-		case 2:
-			return "Keep moving. Keep hustling.";
-			break;
-		case 3:
-			return "So productive, I can't even.";
-			break;
-		case 4:
-			return "Yeah, you go, Glen Coco.";
-			break;
-		case 5:
-			return "You got this!";
-			break;
-		case 6:
-			return "Productivity is your middle name.";
-			break;
-		case 7:
-			return "DJ Khaled: Another one!";
-			break;
-		case 8:
-			return "You're almost there...";
-			break;
-		case 9:
-			return "One more for good measure.";
-			break;
-		case 10:
-			return "Ta-da!";
-			break;
-	}
-}
+tl2
+  .to(".ball", { duration: 2, y: 0, ease: "myBounce" }, 0)
+  .to(
+    ".ball",
+    {
+      duration: 2,
+      scaleX: 1.4,
+      scaleY: 0.6,
+      ease: "myBounce-squash",
+      transformOrigin: "center bottom",
+      onStart: function () {
+        btn.classList.add("disable", "orange");
+        btn.classList.remove("blue");
+        rodL.classList.add("disable", "orange");
+        rodR.classList.add("disable", "orange");
+        rodL.classList.remove("blue");
+        rodR.classList.remove("blue");
+      },
+      onComplete: function () {
+        btn.classList.remove("disable");
+        rodL.classList.remove("disable");
+        rodR.classList.remove("disable");
+      }
+    },
+    0
+  )
+  .to(
+    "#switch",
+    {
+      duration: 2,
+      rotation: 360,
+      ease: "elastic.out(1, 0.3)"
+    },
+    0
+  );
 
-$("#todos").on("click", "label", function () {
-	$(this).closest("li").toggleClass("done");
-	if ($(this).closest("li").hasClass("done")) {
-		growPlant();
-	}
-});
-
-gsap.registerPlugin(EasePack);
-
-const tl = gsap.timeline();
-var master = new TimelineMax();
-
-$(function () {
-	tl.fromTo(".soil", { scale: 0 }, { duration: 0.4, scale: 1 });
-	growPlant();
-});
-
-function playTimeline(item) {
-	tl.to("svg", { duration: 0.3, opacity: 1, ease: Quad.easeInOut }, "grow-1");
-
-	tl.fromTo(
-		".grow-1 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.35, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-2"
-	);
-	tl.fromTo(
-		"#cactus-bulb-1",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.55, scale: 0.3, opacity: 1, ease: Quad.easeInOut },
-		"grow-2"
-	);
-
-	tl.fromTo(
-		".grow-2 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "top center" },
-		{ duration: 0.44, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-3"
-	);
-	tl.to(
-		"#cactus-bulb-1",
-		{ duration: 0.4, scale: 0.6, opacity: 1, ease: Quad.easeInOut },
-		"grow-3"
-	);
-
-	tl.fromTo(
-		".grow-3 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.3, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-4"
-	);
-	tl.to(
-		"#cactus-bulb-1",
-		{ duration: 0.3, scale: 1, opacity: 1, ease: Quad.easeInOut },
-		"grow-4"
-	);
-
-	tl.fromTo(
-		".grow-4 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-5"
-	);
-	tl.fromTo(
-		"#long-cactus-1",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 0.3, opacity: 1, ease: Quad.easeInOut },
-		"grow-5"
-	);
-
-	tl.to(
-		"#long-cactus-1",
-		{ duration: 0.5, scale: 0.6, opacity: 1, ease: Quad.easeInOut },
-		"grow-6"
-	);
-	tl.fromTo(
-		".grow-5 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.5, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-6"
-	);
-
-	tl.to(
-		"#long-cactus-1",
-		{ duration: 0.45, scale: 1, opacity: 1, ease: Quad.easeInOut },
-		"grow-7"
-	);
-	tl.fromTo(
-		".grow-6 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-7"
-	);
-	tl.fromTo(
-		"#cactus-bulb-2",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-7"
-	);
-
-	tl.fromTo(
-		".grow-7 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.3, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-8"
-	);
-	tl.fromTo(
-		"#long-cactus-2",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-8"
-	);
-
-	tl.fromTo(
-		"#long-cactus-3",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.3, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-9"
-	);
-	tl.fromTo(
-		"#cactus-bulb-3",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.4, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-9"
-	);
-
-	tl.fromTo(
-		".grow-8 > g",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.5, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-10"
-	);
-	tl.fromTo(
-		"#long-cactus-4",
-		{ scale: 0, opacity: 0, transformOrigin: "bottom center" },
-		{ duration: 0.5, scale: 1, opacity: 1, stagger: 0.04, ease: Quad.easeInOut },
-		"grow-10"
-	);
-
-	tl.tweenFromTo("grow-" + item, "grow-" + (item + 1));
+function changeGravity(checkbox) {
+  if (state) tl1.restart();
+  else tl2.restart();
+  state = !state;
 }

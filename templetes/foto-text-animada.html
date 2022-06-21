@@ -1,0 +1,74 @@
+<div>
+    <style>
+        .photoCool {
+            position: relative;
+            text-align: right;
+            padding-bottom: 3rem;
+            overflow: hidden;
+        }
+        
+        .photoCool__image img {
+            width: 90%;
+            transform: translateX(30%);
+            transition: 1s cubic-bezier(0.19, 1, 0.22, 1) 0.2s;
+        }
+        
+        .photoCool__name {
+            /*text-transform: uppercase;*/
+            font-size: 40px;
+            letter-spacing: 2px;
+            color: transparent;
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: white;
+            margin-top: -25px;
+            transition: 0.4s ease-in-out 0.4s;
+            position: relative;
+            width: 100%;
+        }
+        
+        .photoCool:hover .photoCool__image img {
+            transform: translateX(0%);
+        }
+        
+        .photoCool:hover .photoCool__name {
+            color: #fff;
+        }
+        
+        @keyframes move-it {
+            0%,
+            90%,
+            100% {
+                transform: translateY(2%);
+            }
+            45% {
+                transform: translateY(-50%);
+            }
+        }
+        
+        @keyframes move-it-2 {
+            0%,
+            90%,
+            100% {
+                transform: translateY(-50%);
+            }
+            45% {
+                transform: translateY(5%);
+            }
+        }
+        
+        .responsiveCool {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+        }
+    </style>
+
+
+
+    <div class="photoCool" style="  background: #222; ">
+        <div class="photoCool__image ">
+            <img src="https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp " class="responsiveCool "></div>
+        <div class=" photoCool__name ">lamp!</div>
+    </div>
+
+</div>

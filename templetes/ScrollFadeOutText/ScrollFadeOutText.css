@@ -1,0 +1,15 @@
+@supports ((-webkit-background-clip: text) or (background-clip: text)) {
+    .faded-text {
+        /* Fading background gradient from the current text color */
+        background-image: linear-gradient(transparent 5%, currentColor 15%, currentColor 85%, transparent 90%);
+        /* Clip it to the text */
+        -webkit-background-clip: text;
+        background-clip: text;
+        /* Keep the background fixed to the viewport */
+        background-attachment: fixed;
+        /* Set the text to transparent for the fading background to show through */
+    }
+    .faded-text>* {
+        color: transparent;
+    }
+}
