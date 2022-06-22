@@ -1,0 +1,48 @@
+<!-- 
+    Diseñado por www.twitter.com/luisangelmaciel 
+    Potenciado por www.HiHello.monster
+    Para www.twitter.com/XiiberTravel
+-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <title>
+        Al dar click en cualquier parte de la pantalla se reproduce la música
+    </title>
+
+    <link rel="stylesheet" href="./logo_xiiber.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+</head>
+
+<body>
+
+
+
+    <audio id="myAudio">
+  <source src="perfect.mp3" type="audio/mpeg"/>
+</audio>
+
+    <h1>Al dar click en cualquier parte de la pantalla se reproduce la música</h1>
+
+    <script>
+        var x = document.getElementById("myAudio");
+
+        function playAudio() {
+            x.loop = true;
+            x.play();
+        }
+        document.body.addEventListener("click", playAudio)
+    </script>
+
+</body>
+
+</html>
+</body>

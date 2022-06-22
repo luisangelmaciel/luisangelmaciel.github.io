@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Menu: Responsive Bottom Tab Mobile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'>
+    <style>
+        html,
+        body {
+            box-sizing: border-box;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navResponsive {
+            align-items: center;
+            background: white;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 20px;
+            position: sticky;
+        }
+        
+        .navResponsive h2 a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .navResponsive h2 a:hover {
+            opacity: 0.8;
+        }
+        
+        .ulResponsive {
+            display: flex;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        .ulResponsive li {
+            list-style: none;
+            padding-left: 20px;
+        }
+        
+        .ulResponsive li a {
+            color: black;
+            text-decoration: none;
+        }
+        
+        .ulResponsive li a:hover {
+            opacity: 0.8;
+        }
+        
+        .ulResponsive li .showResponsive {
+            display: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            .navResponsive {
+                bottom: 0;
+                position: fixed;
+                width: 100vw;
+                left: 0;
+                padding: 0 0px;
+            }
+            .logoResponsive {
+                display: none;
+            }
+            .ulResponsive {
+                width: 100vw;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            .liREsponsive {
+                padding-right: 0;
+                padding-left: 0;
+                text-align: center;
+            }
+            .ulResponsive li .showResponsive {
+                display: block;
+            }
+            .ulResponsive li i {
+                padding: 2px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navResponsive">
+        <h2 class="logoResponsive"><a href="#">Logo</a></h2>
+        <ul class="ulResponsive">
+            <li id="myBtn" class="liREsponsive"><a href="#"><i class="fa fa-home showResponsive"></i>Home</a></li>
+            <li class="liREsponsive"><a href="#"><i class="fa fa-info showResponsive"></i>About</a></li>
+            <li class="liREsponsive"><a href="#"><i class="fa fa-briefcase showResponsive"></i>Work</a></li>
+            <li class="liREsponsive"><a href="#"><i class="fa fa-paper-plane showResponsive"></i>Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- partial -->
+
+
+</body>
+
+</html>
