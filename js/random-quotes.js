@@ -11,9 +11,18 @@ Tener la posibilidad de herir a quien nos hirió y no hacerlo eso es lo que nos 
 Solo puede quedar uno…
 Bedoyecta Beryaerecta
 Según científicos esta es la canción más feliz del mundo
- 
-Original websites, better clicks.
 
+3 cosas que me encanta tomar: Malas decisiones, Alcohol, Malas decisiones bajo la influencia del alcohol 
+El día que el amor se convierta en cerveza, me lo tomaré en serio. 
+-Pero dime, ¿qué  ganas bebiendo? -Nada, yo bebo sin fines de lucro. 
+Mañana cuando despiertes te vas a dar cuenta que todo pasó muy rápido. ¡Disfruta el viaje no te lo pierdas! 
+Aprovecha el fin de semana y ve a conocer #MexicoFriendly  #MéxicoIncluyente 
+“Welcome home” Entrada con el titulo. 
+Tierra trágame y escúpeme en Acapulco 
+Dicen si me sigues en Twitter, tendrás muchos viajes este año y el que viene. 
+
+Siguenos en nuestras redes para conocer los próximos viajes en grupo, fotos, videos, memes,noticias, porno y promociones. 
+Original websites, better clicks.
 @luisangelmaciel
 
 
