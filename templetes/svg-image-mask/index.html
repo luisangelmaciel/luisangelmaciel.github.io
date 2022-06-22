@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es ">
+
+<head>
+    <meta charset=" UTF-8 ">
+    <title>SVG Image Mask</title>
+    <style>
+        img {
+            -webkit-mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat center;
+            mask: url(https://assets.codepen.io/1101822/circles-mask-whole.svg) no-repeat center;
+            max-width: 100%;
+            display: block;
+            aspect-ratio: 1;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        body {
+            min-height: 100%;
+            padding: 3vw;
+            background-color: #0c0d20;
+            display: grid;
+            place-content: center;
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+            gap: 5vmax;
+            width: min(80ch, 100%);
+            margin-inline: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <div class="grid ">
+
+        <img src='https://www.luisangelmaciel.one/img/luisangelmaciel_400x400.webp' alt=''>
+
+    </div>
+    <!-- partial -->
+
+</body>
+
+</html>
