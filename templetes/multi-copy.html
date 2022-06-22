@@ -1,0 +1,102 @@
+<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+
+<h2 class="section-title text-center ">Formas de pago<br>
+    <i class="icon-opciones-de-pago " style="font-size:29px "><span class="path1 "></span><span class="path2 "></span><span class="path3 "></span><span class="path4 "></span><span class="path5 "></span><span class="path6
+        "></span><span class="path7 "></span><span class="path8 "></span><span class="path9 "></span><span class="path10 "></span><span class="path11 "></span><span class="path12 "></span><span class="path13 "></span><span class="path14 "></span><span class="path15
+        "></span><span class="path16 "></span><span class="path17 "></span><span class="path18 "></span><span class="path19 "></span><span class="path20 "></span><span class="path21 "></span><span class="path22 "></span><span class="path23 "></span><span class="path24
+        "></span><span class="path25 "></span><span class="path26 "></span><span class="path27 "></span><span class="path28 "></span><span class="path29 "></span><span class="path30 "></span><span class="path31 "></span><span class="path32 "></span><span class="path33
+        "></span><span class="path34 "></span><span class="path35 "></span><span class="path36 "></span><span class="path37 "></span><span class="path38 "></span><span class="path39 "></span><span class="path40 "></span><span class="path41 "></span><span class="path42
+        "></span><span class="path43 "></span><span class="path44 "></span><span class="path45 "></span><span class="path46 "></span><span class="path47 "></span><span class="path48 "></span><span class="path49 "></span><span class="path50 "></span><span class="path51 "></span></i></h2>
+
+
+<button class="collapsible "><div><meta itemprop="paymentAccepted " content="Cash, Credit Card "/>Banco Azteca</div></button>
+<div class="content ">
+    <p><br>
+        <table style="font-size: 14px; ">
+            <tr>
+                <td>
+                    <p> Banco receptor </p>
+                </td>
+                <td>
+                    <p> <b>Banco Azteca </b></p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p> Nombre receptor <i class="fa fa-clone " onclick="myFunctionz() "></i></p>
+                </td>
+                <td> <input type="text " value="Luis Angel Maciel Padilla " id="myInput2 " style="font-size: 14px; "></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p> CLABE Interbancaria <i class="fa fa-clone " onclick="myFunction() "></i> </p>
+                </td>
+                <td> <input type="text " value="1271 8001 3324 6288 22 " id="myInput1 "></td>
+
+            </tr>
+            <tr>
+                <td>
+                    <p> Tarjeta de débito <i class="fa fa-clone " onclick="tarjetadebito() "></i> </p>
+                </td>
+                <td> <input type="text " value="4027 6657 4930 1926 " id="debito " style="font-size: 12px; "></td>
+            </tr>
+            <tr>
+                <td>
+                    <p> Número de cuenta <i class="fa fa-clone " onclick="numcuenta() "></i></p>
+                </td>
+                <td> <input type="text " value="2545 1332 4628 82 " id="cuenta "></td>
+            </tr>
+        </table>
+        <script>
+            function numcuenta() {
+                var copyText = document.getElementById("cuenta ");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy ");
+                alert("Número de cuenta copiada " + copyText.value);
+            }
+        </script>
+        <script>
+            function tarjetadebito() {
+                var copyText = document.getElementById("debito ");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy ");
+                alert("Tarjeta de débito copiada " + copyText.value);
+            }
+        </script>
+        <script>
+            function myFunction() {
+                var copyText = document.getElementById("myInput1 ");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy ");
+                alert("Copiada la CLABE " + copyText.value);
+            }
+        </script>
+        <script>
+            function myFunctionz() {
+                var copyText = document.getElementById("myInput2 ");
+                copyText.select();
+                copyText.setSelectionRange(0, 99999)
+                document.execCommand("copy ");
+                alert("Copiado el nombre receptor " + copyText.value);
+            }
+        </script>
+
+
+        <i class="icon-notificaciones " style="color:red "> En referencia anota tu numero de celular y nombre </i><br><br>
+</div>
+<button class="collapsible "><div><meta itemprop="paymentAccepted " content="Cash, Credit Card "/>Banca por internet</div></button>
+<div class="content ">
+    <br>
+    <p><b>CLABE Interbancaria:</b> 1271 8001 3324 6288 22<br>
+        <p><b>Banco receptor</b> Banco Azteca<br>
+            <p>Nombre receptor<b></b> Luis Maciel<br>
+                <b style="color:#000066; ">Visa, Mastercard, American</b><br>
+                <p>Solicita tu número de referencia personalizado por whatsapp, solo indicanos cual será la tarjeta que utilizaras para poder generar el enlace y completes el pago, solo tienes 72 horas o de lo contrario tendrás que generar otro.
+                    <br>
+</div>

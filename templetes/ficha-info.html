@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .hi-spacer {
+            border-bottom: 1px solid rgb(255, 255, 255);
+        }
+        
+        .hi-event-list {
+            display: block;
+            border-right: 1px solid rgb(255, 255, 255);
+        }
+        
+        .hi-event {
+            text-decoration: none;
+        }
+        
+        .hi-event:nth-child(3n+1) .hi-event-container {
+            border-left-color: #223eb9;
+            /* verde */
+        }
+        
+        .hi-event:nth-child(3n) .hi-event-container {
+            border-left-color: #2fa7d6;
+            /*amarillo*/
+        }
+        
+        .hi-event:nth-child(3n-1) .hi-event-container {
+            border-left-color: #F44336;
+            /*rojo*/
+        }
+        
+        .hi-event-container {
+            color: #131313;
+            transition: all 0.2s ease;
+            background: #f6f9fc;
+            border-left: 3px solid;
+            padding-top: 10px;
+            padding-bottom: 15px;
+        }
+        
+        .hi-event-container:hover {
+            border-left-width: 10px;
+            background: #faf8f8;
+        }
+        
+        .hi-date-container {
+            display: inline-block;
+            width: 5em;
+            padding-left: 13px;
+            padding-right: 8px;
+            padding-bottom: 2px;
+            margin-right: 6px;
+            font-family: Oswald;
+            font-weight: 700;
+            color: #343434;
+        }
+        
+        .hi-date {
+            font-size: 1.5em;
+            display: block;
+        }
+        
+        .hi-month {
+            display: block;
+            font-size: .4em;
+            font-weight: 400;
+            margin-top: -.8em;
+            text-transform: uppercase;
+        }
+        
+        .hi-detail-container {
+            display: inline-block;
+            vertical-align: top;
+            padding-top: 3px;
+        }
+        
+        .hi-title {
+            font-family: Oswald;
+            font-weight: bold;
+            font-size: 1.5em;
+            color: #290b42;
+        }
+        
+        .hi-description {
+            display: block;
+            font-size: 1em;
+            color: #000000;
+            font-family: Oswald;
+        }
+        
+        .hi-openEv {
+            font-family: Oswald;
+            font-size: 1em;
+            color: #131313;
+            background: rgb(242, 242, 248);
+            padding-top: 20px;
+            padding-left: 10px;
+            padding-bottom: 20px;
+            padding-right: 10px;
+            display: none;
+        }
+        
+        .hi-openEv.open {
+            display: block;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="hi-event-list">
+        <div class="hi-spacer"></div>
+        <a href="#" class="hi-event">
+            <div class="hi-event-container">
+                <span class="hi-date-container">
+              <span class="hi-date">05<span class="hi-month">Junio</span></span>
+                </span>
+
+                <span class="hi-detail-container">
+              <span class="hi-title">Pizza & Beer House </span>
+                <span class="hi-description">Buffete de Pizza hawaiana, peperoni, chorizo y cerveza. </span>
+                <span class="hi-description"><b>Hora:</b> 19:30 hrs </span>
+                <span class="hi-description"> <b>Lugar:</b> CDMX, Zona Oriente. Ver mapa </span>
+                <span class="hi-description"><b>Descripción:</b> Pizza & Beer House - Home  </span>
+                <span class="hi-description"><b>Precio:</b> $140  </span>
+                </span>
+
+            </div>
+        </a>
+
+
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

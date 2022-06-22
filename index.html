@@ -101,6 +101,10 @@
     <meta name="rights" content="®@LuisAngelMaciel">
     <meta name="description" content="Mercadologo, Comercializador, diseñador y desarrollador web.  Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario.
      ¿Qué quieres construir hoy? Un Sitio de negocios, una tienda de comercio electrónico, un portafolio, blog">
+    <!-- 
+         <meta name="description" content="¿Notaron que, al incluir desde nuestro sitio un enlace en Facebook, a veces se carga una imagen, pero otras veces sólo vemos un recuadro pobre con texto? Esto" />
+         Aqui el ejemplo en donde el autor pone su descrpción cortada https://duplika.com/blog/meta-tags-sociales/ y forma parte de un parrafo principal y son un total de 159 caracteres, otros de hasta 201
+     -->
     <meta name="keywords " content="portafolio, cv, desarrollador y mercadologo, curriculum vitae, luis angel maciel padilla, Desarrollador y diseñador web, diseñador de producto, Comercializador ">
     <meta name="robots " content="max-snippet:-1, max-image-preview:large, max-video-preview:-1 ">
     <meta name="robots" content="index, follow" />
@@ -159,7 +163,24 @@
     <meta name="twitter:player:height " content="480 " />
     <meta name="twitter:player:stream " content="https://luisangelmaciel.github.io/video/twitter_player_stream.webm " />
     <meta name="twitter:player:stream:content_type " content="video/mp4 " />
+    <!-- si es que es artycle y estuvo publicado previamente, si no pase hasta name="twitter:card" 
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Meta tags sociales para mejorar viralización - Duplika">
+    <meta property="og:description" content="¿Notaron que, al incluir desde nuestro sitio un enlace en Facebook, a veces se carga una imagen, pero otras veces sólo vemos un recuadro pobre con texto? Esto">
+    <meta property="og:url" content="https://duplika.com/blog/meta-tags-sociales/">
+    <meta property="og:site_name" content="Duplika"> article basic fin property
+    <meta property="article:publisher" content="https://www.facebook.com/duplika/">
+    <meta property="article:author" content="http://22814212400">
+    <meta property="article:section" content="Marketing">
+    <meta property="og:updated_time" content="2021-05-11T09:47:56-03:00">
+    <meta property="fb:app_id" content="110849869668"> article advaned fin property
 
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@luisangelmaciel" />
+    <meta name="twitter:title " content="Templete HTML5 hiHello.monster ">
+    <meta name="twitter:description " content="Templete HTML5 hiHello.monster con un 100% Score en lighthouse, desarrollado por @luisangelmaciel. Todas las hacks incluidos metas y el manifest para WPA">
+    <meta name="twitter:site " content="@hiHello_monster ">
+    <meta name="twitter:creator " content="@hiHello_monster ">-->
     <!-- Fonts -->
     <link rel="preload " as="font-display: auto; ">
     <link rel="preload " href="https://luisangelmaciel.github.io/lib/fonts/roboto-mono-v13-latin-500.woff2 " as="font " type="font/woff2 " crossorigin>
@@ -181,6 +202,11 @@
       <script src="errors-in-console.js"></script> 
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     -->
+    <!-- opciones de css propio 
+    <link rel="preload" href="xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="xiibicon/style.css"></noscript>
+    <link data-no-async=”1″ rel="stylesheet" href="xiibicon/style.css" media="all">
+    <link rel="stylesheet" href="css/hi-style.css"> -->
 
     <script src="js/compressed.js"></script>
     <script src="preloader.js"></script>
@@ -202,6 +228,28 @@
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╭━╯┃
 ╱╱╱╱╱╱╱╱╱╱╱╱╱╱╱╰━━╯ code & travel */
     </style>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KDD26NF');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Pntst -->
+    <meta name="p:domain_verify " content="1ccb70a44d7509dd6e6cad4538b2b9e2 " />
+    <!-- End Pntst -->
 
     <script>
         function includeHTML() {
@@ -870,6 +918,29 @@
                     <a href="avisodeprivacidad.html" target="_blank">Aviso de privacidad</a>
                     <p onclick="openName(event, 'drag-queen')">Galeria</p>
                     <p onclick="openName(event, 'one')">Espace </p>
+
+                    <p>Aviso legal | Política de privacidad y Cookies | Do Not Sell My Info</p>
+
+                    <!-- <p>Click the button to get a time-based greeting:</p>
+
+                    <button onclick="myFunction(saludo)">Try it</button>
+
+                    <p id="saludo"></p>
+
+                    <script>
+                        function myFunction() {
+                            var greeting;
+                            var time = new Date().getHours();
+                            if (time < 10) {
+                                greeting = "¡Buenos días, te deseo tengas un buen día!";
+                            } else if (time < 20) {
+                                greeting = "Hola, ¿Cómo va tu día?";
+                            } else {
+                                greeting = "Buenas noches, ¿Qué tal tu día?";
+                            }
+                            document.getElementById("saludo").innerHTML = greeting;
+                        }
+                    </script>-->
 
                     <div>
                         <!-- partial:index.partial.html -->
@@ -2140,4 +2211,13 @@ Xurkitree/img/xurkitree-pokemon-moon.svg
 Xurkitree/img/xurkitree-pokemon-sol-y-luna.svg
 Xurkitree/img/1.svg
  <div w3-include-html="desing.html"></div>
+-->
+
+
+
+<!-- Si ha leído hasta aquí, envíe un tweet al autor para demostrarle que le ha parecido este trabajo @luisangelmaciel -->
+<!-- 
+    Diseñado por www.twitter.com/luisangelmaciel 
+    Potenciado por www.HiHello.monster
+    Para www.twitter.com/XiiberTravel
 -->

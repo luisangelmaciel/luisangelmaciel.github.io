@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Feliz cumple</title>
+
+<style>
+body {
+    margin:0;
+}
+h1{
+    color:indigo;
+    line-height:45px;
+    font-family:Roboto
+}
+#a{
+    color:maroon;
+    line-height:30px;
+    font-family:fontdiner swanky;
+    text-shadow:0 0 5px pink;
+}
+#candle{
+    height:120px;
+    width:30px;
+    background:-webkit-linear-gradient(purple,indigo);
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+}
+#wick{
+    height:20px;
+    width:5px;
+    background:#3f000f;
+}
+#flame{
+    background:yellow;
+    height:35px;
+    width:10px;
+    border-radius:10px;
+    margin-top:50px;
+    box-shadow:0 0 9px 5px yellow,
+               0 -30px 9px 10px orange,
+               0 -5px 18px 10px orange;
+    animation:move 3s linear infinite ;
+    transform-origin:bottom;
+    display:inline-block ;
+}
+@keyframes move{
+    from{transform:rotate(-7.5deg);}
+    50%{transform:rotate(7.5deg);}
+    to{transform:rotate(-7.5deg);}
+}
+#layer1{
+    background:#ffa;
+    height:100px;
+    width:200px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+}
+#layer2{
+    background:#ffa;
+    height:150px;
+    width:300px;
+    border-top-right-radius:20px;
+    border-top-left-radius:20px;
+    border-bottom-right-radius:30px;
+    border-bottom-left-radius:30px;
+}
+.icing{
+    position: relative;
+}
+.icing>div{
+    background-color:#faf;
+    height: 12.5px;
+    width: 25px;
+    border-radius: 0 0 26px 26px;
+    position: absolute;
+}
+.icing>div:nth-child(1){
+    border-top-left-radius:25px;
+    height:40px;
+    left:0px;
+}
+.icing>div:nth-child(2){
+    height:60px;
+    left:25px;
+}
+.icing>div:nth-child(3){
+    height:30px;
+    left:50px;
+}
+.icing>div:nth-child(4){
+    height:60px;
+    left:75px;
+}
+.icing>div:nth-child(5){
+    height:45px;
+    left:100px;
+}
+.icing>div:nth-child(6){
+    height:33px;
+    left:125px;
+}
+.icing>div:nth-child(7){
+    height:72px;
+    left:150px;
+} 
+.icing>div:nth-child(8){
+    height:48px;
+    left:175px;
+} 
+#layer1>.icing>div:nth-child(8){
+    border-top-right-radius:25px;
+}
+.icing>div:nth-child(9){
+    height:30px;
+    left:200px;
+} 
+.icing>div:nth-child(10){
+    height:65px;
+    left:225px;
+}
+.icing>div:nth-child(11){
+    height:35px;
+    left:250px;
+} 
+.icing>div:nth-child(12){
+    height:57px;
+    left:275px;
+    border-top-right-radius:25px;
+} 
+#line{
+    background:#faca78;
+    height:10px;
+    width:300px;
+    margin-top:80px;
+    display:inline-block ;
+}
+#line1{
+    background:#faca78;
+    height:10px;
+    width:300px;
+    margin-top:15px;
+}
+#line2{
+    background:#faca78;
+    height:10px;
+    width:200px;
+    margin-top:80px;
+    display:inline-block ;
+}
+button{
+    display:block !important;
+}
+#cake_area{
+    background:deeppink;
+    transition:2s;
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+}
+#written{
+    position:absolute ;
+    transition:2s;
+    margin:auto;
+    top:-1000px;
+    padding-right:2.5vw;
+    padding-left:2.5vw;
+    background:-webkit-linear-gradient(top left,orange,pink,orange);
+    opacity:0;
+    height:100vh;
+    width:95vw;
+}
+button{
+    font-size:30px;
+    background:-webkit-linear-gradient(top left,orange,pink,orange);
+    color:#222;
+    border:none;
+    box-shadow:0 0 50px 5px red,
+               0 0 100px 10px deeppink;
+    outline:none;
+    font-family:great vibes;
+    padding:15px;
+    width:200px;
+}
+
+</style>
+
+    </head>
+
+    <body>
+    <center>
+<div id="section" onclick="f()">
+        <div id="cake_area">
+        <div id="flame"></div>
+    <div id="wick"></div>
+    <div id="candle"></div>
+    <div id="layer1">
+    <div class="icing">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="line2"></div>
+            </div>
+    <div id="layer2">
+        <div class="icing">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div id="line"></div>
+            <div id="line1"></div>
+    </div><br>
+    </div>
+    </div>
+        </center>
+
+
+    </body>
+</html>

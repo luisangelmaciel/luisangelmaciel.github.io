@@ -448,6 +448,181 @@
             </article>
 
 
+            <div class="LA.MCL🌟">
+                <style>
+                    .shrink-text .a-shrink-text {
+                        display: flex;
+                        font-size: 40px;
+                        color: #000000;
+                        text-decoration: unset;
+                        align-items: center;
+                        text-align: center;
+                        font-weight: 600;
+                    }
+                    
+                    .shrink-text .a-shrink-text:hover {
+                        display: flex;
+                        font-size: 40px;
+                        color: #000000;
+                        text-decoration: unset;
+                    }
+                    
+                    .span-shrink-text:nth-child(even) {
+                        overflow: hidden;
+                        letter-spacing: -1em;
+                        transition: letter-spacing 0.5s linear;
+                    }
+                    
+                    .shrink-text a:hover .span-shrink-text:nth-child(even) {
+                        letter-spacing: 0;
+                    }
+                </style>
+                <center>
+                    <div class="shrink-text Maven display-middle shadow margines">
+                        <a href="" class="a-shrink-text">
+                            <span class="span-shrink-text">l</span><span class="span-shrink-text">uis</span>
+                            <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
+                            <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
+                            <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
+                            <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
+                            <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
+                        </a>
+                    </div>
+                </center>
+            </div>
+
+            <br>
+            <style>
+                div.scrollmenux {
+                    background-color: transparent;
+                    overflow: auto;
+                    white-space: nowrap;
+                }
+                
+                div.scrollmenux img {
+                    display: inline-block;
+                    color: transparent;
+                }
+            </style>
+            <div class="scrollmenux">
+                <img data-src="https://www.xiiber.com/img/photo-preview-00.png" src="https://www.xiiber.com/img/photo-preview-00.png" alt="Photo" title="Photo Preview" width="120x" height="160px" loading="lazy">
+                <img data-src="https://www.xiiber.com/img/photo-preview-00.png" src="https://www.xiiber.com/img/photo-preview-00.png" alt="Photo" title="Photo Preview" width="120x" height="160px" loading="lazy">
+                <img data-src="https://www.xiiber.com/img/photo-preview-00.png" src="https://www.xiiber.com/img/photo-preview-00.png" alt="Photo" title="Photo Preview" width="120x" height="160px" loading="lazy">
+                <img data-src="https://www.xiiber.com/img/photo-preview-00.png" src="https://www.xiiber.com/img/photo-preview-00.png" alt="Photo" title="Photo Preview" width="120x" height="160px" loading="lazy">
+                <img data-src="https://www.xiiber.com/img/photo-preview-00.png" src="https://www.xiiber.com/img/photo-preview-00.png" alt="Photo" title="Photo Preview" width="120x" height="160px" loading="lazy">
+            </div>
+            <div class="BOTON DE CORAZON">
+
+                <style>
+                    /*@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');*/
+                    
+                    .love {
+                        background-color: #18487D;
+                        border: 0;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                        color: #fff;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                        padding: 0;
+                        /*font-family: 'Muli';*/
+                        font-size: 18px;
+                        letter-spacing: 0.5px;
+                        width: 250px;
+                    }
+                    
+                    .love:focus {
+                        outline: none;
+                    }
+                    
+                    .love .icon-container {
+                        background-color: #fff;
+                        border-top-left-radius: 4px;
+                        border-bottom-left-radius: 4px;
+                        border-right: 1px solid #eee;
+                        color: #18487D;
+                        padding: 9px 20px;
+                        position: relative;
+                    }
+                    
+                    .love .text {
+                        padding: 0 25px;
+                        flex: 1;
+                        text-align: center;
+                    }
+                    
+                    .love .grey-text {
+                        display: block;
+                        color: #aaa;
+                        font-size: 12px;
+                    }
+                    
+                    .fa-redo {
+                        margin-left: 0px;
+                    }
+                    
+                    .heart {
+                        position: absolute;
+                        color: #18487D;
+                        font-size: 15px;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        animation: fly 3s linear forwards;
+                    }
+                    
+                    @keyframes fly {
+                        to {
+                            transform: translate(-50%, -50px);
+                        }
+                    }
+                </style>
+
+                <button class="love "><span class="icon-container "><i class="fas fa-home "></i></span><span class="text ">Gracias</span></button>
+
+                <script>
+                    const love_btns = document.querySelectorAll('.love');
+
+                    love_btns.forEach(love_btn => {
+                        love_btn.addEventListener('mousedown', (e) => {
+                            love_btn.style.background = '#fff';
+                            love_btn.style.color = '#18487D';
+                            love_btn.querySelector('.text').innerHTML = '<span class="grey-text">Muchas</span>  gracias a ti';
+
+                            createHearts(love_btn.querySelector('.icon-container'));
+                        });
+
+                        love_btn.addEventListener('mouseup', (e) => {
+                            love_btn.style.background = '#18487D';
+                            love_btn.style.color = '#fff';
+                            love_btn.querySelector('.text').innerHTML = '¡Gracias! <i class="fas fa-hear"></i>';
+                        });
+                    })
+
+                    function createHearts(container) {
+                        // create 5 hearts
+                        for (let i = 0; i < 15; i++) {
+                            setTimeout(() => {
+                                const heart = document.createElement('span');
+                                heart.classList.add('heart');
+                                heart.innerHTML = '<i class="fas fa-home"></i>';
+                                heart.style.left = Math.random() * 100 + '%';
+                                heart.style.top = Math.random() * 100 + '%';
+                                heart.style.fontSize = Math.random() * 20 + 5 + 'px';
+                                heart.style.animationDuration = Math.random() * 2 + 3 + 's';
+                                container.appendChild(heart);
+
+                                setTimeout(() => {
+                                    heart.remove();
+                                }, 3000);
+                            }, i * 100)
+                        }
+                    }
+                </script>
+                <!-- con el div de abajo se cierra el boton de love-->
+            </div>
+
             <div class="footerx ">
                 <i class="fas fa-chevron-left footerx-icon" aria-hidden="true"></i>
                 <i class="fas fa-home footerx-icon" aria-hidden="true"></i>
@@ -763,3 +938,101 @@
 </body>
 
 </html>
+<!--  <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [{
+            "@type": "Organization",
+            "@id": "https://curiosoando.com/#organization",
+            "name": "Curiosoando",
+            "url": "https://curiosoando.com/",
+            "sameAs": ["https://www.facebook.com/Curiosoando", "https://www.instagram.com/curiosoando/", "https://twitter.com/Curioso_ando"],
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "https://curiosoando.com/#logo",
+                "inLanguage": "es",
+                "url": "https://curiosoando.com/wp-content/uploads/2018/05/logo-dark-title-720x122.png",
+                "contentUrl": "https://curiosoando.com/wp-content/uploads/2018/05/logo-dark-title-720x122.png",
+                "width": 720,
+                "height": 122,
+                "caption": "Curiosoando"
+            },
+            "image": {
+                "@id": "https://curiosoando.com/#logo"
+            }
+        }, {
+            "@type": "WebSite",
+            "@id": "https://curiosoando.com/#website",
+            "url": "https://curiosoando.com/",
+            "name": "Curiosoando",
+            "description": "Conceptos y explicaciones de ciencia, cuerpo y naturaleza",
+            "publisher": {
+                "@id": "https://curiosoando.com/#organization"
+            },
+            "potentialAction": [{
+                "@type": "SearchAction",
+                "target": "https://curiosoando.com/?s={search_term_string}",
+                "query-input": "required name=search_term_string"
+            }],
+            "inLanguage": "es"
+        }, {
+            "@type": "CollectionPage",
+            "@id": "https://curiosoando.com/#webpage",
+            "url": "https://curiosoando.com/",
+            "name": "Curiosoando - Conceptos y explicaciones de ciencia, cuerpo y naturaleza",
+            "isPartOf": {
+                "@id": "https://curiosoando.com/#website"
+            },
+            "about": {
+                "@id": "https://curiosoando.com/#organization"
+            },
+            "description": "Bienvenido a Curiosoando.com, una colecci\u00f3n de preguntas y respuestas sobre ciencia, cuerpo humano, salud y naturaleza.",
+            "breadcrumb": {
+                "@id": "https://curiosoando.com/#breadcrumb"
+            },
+            "inLanguage": "es",
+            "potentialAction": [{
+                "@type": "ReadAction",
+                "target": ["https://curiosoando.com/"]
+            }]
+        }, {
+            "@type": "BreadcrumbList",
+            "@id": "https://curiosoando.com/#breadcrumb",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@id": "https://curiosoando.com/#webpage"
+                }
+            }]
+        }]
+    }
+</script>
+
+-->
+<p><button onclick="clickCounter()" type="button">Click me!</button></p>
+<div id="result"></div>
+<p>Click the button to see the counter increase.</p>
+<p>Close the browser tab (or window), and try again, and the counter will continue to count (is not reset).</p>
+<!-- va arriba https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_webstorage_local_clickcount   -->
+<script>
+    function clickCounter() {
+        if (typeof(Storage) !== "undefined") {
+            if (localStorage.clickcount) {
+                localStorage.clickcount = Number(localStorage.clickcount) + 1;
+            } else {
+                localStorage.clickcount = 1;
+            }
+            document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+        } else {
+            document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+        }
+    }
+</script>
+
+<h3>Paris</h3>
+<p>última actualización</p>
+
+<script>
+    document.write(Date());
+</script><br><br><br><br><br>
