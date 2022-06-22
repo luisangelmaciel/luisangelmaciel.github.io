@@ -25,6 +25,44 @@ Siguenos en nuestras redes para conocer los próximos viajes en grupo, fotos, vi
 Original websites, better clicks.
 @luisangelmaciel
 
+¿Qué valoración nos darías?GenialBienRegularMalFatal
+También puedes enviarnos un comentarios, si lo deseas. 
+
+Hecho en Radolfzell (Alemania) por QaamGo Media GmbH
+
+
+
+ENVÍA TÚ FOTO (EN TRAJE DE BAÑO,  ROPA INTERIOR O DESNUDO)
+CON LA LEYENDA  CG TRAVEL, Y TE DAMOS EL 50% DE DESCUENTO EN EL TRANSPORTE 
+
+Términos y condiciones
+0. El monto total a pagar es de $427.50, que incluye acceso a 
+   Tepozspa con derecho a un locker y transporte redondo. 
+1. Seguirnos en Twitter @CGTravelMexico 
+2. Subir una fotografía en traje de baño,ropa interior o desnudo 
+    con el logo de CGT
+2. Etiquetarnos con @CGTravelMexico y #16SeptiembreEnTepoz
+4. El pago de $427.50 deberá ser enviado completo antes del viaje
+5. Valido solo para las 5 personas con mayor numero de 
+    FAVs Y RTS
+
+     Cierre de votaciones hasta el viernes 8 de septiembre a la 1pm
+
+Información adicional y reservaciones 
+Los pagos de Banamex y Bancomer, los puedes realizar de Lunes a Viernes de 8am a 8pm en: 
+
+N° de plástico a nombre de Luis Maciel5482 3412 0567 2920
+
+También te invitamos a leer nuestra nueva guía con buenas prácticas para el seguimiento, calificación y automatización del embudo de ventas.
+
+Gestión y Automatización de Leads
+Espero el material genere un impacto positivo en tu gestión.
+
+
+¿Te gusta nuestro servicio gratuito?
+Valoramos sus comentarios.
+
+
 
 
 
