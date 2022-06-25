@@ -1,0 +1,57 @@
+<style>
+    .noselect {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .buttontw {
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+        border: none;
+        color: white;
+        background-color: #7f53ac;
+        background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+        border-radius: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 500ms;
+    }
+    
+    .buttontw .svgtw {
+        position: relative;
+        fill: white;
+        width: 30px;
+        height: 30px;
+        transform: translateX(55px);
+        transition: 1s;
+    }
+    
+    .buttontw .spantw {
+        position: absolute;
+        transform: translateX(-20px);
+        transition: 1s;
+    }
+    
+    .buttontw:focus {
+        outline: none;
+    }
+    
+    .buttontw:focus .svgtw {
+        transform: translateX(30px) translateY(-10px);
+        width: 0px;
+        height: 0px;
+    }
+    
+    .buttontw:focus .spantw {
+        transform: translateX(0);
+    }
+</style>
+
+<button class="name noselect buttontw"><span class="spantw">Seguir en Twitter</span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="svgtw"><path d="M24 0l-6 22-8.129-7.239 7.802-8.234-10.458 7.227-7.215-1.754 24-12zm-15 16.668v7.332l3.258-4.431-3.258-2.901z"/></svg></button>

@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-color: #c7e9fb;
+  background-image: linear-gradient(315deg, #c7e9fb 0%, #e61d8c 74%);
+  font-family: sans-serif;
+}
+
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  -webkit-tap-highlight-color: transparent; 
+}
+
+.touch-bar {
+  width: 100%;
+  min-width: 400px;
+  height: 70px;
+  border-radius: 10px 10px 0 0;
+  background-color: #ffffff;
+  background-image: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+}
+
+.touch-bar ul {
+  list-style: none;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.touch-bar ul li svg {
+  width: 25px;
+  height: 25px;
+  fill: #e61d8c;
+  transition: 200ms;
+  z-index: 1;
+}
+
+.touch-bar ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.touch-bar ul li::before {
+  width: 100px;
+  height: 50px;
+  content: '';
+  position: absolute;
+  z-index: 0;
+}
+
+.touch-bar ul li:hover::before {
+  background: radial-gradient(#ffffff, transparent 70%);
+}
+
+.touch-bar ul li::after {
+  position: absolute;
+  font-size: 12px;
+  color: transparent;
+  transition: 200ms;
+  z-index: 1;
+}
+
+.touch-bar ul li:nth-child(1)::after {
+  content: 'Settings';
+}
+
+.touch-bar ul li:nth-child(2)::after {
+  content: 'Profile';
+}
+
+.touch-bar ul li:nth-child(3)::after {
+  content: 'Messages';
+}
+
+.touch-bar ul li:hover svg {
+  margin-bottom: 10px;
+}
+
+.touch-bar ul li:hover .triple-dots {
+    animation: bounce 1s infinite ease-in-out;
+}
+
+.touch-bar ul li:hover::after {
+  transform: translateY(15px);
+  color: #888;
+}
+
+.touch-bar ul li:nth-child(1):hover svg {
+  animation: rotate 1s forwards ease-in-out;
+}
+
+@keyframes rotate {
+  to {transform: rotate(360deg);}
+}
+
+.triple-dots {
+  position: absolute;
+  z-index: 3;
+  font-size: 20px;
+  color: white;
+  transform: translateY(-6px);
+  transition: 200ms;
+}
+
+.triple-dots::before, .triple-dots::after {
+  content: '.';
+}
+
+@keyframes bounce {
+  0%{transform: translateY(-10px);}
+  50%{transform: translateY(-12px);}
+  100%{transform: translateY(-10px);}
+}
