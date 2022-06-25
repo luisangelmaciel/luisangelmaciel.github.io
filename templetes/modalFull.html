@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html>
-
-<head>
+<div>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
+    <!--  <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -113,11 +110,118 @@
             width: device-width
         }
     </style>
-</head>
+ 
+PRIMERA OPCION NO -->
 
-<body>
 
-    <h2>Modal Example</h2>
+    <style>
+        /* The Modal (background) */
+        
+        .modal {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1050;
+            display: none;
+            overflow: hidden;
+            -webkit-overflow-scrolling: touch;
+            outline: 0
+        }
+        
+        .modal-content {
+            position: relative;
+            background-color: #fff;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            border: 1px solid #999;
+            border: 1px solid rgba(0, 0, 0, .2);
+            border-radius: 6px;
+            outline: 0;
+            -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, .5);
+            box-shadow: 0 3px 9px rgba(0, 0, 0, .5)
+        }
+        
+        .close {
+            float: right;
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 1;
+            color: #000;
+            text-shadow: 0 1px 0 #fff;
+            filter: alpha(opacity=20);
+            opacity: .2
+        }
+        
+        .close:focus,
+        .close:hover {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+            filter: alpha(opacity=50);
+            opacity: .5
+        }
+        
+        .close {
+            -webkit-appearance: none;
+            padding: 0;
+            cursor: pointer;
+            background: 0 0;
+            border: 0
+        }
+        
+        .closeModal {
+            color: #aaaaaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .closeModal:hover,
+        .closeModal:focus {
+            color: #000;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        .modal-dialog {
+            -webkit-transition: -webkit-transform .3s ease-out;
+            -o-transition: -o-transform .3s ease-out;
+            transition: transform .3s ease-out;
+            -webkit-transform: translate(0, -25%);
+            -ms-transform: translate(0, -25%);
+            -o-transform: translate(0, -25%);
+            transform: translate(0, -25%)
+        }
+        
+        .modal-dialog {
+            position: relative;
+            width: 100%;
+            margin: 5px
+        }
+        
+        .modal-body {
+            position: relative;
+            padding: 2px
+        }
+        
+        @media (min-width:768px) {
+            .modal-dialog {
+                width: 100%;
+                margin: 5px auto
+            }
+            .modal-content {
+                -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+                box-shadow: 0 5px 15px rgba(0, 0, 0, .5)
+            }
+        }
+        
+        @-ms-viewport {
+            width: device-width
+        }
+    </style>
+
 
     <!-- Trigger/Open The Modal -->
 
@@ -165,6 +269,4 @@
         }
     </script>
 
-</body>
-
-</html>
+</div>
