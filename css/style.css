@@ -1914,3 +1914,131 @@ text-shadow: 0 0 2px #d456ca; */
             color: rgb(24, 73, 100);
         }
     }
+    
+    .a-white,
+    .a-white:focus,
+    .a-white:hover {
+        text-decoration: none;
+        color: rgb(10, 23, 48);
+        font-size: initial;
+    }
+    
+    .btn-white {
+        text-shadow: none;
+        outline: none;
+        font-size: initial;
+    }
+    
+    .quote {
+        background-color: transparent;
+        font-size: initial;
+    }
+    
+    .character {
+        background-color: transparent;
+        font-size: initial;
+        font-weight: bold;
+    }
+    
+    .alert {
+        padding: 5px 5px 5px 5px;
+        background-color: transparent;
+    }
+    
+    .closebtn {
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        float: right;
+        font-size: initial;
+        cursor: pointer;
+        transition: 0.3s;
+        line-height: 8rem;
+        float: right;
+        margin-left: 80px;
+        line-height: 0.5rem;
+    }
+    
+    .closebtn:hover {
+        color: black;
+    }
+    
+    .accordionnew {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        cursor: pointer;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        transition: 0.4s;
+        font-size: 24px;
+    }
+    
+    .activemas,
+    .accordionnew:hover {
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .accordionnew:after {
+        content: '\002B';
+        color: rgb(10, 11, 41);
+        font-weight: bold;
+        float: right;
+        margin-left: 80px;
+        font-size: 40px;
+        line-height: 0.5rem;
+    }
+    
+    .activemas:after {
+        content: "\2212";
+        color: rgb(12, 16, 124);
+    }
+    
+    .panelnew {
+        background-color: white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        text-align: right;
+    }
+    
+    .text-box {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Inter", sans-serif;
+        background-color: #FFF;
+    }
+    
+    .tenkiubig {
+        font-size: 8vw;
+        font-weight: 900;
+        background-color: #000;
+        color: #fff;
+        display: block;
+        padding: .5em;
+    }
+    
+    .tenkiubig:nth-child(2) {
+        position: absolute;
+        background-color: #fff;
+        color: #000;
+        clip-path: inset(-1% -1% 50% -1%);
+    }
+    
+    .tenkiusmall {
+        font-size: 4vw;
+        font-weight: 900;
+        margin-top: 1em;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        background-color: #FFF;
+    }
+    
+    .span-tenks {
+        display: block;
+        transform: rotate(90deg);
+        margin-top: .50em;
+        font-family: "Inter", sans-serif;
+    }
