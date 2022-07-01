@@ -1,4 +1,25 @@
 
+<!--
+Xurkitree/img/2.svg
+Xurkitree/img/3.svg
+Xurkitree/img/avatar-xurkitree.svg
+Xurkitree/img/ico-xurkitree.svg
+Xurkitree/img/one.svg
+Xurkitree/img/principal-xurkitree.svg
+Xurkitree/img/three.svg
+Xurkitree/img/two.svg
+Xurkitree/img/xurkitree.png
+Xurkitree/img/xurkitree.svg
+Xurkitree/img/xurkitree.webp
+Xurkitree/img/xurkitree-color.svg
+Xurkitree/img/xurkitree-copia.png
+Xurkitree/img/xurkitree-pokemon-luna.svg
+Xurkitree/img/xurkitree-pokemon-moon.svg
+Xurkitree/img/xurkitree-pokemon-sol-y-luna.svg
+Xurkitree/img/1.svg
+ <div w3-include-html="desing.html"></div>
+-->
+
 
 Las propuestas indecedentes, se hacen más faciles con cerveza. 
 El beber y coger me llaman. 

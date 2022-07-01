@@ -14,8 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://www.google-analytics.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
-    <!--  <link rel="preload" href="https://luisangelmaciel.github.io/lib/fonts/roboto-mono-v13-latin-500.woff2" crossorigin>
+    <link rel="preconnect" as="font" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" crossorigin>
+    <!--  <link rel="preload" href="https://luisangelmaciel.github.io/lib/fonts/roboto-mono-v13-latin-500.woff2" >
     <link href="https://luisangelmaciel.github.io/lib/fonts/free-fa-brands-400.woff2" crossorigin>
     <link rel="preload" href="https://luisangelmaciel.github.io/lib/fonts/free-fa-solid-900.woff2" as="font" type="font/woff2"> -->
     <link rel="manifest" href="/manifest.json">
@@ -178,7 +178,6 @@
 
     <script src="js/compressed.js"></script>
     <script src="preloader.js"></script>
-    <script src="js/cobertura.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js ' async></script>
     <link rel="stylesheet" href="lamp/style.css">
 
@@ -227,39 +226,9 @@
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-KDD26NF');
     </script>
-    <!-- End Google Tag Manager -->
-    <!-- Pntst -->
+    <!-- End Google Tag Manager * Pntst -->
     <meta name="p:domain_verify" content="1ccb70a44d7509dd6e6cad4538b2b9e2" />
     <!-- End Pntst -->
-
-
-    <script>
-        (async() => {
-            const pti = require('puppeteer-to-istanbul')
-            const puppeteer = require('puppeteer')
-            const browser = await puppeteer.launch()
-            const page = await browser.newPage()
-
-            // Enable both JavaScript and CSS coverage
-            await Promise.all([
-                page.coverage.startJSCoverage(),
-                page.coverage.startCSSCoverage()
-            ]);
-            // Navigate to page
-            await page.goto('https://www.google.com');
-            // Disable both JavaScript and CSS coverage
-            const [jsCoverage, cssCoverage] = await Promise.all([
-                page.coverage.stopJSCoverage(),
-                page.coverage.stopCSSCoverage(),
-            ]);
-            pti.write([...jsCoverage, ...cssCoverage], {
-                includeHostname: true,
-                storagePath: './.nyc_output'
-            })
-            await browser.close()
-        })()
-    </script>
-
 </head>
 
 <body>
@@ -267,12 +236,9 @@
         <div class="w3-center">
             <div class="container-name">
                 <div class="box">
-
-
                     <div class="fil2 w3-hide-large w3-hide-medium">
                         <img src="img/lamp-loader.svg" alt="logo" class="lazy img" width="300" height="150">
                     </div>
-
                     <div class="title w3-center w3-hide-large w3-hide-medium">
                         <span class="block"></span>
                         <p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p>
@@ -286,7 +252,6 @@
                 </div>
             </div>
         </div>
-
         <div class="loader"> </div>
     </div>
 
@@ -1496,10 +1461,10 @@
     <div style=" width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0;">
         <div id="myBar" style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite linear;"></div>
     </div>
-    <script src="js/scripts.js"></script>
     <!-- <link href="js/array.observe.polyfill.js" rel="prefetch"> -->
     <link href="js/object.observe.polyfill.js" rel="prefetch">
-
+    <link href="js/scripts.js" rel="prefetch">
+    <script src="js/cobertura.js"></script>
     <script>
         function openSocial(evt, socialName) {
             var i, tabcontent, tablinks;
@@ -1697,27 +1662,6 @@
 </body>
 
 </html>
-<!--
-Xurkitree/img/2.svg
-Xurkitree/img/3.svg
-Xurkitree/img/avatar-xurkitree.svg
-Xurkitree/img/ico-xurkitree.svg
-Xurkitree/img/one.svg
-Xurkitree/img/principal-xurkitree.svg
-Xurkitree/img/three.svg
-Xurkitree/img/two.svg
-Xurkitree/img/xurkitree.png
-Xurkitree/img/xurkitree.svg
-Xurkitree/img/xurkitree.webp
-Xurkitree/img/xurkitree-color.svg
-Xurkitree/img/xurkitree-copia.png
-Xurkitree/img/xurkitree-pokemon-luna.svg
-Xurkitree/img/xurkitree-pokemon-moon.svg
-Xurkitree/img/xurkitree-pokemon-sol-y-luna.svg
-Xurkitree/img/1.svg
- <div w3-include-html="desing.html"></div>
--->
-
 
 
 <!-- Si ha leído hasta aquí, envíe un tweet al autor para demostrarle que le ha parecido este trabajo https://twitter.com/LuisAngelMaciel  -->
