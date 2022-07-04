@@ -1,0 +1,183 @@
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container {
+    width: 950px;
+    margin: 25px auto;
+    cursor: pointer;
+}
+
+#gamePirate,
+#gameFind,
+#gameJump {
+    width: 260px;
+    height: 260px;
+    margin-top: 55px;
+    background: url("circleCont.png") no-repeat center;
+    background-size: 95%;
+    position: relative;
+    cursor: pointer;
+}
+
+#gamePirate:hover,
+#gameFind:hover,
+#gameJump:hover {
+    background: url("circleContHov.png") no-repeat center;
+    background-size: 100%;
+}
+
+#imgf {
+    width: 96%;
+    position: absolute;
+    z-index: 11;
+}
+
+#imgfw {
+    width: 96%;
+    position: absolute;
+    z-index: 12;
+    opacity: 0;
+}
+
+#imgb {
+    width: 90%;
+    position: absolute;
+    z-index: 10;
+    right: -20px;
+    top: 18px;
+    opacity: 0;
+}
+
+#labelp,
+#labelph,
+#labelp_gf,
+#labelph_gf,
+#labelp_gj,
+#labelph_gj {
+    width: 200px;
+    position: absolute;
+    z-index: 11;
+    bottom: -3px;
+    left: 30px;
+}
+
+#labelp,
+#labelp_gf,
+#labelp_gj {
+    opacity: 1;
+}
+
+#labelph,
+#labelph_gf,
+#labelph_gj {
+    opacity: 0;
+}
+
+#iconp,
+#iconph,
+#iconp_gf,
+#iconph_gf,
+#iconp_gj,
+#iconph_gj {
+    width: 60px;
+    position: absolute;
+    z-index: 12;
+    bottom: -10px;
+    left: 0px;
+}
+
+#iconph,
+#iconph_gf,
+#iconph_gj {
+    opacity: 0;
+}
+
+
+/* access gameFind */
+
+#imgHunter {
+    width: 65%;
+    right: -20px;
+    bottom: 70px;
+    position: absolute;
+    z-index: 15;
+    transform: rotate(-25deg)
+}
+
+#imgligthf1,
+#imgligthf2 {
+    width: 50%;
+    position: absolute;
+    top: 35px;
+    right: -10px;
+}
+
+#imgSnake,
+#imgSnakew {
+    width: 90%;
+    left: -20px;
+    top: 20px;
+    position: absolute;
+}
+
+#imgSnake {
+    z-index: 11;
+}
+
+#imgSnakew {
+    z-index: 12;
+    opacity: 0;
+}
+
+#imgFlor {
+    width: 81%;
+    position: absolute;
+    bottom: 22px;
+    left: 25px;
+    z-index: 10;
+}
+
+
+/* game jump */
+
+#wallbg {
+    width: 82%;
+    position: absolute;
+    top: 25px;
+    left: 24px;
+    z-index: 10;
+}
+
+#hunter,
+#hunterw {
+    position: absolute;
+    left: 40px;
+    top: 45px;
+    z-index: 11;
+}
+
+#hunter {
+    opacity: 1;
+}
+
+#hunterw {
+    opacity: 0;
+}
+
+#hunterj,
+#hunterjb {
+    position: absolute;
+    left: 40px;
+    top: 10px;
+    opacity: 0;
+}
+
+#hunterj {
+    z-index: 12;
+}
+
+#hunterjb {
+    z-index: 11;
+}
