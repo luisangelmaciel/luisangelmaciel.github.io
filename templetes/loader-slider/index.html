@@ -1,0 +1,36 @@
+<div id="LOADER" class="w3-container">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        .mySlidesLoader {
+            display: none;
+        }
+    </style>
+
+    <div class="w3-content w3-section" style="max-width:100px">
+        <img class="mySlidesLoader " src="img/cgtravel.svg" style="width:100%">
+        <img class="mySlidesLoader " src="img/experiencias.svg" style="width:100%">
+        <img class="mySlidesLoader " src="img/playa.svg" style="width:100%">
+        <img class="mySlidesLoader " src="img/viajes.svg" style="width:100%">
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlidesLoader");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 500);
+        }
+    </script>
+
+</div>
