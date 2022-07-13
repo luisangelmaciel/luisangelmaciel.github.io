@@ -1,0 +1,15 @@
+   <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Article",
+          "headline": "Check list para tu viaje ",
+          "image": "www.xiiber.com",
+        "keywords": ["keyword 1","keyword 2","keyword 3","keyword 3","keyword 4","keyword 5"],
+          "datePublished": "2015-09-20T13:39:38Z",
+          "articleSection": "Viajes",
+          "creator": "Luis",
+          "author": "Maciel",
+          "articleBody": "Cuerpo del artículo",
+          "mainEntityOfPage": "True"
+        }
+        </script>

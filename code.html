@@ -907,7 +907,174 @@
             </ul>
 
 
+            <div id="copyYearLAMP">
+                <div class="copyYear"> </div>
+                <script>
+                    var elements = {
+                        copyYear: document.querySelector('.copyYear')
+                    };
+                    var footerRandom = [
+                        new Date().getFullYear() + ' ツ @luisangelmaciel ',
+                        new Date().getFullYear() + ' ㋡ @luisangelmaciel ',
+                        new Date().getFullYear() + ' ☺ @luisangelmaciel ',
+                        new Date().getFullYear() + ' © @luisangelmaciel ',
+                        new Date().getFullYear() + ' 😊  @luisangelmaciel ',
+                        new Date().getFullYear() + ' 🙂  @luisangelmaciel ',
+                        new Date().getFullYear() + ' 😏  @luisangelmaciel ',
+                        new Date().getFullYear() + ' 🙃  @luisangelmaciel ',
+                        new Date().getFullYear() + ' 🙃  @luisangelmaciel '
+                    ];
+                    var rand = Math.floor(Math.random() * footerRandom.length);
+                    elements.copyYear.innerHTML += footerRandom[rand];
 
+                    reset();
+                </script>
+            </div>
+
+            <template id="element-details-template">
+                <style>
+                  details {font-family: "Open Sans Light",Helvetica,Arial}
+                  .name {font-weight: bold; color: #217ac0; font-size: 120%}
+                  h4 { margin: 10px 0 -8px 0; }
+                  h4 span { background: #217ac0; padding: 2px 6px 2px 6px }
+                  h4 span { border: 1px solid #cee9f9; border-radius: 4px }
+                  h4 span { color: white }
+                  .attributes { margin-left: 22px; font-size: 90% }
+                  .attributes p { margin-left: 16px; font-style: italic }
+                </style>
+                <details>
+                  <summary>
+                    <span>
+                      <code class="name">&lt;<slot name="element-name">NEED NAME</slot>&gt;</code>
+                      <i class="desc"><slot name="description">NEED DESCRIPTION</slot></i>
+                    </span>
+                  </summary>
+                  <div class="attributes">
+                    <h4><span>Attributes</span></h4>
+                    <slot name="attributes"><p>None</p></slot>
+                  </div>
+                </details>
+                <hr>
+              </template>
+
+
+
+            <templete>
+                <!-- Simple pop-up dialog box, containing a form -->
+                <dialog id="favDialog">
+                    <form method="dialog">
+                        <section>
+                            <p><label for="favAnimal">Favorite animal:</label>
+                                <select id="favAnimal">
+                <option></option>
+                <option>Brine shrimp</option>
+                <option>Red panda</option>
+                <option>Spider monkey</option>
+              </select></p>
+                        </section>
+                        <menu>
+                            <button id="cancel" type="reset">Cancel</button>
+                            <button type="submit">Confirm</button>
+                        </menu>
+                    </form>
+                </dialog>
+
+                <menu>
+                    <button id="updateDetails">Update details</button>
+                </menu>
+
+                <script>
+                    (function() {
+                        var updateButton = document.getElementById('updateDetails');
+                        var cancelButton = document.getElementById('cancel');
+                        var favDialog = document.getElementById('favDialog');
+
+                        // Update button opens a modal dialog
+                        updateButton.addEventListener('click', function() {
+                            favDialog.showModal();
+                        });
+
+                        // Form cancel button closes the dialog box
+                        cancelButton.addEventListener('click', function() {
+                            favDialog.close();
+                        });
+
+                    })();
+                </script>
+            </templete>
+
+
+
+            <dialog open>
+                <section>
+                    <hgroup>
+                        <h1>Primera sección de nivel 1</h1>
+                        <h2>Breve descripción de la sección de nivel 1</h2>
+                    </hgroup>
+                    <p>En esta nueva sección hablaremos de bla bla bla y de blu blu blu. Bla bli blo blu...</p>
+                    <p> Texto normal y... <s>Texto tachado</s> </p>
+                    <p>We <em>had</em> to do something about it.</p>
+
+                    Este atributo es <del cite="ref/atributos-desaprobados">perfectamente válido</del> <ins>desaprobado</ins>.
+                    <p lang="en" xml:lang="en">This is a paragraph in English.</p>
+                    <p lang="es" xml:lang="es">Este es un párrafo en español.</p>
+                    Actualemnte, este documento muestra <del datetime="2006-01-05T13:00:00Z" cite="politica-de-modificacion-de-ejemplos">1 ejemplo</del> <ins datetime="2006-01-05T13:00:00Z" cite="politica-de-modificacion-de-ejemplos">2 ejemplos</ins>.
+                    <br>
+                    <p>My <em>favorite</em> book of all time has <em>got</em> to be
+                        <cite>A Cat's Life</cite>. It is a book by P. Rahmel that talks about the <i lang="la">Felis catus</i> in modern human society.IMPORTANTE
+                    </p>
+                </section>
+
+
+                <style>
+                    details>summary {
+                        transition: color 1s;
+                        color: black;
+                    }
+                    
+                    details[open]>summary {
+                        color: rgb(1, 1, 31);
+                    }
+                </style>
+                <details>
+                    <summary>Details + Summary // dl+dt+dd</summary>
+                    <dl>
+                        <div>
+                            <dt>Name</dt>
+                            <dd>Godzilla</dd>
+                        </div>
+                        <div>
+                            <dt>Born</dt>
+                            <dd>1952</dd>
+                        </div>
+                        <div>
+                            <dt>Birthplace</dt>
+                            <dd>Japan</dd>
+                        </div>
+                        <div>
+                            <dt>Color</dt>
+                            <dd>Green</dd>
+                        </div>
+                    </dl>
+                </details>
+            </dialog>
+
+
+
+            <p>Do not forget to buy <mark>milk</mark> today.</p>
+            <br>
+            <p>
+                You have viewed this page
+                <span id="count">an untold number of</span> time(s).
+            </p>
+            <script>
+                if (!localStorage.pageLoadCount)
+                    localStorage.pageLoadCount = 0;
+                localStorage.pageLoadCount = parseInt(localStorage.pageLoadCount) + 1;
+                document.getElementById('count').textContent = localStorage.pageLoadCount;
+            </script>
+
+            <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br><br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>
 
 
     </div>

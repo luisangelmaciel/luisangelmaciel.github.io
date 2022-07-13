@@ -1,0 +1,24 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dragvesti, La carrera Drag Queen ",
+        "legalName": "Dragvesti",
+        "url": " https://dragvesti.xiiber.com",
+        "telephone": "55 3979 3727",
+        "email": "dragvesti@gmail.com",
+        "image": "image-dragvesti.jpg",
+        "logo": "logo-dragvesti.jpg ",
+        "photo": "photo-dragvesti.jpg",
+        "slogan": "La carrera Drag Queen ",
+        "description": "Competencia Drag Queen",
+        "foundingDate": " Mayo 2015",
+  
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "México",
+            "postalCode": "09310",
+            "streetAddress": "Ciudad de México & Chihuahua"
+        }
+    }
+</script>

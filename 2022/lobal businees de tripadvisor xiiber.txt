@@ -1,0 +1,26 @@
+  <script type="application/ld+json">
+        {
+            "@context": "http:\u002F\u002Fschema.org",
+            "@type": "LocalBusiness",
+            "name": "Xiiber",
+            "url": "Coast.html",
+            "image": "https:caption.jpg",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "5.0",
+                "reviewCount": "28"
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Heroes del 47 13, San Diego Churubusco Coyoacan. 04120 Ciudad de México, CDMX",
+                "addressLocality": "Ciudad de México",
+                "addressRegion": "México Central y Costa del Golfo",
+                "postalCode": "04120",
+                "addressCountry": {
+                    "@type": "Country",
+                    "name": "México"
+                }
+            },
+            "openingHours": ["Su 12:00-15:00", "Mo-Th 12:00-20:00", "Fr 12:00-19:00", "Sa 08:00-23:30"]
+        }
+    </script>

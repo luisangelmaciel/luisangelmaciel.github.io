@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:600&display=swap");
+
+[data-fit-text] {
+  /* Sized via the viewport, but the --width variable could be set by JS based on the element or parent's width. */
+  --width: 100vw;
+
+  /* Adjust scale depending on your exact font.  */
+  --scale: 0.9;
+
+  font-size: calc(var(--width) / (var(--length, 1) * 0.5) * var(--scale, 1));
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 1;
+  margin: 1rem 0;
+}
+
+/* ---------------------------------- */
+
+html {
+  height: 100%;
+  display: flex;
+}
+body {
+  margin: auto;
+  text-align: center;
+}
+
+html {
+  background: #fbc490;
+  color: #084177;
+}

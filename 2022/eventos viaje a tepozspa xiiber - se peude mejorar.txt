@@ -1,0 +1,28 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": "Poolparty, Tepozspa",
+        "description": "Pool party para solteros en Tepozspa. ",
+
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tepoztlán",
+            "addressCountry": "Morelos"
+        },
+
+        "touristType": {
+            "@type": "Audience",
+            "audienceType": "Hombres gay"
+        },
+
+        "event": {
+            "@type": "Event",
+            "about": "Solo para solteros",
+            "name": "Pool party para solteros",
+            "startDate": "2021-07-17",
+            "endDate": "2021-07-18",
+            "location": "Tepoztlán, Morelos"
+        }
+    }
+</script>
