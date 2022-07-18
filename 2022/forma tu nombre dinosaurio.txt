@@ -31,3 +31,11 @@ Geo
 Aero
 Photo 
 Umbra
+
+Las primeras cuatro letras de tu nombre +
+Último dígito de tu teléfono 
+0-1 Ceraptops
+2-3 Raptor
+4-5 Saurus
+6-7 Nychus
+8-9 Odon 
