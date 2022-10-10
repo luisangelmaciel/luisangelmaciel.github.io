@@ -5,8 +5,17 @@
  * Licensed MIT © Toxel by Luis Angel Maciel :P
  */
 
+ /*!
+  * Por acá el cerebro de Toxel 
+  * He aquí el primero 
+  */ 
 
- /*Copy*/
+ .con-una-sombra-negra-en-el-texto{color: white;text-shadow: 2px 2px 4px #000000;}
+
+  /* Este es como el corazón de Toxel 
+    para poder copiar desde el templete 
+    de forma rápida por si aun no te sabes 
+    todos los estilos */
  
   .toxel {
     border: none;
