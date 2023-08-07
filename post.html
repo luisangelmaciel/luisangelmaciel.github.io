@@ -1,9 +1,14 @@
+
 <!DOCTYPE html>
 <!-- ⊙⩌⨀
-    2006 - 2022 © LuisAngelMaciel, Inc.! Marketing Technology Stack    
+Ingresa a tu cuenta y gestiona todos tus movimientos a través de tu APP para facilitar todos tus movimientos. ¡Te llevamos a tu cuenta! 👇 IR A MI CUENTA
+
+
+https://codepen.io/luisangelmaciel/pen/NWEqdbd
+
+    2006 - 2023 © LuisAngelMaciel, Inc.! Marketing Technology Stack    
 	    ¿Quién hizo todo esto? 
-            http://twitter.com/luisangelmaciel
-        85779906 -->
+            http://twitter.com/luisangelmaciel-->
 <html lang="es-MX" dir="ltr" prefix="og: https://ogp.me/ns#" Content-Type="text/html" Content-Security-Policy="img-src" Cache-Control: max-age=31536000 Content-Encoding="gzip" class="no-js">
 
 <head itemscope itemtype="#https://schema.org/WebSite">
@@ -163,22 +168,14 @@
     <link rel="preload " href="/lib/fonts/free-fa-solid-900.woff2 " as="font " type="font/woff2 ">
 
 
+    <script src="https://luisangelmaciel.github.io/js/lazysizes.min.js" rel="preload " as="script " asyncc charset="utf-8 "></script>    
 
-    <script src="js/lazysizes.min.js" rel="preload " as="script " asyncc charset="utf-8 "></script>
-    <!-- 
-      <script src="js/compressed.js"></script>
-      <script src="js/jquery-3-5-0.js"></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js ' as="script " async></script>
-      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.js' as="script " async></script>
-      <script src="errors-in-console.js"></script> 
-    -->
-
-    <script src="js/compressed.js"></script>
-    <script src="preloader.js"></script>
+    <script src="https://luisangelmaciel.github.io/js/compressed.js"></script>
+    <script src="https://luisangelmaciel.github.io/preloader.js"></script>
 
     <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free    -->
-    <script src="js/fontawesome-1d9115e34a.js"></script>
-    <link rel="stylesheet " href="css/style.css" media="all" as="style ">
+    <script src="https://luisangelmaciel.github.io/js/fontawesome-1d9115e34a.js"></script>
+    <link rel="stylesheet " href="https://luisangelmaciel.github.io/css/style.css" media="all" as="style ">
 
 
     <script>
@@ -208,26 +205,142 @@
                     }
                     xhttp.open("GET", file, true);
                     xhttp.send();
-                    /*exit the function:*/
                     return;
                 }
             }
         };
     </script>
+  <style>
+    
+body {
+  margin: 0;
+  padding:o;
+  height: 100hv;
+  overflow-y: auto;
+    width:100%;
+}
+
+
+.common-post {
+  padding: var(--size3) var(--size4);
+  padding-block-end: var(--size1);
+  margin-block-end: var(--size4);
+  background-color: var(--abalance1);
+  border-radius: var(--size2);
+  box-shadow: 0 1px 2px var(--balance4);
+}
+
+/* Native CSS variables */
+:root {
+  /* colors */
+  --main-color:#1877f2;
+  --text-color:#050505;
+  --full-color:255 255 255;
+  --empty-color:0 0 0;
+  /* white default*/
+  --abalance1:rgba(var(--full-color) / 1);
+  --abalance80:rgba(var(--full-color) / 0.80);
+  /* black default*/
+  --balance1:rgb(var(--empty-color) / 0.05);
+  --balance2:rgb(var(--empty-color) / 0.10);
+  --balance3:rgb(var(--empty-color) / 0.15);
+  --balance4:rgb(var(--empty-color) / 0.20);
+  --balance8:rgb(var(--empty-color) / 0.60);
+  --balance10:rgb(var(--empty-color) / 0.80);
+  --balance-full:#f0f2f5;
+  /* sizes */
+  --height-header:40px;
+  /* common sizes */
+  --size1:4px;
+  --size2:calc(var(--size1) * 2);
+  --size3:calc(var(--size1) * 3);
+  --size4:calc(var(--size1) * 4);
+  --size5:calc(var(--size1) * 5);
+}
+
+
+
+.shadows-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;
+  width: 100%;*/
+  /*margin: auto;*/
+}
+
+.image-card {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  position: relative;
+  background-size: cover;
+  margin: 1px;
+}
+.image-card:before {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  border-radius: 5px;
+  z-index: -1;
+  filter: blur(12px);
+  opacity: 0.6;
+  left: 50%;
+  transform: translate(-50%, 10%);
+}
+
+
+
+
+
+
+
+
+
+
+
+.my-list {
+ min-height: 100hv;
+  overflow-y: auto;
+}
+
+.listado {
+  border: none;
+  outline: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.activeli, .listado:hover {
+  background-color: #f1f1f1;
+}
+
+a:hover {color:inherit; }
+
+input {
+  display: block;
+  width: 100%;
+  outline: none;
+}
+
+  </style>
 
 </head>
 
 <body>
-
-    <!--    <div w3-include-html="post.html"></div> -->
-
-    <div id="preloder" class=" background-icon-black-1B1C24">
+    <div id="preloder" class=" background-icon-black-1B1C24 w3-hide">
         <div class="  w3-center ">
             <div class="container-name  ">
                 <div class="box ">
 
                     <div class="fil2 w3-hide-large w3-hide-medium">
-                        <img src="img/lamp-loader.svg" alt="logo" loading="lazy lazyload " class="lazy img" width="300" height="auto">
+                        <img src="https://luisangelmaciel.github.io/img/lamp-loader.svg" alt="logo" loading="lazy lazyload " class="lazy img" width="300" height="auto">
                     </div>
 
                     <div class="title w3-center w3-hide-large w3-hide-medium ">
@@ -246,58 +359,14 @@
 
         <div class="loader "> </div>
     </div>
-
-
-    <div class="scrollmenu ">
-        <i><p></p></i> <i><p></p></i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fas fa-home " aria-hidden="true" onclick="document.location='index.html'"> Home  </i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='post.html'"> Lo más nuevo </i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fas fa-sitemap" aria-hidden="true" onclick="document.location='index.html'"> Mapa de sitio </i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fa fa-suitcase" aria-hidden="true" onclick="document.location='index.html'"> Xiiber </i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fas fa-chess-queen" aria-hidden="true" onclick="document.location='index.html'"> Dragvesti </i>
-        <i><p></p></i> <i><p></p></i>
-        <i class="fas fa-envelope-open-text" onclick="document.location='index.html'"> Productos y Servicios </i>
-        <i><p></p></i> <i><p></p></i>
-        <i><p></p></i> <i><p></p></i>
-        <i><p></p></i> <i><p></p></i>
-    </div>
-
-    <div style=" width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
-        <div id="myBar " style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite
-                linear; ">
-        </div>
-    </div>
-
-
-    <!-- glyphs/animales/demo.html
-                            glyphs/banderas/demo.html
-                            glyphs/banderas.html
-                            glyphs/como-te-sientes-hoy/como-que-quiero-llorar.svg
-                            glyphs/google-calendar-2020/cal_01_v2.png
-                            glyphs/horoscope/demo.html
-                            glyphs/mexico/demo.html
-                            glyphs/mexico.html
-                            glyphs/pago/demo.html
-                            glyphs/pago.html
-                            glyphs/siluetas/Siluetas-Glyphs-Demo.html
-                            -->
-
-
-
-
-
-    <main class="  containerOK "> <br>
-
-        <div class="scrollmenu-post ">
-            <div id="myBtnContainer">
-                <button class="btn-filter" onclick="filterSelection('all')"> <strong>Ver todo</strong></button>
-                <button class="btn-filter" onclick="filterSelection('css-post')"> CSS</button>
-                <button class="btn-filter" onclick="filterSelection('desing-post')"> Desing</button>
+    <div class="scrollmenu-post" class="">
+            <div id="myBtnContainer" class="w3-hide">
+ 
+                <button class="btn-filter" onclick="filterSelection('all')"> <div class="image-card btn-filter" style="background-image: url('https://dragvesti.github.io/rutarot/Rutarot%2000%20The%20fool.webp')" onclick="filterSelection('all')"></div><br>All</button>
+                <button class="btn-filter" onclick="filterSelection('css-post')"> <div class="image-card btn-filter" style="background-image: url('https://dragvesti.github.io/rutarot/Rutarot%2000%20The%20fool.webp')" ></div><br>Post</button>
+               <button class="btn-filter" onclick="filterSelection('desing-post')"> <div class="image-card btn-filter" style="background-image: url('https://dragvesti.github.io/rutarot/Rutarot%2000%20The%20fool.webp')" ></div><br>1478Desing</button>
+              
+               
 
                 <button class="btn-filter" onclick="filterSelection('apps-post')"> Apps</button>
                 <button class="btn-filter" onclick="filterSelection('proyectos-post')"> Proyectos</button>
@@ -305,12 +374,63 @@
 
                 <button class="btn-filter" onclick="filterSelection('dragonBall-post')"> Dragon Ball</button>
                 <button class="btn-filter" onclick="filterSelection('dragQueen-post')"> Drag Queen</button>
-                <button class="btn-filter" onclick="filterSelection('2022-post')"> 2022</button>
-            </div>
+                <button class="btn-filter" onclick="filterSelection('2022-post')"> 2022</button>                
+            </div>         
         </div>
+     <div class="scrollmenu">
+        <i><p></p></i> <i><p></p></i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fas fa-home " aria-hidden="true" onclick="document.location='https://cdpn.io/pen/debug/ExOdqNR?authentication_hash=RBMOJWNxBBjk'"> Home  </i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fas fa-newspaper" aria-hidden="true" > Lo más nuevo </i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fas fa-sitemap" aria-hidden="true" onclick="https://cdpn.io/pen/debug/ExOdqNR?authentication_hash=RBMOJWNxBBjk'"> Mapa de sitio </i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fa fa-suitcase" aria-hidden="true" onclick="https://cdpn.io/pen/debug/ExOdqNR?authentication_hash=RBMOJWNxBBjk'"> Xiiber </i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fas fa-chess-queen" aria-hidden="true" onclick="document.location='index.html'"> Dragvesti </i>
+        <i><p></p></i> <i><p></p></i>
+        <i class="fas fa-envelope-open-text" onclick="https://cdpn.io/pen/debug/ExOdqNR?authentication_hash=RBMOJWNxBBjk'"> Productos y Servicios </i>
+        <i><p></p></i> <i><p></p></i>
+        <i><p></p></i> <i><p></p></i>
+        <i><p></p></i> <i><p></p></i>
+    </div>
+  
 
+   <div id="Extras" class="iTab w3-container" style="display:none; z-index:99999;   min-height: 94vh;      height: 100hv;   overflow-y: auto;   width:100%;       margin:0;       top:0;       botton:0;;">
+               <style>
+    .iframe-search{ min-height: 94vh;
+      height: 100hv;
+  overflow-y: auto;
+    width:100%;
+      margin:0;
+      top:0;
+      botton:0;
+    }</style>
+    
+               <span onclick="openiTab('Search')" style="position: fixed;top: 30px; right: 30px; display: block; z-index: 100; transition: all 250ms linear;"> cerrar </span>
+                <iframe width="100%" height="94vh" name="view" src="" frameborder="0" allowfullscreen style="border-radius: 0px;   background: #c8c6dc;box-shadow: inset -20px 20px 43px #a09eb0,inset 20px -20px 43px #f0eeff; " class="iframe-search"></iframe>
+             </div>
+   <main class="page-post"> 
+        <div class="scrollmenu-post" class="w3-container w3-white w3-margin">
+            <div id="myBtnContainer" class="w3-container w3-white w3-margin w3-padding ">
+                <button class="btn-filter" onclick="filterSelection('all')"> <strong>Ver todo</strong></button>
+                <button class="btn-filter" onclick="filterSelection('css-post')"> CSS</button>
+                <button class="btn-filter" onclick="filterSelection('desing-post')"> Desing</button>
 
-        <div class="ScrollFadeOutText">
+                <button class="btn-filter" onclick="filterSelection('apps-post')"> Apps</button>
+                <button class="btn-filter" onclick="filterSelection('proyectos-post')"> Proyectos</button>
+                <button class="btn-filter" onclick="filterSelection('game-post')"> Game</button>
+                <button class="btn-filter" onclick="filterSelection('error404-post')"> Error 404!</button>
+
+                <button class="btn-filter" onclick="filterSelection('REcurado')"> (Re)desing [Curado]</button>
+                <button class="btn-filter" onclick="filterSelection('dragonBall-post')"> Dragon Ball</button>
+                <button class="btn-filter" onclick="filterSelection('dragQueen-post')"> Drag Queen</button>
+                <button class="btn-filter" onclick="filterSelection('2022-post')"> 2022</button>
+                <button class="btn-filter" onclick="filterSelection('2023-post')"> 2023</button>
+            </div>         
+        </div>
+        <!-- Es el fade de texto, por el momento sin uso --> <!--div class="ScrollFadeOutText">
             <style>
                 @supports ((-webkit-background-clip: text) or (background-clip: text)) {
                     .faded-text {
@@ -330,780 +450,923 @@
                     }
                 }
             </style>
-
             <div class="faded-text">
             </div>
-            <!-- finaliza <div class="faded-text">  -->
+          </div-->
+        <div class="searchable"><br><br><br><br><br><br>     
+            <!--
+https://www.xbr.pw//assets/css/hi/countdown/dist/index.html
+https://www.w3schools.com/howto/howto_css_disable_text_selection.asp
+https://blog.imagekit.io/how-to-manage-an-image-heavy-website-23d1f75bc8bb
+https://blog.imagekit.io/image-seo-the-comprehensive-guide-for-better-ranking-images-221dec590882
+https://blog.codinghorror.com/the-2030-self-driving-car-bet/
+
+
+
+https://crece.withgoogle.com/intl/es_mx/certificates/?utm_source=HPP&utm_medium=Owned&utm_campaign=Certs_LATAM
+https://www.xbr.pw//assets/css/hey/justo-estudiando/index.html 
+https://cosm.ws/
+https://set.studio/
+https://apps-para-hacer-la-vida-mas-facil.hashnode.dev/
+https://www.abubakersaeed.com/
+
+https://xbrpw.github.io/2023/3/neumorphic-elements/dist/index.html
+https://chilipepper.notion.site/Terms-of-Use-e8ee179053a043f3b47890714045365b
+
+
+https://www.hirist.com/login
+https://xbrpw.github.io/teclado/abc
+https://xbrpw.github.io/teclado/index.html
+https://www.xbr.pw//assets/css/hey/card.html
+https://xbrpw.github.io/img/marcas/colum-gallery-big%20-%20copia.html
+
+On a mission to help 1 million people start building with AI.
+Made by hand in over 125 cities around the world.
+https://www.xbr.pw/adivina-quien/index.html
+https://app.simplenote.com/p/zmcrwl
+https://www.xbr.pw/galeria-de-fotos/gallery-example/gallery-example/dist/index.html
+https://www.xbr.pw/galeria-de-fotos/photo-nex-pre/index.html
+https://www.xbr.pw/galeria-de-fotos/scroll/index.html
+https://xbrpw.github.io/2023/7/nom-dia-horoscopo-vue-input-preview/a.html
+https://xbrpw.github.io/2023/7/mobile-friendly-form-elements-login/index.html
+https://www.producthunt.com/collections/8-ai-tools-for-better-meetings?ref=hpfeed?utm_source=messenger&utm_medium=messenger&utm_campaign= 
+https://www.xbr.pw/assets/css/hi/vibrate-api/index.html#
+http://www.kitjenson.com/
+
+ https://joshguo.space/Contact
+https://www.10xdesigners.co/home
+
+https://chrisyee.ca/blog/lg-4k-monitor-review/      
+                                                                                    
+                            https://xbrpw.github.io/fans/device-detector/dist/index.html
+https://www.xbr.pw//assets/css/hey/card.html
+https://www.xbr.pw//assets/css/hi/password-toggle-microinteraction/dist/index.html
+                            -->
+            <div id="iTabName-iTab" class="container-filter faded-text">
+              <div class="w3-container w3-padding w3-center w3-centered w3-white common-post">  
+              <input type="text" autofocus placeholder=" 🔍 Buscar ..." style=" width: 100%; height: 40px;"/>
+              </div>
+              <div class="w3-bar w3-black w3-xxlarge w3-hide">
+                  <button class="w3-bar-item w3-black w3-xlarge w3-responsive w3-margin w3-hide" onclick="openiTab('Search')">Login</button>
+                  <button class="w3-bar-item w3-black w3-xlarge w3-responsive w3-margin w3-right w3-hide" onclick="openiTab('Extras')">Extras</button>
+              </div>
+              <div id="Search" class="iTab">
+                <div id="myLISTADO" class="my-list ">  
+                <ul class="w3-ul">    
+                  <li class="listado searchable-item   post-info filterDiv all desing-post proyectos-post" onclick="openiTab('Extras')">
+                    <div class="" style="line-height:18px;">
+                      <span>
+                <p style="font-size:14px"><b>desing</b> <span style="color:grey">| 10 marzo 2023</span></p>
+                <h1 style="line-height:24px; font-size:26px"><strong>Glyps</strong><br>
+                <span style="line-height:20px; font-size:18px; font-weight: 100;">
+                  <a href="https://luisangelmaciel.github.io/glyphs/animales/demo.html" target="view" title="container-rainbow">Glyps Animales</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/banderas/demo.html" target="view" title="container-rainbow">Glyps Banderas</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/banderas.html" target="view" title="container-rainbow">Glyps Banderas</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/como-te-sientes-hoy/como-que-quiero-llorar.svg" target="view" title="container-rainbow">Glyps Como te sientes hoy</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/google-calendar-2020/cal_01_v2.png" target="view" title="container-rainbow">Glyps  Google Calendar</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/horoscope/demo.html" target="view" title="container-rainbow">Glyps Horosccopo</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/mexico/demo.html" target="view" title="container-rainbow">Glyps México </a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/mexico.html" target="view" title="container-rainbow">Glyps  México</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/pago/demo.html" target="view" title="container-rainbow">Glyps Pago</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/pago.html" target="view" title="container-rainbow">Glyps Pago</a><br>
+                  <a href="https://luisangelmaciel.github.io/glyphs/siluetas/Siluetas-Glyphs-Demo.html" target="view" title="container-rainbow">Glyps Siluetas</a><br>
+                </span> 
+                </h1>                  
+                <p style="font-size:14px; color:grey" class="w3-hide><b>Lighthouse: </b> <span style=""> 100 | 100 | 100 | 83 </span></p>
+              </span>
+                  </div>
+                </li>                              
+        <li class="listado searchable-item activeli  post-info filterDiv all REcurado" onclick="openiTab('Extras')">
+            <div class="" style="line-height:18px;">
+              <a href="https://luisemoji.github.io/batman/index.html" target="view" title="container-rainbow">
+        <p style="font-size:14px"><b>desing</b> <span style="color:grey">| 10 marzo 2023</span></p>
+        <h1 style="line-height:24px; font-size:26px"><b>Batman</b><br>
+        <span style="line-height:20px; font-size:18px; font-weight: 100;">Re(desing)[Curado]</span>      
+        </h1>
+        <p style="font-size:14px; color:grey"><b>Lighthouse: </b> <span style=""> 100 | 100 | 100 | 83 </span></p>
+              </a>
+          </div>
+        </li>  
+        <li class="listado searchable-item activeli  post-info filterDiv all REcurado w3-hide" onclick="openiTab('Extras')">
+          <div class="" style="line-height:18px;">
+            <a href="" target="view" title="container-rainbow">
+      <p style="font-size:14px"><b>imput</b> <span style="color:grey">| 10 marzo 2023</span></p>
+      <h1 style="line-height:24px; font-size:26px"><b>Pokemon Friends</b><br>
+      <span style="line-height:20px; font-size:18px">Diseño curado</span>      
+      </h1>
+      <p style="font-size:14px; color:grey"><b>Lighthouse: </b> <span style=""> 99 | 94 | 100 | 67</span></p>
+            </a>
         </div>
-
-        <div class="container-filter faded-text"><br><br>
-
-            <div class="post-info filterDiv all css-post desing-post  ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-1.svg" width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Menu drageable with modal. HTML, JavaScript & CSS </b> </span>
-                            <br><span class="hpost-span-text "> Código CSS de un menu que se puede desplazar por la pantalla.   </span>
-                            <a href="https://codepen.io/luisangelmaciel/pen/jOZROGO " target="_blank" title="Menu drageable with modal. HTML, JavaScript & CSS " aria-label="Menu drageable with modal. HTML, JavaScript & CSS "><span class="a-post ">Ver código en Codepen</span></a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all 2022-post proyectos-post desing-post ">
-                <div style=" display: flex; ">
-                    <img src="img/tamales.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Pida sus ricos Tamales. </b> </span>
-                            <br><span class="hpost-span-text "> De Rajas, Cremino, Mole con pollo, Bombones y el nuevo sabor de Bubulubu. </span>
-                        </h3>
-                        <div class="h-post ">
-                            <span class="hpost-span-text "> Este proyecto de tamales es un negocio familiar.  </span>
-                            <a href=" https://luisangelmaciel.github.io/pdf/tamales-tabloide.pdf" target="_blank"><span class="a-post ">Haz tu pedido.</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="post-info filterDiv all 2022-post proyectos-post desing-post apps-post dragonBall-post dragQueen-post">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-3.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Stickers para whatsapp.</b> </span>
-                            <br><span class="hpost-span-text ">   Disponible en SVG, listos para crear en Whatsapp Web. </span>
-                        </h3>
-                        <div class="h-post ">
-                            <span class="hpost-span-text "> Lo importante de este templete es la visualización de las galerias de imagenes en forma de carrusel con solo abrir una imagen </span>
-                            <a href=" https://luisangelmaciel.github.io/stickers-para-whatsapp " target="_blank"><span class="a-post ">En proceso</span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="post-info filterDiv all proyectos-post desing-post 2022-post">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Formato</b> </span>
-                            <br><span class="hpost-span-text ">  Orden de compra para LAMP! Diseño en CorelDraw </span>
-                            <a href=" https://luisangelmaciel.github.io/pdf/orden de compra.pdf " target="_blank"><span class="a-post ">Descargar PDF</span></a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <br>
-
-            <div class="post-info filterDiv all 2022-post desing-post">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-1.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>La creatividad te hace brillar.</b> </span>
-                            <br><span class="hpost-span-text ">  Haz que tu creatividad funcione. </span>
-                            <a href=" https://luisangelmaciel.github.io/2022/la-creatividad-te-hace-brillar-Haz-que-tu-creatividad-funcione.html " target="_blank"><span class="a-post ">Notas de un curso de In-store Media, 2016</span></a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all css-post ">
-                <div style="display: flex; ">
-                    <img src="img/lamp-3.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Toxel CSS</b> </span>
-                            <br><span class="hpost-span-text ">  He agregado un nuevo estilo llamado color-rainbow. Hace que cada 3 segundos, cambie de color. </span>
-                            <a href=" https://luisangelmaciel.github.io/Toxel "><span class="a-post ">Con @-moz-keyframes y @-webkit-keyframes</span></a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-            <div class="post-info filterDiv all apps-post proyectos-post game-post css-post dragonBall-post dragQueen-post ">
-                <div style=" display: flex; ">
-                    <img src="img/favicon-luisemoji.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>   A todos nos gusta recordar los viejos tiempos. </b> </span>
-                            <br><span class="hpost-span-text ">      A todos nos gusta recordar los viejos tiempos. Pero si lo que queremos es avanzar, es necesario dejar a un lado la nostalgia digital. La creatividad, estrategia, métricas, análisis y experiencia, es lo que impulsará tu proyecto al logro de sus objetivos.
-                                Justo lo que tengo para ofrecerte. Contactame</span>
-                            <a rel="noreferrer noopener " href="https://luisemoji.github.io/viborita/ " target=" _blank " title="Jugar ahora " aria-label=" Match game ">
-                                <span class="a-post "> Juego de la viborita </span>
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="filterDiv all proyectos-post desing-post ">
-                <div class="flex border-b border-solid ">
-                    <div class="w-1/8 text-right pl-3 ">
-                        <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                        <div>
-                            <img src="img/favicon-luisemoji.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                        </div>
-                    </div>
-                    <div class="w-7/8 p-3 pl-0 ">
-                        <div class="text-xs text-grey-dark ">Proyecto</div>
-                        <span class="hpost-span "> <b>@LuisEmoji</b> </span>
-                        <br><span class="h-postx ">  Página que realice para elaborar unas prácticas de código HTMl y juegos clásicos como La viborita
-                                        y un Match. En diseño algo de Batman, Pokemon, Minion. </span>
-                        <a href="https://luisemoji.github.io/ " target="_blank " title=" @LuisEmoji " aria-label=" @LuisEmoji "><span class="a-post ">Web</span></a>
-                        <img src="https://luisemoji.github.io/img/og-image.webp " alt="tweet image " loading="lazy lazyload " class="lazy responsive_imagepost  ">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post game-post ">
-                <div style=" display: flex; ">
-                    <img src="img/favicon-luisemoji.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Match game  </b> </span>
-                            <br><span class="hpost-span-text ">   <i>Gaymer Vintage.</i> ¿Te consideras buen observador? Encuentra la mayor combinación de parejas en tan sólo 30 segundos. </span>
-                            <a rel="noreferrer noopener " href="https://luisemoji.github.io/emoji-match-game/ " target="_blank " title="Jugar ahora " aria-label=" Match game ">
-                                <span class="a-post "> Jugar ahora</span>
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post game-post ">
-                <div style=" display: flex; ">
-                    <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> ¿Qué tan rápido eres en el touch? </b> </span>
-                            <br><span class="hpost-span-text ">   Ponte a prueba y haz llover emojis de tu pantalla. </span>
-                            <a rel="noreferrer noopener " href="https://luisemoji.github.io/anda-tocale-aqui/ " target="_blank " title="¿Qué tan rapido eres en el touch? " aria-label="¿Qué tan rapido eres en el touch? ">
-                                <span class="a-post "> Haz la prueba aquí.</span>
-                            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post game-post ">
-                <div style=" display: flex; ">
-                    <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  El juego de la viborita </b> </span>
-                            <br><span class="hpost-span-text ">   Un clásico que no puede faltar (juego con teclado). </span>
-                            <a rel="noreferrer noopener " href=" https://luisemoji.github.io/viborita/ " target="_blank " title="El juego de la viborita " aria-label="El juego de la viborita "><span class="a-post " > Jugar</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post css-post ">
-                <div style=" display: flex; ">
-                    <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Ho-oh, HTML Vibrate API</b> </span>
-                            <br><span class="hpost-span-text ">  Es una app que funciona para todos los dispositivos móviles con vibrador. Son 7 tipos de vibraciones disponibles. Me alegra ser parte del directorio <i>rePokemon.</i> En la lista Ho-Oh es el Pokémon número 250.</span>
-                            <a href="https://luisangelmaciel.github.io/Ho-Oh " rel="noreferrer noopener "><span class="a-post "  target="_blank " title="Hazlo vibrar " aria-label=" Directorio de contactos "> Hazlo vibrar</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="filterDiv all proyectos-post desing-post apps-post css-post ">
-                <div class="flex border-b border-solid ">
-                    <div class="w-1/8 text-right pl-3 ">
-                        <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                        <div>
-                            <img src="img/favicon-Igglybuff.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                        </div>
-                    </div>
-                    <div class="w-7/8 p-3 pl-0 ">
-                        <div class="text-xs text-grey-dark ">App</div>
-                        <span class="hpost-span "> <b>iGglybuff</b> </span>
-                        <br><span class="h-postx "> Diseños que he realizado y decidí agruparlos para poder ser utilizados como svg,icons,font & glyph.  </span>
-                        <a href="https://luisangelmaciel.github.io/Igglybuff " target="_blank " title=" Igglybuff " aria-label=" Igglybuff "><span class="a-post ">Descargar</span></a>
-                        <img src="img/iGglybuff-app.webp" alt="Igglybuff" loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post css-post ">
-                <div style=" display: flex; ">
-                    <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Ho-oh, HTML Vibrate API</b> </span>
-                            <br><span class="hpost-span-text ">  Es una app que funciona para todos los dispositivos móviles con vibrador. Son 7 tipos de vibraciones disponibles. Me alegra ser parte del directorio <i>rePokemon.</i> En la lista Ho-Oh es el Pokémon número 250.</span>
-                            <a href="https://luisangelmaciel.github.io/Ho-Oh " rel=" noreferrer noopener "><span class="a-post "   target="_blank " title="Hazlo vibrar " aria-label=" Directorio de contactos "> Hazlo vibrar</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="filterDiv all proyectos-post desing-post apps-post css- ">
-                <div class="flex border-b border-solid ">
-                    <div class="w-1/8 text-right pl-3 ">
-                        <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                        <div>
-                            <img src="img/favicon-xurkitree.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                        </div>
-                    </div>
-                    <div class="w-7/8 p-3 pl-0 ">
-                        <div class="text-xs text-grey-dark ">App</div>
-                        <span class="hpost-span "> <b>Propuesta Linktree</b> </span>
-                        <br><span class="h-postx "> Propuesta de diseño tipo linktree, nombrada <i>Hi.</i> Me sirvió como base para hacer el diseño de la propuesta final. El css es de tailwind, el minc.css estaba super pesado y lighthouse pedía reducirlo, pero ni uncss pudo
-                            reducirlo. Así que tuve que recortar por partes   </span>
-                        <a href="https://luisangelmaciel.github.io/hi " target="_blank " title=" Propuesta tipo linktree, nombrada hi " aria-label=" tipo linktree, nombrada hi "><span class="a-post ">todo el código hasta que al fin logre compactarlo en la versión final de esta página.</span></a>
-                        <img src="img/xurkitree.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-info filterDiv all apps-post proyectos-post css-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Directorio de contactos</b> </span>
-                            <br><span class="hpost-span-text "> Práctica para creación de formularios. </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/directorio-de-contactos  " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Agregar contacto </span></a>
-                        </h3><br>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all desing-post css-post proyectos-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> eBooks </b> </span>
-                            <br><span class="hpost-span-text ">  Códigos HTML, CSS y Java </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/ebooks " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post "> Descargar</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all desing-post css-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> One </b> </span>
-                            <br><span class="hpost-span-text ">  Códigos HTML, CSS y Java </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/one/ " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post " > Ver propuesta</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-info filterDiv all css-post proyectos-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Práctica <i>fcc-survey-form</i> </b> </span>
-                            <br><span class="hpost-span-text ">  Para acreditar el certificado de Free Code Camp</span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/freecodecamp/fcc-survey-form/ " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post " > Ver formulario</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all desing-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> Arte digital </b> </span>
-                            <br><span class="hpost-span-text "> También es arte, he aquí una<i> galería </i>de trazos digitales. </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/art " target="_blank " title="Galería de arte digital " aria-label=" Galería de arte digital "></a>><span class="a-post " Visitar</span> </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all proyectos-post ">
-                <div style=" display: flex; ">
-                    <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> Calculadora Pokémon </b> </span>
-                            <br><span class="hpost-span-text "> Servía antes de 2021, pero con tanto cambio en la app del juego, queda nula la fórmula. </span>
-                            <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/calculadora.pokemon " target="_blank " title="Calculadora Pokémon. " aria-label=" Calculadora Pokémon. "><span class="a-post "  > Usar calculadora</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all desing-post proyectos-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  Agenda checklist </b> </span>
-                            <br><span class="hpost-span-text "> Estoy diseñando una agenda check list. El objetivo de la agenda es formar hábitos. </span>
-                            <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/checklist " target="_blank " title="Checklist. Agenda para hábitos " aria-label="Check list "><span class="a-post "  > Ver proceso</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-info filterDiv all desing-post proyectos-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  La casa del Ángel </b> </span>
-                            <br><span class="hpost-span-text "> Club </span>
-                            <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/la-casa-del-angel " target="_blank " title="Efectos de animación " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <div class="post-info filterDiv all css-post desing-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> Práctica de ocio que quedo al 100% en Lighthouse </b> </span>
-                            <br><span class="hpost-span-text "> Este fue el diseño que me inspiró para la animación de mi fondo de pantalla. El reto en este proyecto era la optimización de imágenes y animación.  </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/avengers-in-3d/fork/ " target="_blank " title="Efectos de animación " aria-label="Niiha Villant "><span class="a-post " > Ver proyecto mejorado</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all css-post 2022-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>   Template </b> </span>
-                            <br><span class="hpost-span-text "> Curriculum  </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/curriculum/ " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all css-post desing-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>  En modo </b> </span>
-                            <br><span class="hpost-span-text "> Template </span>
-                            <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/en.modo/ " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-            <div class="post-info filterDiv all proyectos-post desing-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b> La magia de la herbolaria</b> </span>
-                            <br><span class="hpost-span-text "> Diseño de logotipo </span>
-                            <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/la-magia-de-la-herbolaria " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Utilizar templete</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="post-info filterDiv all css-post dragQueen-post ">
-                <div style=" display: flex; ">
-                    <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                    <div class="text-post ">
-                        <h3 class="h-post ">
-                            <span class="hpost-span "> <b>Memes</b> </span>
-                            <br><span class="hpost-span-text "> RuPaul's Drag Race</span>
-                            <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/memes " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Utilizar templete</span>            </a>
-                        </h3>
-                    </div>
-                </div>
-            </div>
-
-
-            <div>
-
-                <div class="post-info filterDiv all apps-post desing-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>   Glyps</b> </span>
-                                <br><span class="hpost-span-text "> Rediseño de las estaciones de metro con el arte de Pokémon </span>
-                                <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/glyphs/pago.html " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span>            </a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="filterDiv all apps-post proyectos-post desing-post ">
-                    <div class="flex border-b border-solid ">
-                        <div class="w-1/8 text-right pl-3 ">
-                            <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                            <div>
-                                <img src="img/lamp-2.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                            </div>
-                        </div>
-                        <div class="w-7/8 p-3 pl-0 ">
-                            <div class="text-xs text-grey-dark ">App</div>
-                            <span class="hpost-span "> <b>Font Name Wow awesome!</b> </span>
-                            <br><span class="h-postx ">  Font Name:  </span>
-                            <a href="https://hihellomonster.github.io/wow.awesome/ " target="_blank " title=" Font Name: Wow awesome! " aria-label="Niiha Villant "><span class="a-post "> Wow awesome!</span></a>
-                            <img src="img/WOWwow-awesome.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all proyectos-post desing-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Metro Pokémon</b> </span>
-                                <br><span class="hpost-span-text "> Rediseño de las estaciones de metro con el arte de Pokémon </span>
-                                <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/metro-pokemon " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span>
-                    </a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all proyectos-post desing-post apps-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Mode multicolor</b> </span>
-                                <br><span class="hpost-span-text "> mode.multicolor </span>
-                                <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/metro-pokemon " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all proyectos-post desing-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Mom's Pizzas</b> </span>
-                                <br><span class="hpost-span-text "> Creación de diseño de logotipo y página web </span>
-                                <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/moms.pizzas " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all proyectos-post desing-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Papercraft</b> </span>
-                                <br><span class="hpost-span-text "> papercraft </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/papercraft " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Ver </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all proyectos-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Snackstore </b> </span>
-                                <br><span class="hpost-span-text "> pause.idea </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/pause.idea/snackstore " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Ver </span></a>
-                            </h3><br>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="filterDiv all proyectos-post desing-post apps-postapps-post ">
-                    <div class="flex border-b border-solid ">
-                        <div class="w-1/8 text-right pl-3 ">
-                            <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                            <div>
-                                <img src="img/favicon-luisemoji.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                            </div>
-                        </div>
-                        <div class="w-7/8 p-3 pl-0 ">
-                            <div class="text-xs text-grey-dark ">App</div>
-                            <span class="hpost-span "> <b>Pokerangers</b> </span>
-                            <br><span class="h-postx ">  Pokemon + Power Rangers  </span>
-                            <a href="https://luisangelmaciel.github.io/pokerangers " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post ">+ Power Rangers</span></a>
-                            <img src="img/pokerangers.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all proyectos-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>  Pride </b> </span>
-                                <br><span class="hpost-span-text "> Pride</span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/pride " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Ver </span></a>
-                            </h3><br>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="filterDiv all proyectos-post desing-post apps-post dragonBall-post proyectos-post ">
-                    <div class="flex border-b border-solid ">
-                        <div class="w-1/8 text-right pl-3 ">
-                            <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                            <div>
-                                <img src="img/avatar-esfera-4-estrellas.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                            </div>
-                        </div>
-                        <div class="w-7/8 p-3 pl-0 ">
-                            <div class="text-xs text-grey-dark ">Proyecto</div>
-
-
-                            <span class="hpost-span "> <b>Random Quotes </b> </span>
-                            <br><span class="h-postx ">  Inspirados en Goku de Dragon Ball. </span>
-                            <a href="https://hihellomonster.github.io/dragon.ball/ " target="_blank " title=" Propuesta tipo linktree, nombrada hi " aria-label=" tipo linktree, nombrada hi "><span class="a-post ">Jugar</span></a>
-
-                            <img src="img/goku-frases.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="filterDiv all proyectos-post desing-post apps-post game-post ">
-                    <div class="flex border-b border-solid ">
-                        <div class="w-1/8 text-right pl-3 ">
-                            <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
-                            <div>
-                                <img src="img/avatar-esfera-4-estrellas.svg  " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
-                            </div>
-                        </div>
-                        <div class="w-7/8 p-3 pl-0 ">
-                            <div class="text-xs text-grey-dark ">Game</div>
-                            <span class="hpost-span "> <b>Goku salvanos de Moro.</b> </span>
-                            <br><span class="h-postx ">El arte del juego está inspirado en la última entrega de Dragon Ball Super.   </span>
-                            <a href="https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/ " target="_blank " title=" Igglybuff " aria-label=" Igglybuff "><span class="a-post ">Jugar</span></a>
-                            <img src="img/goku-game.webp " alt="Igglybuff" loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-                <div class="post-info filterDiv all dragonBall-post css-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Download Font  </b> </span>
-                                <br><span class="hpost-span-text "> & Live Preview Saiyan-Sans </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dragon.ball/download-font-and-live-preview/ " target="_blank " title="download-font-and-live-preview " aria-label="Loader "><span class="a-post " > Ir </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all dragonBall-post ">
-                    <div style=" display: flex; ">
-                        <img src="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/img/vegeta-sayayin.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Práctica fcc-tribute-page de Vegeta de Dragon Ball </b> </span>
-                                <br><span class="hpost-span-text "> Para acreditar el certificado de Free Code Camp. </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/ " target="_blank " title="fcc-tribute-page " aria-label=" Download font and live preview "><span class="a-post "> "Ya
-                                estoy harto de tu generosidad, sabandija estúpida " Vegeta a Goku en el Arco de Freezer </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all css-post dragonBall-post proyectos-post ">
-                    <div style=" display: flex; ">
-                        <img src="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/img/vegeta-red.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Vegeta Sayayin Colors CSS </b> </span>
-                                <br><span class="hpost-span-text "> Sencillo pero bonito.  Ejemplo con el icon de Vegeta de Dragon Ball. Cambio de colores con amarillo, azul y rojo, Sayayin, Sayayin dios y super Sayayin Dios. </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/Vegeta-Sayayin-Colors " target="_blank " title="Download font and live preview " aria-label=" Download font and live preview
-                                "><span class="a-post "> Uso de fill, transition & hover para un sgv. </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all css-post dragonBall-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Loader </b> </span>
-                                <br><span class="hpost-span-text "> Con logotipo de Dragon Ball Super </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dragon.ball/loader/ " target="_blank " title="Loader " aria-label="Loader "><span class="a-post "> Ver </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all css-post dragonBall-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Super Slider CSS </b> </span>
-                                <br><span class="hpost-span-text "> De Vegeta de Dragon Ball al estilo El gran torneo, solo que con las diferentes evoluciones de Vegeta. </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/dragon-ball-super-slider-css-only " target="_blank " title="Super Slider CSS Only " aria-label=" Download font and live preview
-                                "><span class="a-post "> Forma parte de la práctica de Free Code Camp. </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all dragQueen-post css-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Drag Queen Lennox Gyarada </b> </span>
-                                <br><span class="hpost-span-text ">   Ganadora de Dragvesti 2da temporada. </span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/lennox-gyarada/ " target="_blank " title="Lennox Gyarada " aria-label=" Lennox Gyarada "><span class="a-post "> Propuesta </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all dragQueen-post css-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Drag Queen Dalila Velvet, </b> </span>
-                                <br><span class="hpost-span-text ">   la perra más alta de Colombia. Miss Web de Dragvesti 1ra temporada, participante de Dragvesti All Stars. Host de Dragvesti Colombia</span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dalilavelvet/ " target="_blank " title=" Dalila Velvet, drag queen " aria-label=" Dalila Velvet, drag queen "><span class="a-post "> Propuesta de diseño tipo linktree. </span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all dragQueen-post css-post desing-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/las-brujas-del-poder.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Las brujas del poder. </b> </span>
-                                <br><span class="hpost-span-text ">  Video y logotipo  que hice para la obra de Alfredo Sanchez en el Teatro Hipódromo Condesa. Con Pika Demian Argenina Andrews Titania Monster y un gran elenco.</span>
-                                <a rel="noreferrer noopener " href="https://www.facebook.com/DragvestiMX/videos/1340621549323413/ " target="_blank " title=" Brujas del Poder " aria-label="Brujas del Poder "><span class="a-post "> Ver  video</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all dragQueen-post css-post ">
-                    <div style=" display: flex; ">
-                        <img src="img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Drag Queen Becky D´Vich</b> </span>
-                                <br><span class="hpost-span-text ">  Runner up de Dragvesti 2da temporada y Ganadora de la 1ra temporada Dragvesti All Stars.</span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/beckydvich/ " target="_blank " title="Becky D´Vich, drag queen " aria-label="Becky D´Vich, drag queen "><span class="a-post "> Propuesta de diseño tipo linktree, basado en un carrusel de fotos.</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="post-info filterDiv all dragQueen-post css-post proyectos-post ">
-                    <div style="display: flex; ">
-                        <img src="img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Drag Queen Iris XC Queen</b> </span>
-                                <br><span class="hpost-span-text ">  Ganadora de Dragvesti 1ra temporada y host de Dragvesti En Vivo Chihuahua</span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/irisxcqueen/ " target="_blank " title="Iris XC Queen " aria-label=" Iris XC Queen "><span class="a-post ">Web</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="post-info filterDiv all dragQueen-post css-post ">
-                    <div style="display: flex; ">
-                        <img src="img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
-                        <div class="text-post ">
-                            <h3 class="h-post ">
-                                <span class="hpost-span "> <b>Drag Queen  Niiha Villant</b> </span>
-                                <br><span class="hpost-span-text ">  Ganadora de Dragvesti 2da temporada All Stars</span>
-                                <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/niihavillant/ " target="_blank " title="Niiha Villant " aria-label="Niiha Villant "><span class="a-post ">Name CSS</span></a>
-                            </h3>
-                        </div>
-                    </div>
-                </div>´
-                <br>
-                <center>
-                    <div onclick="typeWriter() " style=" color: #374953; ">
-                        Hecho con <span style="color: red; " class="shake ">❤</span> y mucho código <small> <p id="powered "onclick="document.location='index.html#TeAyudo' "> </p> </small>
-                    </div>
-                </center>
-            </div>
-
-
+        </li>                    
+        <li class="listado searchable-item  post-info filterDiv all css-post" onclick="openiTab('Extras')"><a href=" " target="view" title=" "> </a></li> 
+        <li class="listado searchable-item  post-info filterDiv all css-post proyectos-post" onclick="openiTab('Extras')"><a href=" https://xbrpw.github.io/1596/dist/index.html " target="view" title=" "> Entradas 1596</a></li> 
+        <li class="listado searchable-item  post-info filterDiv all apps-post" onclick="openiTab('Extras')"><a href=" https://www.xbr.pw/go/api/extrae-color/index.html " target="view" title="Extractor de color "> Extractor de color</a></li> 
+        <li class="listado searchable-item  post-info filterDiv all css-post proyectos-post" onclick="openiTab('Extras')"><a href=" https://xbrpw.github.io/2023/pro/index.html#loginind " target="view" title="Login morado  "> Login morado </a></li> 
+        <li class="listado searchable-item  post-info filterDiv all css-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/eso/dashboard/2022/01/index.html " target="view" title="Solicitud de dominio ">Solicitud de dominio </a></li> 
+        <li class="listado searchable-item  post-info filterDiv all css-post" onclick="openiTab('Extras')"><a href="https://www.xbr.pw/assets/css/hi/2024//index.html" target="view" title="Calendario de eventos ">Calendario de eventos </a></li> 
+            <li class="listado searchable-item  post-info filterDiv all css-post" onclick="openiTab('Extras')"><a href="https://codepen.io/helloluis/full/yLaxmmP" target="view" title="Redes sociales">Redes sociales</a></li> 
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href=" https://xbrpw.github.io/short-url/404s/sencilla.html" target="view" title=".container-rainbow">404-error-page Sencilla</a></li> 
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/this-page-does-not-exist/index.html" target="view" title=".container-rainbow">404 error page</a></li> 
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/milk-carton/dist/index.html" target="view" title=".container-rainbow">404 error page Milk carton</a></li> 
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/homero-y-sus-rosquillas/index.html" target="view" title=".container-rainbow">404 error page Homero y sus rosquillas</a></li>
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/fullscreen-win-8-bsod-prank-with-js-fullscreen-api/dist/index.html" target="view" title=".container-rainbow">404 error page</a></li>
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/forest-encounter/index.html" target="view" title="404 error page OVNI Grabando">404 error page OVNI Grabando</a></li>
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/chicas-super-poderosas/index.html" target="view" title="404 error page Chicas Superpoderosas">404 error page - Chicas Superpoderosas</a></li>
+               <li class="listado searchable-item  post-info filterDiv all error404-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/404s/404-tittle-not-found-/index.html" target="view" title="404 error page not found">404 error page - Not found</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2022-post game-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/2022/abre-tu-regalo-de-navidad/index.html" target="view" title="abre-tu-regalo-de-navidad">Abre tu-regalo-de-navidad</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2022-post"  onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/2022/regalo-navideño/index.html" target="view" title="Regalo Navideño">Regalo Navideño</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2022-post desing-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/2022/No-te-deseo-una-feliz-navidad/index.html" target="view" title="No-te-deseo-una-feliz-navidad/">No-te-deseo-una-feliz-navidad</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2022-post proyectos-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/2022/halloween-monster/dist/index.html" target="view" title="Hallowen Monster">Envia un monster en este Hallowen</a></li>
+               <li class="listado searchable-item  post-info filterDiv all css-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/2022/flashlight-effect/dist/index.html" target="view" title="Flashlight Effect">Flashlight Effec, descubre el mensaje</a></li>
+               <li class="listado searchable-item  post-info filterDiv all desing-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/alllinks/index.html" target="view" title="All links (Link trhe option)">All links (Link trhe option)</a></li>
+               <li class="listado searchable-item  post-info filterDiv all game-post desing-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/adivina-quien/index.html" target="view" title="Adivina Quién">Adivina Quién</a></li>
+               <li class="listado searchable-item  post-info filterDiv all game-post desing-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/meow-piano/index.html" target="view" title="Meow-piano">Meow piano</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/autor-rainbow-card/index.html" target="view" title="autor-rainbow-card">Autor rainbow card</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/card/fullpage-bgimage.html" target="view" title="fullpage-bgimage">Fullpage background image</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/index.html" target="view" title="Author/index.html">Author index</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io//short-url/author/card/index.html" target="view" title="card">Author card</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/texto-blanco-negro/index.html" target="view" title="texto-blanco-negro">Texto blanco &  negro</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post dragonBall-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io//short-url/author/sombra-efecto-ejemplo-goku/index.html" target="view" title="Sombra-efecto-ejemplo-goku">Sombra efecto ejemplo Goku</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/lamp/index.html" target="view" title="Lampara de escritorio">Lámpara de escritorio</a></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io/short-url/author/buuble/index.html" target="view" title="Buuble/">Buuble</a searchable-item></li>
+               <li class="listado searchable-item  post-info filterDiv all 2023-post" onclick="openiTab('Extras')"><a href="https://xbrpw.github.io//short-url/author/luisangelmaciel.html" target="view" title="author/luisangelmaciel">Autor</a></li>                 
+               <li class="listado searchable-item  post-info filterDiv all game-post desing-post" onclick="openiTab('Extras')"><a href="https://luisangelmaciel.github.io/yicel/index.html" target="view" title="Yicel">Yicel</a></li>                              
+          </ul>
+          <div class="SAVE">
+                  <div class="searchable-item post-info filterDiv all css-post">
+                      <div style="display: flex;"  class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://luisemoji.github.io/anda-tocale-aqui/index.html"  target="_blank" title="Anda, tócale aquí"  aria-label="Anda, tócale aquí"><span class="hpost-span "> <b>Anda, tócale aquí</b> </span> <span><small style="color:grey">8 junio 2013</small></span><br><span class="hpost-span-text ">  
+     Lighthouse: 94 100 100 91 
+       </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>           
+                  <div class="searchable-item post-info filterDiv all css-post">
+                      <div style="display: flex;"  class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="#ValorAnteTodo"  target="_blank" title="Loader name"  aria-label="Loader name"><span class="hpost-span "> <b>Valor ante todo</b> </span> <span><small style="color:grey">8 junio 2013</small></span><br><span class="hpost-span-text ">  
+      Valor es una palabra siempre presente en el espíritu del emprendedor y del empresario. Se necesita valor, con un toque de audacia, para animarse a dejar la seguridad de un sueldo a fin de mes e iniciar un negocio propio. Y si queremos ga- narnos un lugar en el mercado, será imprescindible sumar valor no sólo a nuestro producto o servicio, sino a todas las áreas que componen la estructura de nuestra empresa.<br><br>
+
+      Esto es algo que muchos emprendedores no terminan de entender y gran parte de la explicación del fracaso de muchos negocios. Hoy la competencia es mayor, tenemos enfrente a un consumidor mejor informado y con muchas más opciones para elegir. La realidad es que ya no podemos darnos el lujo de acomodarnos en la oferta tradicional que nos dio resultados hasta hace pocos años.<br><br>
+
+      Los cimientos de tu empresa deben dejar claro al mercado. desde el inicio, no sólo en qué se va a diferenciar tu oferta, sino de qué otra manera vas a vender para dejar siempre encantado a tu cliente, o por qué tu sistema de distribución será la envidia de la competencia. Competir hoy significa innovar, crear, ir siempre un paso más adelante... ¿Ya tienes tu negocio operando? No importa. Siempre hay tiempo para reinventarse y tomar nuevamente la delantera.
+       </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post">
+                      <div style="display: flex;"  class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://codepen.io/luisangelmaciel/pen/mdQdvvy"  target="_blank" title="Loader name"  aria-label="Loader name"><span class="hpost-span "> <b>Pens 2021 </b> </span> <span><small style="color:grey">7 junio 2013</small></span><br><span class="hpost-span-text ">Un diseño para Codepen con el top de diseños en 2021 para ser presentado en el home de mi perfil </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all">
+                      <div style="display: flex;"  class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://luisangelmaciel.github.io/one/loader-name-dot/index.html"  target="_blank" title="Loader name"  aria-label="Loader name"><span class="hpost-span "> <b>Loader name </b> </span> <span><small style="color:grey">6 junio 2013</small></span><br><span class="hpost-span-text ">El preloader es un elemento que no debe faltar en el checklist de una web o app, le da la confianza al usuario de que esta cargando el sitio y que en breve estara cargado. En algunos otros loader que he realizado he puesto leyendas como "Espera un poco" seguido de "Espera solo un poquito más" y finalmente "Ya casi esta, no desesperes" y listo, el sitio esta cargado. </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all">
+                      <div style=" display: flex; "  class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://www.xbr.pw/go/"  target="_blank" title=""  aria-label=""><span class="hpost-span "> <b>Zona de trabajo</b> </span><br><span class="hpost-span-text ">Espacio de trabajo que incluye un podomoro, bloc de notas, enlaces directos, nippes, lista de tareas, historial proyectos  </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>          
+                  <div class="searchable-item post-info filterDiv all">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://www.youtube.com/watch?v=18hCRoZfb-Y"  target="_blank" title="360p CGTavel En Acapulco Límpio 2016, Acapulco, México CGTavel"  aria-label="360p CGTavel En Acapulco Límpio 2016, Acapulco, México CGTavel">
+                                  <span class="hpost-span "> <b>Video limpio del spot de CG Travel 2016 </b> </span>
+                                  <br><span class="hpost-span-text ">Para la agencia de viajes CG Travel decidi hacer un video promocional y se lo deje  en manos de un profesional: Dr. Olibear.  Quería que el video tuviera escenas de cuando los doy la bienvenida al autobus y la convivencia en la playa.  Para grabar escenas de la playa lo invite a Acapulco. Definitivamente volvería hacer otro video de este tipo y con más versiones para varias temporadas del año. </a> </span> </h3>
+                          </div>
+                      </div>
+                  </div>              
+                  <div class="searchable-item post-info filterDiv all dragQueen-post  ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Logo Dragvesti" loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post "> <a href="https://revistakingmx.wordpress.com/2016/07/30/cucuconfessions/"  target="_blank" title="Dragvesti #CucuConfessions  con Cynthia Lee Fontaine en México 2016"  aria-label="Dragvesti #CucuConfessions  con Cynthia Lee Fontaine en México 2016">
+                                  <span class="hpost-span "> <b>Fotos CucuConffessions 2016 </b> </span>
+                                  <br><span class="hpost-span-text "> Me encontre una nota del evento que hice en 2016 para Dragvesti con Cinthya lee Fontaine en el Teatro Hipódromo Condesa galería de fotos de la revista online King El resto de las fotos del Meet and greet, fotos del teatro y afterparty en la página de</a> </span>
+                                  <a href="https://dragvesti.github.io/cucuconfessions/index.html" target="_blank" title="Dragvesti #CucuConfessions  con Cynthia Lee Fontaine en México 2016" aria-label="Dragvesti #CucuConfessions  con Cynthia Lee Fontaine en México 2016"><span class="a-post ">Dragvesti</span></a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post desing-post  ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg" width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Menu drageable with modal. HTML, JavaScript & CSS </b> </span>
+                                  <br><span class="hpost-span-text "> Código CSS de un menu que se puede desplazar por la pantalla.   </span>
+                                  <a href="https://codepen.io/luisangelmaciel/pen/jOZROGO " target="_blank" title="Menu drageable with modal. HTML, JavaScript & CSS " aria-label="Menu drageable with modal. HTML, JavaScript & CSS "><span class="a-post ">Ver código en Codepen</span></a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all 2022-post proyectos-post desing-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/tamales.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Pida sus ricos Tamales. </b> </span>
+                                  <br><span class="hpost-span-text "> De Rajas, Cremino, Mole con pollo, Bombones y el nuevo sabor de Bubulubu. </span>
+                              </h3>
+                              <div class="h-post ">
+                                  <span class="hpost-span-text "> Este proyecto de tamales es un negocio familiar.  </span>
+                                  <a href=" https://luisangelmaciel.github.io/pdf/tamales-tabloide.pdf" target="_blank"><span class="a-post ">Haz tu pedido.</span></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all 2022-post proyectos-post desing-post apps-post dragonBall-post dragQueen-post">
+                <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-3.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Stickers para whatsapp.</b> </span>
+                                  <br><span class="hpost-span-text ">   Disponible en SVG, listos para crear en Whatsapp Web. </span>
+                              </h3>
+                              <div class="h-post ">
+                                  <span class="hpost-span-text "> Lo importante de este templete es la visualización de las galerias de imagenes en forma de carrusel con solo abrir una imagen </span>
+                                  <a href=" https://luisangelmaciel.github.io/stickers-para-whatsapp " target="_blank"><span class="a-post ">En proceso</span></a><br><br>
+                              </div>
+                          </div>
+                      </div>
+                  </div>             
+                  <div class="searchable-item post-info filterDiv all proyectos-post desing-post 2022-post">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Formato</b> </span>
+                                  <br><span class="hpost-span-text ">  Orden de compra para LAMP! Diseño en CorelDraw </span>
+                                  <a href=" https://luisangelmaciel.github.io/pdf/orden de compra.pdf " target="_blank"><span class="a-post ">Descargar PDF</span></a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all 2022-post desing-post">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-1.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>La creatividad te hace brillar.</b> </span>
+                                  <br><span class="hpost-span-text ">  Haz que tu creatividad funcione. </span>
+                                  <a href=" https://luisangelmaciel.github.io/2022/la-creatividad-te-hace-brillar-Haz-que-tu-creatividad-funcione.html " target="_blank"><span class="a-post ">Notas de un curso de In-store Media, 2016</span></a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-3.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Toxel CSS</b> </span>
+                                  <br><span class="hpost-span-text ">  He agregado un nuevo estilo llamado color-rainbow. Hace que cada 3 segundos, cambie de color. </span>
+                                  <a href=" https://luisangelmaciel.github.io/Toxel "><span class="a-post ">Con @-moz-keyframes y @-webkit-keyframes</span></a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post game-post css-post dragonBall-post dragQueen-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/favicon-luisemoji.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>   A todos nos gusta recordar los viejos tiempos. </b> </span>
+                                  <br><span class="hpost-span-text ">      A todos nos gusta recordar los viejos tiempos. Pero si lo que queremos es avanzar, es necesario dejar a un lado la nostalgia digital. La creatividad, estrategia, métricas, análisis y experiencia, es lo que impulsará tu proyecto al logro de sus objetivos.
+                                      Justo lo que tengo para ofrecerte. Contactame</span>
+                                  <a rel="noreferrer noopener " href="https://luisemoji.github.io/viborita/ " target=" _blank " title="Jugar ahora " aria-label=" Match game ">
+                                      <span class="a-post "> Juego de la viborita </span>
+                                  </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item filterDiv all proyectos-post desing-post ">
+                      <div class="flex border-b border-solid  common-post">
+                          <div class="w-1/8 text-right pl-3 ">
+                              <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                              <div>
+                                  <img src="https://luisangelmaciel.github.io/img/favicon-luisemoji.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                              </div>
+                          </div>
+                          <div class="w-7/8 p-3 pl-0 ">
+                              <div class="text-xs text-grey-dark ">Proyecto</div>
+                              <span class="hpost-span "> <b>@LuisEmoji</b> </span>
+                              <br><span class="h-postx ">  Página que realice para elaborar unas prácticas de código HTMl y juegos clásicos como La viborita
+                                              y un Match. En diseño algo de Batman, Pokemon, Minion. </span>
+                              <a href="https://luisemoji.github.io/ " target="_blank " title=" @LuisEmoji " aria-label=" @LuisEmoji "><span class="a-post ">Web</span></a>
+                              <img src="https://luisemoji.github.io/img/og-image.webp " alt="tweet image " loading="lazy lazyload " class="lazy responsive_imagepost  ">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item searchable-item post-info filterDiv all apps-post proyectos-post game-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/favicon-luisemoji.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Match game  </b> </span>
+                                  <br><span class="hpost-span-text ">   <i>Gaymer Vintage.</i> ¿Te consideras buen observador? Encuentra la mayor combinación de parejas en tan sólo 30 segundos. </span>
+                                  <a rel="noreferrer noopener " href="https://luisemoji.github.io/emoji-match-game/ " target="_blank " title="Jugar ahora " aria-label=" Match game ">
+                                      <span class="a-post "> Jugar ahora</span>
+                                  </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post game-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> ¿Qué tan rápido eres en el touch? </b> </span>
+                                  <br><span class="hpost-span-text ">   Ponte a prueba y haz llover emojis de tu pantalla. </span>
+                                  <a rel="noreferrer noopener " href="https://luisemoji.github.io/anda-tocale-aqui/ " target="_blank " title="¿Qué tan rapido eres en el touch? " aria-label="¿Qué tan rapido eres en el touch? ">
+                                      <span class="a-post "> Haz la prueba aquí.</span>
+                                  </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post game-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  El juego de la viborita </b> </span>
+                                  <br><span class="hpost-span-text ">   Un clásico que no puede faltar (juego con teclado). </span>
+                                  <a rel="noreferrer noopener " href=" https://luisemoji.github.io/viborita/ " target="_blank " title="El juego de la viborita " aria-label="El juego de la viborita "><span class="a-post " > Jugar</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post css-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Ho-oh, HTML Vibrate API</b> </span>
+                                  <br><span class="hpost-span-text ">  Es una app que funciona para todos los dispositivos móviles con vibrador. Son 7 tipos de vibraciones disponibles. Me alegra ser parte del directorio <i>rePokemon.</i> En la lista Ho-Oh es el Pokémon número 250.</span>
+                                  <a href="https://luisangelmaciel.github.io/Ho-Oh " rel="noreferrer noopener "><span class="a-post "  target="_blank " title="Hazlo vibrar " aria-label=" Directorio de contactos "> Hazlo vibrar</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item filterDiv all proyectos-post desing-post apps-post css-post ">
+                      <div class="flex border-b border-solid  common-post">
+                          <div class="w-1/8 text-right pl-3 ">
+                              <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                              <div>
+                                  <img src="https://luisangelmaciel.github.io/img/favicon-Igglybuff.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                              </div>
+                          </div>
+                          <div class="w-7/8 p-3 pl-0 ">
+                              <div class="text-xs text-grey-dark ">App</div>
+                              <span class="hpost-span "> <b>iGglybuff</b> </span>
+                              <br><span class="h-postx "> Diseños que he realizado y decidí agruparlos para poder ser utilizados como svg,icons,font & glyph.  </span>
+                              <a href="https://luisangelmaciel.github.io/Igglybuff " target="_blank " title=" Igglybuff " aria-label=" Igglybuff "><span class="a-post ">Descargar</span></a>
+                              <img src="https://luisangelmaciel.github.io/img/iGglybuff-app.webp" alt="Igglybuff" loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post css-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Ho-oh, HTML Vibrate API</b> </span>
+                                  <br><span class="hpost-span-text ">  Es una app que funciona para todos los dispositivos móviles con vibrador. Son 7 tipos de vibraciones disponibles. Me alegra ser parte del directorio <i>rePokemon.</i> En la lista Ho-Oh es el Pokémon número 250.</span>
+                                  <a href="https://luisangelmaciel.github.io/Ho-Oh " rel=" noreferrer noopener "><span class="a-post "   target="_blank " title="Hazlo vibrar " aria-label=" Directorio de contactos "> Hazlo vibrar</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item filterDivall proyectos-post desing-post apps-post css- ">
+                      <div class="flex border-b border-solid  common-post">
+                          <div class="w-1/8 text-right pl-3 ">
+                              <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                              <div>
+                                  <img src="https://luisangelmaciel.github.io/img/favicon-xurkitree.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                              </div>
+                          </div>
+                          <div class="w-7/8 p-3 pl-0 ">
+                              <div class="text-xs text-grey-dark ">App</div>
+                              <span class="hpost-span "> <b>Propuesta Linktree</b> </span>
+                              <br><span class="h-postx "> Propuesta de diseño tipo linktree, nombrada <i>Hi.</i> Me sirvió como base para hacer el diseño de la propuesta final. El css es de tailwind, el minc.css estaba super pesado y lighthouse pedía reducirlo, pero ni uncss pudo
+                                  reducirlo. Así que tuve que recortar por partes   </span>
+                              <a href="https://luisangelmaciel.github.io/hi " target="_blank " title=" Propuesta tipo linktree, nombrada hi " aria-label=" tipo linktree, nombrada hi "><span class="a-post ">todo el código hasta que al fin logre compactarlo en la versión final de esta página.</span></a>
+                              <img src="https://luisangelmaciel.github.io/img/xurkitree.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post proyectos-post css-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Directorio de contactos</b> </span>
+                                  <br><span class="hpost-span-text "> Práctica para creación de formularios. </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/directorio-de-contactos  " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Agregar contacto </span></a>
+                              </h3><br>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all desing-post css-post proyectos-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> eBooks </b> </span>
+                                  <br><span class="hpost-span-text ">  Códigos HTML, CSS y Java </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/ebooks " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post "> Descargar</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all desing-post css-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> One </b> </span>
+                                  <br><span class="hpost-span-text ">  Códigos HTML, CSS y Java </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/one/ " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post " > Ver propuesta</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post proyectos-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Práctica <i>fcc-survey-form</i> </b> </span>
+                                  <br><span class="hpost-span-text ">  Para acreditar el certificado de Free Code Camp</span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/freecodecamp/fcc-survey-form/ " target="_blank " title=" freecodecamp fcc-survey-form " aria-label=" freecodecamp fcc-survey-form "><span class="a-post " > Ver formulario</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all desing-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> Arte digital </b> </span>
+                                  <br><span class="hpost-span-text "> También es arte, he aquí una<i> galería </i>de trazos digitales. </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/art " target="_blank " title="Galería de arte digital " aria-label=" Galería de arte digital "></a>><span class="a-post " Visitar</span> </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>               
+                  <div class="searchable-item post-info filterDiv all proyectos-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> Calculadora Pokémon </b> </span>
+                                  <br><span class="hpost-span-text "> Servía antes de 2021, pero con tanto cambio en la app del juego, queda nula la fórmula. </span>
+                                  <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/calculadora.pokemon " target="_blank " title="Calculadora Pokémon. " aria-label=" Calculadora Pokémon. "><span class="a-post "  > Usar calculadora</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all desing-post proyectos-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  Agenda checklist </b> </span>
+                                  <br><span class="hpost-span-text "> Estoy diseñando una agenda check list. El objetivo de la agenda es formar hábitos. </span>
+                                  <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/checklist " target="_blank " title="Checklist. Agenda para hábitos " aria-label="Check list "><span class="a-post "  > Ver proceso</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all desing-post proyectos-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  La casa del Ángel </b> </span>
+                                  <br><span class="hpost-span-text "> Club </span>
+                                  <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/la-casa-del-angel " target="_blank " title="Efectos de animación " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post desing-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> Práctica de ocio que quedo al 100% en Lighthouse </b> </span>
+                                  <br><span class="hpost-span-text "> Este fue el diseño que me inspiró para la animación de mi fondo de pantalla. El reto en este proyecto era la optimización de imágenes y animación.  </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/avengers-in-3d/fork/ " target="_blank " title="Efectos de animación " aria-label="Niiha Villant "><span class="a-post " > Ver proyecto mejorado</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post 2022-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>   Template </b> </span>
+                                  <br><span class="hpost-span-text "> Curriculum  </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/curriculum/ " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post desing-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>  En modo </b> </span>
+                                  <br><span class="hpost-span-text "> Template </span>
+                                  <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/en.modo/ " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Ver</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all proyectos-post desing-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b> La magia de la herbolaria</b> </span>
+                                  <br><span class="hpost-span-text "> Diseño de logotipo </span>
+                                  <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/la-magia-de-la-herbolaria " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Utilizar templete</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all css-post dragQueen-post ">
+                      <div style="display: flex;" class="common-post">
+                          <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                          <div class="text-post ">
+                              <h3 class="h-post ">
+                                  <span class="hpost-span "> <b>Memes</b> </span>
+                                  <br><span class="hpost-span-text "> RuPaul's Drag Race</span>
+                                  <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/memes " target="_blank " title="Memes: RuPaul´s Drag Race " aria-label="Niiha Villant "><span class="a-post " > Utilizar templete</span>            </a>
+                              </h3>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="searchable-item post-info filterDiv all apps-post desing-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>   Glyps</b> </span>
+                                      <br><span class="hpost-span-text "> Rediseño de las estaciones de metro con el arte de Pokémon </span>
+                                      <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/glyphs/pago.html " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span>            </a>
+                                  </h3>
+                              </div>
+                          </div>
+                  </div>
+
+
+                      <div searchable-item class="searchable-item filterDivall apps-post proyectos-post desing-post ">
+                          <div class="flex border-b border-solid  common-post">
+                              <div class="w-1/8 text-right pl-3 ">
+                                  <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                                  <div>
+                                      <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                                  </div>
+                              </div>
+                              <div class="w-7/8 p-3 pl-0 ">
+                                  <div class="text-xs text-grey-dark ">App</div>
+                                  <span class="hpost-span "> <b>Font Name Wow awesome!</b> </span>
+                                  <br><span class="h-postx ">  Font Name:  </span>
+                                  <a href="https://hihellomonster.github.io/wow.awesome/ " target="_blank " title=" Font Name: Wow awesome! " aria-label="Niiha Villant "><span class="a-post "> Wow awesome!</span></a>
+                                  <img src="https://luisangelmaciel.github.io/img/WOWwow-awesome.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post desing-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Metro Pokémon</b> </span>
+                                      <br><span class="hpost-span-text "> Rediseño de las estaciones de metro con el arte de Pokémon </span>
+                                      <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/metro-pokemon " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span>
+                          </a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post desing-post apps-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Mode multicolor</b> </span>
+                                      <br><span class="hpost-span-text "> mode.multicolor </span>
+                                      <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/metro-pokemon " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post desing-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Mom's Pizzas</b> </span>
+                                      <br><span class="hpost-span-text "> Creación de diseño de logotipo y página web </span>
+                                      <a rel="noreferrer noopener " href="https://github.com/luisangelmaciel/moms.pizzas " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Hawaianchoriz </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post desing-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Papercraft</b> </span>
+                                      <br><span class="hpost-span-text "> papercraft </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/papercraft " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Ver </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/lamp-2.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Snackstore </b> </span>
+                                      <br><span class="hpost-span-text "> pause.idea </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/pause.idea/snackstore " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post "> Ver </span></a>
+                                  </h3><br>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div searchable-item class="searchable-item filterDivall proyectos-post desing-post apps-postapps-post ">
+                          <div class="flex border-b border-solid  common-post">
+                              <div class="w-1/8 text-right pl-3 ">
+                                  <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                                  <div>
+                                      <img src="https://luisangelmaciel.github.io/img/favicon-luisemoji.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                                  </div>
+                              </div>
+                              <div class="w-7/8 p-3 pl-0 ">
+                                  <div class="text-xs text-grey-dark ">App</div>
+                                  <span class="hpost-span "> <b>Pokerangers</b> </span>
+                                  <br><span class="h-postx ">  Pokemon + Power Rangers  </span>
+                                  <a href="https://luisangelmaciel.github.io/pokerangers " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post ">+ Power Rangers</span></a>
+                                  <img src="https://luisangelmaciel.github.io/img/pokerangers.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all proyectos-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>  Pride </b> </span>
+                                      <br><span class="hpost-span-text "> Pride</span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/pride " target="_blank " title="One " aria-label="Niiha Villant "><span class="a-post " > Ver </span></a>
+                                  </h3><br>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div searchable-item class="searchable-item filterDivall proyectos-post desing-post apps-post dragonBall-post proyectos-post ">
+                          <div class="flex border-b border-solid  common-post">
+                              <div class="w-1/8 text-right pl-3 ">
+                                  <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                                  <div>
+                                      <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                                  </div>
+                              </div>
+                              <div class="w-7/8 p-3 pl-0 ">
+                                  <div class="text-xs text-grey-dark ">Proyecto</div>
+
+
+                                  <span class="hpost-span "> <b>Random Quotes </b> </span>
+                                  <br><span class="h-postx ">  Inspirados en Goku de Dragon Ball. </span>
+                                  <a href="https://hihellomonster.github.io/dragon.ball/ " target="_blank " title=" Propuesta tipo linktree, nombrada hi " aria-label=" tipo linktree, nombrada hi "><span class="a-post ">Jugar</span></a>
+
+                                  <img src="https://luisangelmaciel.github.io/img/goku-frases.webp " alt="tweet image " loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+
+                              </div>
+                          </div>
+                      </div>
+
+                      <div searchable-item class="searchable-item filterDivall proyectos-post desing-post apps-post game-post ">
+                          <div class="flex border-b border-solid  common-post">
+                              <div class="w-1/8 text-right pl-3 ">
+                                  <div><i class="fa fa-thumb-tack text-teal mr-2 "></i></div>
+                                  <div>
+                                      <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg  " alt="avatar " class="rounded-full h-12 w-12 mr-2 " loading="lazy lazyload " class="lazy ">
+                                  </div>
+                              </div>
+                              <div class="w-7/8 p-3 pl-0 ">
+                                  <div class="text-xs text-grey-dark ">Game</div>
+                                  <span class="hpost-span "> <b>Goku salvanos de Moro.</b> </span>
+                                  <br><span class="h-postx ">El arte del juego está inspirado en la última entrega de Dragon Ball Super.   </span>
+                                  <a href="https://luisangelmaciel.github.io/dragon.ball/goku-save-the-universe-game/ " target="_blank " title=" Igglybuff " aria-label=" Igglybuff "><span class="a-post ">Jugar</span></a>
+                                  <img src="https://luisangelmaciel.github.io/img/goku-game.webp " alt="Igglybuff" loading="lazy lazyload " class="lazy rounded-sm responsive_imagepost">
+                              </div>
+                          </div>
+                      </div>
+
+
+
+
+
+                      <div class="searchable-item post-info filterDiv all dragonBall-post css-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Download Font  </b> </span>
+                                      <br><span class="hpost-span-text "> & Live Preview Saiyan-Sans </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dragon.ball/download-font-and-live-preview/ " target="_blank " title="download-font-and-live-preview " aria-label="Loader "><span class="a-post " > Ir </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all dragonBall-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/img/vegeta-sayayin.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Práctica fcc-tribute-page de Vegeta de Dragon Ball </b> </span>
+                                      <br><span class="hpost-span-text "> Para acreditar el certificado de Free Code Camp. </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/ " target="_blank " title="fcc-tribute-page " aria-label=" Download font and live preview "><span class="a-post "> "Ya
+                                      estoy harto de tu generosidad, sabandija estúpida " Vegeta a Goku en el Arco de Freezer </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all css-post dragonBall-post proyectos-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/freecodecamp/fcc-tribute-page/img/vegeta-red.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Vegeta Sayayin Colors CSS </b> </span>
+                                      <br><span class="hpost-span-text "> Sencillo pero bonito.  Ejemplo con el icon de Vegeta de Dragon Ball. Cambio de colores con amarillo, azul y rojo, Sayayin, Sayayin dios y super Sayayin Dios. </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/Vegeta-Sayayin-Colors " target="_blank " title="Download font and live preview " aria-label=" Download font and live preview
+                                      "><span class="a-post "> Uso de fill, transition & hover para un sgv. </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all css-post dragonBall-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Loader </b> </span>
+                                      <br><span class="hpost-span-text "> Con logotipo de Dragon Ball Super </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dragon.ball/loader/ " target="_blank " title="Loader " aria-label="Loader "><span class="a-post "> Ver </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all css-post dragonBall-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/avatar-esfera-4-estrellas.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Super Slider CSS </b> </span>
+                                      <br><span class="hpost-span-text "> De Vegeta de Dragon Ball al estilo El gran torneo, solo que con las diferentes evoluciones de Vegeta. </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/how-to/dragon-ball-super-slider-css-only " target="_blank " title="Super Slider CSS Only " aria-label=" Download font and live preview
+                                      "><span class="a-post "> Forma parte de la práctica de Free Code Camp. </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Drag Queen Lennox Gyarada </b> </span>
+                                      <br><span class="hpost-span-text ">   Ganadora de Dragvesti 2da temporada. </span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/lennox-gyarada/ " target="_blank " title="Lennox Gyarada " aria-label=" Lennox Gyarada "><span class="a-post "> Propuesta </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Drag Queen Dalila Velvet, </b> </span>
+                                      <br><span class="hpost-span-text ">   la perra más alta de Colombia. Miss Web de Dragvesti 1ra temporada, participante de Dragvesti All Stars. Host de Dragvesti Colombia</span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/dalilavelvet/ " target="_blank " title=" Dalila Velvet, drag queen " aria-label=" Dalila Velvet, drag queen "><span class="a-post "> Propuesta de diseño tipo linktree. </span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post desing-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/las-brujas-del-poder.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Las brujas del poder. </b> </span>
+                                      <br><span class="hpost-span-text ">  Video y logotipo  que hice para la obra de Alfredo Sanchez en el Teatro Hipódromo Condesa. Con Pika Demian Argenina Andrews Titania Monster y un gran elenco.</span>
+                                      <a rel="noreferrer noopener " href="https://www.facebook.com/DragvestiMX/videos/1340621549323413/ " target="_blank " title=" Brujas del Poder " aria-label="Brujas del Poder "><span class="a-post "> Ver  video</span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Drag Queen Becky D´Vich</b> </span>
+                                      <br><span class="hpost-span-text ">  Runner up de Dragvesti 2da temporada y Ganadora de la 1ra temporada Dragvesti All Stars.</span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/beckydvich/ " target="_blank " title="Becky D´Vich, drag queen " aria-label="Becky D´Vich, drag queen "><span class="a-post "> Propuesta de diseño tipo linktree, basado en un carrusel de fotos.</span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post proyectos-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Drag Queen Iris XC Queen</b> </span>
+                                      <br><span class="hpost-span-text ">  Ganadora de Dragvesti 1ra temporada y host de Dragvesti En Vivo Chihuahua</span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/irisxcqueen/ " target="_blank " title="Iris XC Queen " aria-label=" Iris XC Queen "><span class="a-post ">Web</span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+
+                      <div class="searchable-item post-info filterDiv all dragQueen-post css-post ">
+                          <div style="display: flex;" class="common-post">
+                              <img src="https://luisangelmaciel.github.io/img/favicon-dragvesti.svg " width="32px " height="32px " alt="Ico " loading="lazy " class="lazyload h-12 w-12 mr-2 img-post ">
+                              <div class="text-post ">
+                                  <h3 class="h-post ">
+                                      <span class="hpost-span "> <b>Drag Queen  Niiha Villant</b> </span>
+                                      <br><span class="hpost-span-text ">  Ganadora de Dragvesti 2da temporada All Stars</span>
+                                      <a rel="noreferrer noopener " href="https://luisangelmaciel.github.io/niihavillant/ " target="_blank " title="Niiha Villant " aria-label="Niiha Villant "><span class="a-post ">Name CSS</span></a>
+                                  </h3>
+                              </div>
+                          </div>
+                      </div>
+
+          </div><!-- div del ANTES"-->
+                      <br>
+                      <center>
+                          <div onclick="typeWriter() " style=" color: #374953; ">
+                              Hecho con <span style="color: red; " class="shake ">❤</span> y mucho código <small> <p id="powered "onclick="document.location='index.html#TeAyudo' "> </p> </small>
+                          </div>
+                        <a href="https://www.xbr.pw/go">Zona de trabajo</a>
+                      </center><br><br><br>
+                  </div>
+                <div class="GUARDA">
             <div style=" width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
                 <div id="myBar " style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s
                                 infinite linear; "></div>
@@ -1138,9 +1401,6 @@
                     document.body.appendChild(script);
                 }
             </script>
-
-
-
             <script>
                 var i = 0;
                 var txt = '¿Te gusta esta página y quieres tener una para ti o para tú negocio? ¡Yo te ayudo a hacerla!  ';
@@ -1154,9 +1414,6 @@
                     }
                 }
             </script>
-
-
-
             <script>
                 if ("loading " in HTMLImageElement.prototype) {
                     // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
@@ -1174,7 +1431,6 @@
                     document.body.appendChild(script);
                 }
             </script>
-
             <script>
                 filterSelection("all ")
 
@@ -1240,16 +1496,88 @@
                     }
                 }
             </script>
-
+        </div><!-- /guardada-->
+          </div>        
+            </div>
         </div>
     </main>
+   <div style=" width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; ">
+        <div id="myBar " style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite
+                linear; ">
+        </div>
+    </div>
+              <script>
+//search
+;(function search () {
+    ;[...document.querySelectorAll('.searchable')].forEach(makeSearchable)
+    function makeSearchable ($searchable) {
+      const $searchableItems = [...$searchable.querySelectorAll('.searchable-item')]
+      const $search = $searchable.querySelector('input')
+      $search.addEventListener('keyup', (e) => {
+        $searchableItems.forEach(function ($el) {
+          const text = $el.getAttribute('data-search') || $el.innerText
+          const show = new RegExp(e.target.value, 'i').test(text)
+          $el.style.display = show ? '' : 'none'
+        })
+      })
+    }
+  })()
+//
 
-    <!-- <div w3-include-html="nav.html "></div>
-
-    <script>
-        includeHTML();
-    </script> 
-    -->
 
 
-</body>
+
+
+
+
+
+
+
+
+
+
+
+
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myLISTADO");
+var btns = header.getElementsByClassName("listado");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("activeli");
+  current[0].className = current[0].className.replace(" activeli", "");
+  this.className += " activeli";
+  });
+}
+//sercheable 
+  ;(function search () {
+    ;[...document.querySelectorAll('.searchable')].forEach(makeSearchable)
+    function makeSearchable ($searchable) {
+      const $searchableItems = [...$searchable.querySelectorAll('.searchable-item')]
+      const $search = $searchable.querySelector('input')
+      $search.addEventListener('keyup', (e) => {
+        $searchableItems.forEach(function ($el) {
+          const text = $el.getAttribute('data-search') || $el.innerText
+          const show = new RegExp(e.target.value, 'i').test(text)
+          $el.style.display = show ? '' : 'none'
+        })
+      })
+    }
+  })()
+
+
+
+
+
+
+
+function openiTab(iTabName) {
+  var i;
+  var x = document.getElementsByClassName("iTab");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(iTabName).style.display = "block";  
+}                
+              </script>
+      <!-- <div w3-include-html="nav.html "></div><script>includeHTML();</script> -->
+</body></html><!-- https://a11y-webring.club/ -->
