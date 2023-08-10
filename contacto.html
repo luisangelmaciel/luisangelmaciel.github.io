@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>Contacto</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+	<style>
+		.label {
+			display: block;
+			margin-bottom: .25rem;
+		}
+
+		label {
+			/*font-size: .85rem;*/
+			font-weight: bold;
+		}
+
+		select[data-ss-uuid] {
+			display: none;
+			pointer-events: none;
+		}
+
+		.style-select {
+			display: block;
+			position: relative;
+			width: 140px;
+		}
+
+		.style-select,
+		.style-select * {
+			padding: 0;
+			margin: 0;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			text-align: left;
+			line-height: 19px;
+			color: black;
+			font-weight: 300;
+			cursor: pointer;
+		}
+
+		.style-select .ss-selected-option {
+			width: 100%;
+			background-image: -webkit-linear-gradient(top, #fefefe, #f2f2f2);
+			background-image: linear-gradient(to bottom, #fefefe, #f2f2f2);
+			border-radius: 2px;
+			padding: 6px;
+			border: 1px solid #d0d0d0;
+		}
+
+		.style-select .ss-selected-option::after {
+			content: "â–¾";
+			position: absolute;
+			top: 6px;
+			right: 12px;
+			display: block;
+		}
+
+		.style-select .ss-dropdown {
+			top: 32px;
+			left: 0;
+			position: absolute;
+			float: left;
+			width: 100%;
+			display: none;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+			border: 1px solid #d0d0d0;
+			border-top: 0 none;
+		}
+
+		.style-select .ss-dropdown .ss-option {
+			width: 100%;
+			padding: 6px;
+			background-color: white;
+		}
+
+		.style-select .ss-dropdown .ss-option.highlighted {
+			background-color: #f2f4f8;
+		}
+
+		.style-select .ss-dropdown .ss-option.disabled {
+			color: #d0d0d0;
+		}
+
+		.style-select .ss-dropdown .ss-option.ticked::before {
+			content: "âœ“";
+			padding-right: 3px;
+		}
+
+		.style-select.open .ss-dropdown {
+			display: block;
+		}
+
+		.style-select.open .ss-selected-option::after {
+			content: "â–´";
+		}
+
+		.input {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			box-sizing: border-box;
+			width: 100%;
+			margin: 0 0 .9rem;
+			padding: .6rem;
+			background: #fff;
+			border: 1px solid #bbb;
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+			border-radius: 0;
+			outline: none;
+			resize: vertical;
+			transition: border-color .3s ease;
+			color: #000;
+			font-family: inherit;
+			font-size: 100%;
+			line-height: 1.15
+		}
+
+		.input[disabled] {
+			border-color: #c8c8c8;
+			background-color: #f2f2f2;
+			box-shadow: none;
+			cursor: not-allowed;
+			color: #0d0d0d
+		}
+
+		.input:focus {
+			border-color: #17f
+		}
+
+		.input::-webkit-input-placeholder {
+			color: #999;
+			opacity: 1
+		}
+
+		.input:-ms-input-placeholder {
+			opacity: 1
+		}
+
+		.input::-ms-input-placeholder {
+			opacity: 1
+		}
+
+		.input::placeholder {
+			color: #999;
+			opacity: 1
+		}
+
+		.input:-ms-input-placeholder {
+			color: #999
+		}
+
+		.input::-ms-input-placeholder {
+			color: #999
+		}
+
+		.control {
+			margin: 0 0 .9rem;
+			box-sizing: border-box
+		}
+
+		.control__input {
+			position: absolute;
+			opacity: 0;
+			pointer-events: none
+		}
+
+		.control__label {
+			display: flex;
+			align-items: center;
+			position: relative;
+			color: #000
+		}
+
+		.control__label:after,
+		.control__label:before {
+			content: "";
+			display: block;
+			width: 20px;
+			height: 20px;
+			border: 1px solid transparent
+		}
+
+		.control__label:before {
+			flex-shrink: 0;
+			margin-right: .6rem;
+			border-color: #bbb;
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+			background: #fff
+		}
+
+		.control__label:after {
+			position: absolute;
+			top: calc(48% - 10px);
+			left: 0;
+			background-size: 60%;
+			background-repeat: no-repeat;
+			background-position: 50%;
+			-webkit-transform: scale(0);
+			transform: scale(0);
+			transition: -webkit-transform .3s ease;
+			transition: transform .3s ease;
+			transition: transform .3s ease, -webkit-transform .3s ease
+		}
+
+		.control__input[type=radio]+.control__label:before {
+			border-radius: 100%
+		}
+
+		.control__input[type=radio]+.control__label:after {
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cpath d='M256 464c114.9 0 208-93.1 208-208S370.9 48 256 48 48 141.1 48 256s93.1 208 208 208z'/%3E%3C/svg%3E")
+		}
+
+		.control__input[type=checkbox]+.control__label:after {
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cpath d='M461.6 109.6l-54.9-43.3c-1.7-1.4-3.8-2.4-6.2-2.4-2.4 0-4.6 1-6.3 2.5L194.5 323s-78.5-75.5-80.7-77.7c-2.2-2.2-5.1-5.9-9.5-5.9s-6.4 3.1-8.7 5.4c-1.7 1.8-29.7 31.2-43.5 45.8-.8.9-1.3 1.4-2 2.1-1.2 1.7-2 3.6-2 5.7 0 2.2.8 4 2 5.7l2.8 2.6s139.3 133.8 141.6 136.1c2.3 2.3 5.1 5.2 9.2 5.2 4 0 7.3-4.3 9.2-6.2l249.1-320c1.2-1.7 2-3.6 2-5.8 0-2.5-1-4.6-2.4-6.4z'/%3E%3C/svg%3E")
+		}
+
+		.control__input[type=checkbox][disabled]+.control__label,
+		.control__input[type=radio][disabled]+.control__label {
+			cursor: not-allowed;
+			color: #0d0d0d
+		}
+
+		.control__input[type=checkbox][disabled]+.control__label:before,
+		.control__input[type=radio][disabled]+.control__label:before {
+			border-color: #c8c8c8;
+			background-color: #f2f2f2;
+			box-shadow: none
+		}
+
+		.control__input:focus+.control__label:before {
+			border-color: #17f
+		}
+
+		.control__input:checked+.control__label:after {
+			-webkit-transform: scale(1);
+			transform: scale(1)
+		}
+
+		.select {
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			box-sizing: border-box;
+			margin: 0 0 .9rem;
+			padding: .6rem calc(.9rem + 12px) .6rem .6rem;
+			width: 100%;
+			background: #fff;
+			background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='512' height='512'%3E%3Cpath d='M256 298.3l174.2-167.2c4.3-4.2 11.4-4.1 15.8.2l30.6 29.9c4.4 4.3 4.5 11.3.2 15.5L264.1 380.9c-2.2 2.2-5.2 3.2-8.1 3-3 .1-5.9-.9-8.1-3L35.2 176.7c-4.3-4.2-4.2-11.2.2-15.5L66 131.3c4.4-4.3 11.5-4.4 15.8-.2L256 298.3z'/%3E%3C/svg%3E");
+			background-size: 12px;
+			background-repeat: no-repeat;
+			background-position: calc(100% - .6rem) 50%;
+			border: 1px solid #bbb;
+			box-shadow: inset 0 1px 3px rgba(0, 0, 0, .05);
+			border-radius: 0;
+			outline: 0;
+			color: #000;
+			font-family: inherit;
+			font-size: 100%;
+			line-height: 1.15
+		}
+
+		.select[disabled] {
+			border-color: #c8c8c8;
+			background-color: #f2f2f2;
+			box-shadow: none;
+			cursor: not-allowed;
+			color: #0d0d0d
+		}
+
+		.select:focus {
+			border-color: #17f
+		}
+
+		.select::-ms-expand {
+			display: none
+		}
+
+		input[type="range"] {
+			width: 100%;
+		}
+
+		input[type="color"] {
+			width: 100%;
+		}
+	</style>
+
+</head>
+
+<body>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" media="all">
+
+	<div class="w3-container">
+		<form class="gform pure-form pure-form-stacked" method="POST" data-email="lamacpad@gmail.com" action="https://script.google.com/macros/s/AKfycbwOBg05h-H3-7sbFFr-aoVsgewy4ZGv-mfv-QJjqWbZpQigYd3AslrbLVe_aRRmxuR9zw/exec">
+			<div class="form-elements">
+				<div><br>
+					<h1 class="content-head"><b>Contacto</h1> </b><br>
+					<p> Bienvenido a nuestro cuestionario de combinación de herramientas.<br> <br>Cómo funciona: le haremos algunas preguntas sobre lo que desea construir. <br>
+						<br>Después de responder, obtendrá una combinación de herramientas personalizada de nuestra parte.
+						<br><br>
+						<b>Nota</b> Esto todavía está en beta. ¡Pronto haremos muchas mejoras! <br><br>
+						¿Estás listo para encontrar tu herramienta perfecta?
+						<!-- Haz clic en el botón de abajo 👇 Comenzar el cuestionario-->
+					</p>
+					<hr>
+					<div class="text">
+						<label class="label" for="tipoDeEmpresa">¿Para qué tipo de empresa es este proyecto?</label>
+						<select class="select" id="tipoDeEmpresa" name="tipoDeEmpresa">
+							<option selected disabled>-</option>
+							<option value="solo">Proyecto paralelo o puesta en marcha (Solo) </option>
+							<option value="peque">Pequeña empresa (2-9 personas)</option>
+							<option value="mediana">Mediana empresa (10-44 personas) </option>
+							<option value="gran">Gran empresa (45-249 personas) </option>
+							<option value="macro">Gran empresa (45-249 personas) </option>
+						</select>
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="tratandoDeConstruir">¿Qué estás tratando de construir?</label>
+						<select class="select" id="tratandoDeConstruir" name="tratandoDeConstruir">
+							<option selected disabled>-</option>
+							<option value="desdeCero">Una aplicación que puedo diseñar y construir desde cero </option>
+							<option value="rapidamenteDeUnaPlantilla">Una aplicación que puedo crear rápidamente a partir de una plantilla</option>
+							<option value="automatizacionParaAhorrarTiempo">Una automatización para ahorrar tiempo en el trabajo manual</option>
+							<option value="automatizacionReemplazar">Una automatización para reemplazar un proceso existente</option>
+							<option value="semipersonalizada">Una aplicación semipersonalizada (más fácil de construir, menos flexible) </option>
+						</select>
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="quieroConstruitUn">Quiero construir una...</label>
+						<select class="select" id="quieroConstruitUn" name="quieroConstruitUn">
+							<option selected disabled>-</option>
+							<option value="appOrientadaAlcliente">Aplicación móvil orientada al cliente (redes sociales, citas, etc.) </option>
+							<option value="appInterna">Aplicación móvil interna (seguimiento de tareas, gestión de inventario, etc.)</option>
+							<option value="webAlCliente">Aplicación web orientada al cliente (SaaS, mercado, etc.)</option>
+							<option value="webInterna">Aplicación web interna (Dashboard, herramienta interna, etc.)</option>
+							<option value="juego">Juego</option>
+							<option value="algoMas">Algo más</option>
+						</select>
+					</div> <br><br>
+					<style>
+						.ag-comm_btn {
+							height: 40px;
+							line-height: 39px;
+							min-width: 150px;
+							margin: 0;
+							padding: 0 25px;
+							border: 1px solid #015c8b;
+							background-color: #015c8b;
+							cursor: pointer;
+							vertical-align: middle;
+							text-decoration: none;
+							text-align: center;
+							font-weight: bold;
+							font-size: 18px;
+							color: #FFF;
+							-webkit-appearance: none;
+							-moz-appearance: none;
+							-webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+							-moz-box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+							-o-box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+							box-shadow: 0 3px 5px rgba(0, 0, 0, .25);
+							-webkit-transition: background-color 0.2s ease;
+							-moz-transition: background-color 0.2s ease;
+							-o-transition: background-color 0.2s ease;
+							transition: background-color 0.2s ease;
+						}
+
+						.ag-comm_btn:focus {
+							outline: none;
+						}
+
+						.ag-comm_btn:not(:disabled):hover {
+							border: 1px solid #001119;
+							background-color: #001119;
+						}
+
+						.ag-comm_btn:disabled {
+							border: 1px solid #bfbcbc;
+							background: #F4F1F1;
+							cursor: default;
+							color: #525c69;
+						}
+					</style>
+					<div class="text">
+						<label class="label" for="describTuIdea">En una o dos oraciones, describa lo que está tratando de construir*</label>
+						<textarea class="input" id="js-comm_textarea" name="describTuIdea" minlength="100" required="required" placeholder="Describe a grandes rasgos lo que quieres hacer" rows="4" cols="10"></textarea>
+						<div id="js-comm_alert"></div>
+
+						<script>
+							document.addEventListener('DOMContentLoaded', function() {
+								const MIX_LENGTH = 100;
+								const textarea = document.getElementById('js-comm_textarea');
+								const button = document.getElementById('js-comm_btn');
+
+								function insertAfter(referenceNode, newNode) {
+									referenceNode.parentNode.insertBefore(newNode, referenceNode.nextSibling);
+								}
+								const div = document.createElement('div');
+								div.className = 'js-comm_alert';
+								div.id = 'js-comm_alert';
+								div.innerHTML = '<div id="js-comm_count" class="js-ag-comm_count"><span>0</span> / ' + MIX_LENGTH + '</div>';
+								insertAfter(textarea, div);
+								const count = document.getElementById('js-comm_count');
+								const countSpan = count.querySelector('span');
+								textarea.onkeyup = function() {
+									countSpan.textContent = this.value.length;
+									count.classList.remove('js-ag-comm_count__success');
+									button.disabled = 'disabled';
+									if (this.value.length >= MIX_LENGTH) {
+										count.classList.add('js-ag-comm_count__success');
+										button.disabled = "";
+									}
+								};
+							});
+						</script>
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="almacenamientodedatos">Si su aplicación utilizará datos que ya ha recopilado, ¿dónde se almacenan?</label>
+						<select class="select" id="almacenamientodedatos" name="almacenamientodedatos">
+							<option selected disabled>-</option>
+							<option value="MicrosoftExcel">Microsoft Excel</option>
+							<option value="GoogleSheets">Google Sheets</option>
+							<option value="Smartsheet">Smartsheet</option>
+							<option value="ZohoSheet">Zoho Sheet</option>
+							<option value="Airtable">Airtable</option>
+							<option value="Ethercalc">Ethercalc</option>
+							<option value="noTengo">No tengo datos existentes</option>
+							<option value="SQL">Base de datos SQL</option>
+							<option value="OtroLugar">En algún otro lugar</option>
+						</select>
+					</div> <br><br>
+
+					<div class="text">
+						<label class="label" for="escala">En una escala del 1 al 5, ¿qué tan experto en tecnología eres?<br>1 = puede navegar por la web, pero no mucho más
+							<br>5 = experimentado en software y codificación</label>
+						<input type="range" name="escala" id="escala" min="1" max="5">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="puestoDeTrabajo">¿Cuál es tu puesto de trabajo?</label>
+						<select class="select" id="puestoDeTrabajo" name="puestoDeTrabajo">
+							<option selected disabled>-</option>
+							<option value="MiembroDelEquipo">Miembro del equipo</option>
+							<option value="Lider">Lider de proyecto</option>
+							<option value="Gerente">Gerente</option>
+							<option value="Director">Director</option>
+							<option value="ServicioalCliente">Servicio al Cliente</option>
+							<option value="Producciioncreativa">Producción creativa</option>
+							<option value="Ingenieia">Ingeniería</option>
+							<option value="Finanzas">Finanzas</option>
+							<option value="RRHHylegal">RRHH y legal</option>
+							<option value="SoportedeTI">Soporte de TI</option>
+							<option value="Fabricacion">Fabricación</option>
+							<option value="DisenoDeProducto">Diseño de producto</option>
+							<option value="Operaciones">Operaciones</option>
+							<option value="Ventas">Ventas y gestión de cuentas</option>
+							<option value="otro">Otro</option>
+
+						</select>
+					</div> <br><br>
+
+					<div class="text">
+						<label class="label" for="empresa">Cual es el nombre de tu compañia</label>
+						<input class="input" type="text" name="empresa" id="empresa">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="type-url">URL (url)</label>
+						<input class="input" type="url" name="type-url" id="type-url">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="name">Nombre</label>
+						<input class="input" type="text" name="name">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="email">Email</label>
+						<input class="input" type="email" name="email">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="phone">Telefono</label>
+						<input class="input" type="number" name="phone">
+					</div> <br><br>
+					<div class="text">
+						<input class="input" type="text" inputmode="text" value="templete https://codepen.io/luisangelmaciel/pen/LYXoVdB?editors=1000" style="display:none" id="origen" name="origen">
+					</div>
+
+					<button style="background:none; border:none"><input id="js-comm_btn" type="button" class="ag-comm_btn" value="Enviar" disabled /></button><br>
+
+				</div>
+			</div>
+
+			<!-- Thankyou_message --><br>
+			<div class="thankyou_message" style="display:none;background:none;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
+				<h2><b>Hemos encontrado la herramienta perfecta para ti 🎉</h2>
+				</p>
+				<button onclick="history.back()">Go Back</button>
+				<button onClick="window.location.href=window.location.href">Refresh Page</button>
+			</div>
+		</form>
+		<hr>
+		<a href="https://docs.google.com/spreadsheets/d/1vBMsHX8RfJeUC-9K2ShArTr9uPftLbj6nyeHtwVUGl8/edit#gid=0">
+			<!--function-->
+		</a>
+		<script data-cfasync="false" type="text/javascript">
+			(function() {
+				function validEmail(email) {
+					var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+					return re.test(email);
+				}
+
+				function validateHuman(honeypot) {
+					if (honeypot) {
+						console.log("Robot Detected!");
+						return true;
+					} else {
+						console.log("Welcome Human!");
+					}
+				}
+
+				function getFormData(form) {
+					var elements = form.elements;
+					var fields = Object.keys(elements).filter(function(k) {
+						return (elements[k].name !== "honeypot");
+					}).map(function(k) {
+						if (elements[k].name !== undefined) {
+							return elements[k].name;
+						} else if (elements[k].length > 0) {
+							return elements[k].item(0).name;
+						}
+					}).filter(function(item, pos, self) {
+						return self.indexOf(item) == pos && item;
+					});
+					var formData = {};
+					fields.forEach(function(name) {
+						var element = elements[name];
+						formData[name] = element.value;
+						if (element.length) {
+							var data = [];
+							for (var i = 0; i < element.length; i++) {
+								var item = element.item(i);
+								if (item.checked || item.selected) {
+									data.push(item.value);
+								}
+							}
+							formData[name] = data.join(', ');
+						}
+					});
+					formData.formDataNameOrder = JSON.stringify(fields);
+					formData.formGoogleSheetName = form.dataset.sheet || "Hoja 1"; // default sheet name
+					formData.formGoogleSendEmail = form.dataset.email || "";
+					console.log(formData);
+					return formData;
+				}
+
+				function handleFormSubmit(event) {
+					event.preventDefault();
+					var form = event.target;
+					var data = getFormData(form);
+					if (data.email && !validEmail(data.email)) {
+						var invalidEmail = form.querySelector(".email-invalid");
+						if (invalidEmail) {
+							invalidEmail.style.display = "block";
+							return false;
+						}
+					} else {
+						disableAllButtons(form);
+						var url = form.action;
+						var xhr = new XMLHttpRequest();
+						xhr.open('POST', url);
+						xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+						xhr.onreadystatechange = function() {
+							console.log(xhr.status, xhr.statusText);
+							console.log(xhr.responseText);
+							var formElements = form.querySelector(".form-elements")
+							if (formElements) {
+								formElements.style.display = "none"; // hide form
+							}
+							var thankYouMessage = form.querySelector(".thankyou_message");
+							if (thankYouMessage) {
+								thankYouMessage.style.display = "block";
+							}
+							return;
+						};
+						var encoded = Object.keys(data).map(function(k) {
+							return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+						}).join('&');
+						xhr.send(encoded);
+					}
+				}
+
+				function loaded() {
+					console.log("Contact form submission handler loaded successfully.");
+					var forms = document.querySelectorAll("form.gform");
+					for (var i = 0; i < forms.length; i++) {
+						forms[i].addEventListener("submit", handleFormSubmit, false);
+					}
+				};
+				document.addEventListener("DOMContentLoaded", loaded, false);
+
+				function disableAllButtons(form) {
+					var buttons = form.querySelectorAll("button");
+					for (var i = 0; i < buttons.length; i++) {
+						buttons[i].disabled = true;
+					}
+				}
+			})();
+		</script>
+	
+</body>
+
+</html>
