@@ -1,5 +1,4 @@
-{
-  "codepen2023":[
+var myObject= {"codepen2023":[
   {"Pen":"Status indicators in CSS",
   "URL":"https://codepen.io/luisangelmaciel/pen/NWERjjv",
   "Creado":"21 Junio 2023"},
