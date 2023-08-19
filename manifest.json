@@ -1,8 +1,15 @@
-
 {
     "name": "Luis ángel Maciel Padilla",
     "short_name": "@lamps",
     "description": "Desarrollador y diseñador web, diseñador de producto, Comercializador",
+    "lang": "es-MX",
+    "categories": [
+      "desing",
+      "devtools",
+      "webapp",
+      "education"
+    ],
+    "scope": ".",  
     "icons": [
       {
         "sizes": "192x192",
@@ -16,7 +23,7 @@
       }
     ],
     "display": "standalone",
-    "background_color": "blue",
-    "theme_color": "lightblue",
+    "background_color": "#015c8b",
+    "theme_color": "#017dbb",
     "start_url": "./index.html"
   }
