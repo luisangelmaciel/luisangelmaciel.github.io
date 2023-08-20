@@ -24,6 +24,13 @@ self.addEventListener('install', e => {
     '/img/lamp-icon-black-1B1C24.svg ',  
     '/js/lazysizes.min.js',
     '/lamp/style.css',
+    '/lamp/ie7/ie7.css',
+    '/css/img/lamp-icon-black-1B1C24.svg ',
+    'https://www.googletagmanager.com/gtm.js?id=GTM-KDD26NF',
+    'https://ucarecdn.com/b5f78e7d-9501-4ac2-8419-102da41b5e30/gameappgokuvsmorosalvanosgoku.svg',
+    'https://res.cloudinary.com/duv2te3cr/video/upload/v1692496149/iris-xc-la-mas-draga-travel_dirdmx.webm',
+    'https://ucarecdn.com/1ac08efc-befa-43d1-aee0-0c766e82ffdf/appescueladebellezaeskareth.svg',
+    'https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/-/rasterize/',        
     '/lamp/ie7/ie7.css'
         ])
       })
