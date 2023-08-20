@@ -1,5 +1,3 @@
-
-<!--
 Xurkitree/img/2.svg
 Xurkitree/img/3.svg
 Xurkitree/img/avatar-xurkitree.svg
@@ -17,8 +15,7 @@ Xurkitree/img/xurkitree-pokemon-luna.svg
 Xurkitree/img/xurkitree-pokemon-moon.svg
 Xurkitree/img/xurkitree-pokemon-sol-y-luna.svg
 Xurkitree/img/1.svg
- <div w3-include-html="desing.html"></div>
--->
+
 
 desing
 wey-usa-condon.svg
@@ -63,138 +60,7 @@ modelos 16.webp
 modelos 17.webp
 modelos 18.webp
 
-El negocio te tiene que hacer feliz a ti. El producto te tiene que divertir a ti.  El cliente te tiene que gustar a ti.  Javier Pastor 
 
-Si no te divierte, no se hace. 
-Viajar es divertidos.. juntos es mejor.
-Día mundial de la ópera 25 de octubre 
-El regalo navideño que más deseabas, y lo sabes Luis. 
-¿Te has portado bien? Seguro que sí y por eso queremos que disfrutes del combo a mitad de precio. 
-No sé qué es SEO, ¿por dónde debería empezar?
-Tu dosis semanal de... 
-¡Eso es todo! Puedes acceder a tu copia de html.. acceder ahora. 
-Se acerca ... para ahorrarte un dinero y reservar tu plaza para julio, por aquí. 
-Dinero no tenemos, pero mala vida no nos damos. (foto de playa) 
-Toca para actualizar
-
-
-Tu haces este día aún más especial. Gracias por venir (en una bolsa para entregar como recuerdo o suvernir) 
-
-
-css3 stamp effect usinf - orhan
-the backside menu flip - erick arbe 
-direction-aware hover efect - noel delgado 
-svg clip-path hover effect 
-gifit - thibaht 
-speech bubbles - tanner
-
-
-youtube
-pon un vaso de abua debajo de tu cama y mira lo que sucede 
-
-Gente que le da demasiada importancia al físico cuando lo que verdaderamente importa es que quiera hacer un maratón de Dragon Ball a tu lado. 
-leyendo un libro.- 
-Como ponerse un fiestón e ir a trabajar al otro día como un campeón. 
-¿De qué año son, yo de 1987
-
-Si no sumas, no restes y no jodas. 
-
-Que antojo de una hamburgesa con papas fritas y maratón de Harry Potter (foto porno) 
-Sumiso preñable no emarazable. 
-
-Se ocupa un revolcon de esos que te reinician la vida. 
-Resolvamos esto de forma civilizada. ¿Quién ganaría en esta batalla? Goku o Avatar Ang
-
-
-Me encanta programar cuidando los pequeños detalles y me apasiona ...¡Nunca paro de aprender!
-Soy jugador de equipo que quiere contribuir significativamente y crecer. 
-
-chaklist
-una cálida bienvenida 
-
-Go!
-Te invita a dejarte llevar 
-#NeverStress
-
-
-
-
-"Un viaje transforma un momento,un viajero transforma una historia.Un líder en viajes puede transformar al mundo.” - Lourdes Berho
-<h1>Marketing turistico </h1>
-
-
-<p> LA ERA DIGITAL HA ALTERADO  COMPLETAMENTE LA
-MANERA EN LA QUE LOS CONSUMIDORES SE INSPIRAN, RESERVAN, 
-COMPRAN Y FINALMENTE VIVEN LA EXPERIENCIA 
-DEL VIAJE Y LO COMPARTEN.</p>
-
-<p>CREAR EXPERIENCIAS
-BASADAS EN TEMAS 
-RELEVANTES A LOS
-VALORES DE LAS 
-“TRIBUS”/
-COMUNIDADES A 
-QUIENES NOS
-DIRIGIMOS.</p>
-TRIBAL MARKETING = NICHE MARKETING
-
-"Una tribu es un grupo de personas
-conectadas entre sí, conectadas a un líder, y 
-conectadas a una idea. Por millones de años,
-los humanos han sido parte de una u otra
-tribu. Un grupo solo requiere dos cosas para
-ser una tribu: un interés en común y una
-manera de comunicarse.” - Seth Godin
-
-
-#FamilyTribes
-#Foodies
-#Lifestylers
-#NatureAdventure
-#FashionSetters
-#DesignAddicts
-#CelebrityCravers
-#DiversityLovers
-#SportManiacs
-#ScienceWizards
-#CreativeFreaks
-#BleasureDisrupters
-#Wellnes
-#ParentsEscapers
-#MusicFans
-#Techies
-#VentureVisionaires
-#MexicoUSAAlumni
-
-
-Re-definición
-del Marketing
-Todos los derechos reservados.
-Turístico
-
-
-
-<p>BEFORE
-COVID-19
-From ADVERTISING
-to STORYTELLING  
-&
-From STORYTELLING 
-to STORY DOING </p>
-
-
-<p>AFTER
-COVID-19
-From MARKETING
-to MESSAGING 
-&
-From PROMOTING
-to GENERATING TRUST</p>
-
-Campañas
-#GreeceFromHome #ContinuamosViajandoJuntos #SeparadosPeroJuntos
-<p></p>
-<p></p>
 
 
 baitBus.png
