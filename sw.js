@@ -11,7 +11,20 @@ self.addEventListener('install', e => {
     '/css/w3.css',
     '/js/main.js',
     '/js/entradas.js',
-    '/js/lazysizes.min.js'
+    '/preloader.js',
+    '/style.css',
+    '/js/fontawesome-1d9115e34a.js',
+    '/img/lamp-loader.svg',       
+    '/js/random-quotes.js',  
+    '/js/tiempo-que-llevas-leyendo-esto.js',  
+    '/favicon.svg',
+    '/lamp-desing.svg',  
+    '/js/scripts.js',  
+    '/js/object.observe.polyfill.js',  
+    '/img/lamp-icon-black-1B1C24.svg ',  
+    '/js/lazysizes.min.js',
+    '/lamp/style.css',
+    '/lamp/ie7/ie7.css'
         ])
       })
   );
