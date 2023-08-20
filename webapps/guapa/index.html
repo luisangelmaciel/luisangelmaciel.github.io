@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<!-- ⊙⩌⨀  2006 - 2023 © LuisAngelMaciel lamp.martech! Marketing Technology Stack          
+	    ¿Quién hizo todo esto? 
+            http://twitter.com/luisangelmaciel  & https://luisangelmaciel.github.io -->
+<html lang="es-MX" dir="ltr" prefix="og: https://ogp.me/ns#" class="no-js">
+
+<head itemscope itemtype="https://schema.org/WebSite">
+    <meta charset="UTF-8">
+    <title>Pokémon Pikachu</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <meta property='og:description ' content='Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario. Mercadologo, diseñador y desarrollador web. ¿Qué quieres construir hoy?
+    Un Sitio de negocios, una tienda de comercio electrónico, un portafolio, blog '>
+    <link rel="manifest" href="./manifest.json">
+    <link rel="icon" href="./favicon.ico">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./app.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+  <style>
+    /* latin */
+@font-face {
+  font-family: 'Fredoka One';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/fredokaone/v14/k3kUo8kEI-tA1RRcTZGmTlHGCac.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root{--primary-color:hsl(196, 78%, 61%);--secondary-color:hsl(217, 15%, 83%);--success-color:hsl(165, 58%, 55%);--info-color:hsl(214, 79%, 65%);--warning-color:hsl(43, 100%, 66%);--danger-color:hsl(354, 81%, 63%);--primary-color-darker:hsl(196, 68%, 54%);--secondary-color-darker:hsl(215, 13%, 70%);--success-color-darker:hsl(165, 55%, 48%);--info-color-darker:hsl(214, 68%, 58%);--warning-color-darker:hsl(39, 97%, 62%);--danger-color-darker:hsl(354, 67%, 56%);--primary-color-lighter:hsl(196, 78%, 81%);--secondary-color-lighter:hsl(214, 16%, 92%);--success-color-lighter:hsl(165, 58%, 75%);--info-color-lighter:hsl(214, 79%, 85%);--warning-color-lighter:hsl(43, 100%, 86%);--danger-color-lighter:hsl(354, 81%, 83%);--secondary-color-darkest:hsl(215, 11%, 30%);--secondary-color-lightest:hsl(220, 1%, 98%);--ease-in-quad:cubic-bezier(0.55, 0.085, 0.68, 0.53);--ease-in-cubic:cubic-bezier(0.55, 0.055, 0.675, 0.19);--ease-in-quart:cubic-bezier(0.895, 0.03, 0.685, 0.22);--ease-in-quint:cubic-bezier(0.755, 0.05, 0.855, 0.06);--ease-in-expo:cubic-bezier(0.95, 0.05, 0.795, 0.035);--ease-in-circ:cubic-bezier(0.6, 0.04, 0.98, 0.335);--ease-out-quad:cubic-bezier(0.25, 0.46, 0.45, 0.94);--ease-out-cubic:cubic-bezier(0.215, 0.61, 0.355, 1);--ease-out-quart:cubic-bezier(0.165, 0.84, 0.44, 1);--ease-out-quint:cubic-bezier(0.23, 1, 0.32, 1);--ease-out-expo:cubic-bezier(0.19, 1, 0.22, 1);--ease-out-circ:cubic-bezier(0.075, 0.82, 0.165, 1);--ease-in-out-quad:cubic-bezier(0.455, 0.03, 0.515, 0.955);--ease-in-out-cubic:cubic-bezier(0.645, 0.045, 0.355, 1);--ease-in-out-quart:cubic-bezier(0.77, 0, 0.175, 1);--ease-in-out-quint:cubic-bezier(0.86, 0, 0.07, 1);--ease-in-out-expo:cubic-bezier(1, 0, 0, 1);--ease-in-out-circ:cubic-bezier(0.785, 0.135, 0.15, 0.86)}.dialog::backdrop{background:rgba(0,0,0,.4);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}.nav:hover .nav-item:not(:hover) a{color:var(--nav-inactive-color)}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}
+
+html, body  { 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow:hidden;}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-pikachu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow:hidden;
+}
+
+/* head */
+.pikachu-top {
+  position: relative;
+  background: radial-gradient(circle, rgba(249,237,124,1) 59%, rgba(247,230,75,1) 99%);
+  height: 20vmin;
+  width: 27vmin;
+  border-radius: 47% 53% 51% 49% / 70% 70% 40% 40%; 
+  
+  display: flex;
+  /*margin-top: 10vmin;*/
+}
+/* left ear */
+.pikachu-top::after {
+  content: '';
+  position: absolute;
+  background: #f9ed7c;
+  height: 12vmin;
+  width: 7vmin;
+  border-radius: 40% 80% 20% 20%; 
+  transform: rotate(-25deg);
+  top: -6vmin;
+}
+
+.pikachu-top::before {
+  content: '';
+  position: absolute;
+  background: #f9ed7c;
+  height: 13vmin;
+  width: 7vmin;
+  border-radius: 80% 40% 20% 20%; 
+  left: 21vmin;
+  top: -3vmin;
+  transform: rotate(60deg);
+}
+
+.pikachu-eyes {
+  position: relative;
+  background: #444444;
+  height: 4.5vmin;
+  width: 4.5vmin;
+  border-radius: 50%;
+  
+  box-shadow: 12vmin 0 #444444;
+  
+  top: 9vmin;
+  left: 5.3vmin;
+}
+
+.pikachu-eyes::after {
+  content: '';
+  position: absolute;
+  background: white;
+  height: 1vmin;
+  width: 1vmin;
+  border-radius: 50%;
+  
+  left: 2.5vmin;
+  top: 1vmin;
+  
+  box-shadow: 10.3vmin 0 white;
+}
+/* nose */
+.pikachu-eyes::before {
+  content: '';
+  position: absolute;
+  background: #444444;
+  height: 0.5vmin;
+  width: 1vmin;
+  border-radius: 49% 51% 52% 48% / 30% 30% 70% 70%;
+  
+  top: 4vmin;
+  left: 7.8vmin;
+}
+
+.pikachu-mouth {
+  position: relative;
+  background: #ffacb1;
+  height: 1.5vmin;
+  width: 2vmin;
+  border-radius: 0 0 3vmin 3vmin;
+  
+  top: 14.5vmin;
+  left: 8.2vmin;
+}
+
+.pikachu-mouth::after {
+  content: '';
+  position: absolute;
+  background: #f9ed7c;
+  height: 1vmin;
+  width: 1.5vmin;
+  border-radius: 50%;
+  border-bottom: 0.1vmin solid #444444;
+    
+  left: -0.5vmin;
+  top: -0.6vmin;  
+}
+
+.pikachu-mouth::before {
+  content: '';
+  position: absolute;
+  background: #f9ed7c;
+  height: 1vmin;
+  width: 1.5vmin;
+  border-radius: 50%;
+  border-bottom: 0.1vmin solid #444444;
+    
+  left: 1vmin;
+  top: -0.6vmin;  
+}
+
+.pikachu-cheeks {
+  position: relative;
+  background: #e65a41;
+  height: 5vmin;
+  width: 4vmin;
+  border-radius: 3vmin 5vmin 5vmin 3vmin;
+  transform: rotate(-43deg);
+  
+  top: 12.2vmin;
+  left: -5.7vmin;
+}
+
+.pikachu-cheeks::after {
+  content: '';
+  position: absolute;
+  background: #e65a41;
+  height: 5vmin;
+  width: 4vmin;
+  border-radius: 5vmin 3vmin 3vmin 5vmin;
+  transform: rotate(86deg);
+  
+  left: 15.6vmin;
+  top: 14.5vmin;
+}
+
+.pikachu-ears {
+  position: relative;
+  background: transparent;
+  height: 3vmin;
+  width: 7vmin;
+  border-radius: 40% 80% 10% 10%;
+  border-top: 5vmin solid #444444;
+  
+  top: -5.7vmin;
+  left: -11.5vmin;
+  
+  transform: rotate(-25deg);
+  
+  z-index: 1;
+}
+
+.pikachu-ears::after {
+  content: '';
+  position: absolute;
+  background: transparent;
+  height: 3vmin;
+  width: 6.5vmin;
+  border-radius: 80% 40% 20% 20%; 
+  border-top: 4vmin solid #444444;
+  
+  top: 9.5vmin;
+  left: 21vmin;
+  
+  transform: rotate(85deg);
+  
+  z-index: 1;
+}
+
+
+.pikachu-bottom {
+  position: relative;
+  background: #f9ed7c;
+  height: 12vmin;
+  width: 18vmin;
+  border-radius: 70% 70% 40% 40%;
+  top: -4vmin;
+  
+  display: flex;
+  
+  z-index: 1;
+}
+
+.pikachu-bottom::after {
+  content: '';
+  position: absolute;
+  background: linear-gradient(36deg, rgba(249,237,124,1) 23%, rgba(247,230,75,1) 58%);
+  height: 7vmin;
+  width: 5vmin;
+  border-radius: 50%;
+  transform: rotate(30deg);
+
+  top: 1.5vmin;
+  left: -0.5vmin;  
+}
+/* bag strap */
+.pikachu-bottom::before {
+  content: '';
+  position: absolute;
+  background: transparent;
+  width: 3vmin;
+  height: 14vmin;
+  border-radius: 50%;
+  transform: rotate(-65deg);
+  
+  border-left: 2.5vmin solid #2f2b2b;
+  opacity: 0.9;
+  
+  left: 7vmin;
+  top: -2vmin;
+}
+
+/* THIS IS PIKACHU'S RIGHT ARM */
+.wailmer-bag {
+  position: relative;
+  background: rgba(247,230,75,1);
+  height: 7vmin;
+  width: 10vmin;
+  border-radius: 50%;
+  
+  left: 15.5vmin;
+  top: 2vmin;
+  
+  display: flex;
+  
+  z-index: 1;
+}
+
+.wailmer-bag::before {
+  content: '';
+  position: absolute;
+  background: #388eff;
+  height: 8vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  
+  left: -3.5vmin;
+  top: 3.5vmin;
+}
+
+.wailmer-bag::after {
+  content: '';
+  position: absolute;
+  background: #F9F2CB;
+  height: 2vmin;
+  width: 5vmin;
+  border-radius: 0% 0% 80% 80%;
+  transform: rotate(-20deg);
+  
+  top: 9.4vmin;
+  left: -1vmin;
+}
+
+.wailmer-details {
+  position: relative;
+  background: transparent;
+  height: 1vmin;
+  width: 1vmin;
+  border-radius: 50%;
+  
+  box-shadow: 
+    -0.1vmin 1.5vmin #444444,
+    3.5vmin 0.3vmin #444444;
+  
+  top: 6.3vmin;
+  left: -1.7vmin;
+  
+  z-index: 1;
+}
+.wailmer-details::after {
+  content: '';
+  position: absolute;
+  background: #F9F2CB;
+  width: 6.3vmin;
+  height: 2.6vmin;
+  border-radius: 50% 50% 80% 80%;
+  
+  transform: rotate(-20deg);
+  left: -0.1vmin;
+  top: 2.2vmin;  
+}
+
+.wailmer-details::before {
+  content: '';
+  position: absolute;
+  background: white;
+  height: 1vmin;
+  width: 4vmin;
+  border-radius: 0 0 18vmin 18vmin;
+  border-bottom: 0.2vmin solid white;
+  transform: rotate(-20deg);
+  top: 2.3vmin;
+  left: 0.9vmin;
+  
+  z-index: 1;
+}
+
+.wailmer-fins {
+  position: relative;
+  height: 3vmin;
+  width: 3vmin;
+  background: #388eff;
+  border-radius: 40% 40% 80% 20%;
+  
+  top: 5vmin;
+  left: 1.5vmin;
+  transform: rotate(-20deg);
+  
+  display: flex;
+}
+
+.wailmer-fins::before {
+  content: '';
+  position: absolute;
+  height: 3vmin;
+  width: 3vmin;
+  background: #388eff;
+  border-radius: 40% 80% 20% 80%;
+  
+  left: -7.2vmin;
+}
+
+.wailmer-fins::after {
+  content: '';
+  position: absolute;
+  background: grey;
+  height: 1vmin;
+  width: 1.5vmin;
+  border-radius: 30%;
+  top: -3.2vmin;
+  left: -3vmin;
+}
+
+.fin-stripes {
+  position: relative;
+  background: #377edc;
+  width: 1vmin;
+  height: 0.2vmin;
+  box-shadow: 
+    -0.2vmin 0.8vmin #377edc,
+    -9.1vmin -0.2vmin #377edc,
+    -9.1vmin 0.5vmin #377edc;
+  
+  top: 1vmin;
+  left: 2vmin;
+}
+
+.pikachu-feet {
+  position: relative;
+  background: linear-gradient(118deg, rgba(249,237,124,1) 44%, rgba(247,230,75,1) 64%);
+  height: 4vmin;
+  width: 8vmin;
+  border-radius: 50%;
+  
+  box-shadow: 9.5vmin 0 rgba(247,230,75,1);
+    
+  left: -1.5vmin;
+  top: 9vmin;
+}
+
+.hat {
+  position: relative;
+  background: #388eff;
+  height: 7vmin;
+  width: 26vmin;
+  border-radius: 50%;
+  
+  top: -17.5vmin;
+  left: -2.5vmin;
+  
+  transform: rotate(10deg);
+  
+  display: flex;
+}
+
+.hat::before {
+  content: '';
+  position: absolute;
+  background: #377edc;
+  height: 7vmin;
+  width: 9vmin;
+  border-radius: 47% 53% 51% 49% / 70% 70% 40% 40%;
+  
+  left: 0.8vmin;
+  top: -1.5vmin;
+}
+
+.hat::after {
+  content:'';
+  position: absolute;
+  height: 1vmin;
+  width: 2vmin;
+  border-radius: 50%;
+  background: #388eff;
+  top: -2vmin;
+  left: 4vmin;
+}
+
+.stripes {
+  position: relative;
+  background: transparent;
+  height: 6vmin;
+  width: 2vmin;
+  border-radius: 50%;
+  border-left: 0.5vmin solid #388eff;
+  
+  top: -1vmin;
+  left: 2.5vmin;
+  
+  transform: rotate(15deg);
+}
+
+.stripes::after {
+  content: '';
+  position: absolute;
+  background: transparent;
+  height: 6vmin;
+  width: 2vmin;
+  border-radius: 50%;
+  border-right: 0.5vmin solid #388eff;
+  
+  transform: rotate(-30deg);
+  left: 2vmin;
+  top: -0.6vmin;
+}
+
+.shadow {
+  position: relative;
+  background: #e7df97;
+  width: 25vmin;
+  height: 5vmin;
+  top: -6.5vmin;
+  left: 1vmin;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+
+
+  :root {
+    --bg: #fffce0;
+    --text: hsl(5, 96%, 60%);
+    --accent1: hsl(49, 100%, 45%);
+    --accent2: hsl(49, 100%, 75%);
+  }
+
+  body,
+  html {
+    display: grid;
+    background-color: var(--bg);
+    font-family: "Fredoka One", cursive;
+  }
+
+  p {
+    margin: auto;
+    font-size: 11vw;
+    text-align: center;
+    color: var(--bg);
+  }
+  p span {
+    animation: jump 4s ease-in-out var(--delay) infinite;
+  }
+
+  @keyframes jump {
+    50% {
+      text-shadow: 0 10px 10px var(--accent1), 0 -10px 10px var(--accent2);
+    }
+  }
+
+    .bodylove {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /*OJO*/
+    overflow: hidden;
+    }
+
+    .heart {
+      --heart-color: var(--danger-color);
+      --heart-width: 16px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: var(--heart-width);
+      height: var(--heart-width);
+      background: var(--heart-color);
+      transform: rotate(-45deg);
+      pointer-events: none;
+    }
+    .heart::before, .heart::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: inherit;
+      border-radius: 50%;
+    }
+    .heart::before {
+      top: -50%;
+    }
+    .heart::after {
+      right: -50%;
+    }
+  </style>
+</head>
+
+<body >
+  
+
+  <div class="drag"></div>
+  <header>
+    <h1>1DIV</h1>
+    <input type="text" placeholder="search" class="search-field">
+    <button class="new">new</button>
+  </header>
+  <div class="demos">
+    <ul class="grid" zoom-level="medium"></ul>
+  </div>
+  <div class="tools">
+    <div class="demo-meta-data">
+      <input type="text" class="demo-name" placeholder="Name your demo">
+      <button class="close" title="Close this 1DIV">close</button>
+      <button class="delete" title="Delete this 1DIV">delete</button>
+    </div>
+    <div class="resizer" title="Drag to resize the editor"></div>
+    <div class="code"></div>
+    <div class="color-picker editor-button">
+      <input type="color" title="Change the background color" value="#FFFFFF">
+    </div>
+  </div>
+  <footer>
+    <ul class="zoom">
+      <li><button title="Show more 1DIVs" class='zoom-small'>small</button></li>
+      <li><button title="Show some 1DIVs" class='zoom-medium'>medium</button></li>
+      <li><button title="Show fewer 1DIVs" class='zoom-large'>large</button></li>
+    </ul>
+  </footer>
+  <script src="./bundle.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('./sw.js', {
+        scope: './'
+      }).then(reg => {
+        if (reg.installing) {
+          console.log('Service worker installing');
+        } else if (reg.waiting) {
+          console.log('Service worker installed');
+        } else if (reg.active) {
+          console.log('Service worker active');
+        }
+      }).catch(e => {
+        console.log('Registration failed with ' + e);
+      });
+    }
+  </script>
+</body>
+
+</html>
