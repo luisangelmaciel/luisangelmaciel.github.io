@@ -179,6 +179,7 @@
 
 <script src="https://luisangelmaciel.github.io/js/fontawesome-1d9115e34a.js"></script>  <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v5.15/icons?d=gallery&p=2&s=regular&m=free    -->
 <link rel="stylesheet" href="https://luisangelmaciel.github.io/css/style.css" media="all">
+<link rel="stylesheet" href="https://luisangelmaciel.github.io/css/fontawesome.css" media="all">
  <!-- Me! 
  <link rel="me" href="https://twitter.com/luisangelmaciel" />
  <link rel="me" href="https://mastodon.social/@luisangelmaciel" />
@@ -283,7 +284,6 @@ body {background-color: white;color: black;}
 <i class="fas fa-chess-queen " aria-hidden="true" onclick="openName(event, 'aboutme')"> Aboutme &nbsp; &nbsp; &nbsp;</i>
 <i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'myapps')"> Apps &nbsp; &nbsp; &nbsp;</i>
 <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='https://luisangelmaciel.github.io/post.html'"> Publicaciones </i> &nbsp; &nbsp; &nbsp;
-<i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'mapaDeSitio')"> Mapa de sitio </i>&nbsp; &nbsp; &nbsp;
 <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>&nbsp; &nbsp; &nbsp;
 <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>&nbsp; &nbsp; &nbsp;
 </div>   
@@ -383,6 +383,10 @@ https://envialove.webador.mx/
 
 
 <div class="WithLove">
+    <script>
+        $("#topWithLove").lettering();
+        $("#bottomWithLove").lettering();
+        </script>
 <script src="./js/jquery-lettering.js " charset="utf-8"></script>       <!-- https://css-tricks.com/examples/BlurredText/js/jquery.lettering.js -->                                                                                     
 <style>
 /* vietnamese */
@@ -630,18 +634,15 @@ animation: BOUNCEWithLove  2.5s infinite;
 </div>
 </div>
 
-<script>
-$("#topWithLove").lettering();
-$("#bottomWithLove").lettering();
-</script>
+
 </div></div>
 <div id="en-modo" class="tabcontent"><br>
     <div class="background-icon-black-1B1C24 lazy lazyload">
         <div class="w3-center">
             <div class="container-name">
                 <div class="box">
-                    <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy lazyload img" width="150" height="150"></div>
-                    <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy lazyload img" width="150" height="150"></div>
+                    <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy  img" width="150" height="150"></div>
+                    <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy img" width="150" height="150"></div>
                     <div class="title w3-center">
                         <span class="block"></span>
                         <p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p>
@@ -659,7 +660,7 @@ $("#bottomWithLove").lettering();
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
         <div class="w-full lg:w-1/4 w3-container">
         <!-- https://ucarecdn.com/ee00b6fb-5ad9-4da0-be0e-ac4624c44a32/-/preview/469x216/-/quality/smart/-/format/auto/ -->
-            <img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy lazyload" width="400" height="400" style="border-radius: 50%;border: 2px solid white;">
+            <img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy " width="400" height="400" style="border-radius: 50%;border: 2px solid white;">
         </div>
     </div>
 
@@ -947,11 +948,10 @@ $("#bottomWithLove").lettering();
             <i class="fas fa-home" aria-hidden="true" onclick="openName(event, 'en-modo')" id="defaultOpen"> Home  </i> &nbsp; &nbsp; &nbsp;
             <i class="fas fa-chess-queen" aria-hidden="true" onclick="openName(event, 'dragvesti')"> Dragvesti</i> 
             <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'donate')"> Donate </i>&nbsp; &nbsp; &nbsp;
-            <i class="fa fa-heart w3-hide" aria-hidden="true" onclick="openName(event, 'DameMas')"> DameMas</i>  &nbsp; &nbsp; &nbsp;
-            <i class="fa fa-heart w3-hide" aria-hidden="true" onclick="openName(event, 'WithLove')"> Love </i>  &nbsp; &nbsp; &nbsp;
-
+            <i class="fa fa-heart " aria-hidden="true" onclick="openName(event, 'DameMas')"> DameMas</i>  &nbsp; &nbsp; &nbsp;
+            <i class="fa fa-heart " aria-hidden="true" onclick="openName(event, 'WithLove')"> Love </i>  &nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'donate')"> Donate </i>&nbsp; &nbsp; &nbsp;
             
-            <p onclick="openName(event, 'drag-queen')">Galeria</p>
             <p onclick="openName(event, 'one')">Espace </p>
 
             <a rel="noreferrer noopener" href="index.html" target="_blank" title="https://luisangelmaciel.github.io/" aria-label="Link de la publicación">Inicio</a><br>
@@ -965,10 +965,9 @@ $("#bottomWithLove").lettering();
             <a rel="noreferrer noopener" href="servicios/index.html" target="_blank" title="Productos y servicios" aria-label="Productos y servicios">Productos y servicios</a><br>
             <a rel="noreferrer noopener" href="404.html" target="_blank" title="404!" aria-label="404!">404!</a><br>
             <a rel="noreferrer noopener" href="avisodeprivacidad.html" target="_blank" title="Aviso de privacidad" aria-label="Aviso de privacidad">Aviso de privacidad</a><br>
-            <a rel="noreferrer noopener" href="mapadesitio.html" target="_blank" title="Mapa de sitio" aria-label="Mapa de sitio">Mapa de sitio</a><br><br>
+     <!--        <a rel="noreferrer noopener" href="mapadesitio.html" target="_blank" title="Mapa de sitio" aria-label="Mapa de sitio">Mapa de sitio</a><br><br> -->
             <a rel="noreferrer noopener" href="2022/la-creatividad-te-hace-brillar-Haz-que-tu-creatividad-funcione.html" target="_blank" title="La creatividad te hace brillar.Haz que tu creatividad funcione." aria-label="La creatividad te hace brillar.Haz que tu creatividad funcione.">La creatividad te hace brillar.Haz que tu creatividad funcione.</a><br><br>
-            <a rel="noreferrer noopener" href="mapadesitio.html" title="Mapa de sitio" aria-label="Mapa de sitio">Ver mapa de sitio full</a><br>
-            <p class="w3-center">Aviso legal | <a href="avisodeprivacidad.html" target="_blank">Aviso de privacidad</a> y Cookies | Do Not Sell My Info</p>
+            <p class="w3-center">Aviso legal | <span onclick="openName(event, 'mapaDeSitio')">Mapa de sitio</span> | Do Not Sell My Info</p>
             <br>
             
 
@@ -1030,7 +1029,7 @@ $("#bottomWithLove").lettering();
             <img src="https://ucarecdn.com/551d6a1a-747c-48d4-9a37-698269424177/photopreview.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
             <img src="https://ucarecdn.com/92dcb1b1-909c-4cab-b963-3ba894b62cbe/faviconappgokusavegame.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app" >&nbsp;
             <img src="https://ucarecdn.com/45e1fac6-cf2d-4248-9ee2-a807f0c11891/iGglybuff.svg	" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-            <img src="https://ucarecdn.com/55cd9feb-0758-4a62-a559-e2e31458c40a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/55cd9feb-0758-4a62-a559-e2e31458c40a/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
             <img src="https://ucarecdn.com/763ddbd1-40b2-4d67-8583-dab4c9bde6aa/fontglypsartdesignerapp.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
             <img src="https://ucarecdn.com/290f48b4-4603-49ae-b051-b4b335d09415/apppojkerengersringtone.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
             <img src="https://ucarecdn.com/e5bfa78e-2c83-43bb-9353-ea0333739bf0/xurkitreegreenicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;                      
@@ -1039,17 +1038,17 @@ $("#bottomWithLove").lettering();
             <img src="https://ucarecdn.com/1b7b39d8-81f6-4f74-a043-943514842994/-/scale_crop/63x79/center/"" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/cc05bd0e-d9f2-44ff-a4f2-82e50834dc59/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/6d3bd746-0fe1-4e8e-9358-386273bcf4ca/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
-            <img src="https://ucarecdn.com/b36b0bef-0c0e-4a0a-bd20-84c6b6b3f6dc/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/b36b0bef-0c0e-4a0a-bd20-84c6b6b3f6dc/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/ffec7da0-0213-4c55-8cbb-4a9ea126becf/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">
-            <img src="https://ucarecdn.com/e384710b-5d08-4aa1-b938-168e18b1e17a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-            <img src="https://ucarecdn.com/626fcc2e-eecd-4be0-9218-51ea503965a0/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-            <img src="https://ucarecdn.com/5fe068a1-0a71-4c7d-9f3b-39d1204db6fe/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
-            <img src="https://ucarecdn.com/b96859b9-745b-4b56-a363-96abc0f11104/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
-            <img src="https://ucarecdn.com/3b2b5bb7-9609-4826-bd6f-696b10a65057/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-            <!-- <img src="https://ucarecdn.com/37453a6e-f448-4214-b809-bf2888a66878/-/preview/-/rasterize/" class="clay w3-button w3-respon&nbsp; sive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp;  ---->
-            <img src="https://ucarecdn.com/c0edcd1d-9c5f-4378-a4fa-1845728bab63/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-            <img src="https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-            <img src="https://ucarecdn.com/1a29b760-1f3d-4356-89a7-07adeebcd0ab/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
+            <img src="https://ucarecdn.com/e384710b-5d08-4aa1-b938-168e18b1e17a/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/626fcc2e-eecd-4be0-9218-51ea503965a0/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/5fe068a1-0a71-4c7d-9f3b-39d1204db6fe/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
+            <img src="https://ucarecdn.com/b96859b9-745b-4b56-a363-96abc0f11104/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
+            <img src="https://ucarecdn.com/3b2b5bb7-9609-4826-bd6f-696b10a65057/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <!-- <img src="https://ucarecdn.com/37453a6e-f448-4214-b809-bf2888a66878/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-respon&nbsp; sive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp;  ---->
+            <img src="https://ucarecdn.com/c0edcd1d-9c5f-4378-a4fa-1845728bab63/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
+            <img src="https://ucarecdn.com/1a29b760-1f3d-4356-89a7-07adeebcd0ab/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
             <img src="https://ucarecdn.com/0d5e7c5d-71cf-499f-b883-00fbbc0339d6/game-dino-zombie.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app" loading="lazy"> &nbsp; 
         </div>
     </div>
@@ -1287,7 +1286,47 @@ $("#bottomWithLove").lettering();
                 <div class="w3-bar w3-center w3-centered" style="font-size: 24px;">&nbsp;</div>
             </div>
         
+ <!-- ¿Todavía no tienes sitio web? ¡Ningún problema! Puede crear una página de destino de Xibot (que alojaremos por usted) para que pueda comenzar a crear su lista de correo electrónico.
+Ya sea un perfil personal, una página de inicio para capturar correos electrónicos o algo un poco más elaborado, Xibot lo tiene cubierto. Simple, receptivo. Simple. Comience con una de las plantillas y personalícela. Luce bien en todos los dispositivos. Luce genial en todos los tamaños de pantalla desde el primer momento, desde teléfonos hasta tabletas y computadoras de escritorio. Su estándar de diseño simple pero hermoso hace que su contenido y su oferta sean el héroe ¡Hazte profesional! ¡Mejora tu experiencia Xibot! Conviértase en Pro desde solo $500 anuales (sí, por año) y obtenga acceso a funciones exclusivas Pro como: Dominios personalizados. Publique sitios en cualquier dominio personalizado que posea con compatibilidad total con SSL (a través de Let's Encrypt ). Sin marca. Publique sitios sin la marca "Hecho con Carrd" en el pie de página. Imágenes y videos grandes-Cargue y use imágenes/GIF de hasta 16 MB y videos de hasta 32 MB. Iconos del sitio. Muestre iconos personalizados (también conocidos como "favicons") en la barra de direcciones cuando visite sus sitios. Compartir imágenes. Muestre imágenes personalizadas (en lugar de capturas de pantalla) cuando comparta sus sitios en las redes sociales. formularios de registro de correo electrónico y formularios personalizado. Una vez que hayan completado el formulario, puede controlar lo que ven a continuación con un mensaje de éxito. Visible en Google. Consigue más visitantes a tu página web gracias a la optimización de los motores de búsqueda. Ya sea que se trate de un mensaje emergente rápido o de que elija redirigirlos a una página de agradecimiento personalizada, su suscriptor sabrá que tiene su información. ¿Suena bien? Haga clic a continuación para comenzar. No es necesario registrarse. Elija un punto de partida
+¿Necesitas ayuda? ¿Tienes alguna pregunta o aún no estás seguro? El equipo de soporte de Webador está disponible para ayudarte a construir la página web como tu deseas.
 
+Comparar planes Elija su plan, luego actualice instantáneamente usando PayPal o cualquier tarjeta de crédito o débito importante. Renueve automáticamente cada año o simplemente pague sobre la marcha, lo que funcione para usted. En 15 minutos tendrás una cuenta y tu página web estará online
+Regístrate gratis 42,898 clientes satisfechos Optimizado para Google Nombre de dominio (.COM.MX) incluido Soporte técnico gratuito
+
+¿Qué tipo de página web quieres crear? (opcional) Tu elección no es fija. Nos ayuda a brindarte una mejor experiencia. Página web Negocio online Blog
+
+¿Cuál es el título de tu página web? (opcional) Por ejemplo, el nombre de tu empresa. Puedes cambiar fácilmente el nombre de tu página web más adelante.
+
+https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic FAQ ¿Qué es? ¿Cómo me comunico con el soporte? ¿Qué pasa con mi privacidad? ¿Cuánto cuesta? Nos tomamos su privacidad muy en serio. Su texto solo se usa para brindarle las mejores opciones de autocompletado posibles. Nunca venderemos sus datos. Consulta nuestra política de privacidad para obtener más detalles. https://carrd.co/
+https://envialove.webador.mx/
+
+<a href=" https://cdpn.io/pen/debug/yLQRWOR?authentication_hash=dXMqBRZPvdbr">contacto</a><br>
+                       -->
+
+                  <!-- 
+                    <h1>web</h1>
+<a href="https://jgthms.com/web-design-in-4-minutes/#content" target="_blank" title="" aria-label="Templete">Diseño Web en 4 minutos</a><br>
+
+<a href="https://supersite.es/" target="_blank" title="" aria-label="Templete"><p>https://supersite.es/</p></a><br>
+<a href="https://tesel.mx/enviar-correos-desde-google-sheets-7892/" target="_blank" title="" aria-label="Blog">Enviar correos desde Google Sheets</a>
+
+
+
+Envialove
+https://www.xbr.pw/envialov/#
+
+<a href="https://vixenbrand.com/pages/terms-conditions" target="_blank" title="TERMS + CONDITIONS" aria-label="TERMS + CONDITIONS">TERMS + CONDITIONS</a><br>
+https://perratormenta.com/
+
+xbr
+https://www.entrapolis.com/es/tarifa/ 
+
+
+
+Tarifas educativas y sin fines de lucro.
+
+Somos grandes admiradores de las instituciones educativas y las organizaciones sin fines de lucro. Pregunte por las tarifas con grandes descuentos.
+-->
             <div class="w3-row w3-container w3-centered w3-center">
                 <div class="btn-xiib">Diseño web</div>
                 <br>
@@ -1701,7 +1740,7 @@ $("#bottomWithLove").lettering();
     <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6 w3-center"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small">
             <span class="lamp lampdragvesti w3-hover-opacity w3-center" style=" font-size: 4rem;" id="dragvesti_"></span>
-            <p style="font-size:20px;font-weight:300; text-align: center;">La Carrera Drag online y En Vivo</p>
+            <p style="font-size:20px;font-weight:300; text-align: center;">Mapsite</p>
             <div class="mb-4 VA-vacio"> </div>
         </div>
 
@@ -1709,74 +1748,18 @@ $("#bottomWithLove").lettering();
 
             <div class="w3-row w3-container" style="width:100%">
                 <div class="w3-bar w3-center w3-centered" style="font-size: 24px;">
-                    <a href="https://twitter.com/intent/follow?screen_name=Dragvesti_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a> &nbsp;
-                    <a href="https://www.youtube.com/channel/UCcvSQb1ZAjU1E_Pfy7PeXxA?sub_confirmation=1" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i> </a> &nbsp;
-                    <a href="https://www.instagram.com/dragvesti/?hl=es" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> </a> &nbsp;
-                    <a href="https://www.pinterest.com.mx/ddragvesti/_created/" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i>  </a> &nbsp;
-                    <a href="https://es-la.facebook.com/dragvesti/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i> </a> &nbsp;
-                    <a href="https://dragvesti.xiiber.com/" target="_blank"><i class="fa fa-suitcase" aria-hidden="true"></i> </a>
-                    <a href="https://www.youtube.com/watch?v=nrPKohTWF2Y" target="_blank"><i class="fa fa-suitcase" aria-hidden="true"></i> </a>
-                    <!--                         https://www.google.com/maps/place/Dragvesti/@19.452384,-99.1200055,17z/data=!4m5!3m4!1s0x85d1f9f8516a9b8f:0xc9f2b28c568c85f2!8m2!3d19.452384!4d-99.1178168?hl=es-419                                    
-                https://www.pinterest.com.mx/ddragvesti/_saved/
-
-                logo_dragvesti_internacional_1.png
-                logo_dragvesti_internacional_3.png
-                logo_dragvesti_envivo_chihuahua_cuu_allstars.png
-                logo_dragvesti_envivo_chihuahua_cuu1.png
-                logo_dragvesti_envivo_chihuahua_cuu2.png
-                logo_dragvesti_envivo_chihuahua_cuu3.png
-                logo_dragvesti_allstars_1.png
-                logo_dragvesti_allstars_2.png
-                logo_dragvesti_envivo_CDMX1.png
-                logo_dragvesti_mexico_2.png                -->
+                    <a href="https://twitter.com/intent/follow?screen_name=Dragvesti_" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i> </a> &nbsp;     
                 </div> <br>
             </div>
 
 
             <div class="w3-row w3-container w3-centered w3-center">
-
-                <div class="btn-xiib shake" style="background-color: rgb(22, 53, 158);"><a href="https://dragvesti.xiiber.com/" target="_blank"> Dragvesti 1,2,3</a></div>
-
-                <br>
-                <div class="btn-xiib" style="background-color: green;">
-                    Dragvesti All Stars 1,2
-                </div>
-
-                <br>
-                <div class="btn-xiib" style="background-color: red;">
-                    En vivo Chihuahua
-                </div>
-
-                <br>
-                <div class="btn-xiib" style="background-color: rgb(224, 14, 214);">
-                    En vivo CDMX
-                </div>
-
-                <br>
-                <div class="btn-xiib" style="background-color: rgb(111, 21, 196);">
-                    <a href="https://dragvesti.github.io/cucuconfessions/">Cucuconfessions</a>
-                </div>
-
-                <br>
                 <div class="btn-xiib" style="background-color: rgb(224, 210, 82); color:black">
-                    Casting 4ta temporada
+                    Mapa
                 </div>
             </div>
 
             <br>
-            <details class="w3-row w3-container">
-                <summary class="details-modal-overlay">
-                    ¿Comó inicie Dragvesti?
-                </summary>
-                <div class="details-modal">
-
-                    <div class="details-modal-title">
-                        <p>...</p>
-                    </div>
-                    <div class="details-modal-content">
-                    </div>
-                </div>
-            </details>
             <br><br><br>
         </div>
 
@@ -1886,9 +1869,13 @@ $("#bottomWithLove").lettering();
     Create your Blog Now!
     🎉 Takes only 15 seconds with Not
     <h2>Basic contruction</h2>
-    <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/random/center.html">Frases random</a>
-    <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/navResponsive%20con%20modalfull.html">Nav Responsive 100%</a>
-    <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/crea-contador-regresivo/index.html">Contador cuenta regresiva</a>
+    <!-- <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/random/center.html">Frases random</a>
+    <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/navResponsive%20con%20modalfull.html">Nav Responsive 100%</a> 
+    <a href="file:///C:/xbrpw.github.io/2023/7/stick-header-content/index.html">Stick header + content </a>
+    <a href="file:///C:/xbrpw.github.io/2023/7/mobile-friendly-form-elements-login/index.html">Mobile friendly form elements</a>
+    <a href="file:///C:/xbrpw.github.io/2023/10/tripple-cta-stripes/index.html">tripple-cta-stripes</a>
+    <a href="file:///C:/xbrpw.github.io/short-url/assets/css/hey/crea-contador-regresivo/index.html">Contador cuenta regresiva</a>-->
+
     <a href="https://codepen.io/hihellomonster/details/oNWNqxL">Twitter follow</a> 
     <a href="https://codepen.io/jbsmith731/details/NPmYEJ">CodePen HomeScroll Progress</a>
     <a href="https://codepen.io/luisangelmaciel/pen/QWZJqZv">Scroll bar invesible</a><br>
@@ -1902,9 +1889,7 @@ $("#bottomWithLove").lettering();
     <a href="https://codepen.io/rahulmeshram/pen/JjPyYRW">CodePen HomePage Change / Load Effect</a>
     <a href="https://codepen.io/rahulmeshram/pen/MWaeLaR">CodePen HomeLanding Page — Tailwind CSS</a>
     <a href="https://codepen.io/IanLunn/pen/AqaWoY">CodePen HomeSequence.js - Modern Slide In</a>
-    <a href="file:///C:/xbrpw.github.io/2023/7/stick-header-content/index.html">Stick header + content </a>
-    <a href="file:///C:/xbrpw.github.io/2023/7/mobile-friendly-form-elements-login/index.html">Mobile friendly form elements</a>
-    <a href="file:///C:/xbrpw.github.io/2023/10/tripple-cta-stripes/index.html">tripple-cta-stripes</a>
+
     </hgroup>
 </section></div>
 <div id="Boletin" class="tabcontent ">
@@ -1917,8 +1902,18 @@ $("#bottomWithLove").lettering();
   <p>Nos comprometemos a respetar tu privacidad. En hiHello.monster utilizamos la información que nos proporcionas para ponernos en contacto contigo respecto a nuestro contenido y productos y servicios relevantes. Puedes cancelar tu suscripción en cualquier momento. Más información en nuestra Política de privacidad.</p>
 </div> 
 <div id="Changelog" class="tabcontent ">
-    <a href="https://codepen.io/havardob/pen/WNNzwRj">Changelog</a><br><a href=""></a><br>
+    <a href="https://codepen.io/havardob/pen/WNNzwRj">Changelog</a><br><br>
 </div> 
+<div id="encuesta" class="tabcontent">
+    <h1>Gracias por dedicarle tiempo a esta encuesta.</h1> 
+    Gracias por dedicarle tiempo a esta encuesta.
+
+Su respuesta se ha registrado. 
+       
+
+Nos gusta escuchar a todos excepto a los robots.                                                         
+</div>
+
 
 <div class="totop a-up lift"><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div>
 <div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:98; background:white" >
@@ -2150,79 +2145,6 @@ for (i = 0; i < tablinks.length; i++) {
 document.getElementById(Name).style.display = "block";
 evt.currentTarget.className += " active";
 }
-// MOBILE ----------------
-var mobileNav = {
-// Variables
-$overlayNav: $('.overlay--nav'),
-$overlayNavChild: $('.overlay--nav').children('span'),
-$overlayContent: $('.overlay--content'),
-$overlayContentChild: $('.overlay--content').children('span'),
-$navTrigger: $('.nav__trigger'),
-$nav: $('.nav--mobile'),
-transitionEnd: 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
-
-init: function() {
-    var self = this;
-    // Init the layers
-    this.initLayers();
-    $(window).on('resize', function() {
-        self.initLayers();
-    });
-
-    // Handle the transitions
-    this.$navTrigger.on('click', function(e) {
-        e.preventDefault();
-
-        if (!self.$navTrigger.hasClass('is-active')) {
-            // .nav--trigger active
-            self.$navTrigger.addClass('is-active');
-
-            // .overlay--nav active
-            self.$overlayNavChild.addClass('is-active').one(self.transitionEnd, function() {
-                // .nav active
-                self.$nav.addClass('is-active');
-            });
-
-            // no-csstransitions fallback
-            if ($('html').hasClass('no-csstransitions')) {
-                self.$nav.addClass('is-active');
-            }
-        } else {
-            // .nav inactive
-            self.$nav.removeClass('is-active').one(self.transitionEnd, function() {
-                // .overlay--nav inactive
-                self.$overlayNavChild.removeClass('is-active').off();
-
-                // .nav--trigger inactive
-                self.$navTrigger.removeClass('is-active');
-            });
-
-            // no-csstransitions fallback
-            if ($('html').hasClass('no-csstransitions')) {
-                self.$overlayNavChild.removeClass('is-active');
-                self.$navTrigger.removeClass('is-active');
-            }
-        }
-    });
-},
-
-initLayers: function() {
-    var self = this;
-    var diameter = (Math.sqrt(Math.pow($(window).height(), 2) + Math.pow($(window).width(), 2)) * 2);
-
-    self.$overlayNavChild.css({
-        scaleX: 0,
-        scaleY: 0,
-        translateZ: 0,
-        height: diameter + 'px',
-        width: diameter + 'px',
-        top: -(diameter / 2) + 'px',
-        left: -(diameter / 2) + 'px',
-    });
-}
-}
-
-mobileNav.init();
 
 // SCROLL ---------------
 // When the user scrolls the page, execute myFunction 
@@ -2309,3 +2231,104 @@ $(document).ready(function(){var e=[{author:"",source:"",quote:"La economía col
 </script>
 </body>
 </html>
+ <!-- https://tonicolom.ws/contacto/?_gl=1*312b5n*_up*MQ..*_ga*MTEzNzI1ODY0MS4xNjg5NjIxNTk5*_ga_9736Z4JQF0*MTY4OTYyMTU5OC4xLjAuMTY4OTYyMTU5OC4wLjAuMA.. --> 
+              <!-- https://savvycal.com/jayclouse -->
+              <!-- https://creativemarket.com/ebooks/branding -- >
+                 https://www.xbr.pw//user/david/glare-bear/index.html
+                https://www.xbr.pw/user/mickey-mouse/dist/index.html
+                https://www.xbr.pw/2022/halloween-monster/dist/index.html
+                https://www.xbr.pw/user/monkey-d-luffy/index.html
+                   <a href="https://www.xbr.pw/assets/clone/zhatsapp/dist/index.html">zhatsapp</a><br>
+              <a href="https://www.xbr.pw//assets/clone/elchat/index.html" target="_blank" title="El chat" aria-label="Templete">El chat</a><br>
+<a href="https://www.xbr.pw//assets/clone/booking/dist/index.html" target="_blank" title="Booking" aria-label="Templete">Booking</a><br>
+<a href="https://www.xbr.pw//assets/clone/espotifai/dist/index.html" target="_blank" title="Espotifai" aria-label="Templete">Espotifai</a><br>
+<a href="https://www.xbr.pw/assets/clone/fakebook/dist/index.html" target="_blank" title="fakebook" aria-label="Templete">Fakebook</a><br>
+<a href="https://www.xbr.pw/assets/clone/notube/index.html" target="_blank" title="NoTube" aria-label="Templete">NoTube</a><br>
+<a href="https://www.xbr.pw//assets/clone/tuiter/dist/index.html" target="_blank" title="Tuiter" aria-label="Templete">Tuiter</a><br>
+<a href="https://www.xbr.pw//assets/clone/search/dist/index.html" target="_blank" title="Search Goigle" aria-label="Templete">Search Goigle</a><br>
+<a href="https://www.xbr.pw/assets/css/hi/social-cards-with-tailwind-css/index.html" target="_blank" title="social-cards-with-tailwind" aria-label="Templete">Social card Tailwind</a><br>
+<a href="https://share.sheetmonkey.io/f/wdGpqz7WbGj3y9BrtFZe6M" target="_blank" title="" aria-label="Templete" >Peliculas Angy</a><br>
+              <a href="https://share.sheetmonkey.io/f/q1W5kYbja5tTsCDhdH9exi" target="_blank" title="" aria-label="Templete" >nota dicha por</a><br>
+              <a href="https://codepen.io/luisangelmaciel/pen/LYXBZQa">Placeholder Image Generator</a><br>
+<a href="https://codepen.io/luisangelmaciel/pen/GRXLJPW">Magic Avatar</a><br>
+<a href="https://www.xbr.pw/any-image-to-css/dist/index.html">Any Image to CSS converter</a><br>
+
+<a href="https://codepen.io/luisangelmaciel/pen/MWzjoQW">Meme</a><br>
+<a href="https://codepen.io/luisangelmaciel/pen/YzOByVv">Random Picture Generator Pokemon</a><br>
+<a href="https://codepen.io/luisangelmaciel/pen/zYmxxLQ">Brands</a><br>
+<a href="https://codepen.io/luisangelmaciel/pen/bGQbxrP">Twitts App </a><br>
+<a href="https://codepen.io/luisangelmaciel/pen/ZEqvLYx">Generador de cupón</a><br>
+<a href="https://calendar.google.com/calendar/u/0/embed?src=s4idoadnr07ihd331neoceemog@group.calendar.google.com&ctz=America/Mexico_City&pli=1">365 calendar </a><br>
+<a href="https://xbrpw.github.io/2023/7/nom-dia-horoscopo-vue-input-preview/a.html">Título del vídeo porno gay que te lanzará a la fama</a><br>
+              
+              
+<a href="" target="_blank" title="" aria-label="Templete"></a><br>
+<a href="https://deepfake-porn.com/howto-custom-deepfake/" target="_blank" title="" aria-label="Templete">Deepfake-porn</a><br>
+<a href="https://deepfakesweb.com/" target="_blank" title="" aria-label="Favorite Tool">Online Deepfake Maker. Deepfake App to swap faces using AI.</a><br>
+              https://www.myfonts.com/pages/whatthefont
+                -->
+                            
+<!-- https://cocubo.info/ gesell
+https://unexpectedcatalonia.com/ xbr -->
+               
+               <!--  <section id="">
+<p>Edición ilimitada. ¡Pruebe la versión ilimitada gratis!</p>
+<button></button>
+<ul>
+ <li>Seleccione el idioma</li>  
+ <li>Acuerdo de privacidad</li>  
+ <li>Términos de servicio</li>  
+ <li>Administrar suscripción</li>      
+ <li>Quitar anuncios</li>      
+ <li>Versión</li>      
+</ul>
+</section> -->
+                  <!--  <section>
+<p>Bienvenido a la aplicación descentralizada, hagas lo que hagas estarás seguro en tu teléfono.</p><button>Siguiente</button>
+
+<p>¡Hay muchas herramientas aquí! Asegúrate de exporar todo...</p><button>Entendido</button>
+</section>-->
+                  <!-- 
+
+<section id="el-rating-5-estrellitas">
+<p>¿Disfruta utilizando la app <b>Hazlo</b>Base64?</p>
+<button>En realidad no</button>
+<button>Si</button>
+
+<p>¿Podria dejarnos una buena reseña? Es muy útil.</p>
+<button>No gracias</button>
+<button>Dar 5 estrellas</button>
+
+</section>
+
+
+
+<p>
+<b>Te damos la bienvenida a iUnaApp</b>
+<br><br>
+<b>
+<span class="font-size-20px">
+  Por favor, permite que se muestren anuncios en nuestro sitio web.
+<span>
+</b>
+<br> 
+ Parece que estás usando un bloqueador de anuncios. Dependemos de la publicidad para financiar nuestro
+sitio web.
+</p>
+<button>Permitir anuncios en iUnaApp</button>
+<br>
+
+<p>¿Ves alguna errata o quieres modificar algo? <a href="#pull" title="Pull" target="_new">Haz una Pull Request</a> </p>  
+
+-->
+<!-- 
+    <a href="//www.dmca.com/Protection/Status.aspx?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_12_120.png?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+<a href="https://www.dmca.com/site-report/ClaimSite.aspx?site=www.xbr.pw">Registrado en DMCA</a><br><br><br><br>
+
+
+Say hi on twitter or perhaps LinkedIn, if you dare. Oh, and here are some <a href="/referrals">great things I recommend.</a>
+<h1>Referrals &amp; Recommendations</h1>
+<p>Here are some companies and services that I recommend. Thanks &#x1f64f;</p>
+<img src="https://keybase.io/images/badges/install-badge-windows-240-80.png>-->
+
+
