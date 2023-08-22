@@ -1412,8 +1412,8 @@ text-shadow: 0 0 2px #d456ca; */
         height: 44px;
         position: fixed;
         right: 20px;
-        bottom: 20px;
-        z-index: 99;
+        bottom: 90px;
+        z-index: 9999;
         text-align: center;
         cursor: pointer;
         display: none;
