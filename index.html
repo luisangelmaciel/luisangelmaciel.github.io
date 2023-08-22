@@ -168,12 +168,11 @@
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.3.2/dist/lazyload.min.js" async></script>
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script> class="https://github.com/ApoorvSaxena/lozad.js"-->
 
-<!--  <script src="js/entradas.js" rel="preload" as="script" async charset="utf-8"></script>      
-<link rel="preload" href="xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<!--  <script src="js/entradas.js" rel="preload" as="script" async charset="utf-8"></script>  <link rel="preload" href="xiibicon/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="xiibicon/style.css"></noscript><link data-no-async=”1″ rel="stylesheet" href="xiibicon/style.css" media="all"> -->
 
-<script src="https://luisangelmaciel.github.io/js/compressed.js"></script>
-<script src="https://luisangelmaciel.github.io/preloader.js"></script>
+<!--<script src="https://luisangelmaciel.github.io/js/compressed.js"></script>-->
+<!-- <script src="https://luisangelmaciel.github.io/preloader.js"></script> -->
 <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js' charset="utf-8" async></script> -->
 <link rel="stylesheet" href="https://luisangelmaciel.github.io/lamp/style.css">
 <link rel="stylesheet" href="https://luisangelmaciel.github.io/lamp/ie7/ie7.css">
@@ -239,14 +238,54 @@ body {background-color: white;color: black;}
 </head>
 
 <body>  
+
+    <div class="elloader"><style>
+        .preloader
+    {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 9999;
+    text-align: center;
+    }
+    .preloader-icon
+    {
+    position: relative;
+    top: 45%;
+    width: 100px;
+    border-radius: 50%;
+    animation: shake 1.5s infinite;
+    }
+    @keyframes shake
+    {
+    0% { transform: translate(1px, -1px) rotate(0deg);}
+    10% { transform: translate(1px, -3px) rotate(-1deg);}
+    20% { transform: translate(1px, -5px) rotate(-3deg);}
+    30% { transform: translate(1px, -7px) rotate(0deg);}
+    40% { transform: translate(1px, -9px) rotate(1deg);}
+    50% { transform: translate(1px, -11px) rotate(3deg);}
+    60% { transform: translate(1px, -9px) rotate(0deg);}
+    70% { transform: translate(1px, -7px) rotate(-1deg);}
+    80% { transform: translate(1px, -5px) rotate(-3deg);}
+    90% { transform: translate(1px, -3px) rotate(0deg);}
+    100% { transform: translate(1px, -1px) rotate(-1deg);}
+    }
+        </style>
+    
+    <div class="preloader"> <img class="preloader-icon" src="https://ucarecdn.com/f19f9282-1abd-4e5b-b8ca-0f03b4123ebd/appNeumorphicElements.svg" alt="My Site Preloader"> </div>
+    <script>window.onload = function(){ document.querySelector(".preloader").style.display = "none"; }</script>
+    </div>
+    
 <div class="scrollmenu" style="z-index:99">    
 <i class="fas fa-chess-queen " aria-hidden="true" onclick="openName(event, 'aboutme')"> Aboutme &nbsp; &nbsp; &nbsp;</i>
-<i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'apps')"> Apps &nbsp; &nbsp; &nbsp;</i>
+<i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'myapps')"> Apps &nbsp; &nbsp; &nbsp;</i>
 <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='https://luisangelmaciel.github.io/post.html'"> Publicaciones </i> &nbsp; &nbsp; &nbsp;
 <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'mapaDeSitio')"> Mapa de sitio </i>&nbsp; &nbsp; &nbsp;
 <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>&nbsp; &nbsp; &nbsp;
 <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>&nbsp; &nbsp; &nbsp;
-
 </div>   
 
 <div id="DameMas" class="tabcontent ">
@@ -315,7 +354,6 @@ if (darkMode) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-fa-brands
     document.getElementById('theme-toggle').addEventListener('click', () => {
     document.body.classList.toggle('dark');
       localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
@@ -598,12 +636,12 @@ $("#bottomWithLove").lettering();
 </script>
 </div></div>
 <div id="en-modo" class="tabcontent"><br>
-    <div class="background-icon-black-1B1C24 lazy lazyload lazy lazyloadload">
+    <div class="background-icon-black-1B1C24 lazy lazyload">
         <div class="w3-center">
             <div class="container-name">
                 <div class="box">
-                    <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy lazyload lazy lazyloadload img" width="150" height="150"></div>
-                    <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy lazyload lazy lazyloadload img" width="150" height="150"></div>
+                    <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy lazyload img" width="150" height="150"></div>
+                    <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy lazyload img" width="150" height="150"></div>
                     <div class="title w3-center">
                         <span class="block"></span>
                         <p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p>
@@ -621,7 +659,7 @@ $("#bottomWithLove").lettering();
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
         <div class="w-full lg:w-1/4 w3-container">
         <!-- https://ucarecdn.com/ee00b6fb-5ad9-4da0-be0e-ac4624c44a32/-/preview/469x216/-/quality/smart/-/format/auto/ -->
-            <img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy lazyload lazy lazyloadload" width="400" height="400" style="border-radius: 50%;border: 2px solid white;">
+            <img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy lazyload" width="400" height="400" style="border-radius: 50%;border: 2px solid white;">
         </div>
     </div>
 
@@ -652,44 +690,7 @@ $("#bottomWithLove").lettering();
                 <div class="btn-xiib" data-toggle="modal" data-target="#modal-fullscreen" style="background-color: #1B1C24; color:rgb(236, 221, 221)"><p  onclick="window.open('//sites.google.com/view/luisangelconsultoractivate/', '_blank')"><i class="fas fa-chess-queen" aria-hidden="true"></i> Certificaciones en Google </p></div><br>
                 <div class="btn-xiib" style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000); color:rgb(236, 221, 221)" onclick="window.open('//luisangelmaciel.github.io/cv', '_blank')"><i class="fas fa-business-time"></i> Portafolio de experiencia</div><br>            
               
-                <div class=" w3-center" style="display:inline-block">
-                    <img src="https://www.xbr.pw/assets/favicons/lamp-desing.svg" class="clay w3-button w3-responsive w3-image lazy lazyload lazy lazyloadload loading" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//luisangelmaciel.github.io/pdf/cv-luis-angel-maciel.pdf', '_blank')" alt="Descarga mi CVnewsite okay "> &nbsp;
-                    <img src="https://ucarecdn.com/f19f9282-1abd-4e5b-b8ca-0f03b4123ebd/appNeumorphicElements.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//www.xbr.pw/game/dinosaur-game-google-chrome/index.html', '_blank')" alt="logo favicon app">  &nbsp;
-                    <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app" > &nbsp;
-                    <img src="https://ucarecdn.com/39e99aca-b47b-4d5c-a957-2156a981eb66/space-invader-game-error-404.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('https://codepen.io/luisangelmaciel/full/oNMGbMr', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/290f48b4-4603-49ae-b051-b4b335d09415/apppojkerengersringtone.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/1ac08efc-befa-43d1-aee0-0c766e82ffdf/appescueladebellezaeskareth.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/f9f6b2ee-8f92-4e78-b399-4b0d1df42a39/appmisheinplayera.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app" >&nbsp;
-                    <img src="https://ucarecdn.com/2216816f-71c2-4913-8c86-dea9101a5d69/xurkitreeicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app" >&nbsp;
-                    <img src="https://ucarecdn.com/c56a0f31-7827-4228-a0fd-753fb37425ae/randomquotesgameappgokudragonball.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/551d6a1a-747c-48d4-9a37-698269424177/photopreview.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/b5f78e7d-9501-4ac2-8419-102da41b5e30/gameappgokuvsmorosalvanosgoku.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/551d6a1a-747c-48d4-9a37-698269424177/photopreview.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/92dcb1b1-909c-4cab-b963-3ba894b62cbe/faviconappgokusavegame.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app" >&nbsp;
-                    <img src="https://ucarecdn.com/45e1fac6-cf2d-4248-9ee2-a807f0c11891/iGglybuff.svg	" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/55cd9feb-0758-4a62-a559-e2e31458c40a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/763ddbd1-40b2-4d67-8583-dab4c9bde6aa/fontglypsartdesignerapp.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/290f48b4-4603-49ae-b051-b4b335d09415/apppojkerengersringtone.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
-                    <img src="https://ucarecdn.com/e5bfa78e-2c83-43bb-9353-ea0333739bf0/xurkitreegreenicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;                      
-                    <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg"  width="70%" height="auto;" style="width:85px; height: 85px;" class="clay w3-button" onclick="window.open('https://cdpn.io/pen/debug/LYXvzbr?authentication_hash=xnrabpZmVqwA', '_blank')"  alt="logo favicon app">  &nbsp;                      
-                    <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app"> &nbsp; 
-                    <img src="https://ucarecdn.com/1b7b39d8-81f6-4f74-a043-943514842994/-/scale_crop/63x79/center/"" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/cc05bd0e-d9f2-44ff-a4f2-82e50834dc59/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/6d3bd746-0fe1-4e8e-9358-386273bcf4ca/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/b36b0bef-0c0e-4a0a-bd20-84c6b6b3f6dc/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/ffec7da0-0213-4c55-8cbb-4a9ea126becf/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">
-                    <img src="https://ucarecdn.com/e384710b-5d08-4aa1-b938-168e18b1e17a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/626fcc2e-eecd-4be0-9218-51ea503965a0/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/5fe068a1-0a71-4c7d-9f3b-39d1204db6fe/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/ab5942ed-637a-49f7-8c82-d819215f13bf-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;    
-                    <img src="https://ucarecdn.com/b96859b9-745b-4b56-a363-96abc0f11104/-/preview/-/rasterize/" class="clay w3-button w3-resp&nbsp; onsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
-                    <img src="https://ucarecdn.com/3b2b5bb7-9609-4826-bd6f-696b10a65057/-/preview/-/rasterize/" class="clay w3-button w3-resp&nbsp; onsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/37453a6e-f448-4214-b809-bf2888a66878/-/preview/-/rasterize/" class="clay w3-button w3-respon&nbsp; sive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-                    <img src="https://ucarecdn.com/c0edcd1d-9c5f-4378-a4fa-1845728bab63/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
-                    <img src="https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-                    <img src="https://ucarecdn.com/1a29b760-1f3d-4356-89a7-07adeebcd0ab/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-                    <img src="https://ucarecdn.com/0d5e7c5d-71cf-499f-b883-00fbbc0339d6/game-dino-zombie.svg" class="clay w3-button w3-responsive w3-image lazy lazyload" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-                </div>
+              
               
               
               <div class="w3-container panel-accordion"><br>                       
@@ -710,18 +711,19 @@ $("#bottomWithLove").lettering();
                         <a href="https://twitter.com/intent/follow?screen_name=luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="xbr.pw"> <i class="fa fa-twitter" aria-hidden="true"></i> </a>&nbsp;
                         <a href="https://codestats.net/users/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Codestats"><i class="fa fa-code"></i></a>&nbsp;
                         <a href="https://github.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Github"><i class="fa fa-github"></i></a>&nbsp;
-                        <a href="https://codepen.io/luisangelmaciel/pens/public" target="_blank" class="slider-nav-item negro" aria-label="codepen"><i class="fa fa-codepen"></i></a> &nbsp; &nbsp;
+                        <a href="https://codepen.io/luisangelmaciel/pens/public" target="_blank" class="slider-nav-item negro" aria-label="codepen"><i class="fa fa-codepen"></i></a> &nbsp; 
+                        <a href="https://www.youtube.com/channel/UC4CiuTWvFdk6Y8qkbLvMTUQ?sub_confirmation=1" target="_blank" class="slider-nav-item negro" aria-label="Youtube"><i class="fab fa-youtube negro"></i></a>&nbsp;
+                        <a href="https://facebook.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Facebook"><i class="fab fa-facebook negro"></i></a>&nbsp;
+                        <a href="https://instagram.com/luisangelmacielp" target="_blank" class="slider-nav-item negro" aria-label="Instagram"><i class="fab fa-instagram negro" ></i></a>&nbsp;
+                        <a href="https://dribbble.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Dribble"><i class="fa fa-dribbble negro" ></i></a>&nbsp;
+                        <a href="https://www.pinterest.com.mx/lmacielpadilla/_created/" target="_blank" class="slider-nav-item negro" aria-label="Pinterest"><i class="fab fa-pinterest negro"></i></a>&nbsp;
+                        <a href=" https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_blank" class="slider-nav-item negro" aria-label="Linkedin"><i class="fa fa-linkedin  negro"></i></a>&nbsp;
+                        <a href="https://luisangel.maciel.xiiber.com/" target="_blank" class="slider-nav-item negro" aria-label="xbr.pw"><i class="fas fa-address-card negro"></i></a>&nbsp;
                         <!-- <a href="https://www.hi5.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Hi5"><i class="fas fa-address-book"></i></a>&nbsp; -->
                     </div>
                 </div>
                 <div class="panelnew" style="font-size: 24px;">
-                    <a href="https://www.youtube.com/channel/UC4CiuTWvFdk6Y8qkbLvMTUQ?sub_confirmation=1" target="_blank" class="slider-nav-item negro" aria-label="Youtube"><i class="fab fa-youtube negro"></i></a>&nbsp;
-                    <a href="https://facebook.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Facebook"><i class="fab fa-facebook negro"></i></a>&nbsp;
-                    <a href="https://instagram.com/luisangelmacielp" target="_blank" class="slider-nav-item negro" aria-label="Instagram"><i class="fab fa-instagram negro" ></i></a>&nbsp;
-                    <a href="https://dribbble.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Dribble"><i class="fa fa-dribbble negro" ></i></a>&nbsp;
-                    <a href="https://www.pinterest.com.mx/lmacielpadilla/_created/" target="_blank" class="slider-nav-item negro" aria-label="Pinterest"><i class="fab fa-pinterest negro"></i></a>&nbsp;
-                    <a href=" https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_blank" class="slider-nav-item negro" aria-label="Linkedin"><i class="fa fa-linkedin  negro"></i></a>&nbsp;
-                    <a href="https://luisangel.maciel.xiiber.com/" target="_blank" class="slider-nav-item negro" aria-label="xbr.pw"><i class="fas fa-address-card negro"></i></a>&nbsp;
+                   <!-- contacto -->
                 </div>
 
                 <script>
@@ -754,7 +756,7 @@ $("#bottomWithLove").lettering();
 
     <div class="w3-container">
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black susan-storm-large susan-storm-medium susan-storm-small"></button>
-        <div id="id01" class="w3-modal lazy lazyload">
+        <div id="id01" class="w3-modal lazy">
             <span onclick="document.getElementById( 'id01').style.display='none'" class="w3-margin w3-display-topright w3-xlarge" style=" color : white">&times;</span>
             <div class="w3-modal-content">
                 <div class="w3-container w3-card-4 w3-black w3-center">
@@ -763,7 +765,7 @@ $("#bottomWithLove").lettering();
                     </p><p>#LaReinaDeTusOjos</p><br>
                     <a href="https://twitter.com/intent/follow?screen_name=irisxcqueen" target="_blank" class="w3-centered">
                         <video autoplay loop muted playsinline width="310" height="175">  
-                           <source src="https://res.cloudinary.com/duv2te3cr/video/upload/v1692496149/iris-xc-la-mas-draga-travel_dirdmx.webm" type="video/mp4" title="Iris XC Queen" class="lazy lazyload loading video" >                                           
+                           <source src="https://res.cloudinary.com/duv2te3cr/video/upload/v1692496149/iris-xc-la-mas-draga-travel_dirdmx.webm" type="video/mp4" title="Iris XC Queen" class="lazy loading video" >                                           
                         </video>
                     </a><br>
                     <a href="https://twitter.com/intent/follow?screen_name=irisxcqueen" target="_blank"><i class="fa fa-twitter iconico-3d" aria-hidden="true"></i> </a> &nbsp;
@@ -1008,62 +1010,47 @@ $("#bottomWithLove").lettering();
     </div>
 </div>
 <div id="myapps" class="tabcontent">
-  
     <div class="container mx-auto flex flex-col lg:flex-row">
 
-        <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6">
-            <div class="mb-4 container"><!-- libre --></div>
-        </div>            
+        <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><div class="mb-4 container"><!-- libre --></div></div>            
 
-        <div class="w-full lg:w-1/2  mb-4 container"><br><br><br>
-            <div class=" container">
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-3.svg" class="img" width="600" height="400" alt="Berumen" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-2.svg" class="img" width="600" height="400" alt="Sigmados" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-1.svg" class="img" width="600" height="400" alt="Desing Success" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-3.svg" class="img" width="600" height="400" alt="Berumen" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-2.svg" class="img" width="600" height="400" alt="Sigmados" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-1.svg" class="img" width="600" height="400" alt="Desing Success" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <p><img src="https://luisangelmaciel.github.io/img//lamp-3.svg" class="img" width="600" height="400" alt="Berumen" loading="lazy lazyload" onclick="onClick(this)"></p>
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <img src="https://luisangelmaciel.github.io/img//lamp-2.svg" class="img" width="600" height="400" alt="Sigmados" loading="lazy lazyload" onclick="onClick(this)">
-                    </div>
-                </div>
-                <div class="responsive5">
-                    <div class="gallery">
-                        <img src="https://luisangelmaciel.github.io/img//lamp-1.svg" class="img" width="600" height="400" alt="Desing Success" loading="lazy lazyload" onclick="onClick(this)">
-                    </div>
-                </div>
-            </div>
-            ♋ 🏊‍♂️ 🧙‍
+
+        <div class=" w-full lg:w-1/2  mb-4 container w3-center" style="display:inline-block"><br><br><br><br>
+            <img src="./favicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload loading" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//luisangelmaciel.github.io/pdf/cv-luis-angel-maciel.pdf', '_blank')" alt="Descarga mi CVnewsite okay "> &nbsp;
+            <img src="https://ucarecdn.com/f19f9282-1abd-4e5b-b8ca-0f03b4123ebd/appNeumorphicElements.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//www.xbr.pw/game/dinosaur-game-google-chrome/index.html', '_blank')" alt="logo favicon app">  &nbsp;
+            <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app" > &nbsp;
+            <img src="https://ucarecdn.com/39e99aca-b47b-4d5c-a957-2156a981eb66/space-invader-game-error-404.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('https://codepen.io/luisangelmaciel/full/oNMGbMr', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/290f48b4-4603-49ae-b051-b4b335d09415/apppojkerengersringtone.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/1ac08efc-befa-43d1-aee0-0c766e82ffdf/appescueladebellezaeskareth.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/f9f6b2ee-8f92-4e78-b399-4b0d1df42a39/appmisheinplayera.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app" >&nbsp;
+            <img src="https://ucarecdn.com/2216816f-71c2-4913-8c86-dea9101a5d69/xurkitreeicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app" >&nbsp;
+            <img src="https://ucarecdn.com/c56a0f31-7827-4228-a0fd-753fb37425ae/randomquotesgameappgokudragonball.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/551d6a1a-747c-48d4-9a37-698269424177/photopreview.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <!-- <img src="https://ucarecdn.com/b5f78e7d-9501-4ac2-8419-102da41b5e30/gameappgokuvsmorosalvanosgoku.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp; ---->
+            <img src="https://ucarecdn.com/551d6a1a-747c-48d4-9a37-698269424177/photopreview.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/92dcb1b1-909c-4cab-b963-3ba894b62cbe/faviconappgokusavegame.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')" alt="logo favicon app" >&nbsp;
+            <img src="https://ucarecdn.com/45e1fac6-cf2d-4248-9ee2-a807f0c11891/iGglybuff.svg	" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/55cd9feb-0758-4a62-a559-e2e31458c40a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/763ddbd1-40b2-4d67-8583-dab4c9bde6aa/fontglypsartdesignerapp.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/290f48b4-4603-49ae-b051-b4b335d09415/apppojkerengersringtone.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;
+            <img src="https://ucarecdn.com/e5bfa78e-2c83-43bb-9353-ea0333739bf0/xurkitreegreenicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;                      
+            <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg"  width="70%" height="auto;" style="width:85px; height: 85px;" class="clay w3-button" onclick="window.open('https://cdpn.io/pen/debug/LYXvzbr?authentication_hash=xnrabpZmVqwA', '_blank')"  alt="logo favicon app">  &nbsp;                      
+            <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app"> &nbsp; 
+            <img src="https://ucarecdn.com/1b7b39d8-81f6-4f74-a043-943514842994/-/scale_crop/63x79/center/"" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/cc05bd0e-d9f2-44ff-a4f2-82e50834dc59/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/6d3bd746-0fe1-4e8e-9358-386273bcf4ca/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/b36b0bef-0c0e-4a0a-bd20-84c6b6b3f6dc/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/ffec7da0-0213-4c55-8cbb-4a9ea126becf/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">
+            <img src="https://ucarecdn.com/e384710b-5d08-4aa1-b938-168e18b1e17a/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/626fcc2e-eecd-4be0-9218-51ea503965a0/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/5fe068a1-0a71-4c7d-9f3b-39d1204db6fe/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
+            <img src="https://ucarecdn.com/b96859b9-745b-4b56-a363-96abc0f11104/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp;                     
+            <img src="https://ucarecdn.com/3b2b5bb7-9609-4826-bd6f-696b10a65057/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <!-- <img src="https://ucarecdn.com/37453a6e-f448-4214-b809-bf2888a66878/-/preview/-/rasterize/" class="clay w3-button w3-respon&nbsp; sive w3-image" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp;  ---->
+            <img src="https://ucarecdn.com/c0edcd1d-9c5f-4378-a4fa-1845728bab63/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
+            <img src="https://ucarecdn.com/1a29b760-1f3d-4356-89a7-07adeebcd0ab/-/preview/-/rasterize/" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
+            <img src="https://ucarecdn.com/0d5e7c5d-71cf-499f-b883-00fbbc0339d6/game-dino-zombie.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app" loading="lazy"> &nbsp; 
         </div>
     </div>
 </div>
@@ -1299,21 +1286,7 @@ $("#bottomWithLove").lettering();
             <div class="w3-row w3-container" style="width:100%">
                 <div class="w3-bar w3-center w3-centered" style="font-size: 24px;">&nbsp;</div>
             </div>
-            <div class="LA.MCL🌟">
-                <center>
-                    <div class="shrink-text Maven display-middle shadow margines">
-                        <a href="https://twitter.com/intent/follow?screen_name=xiibertravel" class="a-shrink-text">
-                            <span class="span-shrink-text">l</span><span class="span-shrink-text">uis</span>
-                            <span class="span-shrink-text">a</span><span class="span-shrink-text">ngel</span>
-                            <span class="span-shrink-text">.</span><span class="span-shrink-text"></span>
-                            <span class="span-shrink-text">m</span><span class="span-shrink-text">a</span>
-                            <span class="span-shrink-text">c</span><span class="span-shrink-text">ie</span>
-                            <span class="span-shrink-text">l</span><span class="span-shrink-text"></span>
-                        </a>
-                    </div>
-                </center>
-            </div>
-            
+        
 
             <div class="w3-row w3-container w3-centered w3-center">
                 <div class="btn-xiib">Diseño web</div>
@@ -1896,9 +1869,8 @@ $("#bottomWithLove").lettering();
 <h3>Donate via Paypal</h3>
 </a>                                                           
 </div>
-
 <div id="Login" class="tabcontent ">
-    <iframe src="https://codepen.io/luisangelmaciel/pen/jOQwqbo" width="100%" height="500px" scrolling:"no" style="border:none"></iframe>
+    <!--<iframe src="https://codepen.io/luisangelmaciel/pen/jOQwqbo" width="100%" height="500px" scrolling:"no" style="border:none"></iframe>-->
     <a href="https://cdpn.io/pen/debug/jOQwqbo?authentication_hash=bZMQWdNqogYA">login</a><br>
 </div>
 <div id="Cursos" class="tabcontent "><br><br><section>
@@ -1948,9 +1920,8 @@ $("#bottomWithLove").lettering();
     <a href="https://codepen.io/havardob/pen/WNNzwRj">Changelog</a><br><a href=""></a><br>
 </div> 
 
-
-<div class="totop a-up lift "><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div>
-<div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:9998; background:white" >
+<div class="totop a-up lift"><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div>
+<div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:98; background:white" >
         <style>
         :root { --scale: 1;   --icon-size: 26px;}* {margin: 0;padding: 0;box-sizing: border-box;}
       
@@ -2135,7 +2106,7 @@ $("#bottomWithLove").lettering();
         </script>
 </div> 
 
-<div style="width: 100%; height: 10px; background: rgb(0, 0, 0); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; z-index:9999"><div id="myBar" style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite linear;"></div></div>
+<div style="z-index:99;width: 100%; height: 10px; background: rgb(167, 14, 14); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; z-index:100"><div id="myBar" style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite linear;"></div></div>
 
 <link href="https://luisangelmaciel.github.io/js/object.observe.polyfill.js" rel="prefetch"><link href="https://luisangelmaciel.github.io/js/scripts.js" rel="prefetch"><!-- <script src="https://luisangelmaciel.github.io/js/cobertura.js"></script> -->
 <script>
@@ -2265,10 +2236,10 @@ var height = document.documentElement.scrollHeight - document.documentElement.cl
 var scrolled = (winScroll / height) * 100;
 document.getElementById("myBar").style.width = scrolled + "%";
 }
-// lazy lazyload ------------------------------------------------------
+// lazy ------------------------------------------------------
 if ("loading" in HTMLImageElement.prototype) {
-// Si el navegador soporta lazy lazyload-load, tomamos todas las imágenes que tienen la clase
-// `lazy lazyloadload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
+// Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+// `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
 const images = document.querySelectorAll("img.lazyload");
 images.forEach((img) => {
     img.src = img.dataset.src;
@@ -2317,7 +2288,7 @@ var rand = Math.floor(Math.random() * footerRandom.length);
 elements.footerRandomlamp.innerHTML += footerRandom[rand];
 
 reset();
-//
+
 $(window).scroll(function() {
 if ($(this).scrollTop() > 100) {
     $(".totop").fadeIn();
