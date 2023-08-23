@@ -21,6 +21,12 @@
         font-weight: normal;
         src: url(https://luisangelmaciel.github.io/lib/fonts/free-fa-solid-900.woff2)format("woff2");                   
     }
+   @font-face {
+        font-family: "Font Awesome 5 Free";
+        font-style: normal;
+        font-weight: normal;
+        src: url(https://luisangelmaciel.github.io/webfonts/free-fa-solid-900.woff2)format("woff2");                   
+    }
     @font-face {
         font-family: "Font Awesome 5 Free";
         font-style: normal;
