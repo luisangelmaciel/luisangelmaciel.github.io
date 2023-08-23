@@ -17,6 +17,12 @@
       "src": "./favicon.svg"
     },
     {
+      "sizes": "196x196",
+      "type": "image/png",
+      "src": "./favicon-196x196.svg",
+      "purpose": "any maskable"
+    },
+    {
       "sizes": "512x512",
       "type": "image/png",
       "src": "./favicon.svg"
