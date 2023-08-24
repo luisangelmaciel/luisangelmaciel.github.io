@@ -1,8 +1,7 @@
-
 <!DOCTYPE html><!-- ⊙⩌⨀  2006 - 2023 © LuisAngelMaciel lamp.martech! Marketing Technology Stack          
     ¿Quién hizo todo esto? 
     http://twitter.com/luisangelmaciel  & https://luisangelmaciel.github.io -->
-<html lang="es-MX" dir="ltr" prefix="og: https://ogp.me/ns#" class="no-js">
+<html lang="es-MX" dir="ltr" prefix="og: https://ogp.me/ns#">
 
 <head itemscope itemtype="https://schema.org/WebSite">
 <meta charset="UTF-8">
@@ -16,6 +15,10 @@
 <!--  <link rel="preload" href="https://luisangelmaciel.github.io/lib/fonts/roboto-mono-v13-latin-500.woff2"><link href="https://luisangelmaciel.github.io/lib/fonts/free-fa-brands-400.woff2" crossorigin> -->
 <link rel="preload" href="https://luisangelmaciel.github.io/lib/fonts/free-fa-solid-900.woff2" as="font" type="font/woff2"> 
 <link rel="manifest" href="https://luisangelmaciel.github.io/manifest.json">
+<!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.02.0/css/all.min.css'>  -->
+ <!-- Catálogo de iconos Fontawesome https://fontawesome.com/v6/search?o=r&m=free -->   
+ <!-- <link href='https://xbrpw.github.io/assets/fontawesome/css/all.min.css' rel='stylesheet'>
+ <link href='https://xbrpw.github.io/assets/fontawesome/css/regular.min.css' rel='stylesheet'> -->
 <script>
     if(location.protocol == 'http:') location.protocol = 'https:';
     if('serviceWorker' in navigator) {
@@ -234,8 +237,7 @@ body {background-color: white;color: black;}
             'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
         f.parentNode.insertBefore(j, f);
     })(window, document, 'script', 'dataLayer', 'GTM-KDD26NF');
-</script><!-- End Google Tag Manager * Pntst -->
-<meta name="p:domain_verify" content="1ccb70a44d7509dd6e6cad4538b2b9e2" /><!-- End Pntst -->
+</script><!-- End Google Tag Manager * Pntst --><meta name="p:domain_verify" content="1ccb70a44d7509dd6e6cad4538b2b9e2" /><!-- End Pntst -->
 </head>
 
 <body>  
@@ -281,37 +283,75 @@ body {background-color: white;color: black;}
     </div>
     
 <div class="scrollmenu" style="z-index:99">    
+<i class="fas fa-home " aria-hidden="true" onclick="openName(event, 'en-modo')"> Home &nbsp; &nbsp; &nbsp;</i>
 <i class="fas fa-chess-queen " aria-hidden="true" onclick="openName(event, 'aboutme')"> Aboutme &nbsp; &nbsp; &nbsp;</i>
 <i class="fa fa-suitcase" aria-hidden="true" onclick="openName(event, 'myapps')"> Apps &nbsp; &nbsp; &nbsp;</i>
-<i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='https://luisangelmaciel.github.io/post.html'"> Publicaciones </i> &nbsp; &nbsp; &nbsp;
-<i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Productos y Servicios </i>&nbsp; &nbsp; &nbsp;
-<i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'desing')"> Diseños </i>&nbsp; &nbsp; &nbsp;
+<i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Contacto </i>&nbsp; &nbsp; &nbsp;
 </div>   
 
-<div id="DameMas" class="tabcontent ">
+<div id="DameMas" class="tabcontent "><br><br><br><br><br>
 <div id="DarkMode-Localstorage">
+    <button class="btn-toggle">Toggle Dark-Mode</button>
+
 <style>
 body {
-  color: black; 
-  background-color: rgb(255, 255, 255);
+  --text-color: #222;
+  --bkg-color: #fff;
+}
+body.dark-theme {
+  --text-color: #eee;
+  --bkg-color: #121212;
 }
 
-body.space    {
-  color: rgb(0, 0, 0); 
-  background-color: rgba(255, 255, 255, 0.637);
+@media (prefers-color-scheme: dark) {
+  /* defaults to dark theme */
+  body {
+    --text-color: #eee;
+    --bkg-color: #121212;
+  }
+  body.light-theme {
+    --text-color: #222;
+    --bkg-color: #fff;
+  }
 }
 
-body.dark {
-  color: white; 
-  background-color: rgba(0, 0, 0, 0.651);
+* {
+  font-family: Arial, Helvetica, sans-serif;
 }
-body.dark.space {
-  color: white; 
-  background-color: rgba(0, 0, 0, 0.651);
+
+body {
+  background: var(--bkg-color);
+  color: var(--text-color);
 }
+
 </style>
 
-<p id="theme-toggle">Dark Mode</p>
+<script>
+    const btn = document.querySelector(".btn-toggle");
+const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+const currentTheme = localStorage.getItem("theme");
+if (currentTheme == "dark") {
+  document.body.classList.toggle("dark-theme");
+} else if (currentTheme == "light") {
+  document.body.classList.toggle("light-theme");
+}
+
+btn.addEventListener("click", function () {
+  if (prefersDarkScheme.matches) {
+    document.body.classList.toggle("light-theme");
+    var theme = document.body.classList.contains("light-theme")
+      ? "light"
+      : "dark";
+  } else {
+    document.body.classList.toggle("dark-theme");
+    var theme = document.body.classList.contains("dark-theme")
+      ? "dark"
+      : "light";
+  }
+  localStorage.setItem("theme", theme);
+});
+</script>
   
 
 <a href=" https://codepen.io/luisangelmaciel/pen/MWzGBxZ">mail</a><br>
@@ -332,35 +372,9 @@ body.dark.space {
 <a href="https://codepen.io/tommiehansen/pen/mLRqLR">anuncio 2</a><br>
 <a href="https://codepen.io/stevemckinney/pen/yNBNKa">scxroll</a><br>
 <a href="https://codepen.io/GeoffreyCrofte/pen/OJMaMxa">anuncio 3</a><br>
-<p id="theme-toggle">Dark Mode</p>
 
-<script>
-var darkMode = false;
 
-// default to system setting
-if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  darkMode = true;
-}
 
-// preference from localStorage should overwrite
-if (localStorage.getItem('theme') === 'dark') {
-  darkMode = true;
-} else if (localStorage.getItem('theme') === 'light') {
-  darkMode = false;
-}
-
-if (darkMode) {
-  document.body.classList.toggle('dark');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('theme-toggle').addEventListener('click', () => {
-    document.body.classList.toggle('dark');
-      localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-  });
-
-});  
-</script>
 </div>
 
 </div>      
@@ -379,7 +393,7 @@ Regístrate gratis 42,898 clientes satisfechos Optimizado para Google Nombre de 
 https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic FAQ ¿Qué es? ¿Cómo me comunico con el soporte? ¿Qué pasa con mi privacidad? ¿Cuánto cuesta? Nos tomamos su privacidad muy en serio. Su texto solo se usa para brindarle las mejores opciones de autocompletado posibles. Nunca venderemos sus datos. Consulta nuestra política de privacidad para obtener más detalles. https://carrd.co/
 https://envialove.webador.mx/
 
-<!-- <iframe src="https://cdpn.io/pen/debug/poQQZwo?authentication_hash=mWkoNBxeDdvA" width="100%" height="500px" scrolling:"no" style="border:none"></iframe> -->
+<iframe src="https://cdpn.io/pen/debug/poQQZwo?authentication_hash=mWkoNBxeDdvA" width="100%" height="500px" scrolling:"no" style="border:none"></iframe> 
 
 
 <div class="WithLove">
@@ -387,7 +401,7 @@ https://envialove.webador.mx/
         $("#topWithLove").lettering();
         $("#bottomWithLove").lettering();
         </script>
-<script src="./js/jquery-lettering.js " charset="utf-8"></script>       <!-- https://css-tricks.com/examples/BlurredText/js/jquery.lettering.js -->                                                                                     
+<script src="./js/jquery-lettering.js " charset="utf-8"></script> <!-- https://css-tricks.com/examples/BlurredText/js/jquery.lettering.js -->                                                                                     
 <style>
 /* vietnamese */
 @font-face {
@@ -643,15 +657,12 @@ animation: BOUNCEWithLove  2.5s infinite;
                 <div class="box">
                     <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy  img" width="150" height="150"></div>
                     <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy img" width="150" height="150"></div>
-                    <div class="title w3-center">
-                        <span class="block"></span>
+                    <div class="title w3-center"><span class="block"></span>
                         <p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p>
                     </div>
                     <br class="w3-hide-large w3-hide-medium">
                     <br class="w3-hide-large w3-hide-medium">
-                    <div class="role">
-                        <div class="block"></div><p style="color:#35b0e0" class="w3-hide-small">Marketing, diseño y experiencia de usuario</p>
-                    </div>
+                    <div class="role"><div class="block"></div><p style="color:#35b0e0" class="w3-hide-small">Marketing, diseño y experiencia de usuario</p></div>
                 </div>
             </div>
         </div>
@@ -666,10 +677,10 @@ animation: BOUNCEWithLove  2.5s infinite;
 
     <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small">
-            <p class="text-black font-bold no-underline hover:underline w3-hide-small">Luis Ángel</p>
+            <p class="font-bold no-underline hover:underline w3-hide-small">Luis Ángel</p>
             <p class="text-grey-darker no-underline hover:underline w3-hide-small">@luisangelmaciel</p>
             <div class="mb-4">
-                <p class="text-black font-bold no-underline hover:underline w3-hide-large w3-hide-medium w3-large">@LuisAngelMaciel</p>
+                <p class=" font-bold no-underline hover:underline w3-hide-large w3-hide-medium w3-large">@LuisAngelMaciel</p>
                 Mercadologo, diseñador y desarrollador web.
                 <br> Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario. <i><abbr title="Luis Ángel Maciel Padilla">LAMP!</abbr></i>
                 <br> <b onclick="openName(event, 'aboutme')">Insiste, persiste y resiste. </b>
@@ -690,7 +701,7 @@ animation: BOUNCEWithLove  2.5s infinite;
                 <div class="btn-xiib" data-toggle="modal" data-target="#modal-fullscreen" style="background-color: #1B1C24; color:rgb(236, 221, 221)"><p onclick="openName(event, 'dragvesti')"><i class="fas fa-chess-queen" aria-hidden="true"></i> Dragvesti, Temporada 4 </p></div><br>
                 <div class="btn-xiib" data-toggle="modal" data-target="#modal-fullscreen" style="background-color: #1B1C24; color:rgb(236, 221, 221)"><p  onclick="window.open('//sites.google.com/view/luisangelconsultoractivate/', '_blank')"><i class="fas fa-chess-queen" aria-hidden="true"></i> Certificaciones en Google </p></div><br>
                 <div class="btn-xiib" style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000); color:rgb(236, 221, 221)" onclick="window.open('//luisangelmaciel.github.io/cv', '_blank')"><i class="fas fa-business-time"></i> Portafolio de experiencia</div><br>            
-              
+                <i class="fas fa-newspaper" aria-hidden="true" onclick="document.location='https://luisangelmaciel.github.io/post.html'"> Publicaciones </i> &nbsp; &nbsp; &nbsp;
               
               
               
@@ -720,12 +731,10 @@ animation: BOUNCEWithLove  2.5s infinite;
                         <a href="https://www.pinterest.com.mx/lmacielpadilla/_created/" target="_blank" class="slider-nav-item negro" aria-label="Pinterest"><i class="fab fa-pinterest negro"></i></a>&nbsp;
                         <a href=" https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_blank" class="slider-nav-item negro" aria-label="Linkedin"><i class="fa fa-linkedin  negro"></i></a>&nbsp;
                         <a href="https://luisangel.maciel.xiiber.com/" target="_blank" class="slider-nav-item negro" aria-label="xbr.pw"><i class="fas fa-address-card negro"></i></a>&nbsp;
-                        <!-- <a href="https://www.hi5.com/luisangelmaciel" target="_blank" class="slider-nav-item negro" aria-label="Hi5"><i class="fas fa-address-book"></i></a>&nbsp; -->
+                        <!-- https://carrd.co/-->
                     </div>
                 </div>
-                <div class="panelnew" style="font-size: 24px;">
-                   <!-- contacto -->
-                </div>
+                <div class="panelnew" style="font-size: 24px;"><!-- contacto --></div>
 
                 <script>
                     var acc = document.getElementsByClassName("accordionnew");
@@ -910,22 +919,9 @@ animation: BOUNCEWithLove  2.5s infinite;
     <div class="container mx-auto flex flex-col lg:flex-row  w3-container">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><div class="mb-4 container"><!-- seccion limpia ----> </div></div>
 
-        <div class="w-full lg:w-1/2  mb-4 container"><br><br><br>
-            <button onclick="myFunctiondarkmode()">Dark mode</button>
-
-            <script>
-                function myFunctiondarkmode() {
-                    var element = document.body;
-                    element.classList.toggle("dark-mode");
-                }
-            </script>
-
-            <p>Click the button to get a time-based greeting:</p>
-
+        <div class="w-full lg:w-1/2  mb-4 container"><br><br><br>                           
             <button onclick="elSaludo(saludo)">Try it</button>
-
             <p id="saludo"></p>
-
             <script>
                 function elSaludo() {
                     var greeting;
@@ -960,15 +956,18 @@ animation: BOUNCEWithLove  2.5s infinite;
             </ul><!-- mapadesitiook -->
             <i class="fas fa-home" aria-hidden="true" onclick="openName(event, 'en-modo')" id="defaultOpen"> Home  </i> &nbsp; &nbsp; &nbsp;
             <i class="fas fa-chess-queen" aria-hidden="true" onclick="openName(event, 'dragvesti')"> Dragvesti</i> 
-            <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'donate')"> Donate </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-chess-queen" aria-hidden="true" onclick="openName(event, 'xiiber')"> Dragvesti</i> 
+            <i class="fas fa-envelope-open-text" aria-hidden="true" onclick="openName(event, 'contacto')"> Contacto </i>&nbsp; &nbsp; &nbsp;
             <i class="fa fa-heart " aria-hidden="true" onclick="openName(event, 'DameMas')"> DameMas</i>  &nbsp; &nbsp; &nbsp;
             <i class="fa fa-heart " aria-hidden="true" onclick="openName(event, 'WithLove')"> Love </i>  &nbsp; &nbsp; &nbsp;
             <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'donate')"> Donate </i>&nbsp; &nbsp; &nbsp;
-            
-            <p onclick="openName(event, 'one')">Espace </p>
-
-            <a rel="noreferrer noopener" href="index.html" target="_blank" title="https://luisangelmaciel.github.io/" aria-label="Link de la publicación">Inicio</a><br>
-            <a rel="noreferrer noopener" href="post.html" target="_blank" title="En modo (publicaciones)" aria-label="En modo (publicaciones)">En modo (publicaciones)</a><br>
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'Login')"> Login </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'mapaDeSitio')"> Donate </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'Curso ')"> Curso </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'Referrals')"> Referrals </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'Changelog ')">Changelog </i>&nbsp; &nbsp; &nbsp;
+            <i class="fas fa-sitemap" aria-hidden="true"  onclick="openName(event, 'encuesta')"> encuesta </i>&nbsp; &nbsp; &nbsp;
+                                               
             <a rel="noreferrer noopener" href="desing.html" target="_blank" title="Diseños" aria-label="Diseños">Diseños 1 </a><br>
             <a rel="noreferrer noopener" href="desing2022.html" target="_blank" title="Diseños" aria-label="Diseños">Diseños 2</a><br>
             <a rel="noreferrer noopener" href="desing2021.html" target="_blank" title="Diseños" aria-label="Diseños">Diseños 3</a><br>
@@ -978,14 +977,9 @@ animation: BOUNCEWithLove  2.5s infinite;
             <a rel="noreferrer noopener" href="servicios/index.html" target="_blank" title="Productos y servicios" aria-label="Productos y servicios">Productos y servicios</a><br>
             <a rel="noreferrer noopener" href="404.html" target="_blank" title="404!" aria-label="404!">404!</a><br>
             <a rel="noreferrer noopener" href="avisodeprivacidad.html" target="_blank" title="Aviso de privacidad" aria-label="Aviso de privacidad">Aviso de privacidad</a><br>
-     <!--        <a rel="noreferrer noopener" href="mapadesitio.html" target="_blank" title="Mapa de sitio" aria-label="Mapa de sitio">Mapa de sitio</a><br><br> -->
+             <!-- <a rel="noreferrer noopener" href="mapadesitio.html" target="_blank" title="Mapa de sitio" aria-label="Mapa de sitio">Mapa de sitio</a><br><br> -->
             <a rel="noreferrer noopener" href="2022/la-creatividad-te-hace-brillar-Haz-que-tu-creatividad-funcione.html" target="_blank" title="La creatividad te hace brillar.Haz que tu creatividad funcione." aria-label="La creatividad te hace brillar.Haz que tu creatividad funcione.">La creatividad te hace brillar.Haz que tu creatividad funcione.</a><br><br>
-            <p class="w3-center">Aviso legal | <span onclick="openName(event, 'mapaDeSitio')">Mapa de sitio</span> | Do Not Sell My Info</p>
-            <br>
-            
-
-           
-            <br>
+            <p class="w3-center">Aviso legal | <span onclick="openName(event, 'mapaDeSitio')">Mapa de sitio</span> | Do Not Sell My Info</p><br>
             <div class="text-box"><div class="tenkiubig">lamp!</div><div class="tenkiubig">lamp!</div></div>
             <div class="tenkiusmall">muchas gracias<span class="span-tenks">:)</span></div>
             <br>
@@ -995,11 +989,9 @@ animation: BOUNCEWithLove  2.5s infinite;
 <div id="myapps" class="tabcontent">
     <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><div class="mb-4 container"><!-- libre --></div></div>            
-
-
         <div class=" w-full lg:w-1/2  mb-4 container w3-center" style="display:inline-block"><br><br><br><br>
             
-            <img src="./favicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload loading" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//luisangelmaciel.github.io/pdf/cv-luis-angel-maciel.pdf', '_blank')" alt="Descarga mi CVnewsite okay "> &nbsp;
+            <img src="/favicon.svg" class="clay w3-button w3-responsive w3-image lazy lazyload loading" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//luisangelmaciel.github.io/pdf/cv-luis-angel-maciel.pdf', '_blank')" alt="Descarga mi CVnewsite okay "> &nbsp;
             <img src="https://ucarecdn.com/f19f9282-1abd-4e5b-b8ca-0f03b4123ebd/appNeumorphicElements.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//www.xbr.pw/game/dinosaur-game-google-chrome/index.html', '_blank')" alt="logo favicon app">  &nbsp;
             <img src="https://www.xbr.pw/calculadora/favicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('//www.xbr.pw/game/dinosaur-game-google-chrome/index.html', '_blank')" alt="logo favicon app">  &nbsp;
             <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app" > &nbsp;
@@ -1019,7 +1011,7 @@ animation: BOUNCEWithLove  2.5s infinite;
             <img src="https://ucarecdn.com/e5bfa78e-2c83-43bb-9353-ea0333739bf0/xurkitreegreenicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" onclick="window.open('', '_blank')"  alt="logo favicon app">&nbsp;                      
             <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" width="70%" height="auto;" style="width:85px; height: 85px;" class="clay w3-button" onclick="window.open('https://cdpn.io/pen/debug/LYXvzbr?authentication_hash=xnrabpZmVqwA', '_blank')"  alt="logo favicon app">  &nbsp;                      
             <img src="https://www.xbr.pw/game/dinosaur-game-google-chrome/favicon.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"  alt="logo favicon app"> &nbsp; 
-            <img src="https://ucarecdn.com/1b7b39d8-81f6-4f74-a043-943514842994/-/scale_crop/63x79/center/"" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
+            <img src="https://ucarecdn.com/1b7b39d8-81f6-4f74-a043-943514842994/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/cc05bd0e-d9f2-44ff-a4f2-82e50834dc59/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/6d3bd746-0fe1-4e8e-9358-386273bcf4ca/-/scale_crop/63x79/center/" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp; 
             <!-- no jala el preview <img src="https://ucarecdn.com/b36b0bef-0c0e-4a0a-bd20-84c6b6b3f6dc/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px" alt="logo favicon app">&nbsp;  -->
@@ -1032,15 +1024,172 @@ animation: BOUNCEWithLove  2.5s infinite;
             <img src="https://ucarecdn.com/c0edcd1d-9c5f-4378-a4fa-1845728bab63/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app">&nbsp; 
             <img src="https://ucarecdn.com/b4916aca-b04b-4bd9-99ce-299ef6295f4c/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
             <img src="https://ucarecdn.com/1a29b760-1f3d-4356-89a7-07adeebcd0ab/-/preview/469x216/-/quality/smart/-/format/auto//" class="clay w3-button w3-responsive w3-image " style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app"> &nbsp; 
-            <img src="https://ucarecdn.com/0d5e7c5d-71cf-499f-b883-00fbbc0339d6/game-dino-zombie.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app" loading="lazy"> &nbsp; 
+            <img src="https://ucarecdn.com/0d5e7c5d-71cf-499f-b883-00fbbc0339d6/game-dino-zombie.svg" class="clay w3-button w3-responsive w3-image lazy" style="display:inline-block; margin-bottom: 30px;" width="95px" height="95px"alt="logo favicon app" loading="lazy"> &nbsp;<br> 
+             <a href="https://codepen.io/luisangelmaciel/pen/LYXBZQa">Placeholder Image Generator</a><br>
+             <a href="https://www.xbr.pw//assets/clone/elchat/index.html" target="_blank" title="El chat" aria-label="Templete">El chat</a><br>
+             <div class="eleBot">
+                <style>   
+                .body-ebot {      
+                    overflow-y: hidden;
+                    height:600px;
+                    box-sizing: border-box;
+                  }
+                  .body-ebot:after {
+                    box-sizing: border-box;
+                  }
+              
+                  .body-ebot:before {
+                    box-sizing: border-box;
+                  }
+                  
+                  .ebot {
+                      /*position: relative;*/
+                      top: 20px;
+                      width: 343px;
+                      height: 338px;
+                      margin: 0 auto;
+                      background: url(https://ucarecdn.com/e28eae62-1866-48bd-8c1a-b186537768e0/-/setfill/ece3d2/-/format/webp/) 0 0 no-repeat;
+                      z-index: 101;
+                      transform: translateY(-370px);
+                      animation: ebot 500ms ease 1.2s both,
+                                 bounce 1400ms ease-out 0s infinite;
+                  
+                  }
+                  
+                  .ebot::before {
+                      content: "";
+                      position: absolute;
+                      top: 125px;
+                      left: 105px;
+                      width: 123px;
+                      height: 71px;
+                      display: block;
+                      background: url(https://ucarecdn.com/fefd478b-9fda-4cc6-8601-550d9692da0c/-/setfill/ece3d2/-/format/webp/) 0 0 no-repeat;
+                      animation: eyes 150ms steps(3) 1.8s both;
+                  
+                  }
+                  
+                  .ebot::after {
+                      content: "";
+                      position: relative;
+                      top: 0;
+                      left: 145px;
+                      width: 31px;
+                      height: 27px;
+                      display: block;
+                      background: url(data:image/webp;base64,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) 0 0 no-repeat;
+                      animation: ball 450ms steps(5) both infinite;
+                  }
+                      
+                  
+                  .shadow {
+                      top: 450px;
+                      width: 100%;
+                      height: 45px;
+                  }
+                  
+                  .shadow::after {
+                      content: "";
+                      position: relative;
+                      width: 245px;
+                      height: 15px;
+                      margin: 0 auto;
+                      display: block;
+                      border-radius: 50%;
+                      background-color: rgba(0,0,0,.3);
+                      box-shadow: 0 0 5px 20px rgba(0,0,0,.3);
+                      transform: scale(0);
+                      animation: shadow 500ms ease 1.2s both,
+                                 bounce-shadow 1400ms ease-out 0s infinite;
+                  }
+                  
+                  
+                  /* eBot animation ----------------------------------- */
+                  @keyframes ebot {
+                       to { transform: translateY(0); }
+                  }
+                  
+                  /* Shadow animation --------------------------------- */
+                  @keyframes shadow {
+                       to { transform: scale(0.9); }
+                  }
+                  
+                  /* Bounce Shadow animation -------------------------- */
+                  @keyframes bounce-shadow {
+                       0% { transform: scale(0.9); }
+                       50% { transform: scale(1); }
+                     100% { transform: scale(0.9); }
+                  }
+                  
+                      
+                  /* Eyes animation ----------------------------------- */
+                  @keyframes eyes {
+                       0% {background-position: 0 0; }
+                       100% {background-position: 0 -213px; }
+                  }
+                  
+                  
+                  /* Ball animation ----------------------------------- */
+                  @keyframes ball {
+                       0% {background-position: 0 0; }
+                       100% {background-position: 0 -135px; }
+                  }
+                  
+                  
+                  /* Bounce animation --------------------------------- */
+                  @keyframes bounce {
+                       0%, 100% { transform: translateY(0) }
+                       50% { transform: translateY(20px) }
+                  }
+                  
+                </style>
+                <div class="body-ebot"><div class="ebot"></div><div class="shadow"></div></div>
+                
+            </div>
+
+
+             <!-- https://tonicolom.ws/contacto/?_gl=1*312b5n*_up*MQ..*_ga*MTEzNzI1ODY0MS4xNjg5NjIxNTk5*_ga_9736Z4JQF0*MTY4OTYyMTU5OC4xLjAuMTY4OTYyMTU5OC4wLjAuMA.. --> 
+              <!-- https://savvycal.com/jayclouse -->
+              <!-- https://creativemarket.com/ebooks/branding -- >
+                 https://www.xbr.pw//user/david/glare-bear/index.html
+                https://www.xbr.pw/user/mickey-mouse/dist/index.html
+                https://www.xbr.pw/2022/halloween-monster/dist/index.html
+                https://www.xbr.pw/user/monkey-d-luffy/index.html
+            <a href="https://www.xbr.pw/assets/clone/zhatsapp/dist/index.html">zhatsapp</a><br>              
+            <a href="https://www.xbr.pw//assets/clone/booking/dist/index.html" target="_blank" title="Booking" aria-label="Templete">Booking</a><br>
+            <a href="https://www.xbr.pw//assets/clone/espotifai/dist/index.html" target="_blank" title="Espotifai" aria-label="Templete">Espotifai</a><br>
+            <a href="https://www.xbr.pw/assets/clone/fakebook/dist/index.html" target="_blank" title="fakebook" aria-label="Templete">Fakebook</a><br>
+            <a href="https://www.xbr.pw/assets/clone/notube/index.html" target="_blank" title="NoTube" aria-label="Templete">NoTube</a><br>
+            <a href="https://www.xbr.pw//assets/clone/tuiter/dist/index.html" target="_blank" title="Tuiter" aria-label="Templete">Tuiter</a><br>
+            <a href="https://www.xbr.pw//assets/clone/search/dist/index.html" target="_blank" title="Search Goigle" aria-label="Templete">Search Goigle</a><br>
+            <a href="https://www.xbr.pw/assets/css/hi/social-cards-with-tailwind-css/index.html" target="_blank" title="social-cards-with-tailwind" aria-label="Templete">Social card Tailwind</a><br>
+            <a href="https://share.sheetmonkey.io/f/wdGpqz7WbGj3y9BrtFZe6M" target="_blank" title="" aria-label="Templete" >Peliculas Angy</a><br>
+            <a href="https://share.sheetmonkey.io/f/q1W5kYbja5tTsCDhdH9exi" target="_blank" title="" aria-label="Templete" >nota dicha por</a><br>                        
+            <a href="https://codepen.io/luisangelmaciel/pen/GRXLJPW">Magic Avatar</a><br>
+            <a href="https://www.xbr.pw/any-image-to-css/dist/index.html">Any Image to CSS converter</a><br>
+            <a href="https://codepen.io/luisangelmaciel/pen/MWzjoQW">Meme</a><br>
+            <a href="https://codepen.io/luisangelmaciel/pen/YzOByVv">Random Picture Generator Pokemon</a><br>
+            <a href="https://codepen.io/luisangelmaciel/pen/zYmxxLQ">Brands</a><br>
+            <a href="https://codepen.io/luisangelmaciel/pen/bGQbxrP">Twitts App </a><br>
+            <a href="https://codepen.io/luisangelmaciel/pen/ZEqvLYx">Generador de cupón</a><br>
+            <a href="https://calendar.google.com/calendar/u/0/embed?src=s4idoadnr07ihd331neoceemog@group.calendar.google.com&ctz=America/Mexico_City&pli=1">365 calendar </a><br>
+            <a href="https://xbrpw.github.io/2023/7/nom-dia-horoscopo-vue-input-preview/a.html">Título del vídeo porno gay que te lanzará a la fama</a><br>
+                    </div>
+                </div>
+                    </div>--><img src="https://keybase.io/images/badges/install-badge-windows-240-80.png"><br>  <a href="//www.dmca.com/Protection/Status.aspx?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177" title="DMCA.com Protection Status" class="dmca-badge"> 
+                <img src ="https://images.dmca.com/Badges/dmca_protected_12_120.png?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177"  alt="DMCA.com Protection Status" />
+            </a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
+            <a href="https://www.dmca.com/site-report/ClaimSite.aspx?site=www.xbr.pw">Registrado en DMCA</a>
         </div>
     </div>
 </div>
+
+
 <div id="xiiber" class="tabcontent">
     <br><br><br><br>
     <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small">
-            <!--  hice esto doble? -->                           
+            <!-- hice esto doble? -->                           
             <div>
                 <span class="lamp lampxiiber-logo-horizontal-color1 w3-hover-opacity" style=" font-size: 6rem;"> <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span><span class="path6"></span><span class="path7"></span>
                 <span class="path8"></span><span class="path9"></span><span class="path10"></span><span class="path11"></span><span class="path12"></span></span>
@@ -1068,10 +1217,7 @@ animation: BOUNCEWithLove  2.5s infinite;
 
             <div class="w3-row w3-container w3-centered w3-center">
 
-
-                <div class="btn-xiib shake accordion" style="background-color: rgb(22, 53, 158);">
-                    Califícanos con 5 estrellas
-                </div>
+                <div class="btn-xiib shake accordion" style="background-color: rgb(22, 53, 158);">Califícanos con 5 estrellas</div>
                 <div class="w3-container panel-accordion">
                     <a href="https://www.google.com/maps?q=xiiber&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjS_6Ll9cTwAhUOKqwKHRq3CLUQ_AUoAXoECAEQAw" target="_blank"><br>
                         <p>Y comparte detalles de tu experiencia de viaje. <br> <span style="color: #595959">Los viajeros confían en las buenas reseñas como las tuyas para ir a los mejores viajes y experiencias </span>
@@ -1086,19 +1232,13 @@ animation: BOUNCEWithLove  2.5s infinite;
                 <div class="w3-container panel-accordion">
                     <a href="https://www.tripadvisor.com.mx/Attraction_Review-g150800-d21347352-Reviews-Xiiber-Mexico_City_Central_Mexico_and_Gulf_Coast.html" target="new"><br> En Tripadvisor.
                     </a>
-                </div>
-
-                <br>
+                </div><br>
                 <div class="btn-xiib accordion" style="background-color: red;">
                     <a href="https://tepozspa.xiiber.com/" target="_blank"> Próximo viaje </a>
                 </div>
-                <div class="w3-container panel-accordion"><br> Próximamente
-                </div>
-
+                <div class="w3-container panel-accordion"><br>Próximamente</div>
                 <br>
                 <div class="btn-xiib" style="background-color: rgb(224, 210, 82); color:black">Formas de pago</div>
-
-
                 <script>
                     var acc = document.getElementsByClassName("accordion");
                     var i;
@@ -1115,7 +1255,6 @@ animation: BOUNCEWithLove  2.5s infinite;
                         });
                     }
                 </script>
-
             </div>
 
 
@@ -1262,8 +1401,8 @@ animation: BOUNCEWithLove  2.5s infinite;
                 <div class="w3-bar w3-center w3-centered" style="font-size: 24px;">&nbsp;</div>
             </div>
         
- <!-- ¿Todavía no tienes sitio web? ¡Ningún problema! Puede crear una página de destino de Xibot (que alojaremos por usted) para que pueda comenzar a crear su lista de correo electrónico.
-Ya sea un perfil personal, una página de inicio para capturar correos electrónicos o algo un poco más elaborado, Xibot lo tiene cubierto. Simple, receptivo. Simple. Comience con una de las plantillas y personalícela. Luce bien en todos los dispositivos. Luce genial en todos los tamaños de pantalla desde el primer momento, desde teléfonos hasta tabletas y computadoras de escritorio. Su estándar de diseño simple pero hermoso hace que su contenido y su oferta sean el héroe ¡Hazte profesional! ¡Mejora tu experiencia Xibot! Conviértase en Pro desde solo $500 anuales (sí, por año) y obtenga acceso a funciones exclusivas Pro como: Dominios personalizados. Publique sitios en cualquier dominio personalizado que posea con compatibilidad total con SSL (a través de Let's Encrypt ). Sin marca. Publique sitios sin la marca "Hecho con Carrd" en el pie de página. Imágenes y videos grandes-Cargue y use imágenes/GIF de hasta 16 MB y videos de hasta 32 MB. Iconos del sitio. Muestre iconos personalizados (también conocidos como "favicons") en la barra de direcciones cuando visite sus sitios. Compartir imágenes. Muestre imágenes personalizadas (en lugar de capturas de pantalla) cuando comparta sus sitios en las redes sociales. formularios de registro de correo electrónico y formularios personalizado. Una vez que hayan completado el formulario, puede controlar lo que ven a continuación con un mensaje de éxito. Visible en Google. Consigue más visitantes a tu página web gracias a la optimización de los motores de búsqueda. Ya sea que se trate de un mensaje emergente rápido o de que elija redirigirlos a una página de agradecimiento personalizada, su suscriptor sabrá que tiene su información. ¿Suena bien? Haga clic a continuación para comenzar. No es necesario registrarse. Elija un punto de partida
+<p>¿Todavía no tienes sitio web? ¡Ningún problema! Puede crear una página de destino de Xibot (que alojaremos por usted) para que pueda comenzar a crear su lista de correo electrónico.<br>
+Ya sea un perfil personal, una página de inicio para capturar correos electrónicos o algo un poco más elaborado, Xibot lo tiene cubierto. Simple, receptivo. Simple. Comience con una de las plantillas y personalícela. Luce bien en todos los dispositivos. Luce genial en todos los tamaños de pantalla desde el primer momento, desde teléfonos hasta tabletas y computadoras de escritorio. Su estándar de diseño simple pero hermoso hace que su contenido y su oferta sean el héroe ¡Hazte profesional! ¡Mejora tu experiencia Xibot! Conviértase en Pro desde solo $500 anuales (sí, por año) y obtenga acceso a funciones exclusivas Pro como: Dominios personalizados. Publique sitios en cualquier dominio personalizado que posea con compatibilidad total con SSL (a través de Let's Encrypt ). Sin marca. Publique sitios sin la marca "Hecho con Carrd" en el pie de página. Imágenes y videos grandes-Cargue y use imágenes/GIF de hasta 16 MB y videos de hasta 32 MB. Iconos del sitio. Muestre iconos personalizados (también conocidos como "favicons") en la barra de direcciones cuando visite sus sitios. Compartir imágenes. Muestre imágenes personalizadas (en lugar de capturas de pantalla) cuando comparta sus sitios en las redes sociales. formularios de registro de correo electrónico y formularios personalizado. Una vez que hayan completado el formulario, puede controlar lo que ven a continuación con un mensaje de éxito. Visible en Google. Consigue más visitantes a tu página web gracias a la optimización de los motores de búsqueda. Ya sea que se trate de un mensaje emergente rápido o de que elija redirigirlos a una página de agradecimiento personalizada, su suscriptor sabrá que tiene su información. ¿Suena bien? Haga clic a continuación para comenzar. No es necesario registrarse. Elija un punto de partida</p>
 ¿Necesitas ayuda? ¿Tienes alguna pregunta o aún no estás seguro? El equipo de soporte de Webador está disponible para ayudarte a construir la página web como tu deseas.
 
 Comparar planes Elija su plan, luego actualice instantáneamente usando PayPal o cualquier tarjeta de crédito o débito importante. Renueve automáticamente cada año o simplemente pague sobre la marcha, lo que funcione para usted. En 15 minutos tendrás una cuenta y tu página web estará online
@@ -1273,7 +1412,7 @@ Regístrate gratis 42,898 clientes satisfechos Optimizado para Google Nombre de 
 
 ¿Cuál es el título de tu página web? (opcional) Por ejemplo, el nombre de tu empresa. Puedes cambiar fácilmente el nombre de tu página web más adelante.
 
-https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic FAQ ¿Qué es? ¿Cómo me comunico con el soporte? ¿Qué pasa con mi privacidad? ¿Cuánto cuesta? Nos tomamos su privacidad muy en serio. Su texto solo se usa para brindarle las mejores opciones de autocompletado posibles. Nunca venderemos sus datos. Consulta nuestra política de privacidad para obtener más detalles. https://carrd.co/
+<!--   https://convertkit.com/features/forms?utm_campaign=poweredby&utm_content=form&utm_medium=referral&utm_source=dynamic -->>con mi privacidad? ¿Cuánto cuesta? Nos tomamos su privacidad muy en serio. Su texto solo se usa para brindarle las mejores opciones de autocompletado posibles. Nunca venderemos sus datos. Consulta nuestra política de privacidad para obtener más detalles. 
 https://envialove.webador.mx/
 
 <a href=" https://cdpn.io/pen/debug/yLQRWOR?authentication_hash=dXMqBRZPvdbr">contacto</a><br>
@@ -1307,6 +1446,27 @@ Somos grandes admiradores de las instituciones educativas y las organizaciones s
                 <div class="btn-xiib">Diseño gráfico</div>
                 <br>
                 <div class="btn-xiib">Artículos publicitarios</div>
+                <div class="btn-xiib" style="color:rgb(0, 0, 0) ; background-color: white;" onclick="document.location='desing.html'">
+                    Logotipos
+                </div>
+                <br>
+                <div class="btn-xiib" style="color:rgb(0, 0, 0) ; background-color: white;" onclick="document.location='desing-2022.html'">
+                    Diseño gráfico
+                </div>
+
+                <div class="w3-center w3-padding-32 elPagination">
+                    <div class="w3-bar">
+                        <p class="w3-bar-item w3-button">«</p>
+                        <p class="w3-bar-item w3-button  w3-blue-gray" onclick="document.location='desing.html'">6</p>
+                        <p class="w3-bar-item w3-button" onclick="document.location='desing-2022.html'">5</p>
+                        <p class="w3-bar-item  w3-button" onclick="document.location='desing-2021.html'">4</p>
+                        <p class="w3-bar-item w3-button" onclick="document.location='desing-2020.html'">3</p>
+                        <p class="w3-bar-item w3-button" onclick="document.location='desing-2019.html'">2</p>
+                        <p class="w3-bar-item w3-button" onclick="document.location='desing-2018.html'">1</p>
+                        <p class="w3-bar-item  w3-button">»</p>
+                    </div>
+                </div>
+
             </div>
 
             <br>
@@ -1739,51 +1899,6 @@ Somos grandes admiradores de las instituciones educativas y las organizaciones s
 
     </div>
 </div>
-<div id="desing" class="tabcontent">
-
-    <div class="container mx-auto flex flex-col lg:flex-row">
-        <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small">
-            <div class="mb-4"><!-- vacio --></div>
-        </div>
-
-
-        <div class="w-full lg:w-1/2  mb-4">
-
-            <div class="w3-row w3-container" style="width:100%">
-                <div class="w3-bar w3-center w3-centered" style="font-size: 24px;"> </div>
-            </div>
-
-            <div class="w3-row w3-container w3-centered w3-center"> <br><br><br><br>
-                <div class="btn-xiib" style="color:rgb(0, 0, 0) ; background-color: white;" onclick="document.location='desing.html'">
-                    Logotipos
-                </div>
-                <br>
-                <div class="btn-xiib" style="color:rgb(0, 0, 0) ; background-color: white;" onclick="document.location='desing-2022.html'">
-                    Diseño gráfico
-                </div>
-                <br>
-
-            </div>
-
-            <!-- Pagination -->
-            <div class="w3-center w3-padding-32">
-                <div class="w3-bar">
-                    <p class="w3-bar-item w3-button">«</p>
-                    <p class="w3-bar-item w3-button  w3-blue-gray" onclick="document.location='desing.html'">6</p>
-                    <p class="w3-bar-item w3-button" onclick="document.location='desing-2022.html'">5</p>
-                    <p class="w3-bar-item  w3-button" onclick="document.location='desing-2021.html'">4</p>
-                    <p class="w3-bar-item w3-button" onclick="document.location='desing-2020.html'">3</p>
-                    <p class="w3-bar-item w3-button" onclick="document.location='desing-2019.html'">2</p>
-                    <p class="w3-bar-item w3-button" onclick="document.location='desing-2018.html'">1</p>
-                    <p class="w3-bar-item  w3-button">»</p>
-                </div>
-            </div>
-            <br><br><br><br>
-        </div>
-
-        <div class="w-full lg:w-1/4 pl-4"><div class="mb-3 text-xs"><br><span class="mr-2"></span></div></div>
-    </div>
-</div>
 <div id="donate" class="tabcontent"><br><br><br><br>
     <div class=" SUPERCOPY">
         <input type="text" value="014150606071539798" id="myCLABESantander" style="display:none">
@@ -1869,154 +1984,60 @@ Somos grandes admiradores de las instituciones educativas y las organizaciones s
     Su respuesta se ha registrado. 
     Nos gusta escuchar a todos excepto a los robots.                                                         
 </div>
-
+<div id="Referrals" class="tabcontent ">
+    <h1>Referrals &amp; Recommendations</h1>
+    <p>Here are some companies and services that I recommend. Thanks &#x1f64f;</p>
+</div> 
 
 <div class="totop a-up lift" style="z-index:1000"><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div>
 <div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:98; background:white" >
-        <style>
-        :root { --scale: 1;   --icon-size: 26px;}* {margin: 0;padding: 0;box-sizing: border-box;}
-      
-        
-        .navluces  {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;  background: white;width: 100%;height: 80px;} 
-    
-        nav {
-        position: relative; 
-          min-width: 350px;
-        width: 350px;
-          /*width: 350px;*/
-        height: 80px;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        border-radius: 10px;
-        padding: 0 15px;
-          margin: 0 15px;
-        background: white;      
-        overflow: hidden;}
-        nav ul {
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        }
-        nav ul li {
-        list-style: none;
-        width: var(--icon-size);
-        height: var(--icon-size);  
-        }
-        nav ul li a {
-        display: block;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        }
-        nav ul li a svg {
-        fill: black;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;   
-        transition: opacity 100ms ease;
-        pointer-events: none;
-        }
-        nav ul li a.active svg {
-        opacity: 1;
-        }
-          /*new*/
-        nav ul li .anav {
-        display: block;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        }
-        nav ul li .anav svg {
-        fill: black;
-        width: 100%;
-        height: 100%;
-        opacity: 0.4;   
-        transition: opacity 100ms ease;
-        pointer-events: none;
-        }
-        nav ul li .anav.active svg {
-        opacity: 1;
-        }
-        nav .tubelight {
-        position: absolute;
-        left: 0px;
-        top: 0px;
-        transform: translateX(-50%);
-        width: 45px;
-        height: 5px;
-        border-radius: 5px;
-        background: rgba(38, 38, 38);
-        transition: left 400ms ease;
-        z-index: 10;
-        }
-        nav .tubelight .light-ray {
-        position: absolute;
-        left: -30%;
-        top: 5px;
-        width: 160%;
-        height: 80px;
-        clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);
-        background: linear-gradient(to bottom, rgba(38, 38, 38, 0.3) -50%, rgba(38, 38, 38, 0) 90%);
-        pointer-events: none;}
-          
-        
-        .navbarluces {
-        justify-content: center;
-                align-items: center;
-        overflow: hidden;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        display: grid;
-        place-items: center;
-        }  
-        </style>    
-        <nav>
-        <ul><li onclick="openName(event, 'en-modo')"><a href="#home-icon" class="active anav" title="home"><svg><use xlink:href="#home-icon"></use></svg></a></li></ul>
-        <ul><li onclick="openName(event, 'contacto')"><a href="#bookmark-icon" title="bookmark"><svg><use xlink:href="#bookmark-icon"></use></svg></a></li></ul>           
-        <ul><li onclick="openName(event, 'desing')">
-            <a href="#plus-icon" title="plus">
-                <svg><use xlink:href="#plus-icon"></use></svg>
-            </a>
-            </li>
-        </ul>
-        <ul><li onclick="openName(event, 'myapps')">
-            <a title="user" href="#user-icon"><svg><use xlink:href="#user-icon"></use></svg></a>
-            </li>
-        </ul>
-        <ul><li onclick="document.location='//luisangelmaciel.github.io/contacto.html'"><a href="#settings-icon" title="settings"><svg><use xlink:href="#settings-icon"></use></svg></a></li>
-        </ul>    
-        <div class="tubelight"><div class="light-ray"></div></div>
-        </nav>
-    
-        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="home-icon">
-            <path
-                d="M13.1428571,14.5 C13.6571429,14.5 14,14.175507 14,13.6887676 L14,6.38767551 C14,6.14430577 13.9142857,5.90093604 13.6571429,5.73868955 L8.51428571,1.6825273 C8.17142857,1.43915757 7.74285714,1.43915757 7.4,1.6825273 L2.25714286,5.73868955 C2.08571429,5.90093604 2,6.14430577 2,6.38767551 L2,13.6887676 C2,14.175507 2.34285714,14.5 2.85714286,14.5 L13.1428571,14.5 Z M5.42857143,12.8775351 L3.71428571,12.8775351 L3.71428571,6.79329173 L8,3.38611544 L12.2857143,6.79329173 L12.2857143,12.8775351 L10.5714286,12.8775351 L5.42857143,12.8775351 Z">
-            </path>
-        </symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="favorites-icon">
-            <path
-                d="M7.5125,14.3196446 C6.8625,13.7292662 1.5,9.09057902 1.5,5.54830881 C1.5,3.27113511 3.2875,1.5 5.4,1.5 C6.375,1.5 7.26875,1.92169883 8,2.5120772 C8.73125,1.83735907 9.625,1.5 10.6,1.5 C12.79375,1.5 14.5,3.35547487 14.5,5.54830881 C14.5,9.09057902 9.1375,13.7292662 8.4875,14.2353048 C8.24375,14.5726639 7.75625,14.5726639 7.5125,14.3196446 Z M5.4,3.18679534 C4.18125,3.18679534 3.125,4.28321231 3.125,5.54830881 C3.125,7.40378368 5.96875,10.6086948 8,12.4641697 C9.70625,10.8617141 12.875,7.57246322 12.875,5.54830881 C12.875,4.19887254 11.81875,3.18679534 10.6,3.18679534 C9.86875,3.18679534 9.1375,3.60849417 8.73125,4.28321231 C8.40625,4.78925091 7.675,4.78925091 7.35,4.28321231 C6.8625,3.60849417 6.2125,3.18679534 5.4,3.18679534 Z">
-            </path>
-        </symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 568" id="settings-icon">
-            <path d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" />
-        </symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="plus-icon"><path fill-rule="evenodd" clip-rule="evenodd"d="M12 2C6.48 2 2 6.48001 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48001 17.52 2 12 2ZM11 7V11H7V13H11V17H13V13H17V11H13V7H11ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" /></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bookmark-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3H17C18.1 3 19 3.89999 19 5V21L12 18L5 21V5C5 3.89999 5.90002 3 7 3ZM12 15.82L17 18V5H7V18L12 15.82Z" /></symbol>
-        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 570" id="user-icon"><path d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z" /></symbol>
-        </svg>
-      
+<style>
+:root { --scale: 1;   --icon-size: 26px;}* {margin: 0;padding: 0;box-sizing: border-box;}
+.navluces  {margin: 0;padding: 0;box-sizing: border-box;  background: white;width: 100%;height: 80px;} 
+nav {position: relative; min-width: 350px;width: 350px;/*width: 350px;*/height: 80px;display: grid; grid-template-columns: repeat(5, 1fr);border-radius: 10px;
+padding: 0 15px; margin: 0 15px; background: white;overflow: hidden;}
+nav ul {height: 100%;display: flex;justify-content: center;align-items: center;}
+nav ul li {list-style: none;width: var(--icon-size);height: var(--icon-size);  }
+nav ul li a {display: block;width: 100%;height: 100%;cursor: pointer;}
+nav ul li a svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}
+nav ul li a.active svg {opacity: 1;}
+nav ul li .anav {display: block;width: 100%;height: 100%;cursor: pointer;}
+nav ul li .anav svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}
+nav ul li .anav.active svg {opacity: 1;}
+nav .tubelight {position: absolute;left: 0px;top: 0px;transform: translateX(-50%);width: 45px;height: 5px;border-radius: 5px;background: rgba(38, 38, 38);transition: left 400ms ease;z-index: 10;}
+nav .tubelight .light-ray {position: absolute;left: -30%;top: 5px;width: 160%;height: 80px;clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);background: linear-gradient(to bottom, rgba(38, 38, 38, 0.3) -50%, rgba(38, 38, 38, 0) 90%);pointer-events: none;}    
+.navbarluces {justify-content: center;align-items: center;overflow: hidden;position: fixed;bottom: 0;width: 100%;display: grid;place-items: center;}  
+</style>    
+<nav>
+<ul><li onclick="openName(event, 'en-modo')"><a href="#home-icon" class="active anav" title="home"><svg><use xlink:href="#home-icon"></use></svg></a></li></ul>
+<ul><li onclick="openName(event, 'contacto')"><a href="#bookmark-icon" title="bookmark"><svg><use xlink:href="#bookmark-icon"></use></svg></a></li></ul>           
+<ul><li onclick="openName(event, 'desing')"><a href="#plus-icon" title="plus"><svg><use xlink:href="#plus-icon"></use></svg></a></li></ul>
+<ul><li onclick="openName(event, 'myapps')"><a title="user" href="#user-icon"><svg><use xlink:href="#user-icon"></use></svg></a></li></ul>
+<ul><li onclick="document.location='//luisangelmaciel.github.io/contacto.html'"><a href="#settings-icon" title="settings"><svg><use xlink:href="#settings-icon"></use></svg></a></li></ul>
+<div class="tubelight"><div class="light-ray"></div></div>
+</nav>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="home-icon">
+    <path
+        d="M13.1428571,14.5 C13.6571429,14.5 14,14.175507 14,13.6887676 L14,6.38767551 C14,6.14430577 13.9142857,5.90093604 13.6571429,5.73868955 L8.51428571,1.6825273 C8.17142857,1.43915757 7.74285714,1.43915757 7.4,1.6825273 L2.25714286,5.73868955 C2.08571429,5.90093604 2,6.14430577 2,6.38767551 L2,13.6887676 C2,14.175507 2.34285714,14.5 2.85714286,14.5 L13.1428571,14.5 Z M5.42857143,12.8775351 L3.71428571,12.8775351 L3.71428571,6.79329173 L8,3.38611544 L12.2857143,6.79329173 L12.2857143,12.8775351 L10.5714286,12.8775351 L5.42857143,12.8775351 Z">
+    </path>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="favorites-icon">
+    <path
+        d="M7.5125,14.3196446 C6.8625,13.7292662 1.5,9.09057902 1.5,5.54830881 C1.5,3.27113511 3.2875,1.5 5.4,1.5 C6.375,1.5 7.26875,1.92169883 8,2.5120772 C8.73125,1.83735907 9.625,1.5 10.6,1.5 C12.79375,1.5 14.5,3.35547487 14.5,5.54830881 C14.5,9.09057902 9.1375,13.7292662 8.4875,14.2353048 C8.24375,14.5726639 7.75625,14.5726639 7.5125,14.3196446 Z M5.4,3.18679534 C4.18125,3.18679534 3.125,4.28321231 3.125,5.54830881 C3.125,7.40378368 5.96875,10.6086948 8,12.4641697 C9.70625,10.8617141 12.875,7.57246322 12.875,5.54830881 C12.875,4.19887254 11.81875,3.18679534 10.6,3.18679534 C9.86875,3.18679534 9.1375,3.60849417 8.73125,4.28321231 C8.40625,4.78925091 7.675,4.78925091 7.35,4.28321231 C6.8625,3.60849417 6.2125,3.18679534 5.4,3.18679534 Z">
+    </path>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 568" id="settings-icon"><path d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" /></symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="plus-icon"><path fill-rule="evenodd" clip-rule="evenodd"d="M12 2C6.48 2 2 6.48001 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48001 17.52 2 12 2ZM11 7V11H7V13H11V17H13V13H17V11H13V7H11ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" /></symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="bookmark-icon"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 3H17C18.1 3 19 3.89999 19 5V21L12 18L5 21V5C5 3.89999 5.90002 3 7 3ZM12 15.82L17 18V5H7V18L12 15.82Z" /></symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 570" id="user-icon"><path d="M313.6 304c-28.7 0-42.5 16-89.6 16-47.1 0-60.8-16-89.6-16C60.2 304 0 364.2 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-74.2-60.2-134.4-134.4-134.4zM400 464H48v-25.6c0-47.6 38.8-86.4 86.4-86.4 14.6 0 38.3 16 89.6 16 51.7 0 74.9-16 89.6-16 47.6 0 86.4 38.8 86.4 86.4V464zM224 288c79.5 0 144-64.5 144-144S303.5 0 224 0 80 64.5 80 144s64.5 144 144 144zm0-240c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96z" /></symbol>
+</svg>      
 </div> 
 
 <div style="z-index:99;width: 100%; height: 10px; background: rgb(167, 14, 14); position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; z-index:100"><div id="myBar" style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite linear;"></div></div>
 
-<link href="https://luisangelmaciel.github.io/js/object.observe.polyfill.js" rel="prefetch"><link href="https://luisangelmaciel.github.io/js/scripts.js" rel="prefetch"><!-- <script src="https://luisangelmaciel.github.io/js/cobertura.js"></script> -->
+<link href="https://luisangelmaciel.github.io/js/object.observe.polyfill.js" rel="prefetch"><link href="https://luisangelmaciel.github.io/js/scripts.js" rel="prefetch">
 <script>
         console.clear();
     
@@ -2089,7 +2110,6 @@ tablinks = document.getElementsByClassName("tablinks");
 for (i = 0; i < tablinks.length; i++) {
     tablinks[i].className = tablinks[i].className.replace(" active", "");
 }
-
 document.getElementById(Name).style.display = "block";
 evt.currentTarget.className += " active";
 }
@@ -2097,7 +2117,6 @@ evt.currentTarget.className += " active";
 window.onscroll = function() {
 myFunction()
 };
-
 function myFunction() {
 var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
 var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -2146,7 +2165,7 @@ var footerRandom = [
 ' Hecho en Iztapalapa(Ciudad de México) por LuisAngel',
 ' El negocio te tiene que hacer feliz a ti. El producto te tiene que divertir a ti.  El cliente te tiene que gustar a ti.  Javier Pastor ',
 ' Si no te divierte, no se hace.',
-' ',
+' Say hi on twitter or perhaps LinkedIn, if you dare. Oh, and here are some <a href="#referrals">great things I recommend.</a>',
 ' ',
 ' ',
 ' ',
@@ -2154,7 +2173,6 @@ var footerRandom = [
 ];
 var rand = Math.floor(Math.random() * footerRandom.length);
 elements.footerRandomlamp.innerHTML += footerRandom[rand];
-
 reset();
 
 $(window).scroll(function() {
@@ -2170,45 +2188,16 @@ $("html,body").stop().animate({
     scrollTop: 0
 }, 1000);
 });
-//Si ha leído hasta aquí, muchas gracias https://twitter.com/LuisAngelMaciel
+//Si ha leído hasta aquí, muchas gracias por darle un viztazo a mi trabajo. Que tengas una sesión de trabajo productiva. 
 </script>
 <script>
 $(document).ready(function(){var e=[{author:"",source:"",quote:"La economía colaborativa es un fenómeno que avanza a nivel mundial con paso firme. De hecho según un informe sobre América Latina, del FOMIN del BID, el IE Business School y el Fondo de Cooperación de España, un 69 por ciento de iniciativas de este tipo se concentran en Brasil, México, Argentina y Perú "},{author:"Andy Worhol",source:"",quote:"La idea no es vivir para siempre. La idea es crear algo que sí lo haga"},{author:"",source:"",quote:"Sí buscas resultados distintos, no hagas siempre lo mismo."},{author:"",source:"",quote:"No hables, actúa. No digas, demuestra. No prometas, cumple"},{author:"",source:"",quote:"Nos hemos acostumbrado a decir ´estoy bien´, para ahorrarnos preguntas que no queremos contestar "},{author:"",source:"",quote:"Haces 99 cosas bien, pero si haces 1 mal, se olvidan de las 99"},{author:"",source:"",quote:"El storydoing se trata de fomentar la participación del usuario en la historia, que interactúe y la viva en primera persona consiguiendo que la experiencia sea lo más inmersiva posible y el efecto, reacción, respuesta y experiencia por parte del usuario sea mucho más potente y por tanto efectiva.",link:"https://www.easypromosapp.com/blog/2022/05/ejemplo-storydoing-con-captacion-datos/?utm_source=Easypromos+new+newsletter&utm_campaign=3b01ce6c5c-easypromos_2022_06_01&utm_medium=email&utm_term=0_cc4558e8cf-3b01ce6c5c-326483114"},{author:"",source:"",quote:"Dejame ser tu próximo departamento de mercadotecnia y comunicación."},{author:"Javier Sosa. Director de mercadotecnia de PPG-COMEX (2016)",source:"",quote:"El verdadero elemento de entendimiento entre las agencias y las empresas es el nivel de involucramiento y la visión a largo plazo entre las marcas y las agencias. "},{author:"",source:"",quote:"Toma agua a lo largo del día. Aunque no lo creas, la falta adecuada de hidratación obstruye la concentración y ni mente ni creatividad fluyen eficientemente."},{author:"",source:"",quote:"Es  importante empezar el día con alimentos energéticos: nueces, semillas y un buen jugo (el verde es maravilloso). Desayunar incrementa 40% tu energía (además de que acelera el metabolismo). Todo mundo lo dice, pero uno no hace caso, caray."},{author:"",source:"",quote:"Yo, como Confucio, prefiero pensar que si me dedico a algo que me apasiona no tengo que trabajar ni un día de mi vida: mi amor por lo que hago lo convierte en mi hobby. I have a job that is my hobby, hence I have a jobby!"},{author:"",source:"",quote:"Si lo visualizas... lo hacemos posible. Me gusta generar ideas para construir experiencias. Gracias por la oportunidad de que trabajemos juntos. LAMP! "},{author:"",source:"",quote:"Conectar con experiencias para identificar, entender, hacer crecer y mantener a tus consumidores, es mi prioridad a la hora de que trabajemos juntos. LAMP!"},{author:"",source:"",quote:"Contacta conmigo y te ayudaré a impactar en tus estrategias digitales. LAMP!"},{author:"",source:"",quote:"En Lamp.Martech! somos una agencia chiquita pero chingona. "},{author:"Eric Descombes, presidente de FCB México.",source:"",quote:"El uso de la tecnología y datos guían las decisiones. Los líderes generan un lugar de trabajo de crecimiento y desarrollo personal.  "},{author:"",source:"",quote:"El tamaño de una idea no es relevante. Lo que importa es el impacto que genera."},{author:"",source:"",quote:"No se trata de enamorarlo, sino de mantenerlo enamorado. Conquistarlo aunque ya sea tu novio, pasa lo mismo con los clientes. "},{author:"",source:"",quote:"Tómate un descanso, te lo mereces y haz lo que mejor sabes hacer."},{author:"",source:"",quote:"Estoy en CDMX, trabajo para todo el país. lamp!"},{author:"",source:"",quote:"Si me buscas, es porque quieres algo diferente. lamp!"},{author:"",source:"",quote:"Es increíble  qué tanto podemos hacer cuando nos ponemos de acuerdo. "},{author:"Yuri Alvarado, presidente de Alvarado Molina.",source:"",quote:"Creatividad posiblemente sea visualizar el éxito donde otras personas no ven más allá de sus narices. Un creativo imagina es como una especie de Indiana Jones, alguien que anda buscando la idea perdida.  "},{author:"",source:"",quote:"Creatividad visual ir más allá de una idea. Atraer consumidores por medio de la vista se vuelve más latente al considerar la apuesta creativa con la que cuentan otras marcas, así como un entorno que es acechado por numerosos anuncios que buscan acaparar las miradas del público. "},{author:"Richard Branson",source:"",quote:"No se aprende a caminar siguiendo las reglas. Se aprende caminando y cayendo"},{author:"Stephen Hawking",source:"",quote:"Las personas tranquilas y silenciosas son las que tienen mentes más fuertes y ruidosas"},{author:"Juan Rivera, socio y director general de Llorente y Cuenca",source:"",quote:"Las relaciones públicas adoptan un papel mucho más orientado a la consultoría y a la transformación de datos en historias que generen emociones y conexiones. Está implícito tener mucha capacidad analítica para generar alternativas de acción a los clientes. No solamente es cuestión de tener una plataforma o un software que recabe toda la información de la organización sino de incluir en esa plataforma el instinto humano que permite pulverizar los datos y traducirlos en ventajas competitivas."},{author:"",source:"",quote:""},{author:"",source:"",quote:""},{author:"",source:"",quote:"Sí alguién te dice que algo es imposible, no les hagas caso, está hablando de sus limitaciones, no de las tuyas."}];function a(){var a=Math.floor(Math.random()*e.length),o=e[a].quote,r=e[a].author,s=e[a].source;$("#quote").text(o),$("#author").text(r),$("#source").text(s)}$(".tweet").on("click",function(){window.open('https://twitter.com/home/?status="'+$("#quote").text()+'" - '+$("#author").text(),"_blank")}),$("#new-quote").on("click",function(){a()}),a()}),function(){var e,a,o,r;r="",o="",a=[{character:"",source:"",quote:"La economía colaborativa es un fenómeno que avanza a nivel mundial con paso firme. De hecho según un informe sobre América Latina, del FOMIN del BID, el IE Business School y el Fondo de Cooperación de España, un 69 por ciento de iniciativas de este tipo se concentran en Brasil, México, Argentina y Perú "},{character:"Andy Worhol",source:"",quote:"La idea no es vivir para siempre. La idea es crear algo que sí lo haga"},{character:"",source:"",quote:"Sí buscas resultados distintos, no hagas siempre lo mismo."},{character:"",source:"",quote:"No hables, actúa. No digas, demuestra. No prometas, cumple"},{character:"",source:"",quote:"Nos hemos acostumbrado a decir ´estoy bien´, para ahorrarnos preguntas que no queremos contestar "},{character:"",source:"",quote:"Haces 99 cosas bien, pero si haces 1 mal, se olvidan de las 99"},{character:"",source:"",quote:"El storydoing se trata de fomentar la participación del usuario en la historia, que interactúe y la viva en primera persona consiguiendo que la experiencia sea lo más inmersiva posible y el efecto, reacción, respuesta y experiencia por parte del usuario sea mucho más potente y por tanto efectiva.",link:"https://www.easypromosapp.com/blog/2022/05/ejemplo-storydoing-con-captacion-datos/?utm_source=Easypromos+new+newsletter&utm_campaign=3b01ce6c5c-easypromos_2022_06_01&utm_medium=email&utm_term=0_cc4558e8cf-3b01ce6c5c-326483114"},{character:"",source:"",quote:"Dejame ser tu próximo departamento de mercadotecnia y comunicación."},{character:"Javier Sosa. Director de mercadotecnia de PPG-COMEX (2016)",source:"",quote:"El verdadero elemento de entendimiento entre las agencias y las empresas es el nivel de involucramiento y la visión a largo plazo entre las marcas y las agencias. "},{character:"",source:"",quote:"Toma agua a lo largo del día. Aunque no lo creas, la falta adecuada de hidratación obstruye la concentración y ni mente ni creatividad fluyen eficientemente."},{character:"",source:"",quote:"Es  importante empezar el día con alimentos energéticos: nueces, semillas y un buen jugo (el verde es maravilloso). Desayunar incrementa 40% tu energía (además de que acelera el metabolismo). Todo mundo lo dice, pero uno no hace caso, caray."},{character:"",source:"",quote:"Yo, como Confucio, prefiero pensar que si me dedico a algo que me apasiona no tengo que trabajar ni un día de mi vida: mi amor por lo que hago lo convierte en mi hobby. I have a job that is my hobby, hence I have a jobby!"},{character:"",source:"",quote:"Si lo visualizas... lo hacemos posible. Me gusta generar ideas para construir experiencias. Gracias por la oportunidad de que trabajemos juntos. LAMP! "},{character:"",source:"",quote:"Conectar con experiencias para identificar, entender, hacer crecer y mantener a tus consumidores, es mi prioridad a la hora de que trabajemos juntos. LAMP!"},{character:"",source:"",quote:"Contacta conmigo y te ayudaré a impactar en tus estrategias digitales. LAMP!"},{character:"",source:"",quote:"En Lamp.Martech! somos una agencia chiquita pero chingona. "},{character:"Eric Descombes, presidente de FCB México.",source:"",quote:"El uso de la tecnología y datos guían las decisiones. Los líderes generan un lugar de trabajo de crecimiento y desarrollo personal.  "},{character:"",source:"",quote:"El tamaño de una idea no es relevante. Lo que importa es el impacto que genera."},{character:"",source:"",quote:"No se trata de enamorarlo, sino de mantenerlo enamorado. Conquistarlo aunque ya sea tu novio, pasa lo mismo con los clientes. "},{character:"",source:"",quote:"Tómate un descanso, te lo mereces y haz lo que mejor sabes hacer."},{character:"",source:"",quote:"Estoy en CDMX, trabajo para todo el país. lamp!"},{character:"",source:"",quote:"Si me buscas, es porque quieres algo diferente. lamp!"},{character:"",source:"",quote:"Es increíble  qué tanto podemos hacer cuando nos ponemos de acuerdo. "},{character:"Yuri Alvarado, presidente de Alvarado Molina.",source:"",quote:"Creatividad posiblemente sea visualizar el éxito donde otras personas no ven más allá de sus narices. Un creativo imagina es como una especie de Indiana Jones, alguien que anda buscando la idea perdida.  "},{character:"",source:"",quote:"Creatividad visual ir más allá de una idea. Atraer consumidores por medio de la vista se vuelve más latente al considerar la apuesta creativa con la que cuentan otras marcas, así como un entorno que es acechado por numerosos anuncios que buscan acaparar las miradas del público. "},{character:"Richard Branson",source:"",quote:"No se aprende a caminar siguiendo las reglas. Se aprende caminando y cayendo"},{character:"Stephen Hawking",source:"",quote:"Las personas tranquilas y silenciosas son las que tienen mentes más fuertes y ruidosas"},{character:"Juan Rivera, socio y director general de Llorente y Cuenca",source:"",quote:"Las relaciones públicas adoptan un papel mucho más orientado a la consultoría y a la transformación de datos en historias que generen emociones y conexiones. Está implícito tener mucha capacidad analítica para generar alternativas de acción a los clientes. No solamente es cuestión de tener una plataforma o un software que recabe toda la información de la organización sino de incluir en esa plataforma el instinto humano que permite pulverizar los datos y traducirlos en ventajas competitivas."},{character:"Pablo Neruda",source:"",quote:"Muere lentamente quien no viaja."},{character:"",source:"",quote:"Los viajes son como los atardeceres, si esperas demasiado te los pierdes."},{character:"",source:"",quote:"Quédate con quien te invite al teatro, al cine te invitan todos. "},{character:"",source:"",quote:"Quédate con quien te invite a viajar, al cine te invitan todos. "},{character:"",source:"",quote:"La probabilidad de vender a un nuevo comprador es del 5 al 20%. Y a clientes existentes entre un 60 y 70% "},{character:"",source:"",quote:" "},{character:"",source:"",quote:"Sí alguién te dice que algo es imposible, no les hagas caso, está hablando de sus limitaciones, no de las tuyas."}],e=function(){var s;return(s=a[Math.floor(Math.random()*a.length)]).quote.length+s.character.length>97?e():($(".quote").text(s.quote),$(".character").text(s.character),o=s.quote.split(" ").join("%20"),r=s.character.split(" ").join("%20"))},$(document).ready(function(){return $(".btn-tweet").hide(),$(".btn-force").on("click",function(){return e(),$(".twitter").attr("href","https://twitter.com/intent/tweet?text="+r+o+"%20https://www.luisangelmaciel.one").attr("target","_blank"),$(".btn-tweet").show()})})}.call(this);    
 </script>
 </body>
 </html>
- <!-- https://tonicolom.ws/contacto/?_gl=1*312b5n*_up*MQ..*_ga*MTEzNzI1ODY0MS4xNjg5NjIxNTk5*_ga_9736Z4JQF0*MTY4OTYyMTU5OC4xLjAuMTY4OTYyMTU5OC4wLjAuMA.. --> 
-              <!-- https://savvycal.com/jayclouse -->
-              <!-- https://creativemarket.com/ebooks/branding -- >
-                 https://www.xbr.pw//user/david/glare-bear/index.html
-                https://www.xbr.pw/user/mickey-mouse/dist/index.html
-                https://www.xbr.pw/2022/halloween-monster/dist/index.html
-                https://www.xbr.pw/user/monkey-d-luffy/index.html
-                   <a href="https://www.xbr.pw/assets/clone/zhatsapp/dist/index.html">zhatsapp</a><br>
-              <a href="https://www.xbr.pw//assets/clone/elchat/index.html" target="_blank" title="El chat" aria-label="Templete">El chat</a><br>
-<a href="https://www.xbr.pw//assets/clone/booking/dist/index.html" target="_blank" title="Booking" aria-label="Templete">Booking</a><br>
-<a href="https://www.xbr.pw//assets/clone/espotifai/dist/index.html" target="_blank" title="Espotifai" aria-label="Templete">Espotifai</a><br>
-<a href="https://www.xbr.pw/assets/clone/fakebook/dist/index.html" target="_blank" title="fakebook" aria-label="Templete">Fakebook</a><br>
-<a href="https://www.xbr.pw/assets/clone/notube/index.html" target="_blank" title="NoTube" aria-label="Templete">NoTube</a><br>
-<a href="https://www.xbr.pw//assets/clone/tuiter/dist/index.html" target="_blank" title="Tuiter" aria-label="Templete">Tuiter</a><br>
-<a href="https://www.xbr.pw//assets/clone/search/dist/index.html" target="_blank" title="Search Goigle" aria-label="Templete">Search Goigle</a><br>
-<a href="https://www.xbr.pw/assets/css/hi/social-cards-with-tailwind-css/index.html" target="_blank" title="social-cards-with-tailwind" aria-label="Templete">Social card Tailwind</a><br>
-<a href="https://share.sheetmonkey.io/f/wdGpqz7WbGj3y9BrtFZe6M" target="_blank" title="" aria-label="Templete" >Peliculas Angy</a><br>
-              <a href="https://share.sheetmonkey.io/f/q1W5kYbja5tTsCDhdH9exi" target="_blank" title="" aria-label="Templete" >nota dicha por</a><br>
-              <a href="https://codepen.io/luisangelmaciel/pen/LYXBZQa">Placeholder Image Generator</a><br>
-<a href="https://codepen.io/luisangelmaciel/pen/GRXLJPW">Magic Avatar</a><br>
-<a href="https://www.xbr.pw/any-image-to-css/dist/index.html">Any Image to CSS converter</a><br>
 
-<a href="https://codepen.io/luisangelmaciel/pen/MWzjoQW">Meme</a><br>
-<a href="https://codepen.io/luisangelmaciel/pen/YzOByVv">Random Picture Generator Pokemon</a><br>
-<a href="https://codepen.io/luisangelmaciel/pen/zYmxxLQ">Brands</a><br>
-<a href="https://codepen.io/luisangelmaciel/pen/bGQbxrP">Twitts App </a><br>
-<a href="https://codepen.io/luisangelmaciel/pen/ZEqvLYx">Generador de cupón</a><br>
-<a href="https://calendar.google.com/calendar/u/0/embed?src=s4idoadnr07ihd331neoceemog@group.calendar.google.com&ctz=America/Mexico_City&pli=1">365 calendar </a><br>
-<a href="https://xbrpw.github.io/2023/7/nom-dia-horoscopo-vue-input-preview/a.html">Título del vídeo porno gay que te lanzará a la fama</a><br>
               
-              
-<a href="" target="_blank" title="" aria-label="Templete"></a><br>
+        <!--     
 <a href="https://deepfake-porn.com/howto-custom-deepfake/" target="_blank" title="" aria-label="Templete">Deepfake-porn</a><br>
 <a href="https://deepfakesweb.com/" target="_blank" title="" aria-label="Favorite Tool">Online Deepfake Maker. Deepfake App to swap faces using AI.</a><br>
               https://www.myfonts.com/pages/whatthefont
@@ -2244,9 +2233,7 @@ https://unexpectedcatalonia.com/ xbr -->
 <p>¿Podria dejarnos una buena reseña? Es muy útil.</p>
 <button>No gracias</button>
 <button>Dar 5 estrellas</button>
-
 </section>
-
 
 
 <p>
@@ -2263,16 +2250,11 @@ sitio web.
 </p>
 <button>Permitir anuncios en iUnaApp</button>
 <br>
-
 <p>¿Ves alguna errata o quieres modificar algo? <a href="#pull" title="Pull" target="_new">Haz una Pull Request</a> </p>  
 
 -->
 <!-- 
-    <a href="//www.dmca.com/Protection/Status.aspx?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177" title="DMCA.com Protection Status" class="dmca-badge"> <img src ="https://images.dmca.com/Badges/dmca_protected_12_120.png?ID=c52c6a00-9983-45bb-9baf-ba0275cd1177"  alt="DMCA.com Protection Status" /></a>  <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js"> </script>
-<a href="https://www.dmca.com/site-report/ClaimSite.aspx?site=www.xbr.pw">Registrado en DMCA</a><br><br><br><br>
-
-
-Say hi on twitter or perhaps LinkedIn, if you dare. Oh, and here are some <a href="/referrals">great things I recommend.</a>
-<h1>Referrals &amp; Recommendations</h1>
-<p>Here are some companies and services that I recommend. Thanks &#x1f64f;</p>
-<img src="https://keybase.io/images/badges/install-badge-windows-240-80.png>-->
+  <br><br><br><br>
+Haii, what a complete mess this is. Yeah it needs improvement, you should have seen the first version though.
+Haii, qué completo desastre es esto. Sí, necesita mejoras, aunque deberías haber visto la primera versión.
+-->
