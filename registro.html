@@ -4,14 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 
-	<title>Contacto</title>
+	<title>Registro</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<link rel="stylesheet" href="https://luisangelmaciel.vercel.app/css/toxel.css">
+    <link rel="stylesheet" href="https://luisangelmaciel.vercel.app/css/toxel.css">
 	<link rel="stylesheet" href="https://luisangelmaciel.vercel.app/css/index.css">
-	
-		
-	
 
 	<style>
 	
@@ -304,17 +300,9 @@
 		<form class="auto gform pure-form pure-form-stacked" method="POST" data-email="lamacpad@gmail.com" action="https://script.google.com/macros/s/AKfycbwOBg05h-H3-7sbFFr-aoVsgewy4ZGv-mfv-QJjqWbZpQigYd3AslrbLVe_aRRmxuR9zw/exec">
 			<div class="form-elements">
 				<div><br>
-					<h1 class="content-head"><b>Contacto</h1> </b><br>
-					<p> Bienvenido a nuestro cuestionario de combinación de herramientas.<br> <br>Cómo funciona: le haremos algunas preguntas sobre lo que desea construir. <br>
-						<br>Después de responder, obtendrá una combinación de herramientas personalizada de nuestra parte.
-						<br><br>
-						<b>Nota</b> Esto todavía está en beta. ¡Pronto haremos muchas mejoras! <br><br>
-						¿Estás listo para encontrar tu herramienta perfecta?
-						<!-- Haz clic en el botón de abajo 👇 Comenzar el cuestionario-->
-					</p>
-					<hr>
+					<h1 class="content-head"><b>Registro</b></h1><br>	                  												
 					<div class="text">
-						<label class="label" for="tipoDeEmpresa">¿Para qué tipo de empresa es este proyecto?</label>
+						<label class="label" for="tipoDeEmpresa">¿Tipo de empresa?</label>
 						<select class="select" id="tipoDeEmpresa" name="tipoDeEmpresa">
 							<option selected disabled>-</option>
 							<option value="solo">Proyecto paralelo o puesta en marcha (Solo) </option>
@@ -439,7 +427,6 @@
 							<option value="OtroLugar">En algún otro lugar</option>
 						</select>
 					</div> <br><br>
-
 					<div class="text">
 						<label class="label" for="escala">En una escala del 1 al 5, ¿qué tan experto en tecnología eres?<br>1 = puede navegar por la web, pero no mucho más
 							<br>5 = experimentado en software y codificación</label>
@@ -464,32 +451,55 @@
 							<option value="Operaciones">Operaciones</option>
 							<option value="Ventas">Ventas y gestión de cuentas</option>
 							<option value="otro">Otro</option>
-
 						</select>
-					</div> <br><br>
-
+					</div> <br><br>																
 					<div class="text">
-						<label class="label" for="empresa">Cual es el nombre de tu compañia</label>
+						<label class="label" for="empresa">Nombre comercial</label>
 						<input class="input" type="text" name="empresa" id="empresa">
 					</div> <br><br>
 					<div class="text">
-						<label class="label" for="type-url">URL (url)</label>
+						<label class="label" for="legalname">Nombre legal</label>
+						<input class="input" type="text" name="legalname" id="legalname">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="slogan">Slogan (si es que tienen)</label>
+						<input class="input" type="text" name="slogan" id="slogan>
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="description">Como describirias tu empresa</label>
+						<input class="input" type="text" name="description" id="description">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="type-url">URL</label>
 						<input class="input" type="url" name="type-url" id="type-url">
+					</div> <br><br> <!-- websitealternateName:"xbr power, martech. Knowledge Base Software That Scales With Your Product", -->
+					<div class="text">
+						<label class="label" for="emailOrganization">Email Empresa</label>
+						<input class="input" type="email" name="emailOrganization" id="emailOrganization">
 					</div> <br><br>
 					<div class="text">
-						<label class="label" for="name">Nombre</label>
-						<input class="input" type="text" name="name">
+						<label class="label" for="phoneOrganization">Telefono Empresa</label>
+						<input class="input" type="number" name="phoneOrganization" id="phoneOrganization">
 					</div> <br><br>
 					<div class="text">
-						<label class="label" for="email">Email</label>
-						<input class="input" type="email" name="email">
+						<label class="label" for="foundingDate">Año de fundación de la empresa</label>
+						<input class="input" type="number" name="foundingDate" id="foundingDate">
 					</div> <br><br>
 					<div class="text">
-						<label class="label" for="phone">Telefono</label>
-						<input class="input" type="number" name="phone">
+						<label class="label" for="name">Nombre de contacto</label>
+						<input class="input" type="text" name="name" id="name">
 					</div> <br><br>
 					<div class="text">
-						<input class="input" type="text" inputmode="text" value="templete https://codepen.io/luisangelmaciel/pen/LYXoVdB?editors=1000" style="display:none" id="origen" name="origen">
+						<label class="label" for="email">Email personal</label>
+						<input class="input" type="email" name="email" id="email">
+					</div> <br><br>
+					<div class="text">
+						<label class="label" for="phone">Telefono personal</label>
+						<input class="input" type="number" name="phone" id="phone">
+					</div> <br><br> <!-- twitter -->
+					
+					<div class="text">
+						<input class="input" type="text" inputmode="text" value="/registro/" style="display:none" id="origen" name="origen">
 					</div>
 
 					<button style="background:none; border:none"><input id="js-comm_btn" type="button" class="ag-comm_btn" value="Enviar" disabled /></button><br>
@@ -499,10 +509,11 @@
 
 			<!-- Thankyou_message --><br>
 			<div class="thankyou_message" style="display:none;background:none;border-radius: 40px;width: 400px;padding-top: 15px;padding-bottom: 40px;padding-left: 20px;padding-right: 20px;"><br><br>
-				<h2><b>Hemos encontrado la herramienta perfecta para ti 🎉</h2>
+				<h2><b>Gracias, revisaré la información y listo, tendras tu sitio web bien estructurado. Seguimos en contacto. 🎉</h2>
 				</p>
 				<button onclick="history.back()">Go Back</button>
 				<button onClick="window.location.href=window.location.href">Refresh Page</button>
+				<!-- <p>o tal ves te interese leer sobre:</p> -->
 			</div>
 		</form>
 		<hr>
