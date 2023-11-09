@@ -1,0 +1,81 @@
+Acerca de WATI
+WATI es la plataforma de comunicación de más rápido crecimiento construida sobre las API de WhatsApp
+
+
+Sitio construido con
+Web Builder Framework  rapesJS
+
+Apoyanos
+Si te gusta el proyecto puedes ayudarnos a crecer. GrapesJS es un proyecto independiente, realizado por desarrolladores en su tiempo libre con un propósito común, hacer que el desarrollo web sea accesible para todos. Apreciamos incluso la contribución más pequeña, ya que es un gran cambio en muchos aspectos, pero sobre todo, la motivación para seguir mejorando esta herramienta.
+
+
+El proyecto aún está en desarrollo, así que estad atentos .
+Al ser un proyecto gratuito y de código abierto, los colaboradores y simpatizantes son muy bienvenidos.
+Empezar
+
+plantillas sin codificación
+vs con codificación 
+
+
+ Los usuarios pueden iniciar sesión a través de cualquier plataforma de redes sociales, ya sea Google, Facebook o Twitter. 
+
+
+Novedades
+Post-it es una plataforma de redes sociales donde los usuarios pueden interactuar con cualquier persona.
+
+Marcar como inadecuado
+
+Bienvenido a mi github, aquí hay algunos proyectos que puede consultar:
+Proyectos
+Aquí está algo de mi trabajo
+
+contribuyendo
+Las solicitudes de extracción son bienvenidas. Para cambios importantes, abra un problema primero para discutir lo que le gustaría cambiar.
+
+Asegúrese de actualizar las pruebas según corresponda.
+
+Controlador de vista
+Un controlador de vista estúpidamente simple para PHP
+View-Controller
+A stupidly simple view controller for PHP
+
+simpleGraphs Public
+Shitty graphs made simple
+
+Material por hacer 
+https://github.com/felipefialho/coding-style
+
+
+
+
+Licencia
+MIT
+
+Estar en contacto con
+https://github.com/Slenderman00
+
+
+¡Demo en vivo!
+Renderizado adaptativo: plantillas especializadas para dispositivos móviles y de escritorio.
+Diseño web receptivo: experiencia de visualización optimizada en una amplia gama de dispositivos.
+Mejora progresiva: renderizando la aplicación en el lado del servidor y luego usando JS para las actualizaciones.
+
+
+hi/lab/
+Mi primer sitio web hecho en 2007 😱
+Siempre tuve curiosidad por ver los primeros proyectos en los que trabajé y después de mucho tiempo de búsqueda finalmente encontré el primer sitio experimental que desarrollé.
+carrera profesional
+varios
+creo que la difusión del conocimiento y las buenas ideas inspiran y mejoran el mundo.
+
+
+Y no puedo evitar comentar: tengo dos gatos y estoy enamorada de ellos 😽
+
+Mi trabajo ha permitido que cientos de millones participen e interactúen miles de millones de veces.
+
+ Un marco de micromensajería de publicación/suscripción, con un peso de solo 198 bytes comprimidos con gzip. 
+https://github.com/daniellmb/MinPubSub
+
+Museo del Buen Código [{❤️}]
+
+Siga @museumofgodcode en Twitter para obtener actualizaciones a medida que se agregan nuevas exhibiciones a la creciente colección.

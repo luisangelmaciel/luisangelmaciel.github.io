@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="es-mx" >
+<head>
+<meta charset="UTF-8">
+<title></title>
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name= "viewport" content = "width = device-width">
+<meta name="keywords" content="brilla como una estrella, consejos para brillar, " />
+<meta name="description" content="Al caminar saca el busto, sin exagerar; jamás te jorobes" />
+<meta name="subject" content="Para todo di GRACIAS Y POR FAVOR">
+<meta name="language" content="ES-MX">
+<meta name="robots" content="indexfollow" />
+<meta name="robots" content="index, follow" />
+<meta name="revised" content="September,2 2022 5:55 pm" />
+<meta name="abstract" content="Sigue estos consejos y brillaras como una estrella. Profesor Roberto Castillo Peralta. Diseñador de Imagen.">
+<meta name="topic" content="Acuérdate que como te ven te tratan, siempre debes estar limpia, bien peinada, oliendo rico y bien vestida">
+<meta name="summary" content="No mastiques chicle con la boca abierta">
+<meta name="Classification" content="Business">
+<!-- <meta name="classification" content="products, product classifications, company classification, company type, industry" /> -->
+<meta name="author" content="name email@gmail.com">
+<meta name="designer" content="@LuisAngelMacielPadilla">
+<meta name="copyright" content="@LuisAngelMacielPadilla">
+<meta name="reply-to" content="lamacpad@gmail.com">
+<meta name="owner" content="Profesor Roberto Castillo Peralta por la iformación. ">
+<meta name="url" content="https://www.xbr.pw/13-consejos-para-brillar-como-una-estrella">
+<meta name="identifier-URL" content="http://www.xbr.pw">
+<meta name="directory" content="submission">
+<meta name="category" content="Healt">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="7 days">
+<meta http-equiv="Expires" content="0">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+
+<meta name="og:type" content="fashion" />
+<meta name="og:url" content="https://www.xbr.pw/13-consejos-para-brillar-como-una-estrella" />
+<meta name="og:image" content="https://www.xbr.pw/13-consejos-para-brillar-como-una-estrella/Poster-Brilla-como-una-star.webp" />
+<meta name="og:site_name" content="www.xbr.pw" />
+<meta name="og:description" content="Al caminar saca el busto, sin exagerar; jamás te jorobes." />
+<meta name="og:email" content="lamacpad@gmail.com" />
+<!-- <meta name="og:phone_number" content="" /> -->
+<meta name="og:locality" content="es_MX" />
+<meta name="og:region" content="Ciudad de México" />
+<meta name="og:postal-code" content="09310" />
+<meta name="og:country-name" content="México" />
+<meta property="og:type" content="website" />
+<meta property="og:points" content="POINTS_FOR_ACHIEVEMENT" />
+<meta property="og:video" content="http://www.xbr.pw/awesome.swf" />
+<meta property="og:video:height" content="640" />
+<meta property="og:video:width" content="385" />
+<meta property="og:video:type" content="application/x-shockwave-flash" />
+<meta property="og:video" content="http://www.xbr.pw/html5.mp4" />
+<meta property="og:video:type" content="video/mp4" />
+<meta property="og:video" content="http://example.com/fallback.vid" />
+<meta property="og:video:type" content="text/html" />
+<meta property="og:audio" content="http://example.com/amazing.mp3" />
+<meta property="og:audio:title" content="Best Song" />
+<meta property="og:audio:artist" content="Best Band" />
+<meta property="og:audio:album" content="Best Album" />
+<meta property="og:audio:type" content="application/mp3" />
+<meta property="og:image" content="http://www.xbr.pw/13-consejos-para-brillar-como-una-estrella/image.webp" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <h1><b style="color: inherit; font-family: inherit;"><br></b></h1>
+
+  
+  
+  <p style="text-align: center;">Desing @luisangelmaciel&nbsp;<a href="https://www.luisangelmaciel.one">https://www.luisangelmaciel.one</a><br></p><p style="text-align: center;"><br></p><p style="text-align: left; text-transform: capitalize; margin: 0px; line-height: 1.45; font-family: Montserrat, sans-serif; color: rgb(48, 55, 59);"><span class="st">Ofrezco mis Servicios de SEO a buen precio pero lo más importante con buenos resultados en un corto plazo.</span></p><div><span class="st"><br></span></div><p style="text-align: left;"><b>¿Cómo te puedo ayudar?</b></p><font face="inherit"><ul><li><span style="font-family: inherit;">Investigación de palabras clave&nbsp;</span></li><li><font face="inherit">Optimización en la página&nbsp;</font></li><li><font face="inherit">Impulsar tu sitio web&nbsp;</font></li><li><font face="inherit">Construcción de enlaces</font></li><li><font face="inherit">Perspectiva de la competencia&nbsp;</font></li><li>Auditoria<font face="inherit">&nbsp;y escaneo del </font><span style="font-family: inherit;">sitio&nbsp;</span>web</li></ul></font><div><b style="font-family: inherit;">Servicios SEO&nbsp;</b><br><ul><li>Auditoria del sitio web&nbsp;</li><li>Crear meta-etiquetas</li><li>Generador de meta-etiquetas&nbsp;</li><li>Analizador de meta-etiquetas&nbsp;</li><li>Perspectiva de la competencia&nbsp;</li></ul><div><b>Impulso De SEO&nbsp;</b></div><div><ul><li>Crear vínculos de retroceso seguros de Google&nbsp;</li><li>Atrae visitantes reales a tu sitio&nbsp;</li><li>Genera leads para tu negocio&nbsp;</li><li>Consigue tráfico orgánico para tu blog&nbsp;</li><li>Comprar corrección y revisión de SEO&nbsp;</li><li>Investigación inteligente de palabras clave&nbsp;</li><li>Instalación o actualización de Yoast</li></ul><div><b>Datos De Contacto&nbsp;</b></div><div><ul><li>Dirección e información de contacto&nbsp;</li><li>Área de Clientes&nbsp;</li><li>luis.angel.maciel.padilla@gmail.com</li><li>Hacer un pago</li></ul><br><ul><li>Mapa de sitio</li><li>Política de privacidad</li><li>Descargo de&nbsp; responsabilidad (https://seosherpa.com/disclaimer/)</li><li>Términos de uso</li></ul><br></div></div><div><span style="font-weight: 700; font-family: &quot;Ek Mukta&quot;, sans-serif; font-size: 16px; font-style: italic;">Sobre el autor: L</span><font style="color: rgb(153, 153, 153); font-family: &quot;Ek Mukta&quot;, sans-serif; font-size: 16px; font-style: italic; vertical-align: inherit;">e apasiona ayudarlo a obtener más tráfico y ventas de los motores de búsqueda.</font><br></div><div><font style="color: rgb(153, 153, 153); font-family: &quot;Ek Mukta&quot;, sans-serif; font-size: 16px; font-style: italic; vertical-align: inherit;"><font style="color: rgb(51, 51, 51); font-family: &quot;IBM Plex Sans&quot;, sans-serif; font-size: 15px; font-style: normal; background-color: rgb(247, 247, 247); vertical-align: inherit;">Marketer y redactor de contenidos en Ahrefs.&nbsp;</font><font style="color: rgb(51, 51, 51); font-family: &quot;IBM Plex Sans&quot;, sans-serif; font-size: 15px; font-style: normal; background-color: rgb(247, 247, 247); vertical-align: inherit;">Adicta al SEO, la aviación, las fragancias, el sushi y los tacos.</font><br></font></div><div><font style="color: rgb(153, 153, 153); font-family: &quot;Ek Mukta&quot;, sans-serif; font-size: 16px; font-style: italic; vertical-align: inherit;"><br></font></div><div><font style="color: rgb(153, 153, 153); font-family: &quot;Ek Mukta&quot;, sans-serif; font-size: 16px; font-style: italic; vertical-align: inherit;"><br></font></div><div><font style="vertical-align: inherit;"><div class="container-thankyou" style="color: rgb(76, 77, 78); font-family: Roboto, &quot;Libre Franklin&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; background-color: rgb(249, 249, 249);">
+    
+   
+
+    Thank you for your download!
+    Problems donating? | Donation FAQ
+    
+    <font style="vertical-align: inherit;">Sea el primero en calificar esta publicación.&nbsp;</font></font></p></div></div></div></font></div><div><font style="vertical-align: inherit; font-style: italic; font-size: 16px; font-family: &quot;Ek Mukta&quot;, sans-serif; color: rgb(153, 153, 153);"><div class="entry-content" style="color: rgb(148, 148, 148); font-size: 14px; font-style: normal;"><h2 style="font-family: &quot;Ek Mukta&quot;, sans-serif; line-height: 35px; overflow-wrap: break-word; color: rgb(0, 0, 0) !important;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Pensamientos finales</font></font></h2><p style="padding-top: 10px; font-size: 18px; overflow-wrap: break-word; color: rgb(77, 77, 77); padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Las etiquetas meta son esenciales tanto para los motores de búsqueda como para los navegadores web.</font></font></p><p style="padding-top: 10px; font-size: 18px; overflow-wrap: break-word; color: rgb(77, 77, 77); padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cuando comprenda cómo utilizar las etiquetas más importantes a su favor e ignore los metadatos irrelevantes, puede ahorrar tiempo y evitar errores notables de SEO.</font></font></p><p style="padding-top: 10px; font-size: 18px; overflow-wrap: break-word; color: rgb(77, 77, 77); padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ahora me gustaría escuchar lo que tienes que decir:</font></font></p><p style="padding-top: 10px; font-size: 18px; overflow-wrap: break-word; color: rgb(77, 77, 77); padding-left: 0px;"><span style="font-weight: 700;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">¿Qué metaetiqueta SEO vas a usar de manera diferente después de leer esta publicación?</font></font></span></p><p style="padding-top: 10px; font-size: 18px; overflow-wrap: break-word; color: rgb(77, 77, 77); padding-left: 0px;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Házmelo saber dejando un comentario ahora mismo.<br>¿Qué tan útil fue esta publicación? <br>
+
+No hay votos hasta ahora! Sea el primero en calificar esta publicación.<br>Incluye estrategias exclusivas que no se encuentran en el blog </font></font></p>
+
+  Designer, Developer, and Open Source Contributor!
+</body>
+</html>
