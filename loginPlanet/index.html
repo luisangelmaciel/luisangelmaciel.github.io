@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css?v=1.0.0">
+  <style>
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.modalFull {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		display: none;
+		-webkit-overflow-scrolling: touch;
+		outline: 0;
+		overflow: hidden;
+		background-color: initial;
+	}
+
+	.closeModalFull {
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 1;
+		color: #aaaaaa;
+		text-shadow: 0 1px 0 #fff;
+		filter: alpha(opacity=20);
+		opacity: 0.5;
+		position: fixed;
+		top: 30px;
+		right: 40px;
+	}
+
+	.closeModalFull:focus,
+	.closeModalFull:hover {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+
+	.closeModalFull {
+		-webkit-appearance: none;
+		padding: 0;
+		cursor: pointer;
+		background: 0 0;
+		border: 0;
+	}
+
+	.closeModalFull:hover,
+	.closeModalFull:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100 flex h-full items-center py-16">
+<script src="https://preline.co/assets/js/hs.theme-appearance.js"></script>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main  id="loginForm"  role="main" class="w-full max-w-md mx-auto p-6">
+    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700" id="content">
+      <div class="p-4 sm:p-7">
+       
+        <div class="mt-5" >
+       
+               <!-- Form -->
+                 
+      
+
+<div>
+          <form id="login">
+            <div class="grid gap-y-4">
+              <!-- Form Group -->
+              
+              <div>
+                <label for="username" class="block text-sm mb-2 dark:text-white">Usuario</label>
+                <div class="relative">
+                  <input  type="text" id="username" name="username" required  class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="email-error">
+                  <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
+                    <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="hidden text-xs text-red-600 mt-2" id="email-error">Por favor incluya una dirección de correo electrónico válida para que podamos comunicarnos con usted</p>
+              </div>
+              <!-- End Form Group -->
+
+      
+       
+              <!-- Form Group -->
+              <div>
+                <div class="flex justify-between items-center">
+                  <label for="password" class="block text-sm mb-2 dark:text-white">Password</label>
+                  <a class="text-sm text-blue-600 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" hidden>Forgot password?</a>
+                </div>
+                <div class="relative">
+                  <input type="password" id="password" name="password" required class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="password-error">
+                  <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
+                    <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="hidden text-xs text-red-600 mt-2" id="password-error">Se requieren más de 8 caracteres</p>
+              </div>
+        
+             
+
+              
+              <!-- Checkbox -->
+              <div class="flex items-center">
+                <div class="flex">
+                   <input type="checkbox" id="rememberMe" name="rememberMe">
+<label for="rememberMe" class="text-sm dark:text-white" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">  &nbsp; Recuerdame
+    <input type="text" id="rememberMeInput" name="rememberMeInput" placeholder="" hidden>
+</label><br><br>
+                  
+                
+                </div>
+               
+              </div>
+              <!-- End Checkbox -->
+<input type="submit" value="Iniciar sesión"  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"> 
+           
+            </div>
+          </form>
+          <!-- End Form -->
+ </div>
+        </div>
+      </div>
+    </div> 
+               
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <main id="logoutForm" style="display: none;"  class="w-full max-w-md mx-auto p-6">
+    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <div class="p-4 sm:p-7">
+        <div class="text-center">
+          <h4 class="block text-2xl font-bold text-gray-800 dark:text-white">Bienvenido,  <span id="loggedInUser"></span></h4>    
+          
+        </div>
+
+        <div class="mt-5" >
+       
+          <!-- Form -->
+          
+       
+        
+            <div class="grid gap-y-4">
+              <!-- Form Group -->
+              
+
+
+     
+<style>
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+
+  .modal-content {
+    background-color: #fefefe;
+    margin: 0% 0;
+    padding: 0px;
+    border: 0px solid #888;
+    width: 100%;
+    height: 100vh;
+    /*max-width: 600px;*/
+    border-radius: 0px;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+</style>
+
+
+<!-- Button to open modal -->
+<button class="modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-modal-target="modal1">
+	Ver cotización</button>
+
+<!-- Modal 1 -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="Propuesta-de-Diseño-Web-para-calendarios-planeta.html" name="iframe_a" height="500" width="100%" title="Iframe" allowfullscreen="" frameborder="0" style="border:0;"></iframe>
+  </div>
+</div>
+
+<!-- Button to open modal -->
+<button class="modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-modal-target="modal2">Contacto</button>
+
+<!-- Modal 2 -->
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe src="formcontactplaneta.html" name="iframe_a" height="500" width="100%" title="Iframe" allowfullscreen="" frameborder="0" style="border:0;"></iframe>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const modalButtons = document.querySelectorAll('.modal-btn');
+    const closeButtons = document.querySelectorAll('.close');
+    const overlay = document.querySelector('.modal');
+
+    modalButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const modal = document.getElementById(this.dataset.modalTarget);
+        modal.style.display = 'block';
+      });
+    });
+
+    closeButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const modal = this.parentElement.parentElement;
+        modal.style.display = 'none';
+      });
+    });
+
+    window.addEventListener('click', function(event) {
+      if (event.target === overlay) {
+        overlay.style.display = 'none';
+      }
+    });
+  });
+</script>
+
+
+              <!-- End Checkbox -->
+
+               <button onclick="logout()" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-200 text-black hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Cerrar sesión</button>
+            </div>
+          </form>
+          <!-- End Form -->
+ </div>
+        </div>
+      </div>
+    </div> 
+    
+    
+
+   
+   
+
+    
+  </main>
+
+<script>
+    // Datos de inicio de sesión
+    const username = "calendariosPlaneta2024";
+    const password = "Plaz4lgari%n";
+
+    // Evento de envío del formulario de inicio de sesión
+    document.getElementById("login").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+        const enteredUsername = document.getElementById("username").value;
+        const enteredPassword = document.getElementById("password").value;
+        const rememberMe = document.getElementById("rememberMe").checked;
+
+        // Comprobar si las credenciales son válidas
+        if (enteredUsername === username && enteredPassword === password) {
+            if (rememberMe) {
+                localStorage.setItem("loggedIn", "true"); // Recordar la sesión en el almacenamiento local
+            } else {
+                sessionStorage.setItem("loggedIn", "true"); // No recordar la sesión al cerrar el navegador
+            }
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("logoutForm").style.display = "block";
+            document.getElementById("loggedInUser").innerText = enteredUsername;
+        } else {
+            alert("Usuario o password incorrecto!");
+        }
+    });
+
+    // Función para cerrar sesión
+    function logout() {
+        localStorage.removeItem("loggedIn");
+        sessionStorage.removeItem("loggedIn");
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("logoutForm").style.display = "none";
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    }
+
+    // Comprobar si el usuario ya ha iniciado sesión anteriormente
+    window.onload = function() {
+        const loggedIn = localStorage.getItem("loggedIn") || sessionStorage.getItem("loggedIn");
+        if (loggedIn) {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("logoutForm").style.display = "block";
+            document.getElementById("loggedInUser").innerText = username;
+        }
+    };
+</script>
+  
+  <script src="https://preline.co/assets/js/hs.theme-appearance.js"></script>
+</body>
+  
+
+</html>
