@@ -83,7 +83,7 @@
     */
     
     h4 {
-      font-size: inherit;
+      font-size: 0.5em
       font-weight: inherit;
     }
     
@@ -1154,7 +1154,7 @@
 		-webkit-overflow-scrolling: touch;
 		outline: 0;
 		overflow: hidden;
-		background-color: initial;
+		background-color: inherit;
 	}
 
 	.closeModalFull {
@@ -1185,6 +1185,7 @@
 		cursor: pointer;
 		background: 0 0;
 		border: 0;
+    background-color: inherit;
 	}
 
 	.closeModalFull:hover,
@@ -1276,11 +1277,11 @@
                
   </main>
   <!-- ========== END MAIN CONTENT ========== -->
-  <main id="logoutForm" style="display: none;"  class="w-full max-w-md mx-auto p-6">
+  <main id="logoutForm" style="display: none;"  class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100 w-full max-w-md mx-auto p-6">
     <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
       <div class="p-4 sm:p-7">
         <div class="text-center">
-          <h4 class="block text-2xl font-bold text-gray-800 dark:text-white">Bienvenido,  <span id="loggedInUser"></span></h4>    
+          <h4 class="block text-2xl font-bold text-gray-800 dark:text-white">Bienvenido,  Antonio Perez<span id="loggedInUser" hidden ></span></h4>    
           
         </div>
 
@@ -1290,107 +1291,163 @@
           
        
         
-            <div class="grid gap-y-4">
+            <div class="grid gap-y-4 dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
               <!-- Form Group -->
               
 
+              <style>
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+              
+                .modalFull {
+                  position: fixed;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 999;
+                  display: none;
+                  -webkit-overflow-scrolling: touch;
+                  outline: 0;
+                  overflow: hidden;
+                  background-color: initial;
+                }
+              
+                .closeModalFull {
+                  font-size: 50px;
+                  font-weight: 900;
+                  line-height: 1;
+                  color: #aaaaaa;
+                  text-shadow: 0 1px 0 #fff;
+                  filter: alpha(opacity=20);
+                  opacity: 0.5;
+                  position: fixed;
+                  top: 30px;
+                  right: 40px;
+                }
+              
+                .closeModalFull:focus,
+                .closeModalFull:hover {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                  filter: alpha(opacity=50);
+                  opacity: 0.5;
+                }
+              
+                .closeModalFull {
+                  -webkit-appearance: none;
+                  padding: 0;
+                  cursor: pointer;
+                  background-color: inherit;
+                  border: 0;
+                }
+              
+                .closeModalFull:hover,
+                .closeModalFull:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .button {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
 
-     
-<style>
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 9999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0,0,0,0.5);
-  }
+            .button svg {
+                margin-right: 8px; /* Ajusta el espacio entre el icono y el texto según tu preferencia */
+            }
 
-  .modal-content {
-    background-color: #fefefe;
-    margin: 0% 0;
-    padding: 0px;
-    border: 0px solid #888;
-    width: 100%;
-    height: 100vh;
-    /*max-width: 600px;*/
-    border-radius: 0px;
-  }
+            .button span {
+                text-align: center;
+                width: 100%;
+                font-size: 1rem;
+            }
 
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
+              </style>
+              
+              <!-- Primer modal -->              
+               
 
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-</style>
+              <button id="myBtnFull1" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              data-modal-target="modal1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" /><path d="M12 17v1m0 -8v1" /></svg>               
+                <span> Ver cotización</span>
+            </button>
+            
+             <button id="myBtnFull2" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              data-modal-target="modal1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                <span> Contacto</span>
+            </button>
 
-
-<!-- Button to open modal -->
-<button class="modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-modal-target="modal1">
-	Ver cotización</button>
-
-<!-- Modal 1 -->
-<div id="modal1" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe src="Propuesta-de-Diseño-Web-para-calendarios-planeta.html" name="iframe_a" height="500" width="100%" title="Iframe" allowfullscreen="" frameborder="0" style="border:0;"></iframe>
-  </div>
+              <div id="myModalFull1" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+                <span class="closeModalFull">&times;</span>
+                <iframe src="Propuesta-de-Diseño-Web-para-calendarios-planeta.html" name="iframe_a" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+              </div>
+              
+              
+<!-- Segundo modal -->
+<div id="myModalFull2" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+	<span class="closeModalFull">&times;</span>
+	<iframe src="formcontactplaneta.html" name="iframe_b" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
 </div>
 
-<!-- Button to open modal -->
-<button class="modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" data-modal-target="modal2">Contacto</button>
 
-<!-- Modal 2 -->
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-    <iframe src="formcontactplaneta.html" name="iframe_a" height="500" width="100%" title="Iframe" allowfullscreen="" frameborder="0" style="border:0;"></iframe>
-  </div>
-</div>
+             
 
+           
+              
+              <!-- svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-source-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5" /><path d="M6 5l-2 2l2 2" /><path d="M10 9l2 -2l-2 -2" /></svg-->
+             
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const modalButtons = document.querySelectorAll('.modal-btn');
-    const closeButtons = document.querySelectorAll('.close');
-    const overlay = document.querySelector('.modal');
-
-    modalButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const modal = document.getElementById(this.dataset.modalTarget);
-        modal.style.display = 'block';
-      });
-    });
-
-    closeButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        const modal = this.parentElement.parentElement;
-        modal.style.display = 'none';
-      });
-    });
-
-    window.addEventListener('click', function(event) {
-      if (event.target === overlay) {
-        overlay.style.display = 'none';
-      }
-    });
-  });
+	// Obtener los modales
+	var modal1 = document.getElementById("myModalFull1");
+	var modal2 = document.getElementById("myModalFull2");
+	// Obtener los botones que abren los modales
+	var btn1 = document.getElementById("myBtnFull1");
+	var btn2 = document.getElementById("myBtnFull2");
+	// Obtener los elementos <span> que cierran los modales
+	var span1 = document.querySelector("#myModalFull1 .closeModalFull");
+	var span2 = document.querySelector("#myModalFull2 .closeModalFull");
+	// Función para abrir el primer modal
+	btn1.onclick = function() {
+		modal1.style.display = "block";
+	};
+	// Función para cerrar el primer modal
+	span1.onclick = function() {
+		modal1.style.display = "none";
+	};
+	// Función para abrir el segundo modal
+	btn2.onclick = function() {
+		modal2.style.display = "block";
+	};
+	// Función para cerrar el segundo modal
+	span2.onclick = function() {
+		modal2.style.display = "none";
+	};
+	// Cuando se hace clic en cualquier parte fuera del modal, cerrarlo
+	window.onclick = function(event) {
+		if (event.target == modal1) {
+			modal1.style.display = "none";
+		}
+		if (event.target == modal2) {
+			modal2.style.display = "none";
+		}
+	};
 </script>
 
-
               <!-- End Checkbox -->
+              <button onclick="logout()"   class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-200 text-black hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                <span> Cerrar sesión</span>
+            </button>
 
-               <button onclick="logout()" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-200 text-black hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Cerrar sesión</button>
+               
             </div>
           </form>
           <!-- End Form -->
