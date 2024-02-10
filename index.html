@@ -587,20 +587,28 @@
         left: 0;
         top: 0;
         width: 100%;
-        padding-top: 10px;
+        padding-top: 15px;
         padding-bottom: 10px;
-        text-align: center;
-        line-height: 0;
+        padding-left:20px;
+        text-align: right;
+        line-height: 1.5;
         background-color: #0a4461;
         color: white;
-        font-size: 20px;
-        transition: all 0.3s ease;
+        font-size: 21px;
+        transition: all 0.3s ease;  display: inline-block; align-items: center;
     }
     
-    div.scrollmenu i {
+    div.scrollmenu span {
         display: inline-block;
-        text-align: center;
-        padding: 0px 0;
+        text-align: right;
+        padding: 0px 0; line-height: 1.5;
+        transition: all 0.3s ease;
+    }
+
+    div.scrollmenu span svg {
+        display: inline-block;
+        text-align: right;
+        padding: 0px 0; line-height: 1;
         transition: all 0.3s ease;
     }
     
@@ -1813,18 +1821,18 @@ text-shadow: 0 0 2px #d456ca; */
     <script>window.onload = function(){ document.querySelector(".preloader").style.display = "none"; }</script>
     </div>
     
-<div class="scrollmenu" style="z-index:99">   
-	<span onclick="openName(event, 'en-modo')">Home</span>
-<!-- <svg  onclick="openName(event, 'en-modo')" class="w3-hide-small" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" fill-rule="evenodd" d="m8.36 1.37l6.36 5.8l-.71.71L13 6.964v6.526l-.5.5h-3l-.5-.5v-3.5H7v3.5l-.5.5h-3l-.5-.5V6.972L2 7.88l-.71-.71l6.35-5.8h.72zM4 6.063v6.927h2v-3.5l.5-.5h3l.5.5v3.5h2V6.057L8 2.43L4 6.063z" clip-rule="evenodd"/></svg>-->
-<!-- <svg onclick="openName(event, 'myapps')" class="w3-hide-small" xmlns="http://www.w3.org/2000/svg" width="32.55" height="32" viewBox="0 0 480 472"><path fill="currentColor" d="M133 45q0-17-12.5-29.5T91 3H48Q31 3 18 15.5T5 45v43q0 17 13 30t30 13h43q17 0 29.5-13T133 88V45zM91 88H48V45h43v43zm213-43q0-17-12.5-29.5T261 3h-42q-18 0-30.5 12.5T176 45v43q0 17 12.5 30t30.5 13h42q18 0 30.5-13T304 88V45zm-43 43h-42V45h42v43zm214-43q0-17-13-29.5T432 3h-43q-17 0-29.5 12.5T347 45v43q0 17 12.5 30t29.5 13h43q17 0 30-13t13-30V45zm-43 43h-43V45h43v43zM133 195q0-18-12.5-30.5T91 152H48q-17 0-30 12.5T5 195v42q0 18 13 30.5T48 280h43q17 0 29.5-12.5T133 237v-42zm-42 42H48v-42h43v42zm213-42q0-18-12.5-30.5T261 152h-42q-18 0-30.5 12.5T176 195v42q0 18 12.5 30.5T219 280h42q18 0 30.5-12.5T304 237v-42zm-43 42h-42v-42h42v42zM91 301H48q-17 0-30 13T5 344v43q0 17 13 29.5T48 429h43q17 0 29.5-12.5T133 387v-43q0-17-12.5-30T91 301zm0 86H48v-43h43v43zm170-86h-42q-18 0-30.5 13T176 344v43q0 17 12.5 29.5T219 429h42q18 0 30.5-12.5T304 387v-43q0-17-12.5-30T261 301zm0 86h-42v-43h42v43zm171-235h-43q-17 0-29.5 12.5T347 195v42q0 18 12.5 30.5T389 280h43q17 0 30-12.5t13-30.5v-42q0-18-13-30.5T432 152zm0 85h-43v-42h43v42zm-43 192h43q17 0 30-12.5t13-29.5v-43q0-17-13-30t-30-13h-43q-17 0-29.5 13T347 344v43q0 17 12.5 29.5T389 429zm0-85h43v43h-43v-43z"/></svg> -->
+  
+        
+      
+  
 
-<i class="fas fa-chess-queenx " aria-hidden="true" onclick="openName(event, 'myapps')"> Apps &nbsp; &nbsp; &nbsp;</i>
-<i class="fas fa-envelope-open-textx w3-hide" aria-hidden="true" onclick="openName(event, 'contacto')"> Contacto </i>&nbsp; &nbsp; &nbsp;
-	<span class="btn-toggle">Darkmode </span>
-<!-- <svg class="btn-toggle" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 16 16"><path fill="currentColor" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zm0 13V2a6 6 0 1 1 0 12z"/></svg> -->
-<!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0Q150 0 75 75T0 256t75 181t181 75t181-75t75-181t-75-181T256 0zm0 469q-88 0-150.5-62.5T43 256t62.5-150.5T256 43v426z"/></svg> -->
-<!-- <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0Q150 0 75 62.5T0 213q0 52 29.5 96.5T107 384q-3 8-6.5 21.5t-11 41.5t-6.5 46.5T94 512q36 0 67.5-21.5T212 448t23-21h21q106 0 181-63t75-151t-75-150.5T256 0zm0 384h-21q-11 0-22 5.5t-15 9.5l-17 17q-25 31-51 45q5-25 17-62l11-32l-28-17q-87-57-87-137q0-70 62.5-120T256 43t150.5 50T469 213t-62.5 120.5T256 384z"/></svg> -->
 
+<div class="scrollmenu" style="z-index:99" class="w3-right w3-hide-small">
+    <span onclick="openName(event, 'en-modo')" class="w3-right w3-hide-small" > <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home w3-hide " width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg> Home &nbsp; </span>&nbsp;
+    <span onclick="openName(event, 'contacto')" class="w3-right w3-hide-small"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark w3-hide" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg> Proyectos &nbsp;  </span>&nbsp;
+    <span onclick="openName(event, 'myapps')" class="w3-right w3-hide-small"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-apps w3-hide " width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" /><path d="M14 7l6 0" /><path d="M17 4l0 6" /></svg> Apps &nbsp;  </span>&nbsp;
+    <span class="btn-toggle w3-hide-small" class="w3-right w3-hide-small"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon w3-hide" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>&nbsp; Darkmode</span>&nbsp;
+    <span onclick="openName(event, 'aboutme')" class="w3-right w3-hide-small"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings w3-hide" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /> </svg>&nbsp; Aboutme &nbsp; &nbsp; &nbsp; </span>
 </div>   
 
     
@@ -1848,46 +1856,130 @@ https://envialove.webador.mx/
 </div>
 <div id="en-modo" class="tabcontent"><br>
     <div class="background-icon-black-1B1C24 lazy lazyload">
-        <div class="w3-center">
-            <div class="container-name">
+        <div class="w3-center"><div class="container-name">
                 <div class="box">
                     <div class="fil2  w3-hide-small"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="logo" class="lazy  img" width="150" height="150"></div>
                     <div class="fil2 w3-hide-large w3-hide-medium"><img src="https://luisangelmaciel.github.io/img//lamp-loader.svg" alt="Loader" class="lazy img" width="150" height="150"></div>
-                    <div class="title w3-center"><span class="block"></span>
-                        <p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p>
-                    </div>
-                    <br class="w3-hide-large w3-hide-medium">
-                    <br class="w3-hide-large w3-hide-medium">
+                    <div class="title w3-center"><span class="block"></span><p style="font-size: 36px; color: #fee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #017db0, 0 0 0.5em #0674a0, 0 0 0.1em #19a1d6, 0 10px 3px #000;" class="lato w3-center">Luis Ángel Maciel<span></span></p></div>
+                    <br class="w3-hide-large w3-hide-medium"><br class="w3-hide-large w3-hide-medium">
                     <div class="role"><div class="block"></div><p style="color:#35b0e0" class="w3-hide-small">Marketing, diseño y experiencia de usuario</p></div>
-                </div>
-            </div>
+                </div></div>
         </div>
     </div>
 
     <div class="container mx-auto flex flex-col lg:flex-row items-center lg:relative">
         <div class="w-full lg:w-1/4 w3-container">
-        <!-- https://ucarecdn.com/ee00b6fb-5ad9-4da0-be0e-ac4624c44a32/-/preview/469x216/-/quality/smart/-/format/auto/ -->
-            <img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy " width="400" height="400" style="border-radius: 50%;border: 2px solid white;">
-        </div>
+        <!-- https://ucarecdn.com/ee00b6fb-5ad9-4da0-be0e-ac4624c44a32/-/preview/469x216/-/quality/smart/-/format/auto/ --><img src="https://ucarecdn.com/96834d6c-b43c-4fa7-bf23-030f381a56f9/-/preview/469x216/-/quality/smart/-/format/auto/" alt="logo" class="rounded-full h-48 w-48 lg:absolute lg:pin-l lg:pin-t lg:-mt-24 lazy " width="400" height="400" style="border-radius: 50%;border: 2px solid white;"></div>
     </div>
 
     <div class="container mx-auto flex flex-col lg:flex-row">
         <div class="w-full lg:w-1/4 pl-4 lg:pl-0 pr-6"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small"><br class="w3-hide-small">
             <p class="font-bold no-underline hover:underline w3-hide-small">Luis Ángel</p>
             <p class="text-grey-darker no-underline hover:underline w3-hide-small">@luisangelmaciel</p>
-            <div class="mb-4">
-                <p class=" font-bold no-underline hover:underline w3-hide-large w3-hide-medium w3-large">@LuisAngelMaciel</p>
-                Mercadologo, diseñador y desarrollador web.
-                <br> Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario. <i><abbr title="Luis Ángel Maciel Padilla">LAMP!</abbr></i>
+            <div class="mb-4"><p class=" font-bold no-underline hover:underline w3-hide-large w3-hide-medium w3-large">@LuisAngelMaciel</p> Mercadologo, diseñador y desarrollador web.   <br> Entusiasta en temas de emprendimiento, sexualidad, viajes, arte drag, investigación de mercados, interfaz y experiencias de usuario. <i><abbr title="Luis Ángel Maciel Padilla">LAMP!</abbr></i>
                 <br> <b onclick="openName(event, 'aboutme')">Insiste, persiste y resiste. </b>
             </div>
         </div>
 
         <div class="w-full lg:w-1/2  mb-4 w3-center w3-centered">
             <div class="w3-row w3-container"><br>
-             <div class="btn-xiib shake" style="background-color: #1B1C24; color:rgb(236, 221, 221)" onclick="openName(event, 'desing')">
-                    <i class="fas fa-icons" onclick="openName(event, 'desing')"></i> Diseños y arte gráfico
+             <div class="btn-xiib shake" style="background-color: #1B1C24; color:rgb(236, 221, 221)" id="myBtnFull">
+                    <i class="fas fa-icons" ></i> Diseños y arte gráfico
                 </div><br>
+                <style>
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                
+                    html,
+                    body {
+                        background-color: #000;
+                        color: white;
+                        height: 100%;
+                        width: 100%;
+                    }
+                
+                    .modalFull {
+                        position: fixed;
+                        top: 0;
+                        right: 0;
+                        bottom: 0;
+                        left: 0;
+                        z-index: 999;
+                        display: none;
+                        -webkit-overflow-scrolling: touch;
+                        outline: 0;
+                        overflow: hidden;
+                        background-color: initial;
+                    }
+                
+                    .modalFull .closeModalFull {
+                        font-size: 50px;
+                        font-weight: 900;
+                        line-height: 1;
+                        color: #aaaaaa;
+                        text-shadow: 0 1px 0 #fff;
+                        filter: alpha(opacity=20);
+                        opacity: 0.5;
+                        position: fixed;
+                        top: 30px;
+                        right: 40px;
+                    }
+                
+                    .modalFull .closeModalFull:focus,
+                    .modalFull .closeModalFull:hover {
+                        color: #000;
+                        text-decoration: none;
+                        cursor: pointer;
+                        filter: alpha(opacity=50);
+                        opacity: 0.5;
+                    }
+                
+                    .modalFull .closeModalFull {
+                        -webkit-appearance: none;
+                        padding: 0;
+                        cursor: pointer;
+                        background: 0 0;
+                        border: 0;
+                    }
+                
+                    .modalFull .closeModalFull:hover,
+                    .modalFull .closeModalFull:focus {
+                        color: #000;
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                </style>
+                
+                <div id="myModalFull" class="modalFull">
+                    <span class="closeModalFull">&times;</span>
+                    <iframe src="desing.html" name="iframe_a " height="100% " width="100% " title="Iframe " allowfullscreen=" " frameborder="0 " style="border:0; "></iframe>
+                </div>
+                <script>
+                    // Get the modal
+                    var modal = document.getElementById("myModalFull");
+                    // Get the button that opens the modal
+                    var btn = document.getElementById("myBtnFull");
+                    // Get the <span> element that closes the modal
+                    var span = document.getElementsByClassName("closeModalFull")[0];
+                    // When the user clicks the button, open the modal
+                    btn.onclick = function() {
+                        modal.style.display = "block";
+                    };
+                    // When the user clicks on <span> (x), close the modal
+                    span.onclick = function() {
+                        modal.style.display = "none";
+                    };
+                    // When the user clicks anywhere outside of the modal, close it
+                    window.onclick = function(event) {
+                        if (event.target == modal) {
+                            modal.style.display = "none";
+                        }
+                    };
+                </script>
+
                 <div class="btn-xiib" style="background-color: #1B1C24; color:rgb(236, 221, 221)">
                     <a href="https://luisangelmaciel.github.io/codepen" target="_blank" rel="noopener" class="slider-nav-item"><i class="fas fa-code"></i> Breves códigos escritos </a>
                 </div><br>
@@ -1914,6 +2006,16 @@ https://envialove.webador.mx/
                             <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"  aria-hidden="true"><!--Fantasma de Pacman  --><path  fill="currentColor" d="M40.1 467.1l-11.2 9c-3.2 2.5-7.1 3.9-11.1 3.9C8 480 0 472 0 462.2V192C0 86 86 0 192 0S384 86 384 192V462.2c0 9.8-8 17.8-17.8 17.8c-4 0-7.9-1.4-11.1-3.9l-11.2-9c-13.4-10.7-32.8-9-44.1 3.9L269.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6l-26.6-30.5c-12.7-14.6-35.4-14.6-48.2 0L141.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6L84.2 471c-11.3-12.9-30.7-14.6-44.1-3.9zM160 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
                             Pacman
                     </div><br>
+                    <div class="btn-xiib" style="background-color: #1B1C24; color:rgb(236, 221, 221)">
+                        <p onclick="window.open('https://game.xiiber.com/pacman', '_blank')" >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"  aria-hidden="true"><!--Fantasma de Pacman  --><path  fill="currentColor" d="M40.1 467.1l-11.2 9c-3.2 2.5-7.1 3.9-11.1 3.9C8 480 0 472 0 462.2V192C0 86 86 0 192 0S384 86 384 192V462.2c0 9.8-8 17.8-17.8 17.8c-4 0-7.9-1.4-11.1-3.9l-11.2-9c-13.4-10.7-32.8-9-44.1 3.9L269.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6l-26.6-30.5c-12.7-14.6-35.4-14.6-48.2 0L141.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6L84.2 471c-11.3-12.9-30.7-14.6-44.1-3.9zM160 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                            Excavadores Yisel
+                    </div><br>
+                    <div class="btn-xiib" style="background-color: #1B1C24; color:rgb(236, 221, 221)">
+                        <p onclick="window.open('https://codestats.net/users/luisangelmaciel', '_blank')" >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"  aria-hidden="true"><!--Fantasma de Pacman  --><path  fill="currentColor" d="M40.1 467.1l-11.2 9c-3.2 2.5-7.1 3.9-11.1 3.9C8 480 0 472 0 462.2V192C0 86 86 0 192 0S384 86 384 192V462.2c0 9.8-8 17.8-17.8 17.8c-4 0-7.9-1.4-11.1-3.9l-11.2-9c-13.4-10.7-32.8-9-44.1 3.9L269.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6l-26.6-30.5c-12.7-14.6-35.4-14.6-48.2 0L141.3 506c-3.3 3.8-8.2 6-13.3 6s-9.9-2.2-13.3-6L84.2 471c-11.3-12.9-30.7-14.6-44.1-3.9zM160 192a32 32 0 1 0 -64 0 32 32 0 1 0 64 0zm96 32a32 32 0 1 0 0-64 32 32 0 1 0 0 64z"/></svg>
+                           Tiempo programando vía Codestats
+                    </div><br>
                 </hgroup>
               
               
@@ -1931,7 +2033,7 @@ https://envialove.webador.mx/
                 <br><br>
                        
                 <div class="btn-xiib" style=" background: linear-gradient(to right, #070707, #060124, #0d053b, #090329, #000000); color:rgb(236, 221, 221)">
-                    <a href="https://lamparaps.glitch.me/" target="_blank" class="slider-nav-item " aria-label="Glich"><i class="fas fa-address-book"></i></a>&nbsp;
+                    <a href="https://glitch.com/@lamacpad " target="_blank" class="slider-nav-item " aria-label="Glich"><i class="fas fa-address-book"></i></a>&nbsp;
                     <a href="http://www.xbr.pw/luisangelmaciel" target="_blank" class="slider-nav-item " aria-label="Xibber"><i class="fas fa-address-book"></i></a>&nbsp;
                     <a href="https://twitter.com/intent/follow?screen_name=luisangelmaciel" target="_blank" class="slider-nav-item " aria-label="xbr.pw"><i class="fa fa-twitter" aria-hidden="true"></i></a>&nbsp;
                     <a href="https://codestats.net/users/luisangelmaciel" target="_blank" class="slider-nav-item " aria-label="Codestats"><i class="fa fa-code"></i></a>&nbsp;
@@ -1942,7 +2044,7 @@ https://envialove.webador.mx/
                     <a href="https://instagram.com/luisangelmacielp" target="_blank" class="slider-nav-item " aria-label="Instagram"><i class="fab fa-instagram " ></i></a>&nbsp;
                     <a href="https://dribbble.com/luisangelmaciel" target="_blank" class="slider-nav-item " aria-label="Dribble"><i class="fa fa-dribbble " ></i></a>&nbsp;
                     <a href="https://www.pinterest.com.mx/lmacielpadilla/_created/" target="_blank" class="slider-nav-item " aria-label="Pinterest"><i class="fab fa-pinterest "></i></a>&nbsp;
-                    <a href="https://mx.linkedin.com/in/luis-angel-maciel-padilla-69636419" target="_blank" class="slider-nav-item " aria-label="Linkedin"><i class="fa fa-linkedin "></i></a>&nbsp;
+                    <a href="https://www.linkedin.com/in/luisangelmaciel/" target="_blank" class="slider-nav-item " aria-label="Linkedin"><i class="fa fa-linkedin "></i></a>&nbsp;
                     <a href="https://luisangel.maciel.xiiber.com/" target="_blank" class="slider-nav-item o" aria-label="xbr.pw"><i class="fas fa-address-card "></i></a>&nbsp;
                 </div><br> 
               
@@ -1964,8 +2066,8 @@ https://envialove.webador.mx/
 
     <div class="w3-container">
         <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black susan-storm-large susan-storm-medium susan-storm-small"></button>
-        <div id="id01" class="w3-modal lazy">
-            <span onclick="document.getElementById( 'id01').style.display='none'" class="w3-margin w3-display-topright w3-xlarge" style=" color : white">&times;</span>
+        <div id="id01" class="w3-modal lazy" onclick="this.parentElement.style.display='none'">
+            <span  class="w3-margin w3-display-topright w3-xlarge" style=" color : white" >&times;</span>
             <div class="w3-modal-content">
                 <div class="w3-container w3-card-4 w3-black w3-center">
                     <p class="luz-neon confetti" onclick="throwConfetti()">
@@ -2101,7 +2203,7 @@ content: "\f075";
             <div class="admonition note" onclick="this.parentElement.style.display='none'" style="text-align: right;">  x
                 <p class="title" style="text-align: left;">Nota </p>
                 <p class="content" style="text-align: left;">Este sitio web está actualmente en construcción y puede tener contenido faltante, incompleto y/o desactualizado</p>
-                <p class="w3-center">Última actualización: 16 septiembre 2023</p>
+                <p class="w3-center">Última actualización: 10 febrero 2024</p>
                 <br>
             </div>
         </div>
@@ -3232,26 +3334,20 @@ Somos grandes admiradores de las instituciones educativas y las organizaciones s
     <p>Here are some companies and services that I recommend. Thanks &#x1f64f;</p>
 </div> 
 
-<div class="totop a-up lift" style="z-index:1000"><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div>
-<div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:98; background:white" ><style>:root { --scale: 1;   --icon-size: 26px;}* {margin: 0;padding: 0;box-sizing: border-box;}.navluces  {margin: 0;padding: 0;box-sizing: border-box;  background: white;width: 100%;height: 80px;} nav {position: relative; min-width: 350px;width: 350px;/*width: 350px;*/height: 80px;display: grid; grid-template-columns: repeat(5, 1fr);border-radius: 10px;padding: 0 15px; margin: 0 15px; background: white;overflow: hidden;}nav ul {height: 100%;display: flex;justify-content: center;align-items: center;}nav ul li {list-style: none;width: var(--icon-size);height: var(--icon-size);  }nav ul li a {display: block;width: 100%;height: 100%;cursor: pointer;}nav ul li a svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}nav ul li a.active svg {opacity: 1;}nav ul li .anav {display: block;width: 100%;height: 100%;cursor: pointer;}nav ul li .anav svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}nav ul li .anav.active svg {opacity: 1;}nav .tubelight {position: absolute;left: 0px;top: 0px;transform: translateX(-50%);width: 45px;height: 5px;border-radius: 5px;background: rgba(38, 38, 38);transition: left 400ms ease;z-index: 10;}nav .tubelight .light-ray {position: absolute;left: -30%;top: 5px;width: 160%;height: 80px;clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);background: linear-gradient(to bottom, rgba(38, 38, 38, 0.3) -50%, rgba(38, 38, 38, 0) 90%);pointer-events: none;}    .navbarluces {justify-content: center;align-items: center;overflow: hidden;position: fixed;bottom: 0;width: 100%;display: grid;place-items: center;}  </style>    
+<div class="totop a-up lift" style="z-index:1000"><i class="fa fa-chevron-circle-up a-up lift color-animation-lamp"></i></div><div class="navbarluces  w3-white w3-hide-medium w3-hide-large w3-block" style="z-index:98; background:white" ><style>:root { --scale: 1;   --icon-size: 26px;}* {margin: 0;padding: 0;box-sizing: border-box;}.navluces  {margin: 0;padding: 0;box-sizing: border-box;  background: white;width: 100%;height: 80px;} nav {position: relative; min-width: 350px;width: 350px;/*width: 350px;*/height: 80px;display: grid; grid-template-columns: repeat(5, 1fr);border-radius: 10px;padding: 0 15px; margin: 0 15px; background: white;overflow: hidden;}nav ul {height: 100%;display: flex;justify-content: center;align-items: center;}nav ul li {list-style: none;width: var(--icon-size);height: var(--icon-size);  }nav ul li a {display: block;width: 100%;height: 100%;cursor: pointer;}nav ul li a svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}nav ul li a.active svg {opacity: 1;}nav ul li .anav {display: block;width: 100%;height: 100%;cursor: pointer;}nav ul li .anav svg {fill: black;width: 100%;height: 100%;opacity: 0.4;   transition: opacity 100ms ease;pointer-events: none;}nav ul li .anav.active svg {opacity: 1;}nav .tubelight {position: absolute;left: 0px;top: 0px;transform: translateX(-50%);width: 45px;height: 5px;border-radius: 5px;background: rgba(38, 38, 38);transition: left 400ms ease;z-index: 10;}nav .tubelight .light-ray {position: absolute;left: -30%;top: 5px;width: 160%;height: 80px;clip-path: polygon(5% 100%, 25% 0px, 75% 0px, 95% 100%);background: linear-gradient(to bottom, rgba(38, 38, 38, 0.3) -50%, rgba(38, 38, 38, 0) 90%);pointer-events: none;}    .navbarluces {justify-content: center;align-items: center;overflow: hidden;position: fixed;bottom: 0;width: 100%;display: grid;place-items: center;}  </style>    
 <nav>
-<ul><li onclick="openName(event, 'en-modo')"><a href="#home-icon" class="active anav" title="home"><svg><use xlink:href="#home-icon"></use></svg></a></li></ul>
-<ul><li onclick="openName(event, 'contacto')"><a href="#bookmark-icon" title="bookmark"><svg><use xlink:href="#bookmark-icon"></use></svg></a></li></ul>           
-<ul><li onclick="openName(event, 'myapps')"><a href="#plus-icon" title="plus"><svg><use xlink:href="#plus-icon"></use></svg></a></li></ul>
-<ul><li onclick="openName(event, 'Login')"><a title="user" href="#user-icon"><svg><use xlink:href="#user-icon"></use></svg></a></li></ul>
-<ul><li onclick="openName(event, 'aboutme')"><a href="#settings-icon" title="settings"><svg><use xlink:href="#settings-icon"></use></svg></a></li></ul>
-<div class="tubelight"><div class="light-ray"></div></div>
+    <ul><li onclick="openName(event, 'en-modo')"><a href="#home-icon" class="active anav" title="Home"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg></a></li></ul>
+    <ul><li onclick="openName(event, 'contacto')"><a href="#bookmark-icon" title="Bookmark"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 7v14l-6 -4l-6 4v-14a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4z" /></svg></a></li></ul>           
+    <ul><li onclick="openName(event, 'myapps')"><a href="#plus-icon" title="Plus"><svg><use xlink:href="#plus-icon"></use></svg></a></li></ul>
+    <!-- ul><li onclick="openName(event, 'Login')"><a title="User" href="#user-icon"><svg><use xlink:href="#user-icon"></use></svg></a></li></ul -->
+    <ul><li class="btn-toggle"><a href="#Darkmode" title="Darkmode" ><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-moon" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg></a></li></ul>           
+    <ul><li onclick="openName(event, 'aboutme')"><a href="#settings-icon" title="Settings"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-settings" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg></a></li></ul>
+    <div class="tubelight"><div class="light-ray"></div></div>
 </nav>
 
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="home-icon">
-    <path
-        d="M13.1428571,14.5 C13.6571429,14.5 14,14.175507 14,13.6887676 L14,6.38767551 C14,6.14430577 13.9142857,5.90093604 13.6571429,5.73868955 L8.51428571,1.6825273 C8.17142857,1.43915757 7.74285714,1.43915757 7.4,1.6825273 L2.25714286,5.73868955 C2.08571429,5.90093604 2,6.14430577 2,6.38767551 L2,13.6887676 C2,14.175507 2.34285714,14.5 2.85714286,14.5 L13.1428571,14.5 Z M5.42857143,12.8775351 L3.71428571,12.8775351 L3.71428571,6.79329173 L8,3.38611544 L12.2857143,6.79329173 L12.2857143,12.8775351 L10.5714286,12.8775351 L5.42857143,12.8775351 Z">
-    </path>
-</symbol>
-<symbol xmlns="http://www.w3.org/2000/svg" height="1em"  viewBox="0 0 16 16" id="Patreon-icon">
-<path d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"/></symbol>
-
+<symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="home-icon"><path d="M13.1428571,14.5 C13.6571429,14.5 14,14.175507 14,13.6887676 L14,6.38767551 C14,6.14430577 13.9142857,5.90093604 13.6571429,5.73868955 L8.51428571,1.6825273 C8.17142857,1.43915757 7.74285714,1.43915757 7.4,1.6825273 L2.25714286,5.73868955 C2.08571429,5.90093604 2,6.14430577 2,6.38767551 L2,13.6887676 C2,14.175507 2.34285714,14.5 2.85714286,14.5 L13.1428571,14.5 Z M5.42857143,12.8775351 L3.71428571,12.8775351 L3.71428571,6.79329173 L8,3.38611544 L12.2857143,6.79329173 L12.2857143,12.8775351 L10.5714286,12.8775351 L5.42857143,12.8775351 Z"></path></symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" height="1em"  viewBox="0 0 16 16" id="Patreon-icon"><path d="M512 194.8c0 101.3-82.4 183.8-183.8 183.8-101.7 0-184.4-82.4-184.4-183.8 0-101.6 82.7-184.3 184.4-184.3C429.6 10.5 512 93.2 512 194.8zM0 501.5h90v-491H0v491z"/></symbol>
 <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="favorites-icon"><path d="M7.5125,14.3196446 C6.8625,13.7292662 1.5,9.09057902 1.5,5.54830881 C1.5,3.27113511 3.2875,1.5 5.4,1.5 C6.375,1.5 7.26875,1.92169883 8,2.5120772 C8.73125,1.83735907 9.625,1.5 10.6,1.5 C12.79375,1.5 14.5,3.35547487 14.5,5.54830881 C14.5,9.09057902 9.1375,13.7292662 8.4875,14.2353048 C8.24375,14.5726639 7.75625,14.5726639 7.5125,14.3196446 Z M5.4,3.18679534 C4.18125,3.18679534 3.125,4.28321231 3.125,5.54830881 C3.125,7.40378368 5.96875,10.6086948 8,12.4641697 C9.70625,10.8617141 12.875,7.57246322 12.875,5.54830881 C12.875,4.19887254 11.81875,3.18679534 10.6,3.18679534 C9.86875,3.18679534 9.1375,3.60849417 8.73125,4.28321231 C8.40625,4.78925091 7.675,4.78925091 7.35,4.28321231 C6.8625,3.60849417 6.2125,3.18679534 5.4,3.18679534 Z"></path></symbol>
 <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 568" id="settings-icon"><path d="M487.4 315.7l-42.6-24.6c4.3-23.2 4.3-47 0-70.2l42.6-24.6c4.9-2.8 7.1-8.6 5.5-14-11.1-35.6-30-67.8-54.7-94.6-3.8-4.1-10-5.1-14.8-2.3L380.8 110c-17.9-15.4-38.5-27.3-60.8-35.1V25.8c0-5.6-3.9-10.5-9.4-11.7-36.7-8.2-74.3-7.8-109.2 0-5.5 1.2-9.4 6.1-9.4 11.7V75c-22.2 7.9-42.8 19.8-60.8 35.1L88.7 85.5c-4.9-2.8-11-1.9-14.8 2.3-24.7 26.7-43.6 58.9-54.7 94.6-1.7 5.4.6 11.2 5.5 14L67.3 221c-4.3 23.2-4.3 47 0 70.2l-42.6 24.6c-4.9 2.8-7.1 8.6-5.5 14 11.1 35.6 30 67.8 54.7 94.6 3.8 4.1 10 5.1 14.8 2.3l42.6-24.6c17.9 15.4 38.5 27.3 60.8 35.1v49.2c0 5.6 3.9 10.5 9.4 11.7 36.7 8.2 74.3 7.8 109.2 0 5.5-1.2 9.4-6.1 9.4-11.7v-49.2c22.2-7.9 42.8-19.8 60.8-35.1l42.6 24.6c4.9 2.8 11 1.9 14.8-2.3 24.7-26.7 43.6-58.9 54.7-94.6 1.5-5.5-.7-11.3-5.6-14.1zM256 336c-44.1 0-80-35.9-80-80s35.9-80 80-80 80 35.9 80 80-35.9 80-80 80z" /></symbol>
 <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="plus-icon"><path fill-rule="evenodd" clip-rule="evenodd"d="M12 2C6.48 2 2 6.48001 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48001 17.52 2 12 2ZM11 7V11H7V13H11V17H13V13H17V11H13V7H11ZM4 12C4 16.41 7.59 20 12 20C16.41 20 20 16.41 20 12C20 7.59 16.41 4 12 4C7.59 4 4 7.59 4 12Z" /></symbol>
@@ -3262,212 +3358,8 @@ Somos grandes admiradores de las instituciones educativas y las organizaciones s
 </div> 
 
 
-
 <div style="z-index:99;width: 100%; height: 10px; background: linear-gradient( to right, #e91e63, #d4235e, #ce3065, #e91e63, #d4235e, #e91e63);; position: fixed; bottom: 0; width: 100%; margin: 0; overflow: hidden; position: fixed; bottom: 0; z-index:100"><div id="myBar" style=" height: 10px; width: 0%; background: linear-gradient( to right, #18487D, #18487D, #005677, #18487D, #18487D, #005677, #18487D, #18487D, #005677); background-position: center 0%; animation: background-slide 25s infinite linear;"></div></div>
 
-<link href="https://luisangelmaciel.github.io/js/object.observe.polyfill.js" rel="prefetch"><link href="https://luisangelmaciel.github.io/js/scripts.js" rel="prefetch">
-<script>
-    const btn = document.querySelector(".btn-toggle");
-const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-const currentTheme = localStorage.getItem("theme");
-if (currentTheme == "dark") {
-  document.body.classList.toggle("dark-theme");
-} else if (currentTheme == "light") {
-  document.body.classList.toggle("light-theme");
-}
-
-btn.addEventListener("click", function () {
-  if (prefersDarkScheme.matches) {
-    document.body.classList.toggle("light-theme");
-    var theme = document.body.classList.contains("light-theme")
-      ? "light"
-      : "dark";
-  } else {
-    document.body.classList.toggle("dark-theme");
-    var theme = document.body.classList.contains("dark-theme")
-      ? "dark"
-      : "light";
-  }
-  localStorage.setItem("theme", theme);
-});
-</script>
-<script>
-        console.clear();
-    
-        const uls = document.querySelectorAll("nav ul");
-        const links = [...document.querySelectorAll("nav a")];
-        const light = document.querySelector("nav .tubelight");
-    
-        let activeIndex = 0;
-        let currentIndex = 0;
-        let increment = 1;
-        links.forEach((link, index) => {
-            if (links[index].classList.contains("active")) {
-            light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4}px`;
-            }
-    
-            link.addEventListener("click", e => {
-            activeIndex = index;
-            let t = setInterval(() => {
-                if (activeIndex > currentIndex) increment = 1;
-                else if (activeIndex < currentIndex) increment = -1;
-                currentIndex += increment;
-    
-                links[currentIndex].classList.add("active");
-                if (currentIndex != -1) links[currentIndex - increment].classList.remove("active");
-    
-                if (currentIndex == activeIndex) {
-                e.target.classList.add("active");
-                increment = 0;
-                clearInterval(t);
-                }
-            }, 50);
-            light.style.left = `${e.target.offsetLeft + light.offsetWidth / 4}px`;
-            });
-        });	
-</script>
-<script>
-function openSocial(evt, socialName) {
-var i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-}
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
-document.getElementById(socialName).style.display = "block";
-evt.currentTarget.className += " active";
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-function openHi(hiName) {
-var i;
-var x = document.getElementsByClassName("admin");
-for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-}
-document.getElementById(hiName).style.display = "block";
-}
-
-function openName(evt, Name) {
-var i, tabcontent, tablinks;
-tabcontent = document.getElementsByClassName("tabcontent");
-for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-}
-
-tablinks = document.getElementsByClassName("tablinks");
-for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-}
-document.getElementById(Name).style.display = "block";
-evt.currentTarget.className += " active";
-}
-// SCROLL ---------------
-window.onscroll = function() {
-myFunction()
-};
-function myFunction() {
-var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-var scrolled = (winScroll / height) * 100;
-document.getElementById("myBar").style.width = scrolled + "%";
-}
-// lazy ------------------------------------------------------
-if ("loading" in HTMLImageElement.prototype) {
-// Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
-// `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
-const images = document.querySelectorAll("img.lazyload");
-images.forEach((img) => {
-    img.src = img.dataset.src;
-});
-} else {
-// Importamos dinámicamente la libreria `lazy lazysizes`
-let script = document.createElement("script");
-script.async = true;
-script.src =
-"https://luisangelmaciel.github.io/js/lazysizes.min.js";
-document.body.appendChild(script);
-}
-// TE ayudo -----------------------------------------------------------
-var i = 0;
-var txt = '¿Te gusta esta página y quieres tener una para ti o para tú negocio? ¡Yo te ayudo a hacerla!';
-var speed = 65;
-
-function typeWriter() {
-if (i < txt.length) {
-    document.getElementById("powered").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-}
-}
-</script>
-<script> // footer random ----------------------------------
-var elements = {
-footerRandomlamp: document.querySelector('.footerRandomlamp')
-};
-var footerRandom = [
-' <i class="fa fa-love">❤  </i>' + new Date().getFullYear(),
-' to make the web great again',
-' Dont be a dick Just be nice its that easy',
-' who wants more web apps on his homescreen',
-' who is tired of seeing browser UI',
-' The people who are crazy enough to think they can change the world are the ones who do',
-' Hecho en Iztapalapa(Ciudad de México) por LuisAngel',
-' El negocio te tiene que hacer feliz a ti. El producto te tiene que divertir a ti.  El cliente te tiene que gustar a ti.  Javier Pastor ',
-' Si no te divierte, no se hace.',
-' Say hi on twitter or perhaps LinkedIn, if you dare. Oh, and here are some <a href="#referrals">great things I recommend.</a>',
-' gracias visitarme por aquí',
-+ new Date().getFullYear() + 'software xbr',
-' Este sitio ha sido construido con Toxel ',
-' Creatively driven',
-' Intensely curious',
-' Reliable and professional ',
-' Time management & Team player ',
-' Fast learner ',
-' Forever Motivated',
-' Created with DocPad and Gulp.js',
-' Minimal theme by orderedlist',  
-' Diseñado por www.twitter.com/luisangelmaciel  ',
-' Potenciado por HiHello.monster',
-' Toxel es mantenido con cariño por el equipo central de voluntarios.',
-' Toxel is funded thanks to its sponsors! ',
-' ',
-' ',
-' ',
-
-
-
-'Codificado con amor en Iztapalapa, para el mundo',
-'El mejor sitio web para convertir imagenes a <a href="#base64">base64</a>',
-' because it\'s ' + new Date().getFullYear()
-];
-var rand = Math.floor(Math.random() * footerRandom.length);
-elements.footerRandomlamp.innerHTML += footerRandom[rand];
-reset();
-
-$(window).scroll(function() {
-if ($(this).scrollTop() > 100) {
-    $(".totop").fadeIn();
-} else {
-    $(".totop").fadeOut();
-}
-});
-
-$(".totop").click(function() {
-$("html,body").stop().animate({
-    scrollTop: 0
-}, 1000);
-});
-//Si ha leído hasta aquí, muchas gracias por darle un viztazo, a este desastre. Sí, necesita mejoras, aunque deberías haber visto la primera versión.o. Que tengas una sesión de trabajo productiva. 
-</script>
-
-</body>
-</html>
 <div style="font-size: 100px;" class="w3-hide">
     <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="50.7998mm" height="50.7998mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
     viewBox="0 0 5079.98 5079.98" class="clay w3-button" 
@@ -3621,3 +3513,228 @@ viewBox="0 0 13546.66 13546.66"
  </g>
 </svg>
 </div>
+
+
+<link href="https://luisangelmaciel.github.io/js/object.observe.polyfill.js" rel="prefetch"><link href="https://luisangelmaciel.github.io/js/scripts.js" rel="prefetch">
+<script>
+    const btn = document.querySelector(".btn-toggle");
+    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+    const currentTheme = localStorage.getItem("theme");
+    if (currentTheme == "dark") {
+    document.body.classList.toggle("dark-theme");
+    } else if (currentTheme == "light") {
+    document.body.classList.toggle("light-theme");
+    }
+
+    btn.addEventListener("click", function () {
+    if (prefersDarkScheme.matches) {
+        document.body.classList.toggle("light-theme");
+        var theme = document.body.classList.contains("light-theme")
+        ? "light"
+        : "dark";
+    } else {
+        document.body.classList.toggle("dark-theme");
+        var theme = document.body.classList.contains("dark-theme")
+        ? "dark"
+        : "light";
+    }
+    localStorage.setItem("theme", theme);
+    });
+</script>
+<script>
+        console.clear();
+    
+        const uls = document.querySelectorAll("nav ul");
+        const links = [...document.querySelectorAll("nav a")];
+        const light = document.querySelector("nav .tubelight");
+    
+        let activeIndex = 0;
+        let currentIndex = 0;
+        let increment = 1;
+        links.forEach((link, index) => {
+            if (links[index].classList.contains("active")) {
+            light.style.left = `${links[index].offsetLeft + light.offsetWidth / 4}px`;
+            }
+    
+            link.addEventListener("click", e => {
+            activeIndex = index;
+            let t = setInterval(() => {
+                if (activeIndex > currentIndex) increment = 1;
+                else if (activeIndex < currentIndex) increment = -1;
+                currentIndex += increment;
+    
+                links[currentIndex].classList.add("active");
+                if (currentIndex != -1) links[currentIndex - increment].classList.remove("active");
+    
+                if (currentIndex == activeIndex) {
+                e.target.classList.add("active");
+                increment = 0;
+                clearInterval(t);
+                }
+            }, 50);
+            light.style.left = `${e.target.offsetLeft + light.offsetWidth / 4}px`;
+            });
+        });	
+</script>
+<script>
+    function openSocial(evt, socialName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(socialName).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+
+    function openHi(hiName) {
+    var i;
+    var x = document.getElementsByClassName("admin");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(hiName).style.display = "block";
+    }
+
+    function openName(evt, Name) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(Name).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+    // SCROLL ---------------
+    window.onscroll = function() {
+    myFunction()
+    };
+    function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    // lazy ------------------------------------------------------
+    if ("loading" in HTMLImageElement.prototype) {
+    // Si el navegador soporta lazy-load, tomamos todas las imágenes que tienen la clase
+    // `lazyload`, obtenemos el valor de su atributo `data-src` y lo inyectamos en el `src`.
+    const images = document.querySelectorAll("img.lazyload");
+    images.forEach((img) => {
+        img.src = img.dataset.src;
+    });
+    } else {
+    // Importamos dinámicamente la libreria `lazy lazysizes`
+    let script = document.createElement("script");
+    script.async = true;
+    script.src =
+    "https://luisangelmaciel.github.io/js/lazysizes.min.js";
+    document.body.appendChild(script);
+    }
+    // Te ayudo -----------------------------------------------------------
+    var i = 0;
+    var txt = '¿Te gusta esta página y quieres tener una para ti o para tú negocio? ¡Yo te ayudo a hacerla!';
+    var speed = 65;
+
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("powered").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
+</script>
+<script> // footer random ----------------------------------
+    var elements = {
+    footerRandomlamp: document.querySelector('.footerRandomlamp')
+    };
+    var footerRandom = [
+    ' <i class="fa fa-love">❤  </i>' + new Date().getFullYear(),
+    ' To make the web great again',
+    ' Dont be a dick Just be nice its that easy',
+    ' Who wants more web apps on his homescreen',
+    ' Who is tired of seeing browser UI',
+    ' The people who are crazy enough to think they can change the world are the ones who do',
+    ' Hecho en Iztapalapa(Ciudad de México) por LuisAngel',
+    ' El negocio te tiene que hacer feliz a ti. El producto te tiene que divertir a ti.  El cliente te tiene que gustar a ti.  Javier Pastor ',
+    ' Si no te divierte, no se hace.',
+    ' Say hi on twitter or perhaps LinkedIn, if you dare. Oh, and here are some <a href="#referrals">great things I recommend.</a>',
+    ' gracias visitarme por aquí',
+    + new Date().getFullYear() + ' software xbr',
+    ' Este sitio ha sido construido con Toxel ',
+    ' Creatively driven',
+    ' Intensely curious',
+    ' Reliable and professional ',
+    ' Time management & Team player ',
+    ' Fast learner ',
+    ' Forever Motivated',
+    ' Created with DocPad and Gulp.js',
+    ' Minimal theme by orderedlist',  
+    ' Diseñado por www.twitter.com/luisangelmaciel  ',
+    ' Potenciado por HiHello.monster',
+    ' Toxel es mantenido con cariño por el equipo central de voluntarios.',
+    ' Toxel is funded thanks to its sponsors! ',
+    ' Codificado con amor en Iztapalapa, para el mundo',
+    ' El mejor sitio web para convertir imagenes a <a href="#base64">base64</a>',
+    ' Because it\'s ' + new Date().getFullYear()
+    ];
+    var rand = Math.floor(Math.random() * footerRandom.length);
+    elements.footerRandomlamp.innerHTML += footerRandom[rand];
+    reset();
+
+    $(window).scroll(function() {
+    if ($(this).scrollTop() > 100) {
+        $(".totop").fadeIn();
+    } else {
+        $(".totop").fadeOut();
+    }
+    });
+
+    $(".totop").click(function() {
+    $("html,body").stop().animate({
+        scrollTop: 0
+    }, 1000);
+    });
+//Si ha leído hasta aquí, muchas gracias por darle un viztazo, a este desastre. Sí, necesita mejoras, aunque deberías haber visto la primera versión.o. Que tengas una sesión de trabajo productiva. 
+</script>
+</body>
+</html>
+<!--  Además de los objetivos comerciales y del alcance actual de la estrategia de marketing de la empresa, debes entender 
+lo siguiente:
+• ¿Cuáles son los objetivos del cliente? ¿Qué significa el éxito para la empresa en general?
+• ¿Cuál es el plazo para alcanzar los objetivos?
+• ¿Hay objetivos individuales a corto plazo y a largo plazo? ¿Qué métricas específicas definen el éxito?
+• ¿Cómo define el cliente el éxito de la interacción con una agencia?
+• ¿A qué desafíos se enfrenta actualmente el cliente? 
+• ¿Qué valor encuentra en los servicios que tú ofreces?
+
+
+Ahorrarás $1.000 si compras software de automatización del marketing. 
+
+Debes saber lo siguiente:
+• Los objetivos, planes y desafíos del cliente
+• Las métricas actuales del cliente y los datos básicos de la empresa
+• El gasto que ocasiona al cliente no tomar ninguna medida para lograr sus objetivos
+A partir de allí, tu propuesta debería incluir algunos puntos claves:
+• Objetivos de campaña
+• Alcance de los servicios y beneficios
+• Informes
+• Métricas de éxito
+• Plazos
+• Presupuesto
+• Firma 
+Gracias a este marco de referencia y a un proceso definido para recopilar información, será mucho más sencillo diseñar 
+una propuesta ganadora en poco tiempo. 
+ -->
