@@ -1208,8 +1208,6 @@
         <div class="mt-5" >
        
                <!-- Form -->
-                 
-      
 
 <div>
           <form id="login">
@@ -1228,9 +1226,7 @@
                 </div>
                 <p class="hidden text-xs text-red-600 mt-2" id="email-error">Por favor incluya una dirección de correo electrónico válida para que podamos comunicarnos con usted</p>
               </div>
-              <!-- End Form Group -->
-
-      
+              <!-- End Form Group -->      
        
               <!-- Form Group -->
               <div>
@@ -1378,9 +1374,7 @@
 
               </style>
               
-              <!-- Primer modal -->              
-               
-
+              <!-- Primer modal -->       
               <button id="myBtnFull1" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
               data-modal-target="modal1">
               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" /><path d="M12 17v1m0 -8v1" /></svg>               
@@ -1393,17 +1387,30 @@
                 <span> Contacto</span>
             </button>
 
+
+            <button id="myBtnFull3" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            data-modal-target="modal1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-text" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 9l1 0" /><path d="M9 13l6 0" /><path d="M9 17l6 0" /></svg>
+              <span>Recolecta de información</span>
+          </button>
+
+
               <div id="myModalFull1" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
                 <span class="closeModalFull">&times;</span>
                 <iframe src="Propuesta-de-Diseño-Web-para-calendarios-planeta.html" name="iframe_a" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
               </div>
               
               
-<!-- Segundo modal -->
-<div id="myModalFull2" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
-	<span class="closeModalFull">&times;</span>
-	<iframe src="formcontactplaneta.html" name="iframe_b" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
-</div>
+              <!-- Segundo modal -->
+              <div id="myModalFull2" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+                <span class="closeModalFull">&times;</span>
+                <iframe src="formcontactplaneta.html" name="iframe_b" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+              </div>
+              <!-- Tercer modal -->
+              <div id="myModalFull3" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+                <span class="closeModalFull">&times;</span>
+                <iframe src="steps.html" name="iframe_c" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+              </div>
 
 
              
@@ -1416,12 +1423,15 @@
 	// Obtener los modales
 	var modal1 = document.getElementById("myModalFull1");
 	var modal2 = document.getElementById("myModalFull2");
+  var modal2 = document.getElementById("myModalFull3");
 	// Obtener los botones que abren los modales
 	var btn1 = document.getElementById("myBtnFull1");
 	var btn2 = document.getElementById("myBtnFull2");
+  var btn2 = document.getElementById("myBtnFull3");
 	// Obtener los elementos <span> que cierran los modales
 	var span1 = document.querySelector("#myModalFull1 .closeModalFull");
 	var span2 = document.querySelector("#myModalFull2 .closeModalFull");
+  var span2 = document.querySelector("#myModalFull3 .closeModalFull");
 	// Función para abrir el primer modal
 	btn1.onclick = function() {
 		modal1.style.display = "block";
@@ -1454,7 +1464,6 @@
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
                 <span> Cerrar sesión</span>
             </button>
-
                
             </div>
           </form>
@@ -1463,15 +1472,13 @@
         </div>
       </div>
     </div> 
-    
-    
+        
 
    
    
 
     
   </main>
-
 <script>
     // Datos de inicio de sesión
     const username = "calendariosPlaneta2024";
@@ -1518,8 +1525,7 @@
             document.getElementById("loggedInUser").innerText = username;
         }
     };
-</script>
-  
+</script>  
   <!-- <script src="https://preline.co/assets/js/hs.theme-appearance.js"></script> -->
 </body>
   
