@@ -1,0 +1,926 @@
+<!doctype html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Información proyecto</title>
+  <link href="tabler.min.css?1684106062" rel="stylesheet" />
+  <link href="tabler-flags.min.css?1684106062" rel="stylesheet" />
+  <link href="tabler-payments.min.css?1684106062"
+    rel="stylesheet" />
+  <link href="tabler-vendors.min.css?1684106062" rel="stylesheet" />
+  <link href="demo.min.css?1684106062" rel="stylesheet" />
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+
+    :root {
+      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+
+    body {
+      font-feature-settings: "cv03", "cv04", "cv11";
+    }
+
+    .is-hidden {
+      display: none !important;
+    }
+  </style>
+
+</head>
+
+<body>
+  <script src="/demo-theme.min.js?1684106062"></script>
+  <div class="page">
+    <div class="page-wrapper">
+      <!-- Page header -->
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <h2 class="page-title">
+                Información del proyecto
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page body -->
+      <div class="page-body body-contact">
+        <div class="container-xl">
+          <div class="row row-cards">
+            <div class="col-md-6" id="complete-fomr">
+              <div class="loading js-loading is-hidden">
+                <div class="loading-spinnerc">
+                  <div class="loader"></div>
+                </div>
+              </div>
+              <div class="card">
+                <form name="submit-to-google-sheet card-body">
+                  <div class="card-body">
+                    <h3 class="card-title" hidden>Project ID</h3>
+                    <p class="card-subtitle" hidden>Used when interacting with the API.</p>
+                    <h3>Información sobre el proyecto:</h3>
+
+                    <div class="mb-3">
+
+                      <div class="form-group">
+                        <label class="form-label" for="objetivo">Objetivo de la página web:</label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="informar" data-persist="objetivo-informar"
+                            value="Informar">
+                          <span class="form-check-label">Informar</span>
+                          <span class="form-check-description">Brindar información sobre tu empresa, productos o
+                            servicios. Compartir noticias, artículos o eventos relevantes para tu público objetivo.
+                            Crear una base de conocimientos o FAQs.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="vender" data-persist="objetivo-vender"
+                            value="Vender">
+                          <span class="form-check-label">Vender</span>
+                          <span class="form-check-description">Ofrecer tus productos o servicios online. Implementar un
+                            carrito de compras y sistema de pagos. Brindar información sobre precios, envío y políticas
+                            de devolución.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="leads" data-persist="objetivo-leads"
+                            value="Generar leads">
+                          <span class="form-check-label">Generar leads</span>
+                          <span class="form-check-description">Captar datos de contacto de potenciales clientes. Ofrecer
+                            contenido descargable a cambio de información personal. Implementar formularios de contacto
+                            o suscripción a newsletters.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="trafico" data-persist="objetivo-trafico"
+                            value="Atraer tráfico">
+                          <span class="form-check-label">Atraer tráfico</span>
+                          <span class="form-check-description">Posicionar tu página web en los buscadores (SEO).
+                            Implementar estrategias de marketing digital. Compartir contenido en redes sociales.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="fidelizar" data-persist="objetivo"
+                            value="Fidelizar clientes">
+                          <span class="form-check-label">Fidelizar clientes</span>
+                          <span class="form-check-description">Ofrecer un servicio de atención al cliente online. Crear
+                            un programa de fidelización. Brindar contenido exclusivo para clientes.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="comunidad" data-persist="objetivo"
+                            value="Crear una comunidad">
+                          <span class="form-check-label">Crear una comunidad</span>
+                          <span class="form-check-description">Implementar un foro o blog. Ofrecer la posibilidad de
+                            dejar comentarios o reseñas. Organizar eventos online o meetups.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="educar" data-persist="objetivo"
+                            value="Educar">
+                          <span class="form-check-label">Educar</span>
+                          <span class="form-check-description">Ofrecer cursos online o tutoriales. Compartir contenido
+                            educativo como ebooks o webinars. Crear una comunidad de aprendizaje.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="investigar" data-persist="objetivo"
+                            value="Investigar">
+                          <span class="form-check-label">Investigar</span>
+                          <span class="form-check-description">Realizar encuestas online. Recopilar datos sobre tu
+                            público objetivo. Obtener feedback sobre tus productos o servicios.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="entretener" data-persist="objetivo"
+                            value="Entretener">
+                          <span class="form-check-label">Entretener</span>
+                          <span class="form-check-description">Ofrecer juegos, vídeos o podcasts. Compartir contenido
+                            humorístico o viral. Crear una experiencia interactiva para tus usuarios.</span>
+                        </label>
+                        <label class="form-check">
+                          <input class="form-check-input" type="checkbox" id="recaudar" data-persist="objetivo"
+                            value="Recaudar fondos">
+                          <span class="form-check-label">Recaudar fondos</span>
+                          <span class="form-check-description">Implementar un sistema de donaciones online. Ofrecer
+                            crowdfunding para proyectos específicos. Informar sobre las causas que tu organización
+                            apoya.</span>
+                        </label>
+                      </div>
+
+
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label">Público objetivo:</label>
+                      <div class="form-selectgroup">
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Consumidores individuales (B2C)"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Consumidores individuales (B2C)</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Empresas (B2B)"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Empresas (B2B)</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Estudiantes universitarios"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Estudiantes universitarios</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Profesionales de un campo específico"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Profesionales de un campo específico</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Organizaciones sin fines de lucro"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Organizaciones sin fines de lucro</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Niños y adolescentes"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Niños y adolescentes</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Adultos jóvenes"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Adultos jóvenes</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo" value="Personas mayores"
+                            class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Personas mayores</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo"
+                            value="Usuarios de un determinado producto o servicio" class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Usuarios de un determinado producto o servicio</span>
+                        </label>
+                        <label class="form-selectgroup-item">
+                          <input type="checkbox" name="publico_objetivo"
+                            value="Residentes de una ubicación geográfica específica" class="form-selectgroup-input">
+                          <span class="form-selectgroup-label">Residentes de una ubicación geográfica específica</span>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for=" ejemplos">Ejemplos de sitios web que te gusten:</label>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          https://
+                        </span>
+                        <input type="text" class="form-control" placeholder="domain" id="ejemplos"
+                          data-persist="ejemplos" autocomplete="off">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          https://
+                        </span>
+                        <input type="text" class="form-control" placeholder="domain" id="ejemplos"
+                          data-persist="ejemplos" autocomplete="off">
+                      </div>
+                      <div class="input-group">
+                        <span class="input-group-text">
+                          https://
+                        </span>
+                        <input type="text" class="form-control" placeholder="domain" id="ejemplos"
+                          data-persist="ejemplos" autocomplete="off">
+                      </div>
+                    </div>
+
+                    <div class="mb-3" data-persist="contenido">
+                      <label class="form-label">Contenido que deseas incluir en la página web:</label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Texto descriptivo sobre la empresa, productos o servicios">
+                        <span class="form-check-label">Texto descriptivo sobre la empresa, productos o servicios</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Imágenes de productos o servicios">
+                        <span class="form-check-label">Imágenes de productos o servicios</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Videos promocionales o tutoriales">
+                        <span class="form-check-label">Videos promocionales o tutoriales</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Testimonios de clientes">
+                        <span class="form-check-label">Testimonios de clientes</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Información de contacto (dirección, teléfono, correo electrónico)">
+                        <span class="form-check-label">Información de contacto (dirección, teléfono, correo
+                          electrónico)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Formularios de contacto">
+                        <span class="form-check-label">Formularios de contacto</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sección de preguntas frecuentes (FAQs)">
+                        <span class="form-check-label">Sección de preguntas frecuentes (FAQs)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Blog o sección de noticias">
+                        <span class="form-check-label">Blog o sección de noticias</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Galería de imágenes o portafolio">
+                        <span class="form-check-label">Galería de imágenes o portafolio</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Catálogo de productos o servicios con precios">
+                        <span class="form-check-label">Catálogo de productos o servicios con precios</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Información sobre la empresa (historia, equipo, valores)">
+                        <span class="form-check-label">Información sobre la empresa (historia, equipo, valores)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Enlaces a redes sociales">
+                        <span class="form-check-label">Enlaces a redes sociales</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Mapa de ubicación">
+                        <span class="form-check-label">Mapa de ubicación</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Calendario de eventos">
+                        <span class="form-check-label">Calendario de eventos</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Descargas de recursos útiles (por ejemplo, folletos, manuales)">
+                        <span class="form-check-label">Descargas de recursos útiles (por ejemplo, folletos,
+                          manuales)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Test o encuestas para interactuar con los visitantes">
+                        <span class="form-check-label">Test o encuestas para interactuar con los visitantes</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Chat en vivo para atención al cliente">
+                        <span class="form-check-label">Chat en vivo para atención al cliente</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Integración con plataformas de terceros (por ejemplo, sistemas de reservas, herramientas de pago)">
+                        <span class="form-check-label">Integración con plataformas de terceros (por ejemplo, sistemas de
+                          reservas, herramientas de pago)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Información legal y política de privacidad">
+                        <span class="form-check-label">Información legal y política de privacidad</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Enlaces a artículos o recursos externos relacionados">
+                        <span class="form-check-label">Enlaces a artículos o recursos externos relacionados</span>
+                      </label>
+                    </div>
+
+                    <div class="mb-3" data-persist="funcionalidades">
+                      <label class="form-label">Funcionalidades deseadas:</label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Formularios de contacto">
+                        <span class="form-check-label">Formularios de contacto</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Carrito de compras">
+                        <span class="form-check-label">Carrito de compras</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sistema de pagos en línea">
+                        <span class="form-check-label">Sistema de pagos en línea</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Blog">
+                        <span class="form-check-label">Blog</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Galería de imágenes">
+                        <span class="form-check-label">Galería de imágenes</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Integración con redes sociales">
+                        <span class="form-check-label">Integración con redes sociales</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Comentarios de usuarios">
+                        <span class="form-check-label">Comentarios de usuarios</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Sistema de suscripción a boletín informativo">
+                        <span class="form-check-label">Sistema de suscripción a boletín informativo</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Chat en vivo">
+                        <span class="form-check-label">Chat en vivo</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sistema de reservas">
+                        <span class="form-check-label">Sistema de reservas</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Foro de discusión">
+                        <span class="form-check-label">Foro de discusión</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sección de preguntas frecuentes (FAQs)">
+                        <span class="form-check-label">Sección de preguntas frecuentes (FAQs)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Herramienta de búsqueda">
+                        <span class="form-check-label">Herramienta de búsqueda</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Integración de mapas">
+                        <span class="form-check-label">Integración de mapas</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Área de membresía o acceso restringido">
+                        <span class="form-check-label">Área de membresía o acceso restringido</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Calendario de eventos">
+                        <span class="form-check-label">Calendario de eventos</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Integración con herramientas de análisis (por ejemplo, Google Analytics)">
+                        <span class="form-check-label">Integración con herramientas de análisis (por ejemplo, Google
+                          Analytics)</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox"
+                          value="Funcionalidades de personalización para el usuario">
+                        <span class="form-check-label">Funcionalidades de personalización para el usuario</span>
+                      </label>
+                      <label class="form-check">
+                        <input class="form-check-input" type="checkbox" value="Sistema de valoraciones o reseñas">
+                        <span class="form-check-label">Sistema de valoraciones o reseñas</span>
+                      </label>
+                    </div>
+
+
+
+                    <h3>Información técnica:</h3>
+
+                    <div class="mb-3" data-persist="dominio_alojamiento">
+                      <label class="form-label">¿Tienes un dominio y alojamiento web?</label>
+                      <div>
+                        <select class="form-select">
+                          <option>Si</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="mb-3" id="diseno" data-persist="diseno">
+                      <label class="form-label" for=" diseno">¿Tienes algún diseño o logotipo preexistente?</label>
+                      <div>
+                        <select class="form-select">
+                          <option>Si</option>
+                          <option>No</option>
+                        </select>
+                      </div>
+                    </div>
+
+
+                    <h3>Presupuesto y plazo:</h3>
+                    <div class="mb-3">
+                      <label class="form-label" for=" presupuesto">¿Cuál es tu presupuesto para la página web?</label>
+                      <input type="text" class="form-control" id="presupuesto" data-persist="presupuesto"
+                        name="presupuesto">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="plazodeentrega">¿Cuál es el plazo de entrega que deseas?</label>
+                      <div class="datepicker-inline" id="datepicker-inline" id="plazodeentrega"
+                        data-persist="plazodeentrega" name="plazodeentrega"></div>
+                    </div>
+
+                    <h3>Preguntas adicionales:</h3>
+                    <div class="mb-3">
+                      <label class="form-label" for="preguntasAdicionales">¿Tienes alguna otra información que
+                        consideres importante? </label>
+                      <textarea class="form-control" id="preguntasAdicionales" data-persist="preguntasAdicionales"
+                        name="preguntasAdicionales" rows="6" placeholder="Content.."></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="aolgoqueno">¿Hay algo que no quieras que se incluya en la página
+                        web?</label>
+                      <textarea class="form-control" id="aolgoqueno" data-persist="aolgoqueno" name="aolgoqueno"
+                        rows="6" placeholder="Content.."></textarea>
+                    </div>
+
+
+                    <h3>Comentarios adicionales:</h3>
+                    <div class="mb-3">
+                      <label class="form-label" for=" comentarios">Comentarios adicionales:</label>
+                      <textarea class="form-control" id="comentarios" rows="3" data-persist="comentarios"
+                        name="comentarios"></textarea>
+                    </div>
+
+                    <label class="form-label">Información adicional</label>
+
+                    <label class="form-label" for="misionVisionValores">Misión, visión y valores:</label>
+                    <div class="mb-3">
+                      <label class="form-label" for="mision">Misión:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Describe el propósito de la empresa y lo que busca lograr" id="mision"
+                        data-persist="mision" name="mision"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="vision">Visión:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Define la aspiración a largo plazo de la empresa" id="vision" data-persist="vision"
+                        name="vision"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="valores">Valores:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Establecen los principios que guían el comportamiento de la empresa" id="valores"
+                        data-persist="valores" name="valores"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for="politicasPago">Políticas de pago:</label>
+                      <textarea class="form-control" rows="3" placeholder="Políticas de pago de la tienda"
+                        id="politicasPago" data-persist="politicasPago" name="politicasPago"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="metodosPago">Métodos de pago aceptados:</label>
+                      <input type="text" class="form-control" id="metodosPago" placeholder="Métodos de pago aceptados"
+                        name="metodosPago" data-persist="metodosPago">
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for="plazosPago">Plazos de pago:</label>
+                      <input type="text" class="form-control" id="plazosPago" placeholder="Plazos de pago"
+                        name="plazosPago" data-persist="plazosPago">
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for="politicaDevoluciones">Política de devoluciones y
+                        reembolsos:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Política de devoluciones y reembolsos de la tienda" id="politicaDevoluciones"
+                        data-persist="politicaDevoluciones" name="politicaDevoluciones"></textarea>
+                    </div>
+
+                    <label class="form-label">Productos y servicios</label>
+                    <div class="mb-3" for="">
+                      <label class="form-label">Descripción detallada de cada producto o servicio:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Características, beneficios, especificaciones, etc." id="imagenesYVideos"
+                        data-persist="imagenesYVideos" name="imagenesYVideos"></textarea>
+                    </div>
+                    <div class="mb-3" for="imagenesYVideos">
+                      <label class="form-label">Imágenes o vídeos de alta calidad:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Que muestren los productos o servicios en detalle" id="imagenesYVideos"
+                        data-persist="imagenesYVideos" name="imagenesYVideos"></textarea>
+                    </div>
+                    <div class="mb-3" for="precios">
+                      <label class="form-label">Precios:</label>
+                      <textarea class="form-control" rows="3"
+                        placeholder="Costo de cada producto o servicio, incluyendo impuestos y descuentos" id="precios"
+                        data-persist="precios" name="precios"></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                      <label class="form-label" for="tiempoDeEntrega">Tiempo de entrega:</label>
+                      <textarea class="form-control" rows="2" placeholder="Plazo estimado para la entrega de un pedido"
+                        id="tiempoDeEntrega" data-persist="tiempoDeEntrega" name="tiempoDeEntrega"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="envio">Opciones de envío:</label>
+                      <select class="form-select" id="envio" name="envio">
+                        <option value="estandar" data-persist="envios-standar">Envío estándar</option>
+                        <option value="express" data-persist="envios-expressr">Envío express</option>
+                        <option value="urgente" data-persist="envios-urgente">Envío urgente</option>
+                      </select>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="costoEnvio">Costo de envío:</label>
+                      <input type="text" class="form-control" id="costoEnvio" placeholder="Ingrese el costo de envío"
+                        name="costoEnvio" data-persist="costoEnvio">
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="tiempoDeEntrega">Tiempo de entrega:</label>
+                      <textarea class="form-control" rows="2" placeholder="Plazo estimado para la entrega de un pedido"
+                        id="tiempoDeEntrega" data-persist="tiempoDeEntrega" name="tiempoDeEntrega"></textarea>
+                    </div>
+
+                    <label class="form-label">Otros datos</label>
+                    <div class="mb-3">
+                      <label class="form-label" for="legal">Información legal:</label>
+                      <textarea class="form-control" rows="2" placeholder="Razón social, CIF, dirección fiscal, etc."
+                        id="legal" data-persist="legal" name="legal"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="redessociales">Redes sociales</label>
+                      <textarea class="form-control" rows="2" placeholder="Enlaces a las redes sociales de la empresa"
+                        id="redessociales" data-persist="redessociales" name="redessociales"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label class="form-label" for="testimonios">Testimonios de clientes</label>
+                      <textarea class="form-control" rows="2"
+                        placeholder="Opiniones positivas sobre la empresa o sus productos" id="testimonios"
+                        data-persist="testimonios" name="testimonios"></textarea>
+                    </div>
+                    <input name="Site" type="text" value="CalendarioPlaneta" style="display:none">
+
+
+                  </div>
+                  <div class="card-footer">
+                    <div class="row align-items-center">
+                      <!-- div class="col">Learn more about <a href="#">Project ID</a></div-->
+                      <div class="btn-xbr">
+                        <button class="col-auto">
+                          <span class="default" type="submit">Enviar</span>
+                        </button>
+                      </div><br>
+                    </div>
+                </form>
+                <style>
+                  .btn-xbr {
+                    --primary: #275EFE;
+                    --primary-dark: #2055EE;
+                    --primary-darkest: #133FC0;
+                    --input-placeholder: #A6ACCD;
+                    --input-text: #646B8C;
+                    --border-default: #E1E6F9;
+                    --border-active: #275EFE;
+                    --background: #fff;
+                    --button-text: #FFFFFF;
+                    --success: #275EFE;
+                    --trails: rgba(39, 94, 254, 0.15);
+                    display: flex;
+                    align-items: center;
+                    /*max-width: 300px;*/
+                    max-width: 100%;
+                    width: 100%;
+                    /*background: var(--background);*/
+                    /*box-shadow: inset 0 0 0 var(--border-width, 1px) var(--border, var(--border-default));*/
+                    border-radius: 9px;
+                    padding-right: 4px;
+                    transition: box-shadow 0.25s;
+                  }
+
+                  .btn-xbr button {
+                    /*-webkit-appearance: none;*/
+                    background: none;
+                    outline: none;
+                    display: block;
+                    border: none;
+                    font-family: inherit;
+                    font-size: 14px;
+                    line-height: 24px;
+                    margin: 0;
+                  }
+
+                  .btn-xbr button {
+                    --text-opacity: 1;
+                    --success-x: -12px;
+                    --success-stroke: 14px;
+                    --success-opacity: 0;
+                    --border-radius: 7px;
+                    --overflow: hidden;
+                    --x: 0px;
+                    --y: 0px;
+                    --rotate: 0deg;
+                    --plane-x: 0px;
+                    --plane-y: 0px;
+                    --plane-opacity: 1;
+                    --trails-stroke: 57px;
+                    --left-wing-background: var(--primary);
+                    --left-wing-first-x: 0%;
+                    --left-wing-first-y: 0%;
+                    --left-wing-second-x: 50%;
+                    --left-wing-second-y: 0%;
+                    --left-wing-third-x: 0%;
+                    --left-wing-third-y: 100%;
+                    --left-body-background: var(--primary);
+                    --left-body-first-x: 50%;
+                    --left-body-first-y: 0%;
+                    --left-body-second-x: 50%;
+                    --left-body-second-y: 100%;
+                    --left-body-third-x: 0%;
+                    --left-body-third-y: 100%;
+                    --right-wing-background: var(--primary);
+                    --right-wing-first-x: 50%;
+                    --right-wing-first-y: 0%;
+                    --right-wing-second-x: 100%;
+                    --right-wing-second-y: 0%;
+                    --right-wing-third-x: 100%;
+                    --right-wing-third-y: 100%;
+                    --right-body-background: var(--primary);
+                    --right-body-first-x: 50%;
+                    --right-body-first-y: 0%;
+                    --right-body-second-x: 50%;
+                    --right-body-second-y: 100%;
+                    --right-body-third-x: 100%;
+                    --right-body-third-y: 100%;
+                    position: relative;
+                    padding: 8px 0;
+                    min-width: 100px;
+                    text-align: center;
+                    font-weight: 600;
+                    opacity: var(--button-opacity, 0.5);
+                    /*cursor: var(--button-cursor, not-allowed);*/
+                    filter: var(--button-filter, grayscale(65%));
+                    color: var(--button-text);
+                    border-radius: var(--border-radius);
+                    transform: translateZ(0);
+                    transition: opacity 0.25s, filter 0.25s;
+                    -webkit-tap-highlight-color: transparent;
+                  }
+
+                  .btn-xbr button:not(.active) {
+                    background: var(--primary);
+                  }
+
+                  body {
+                    justify-content: center;
+                    align-items: center;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xl js-success-message is-hidden">
+        <div class="row row-cards">
+          <div class="col-md-6 ">
+            <div class="card">
+              <div class="mb-3"><br>
+                <label class=" form-label"> &nbsp; Mensaje enviado, muchas gracias.</label>
+                <label class="js-error-message is-hidden form-label">Ups, habemus un error al registrar, intentalo en
+                  otro momento, perdon, que pena!</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="https://docs.google.com/spreadsheets/d/1dlDx4VjGWiMkFU92M5q5z56RvjGu1IKy9QPzIoIJZo8/edit#gid=0">
+        <!-- form-->
+      </a>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzqv2DT6UZJVg63vkHdiCtY7XSGa3H3S-0K4SsEACR_7XkICwVIhuQmoY5eGQn8niAX/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const loading = document.querySelector('.js-loading')
+        const successMessage = document.querySelector('.js-success-message')
+        const errorMessage = document.querySelector('.js-error-message')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          showLoadingIndicator()
+          fetch(scriptURL, {
+            method: 'POST',
+            body: new FormData(form)
+          })
+            .then(response => showSuccessMessage(response))
+            .catch(error => showErrorMessage(error))
+        })
+
+        function showLoadingIndicator() {
+          form.classList.add('is-hidden')
+          loading.classList.remove('is-hidden')
+        }
+
+        function showSuccessMessage(response) {
+          console.log('Success!', response)
+          setTimeout(() => {
+            successMessage.classList.remove('is-hidden')
+            loading.classList.add('is-hidden')
+          }, 100)
+        }
+
+        function showErrorMessage(error) {
+          console.error('Error!', error.message)
+          setTimeout(() => {
+            errorMessage.classList.remove('is-hidden')
+            loading.classList.add('is-hidden')
+          }, 100)
+        }
+      </script>
+      <script>
+        /*
+    Paste this script into the 'Code.gs' tab in the Script Editor
+    For a detailed explanation of this file, view 'form-script-commented.js'
+    */
+        var sheetName = 'Sheet1'
+        var scriptProp = PropertiesService.getScriptProperties()
+
+        function intialSetup() {
+          var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+          scriptProp.setProperty('key', activeSpreadsheet.getId())
+        }
+
+        function doPost(e) {
+          var lock = LockService.getScriptLock()
+          lock.tryLock(10000)
+          try {
+            var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+            var sheet = doc.getSheetByName(sheetName)
+            var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+            var nextRow = sheet.getLastRow() + 1
+            var newRow = headers.map(function (header) {
+              return header === 'timestamp' ? new Date() : e.parameter[header]
+            })
+            sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+            return ContentService
+              .createTextOutput(JSON.stringify({
+                'result': 'success',
+                'row': nextRow
+              }))
+              .setMimeType(ContentService.MimeType.JSON)
+          } catch (e) {
+            return ContentService
+              .createTextOutput(JSON.stringify({
+                'result': 'error',
+                'error': e
+              }))
+              .setMimeType(ContentService.MimeType.JSON)
+          } finally {
+            lock.releaseLock()
+          }
+        }
+        // The default sheet name is 'Sheet1'. To target a different sheet, update this variable.
+        var sheetName = 'Sheet1'
+        /*
+        Gets a property store that all users can access, but only within this script.
+        https://developers.google.com/apps-script/reference/properties/properties-service#getScriptProperties()
+        */
+        var scriptProp = PropertiesService.getScriptProperties()
+        /*
+        This is the initial setup function. It gets the active SpreadsheetApp ID and adds it to our PropertiesService.
+        https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#getactivespreadsheet
+        */
+        function setup() {
+          var doc = SpreadsheetApp.getActiveSpreadsheet()
+          scriptProp.setProperty('key', doc.getId())
+        }
+
+        function doPost(e) {
+          /*
+          Gets a lock that prevents any user from concurrently running a section of code. A code section
+          guarded by a script lock cannot be executed simultaneously regardless of the identity of the user.
+          https://developers.google.com/apps-script/reference/lock/lock-service#getScriptLock()
+          */
+          var lock = LockService.getScriptLock()
+          /*
+          Attempts to acquire the lock, timing out with an exception after the provided number of milliseconds.
+          This method is the same as tryLock(timeoutInMillis) except that it throws an exception when the lock
+          could not be acquired instead of returning false.
+          https://developers.google.com/apps-script/reference/lock/lock#waitLock(Integer)
+          */
+          lock.waitLock(10000)
+          try {
+            /*
+            Opens the spreadsheet with the given ID. A spreadsheet ID can be extracted from its URL. For example,
+            the spreadsheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
+            https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#openbyidid
+            */
+            var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+            /*
+            Returns a sheet with the given name. If multiple sheets have the same name,
+            the leftmost one is returned. Returns null if there is no sheet with the given name.
+            https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#getSheetByName(String)
+            */
+            var sheet = doc.getSheetByName(sheetName)
+            /*
+            Returns the range with the top left cell at the given coordinates, and with the given number of rows.
+            https://developers.google.com/apps-script/reference/spreadsheet/sheet#getRange(Integer,Integer)
+  
+            Then returns the position of the last column that has content.
+            https://developers.google.com/apps-script/reference/spreadsheet/sheet#getlastcolumn
+  
+            Then returns the rectangular grid of values for this range (a two-dimensional array of values, indexed by row, then by column.)
+            https://developers.google.com/apps-script/reference/spreadsheet/range#getValues()
+            */
+            var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+            // Gets the last row and then adds one
+            var nextRow = sheet.getLastRow() + 1
+            /*
+            Maps the headers array to a new array. If a header's value is 'timestamp' then it
+            returns a new Date() object, otherwise it returns the value of the matching URL parameter
+            https://developers.google.com/apps-script/guides/web
+            */
+            var newRow = headers.map(function (header) {
+              return header === 'timestamp' ? new Date() : e.parameter[header]
+            })
+            /*
+            Gets a range from the next row to the end row based on how many items are in newRow
+            then sets the new values of the whole array at once.
+            https://developers.google.com/apps-script/reference/spreadsheet/range#setValues(Object)
+            */
+            sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+            /*
+            Return success results as JSON
+            https://developers.google.com/apps-script/reference/content/content-service
+            */
+            return ContentService
+              .createTextOutput(JSON.stringify({
+                'result': 'success',
+                'row': nextRow
+              }))
+              .setMimeType(ContentService.MimeType.JSON)
+          }
+          /*
+          Return error results as JSON
+          https://developers.google.com/apps-script/reference/content/content-service
+          */
+          catch (e) {
+            return ContentService
+              .createTextOutput(JSON.stringify({
+                'result': 'error',
+                'error': e
+              }))
+              .setMimeType(ContentService.MimeType.JSON)
+          } finally {
+            /*
+            Releases the lock, allowing other processes waiting on the lock to continue.
+            https://developers.google.com/apps-script/reference/lock/lock#releaseLock()
+            */
+            lock.releaseLock()
+          }
+        }
+      </script>
+    </div>
+  </div>
+  </div>
+  </div>
+  <script>
+    document.documentElement.setAttribute('data-theme', 'default');
+    var field = document.querySelectorAll('[data-persist]')
+    for (i = 0; i < field.length; i++) {
+      var stored = localStorage.getItem(field[i].getAttribute('data-persist'))
+      if (stored) field[i].value = stored
+      field[i].addEventListener('input', function () {
+        localStorage.setItem(this.getAttribute('data-persist'), this.value)
+      })
+    }
+  </script>
+  <script src="/EQCSS.min.js"></script>
+</body>
+<!-- Libs JS -->
+<script src="/nouislider.min.js?1684106062"
+  defer></script>
+<script src="/litepicker.js?1684106062"
+  defer></script>
+<script src="/tom-select.base.min.js?1684106062"
+  defer></script>
+<!-- Tabler Core -->
+<script src="/tabler.min.js?1684106062" defer></script>
+<script src="/demo.min.js?1684106062" defer></script>
+</body>
+
+</html>

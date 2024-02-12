@@ -1,3 +1,4 @@
+logotipo-agente-de-atencion-al-cliente-feliz.svg
 acceso-con-locker.svg
 barra-libre.svg
 boleto-xiiber.svg
