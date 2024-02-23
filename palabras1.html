@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang="es-MX"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de Archivo Markdown Pxar</title>
+    <style>.sr-only {clip: rect(0, 0, 0, 0);border-width:0;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}</style>
+    <style>html, body, pre, textarea, input, label {width:95%; min-width:365px;  padding-bottom: 5px;}
+    figure, picture {margin:0}</style>
+    <script>
+    function calcularTiempoDeLectura(texto) {var numeroDePalabras = texto.split(" ").length; const VELOCIDAD_DE_LECTURA = 250;
+      var tiempoDeLectura = numeroDePalabras / VELOCIDAD_DE_LECTURA;
+      tiempoDeLectura = Math.round(tiempoDeLectura);
+      return tiempoDeLectura;
+    }    
+    function contarPalabrasTotales(texto) {
+      var palabras = texto.split(" ");
+      return palabras.length;
+    }        
+    function mostrarInfo() {
+      // Obtener el elemento HTML con el id "blog-text"
+      var blogText = document.getElementById("blog-text");
+      // Obtener el texto del blog
+      var texto = blogText.value;
+      var palabrasTotales = contarPalabrasTotales(texto);
+      // Calcular el tiempo de lectura usando la función que ya tienes
+      var tiempoDeLectura = calcularTiempoDeLectura(texto);
+      // Obtener el elemento HTML con el id "info"
+      var infoElemento = document.getElementById("info");
+      infoElemento.innerHTML = `Palabras totales: ${palabrasTotales}  Tiempo de lectura: ${tiempoDeLectura} minutos`;
+    }
+    </script>
+</head>
+<body>
+
+<h1>Generador de Archivo Markdown</h1>
+<ul><li>Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal.   Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo. Redacta el Contenido del articulo de 400 palabras, incluye la palabra clave principal y palabras clave secundarias en todo el texto. Asegúrate de que el contenido sea original, libre de plagio y  de alta calidad, informativo y útil para los usuarios. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  Añade una o dos preguntas según consideres de pregunta frecuente con su respectivarespuesta. La pregunta debe contener de 40 a 60 caracteres. La respuesta de 120 a 150 caracteres o en caso de que fuera necesario para dar relavancia y precisión llega a 300 caracteres. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  El tema a desarrollar es: ¿Cuáles son las tendencias actuales en diseño de logos?</li></ul>
+<section>
+    <form id="markdownForm">
+        <label for="title">Título:</label><input type="text" id="title" name="title" >
+
+        <label for="description">Descripción:</label>
+        <input type="text" id="description" name="description" >
+
+        <label for="keywords">Palabras Clave:</label>
+        <input type="text" id="keywords" name="keywords" >
+
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" >
+
+        <label for="ogImage" class="sr-only">ogImage:</label>
+        <input type="text" id="ogImage" name="ogImage" readonly class="sr-only">
+
+        <label for="ogImageAlt">ogImageAlt:</label>
+        <input type="text" id="ogImageAlt" name="ogImageAlt" >
+
+        <label for="tags">Tags:</label>
+        <input type="text" id="tags" name="tags" >
+
+        <label for="dateCreated" class="sr-only">Fecha de Creación:</label>
+        <input type="text" id="dateCreated" name="dateCreated" readonly class="sr-only">
+
+        <label for="RevisitAfter" class="sr-only">RevisitAfter:</label>
+        <input type="text" id="RevisitAfter" name="RevisitAfter" value="120" class="sr-only">
+       
+        <label for="Layout">Layout:</label>
+        <select id="Layout" name="Layout">
+            <option value="layouts/article.njk">Article</option>
+            <option value="layouts/book.njk">Book</option>
+            <option value="layouts/product.njk">Product</option>
+            <option value="layouts/articleProduct.njk">Article Product</option>
+        </select><br>
+
+        <label for="datePublished" class="sr-only">Fecha de publicación:</label>
+        <input type="text" id="datePublished" name="datePublished" class="sr-only">
+        <hr>
+        <label for="height" class="sr-only">Altura:</label>
+        <input type="text" id="height" name="height" class="sr-only" value="1200px">
+
+        <label for="width" class="sr-only">Anchura:</label>
+        <input type="text" id="width" name="width" class="sr-only" value="650px">
+
+        <label for="heightArticle" class="sr-only">Altura del artículo:</label>
+        <input type="text" id="heightArticle" name="heightArticle"  class="sr-only" value="150px">
+
+        <label for="widthArticle" class="sr-only">Anchura del artículo:</label>
+        <input type="text" id="widthArticle" name="widthArticle"  class="sr-only" value="150px">
+
+        <label for="img01">img01:</label>
+        <input type="text" id="img01" name="img01">
+
+        <label for="altImg01">altImg01:</label>
+        <input type="text" id="altImg01" name="altImg01">
+
+        <label for="texto01">texto01:</label>
+        <input type="text" id="texto01" name="texto01">
+
+        <label for="img02">img02:</label>
+        <input type="text" id="img02" name="img02">
+
+        <label for="altImg02">altImg02:</label>
+        <input type="text" id="altImg02" name="altImg02">
+
+        <label for="texto02">texto02:</label>
+        <input type="text" id="texto02" name="texto02">
+
+        <label for="img03">img03:</label>
+        <input type="text" id="img03" name="img03">
+
+        <label for="altImg03">altImg03:</label>
+        <input type="text" id="altImg03" name="altImg03">
+
+        <label for="texto03">texto03:</label>
+        <input type="text" id="texto03" name="texto03">
+        <hr>
+        <label for="question">Pregunta:</label>
+        <input type="text" id="question" name="question">
+
+        <label for="text">Texto:</label>
+        <input  type="text" id="text" name="text" >
+
+        <label for="question2">Pregunta2:</label>
+        <input type="text" id="question2" name="question">
+
+        <label for="text2">Texto2:</label>
+        <input  type="text" id="text2" name="text" >
+
+        <label for="entrada">Entrada:</label>
+        <textarea id="entrada" name="entrada" rows="4" cols="10" ></textarea>
+
+        <div id="blog"><label for="blog-text">Contenido del blog:</label><input type="text" id="blog-text" name="blog-text" oninput="mostrarInfo()"></div>
+
+        <div id="info"></div>
+
+        <label for="totalDePalabras">totalDePalabras:</label>
+        <input type="text" id="totalDePalabras" name="totalDePalabras">
+
+        <label for="tiempoDeLectura">tiempoDeLectura:</label>
+        <input type="text" id="tiempoDeLectura" name="tiempoDeLectura">
+
+        <button type="button" onclick="generarMarkdown()">Generar Archivo Markdown</button>
+    </form>
+  
+    <script>
+        function getCurrentDateTime() {
+            var now = new Date();
+            var year = now.getFullYear();
+            var month = ('0' + (now.getMonth() + 1)).slice(-2);
+            var day = ('0' + now.getDate()).slice(-2);
+            var hours = ('0' + now.getHours()).slice(-2);
+            var minutes = ('0' + now.getMinutes()).slice(-2);
+            var seconds = ('0' + now.getSeconds()).slice(-2);
+            var offset = now.getTimezoneOffset();
+            var offsetHours = Math.abs(Math.floor(offset / 60));
+            var offsetMinutes = Math.abs(offset % 60);
+            var offsetString = (offset >= 0 ? '-' : '+') +
+                ('0' + offsetHours).slice(-2) + ':' +
+                ('0' + offsetMinutes).slice(-2);
+            return year + '-' + month + '-' + day + 'T' + hours + ':' + minutes + ':' + seconds + offsetString;
+        }
+
+        function generarMarkdown() {
+            // Obtener los valores del formulario
+            var title = document.getElementById('title').value;
+            var description = document.getElementById('description').value;
+            var keywords = document.getElementById('keywords').value;
+            var url = document.getElementById('url').value.toLowerCase().replace(/\s+/g, '-'); // Convertir a minúsculas y reemplazar espacios con "-"
+            var ogImage = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '.webp"';  // Añadir ./ al principio y .webp al final
+            document.getElementById('ogImage').value = ogImage;
+            var ogImageAlt = document.getElementById('ogImageAlt').value;
+            var tags = document.getElementById('tags').value;
+            var dateCreated = getCurrentDateTime();
+            document.getElementById('dateCreated').value = dateCreated;
+            var RevisitAfter = document.getElementById('RevisitAfter').value;
+            var Layout = document.getElementById('Layout').value;
+            var dateModified = getCurrentDateTime();
+            var entrada = document.getElementById('entrada').value;
+            var datePublished = document.getElementById('datePublished').value;
+            var height = document.getElementById('height').value;
+            var width = document.getElementById('width').value;
+            var heightArticle = document.getElementById('heightArticle').value;
+            var widthArticle = document.getElementById('widthArticle').value;
+            var img01 = document.getElementById('img01').value.toLowerCase().replace(/\s+/g, '-');
+            var altImg01 = document.getElementById('altImg01').value;
+            var texto01 = document.getElementById('texto01').value;
+            var img02 = document.getElementById('img02').value.toLowerCase().replace(/\s+/g, '-');
+            var altImg02 = document.getElementById('altImg02').value;
+            var texto02 = document.getElementById('texto02').value;
+            var img03 = document.getElementById('img03').value.toLowerCase().replace(/\s+/g, '-');
+            var altImg03 = document.getElementById('altImg03').value;
+            var texto03 = document.getElementById('texto03').value;
+            var question = document.getElementById('question').value;
+            var text = document.getElementById('text').value;
+            var question = document.getElementById('question2').value;
+            var text = document.getElementById('text2').value;
+            var totalDePalabras = contarPalabrasTotales(entrada); // Calcular el total de palabras
+            var tiempoDeLectura = calcularTiempoDeLectura(entrada); // Calcular el tiempo de lectura
+
+            var url = document.getElementById('url').value.toLowerCase().replace(/\s+/g, '-'); // Convertir a minúsculas y reemplazar espacios con "-"
+            var img01Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2025' + '.webp"';
+            var img02Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2026.webp"';
+            var img03Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2027.webp"';
+
+            // Crear el contenido Markdown
+            var contenidoMarkdown = '---\n';            
+            contenidoMarkdown += 'title: ' + '"' + title + '"' + '\n';        
+            contenidoMarkdown += 'description: ' + '"' + description + '"' + '\n';
+            contenidoMarkdown += 'keywords: ' + '"' + keywords + '"' + '\n';
+            contenidoMarkdown += 'url: ' + url + '\n';
+            contenidoMarkdown += 'permalink: ' + url + '\n';
+            
+            contenidoMarkdown += 'ogImage : ' + '"' + ogImage  + '"' + '\n';
+            contenidoMarkdown += 'ogImageAlt: ' + ogImageAlt + '\n';
+            contenidoMarkdown += 'tags: ' + tags + '\n';
+            contenidoMarkdown += 'date: ' + dateCreated + '\n';
+            
+            contenidoMarkdown += 'dateCreated: ' + '"' + dateCreated + '"' + '\n';
+            contenidoMarkdown += 'dateModified: ' + '"' + dateModified + '"' + '\n';
+            contenidoMarkdown += 'RevisitAfter: ' + '"' + RevisitAfter + '"' + '\n';
+            contenidoMarkdown += 'layout: ' + Layout + '\n';
+            contenidoMarkdown += 'datePublished: ' + '"' + dateCreated + '"' + '\n';  // cambiado ver si si o si no provicionalmente
+            contenidoMarkdown += 'fechaFormateada: \n'; // agregado provicionalmente
+            contenidoMarkdown += 'dataTimestamp: \n'; // agregado provicionalmente
+            contenidoMarkdown += '\n';
+            contenidoMarkdown += 'height: ' + '"' + height + '"' + '\n';
+            contenidoMarkdown += 'width: ' + '"' + width + '"' + '\n';  // cambiado ver si si o si no provicionalmente
+            contenidoMarkdown += 'dataAspectratio: "16/9"' + '\n';  // cambiado ver si si o si no provicionalmente   ="16/9
+            contenidoMarkdown += 'heightArticle: ' + heightArticle + '\n';
+            contenidoMarkdown += 'widthArticle: ' + widthArticle + '\n';
+            contenidoMarkdown += 'img01: ' + img01Value + '\n';
+            contenidoMarkdown += 'altImg01: ' + altImg01 + '\n';
+            contenidoMarkdown += 'texto01: ' + texto01 + '\n';
+            contenidoMarkdown += 'img02: ' + img02Value + '\n';
+            contenidoMarkdown += 'altImg02: ' + altImg02 + '\n';
+            contenidoMarkdown += 'texto02: ' + texto02 + '\n';
+            contenidoMarkdown += 'img03: ' + img03Value + '\n';
+            contenidoMarkdown += 'altImg03: ' + altImg03 + '\n';
+            contenidoMarkdown += 'texto03: ' + texto03 + '\n';
+            contenidoMarkdown += 'question: ' + question + '\n';
+            contenidoMarkdown += 'text: ' + text + '\n';
+            contenidoMarkdown += 'question2: ' + question + '\n';
+            contenidoMarkdown += 'text2: ' + text + '\n';
+            contenidoMarkdown += '\n';
+
+            contenidoMarkdown += 'totalDePalabras: ' + totalDePalabras + '\n';
+            contenidoMarkdown += 'tiempoDeLectura: ' + tiempoDeLectura + '\n';
+
+            contenidoMarkdown += '---\n\n';
+            contenidoMarkdown += '<picture><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}"></picture>\n\n';
+            contenidoMarkdown += '<p> Última modificación: <time itemprop="dateModified" datetime="{{dateModified}}" data-timestamp="{{data-timestamp}}" title="Fecha de última modificación" >{{fechaFormateada}}</time></p> ';
+            contenidoMarkdown += entrada;
+            contenidoMarkdown += '\n\n';            
+            contenidoMarkdown += '<picture><img src="{{img01}}" alt="{{altImg01}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
+            contenidoMarkdown += '<picture><img src="{{img02}}" alt="{{altImg02}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
+            contenidoMarkdown += '<picture><img src="{{img03}}" alt="{{altImg03}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
+            contenidoMarkdown += '<figure><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}" data-aspectratio={{dataAspectratio}} class="image lazyload"   data-srcset="{{ogImage}} 1280w, {{ogImage}} 640w"  data-sizes="(max-width: 640px) 100vw, 50vw"><figcaption>{{ogImageAlt}}</figcaption></figure>';
+                             
+            document.getElementById('totalDePalabras').value = totalDePalabras; document.getElementById('tiempoDeLectura').value = tiempoDeLectura;            
+            var blob = new Blob([contenidoMarkdown], { type: 'text/markdown' });
+            var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();
+        }
+    </script>
+    <script>document.addEventListener("DOMContentLoaded", function() {mostrarInfo();});</script>
+</section>
+
+</body>
+</html>
