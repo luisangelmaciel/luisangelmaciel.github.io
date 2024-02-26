@@ -1,5 +1,4 @@
-<!DOCTYPE html><html lang="es-MX"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Generador de Archivo Markdown Pxar</title>
+<!DOCTYPE html><html lang="es-MX"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Generator Pxar</title>
     <style>.sr-only {clip: rect(0, 0, 0, 0);border-width:0;height: 1px;margin: -1px;overflow: hidden;padding: 0;position: absolute;white-space: nowrap;width: 1px;}</style>
     <style>html, body, pre, textarea, input, label {width:95%; min-width:365px;  padding-bottom: 5px;}
     figure, picture {margin:0}</style>
@@ -14,29 +13,30 @@
       return palabras.length;
     }        
     function mostrarInfo() {
-      // Obtener el elemento HTML con el id "blog-text"
       var blogText = document.getElementById("blog-text");
       // Obtener el texto del blog
       var texto = blogText.value;
       var palabrasTotales = contarPalabrasTotales(texto);
       // Calcular el tiempo de lectura usando la función que ya tienes
       var tiempoDeLectura = calcularTiempoDeLectura(texto);
-      // Obtener el elemento HTML con el id "info"
       var infoElemento = document.getElementById("info");
       infoElemento.innerHTML = `Palabras totales: ${palabrasTotales}  Tiempo de lectura: ${tiempoDeLectura} minutos`;
     }
-    </script>
-</head>
+    </script></head>
 <body>
 
 <h1>Generador de Archivo Markdown</h1>
-<ul><li>Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal.   Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo. Redacta el Contenido del articulo de 400 palabras, incluye la palabra clave principal y palabras clave secundarias en todo el texto. Asegúrate de que el contenido sea original, libre de plagio y  de alta calidad, informativo y útil para los usuarios. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  Añade una o dos preguntas según consideres de pregunta frecuente con su respectivarespuesta. La pregunta debe contener de 40 a 60 caracteres. La respuesta de 120 a 150 caracteres o en caso de que fuera necesario para dar relavancia y precisión llega a 300 caracteres. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  El tema a desarrollar es: ¿Cuáles son las tendencias actuales en diseño de logos?</li></ul>
+<ul><li>Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal.   Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo. Redacta el Contenido del articulo de 400 palabras, incluye la palabra clave principal y palabras clave secundarias en todo el texto. Asegúrate de que el contenido sea original, libre de plagio y  de alta calidad, informativo y útil para los usuarios. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  Añade una o dos preguntas según consideres de pregunta frecuente con su respectivarespuesta. La pregunta debe contener de 40 a 60 caracteres. La respuesta de 120 a 150 caracteres o en caso de que fuera necesario para dar relavancia y precisión llega a 300 caracteres. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  El tema a desarrollar es: ¿Cuáles son las tendencias actuales en diseño de logos?</li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li></ul>
 <section>
     <form id="markdownForm">
         <label for="title">Título:</label><input type="text" id="title" name="title" >
 
-        <label for="description">Descripción:</label>
-        <input type="text" id="description" name="description" >
+        <label for="description">Descripción:</label><input type="text" id="description" name="description" >
 
         <label for="keywords">Palabras Clave:</label>
         <input type="text" id="keywords" name="keywords" >
@@ -67,8 +67,7 @@
             <option value="layouts/articleProduct.njk">Article Product</option>
         </select><br>
 
-        <label for="datePublished" class="sr-only">Fecha de publicación:</label>
-        <input type="text" id="datePublished" name="datePublished" class="sr-only">
+        <label for="datePublished" class="sr-only">Fecha de publicación:</label><input type="text" id="datePublished" name="datePublished" class="sr-only">
         <hr>
         <label for="height" class="sr-only">Altura:</label>
         <input type="text" id="height" name="height" class="sr-only" value="1200px">
@@ -156,7 +155,6 @@
         }
 
         function generarMarkdown() {
-            // Obtener los valores del formulario
             var title = document.getElementById('title').value;
             var description = document.getElementById('description').value;
             var keywords = document.getElementById('keywords').value;
@@ -198,8 +196,8 @@
             var img03Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2027.webp"';
 
             // Crear el contenido Markdown
-            var contenidoMarkdown = '---\n';            
-            contenidoMarkdown += 'title: ' + '"' + title + '"' + '\n';        
+            var contenidoMarkdown = '---\n';
+            contenidoMarkdown += 'title: ' + '"' + title + '"' + '\n';
             contenidoMarkdown += 'description: ' + '"' + description + '"' + '\n';
             contenidoMarkdown += 'keywords: ' + '"' + keywords + '"' + '\n';
             contenidoMarkdown += 'url: ' + url + '\n';
@@ -245,19 +243,17 @@
             contenidoMarkdown += '<picture><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}"></picture>\n\n';
             contenidoMarkdown += '<p> Última modificación: <time itemprop="dateModified" datetime="{{dateModified}}" data-timestamp="{{data-timestamp}}" title="Fecha de última modificación" >{{fechaFormateada}}</time></p> ';
             contenidoMarkdown += entrada;
-            contenidoMarkdown += '\n\n';            
+            contenidoMarkdown += '\n\n';
             contenidoMarkdown += '<picture><img src="{{img01}}" alt="{{altImg01}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<picture><img src="{{img02}}" alt="{{altImg02}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<picture><img src="{{img03}}" alt="{{altImg03}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<figure><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}" data-aspectratio={{dataAspectratio}} class="image lazyload"   data-srcset="{{ogImage}} 1280w, {{ogImage}} 640w"  data-sizes="(max-width: 640px) 100vw, 50vw"><figcaption>{{ogImageAlt}}</figcaption></figure>';
                              
-            document.getElementById('totalDePalabras').value = totalDePalabras; document.getElementById('tiempoDeLectura').value = tiempoDeLectura;            
+            document.getElementById('totalDePalabras').value = totalDePalabras; document.getElementById('tiempoDeLectura').value = tiempoDeLectura;
             var blob = new Blob([contenidoMarkdown], { type: 'text/markdown' });
             var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();
         }
-    </script>
-    <script>document.addEventListener("DOMContentLoaded", function() {mostrarInfo();});</script>
+    </script><script>document.addEventListener("DOMContentLoaded", function() {mostrarInfo();});</script>
 </section>
-
 </body>
 </html>
