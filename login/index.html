@@ -1,0 +1,1602 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <title>Login </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg"/>
+  <style>    
+    *,
+    ::before,
+    ::after {
+      box-sizing: border-box;
+      /* 1 */
+      border-width: 0;
+      /* 2 */
+      border-style: solid;
+      /* 2 */
+      border-color: #e5e7eb;
+      /* 2 */
+    }
+    
+    ::before,
+    ::after {
+      --tw-content: '';
+    }
+    
+    /*
+    1. Use a consistent sensible line-height in all browsers.
+    2. Prevent adjustments of font size after orientation changes in iOS.
+    3. Use a more readable tab size.
+    4. Use the user's configured `sans` font-family by default.
+    5. Use the user's configured `sans` font-feature-settings by default.
+    6. Use the user's configured `sans` font-variation-settings by default.
+    */
+    
+    html {
+      line-height: 1.5;
+      /* 1 */
+      -webkit-text-size-adjust: 100%;
+      /* 2 */
+      -moz-tab-size: 4;
+      /* 3 */
+      -o-tab-size: 4;
+         tab-size: 4;
+      /* 3 */
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+      /* 4 */
+      font-feature-settings: normal;
+      /* 5 */
+      font-variation-settings: normal;
+      /* 6 */
+    }
+    
+    /*
+    1. Remove the margin in all browsers.
+    2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
+    */
+    
+    body {
+      margin: 0;
+      /* 1 */
+      line-height: inherit;
+      /* 2 */
+    }
+    
+    /*
+    1. Add the correct height in Firefox.
+    2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
+    3. Ensure horizontal rules are visible by default.
+    */
+    
+    /*
+    Add the correct text decoration in Chrome, Edge, and Safari.
+    */
+    
+    abbr:where([title]) {
+      -webkit-text-decoration: underline dotted;
+              text-decoration: underline dotted;
+    }
+    
+    /*
+    Remove the default font size and weight for headings.
+    */
+    
+    h4 {
+      font-size: 0.5em
+      font-weight: inherit;
+    }
+    
+    /*
+    Reset links to optimize for opt-in styling instead of opt-out.
+    */
+    
+    a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+    
+    /*
+    Add the correct font weight in Edge and Safari.
+    */
+    
+    /*
+    1. Use the user's configured `mono` font family by default.
+    2. Correct the odd `em` font sizing in all browsers.
+    */
+    
+    /*
+    Add the correct font size in all browsers.
+    */
+    
+    /*
+    Prevent `sub` and `sup` elements from affecting the line height in all browsers.
+    */
+    
+    /*
+    1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
+    2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
+    3. Remove gaps between table borders by default.
+    */
+    
+    /*
+    1. Change the font styles in all browsers.
+    2. Remove the margin in Firefox and Safari.
+    3. Remove default padding in all browsers.
+    */
+    
+    button,
+    input {
+      font-family: inherit;
+      /* 1 */
+      font-size: 100%;
+      /* 1 */
+      font-weight: inherit;
+      /* 1 */
+      line-height: inherit;
+      /* 1 */
+      color: inherit;
+      /* 1 */
+      margin: 0;
+      /* 2 */
+      padding: 0;
+      /* 3 */
+    }
+    
+    /*
+    Remove the inheritance of text transform in Edge and Firefox.
+    */
+    
+    button {
+      text-transform: none;
+    }
+    
+    /*
+    1. Correct the inability to style clickable types in iOS and Safari.
+    2. Remove default button styles.
+    */
+    
+    button,
+    [type='submit'] {
+      -webkit-appearance: button;
+      /* 1 */
+      background-color: transparent;
+      /* 2 */
+      background-image: none;
+      /* 2 */
+    }
+    
+    /*
+    Use the modern Firefox focus style for all focusable elements.
+    */
+    
+    :-moz-focusring {
+      outline: auto;
+    }
+    
+    /*
+    Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
+    */
+    
+    :-moz-ui-invalid {
+      box-shadow: none;
+    }
+    
+    /*
+    Add the correct vertical alignment in Chrome and Firefox.
+    */
+    
+    /*
+    Correct the cursor style of increment and decrement buttons in Safari.
+    */
+    
+    ::-webkit-inner-spin-button,
+    ::-webkit-outer-spin-button {
+      height: auto;
+    }
+    
+    /*
+    1. Correct the odd appearance in Chrome and Safari.
+    2. Correct the outline style in Safari.
+    */
+    
+    /*
+    Remove the inner padding in Chrome and Safari on macOS.
+    */
+    
+    ::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+    
+    /*
+    1. Correct the inability to style clickable types in iOS and Safari.
+    2. Change font properties to `inherit` in Safari.
+    */
+    
+    ::-webkit-file-upload-button {
+      -webkit-appearance: button;
+      /* 1 */
+      font: inherit;
+      /* 2 */
+    }
+    
+    /*
+    Add the correct display in Chrome and Safari.
+    */
+    
+    /*
+    Removes the default spacing and border for appropriate elements.
+    */
+    
+    h4,
+    p {
+      margin: 0;
+    }
+    
+    /*
+    Prevent resizing textareas horizontally by default.
+    */
+    
+    /*
+    1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
+    2. Set the default placeholder color to the user's configured gray 400 color.
+    */
+    
+    input::-moz-placeholder {
+      opacity: 1;
+      /* 1 */
+      color: #9ca3af;
+      /* 2 */
+    }
+    
+    /*
+    Set the default cursor for buttons.
+    */
+    
+    button {
+      cursor: pointer;
+    }
+    
+    /*
+    Make sure disabled buttons don't get the pointer cursor.
+    */
+    
+    :disabled {
+      cursor: default;
+    }
+    
+    /*
+    1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
+    2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
+       This can trigger a poorly considered lint error in some tools but is included by design.
+    */
+    
+    svg,
+    iframe {
+      display: block;
+      /* 1 */
+      vertical-align: middle;
+      /* 2 */
+    }
+    
+    /*
+    Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
+    */
+    
+    /* Make elements with the HTML hidden attribute stay hidden by default */
+    
+    [hidden] {
+      display: none;
+    }
+    
+    [type='text'],[type='password'] {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      background-color: #fff;
+      border-color: #6b7280;
+      border-width: 1px;
+      border-radius: 0px;
+      padding-top: 0.5rem;
+      padding-right: 0.75rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.75rem;
+      font-size: 1rem;
+      line-height: 1.5rem;
+      --tw-shadow: 0 0 #0000;
+    }
+    
+    [type='text']:focus, [type='password']:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: #2563eb;
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      border-color: #2563eb;
+    }
+    
+    input::-moz-placeholder {
+      color: #6b7280;
+      opacity: 1;
+    }
+    
+    ::-webkit-datetime-edit-fields-wrapper {
+      padding: 0;
+    }
+    
+    ::-webkit-date-and-time-value {
+      min-height: 1.5em;
+    }
+    
+    ::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    
+    [type='checkbox'] {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+              print-color-adjust: exact;
+      display: inline-block;
+      vertical-align: middle;
+      background-origin: border-box;
+      -webkit-user-select: none;
+         -moz-user-select: none;
+              user-select: none;
+      flex-shrink: 0;
+      height: 1rem;
+      width: 1rem;
+      color: #2563eb;
+      background-color: #fff;
+      border-color: #6b7280;
+      border-width: 1px;
+      --tw-shadow: 0 0 #0000;
+    }
+    
+    [type='checkbox'] {
+      border-radius: 0px;
+    }
+    
+    [type='checkbox']:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      --tw-ring-inset: var(--tw-empty,/*!*/ /*!*/);
+      --tw-ring-offset-width: 2px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: #2563eb;
+      --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+      --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+      box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    }
+    
+    [type='checkbox']:checked {
+      border-color: transparent;
+      background-color: currentColor;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    [type='checkbox']:checked {
+      background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");
+    }
+    
+    [type='checkbox']:checked:hover,[type='checkbox']:checked:focus {
+      border-color: transparent;
+      background-color: currentColor;
+    }
+    
+    [type='checkbox']:indeterminate {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");
+      border-color: transparent;
+      background-color: currentColor;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    
+    [type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus {
+      border-color: transparent;
+      background-color: currentColor;
+    }
+    
+    *, ::before, ::after {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x:  ;
+      --tw-pan-y:  ;
+      --tw-pinch-zoom:  ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position:  ;
+      --tw-gradient-via-position:  ;
+      --tw-gradient-to-position:  ;
+      --tw-ordinal:  ;
+      --tw-slashed-zero:  ;
+      --tw-numeric-figure:  ;
+      --tw-numeric-spacing:  ;
+      --tw-numeric-fraction:  ;
+      --tw-ring-inset:  ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur:  ;
+      --tw-brightness:  ;
+      --tw-contrast:  ;
+      --tw-grayscale:  ;
+      --tw-hue-rotate:  ;
+      --tw-invert:  ;
+      --tw-saturate:  ;
+      --tw-sepia:  ;
+      --tw-drop-shadow:  ;
+      --tw-backdrop-blur:  ;
+      --tw-backdrop-brightness:  ;
+      --tw-backdrop-contrast:  ;
+      --tw-backdrop-grayscale:  ;
+      --tw-backdrop-hue-rotate:  ;
+      --tw-backdrop-invert:  ;
+      --tw-backdrop-opacity:  ;
+      --tw-backdrop-saturate:  ;
+      --tw-backdrop-sepia:  ;
+    }
+    
+    ::backdrop {
+      --tw-border-spacing-x: 0;
+      --tw-border-spacing-y: 0;
+      --tw-translate-x: 0;
+      --tw-translate-y: 0;
+      --tw-rotate: 0;
+      --tw-skew-x: 0;
+      --tw-skew-y: 0;
+      --tw-scale-x: 1;
+      --tw-scale-y: 1;
+      --tw-pan-x:  ;
+      --tw-pan-y:  ;
+      --tw-pinch-zoom:  ;
+      --tw-scroll-snap-strictness: proximity;
+      --tw-gradient-from-position:  ;
+      --tw-gradient-via-position:  ;
+      --tw-gradient-to-position:  ;
+      --tw-ordinal:  ;
+      --tw-slashed-zero:  ;
+      --tw-numeric-figure:  ;
+      --tw-numeric-spacing:  ;
+      --tw-numeric-fraction:  ;
+      --tw-ring-inset:  ;
+      --tw-ring-offset-width: 0px;
+      --tw-ring-offset-color: #fff;
+      --tw-ring-color: rgb(59 130 246 / 0.5);
+      --tw-ring-offset-shadow: 0 0 #0000;
+      --tw-ring-shadow: 0 0 #0000;
+      --tw-shadow: 0 0 #0000;
+      --tw-shadow-colored: 0 0 #0000;
+      --tw-blur:  ;
+      --tw-brightness:  ;
+      --tw-contrast:  ;
+      --tw-grayscale:  ;
+      --tw-hue-rotate:  ;
+      --tw-invert:  ;
+      --tw-saturate:  ;
+      --tw-sepia:  ;
+      --tw-drop-shadow:  ;
+      --tw-backdrop-blur:  ;
+      --tw-backdrop-brightness:  ;
+      --tw-backdrop-contrast:  ;
+      --tw-backdrop-grayscale:  ;
+      --tw-backdrop-hue-rotate:  ;
+      --tw-backdrop-invert:  ;
+      --tw-backdrop-opacity:  ;
+      --tw-backdrop-saturate:  ;
+      --tw-backdrop-sepia:  ;
+    }
+    
+    .pointer-events-none {
+      pointer-events: none;
+    }
+    
+    .absolute {
+      position: absolute;
+    }
+    
+    .relative {
+      position: relative;
+    }
+    
+    .inset-y-0 {
+      top: 0px;
+      bottom: 0px;
+    }
+    
+    .end-0 {
+      inset-inline-end: 0px;
+    }
+    
+    .mx-auto {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .mb-2 {
+      margin-bottom: 0.5rem;
+    }
+    
+    .mt-2 {
+      margin-top: 0.5rem;
+    }
+    
+    .mt-5 {
+      margin-top: 1.25rem;
+    }
+    
+    .mt-7 {
+      margin-top: 1.75rem;
+    }
+    
+    .block {
+      display: block;
+    }
+    
+    .flex {
+      display: flex;
+    }
+    
+    .inline-flex {
+      display: inline-flex;
+    }
+    
+    .grid {
+      display: grid;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .h-5 {
+      height: 1.25rem;
+    }
+    
+    .h-full {
+      height: 100%;
+    }
+    
+    .w-5 {
+      width: 1.25rem;
+    }
+    
+    .w-full {
+      width: 100%;
+    }
+    
+    .max-w-md {
+      max-width: 28rem;
+    }
+    
+    .items-center {
+      align-items: center;
+    }
+    
+    .justify-center {
+      justify-content: center;
+    }
+    
+    .justify-between {
+      justify-content: space-between;
+    }
+    
+    .gap-x-2 {
+      -moz-column-gap: 0.5rem;
+           column-gap: 0.5rem;
+    }
+    
+    .gap-y-4 {
+      row-gap: 1rem;
+    }
+    
+    .rounded-lg {
+      border-radius: 0.5rem;
+    }
+    
+    .rounded-xl {
+      border-radius: 0.75rem;
+    }
+    
+    .border {
+      border-width: 1px;
+    }
+    
+    .border-gray-200 {
+      --tw-border-opacity: 1;
+      border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    }
+    
+    .border-transparent {
+      border-color: transparent;
+    }
+    
+    .bg-blue-600 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+    }
+    
+    .bg-gray-100 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    }
+    
+    .bg-gray-200 {
+      --tw-bg-opacity: 1;
+      background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    }
+    
+    .bg-white {
+      --tw-bg-opacity: 1;
+      background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    }
+    
+    .p-4 {
+      padding: 1rem;
+    }
+    
+    .p-6 {
+      padding: 1.5rem;
+    }
+    
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .py-16 {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    
+    .py-3 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    
+    .pe-3 {
+      padding-inline-end: 0.75rem;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    
+    .text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    
+    .font-bold {
+      font-weight: 700;
+    }
+    
+    .font-medium {
+      font-weight: 500;
+    }
+    
+    .font-semibold {
+      font-weight: 600;
+    }
+    
+    .text-black {
+      --tw-text-opacity: 1;
+      color: rgb(0 0 0 / var(--tw-text-opacity));
+    }
+    
+    .text-blue-600 {
+      --tw-text-opacity: 1;
+      color: rgb(37 99 235 / var(--tw-text-opacity));
+    }
+    
+    .text-gray-800 {
+      --tw-text-opacity: 1;
+      color: rgb(31 41 55 / var(--tw-text-opacity));
+    }
+    
+    .text-red-500 {
+      --tw-text-opacity: 1;
+      color: rgb(239 68 68 / var(--tw-text-opacity));
+    }
+    
+    .text-red-600 {
+      --tw-text-opacity: 1;
+      color: rgb(220 38 38 / var(--tw-text-opacity));
+    }
+    
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    
+    .decoration-2 {
+      text-decoration-thickness: 2px;
+    }
+    
+    .shadow-sm {
+      --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+    
+    /* HS Only  */
+    
+    @media (max-width: 1320px) {
+    }
+    
+    @media (max-width: 640px) {
+    }
+    
+    @media (min-width: 640px) {
+    }
+    
+    @media (min-width: 1024px) {
+    }
+    
+    /* Docs */
+    
+    /* Prism */
+    
+    /* Code blocks */
+    
+    /* Light Theme */
+    
+    /* Inline code */
+    
+    @media (min-width: 768px) {
+    }
+    
+    .marker\:text-blue-600 *::marker {
+      color: rgb(37 99 235 );
+    }
+    
+    .marker\:text-blue-600 *.active::marker {
+      color: rgb(59 130 246 );
+    }
+    
+    .marker\:text-blue-600::marker {
+      color: rgb(37 99 235 );
+    }
+    
+    .marker\:text-blue-600.active::marker {
+      color: rgb(59 130 246 );
+    }
+    
+    .file\:me-4::file-selector-button {
+      margin-inline-end: 1rem;
+    }
+    
+    .file\:rounded-lg::file-selector-button {
+      border-radius: 0.5rem;
+    }
+    
+    .file\:border-0::file-selector-button {
+      border-width: 0px;
+    }
+    
+    .file\:bg-blue-600::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-gray-100::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-gray-50::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-transparent::file-selector-button {
+      background-color: transparent;
+    }
+    
+    .file\:px-3::file-selector-button {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    
+    .file\:px-4::file-selector-button {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .file\:py-2::file-selector-button {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .file\:py-3::file-selector-button {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    
+    .file\:text-sm::file-selector-button {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .file\:font-semibold::file-selector-button {
+      font-weight: 600;
+    }
+    
+    .file\:text-white::file-selector-button {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    
+    .p-4 {
+      padding: 1rem;
+    }
+    
+    .p-6 {
+      padding: 1.5rem;
+    }
+    
+    .px-4 {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .py-16 {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    
+    .py-3 {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    
+    .pe-3 {
+      padding-inline-end: 0.75rem;
+    }
+    
+    .text-center {
+      text-align: center;
+    }
+    
+    .text-2xl {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+    
+    .text-sm {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .text-xs {
+      font-size: 0.75rem;
+      line-height: 1rem;
+    }
+    
+    .font-bold {
+      font-weight: 700;
+    }
+    
+    .font-medium {
+      font-weight: 500;
+    }
+    
+    .font-semibold {
+      font-weight: 600;
+    }
+    
+    .text-black {
+      --tw-text-opacity: 1;
+      color: rgb(0 0 0 / var(--tw-text-opacity));
+    }
+    
+    .text-blue-600 {
+      --tw-text-opacity: 1;
+      color: rgb(37 99 235 / var(--tw-text-opacity));
+    }
+    
+    .text-gray-800 {
+      --tw-text-opacity: 1;
+      color: rgb(31 41 55 / var(--tw-text-opacity));
+    }
+    
+    .text-red-500 {
+      --tw-text-opacity: 1;
+      color: rgb(239 68 68 / var(--tw-text-opacity));
+    }
+    
+    .text-red-600 {
+      --tw-text-opacity: 1;
+      color: rgb(220 38 38 / var(--tw-text-opacity));
+    }
+    
+    .text-white {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    
+    .decoration-2 {
+      text-decoration-thickness: 2px;
+    }
+    
+    .shadow-sm {
+      --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+      --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+      box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    }
+    
+    /* HS Only  */
+    
+    @media (max-width: 1320px) {
+    }
+    
+    @media (max-width: 640px) {
+    }
+    
+    @media (min-width: 640px) {
+    }
+    
+    @media (min-width: 1024px) {
+    }
+    
+    /* Docs */
+    
+    /* Prism */
+    
+    /* Code blocks */
+    
+    /* Light Theme */
+    
+    /* Inline code */
+    
+    @media (min-width: 768px) {
+    }
+    
+    .marker\:text-blue-600 *::marker {
+      color: rgb(37 99 235 );
+    }
+    
+    .marker\:text-blue-600 *.active::marker {
+      color: rgb(59 130 246 );
+    }
+    
+    .marker\:text-blue-600::marker {
+      color: rgb(37 99 235 );
+    }
+    
+    .marker\:text-blue-600.active::marker {
+      color: rgb(59 130 246 );
+    }
+    
+    .file\:me-4::file-selector-button {
+      margin-inline-end: 1rem;
+    }
+    
+    .file\:rounded-lg::file-selector-button {
+      border-radius: 0.5rem;
+    }
+    
+    .file\:border-0::file-selector-button {
+      border-width: 0px;
+    }
+    
+    .file\:bg-blue-600::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-gray-100::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-gray-50::file-selector-button {
+      --tw-bg-opacity: 1;
+      background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+    }
+    
+    .file\:bg-transparent::file-selector-button {
+      background-color: transparent;
+    }
+    
+    .file\:px-3::file-selector-button {
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+    }
+    
+    .file\:px-4::file-selector-button {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    .file\:py-2::file-selector-button {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+    
+    .file\:py-3::file-selector-button {
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+    }
+    
+    .file\:text-sm::file-selector-button {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    
+    .file\:font-semibold::file-selector-button {
+      font-weight: 600;
+    }
+    
+    .file\:text-white::file-selector-button {
+      --tw-text-opacity: 1;
+      color: rgb(255 255 255 / var(--tw-text-opacity));
+    }
+    
+    
+    :is(.dark .lg\:dark\:border-gray-700) {
+      --tw-border-opacity: 1;
+      border-color: rgb(55 65 81 / var(--tw-border-opacity));
+    }
+    
+    :is(.dark .dark\:lg\:bg-neutral-900) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+    }
+    
+    :is(.dark .dark\:lg\:bg-transparent) {
+      background-color: transparent;
+    }
+    
+    :is(.dark .lg\:dark\:bg-neutral-700\/20) {
+      background-color: rgb(64 64 64 / 0.2);
+    }
+    
+    :is(.dark .lg\:dark\:text-neutral-200) {
+      --tw-text-opacity: 1;
+      color: rgb(229 229 229 / var(--tw-text-opacity));
+    }
+    
+    
+    
+      :is(.dark .lg\:dark\:border-gray-700) {
+        --tw-border-opacity: 1;
+        border-color: rgb(55 65 81 / var(--tw-border-opacity));
+      }
+    
+      :is(.dark .dark\:lg\:bg-neutral-900) {
+        --tw-bg-opacity: 1;
+        background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+      }
+    
+      :is(.dark .dark\:lg\:bg-transparent) {
+        background-color: transparent;
+      }
+    
+      :is(.dark .lg\:dark\:bg-neutral-700\/20) {
+        background-color: rgb(64 64 64 / 0.2);
+      }
+    
+      :is(.dark .lg\:dark\:text-neutral-200) {
+        --tw-text-opacity: 1;
+        color: rgb(229 229 229 / var(--tw-text-opacity));
+      }
+    
+    
+      :is(.dark .lg\:dark\:border-gray-700) {
+        --tw-border-opacity: 1;
+        border-color: rgb(55 65 81 / var(--tw-border-opacity));
+      }
+    
+      :is(.dark .dark\:lg\:bg-neutral-900) {
+        --tw-bg-opacity: 1;
+        background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+      }
+    
+      :is(.dark .dark\:lg\:bg-transparent) {
+        background-color: transparent;
+      }
+    
+      :is(.dark .lg\:dark\:bg-neutral-700\/20) {
+        background-color: rgb(64 64 64 / 0.2);
+      }
+    
+      :is(.dark .lg\:dark\:text-neutral-200) {
+        --tw-text-opacity: 1;
+        color: rgb(229 229 229 / var(--tw-text-opacity));
+      }
+    
+    
+    * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	.modalFull {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 999;
+		display: none;
+		-webkit-overflow-scrolling: touch;
+		outline: 0;
+		overflow: hidden;
+		background-color: inherit;
+	}
+
+	.closeModalFull {
+		font-size: 50px;
+		font-weight: 900;
+		line-height: 1;
+		color: #aaaaaa;
+		text-shadow: 0 1px 0 #fff;
+		filter: alpha(opacity=20);
+		opacity: 0.5;
+		position: fixed;
+		top: 30px;
+		right: 40px;
+	}
+
+	.closeModalFull:focus,
+	.closeModalFull:hover {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+		filter: alpha(opacity=50);
+		opacity: 0.5;
+	}
+
+	.closeModalFull {
+		-webkit-appearance: none;
+		padding: 0;
+		cursor: pointer;
+		background: 0 0;
+		border: 0;
+    background-color: inherit;
+	}
+
+	.closeModalFull:hover,
+	.closeModalFull:focus {
+		color: #000;
+		text-decoration: none;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100 flex h-full items-center py-16">
+<!-- <script src="https://preline.co/assets/js/hs.theme-appearance.js"></script> -->
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main  id="loginForm"  role="main" class="w-full max-w-md mx-auto p-6">
+    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700" id="content">
+      <div class="p-4 sm:p-7">
+       
+        <div class="mt-5" >
+       
+               <!-- Form -->
+
+<div>
+          <form id="login">
+            <div class="grid gap-y-4">
+              <!-- Form Group -->
+              
+              <div>
+                <label for="username" class="block text-sm mb-2 dark:text-white">Usuario</label>
+                <div class="relative">
+                  <input  type="text" id="username" name="username" required  class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="email-error">
+                  <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
+                    <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="hidden text-xs text-red-600 mt-2" id="email-error">Por favor incluya una dirección de correo electrónico válida para que podamos comunicarnos con usted</p>
+              </div>
+              <!-- End Form Group -->      
+       
+              <!-- Form Group -->
+              <div>
+                <div class="flex justify-between items-center">
+                  <label for="password" class="block text-sm mb-2 dark:text-white">Password</label>
+                  <a class="text-sm text-blue-600 decoration-2 hover:underline font-medium dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" href="#" hidden>Forgot password?</a>
+                </div>
+                <div class="relative">
+                  <input type="password" id="password" name="password" required class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400 dark:focus:ring-gray-600" required aria-describedby="password-error">
+                  <div class="hidden absolute inset-y-0 end-0 flex items-center pointer-events-none pe-3">
+                    <svg class="h-5 w-5 text-red-500" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8 4a.905.905 0 0 0-.9.995l.35 3.507a.552.552 0 0 0 1.1 0l.35-3.507A.905.905 0 0 0 8 4zm.002 6a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                    </svg>
+                  </div>
+                </div>
+                <p class="hidden text-xs text-red-600 mt-2" id="password-error">Se requieren más de 8 caracteres</p>
+              </div>
+        
+             
+
+              
+              <!-- Checkbox -->
+              <div class="flex items-center">
+                <div class="flex">
+                   <input type="checkbox" id="rememberMe" name="rememberMe">
+<label for="rememberMe" class="text-sm dark:text-white" class="shrink-0 mt-0.5 border-gray-200 rounded text-blue-600 pointer-events-none focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:checked:bg-blue-500 dark:checked:border-blue-500 dark:focus:ring-offset-gray-800">  &nbsp; Recuerdame
+    <input type="text" id="rememberMeInput" name="rememberMeInput" placeholder="" hidden>
+</label><br><br>
+                  
+                
+                </div>
+               
+              </div>
+              <!-- End Checkbox -->
+          <input type="submit" value="Iniciar sesión"  class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600" 
+          id="large-paragraph"> 
+          <script>
+          const observer = new PerformanceObserver((list) => {
+            let perfEntries = list.getEntries();
+            let lastEntry = perfEntries[perfEntries.length - 1];
+            // Process the latest candidate for largest contentful paint
+          });
+          observer.observe({entryTypes: ['largest-contentful-paint']});
+          </script>
+                      </div>
+                    </form>
+                    <!-- End Form -->
+          </div>
+        </div>
+      </div>
+    </div> 
+               
+  </main>
+  <!-- ========== END MAIN CONTENT ========== -->
+  <main id="logoutForm" style="display: none;"  class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100 w-full max-w-md mx-auto p-6">
+    <div class="mt-7 bg-white border border-gray-200 rounded-xl shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <div class="p-4 sm:p-7">
+        <div class="text-center">
+          <h4 class="block text-2xl font-bold text-gray-800 dark:text-white">Bienvenido,  Antonio Perez<span id="loggedInUser" hidden ></span></h4>    
+          
+        </div>
+
+        <div class="mt-5" >
+       
+          <!-- Form -->
+          
+       
+        
+            <div class="grid gap-y-4 dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+              <!-- Form Group -->
+              
+
+              <style>
+                * {
+                  margin: 0;
+                  padding: 0;
+                  box-sizing: border-box;
+                }
+              
+                .modalFull {
+                  position: fixed;
+                  top: 0;
+                  right: 0;
+                  bottom: 0;
+                  left: 0;
+                  z-index: 999;
+                  display: none;
+                  -webkit-overflow-scrolling: touch;
+                  outline: 0;
+                  overflow: hidden;
+                  background-color: initial;
+                }
+              
+                .closeModalFull {
+                  font-size: 50px;
+                  font-weight: 900;
+                  line-height: 1;
+                  color: #aaaaaa;
+                  text-shadow: 0 1px 0 #fff;
+                  filter: alpha(opacity=20);
+                  opacity: 0.5;
+                  position: fixed;
+                  top: 30px;
+                  right: 40px;
+                }
+              
+                .closeModalFull:focus,
+                .closeModalFull:hover {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                  filter: alpha(opacity=50);
+                  opacity: 0.5;
+                }
+              
+                .closeModalFull {
+                  -webkit-appearance: none;
+                  padding: 0;
+                  cursor: pointer;
+                  background-color: inherit;
+                  border: 0;
+                }
+              
+                .closeModalFull:hover,
+                .closeModalFull:focus {
+                  color: #000;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                .button {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .button svg {
+                margin-right: 8px; /* Ajusta el espacio entre el icono y el texto según tu preferencia */
+            }
+
+            .button span {
+                text-align: center;
+                width: 100%;
+                font-size: 1rem;
+            }
+
+              </style>
+              
+              <!-- Primer modal -->       
+              <button id="myBtnFull1" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              data-modal-target="modal1">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-report-money" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-12a2 2 0 0 0 -2 -2h-2" /><path d="M9 3m0 2a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v0a2 2 0 0 1 -2 2h-2a2 2 0 0 1 -2 -2z" /><path d="M14 11h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5" /><path d="M12 17v1m0 -8v1" /></svg>               
+                <span> Ver cotización</span>
+            </button>
+            
+             <button id="myBtnFull2" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              data-modal-target="modal2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                <span> Contacto</span>
+            </button>
+
+
+          
+
+
+              <div id="myModalFull1" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+                <span class="closeModalFull">&times;</span>
+                <iframe src="Propuesta-de-Diseño-Web-para-calendarios-planeta.html" name="iframe_a" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+              </div>
+              
+              
+              <!-- Segundo modal -->
+              <div id="myModalFull2" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+                <span class="closeModalFull">&times;</span>
+                <iframe src="formcontactplaneta.html" name="iframe_b" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+              </div>
+           
+
+             <!-- Tercer modal -->
+<button id="myBtnFull3" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+data-modal-target="modal3">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-file-text" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" /><path d="M9 9l1 0" /><path d="M9 13l6 0" /><path d="M9 17l6 0" /></svg>
+<span>Recolecta de información</span>
+</button>
+<div id="myModalFull3" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+<span class="closeModalFull">&times;</span>
+<iframe src="steps.html" name="iframe_c" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+</div>
+
+<!-- Cuarto modal -->
+<button id="myBtnFull4" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+data-modal-target="modal4">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+<span> Formas de pago</span>
+</button>
+<div id="myModalFull4" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+<span class="closeModalFull">&times;</span>
+<iframe src="pagos.html" name="iframe_d" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+</div>
+
+<!-- Quinto modal 
+<button id="myBtnFull5" class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+data-modal-target="modal5">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+<span> Contacto</span>
+</button>
+<div id="myModalFull5" class="modalFull dark:bg-slate-900 dark:bg-slate-900 bg-gray-100">
+<span class="closeModalFull">&times;</span>
+<iframe src="formulario-contacto.html" name="iframe_e" height="100%" width="100%" title="Iframe" allowfullscreen frameborder="0" style="border:0;" class="dark:bg-slate-900 dark:bg-slate-900 bg-gray-100"></iframe>
+</div>-->
+
+           
+              
+              <!-- svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-source-code" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14.5 4h2.5a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-10a3 3 0 0 1 -3 -3v-5" /><path d="M6 5l-2 2l2 2" /><path d="M10 9l2 -2l-2 -2" /></svg-->
+             
+              <script>
+                // Obtener los modales
+                var modal1 = document.getElementById("myModalFull1");
+                var modal2 = document.getElementById("myModalFull2");
+                var modal3 = document.getElementById("myModalFull3");
+                var modal4 = document.getElementById("myModalFull4");
+                var modal5 = document.getElementById("myModalFull5");
+            
+                // Obtener los botones que abren los modales
+                var btn1 = document.getElementById("myBtnFull1");
+                var btn2 = document.getElementById("myBtnFull2");
+                var btn3 = document.getElementById("myBtnFull3");
+                var btn4 = document.getElementById("myBtnFull4");
+                var btn5 = document.getElementById("myBtnFull5");
+            
+                // Obtener los elementos <span> que cierran los modales
+                var span1 = document.querySelector("#myModalFull1 .closeModalFull");
+                var span2 = document.querySelector("#myModalFull2 .closeModalFull");
+                var span3 = document.querySelector("#myModalFull3 .closeModalFull");
+                var span4 = document.querySelector("#myModalFull4 .closeModalFull");
+                var span5 = document.querySelector("#myModalFull5 .closeModalFull");
+            
+                // Función para abrir el primer modal
+                btn1.onclick = function() {
+                    modal1.style.display = "block";
+                };
+                // Función para cerrar el primer modal
+                span1.onclick = function() {
+                    modal1.style.display = "none";
+                };
+            
+                // Función para abrir el segundo modal
+                btn2.onclick = function() {
+                    modal2.style.display = "block";
+                };
+                // Función para cerrar el segundo modal
+                span2.onclick = function() {
+                    modal2.style.display = "none";
+                };
+            
+                // Función para abrir el tercer modal
+                btn3.onclick = function() {
+                    modal3.style.display = "block";
+                };
+                // Función para cerrar el tercer modal
+                span3.onclick = function() {
+                    modal3.style.display = "none";
+                };
+            
+                // Función para abrir el cuarto modal
+                btn4.onclick = function() {
+                    modal4.style.display = "block";
+                };
+                // Función para cerrar el cuarto modal
+                span4.onclick = function() {
+                    modal4.style.display = "none";
+                };
+            
+                // Función para abrir el quinto modal
+                btn5.onclick = function() {
+                    modal5.style.display = "block";
+                };
+                // Función para cerrar el quinto modal
+                span5.onclick = function() {
+                    modal5.style.display = "none";
+                };
+            
+                // Cuando se hace clic en cualquier parte fuera del modal, cerrarlo
+                window.onclick = function(event) {
+                    if (event.target == modal1) {
+                        modal1.style.display = "none";
+                    }
+                    if (event.target == modal2) {
+                        modal2.style.display = "none";
+                    }
+                    if (event.target == modal3) {
+                        modal3.style.display = "none";
+                    }
+                    if (event.target == modal4) {
+                        modal4.style.display = "none";
+                    }
+                    if (event.target == modal5) {
+                        modal5.style.display = "none";
+                    }
+                };
+            </script>
+
+              <!-- End Checkbox -->
+              <button onclick="logout()"   class="button modal-btn w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-gray-200 text-black hover:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-logout" width="35" height="35" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /><path d="M9 12h12l-3 -3" /><path d="M18 15l3 -3" /></svg>
+                <span> Cerrar sesión</span>
+            </button>
+               
+            </div>
+          </form>
+          <!-- End Form -->
+ </div>
+        </div>
+      </div>
+    </div> 
+        
+
+   
+   
+
+    
+  </main>
+<script>
+    // Datos de inicio de sesión
+    const username = "calendariosPlaneta2024";
+    const password = "Plaz4lgari%n";
+
+    // Evento de envío del formulario de inicio de sesión
+    document.getElementById("login").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evitar el envío del formulario
+        const enteredUsername = document.getElementById("username").value;
+        const enteredPassword = document.getElementById("password").value;
+        const rememberMe = document.getElementById("rememberMe").checked;
+
+        // Comprobar si las credenciales son válidas
+        if (enteredUsername === username && enteredPassword === password) {
+            if (rememberMe) {
+                localStorage.setItem("loggedIn", "true"); // Recordar la sesión en el almacenamiento local
+            } else {
+                sessionStorage.setItem("loggedIn", "true"); // No recordar la sesión al cerrar el navegador
+            }
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("logoutForm").style.display = "block";
+            document.getElementById("loggedInUser").innerText = enteredUsername;
+        } else {
+            alert("Usuario o password incorrecto!");
+        }
+    });
+
+    // Función para cerrar sesión
+    function logout() {
+        localStorage.removeItem("loggedIn");
+        sessionStorage.removeItem("loggedIn");
+        document.getElementById("loginForm").style.display = "block";
+        document.getElementById("logoutForm").style.display = "none";
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    }
+
+    // Comprobar si el usuario ya ha iniciado sesión anteriormente
+    window.onload = function() {
+        const loggedIn = localStorage.getItem("loggedIn") || sessionStorage.getItem("loggedIn");
+        if (loggedIn) {
+            document.getElementById("loginForm").style.display = "none";
+            document.getElementById("logoutForm").style.display = "block";
+            document.getElementById("loggedInUser").innerText = username;
+        }
+    };
+</script>  
+  <!-- <script src="https://preline.co/assets/js/hs.theme-appearance.js"></script> -->
+</body>
+  
+
+</html>

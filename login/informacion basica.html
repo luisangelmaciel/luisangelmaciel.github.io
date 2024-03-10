@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title>Información basica</title>    
+  <link href="tabler.min.css?1684106062" rel="stylesheet"/>
+  <link href="tabler-flags.min.css?1684106062" rel="stylesheet"/>
+  <link href="tabler-payments.min.css?1684106062" rel="stylesheet"/>
+  <link href="tabler-vendors.min.css?1684106062" rel="stylesheet"/>
+  <link href="demo.min.css?1684106062" rel="stylesheet"/>
+  <style>
+    @import url('https://rsms.me/inter/inter.css');
+    :root {
+      --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+    }
+    body {
+      font-feature-settings: "cv03", "cv04", "cv11";
+    }
+    
+		.is-hidden {
+			display: none !important;
+		}
+  </style>
+ 
+</head>
+<body >
+  <script src="demo-theme.min.js?1684106062"></script>
+  <div class="page">
+    <div class="page-wrapper">
+      <!-- Page header -->
+      <div class="page-header d-print-none">
+        <div class="container-xl">
+          <div class="row g-2 align-items-center">
+            <div class="col">
+              <h2 class="page-title">
+                Información básica
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Page body -->
+      <div class="page-body body-contact">
+        <div class="container-xl">
+          <div class="row row-cards">
+            <div class="col-md-6" id="complete-fomr">              
+                <div class="loading js-loading is-hidden">
+                  <div class="loading-spinnerc">
+                    <div class="loader"></div>
+                  </div>
+                </div>
+              <div class="card">
+                <form name="submit-to-google-sheet">
+                <div class="card-body">
+                  <h3 class="card-title">Información básica</h3>                                                             
+                  <div class="mb-3">
+                    <label class="form-label" for=" nombre">Nombre y apellido:</label>
+                    <input type="text" class="form-control" id="nombre" data-persist="nombre" name="nombre">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="email">Correo electrónico:</label>
+                    <input type="email" class="form-control" id="email" data-persist="email" name="email">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="telefono">Número de teléfono:</label>
+                    <input type="tel" class="form-control" id="telefono" data-persist="telefono" name="telefono">
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label" for="empresa">Nombre de la empresa:</label>
+                    <input type="text" class="form-control" id="empresa" data-persist="empresa" name="empresa">
+                  </div> 
+                  <input name="Site" type="text" value="CalendarioPlaneta" style="display:none">                       
+                </div>
+                <div class="card-footer">
+                  <div class="row align-items-center">
+                    <!-- div class="col">Learn more about <a href="#">Project ID</a></div-->
+                    <div class="btn-xbr">
+                      <button class="col-auto">
+                        <span class="default" type="submit">Salvar</span>
+                      </button>
+                    </div><br>                    
+                   
+                  </div>
+                </form>
+                  <style>
+                    .btn-xbr {
+                      --primary: #275EFE;
+                      --primary-dark: #2055EE;
+                      --primary-darkest: #133FC0;
+                      --input-placeholder: #A6ACCD;
+                      --input-text: #646B8C;
+                      --border-default: #E1E6F9;
+                      --border-active: #275EFE;
+                      --background: #fff;
+                      --button-text: #FFFFFF;
+                      --success: #275EFE;
+                      --trails: rgba(39, 94, 254, 0.15);
+                      display: flex;
+                      align-items: center;
+                      /*max-width: 300px;*/
+                      max-width: 100%;
+                      width: 100%;
+                      /*background: var(--background);*/
+                      /*box-shadow: inset 0 0 0 var(--border-width, 1px) var(--border, var(--border-default));*/
+                      border-radius: 9px;
+                      padding-right: 4px;
+                      transition: box-shadow 0.25s;
+                    }
+        
+                    .btn-xbr button {
+                      /*-webkit-appearance: none;*/
+                      background: none;
+                      outline: none;
+                      display: block;
+                      border: none;
+                      font-family: inherit;
+                      font-size: 14px;
+                      line-height: 24px;
+                      margin: 0;
+                    }
+        
+                    .btn-xbr button {
+                      --text-opacity: 1;
+                      --success-x: -12px;
+                      --success-stroke: 14px;
+                      --success-opacity: 0;
+                      --border-radius: 7px;
+                      --overflow: hidden;
+                      --x: 0px;
+                      --y: 0px;
+                      --rotate: 0deg;
+                      --plane-x: 0px;
+                      --plane-y: 0px;
+                      --plane-opacity: 1;
+                      --trails-stroke: 57px;
+                      --left-wing-background: var(--primary);
+                      --left-wing-first-x: 0%;
+                      --left-wing-first-y: 0%;
+                      --left-wing-second-x: 50%;
+                      --left-wing-second-y: 0%;
+                      --left-wing-third-x: 0%;
+                      --left-wing-third-y: 100%;
+                      --left-body-background: var(--primary);
+                      --left-body-first-x: 50%;
+                      --left-body-first-y: 0%;
+                      --left-body-second-x: 50%;
+                      --left-body-second-y: 100%;
+                      --left-body-third-x: 0%;
+                      --left-body-third-y: 100%;
+                      --right-wing-background: var(--primary);
+                      --right-wing-first-x: 50%;
+                      --right-wing-first-y: 0%;
+                      --right-wing-second-x: 100%;
+                      --right-wing-second-y: 0%;
+                      --right-wing-third-x: 100%;
+                      --right-wing-third-y: 100%;
+                      --right-body-background: var(--primary);
+                      --right-body-first-x: 50%;
+                      --right-body-first-y: 0%;
+                      --right-body-second-x: 50%;
+                      --right-body-second-y: 100%;
+                      --right-body-third-x: 100%;
+                      --right-body-third-y: 100%;
+                      position: relative;
+                      padding: 8px 0;
+                      min-width: 100px;
+                      text-align: center;
+                      font-weight: 600;
+                      opacity: var(--button-opacity, 0.5);
+                      /*cursor: var(--button-cursor, not-allowed);*/
+                      filter: var(--button-filter, grayscale(65%));
+                      color: var(--button-text);
+                      border-radius: var(--border-radius);
+                      transform: translateZ(0);
+                      transition: opacity 0.25s, filter 0.25s;
+                      -webkit-tap-highlight-color: transparent;
+                    }
+        
+                    .btn-xbr button:not(.active) {
+                      background: var(--primary);
+                    }
+        
+                    body {
+                      justify-content: center;
+                      align-items: center;
+                    }
+                  </style>                  
+                  </div>                  
+                  
+                </div>
+              </div>
+            </div>                  
+        </div>
+        <div class="container-xl js-success-message is-hidden">
+          <div class="row row-cards">
+            <div class="col-md-6 "><div class="card"><div class="mb-3"><br>
+          <label class=" form-label"> &nbsp; Mensaje enviado, muchas gracias.</label>
+          <label class="js-error-message is-hidden form-label">Ups, habemus un error al registrar, intentalo en otro momento, perdon, que pena!</label>
+          </div></div></div></div></div>
+          <a href="https://docs.google.com/spreadsheets/d/1dlDx4VjGWiMkFU92M5q5z56RvjGu1IKy9QPzIoIJZo8/edit#gid=0">
+            <!-- form-->
+          </a>
+          <script src="jquery.min.js"></script>
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzqv2DT6UZJVg63vkHdiCtY7XSGa3H3S-0K4SsEACR_7XkICwVIhuQmoY5eGQn8niAX/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const loading = document.querySelector('.js-loading')
+            const successMessage = document.querySelector('.js-success-message')
+            const errorMessage = document.querySelector('.js-error-message')
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              showLoadingIndicator()
+              fetch(scriptURL, {
+                  method: 'POST',
+                  body: new FormData(form)
+                })
+                .then(response => showSuccessMessage(response))
+                .catch(error => showErrorMessage(error))
+            })
+      
+            function showLoadingIndicator() {
+              form.classList.add('is-hidden')
+              loading.classList.remove('is-hidden')
+            }
+      
+            function showSuccessMessage(response) {
+              console.log('Success!', response)
+              setTimeout(() => {
+                successMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+              }, 100)
+            }
+      
+            function showErrorMessage(error) {
+              console.error('Error!', error.message)
+              setTimeout(() => {
+                errorMessage.classList.remove('is-hidden')
+                loading.classList.add('is-hidden')
+              }, 100)
+            }
+          </script>
+          <script>
+            /*
+        Paste this script into the 'Code.gs' tab in the Script Editor
+        For a detailed explanation of this file, view 'form-script-commented.js'
+        */
+            var sheetName = 'Sheet1'
+            var scriptProp = PropertiesService.getScriptProperties()
+      
+            function intialSetup() {
+              var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+              scriptProp.setProperty('key', activeSpreadsheet.getId())
+            }
+      
+            function doPost(e) {
+              var lock = LockService.getScriptLock()
+              lock.tryLock(10000)
+              try {
+                var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+                var sheet = doc.getSheetByName(sheetName)
+                var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+                var nextRow = sheet.getLastRow() + 1
+                var newRow = headers.map(function(header) {
+                  return header === 'timestamp' ? new Date() : e.parameter[header]
+                })
+                sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+                return ContentService
+                  .createTextOutput(JSON.stringify({
+                    'result': 'success',
+                    'row': nextRow
+                  }))
+                  .setMimeType(ContentService.MimeType.JSON)
+              } catch (e) {
+                return ContentService
+                  .createTextOutput(JSON.stringify({
+                    'result': 'error',
+                    'error': e
+                  }))
+                  .setMimeType(ContentService.MimeType.JSON)
+              } finally {
+                lock.releaseLock()
+              }
+            }
+            // The default sheet name is 'Sheet1'. To target a different sheet, update this variable.
+            var sheetName = 'Sheet1'
+            /*
+            Gets a property store that all users can access, but only within this script.
+            https://developers.google.com/apps-script/reference/properties/properties-service#getScriptProperties()
+            */
+            var scriptProp = PropertiesService.getScriptProperties()
+            /*
+            This is the initial setup function. It gets the active SpreadsheetApp ID and adds it to our PropertiesService.
+            https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#getactivespreadsheet
+            */
+            function setup() {
+              var doc = SpreadsheetApp.getActiveSpreadsheet()
+              scriptProp.setProperty('key', doc.getId())
+            }
+      
+            function doPost(e) {
+              /*
+              Gets a lock that prevents any user from concurrently running a section of code. A code section
+              guarded by a script lock cannot be executed simultaneously regardless of the identity of the user.
+              https://developers.google.com/apps-script/reference/lock/lock-service#getScriptLock()
+              */
+              var lock = LockService.getScriptLock()
+              /*
+              Attempts to acquire the lock, timing out with an exception after the provided number of milliseconds.
+              This method is the same as tryLock(timeoutInMillis) except that it throws an exception when the lock
+              could not be acquired instead of returning false.
+              https://developers.google.com/apps-script/reference/lock/lock#waitLock(Integer)
+              */
+              lock.waitLock(10000)
+              try {
+                /*
+                Opens the spreadsheet with the given ID. A spreadsheet ID can be extracted from its URL. For example,
+                the spreadsheet ID in the URL https://docs.google.com/spreadsheets/d/abc1234567/edit#gid=0 is "abc1234567".
+                https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet-app#openbyidid
+                */
+                var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+                /*
+                Returns a sheet with the given name. If multiple sheets have the same name,
+                the leftmost one is returned. Returns null if there is no sheet with the given name.
+                https://developers.google.com/apps-script/reference/spreadsheet/spreadsheet#getSheetByName(String)
+                */
+                var sheet = doc.getSheetByName(sheetName)
+                /*
+                Returns the range with the top left cell at the given coordinates, and with the given number of rows.
+                https://developers.google.com/apps-script/reference/spreadsheet/sheet#getRange(Integer,Integer)
+      
+                Then returns the position of the last column that has content.
+                https://developers.google.com/apps-script/reference/spreadsheet/sheet#getlastcolumn
+      
+                Then returns the rectangular grid of values for this range (a two-dimensional array of values, indexed by row, then by column.)
+                https://developers.google.com/apps-script/reference/spreadsheet/range#getValues()
+                */
+                var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+                // Gets the last row and then adds one
+                var nextRow = sheet.getLastRow() + 1
+                /*
+                Maps the headers array to a new array. If a header's value is 'timestamp' then it
+                returns a new Date() object, otherwise it returns the value of the matching URL parameter
+                https://developers.google.com/apps-script/guides/web
+                */
+                var newRow = headers.map(function(header) {
+                  return header === 'timestamp' ? new Date() : e.parameter[header]
+                })
+                /*
+                Gets a range from the next row to the end row based on how many items are in newRow
+                then sets the new values of the whole array at once.
+                https://developers.google.com/apps-script/reference/spreadsheet/range#setValues(Object)
+                */
+                sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+                /*
+                Return success results as JSON
+                https://developers.google.com/apps-script/reference/content/content-service
+                */
+                return ContentService
+                  .createTextOutput(JSON.stringify({
+                    'result': 'success',
+                    'row': nextRow
+                  }))
+                  .setMimeType(ContentService.MimeType.JSON)
+              }
+              /*
+              Return error results as JSON
+              https://developers.google.com/apps-script/reference/content/content-service
+              */
+              catch (e) {
+                return ContentService
+                  .createTextOutput(JSON.stringify({
+                    'result': 'error',
+                    'error': e
+                  }))
+                  .setMimeType(ContentService.MimeType.JSON)
+              } finally {
+                /*
+                Releases the lock, allowing other processes waiting on the lock to continue.
+                https://developers.google.com/apps-script/reference/lock/lock#releaseLock()
+                */
+                lock.releaseLock()
+              }
+            }
+          </script>
+      </div>
+    </div>    
+  </div>
+</div>
+<script>
+  document.documentElement.setAttribute('data-theme', 'default');
+  var field = document.querySelectorAll('[data-persist]')
+  for (i = 0; i < field.length; i++) {
+    var stored = localStorage.getItem(field[i].getAttribute('data-persist'))
+    if (stored) field[i].value = stored
+    field[i].addEventListener('input', function () {
+      localStorage.setItem(this.getAttribute('data-persist'), this.value)
+    })
+  }
+</script>
+<script src="EQCSS.min.js"></script>
+</body>
+<!-- Libs JS -->
+<script src="nouislider.min.js?1684106062" defer></script>
+<script src="litepicker.js?1684106062" defer></script>
+<script src="tom-select.base.min.js?1684106062" defer></script>
+<!-- Tabler Core -->
+<script src="tabler.min.js?1684106062" defer></script>
+<script src="demo.min.js?1684106062" defer></script>
+</body>
+</html>

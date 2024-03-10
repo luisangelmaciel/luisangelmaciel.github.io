@@ -14,7 +14,6 @@
     }        
     function mostrarInfo() {
       var blogText = document.getElementById("blog-text");
-      // Obtener el texto del blog
       var texto = blogText.value;
       var palabrasTotales = contarPalabrasTotales(texto);
       // Calcular el tiempo de lectura usando la función que ya tienes
@@ -26,32 +25,41 @@
 <body>
 
 <h1>Generador de Archivo Markdown</h1>
-<ul><li>Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal.   Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo. Redacta el Contenido del articulo de 400 palabras, incluye la palabra clave principal y palabras clave secundarias en todo el texto. Asegúrate de que el contenido sea original, libre de plagio y  de alta calidad, informativo y útil para los usuarios. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  Añade una o dos preguntas según consideres de pregunta frecuente con su respectivarespuesta. La pregunta debe contener de 40 a 60 caracteres. La respuesta de 120 a 150 caracteres o en caso de que fuera necesario para dar relavancia y precisión llega a 300 caracteres. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  El tema a desarrollar es: ¿Cuáles son las tendencias actuales en diseño de logos?</li>
+<ul><li><b>Original</b></li>
+    <li>Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal.   Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo. Redacta el Contenido del articulo de 400 palabras, incluye la palabra clave principal y palabras clave secundarias en todo el texto. Asegúrate de que el contenido sea original, libre de plagio y  de alta calidad, informativo y útil para los usuarios. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  Añade una o dos preguntas según consideres de pregunta frecuente con su respectivarespuesta. La pregunta debe contener de 40 a 60 caracteres. La respuesta de 120 a 150 caracteres o en caso de que fuera necesario para dar relavancia y precisión llega a 300 caracteres. Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen.  El tema a desarrollar es: ¿Cuáles son las tendencias actuales en diseño de logos?</li>
+    <li>Cree el artículo más inteligente para clasificar en Google. Escribe el artículo de blog de 950 palabras con encabezados H1, H2, H3, H4, H5 y H6 y subtítulos. Hazlo en listas con viñetas y negritas. Debe ser en tono FORMAL, el estilo de escritura INFORMATIVO/TECHNICAL, original, pero comprensible para el público general, libre de plagio y presentar de dos a tres preguntas frecuentes (FAQs) y una conclusión. El tema es sobre "5 ideas para atraer nuevos clientes a tu tienda de abarrotes". Incluye definiciones, ejemplos y consejos prácticos. <br>
+        Añade Schema JSON Question. Crea la meta description de 120 a 150 caracteres y 5 palabras clave usa estas pautas:<br>
+        La descripción debe ampliar el título y proporcionar un resumen breve y atractivo del contenido del texto. Debe contener al menos una palabra clave secundaria y animar al lector a hacer clic en el enlace. Las palabras clave deben ser relevantes para el tema y el propósito del texto. Deben reflejar las consultas de búsqueda que los usuarios potenciales podrían usar para encontrar tu texto. Debes usar al menos una palabra clave principal y dos o tres palabras clave secundarias.<br>
+        Crea un prompt para crear imágenes que ilustren el articulo, sugiere una url y alt.</li>
     <li></li>
+
+    <li><b>Reescribe</b></li>
+    <li>Reescribe y mejora el siguiente texto. en un artículo en español de al menos 1500 palabras con 4 encabezados y subtítulos, incluyendo encabezados H1, H2, H3, H4. Debe ser informativo, original, libre de plagio y presentar tres preguntas frecuentes (FAQs) y una conclusión.         Usa el metodo AIDA. Usa un tono informal. Incluye una introducción, summary, conclusión y finaliza con una llamada de acción. Crea un Título de 55 a 65 caracteres, Incluye la palabra clave principal. Incluye 5 palabras clave keywords. Sé atractivo y descriptivo. Añade la Meta descripción de 120 a 150 caracteres, Incluye la palabra clave principal. Sé atractivo y descriptivo.  Redacta un promt para ilustrar el articulo y proporciona un texto alternativo (alt text) que describa la imagen. Escribe 5 keywords que apoyen al SEO</li>
+    <li><b>Imagen</b></li>
+    <li>con colores cinematic vibran</li>
+    <li>(best quality, masterpiece, highest detail, highest quality, 8k ultra HD, highly detailed intricate)</li>
+    <li>crea una imagen de pikachu al estilo de Hieronymus Bosch . Incorpora toques de colores vibrantes como púrpura, verde esmeralda, dorado y plateado para resaltar elementos importantes y crear un aura mágica. estilo artístico Art Nouveau y simbolismo</li>
+    <li>crea una imagenen un fondo azul sólido. - A la izquierda, pon caricatura de Stitch con los ojos grandes y abiertos, y la boca abierta mostrando sus dientes afilados. - A la derecha, Stitch aparece sonriendo ampliamente con las manos en las mejillas; sus orejas están levantadas mostrando el texto "we love Stitch" entre ellas. - El personaje está en dos estados emocionales diferentes: sorprendido o asustado a la izquierda y feliz o encantado a la derecha.</li>
+    <li>Sun profile + Halftone pattern + editorial illustration of the memento morti + higly textured, genre defining mixed media collage painting + fringe absurdism + Award winning halftone pattern illustration + simple flowing shapes + subtle shadows + paper texture + minimalist color scheme + inspired by goku dragonball and Zdzisław Beksiński</li>
+    <li>Estilo, epic, cyberpunk, dark, in the style of Shel Silverstein, fine detail, --ar 9:16 --ar 16:9 --quality</li>
     <li></li>
     <li></li>
     <li></li>
     <li></li></ul>
 <section>
     <form id="markdownForm">
-        <label for="title">Título:</label><input type="text" id="title" name="title" >
+        <label for="title">title:</label><input type="text" id="title" name="title" >
 
-        <label for="description">Descripción:</label><input type="text" id="description" name="description" >
+        <label for="description">description:</label><input type="text" id="description" name="description" >
 
-        <label for="keywords">Palabras Clave:</label>
-        <input type="text" id="keywords" name="keywords" >
+        <label for="keywords">keywords:</label><input type="text" id="keywords" name="keywords" >
+        <label for="tags">tags:</label><input type="text" id="tags" name="tags" >
 
-        <label for="url">URL:</label>
-        <input type="text" id="url" name="url" >
+        <label for="url">URL:</label><input type="text" id="url" name="url" >
 
-        <label for="ogImage" class="sr-only">ogImage:</label>
-        <input type="text" id="ogImage" name="ogImage" readonly class="sr-only">
+        <label for="ogImage" class="sr-only">ogImage:</label><input type="text" id="ogImage" name="ogImage" readonly class="sr-only">
 
-        <label for="ogImageAlt">ogImageAlt:</label>
-        <input type="text" id="ogImageAlt" name="ogImageAlt" >
-
-        <label for="tags">Tags:</label>
-        <input type="text" id="tags" name="tags" >
+        <label for="ogImageAlt">ogImageAlt:</label><input type="text" id="ogImageAlt" name="ogImageAlt" >     
 
         <label for="dateCreated" class="sr-only">Fecha de Creación:</label>
         <input type="text" id="dateCreated" name="dateCreated" readonly class="sr-only">
@@ -65,54 +73,39 @@
             <option value="layouts/book.njk">Book</option>
             <option value="layouts/product.njk">Product</option>
             <option value="layouts/articleProduct.njk">Article Product</option>
+            <option value="layouts/base.njk">Base</option>
         </select><br>
 
         <label for="datePublished" class="sr-only">Fecha de publicación:</label><input type="text" id="datePublished" name="datePublished" class="sr-only">
         <hr>
-        <label for="height" class="sr-only">Altura:</label>
-        <input type="text" id="height" name="height" class="sr-only" value="1200px">
+        <label for="height" class="sr-only">Altura:</label><input type="text" id="height" name="height" class="sr-only" value="1200px">
 
-        <label for="width" class="sr-only">Anchura:</label>
-        <input type="text" id="width" name="width" class="sr-only" value="650px">
+        <label for="width" class="sr-only">Anchura:</label><input type="text" id="width" name="width" class="sr-only" value="650px">
 
-        <label for="heightArticle" class="sr-only">Altura del artículo:</label>
-        <input type="text" id="heightArticle" name="heightArticle"  class="sr-only" value="150px">
+        <label for="heightArticle" class="sr-only">Altura del artículo:</label><input type="text" id="heightArticle" name="heightArticle"  class="sr-only" value="150px">
 
-        <label for="widthArticle" class="sr-only">Anchura del artículo:</label>
-        <input type="text" id="widthArticle" name="widthArticle"  class="sr-only" value="150px">
+        <label for="widthArticle" class="sr-only">Anchura del artículo:</label><input type="text" id="widthArticle" name="widthArticle"  class="sr-only" value="150px">
 
-        <label for="img01">img01:</label>
-        <input type="text" id="img01" name="img01">
+        <label for="img01">img01:</label><input type="text" id="img01" name="img01"><label for="altImg01">altImg01:</label><input type="text" id="altImg01" name="altImg01">
 
-        <label for="altImg01">altImg01:</label>
-        <input type="text" id="altImg01" name="altImg01">
+        <label for="texto01">texto01:</label><input type="text" id="texto01" name="texto01">
 
-        <label for="texto01">texto01:</label>
-        <input type="text" id="texto01" name="texto01">
+        <label for="img02">img02:</label><input type="text" id="img02" name="img02">
 
-        <label for="img02">img02:</label>
-        <input type="text" id="img02" name="img02">
+        <label for="altImg02">altImg02:</label><input type="text" id="altImg02" name="altImg02">
 
-        <label for="altImg02">altImg02:</label>
-        <input type="text" id="altImg02" name="altImg02">
+        <label for="texto02">texto02:</label><input type="text" id="texto02" name="texto02">
 
-        <label for="texto02">texto02:</label>
-        <input type="text" id="texto02" name="texto02">
+        <label for="img03">img03:</label><input type="text" id="img03" name="img03">
 
-        <label for="img03">img03:</label>
-        <input type="text" id="img03" name="img03">
+        <label for="altImg03">altImg03:</label><input type="text" id="altImg03" name="altImg03">
 
-        <label for="altImg03">altImg03:</label>
-        <input type="text" id="altImg03" name="altImg03">
-
-        <label for="texto03">texto03:</label>
-        <input type="text" id="texto03" name="texto03">
+        <label for="texto03">texto03:</label><input type="text" id="texto03" name="texto03">
         <hr>
         <label for="question">Pregunta:</label>
         <input type="text" id="question" name="question">
 
-        <label for="text">Texto:</label>
-        <input  type="text" id="text" name="text" >
+        <label for="text">Texto:</label><input  type="text" id="text" name="text" >
 
         <label for="question2">Pregunta2:</label>
         <input type="text" id="question2" name="question">
@@ -120,8 +113,7 @@
         <label for="text2">Texto2:</label>
         <input  type="text" id="text2" name="text" >
 
-        <label for="entrada">Entrada:</label>
-        <textarea id="entrada" name="entrada" rows="4" cols="10" ></textarea>
+        <label for="entrada">Entrada:</label><textarea id="entrada" name="entrada" rows="10" cols="10" ></textarea>
 
         <div id="blog"><label for="blog-text">Contenido del blog:</label><input type="text" id="blog-text" name="blog-text" oninput="mostrarInfo()"></div>
 
@@ -130,8 +122,7 @@
         <label for="totalDePalabras">totalDePalabras:</label>
         <input type="text" id="totalDePalabras" name="totalDePalabras">
 
-        <label for="tiempoDeLectura">tiempoDeLectura:</label>
-        <input type="text" id="tiempoDeLectura" name="tiempoDeLectura">
+        <label for="tiempoDeLectura">tiempoDeLectura:</label><input type="text" id="tiempoDeLectura" name="tiempoDeLectura">
 
         <button type="button" onclick="generarMarkdown()">Generar Archivo Markdown</button>
     </form>
@@ -151,18 +142,22 @@
             var offsetString = (offset >= 0 ? '-' : '+') +
                 ('0' + offsetHours).slice(-2) + ':' +
                 ('0' + offsetMinutes).slice(-2);
-            return year + '-' + month + '-' + day + 'T' + hours + ':' + minutes + ':' + seconds + offsetString;
-        }
+            return '"' + year + '-' + month + '-' + day + 'T' + hours + ':' + minutes + ':' + seconds + offsetString + '"';}
 
         function generarMarkdown() {
             var title = document.getElementById('title').value;
             var description = document.getElementById('description').value;
             var keywords = document.getElementById('keywords').value;
             var url = document.getElementById('url').value.toLowerCase().replace(/\s+/g, '-'); // Convertir a minúsculas y reemplazar espacios con "-"
-            var ogImage = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '.webp"';  // Añadir ./ al principio y .webp al final
+            var ogImage = 'https://articulospromocionales.vercel.app/img/002/27/' + url + '.webp';  // Añadir ./ al principio y .webp al final
             document.getElementById('ogImage').value = ogImage;
             var ogImageAlt = document.getElementById('ogImageAlt').value;
-            var tags = document.getElementById('tags').value;
+           
+            var tagsInput = document.getElementById('tags').value;
+            var tagsArray = tagsInput.split(",").map(tag => tag.trim()); // Dividir y limpiar las etiquetas
+            var tagsMarkdown = tagsArray.map(tag => `- ${tag}`).join('\n'); // Formatear las etiquetas en Markdown
+
+
             var dateCreated = getCurrentDateTime();
             document.getElementById('dateCreated').value = dateCreated;
             var RevisitAfter = document.getElementById('RevisitAfter').value;
@@ -191,34 +186,36 @@
             var tiempoDeLectura = calcularTiempoDeLectura(entrada); // Calcular el tiempo de lectura
 
             var url = document.getElementById('url').value.toLowerCase().replace(/\s+/g, '-'); // Convertir a minúsculas y reemplazar espacios con "-"
-            var img01Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2025' + '.webp"';
-            var img02Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2026.webp"';
-            var img03Value = '"https://articulospromocionales.vercel.app/img/02/22/' + url + '-2027.webp"';
+            var img01Value = '"https://articulospromocionales.vercel.app/img/002/27/' + img01 + '-2025' + '.webp"';
+            var img02Value = '"https://articulospromocionales.vercel.app/img/002/27/' + img02 + '-2026.webp"';
+            var img03Value = '"https://articulospromocionales.vercel.app/img/002/27/' + img03 + '-2027.webp"';
 
             // Crear el contenido Markdown
             var contenidoMarkdown = '---\n';
             contenidoMarkdown += 'title: ' + '"' + title + '"' + '\n';
             contenidoMarkdown += 'description: ' + '"' + description + '"' + '\n';
             contenidoMarkdown += 'keywords: ' + '"' + keywords + '"' + '\n';
-            contenidoMarkdown += 'url: ' + url + '\n';
-            contenidoMarkdown += 'permalink: ' + url + '\n';
+            contenidoMarkdown += 'url: ' + '"' + url + '"' + '\n';
+            contenidoMarkdown += 'permalink: ' + '"' + url + '"' + '\n';
+            contenidoMarkdown += 'tags:\n' + tagsMarkdown + '\n'; // Agregar las etiquetas formateadas al contenido Markdown
             
-            contenidoMarkdown += 'ogImage : ' + '"' + ogImage  + '"' + '\n';
-            contenidoMarkdown += 'ogImageAlt: ' + ogImageAlt + '\n';
-            contenidoMarkdown += 'tags: ' + tags + '\n';
-            contenidoMarkdown += 'date: ' + dateCreated + '\n';
-            
-            contenidoMarkdown += 'dateCreated: ' + '"' + dateCreated + '"' + '\n';
-            contenidoMarkdown += 'dateModified: ' + '"' + dateModified + '"' + '\n';
-            contenidoMarkdown += 'RevisitAfter: ' + '"' + RevisitAfter + '"' + '\n';
-            contenidoMarkdown += 'layout: ' + Layout + '\n';
-            contenidoMarkdown += 'datePublished: ' + '"' + dateCreated + '"' + '\n';  // cambiado ver si si o si no provicionalmente
-            contenidoMarkdown += 'fechaFormateada: \n'; // agregado provicionalmente
+            contenidoMarkdown += 'ogImage: ' + '"' + ogImage  + '"' + '\n';
+            contenidoMarkdown += 'ogImageAlt: ' + '"' + ogImageAlt  + '"' + '\n';            
+
+            contenidoMarkdown += 'date: ' + dateCreated + '\n';            
+            contenidoMarkdown += 'dateCreated: '  + dateCreated +  '\n';
+            contenidoMarkdown += 'dateModified: ' +  dateModified + '\n';
+            contenidoMarkdown += 'RevisitAfter: ' + '"' + RevisitAfter  + '"' + '\n';         
+            contenidoMarkdown += 'datePublished: ' +  dateCreated +  '\n';
+            contenidoMarkdown += 'fechaFormateada: ' + '" "' + '\n';
+            contenidoMarkdown += ' \n';             
+
             contenidoMarkdown += 'dataTimestamp: \n'; // agregado provicionalmente
+            contenidoMarkdown += 'layout: ' + Layout + '\n';
             contenidoMarkdown += '\n';
             contenidoMarkdown += 'height: ' + '"' + height + '"' + '\n';
-            contenidoMarkdown += 'width: ' + '"' + width + '"' + '\n';  // cambiado ver si si o si no provicionalmente
-            contenidoMarkdown += 'dataAspectratio: "16/9"' + '\n';  // cambiado ver si si o si no provicionalmente   ="16/9
+            contenidoMarkdown += 'width: ' + '"' + width + '"' + '\n';  
+            contenidoMarkdown += 'dataAspectratio: "16/9"' + '\n';  
             contenidoMarkdown += 'heightArticle: ' + heightArticle + '\n';
             contenidoMarkdown += 'widthArticle: ' + widthArticle + '\n';
             contenidoMarkdown += 'img01: ' + img01Value + '\n';
@@ -230,10 +227,11 @@
             contenidoMarkdown += 'img03: ' + img03Value + '\n';
             contenidoMarkdown += 'altImg03: ' + altImg03 + '\n';
             contenidoMarkdown += 'texto03: ' + texto03 + '\n';
+
             contenidoMarkdown += 'question: ' + question + '\n';
             contenidoMarkdown += 'text: ' + text + '\n';
-            contenidoMarkdown += 'question2: ' + question + '\n';
-            contenidoMarkdown += 'text2: ' + text + '\n';
+            contenidoMarkdown += 'question2: ' + question2 + '\n';
+            contenidoMarkdown += 'text2: ' + '"' + text2 + '"' + '\n';
             contenidoMarkdown += '\n';
 
             contenidoMarkdown += 'totalDePalabras: ' + totalDePalabras + '\n';
@@ -243,17 +241,20 @@
             contenidoMarkdown += '<picture><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}"></picture>\n\n';
             contenidoMarkdown += '<p> Última modificación: <time itemprop="dateModified" datetime="{{dateModified}}" data-timestamp="{{data-timestamp}}" title="Fecha de última modificación" >{{fechaFormateada}}</time></p> ';
             contenidoMarkdown += entrada;
-            contenidoMarkdown += '\n\n';
+            contenidoMarkdown += '\n\n';        
             contenidoMarkdown += '<picture><img src="{{img01}}" alt="{{altImg01}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<picture><img src="{{img02}}" alt="{{altImg02}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<picture><img src="{{img03}}" alt="{{altImg03}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
-            contenidoMarkdown += '<figure><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}" data-aspectratio={{dataAspectratio}} class="image lazyload"   data-srcset="{{ogImage}} 1280w, {{ogImage}} 640w"  data-sizes="(max-width: 640px) 100vw, 50vw"><figcaption>{{ogImageAlt}}</figcaption></figure>';
-                             
+            contenidoMarkdown += '<figure><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}" data-aspectratio={{dataAspectratio}} class="image lazyload"   data-srcset="{{ogImage}} 1280w, {{ogImage}} 640w"  data-sizes="(max-width: 640px) 100vw, 50vw"><figcaption>{{ogImageAlt}}</figcaption></figure>\n\n';
+            contenidoMarkdown += '<a href="" class="sr-only></a>\n';
+            contenidoMarkdown += '<a href="" class="sr-only></a>\n';
+            contenidoMarkdown += '<a href="" class="sr-only></a>\n';
+            contenidoMarkdown += '<div itemscope itemtype="http://schema.org/ImageGallery">\n';
+            contenidoMarkdown += '<figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="{{ogImage}}" itemprop="contentUrl" data-size="150x150"><img src="{{ogImage}}" itemprop="thumbnail" alt="{{ogImageAlt}}" /></a><figcaption itemprop="caption description">{{ogImageAlt}}</figcaption></figure> ';
+            contenidoMarkdown += '</div>';              
+
             document.getElementById('totalDePalabras').value = totalDePalabras; document.getElementById('tiempoDeLectura').value = tiempoDeLectura;
             var blob = new Blob([contenidoMarkdown], { type: 'text/markdown' });
-            var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();
-        }
+            var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();}
     </script><script>document.addEventListener("DOMContentLoaded", function() {mostrarInfo();});</script>
-</section>
-</body>
-</html>
+</section></body></html>
