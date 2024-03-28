@@ -197,6 +197,7 @@
             contenidoMarkdown += 'keywords: ' + '"' + keywords + '"' + '\n';
             contenidoMarkdown += 'url: ' + '"' + url + '"' + '\n';
             contenidoMarkdown += 'permalink: ' + '"' + url + '"' + '\n';
+            contenidoMarkdown += 'permalink: ' + '/{{ title | slugify }}/' + '\n';
             contenidoMarkdown += 'tags:\n' + tagsMarkdown + '\n'; // Agregar las etiquetas formateadas al contenido Markdown
             
             contenidoMarkdown += 'ogImage: ' + '"' + ogImage  + '"' + '\n';
@@ -258,3 +259,4 @@
             var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();}
     </script><script>document.addEventListener("DOMContentLoaded", function() {mostrarInfo();});</script>
 </section></body></html>
+
