@@ -353,14 +353,15 @@
             contenidoMarkdown += 'totalDePalabras: ' + totalDePalabras + '\n';
             contenidoMarkdown += 'tiempoDeLectura: ' + tiempoDeLectura + '\n';
 
-            contenidoMarkdown += '---\n\n';
-            contenidoMarkdown += '<picture><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}"></picture>\n\n';
-            contenidoMarkdown += '<p> Última modificación: <time itemprop="dateModified" datetime="{{dateModified}}" data-timestamp="{{data-timestamp}}" title="Fecha de última modificación" >{{fechaFormateada}}</time></p>\n';
+            contenidoMarkdown += '---\n\n';          
             contenidoMarkdown += entrada;
             contenidoMarkdown += '\n\n';
             contenidoMarkdown += '<main>\n';
-            contenidoMarkdown += '<main>\n';
-
+            contenidoMarkdown += '<article itemscope itemtype="https://schema.org/Article">\n';
+            contenidoMarkdown += '<h2 itemprop="headline">{{title}}</h2>\n';
+            contenidoMarkdown += '<p itemprop="articleBody">{{parrafo1}}</p>\n';            
+            contenidoMarkdown += '<picture><img src="{{ogImage}}" alt="{{ogImageAlt}}" width="{{width}}" height="{{height}}"></picture>\n\n';
+            contenidoMarkdown += '<p> Última modificación: <time itemprop="dateModified" datetime="{{dateModified}}" data-timestamp="{{data-timestamp}}" title="Fecha de última modificación" >{{fechaFormateada}}</time></p>\n';
             contenidoMarkdown += '<div itemscope itemtype="http://schema.org/ImageGallery">\n';
             contenidoMarkdown += '<picture><img src="{{img01}}" alt="{{altImg01}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
             contenidoMarkdown += '<picture><img src="{{img02}}" alt="{{altImg02}}" width="{{widthArticle}}" height="{{heightArticle}}" loading="lazy"></picture>\n\n';
@@ -371,7 +372,18 @@
             contenidoMarkdown += '<a href="" class="sr-only"></a>\n';
             contenidoMarkdown += '<a href="" class="sr-only"></a>\n\n';
             contenidoMarkdown += '<div itemscope itemtype="http://schema.org/ImageGallery"><figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject"><a href="{{ogImage}}" itemprop="contentUrl" data-size="150x150"><img src="{{ogImage}}" itemprop="thumbnail" alt="{{ogImageAlt}}" /></a><figcaption itemprop="caption description">{{ogImageAlt}}</figcaption></figure></div>\n\n';
-            contenidoMarkdown += ' </main>';
+            contenidoMarkdown += '</article>\n';
+            contenidoMarkdown += '</main>\n';
+            contenidoMarkdown += '<footer>\n';
+            contenidoMarkdown += '<h3>FAQ</h3>\n';
+            contenidoMarkdown += '<ul>\n';
+            contenidoMarkdown += '<li itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">\n';
+            contenidoMarkdown += '<h4 itemprop="name">{{question}}</h4>\n';
+            contenidoMarkdown += '<p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">{{respuesta}}</span></p>\n';
+            contenidoMarkdown += '</li>\n';
+            contenidoMarkdown += '</ul>\n';
+            contenidoMarkdown += '</footer>';
+            
             document.getElementById('totalDePalabras').value = totalDePalabras; document.getElementById('tiempoDeLectura').value = tiempoDeLectura;
             var blob = new Blob([contenidoMarkdown], { type: 'text/markdown' });
             var a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = url + '.md'; a.click();}
@@ -379,26 +391,24 @@
 </section></body></html>
 
 
+<figure class="snip1200 ">
+  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample31.jpg" alt="sq-sample31" />
+  <figcaption>
+    <p>The inside of my head was exploding with fireworks. Fortunately, my last thought turned out the lights
+      when it left.</p>
+    <div class="heading">
+      <h2>My<span> Work</span></h2>
+    </div>
+  </figcaption>
+  <a href="#"></a>
+</figure>
+  
+    
+    
 
-  <article itemscope itemtype="https://schema.org/Article">
-    <h2 itemprop="headline">{{title}}</h2>
-    <p itemprop="articleBody">{{parrafo1}}</p>
-    <ul>
-      <li>{{punto1}}</li>
-      <li>{{punto1}}</li>
-    </ul>
-    <p>{{conclusion}}</p>
-  </article>
+  
  
-  <footer>
-  <h3>FAQ</h3>
-  <ul>
-    <li itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
-      <h4 itemprop="name">{{question}}</h4>
-      <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">{{respuesta}}</span></p>
-    </li>
-  </ul>
-  </footer>
+ 
 
 
 
@@ -466,3 +476,198 @@ https://www.bing.com/images/create/one-beer3a-parodia-de-heineken-con-luffy-sost
 
 Crear una imagen de fondo negro con el nombre "Dafne" escrito en letras doradas cursivas en el centro. Añadir un sutil resplandor mágico alrededor del nombre y una varita mágica dorada flotando en la esquina superior izquierda. En la esquina inferior derecha, un pequeño símbolo de la casa Gryffindor. Decorar el nombre con un marco floral dorado y finas líneas doradas que emanan de él. En la parte superior, una representación dorada de la carta del tarot "La Emperatriz". En la parte inferior, una baraja de tarot dorada cerrada con un lazo dorado. Usar un efecto de viñeta y una paleta de colores limitada a negro, dorado y blanco.
 https://www.bing.com/images/create/crear-una-imagen-de-fondo-negro-con-el-nombre-22daf/1-65c03f162d304c2397791e37bf943673?id=DPD65%2bLb3M2J5LHlOgJqUg%3d%3d&view=detailv2&idpp=genimg&idpclose=1&FORM=SYDBIC
+
+
+
+
+
+
+
+
+Título del Artículo: “”
+
+Objetivo del Artículo: Crear un artículo de blog que sea informativo y atractivo, 
+centrado en enseñar a los lectores cómo realizar una tirada de relación sentimental en el tarot. 
+El artículo debe ser inclusivo y original, 
+y debe generar confianza en los lectores para que se sientan capaces de interpretar el tarot por sí mismos.
+
+Especificaciones del Artículo:
+
+Idioma: Español.
+Estilo de Escritura: Formal e informativo, con un lenguaje inclusivo y ejemplos claros.
+Estructura del Artículo:
+Introducción:  Empieza con una pregunta. Presentar el tema y su importancia.
+Desarrollo: Usar encabezados jerárquicos (H1, H2, H3, H4) y listas con viñetas.
+Puntos Clave: Resaltar en negritas.
+Preguntas Frecuentes (FAQs): Incluir al menos dos.
+Conclusión: Resumir los puntos principales y animar a la acción.
+Longitud: Máximo de 1500 palabras.
+Contenido Requerido: Definiciones, metodología, sugerencias y consejos prácticos.
+Optimización SEO: Utilizar palabras clave relevantes y seguir las mejores prácticas de SEO.
+Originalidad: El contenido debe ser único y libre de plagio.
+Meta Description: Redactar una descripción breve que resuma el artículo y contenga palabras clave para motivar al lector a hacer clic en el enlace.
+Agrega las palabras Clave: Principal y Secundarias: 
+Sugiere una Descripción para crear una ilustración para el articulo con su respectiva 
+Sugerencia de URL y Texto Alternativo (alt).
+Incluir la palabra clave principal y secundarias en los títulos y subtítulos.
+Añadir meta etiquetas como ‘keywords’ para especificar las palabras clave del artículo.
+Incorporar enlaces internos a otros artículos relevantes y enlaces externos a fuentes de autoridad.
+Usar <strong> y <em> para resaltar palabras o frases importantes.
+Asegurarse de que el texto alternativo sea descriptivo y contenga palabras clave.
+Utilizar encabezados de manera jerárquica y lógica para estructurar el contenido.
+
+Mejora el siguiente texto, Write It in the First Person, use inclusive language and end with a call to action:
+
+Reescribe, y mejora el siguiente articulo. Usa lenguaje inclusivo, usa un tono informal. Imagina lo va a leer un joven universitario y un dueño de negocio. 
+
+
+
+---
+Crea el titulo que sea pegadizos para despertar el interés del lector de 55 a 65 caracteres, description de 120 a 150 caracteres y palabras clave usa estas pautas: 
+
+- El título debe ser claro, conciso y atractivo. Debe resumir el tema principal del texto y contener la palabra clave principal.
+- La descripción debe ampliar el título y proporcionar un resumen breve y atractivo del contenido del texto. Debe contener al menos una palabra clave secundaria y animar al lector a hacer clic en el enlace.
+- Las palabras clave deben ser relevantes para el tema y el propósito del texto. Deben reflejar las consultas de búsqueda que los usuarios potenciales podrían usar para encontrar tu texto. Debes usar al menos una palabra clave principal y dos o tres palabras clave secundarias.
+
+Finalmente añade los microdatos y meta etiquetas html para seo y el schema json question, article e imagen
+
+---
+cree un esquema para un artículo de 2000 palabras con la palabra clave "Mejores indicaciones de SEO 2024" según los 10 resultados principales de Google.
+Incluya todos los títulos relevantes posibles. Mantenga alta la densidad de palabras clave de los títulos.
+Para cada sección del esquema, incluya el recuento de palabras.
+Incluya también la sección de preguntas frecuentes en el esquema, ya que las personas también solicitan la palabra clave en la sección de Google.
+Este esquema debe ser muy detallado y completo, para que pueda crear un artículo de 2000 palabras a partir de él.
+Generar una larga lista de palabras clave LSI y NLP relacionadas con mi palabra clave. Incluya también cualquier otra palabra relacionada con la palabra clave.
+Dame una lista de 3 enlaces externos relevantes para incluir y el texto de anclaje recomendado. Asegúrate de que no sean artículos de la competencia. 
+Divida el esquema en la parte 1 y la parte 2.
+---
+User
+Reescribe y mejora el siguiente texto. Usa un tono informal. Incluye una introducción, summary, conclusión y finaliza con una llamada de acción.
+---
+
+Write a detailed content summary for how many characters are suggested for meta title seo and meta description seo in html in 2024. Incorporate main keywords, extended keywords, a heading structure, and topic notes. Next, create recommended title tags and meta descriptions, adhering to the 55 and 115 character limits respectively. Afterwards, provide some content under each subheading. Develop each bullet point listed with a concise and clear explanation of how to execute or apply each step. Organize all this material in a well-structured blog article in Latin Spanish, Mexico.
+
+---
+User
+hola, me ayudas a revisar el texto que este bien de ortografía y redacción. Por favor humaniza el texto, haz que suene fluido y super natural. Desde ya, Muchas gracias!
+---
+revisa este articulo, dale estructura para que tenga coherencia.  añade las etiquetas html metadatos, datos enrtiquecidos para su posicionamiento en seo. añade em y strong donde consideres es importante. agrega seccion para ilustrar con su alt, url recomendable. 
+--
+User
+revisa este articulo, dale estructura para que tenga coherencia.  añade los titulos y subtitulos segun correspondan, añade  las etiquetas html metadatos, datos enrtiquecidos para su posicionamiento en seo. añade em y strong donde consideres es importante. agrega seccion para ilustrar con su alt, url recomendable.  inserta las referencias externas  donde correspondan. Empieza con untra intrioducción de lo que se vera en el articulo, y una conclusión. 
+
+
+
+- ¿Qué le dice un té a un café?
+- No sé, ¿qué?
+- ¡Tienes una personalidad tan fuerte que me haces temblar!
+
+- ¿Qué le dice un vaso de leche a un chocolate caliente?
+- No sé, ¿qué?
+- ¡Juntos somos la pareja perfecta para una noche fría!
+
+- ¿Qué le dice una taza de café a otra?
+- No sé, ¿qué?
+- ¡Vamos a darle un sorbo a la vida!
+
+- ¿Qué le dice un vaso de agua a un vaso de jugo?
+- No sé, ¿qué?
+- ¡Eres tan dulce que me das diabetes!
+
+- ¿Qué le dice una botella de cerveza a otra?
+- No sé, ¿qué?
+- ¡Salud por nuestra amistad espumosa!
+---
+
+que recomendaciones tienes para mejorar el contenido del articulo y sea optimizada para SEO y con un enfoque más atractivo e informativo.+++---+++
+
+
+
+revisa la ortografia, gramatica y redacción, sugiere tambien las mejoras para el promt siguiente: 
+
+escribe un guion de ventas persuasivo.
+El mensaje va dirigido para pequeños negocios de belleza y consultores profesionales de belleza como aplicación de uñas, pestañas postizas, mascarillas rejuvenecedoras etc.
+Ofrezco tarjetas de presentacion personalizadas don el plus que me diferencia de otros diseñadores e impresores es que es entrega a domicilio, asesoria de elaboración del contenido de la tarjeta, creación de inonografia, logo, estrategias digitales como el qr para reservar citas, qr con formularios de reservación para citas. Es decir no solo les hago su tarjeta de presentación, si no tambien toda una estrategia de mercadotecnia con una tarjeta de presentación. 
+En caso de que ya tengan un diseño, puedo imprimir su diseño y ya.
+Como debe ser la estructura de ese guin de ventas, que storytelling usar, que llamados de acción, que tecnicas de venta utilizar o ganchos de dolor, urgencia, proifesionalismo y autenticidad se deben usar para ese sector de dueños de negocios de belleza y consultores de belleza. 
+
+-
+
+
+
+Para escribir un artículo para un producto de artículos personalizados, mi tienda está  la ciudad de México y también podemos hacer envíos a toda la república, que recomiendas  sea la mejor forma de hacerlo.
+
+
+  <article itemscope itemtype="https://schema.org/Article">
+      <h2 itemprop="headline">¿Por qué es importante el SEO para mi negocio?</h2>
+      <p itemprop="articleBody">El SEO es fundamental para aumentar la visibilidad y el tráfico de tu sitio web, lo que puede traducirse en más clientes potenciales y mayores oportunidades de venta.</p>
+    </article>
+  </main>
+  <footer>
+    <h3>Preguntas Frecuentes sobre SEO</h3>
+    <ul>
+      <li itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <h4 itemprop="name">¿Cuál es la diferencia entre SEO y SEM?</h4>
+        <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">El SEO se enfoca en obtener tráfico orgánico a través de los motores de búsqueda, mientras que el SEM utiliza estrategias de pago para obtener visibilidad en los resultados de búsqueda.</span></p>
+      </li>
+      <li itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+        <h4 itemprop="name">¿Cómo puedo medir el éxito de mi estrategia de SEO?</h4>
+        <p itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer"><span itemprop="text">Puedes medir el éxito de tu estrategia de SEO mediante métricas como el tráfico orgánico, la posición en los resultados de búsqueda y las conversiones generadas a través de búsquedas orgánicas.</span></p>
+      </li>
+
+
+      agrega el codigo html,  links, metadatos, metaequetas seo schema json segun se adapte el siguient texto:
+
+
+
+
+
+
+
+
+
+
+
+
+
+      Puedes imprimir una taza mágica personalizada en varios lugares que ofrecen este servicio. Aquí tienes algunas opciones:
+
+- **Tazas Mágicas**: Ofrecen un servicio completo para personalizar tu taza mágica, desde la selección del producto hasta la impresión de tu diseño, imagen, texto o fotografía. Puedes contactarlos y realizar una cotización para tu producto personalizado¹.
+
+- **Personalizados GDL**: Disfruta de tazas mágicas personalizadas con el diseño que elijas. Hacen envíos a todo México y puedes cotizar las tazas mágicas con diferentes temáticas y personalizaciones².
+
+- **Colibrí Print México**: Te permite enviar tu foto, texto, imagen, logo o diseño y prometen tener tu taza personalizada lista en menos de 24 horas, con entrega en el domicilio que indiques⁴.
+
+- **Fotoprix**: Crea tazas mágicas personalizadas con tus fotos. Las fotos impresas aparecen al echar líquido caliente dentro de la taza⁵.
+
+Estas son solo algunas de las muchas opciones disponibles. Te recomiendo visitar sus sitios web para más detalles y para elegir la que mejor se adapte a tus necesidades. ¿Te puedo ayudar en algo más?
+
+Origen: Conversación con Bing, 21/4/2024
+(1) Inicio - Tazas Mágicas. https://tazasmagicas.com.mx/.
+(2) Tazas mágicas personalizadas | Envíos a todo México. https://personalizadosgdl.com/tazas-magicas-personalizadas/.
+(3) TAZA MÁGICA PERSONALIZADA. - Colibrí Print México. https://colibriprint.com.mx/producto/taza-magica-personalizada/.
+(4) Tazas Mágicas Personalizadas con Fotos | Fotoprix. https://www.fotoprix.com/regalos-personalizados/taza-magica-personalizada-fotos.
+(5) Fototaza Mágica - una taza personalizada con tu foto o texto - Colorland. https://bing.com/search?q=imprimir+taza+m%c3%a1gica+personalizada.
+
+
+
+
+
+
+
+
+Escribe un artículo original de 1500 palabras con las diferencias entre identidad corporativa e imagen corporativa, explicado para dueños e inversionistas de pequeños negocios en la ciudad de México. Usa viñetas, listas, negritas definiciones y ejemplos
+
+Quiero crear la descripción de un producto y servicio, me dedico al diseño gráfico, programación, desafuero, impresión de productos publicitarios, hago bolsas de mercado para los negocios compartirías.“Como experto en el ámbito digital y mercadólogo apasionado, mi compromiso es brindar soluciones innovadoras y personalizadas en la creación y restauración de contenido. Especializado en diseño web y gráfico, mi enfoque está en superar las expectativas de mis clientes, facilitando su vida con servicios que destacan por su calidad y atención al detalle. Invito a quienes buscan excelencia y eficiencia a explorar mi portafolio y descubrir cómo, juntos, podemos transformar ideas en realidades impactantes. Contacta conmigo y emprendamos un camino hacia el éxito.”“Como experto en el ámbito digital y mercadólogo apasionado, mi compromiso es brindar soluciones innovadoras y personalizadas en la creación y restauración de contenido. Especializado en diseño web y gráfico, mi enfoque está en superar las expectativas de mis clientes, facilitando su vida con servicios que destacan por su calidad y atención al detalle. Invito a quienes buscan excelencia y eficiencia a explorar mi portafolio y descubrir cómo, juntos, podemos transformar ideas en realidades impactantes. Contacta conmigo y emprendamos un camino hacia el éxito.”
+
+Auydame a escribir un guion de ventas persuasivo.
+El mensaje va dirigido para pequeños negocios de belleza y consultores profesionales de belleza como aplicación de uñas, pestañas postizas, mascarillas rejuvenecedoras etc.
+Ofrezco tarjetas de presentacion personalizadas don el plus que me diferencia de otros diseñadores e impresores es que es entrega a domicilio, asesoria de elaboración del contenido de la tarjeta, creación de inonografia, logo, estrategias digitales como el qr para reservar citas, qr con formularios de reservación para citas. Es decir no solo les hago su tarjeta de presentación, si no tambien toda una estrategia de mercadotecnia con una tarjeta de presentación. 
+En caso de que ya tengan un diseño, puedo imprimir su diseño y ya.
+Como debe ser la estructura de ese guin de ventas, que storytelling usar, que llamados de acción, que tecnicas de venta utilizar o ganchos de dolor, urgencia, proifesionalismo y autenticidad se deben usar para ese sector de dueños de negocios de belleza y consultores de belleza. 
+
+ayudame hacer un logotipo de mi agencia de impresión de articulos promocionales y publicitarios. Se llama Yapyap! que significa yArticulosPromocionales.com. Me gustaria un fondo blanco, estilo minimalista abstracto, puedes usar una fuente que se fusione con un camaleon. Me imagino alguna impresora y hoja de papel, y usar los colores cmyk 
+
+
+que recomendaciones tienes para mejorar el contenido del articulo y sea optimizada para SEO y con un enfoque más atractivo e informativo.+++---+++
+actualiza el contenido con las sugerencias, gracias! 

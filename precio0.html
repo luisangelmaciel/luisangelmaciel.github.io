@@ -1,0 +1,900 @@
+<!doctype html>
+<!--
+* Tabler - Premium and Open Source dashboard template with responsive and high quality UI.
+* @version 1.0.0-beta20
+* @link https://tabler.io
+* Copyright 2018-2023 The Tabler Authors
+* Copyright 2018-2023 codecalm.net Paweł Kuna
+* Licensed under MIT (https://github.com/tabler/tabler/blob/master/LICENSE)
+-->
+<html lang="en">
+
+<head>
+ <meta charset="utf-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+ <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ <title>Datatables - Tabler - Premium and Open Source dashboard template with responsive and high quality UI.</title>
+ <script defer data-api="/stats/api/event" data-domain="preview.tabler.io" src="/stats/js/script.js"></script>
+ <meta name="msapplication-TileColor" content="#0054a6" />
+ <meta name="theme-color" content="#0054a6" />
+ <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+ <meta name="apple-mobile-web-app-capable" content="yes" />
+ <meta name="mobile-web-app-capable" content="yes" />
+ <meta name="HandheldFriendly" content="True" />
+ <meta name="MobileOptimized" content="320" />
+ <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+ <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+ <meta name="description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!" />
+ <meta name="canonical" content="https://tabler.io/demo/datatables.html">
+ <meta name="twitter:image:src" content="https://tabler.io/demo/static/og.png">
+ <meta name="twitter:site" content="@tabler_ui">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="Tabler: Premium and Open Source dashboard template with responsive and high quality UI.">
+ <meta name="twitter:description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
+ <meta property="og:image" content="https://tabler.io/demo/static/og.png">
+ <meta property="og:image:width" content="1280">
+ <meta property="og:image:height" content="640">
+ <meta property="og:site_name" content="Tabler">
+ <meta property="og:type" content="object">
+ <meta property="og:title" content="Tabler: Premium and Open Source dashboard template with responsive and high quality UI.">
+ <meta property="og:url" content="https://tabler.io/demo/static/og.png">
+ <meta property="og:description" content="Tabler comes with tons of well-designed components and features. Start your adventure with Tabler and make your dashboard great again. For free!">
+ <!-- CSS files -->
+ <link href="https://preview.tabler.io/dist/css/tabler.min.css?1695847769" rel="stylesheet" />
+ <link href="https://preview.tabler.io/dist/css/tabler-flags.min.css?1695847769" rel="stylesheet" />
+ <link href="https://preview.tabler.io/dist/css/tabler-payments.min.css?1695847769" rel="stylesheet" />
+ <link href="https://preview.tabler.io/dist/css/tabler-vendors.min.css?1695847769" rel="stylesheet" />
+ <link href="https://preview.tabler.io/dist/css/demo.min.css?1695847769" rel="stylesheet" />
+ <style>
+  @import url('https://rsms.me/inter/inter.css');
+
+  :root {
+   --tblr-font-sans-serif: 'Inter Var', -apple-system, BlinkMacSystemFont, San Francisco, Segoe UI, Roboto, Helvetica Neue, sans-serif;
+  }
+
+  body {
+   font-feature-settings: "cv03", "cv04", "cv11";
+  }
+
+  /* Responsividad horizontal */
+  @media (max-width: 992px) {
+   .table-responsive {
+    overflow-x: auto;
+   }
+  }
+
+  /* Ocultar/Revelar campos */
+  .hide-column {
+   display: none;
+  }
+ </style>
+</head>
+
+<body>
+ <script src="https://preview.tabler.io/dist/js/demo-theme.min.js?1695847769"></script>
+ <div class="page">
+  <div class="page-wrapper">
+   <input type="text" id="searchInput" placeholder="Buscar..." onkeyup="searchTable()" />
+
+   <!-- Page header -->
+   <button id="toggleColumns" aria-label="Ocultar o Revelar Campos" title="Ocultar o Revelar Campos">Ocultar/Revelar Campos</button>
+
+   <!-- Checkboxes para seleccionar campos a mostrar/ocultar -->
+   <div class="row">
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-10000" checked>
+      10000 piezas
+     </label>
+    </div>
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-1000" checked>
+      1000 A 9999 piezas
+     </label>
+    </div>
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-500" checked>
+      500 A 999 piezas
+     </label>
+    </div>
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-100" checked>
+      100 A 499 piezas
+     </label>
+    </div>
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-50" checked>
+      50 A 99 piezas
+     </label>
+    </div>
+    <div class="col">
+     <label>
+      <input type="checkbox" class="toggle-column" data-column="sort-1" checked>
+      DE 1 A 49 piezas
+     </label>
+    </div>
+   </div>
+   <div class="row">
+    <!-- Agregar checkbox para seleccionar/deseleccionar todos -->
+    <div class="col">
+     <label>
+      <input type="checkbox" id="selectAll" aria-label="Seleccionar todos los campos" title="Seleccionar todos los campos">
+      Seleccionar Todos
+     </label>
+    </div>
+    <!-- ...otros checkboxes... -->
+   </div>
+
+   <div class="page-header d-print-none">
+    <div class="container-xl">
+     <div class="row g-2 align-items-center">
+      <div class="col">
+       <h2 class="page-title">
+        Lista de precios Yap 2024
+       </h2>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- Page body -->
+   <div class="page-body">
+    <div class="container-xl">
+     <div class="card">
+      <div class="card-body">
+       <div id="table-default" class="table-responsive">
+        <table class="table" id="priceTable">
+         <thead>
+          <tr>
+           <th><button class="table-sort" data-sort="sort-modelo">Modelo</button></th>
+           <th><button class="table-sort" data-sort="sort-descripcion">Descripcion</button></th>
+           <!-- Agregar clases de columna a cada th -->
+           <th class="column-10000"><button class="table-sort" data-sort="sort-10000">10000 piezas</button></th>
+           <th class="column-1000"><button class="table-sort" data-sort="sort-1000">1000 A 9999 piezas</button></th>
+           <th class="column-500"><button class="table-sort" data-sort="sort-500">500 A 999 piezas</button></th>
+           <th class="column-100"><button class="table-sort" data-sort="sort-100">100 A 499 piezas</button></th>
+           <th class="column-50"><button class="table-sort" data-sort="sort-50">50 A 99 piezas</button></th>
+           <th class="column-1"><button class="table-sort" data-sort="sort-1">DE 1 A 49 piezas</button></th>
+          </tr>
+         </thead>
+         <tbody class="table-tbody">
+          <tr>
+           <td class="sort-modelo">T 116 ALEBRIJE</td>
+           <td class="sort-descripcion">TEYOLLI Termo con doble pared de vidrio</td>
+           <td class="sort-10000">$500.32</td>
+           <td class="sort-1000">$509.76</td>
+           <td class="sort-500">$519.20</td>
+           <td class="sort-100">$528.64</td>
+           <td class="sort-50">$539.21</td>
+           <td class="sort-1">$566.40</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 162 ALEBRIJE KÁPHE</td>
+           <td class="sort-descripcion">Termo de acero inoxidable</td>
+           <td class="sort-10000">$433.54</td>
+           <td class="sort-1000">$441.72</td>
+           <td class="sort-500">$449.90</td>
+           <td class="sort-100">$458.08</td>
+           <td class="sort-50">$467.24</td>
+           <td class="sort-1">$490.80</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 97 ALEBRIJE YÚ</td>
+           <td class="sort-descripcion">Cilindro de acero inoxidable</td>
+           <td class="sort-10000">$349.80</td>
+           <td class="sort-1000">$356.40</td>
+           <td class="sort-500">$363.00</td>
+           <td class="sort-100">$369.60</td>
+           <td class="sort-50">$376.99</td>
+           <td class="sort-1">$396.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">FM 930 HUICHOL CISNEROS</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$225.78</td>
+           <td class="sort-1000">$230.04</td>
+           <td class="sort-500">$234.30</td>
+           <td class="sort-100">$238.56</td>
+           <td class="sort-50">$243.33</td>
+           <td class="sort-1">$255.60</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">HO 026 HUICHOL FRIDA</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$312.70</td>
+           <td class="sort-1000">$318.60</td>
+           <td class="sort-500">$324.50</td>
+           <td class="sort-100">$330.40</td>
+           <td class="sort-50">$337.01</td>
+           <td class="sort-1">$354.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">O 006 HUICHOL SABINES</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$224.72</td>
+           <td class="sort-1000">$228.96</td>
+           <td class="sort-500">$233.20</td>
+           <td class="sort-100">$237.44</td>
+           <td class="sort-50">$242.19</td>
+           <td class="sort-1">$254.40</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 116 HUICHOL TAMAYO</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$434.60</td>
+           <td class="sort-1000">$442.80</td>
+           <td class="sort-500">$451.00</td>
+           <td class="sort-100">$459.20</td>
+           <td class="sort-50">$468.38</td>
+           <td class="sort-1">$492.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 53 HUICHOL SIQUEIROS</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$323.30</td>
+           <td class="sort-1000">$329.40</td>
+           <td class="sort-500">$335.50</td>
+           <td class="sort-100">$341.60</td>
+           <td class="sort-50">$348.43</td>
+           <td class="sort-1">$366.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 76 HUICHOL DIEGO</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$349.80</td>
+           <td class="sort-1000">$356.40</td>
+           <td class="sort-500">$363.00</td>
+           <td class="sort-100">$369.60</td>
+           <td class="sort-50">$376.99</td>
+           <td class="sort-1">$396.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 77 HUICHOL VELASCO</td>
+           <td class="sort-descripcion">HUICHOL</td>
+           <td class="sort-10000">$418.70</td>
+           <td class="sort-1000">$426.60</td>
+           <td class="sort-500">$434.50</td>
+           <td class="sort-100">$442.40</td>
+           <td class="sort-50">$451.25</td>
+           <td class="sort-1">$474.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 11 ANTARA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$85.60</td>
+           <td class="sort-1000">$89.60</td>
+           <td class="sort-500">$92.00</td>
+           <td class="sort-100">$93.60</td>
+           <td class="sort-50">$97.34</td>
+           <td class="sort-1">$108.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 131 SPARK</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$17.11</td>
+           <td class="sort-1000">$17.91</td>
+           <td class="sort-500">$18.39</td>
+           <td class="sort-100">$18.71</td>
+           <td class="sort-50">$19.46</td>
+           <td class="sort-1">$21.59</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 132 TESLA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$17.11</td>
+           <td class="sort-1000">$17.91</td>
+           <td class="sort-500">$18.39</td>
+           <td class="sort-100">$18.71</td>
+           <td class="sort-50">$19.46</td>
+           <td class="sort-1">$21.59</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 134 DEXTER</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$18.53</td>
+           <td class="sort-1000">$19.40</td>
+           <td class="sort-500">$19.92</td>
+           <td class="sort-100">$20.26</td>
+           <td class="sort-50">$21.07</td>
+           <td class="sort-1">$23.38</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 135 FENIX</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$18.53</td>
+           <td class="sort-1000">$19.40</td>
+           <td class="sort-500">$19.92</td>
+           <td class="sort-100">$20.26</td>
+           <td class="sort-50">$21.07</td>
+           <td class="sort-1">$23.38</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 152 LUKA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$14.45</td>
+           <td class="sort-1000">$15.12</td>
+           <td class="sort-500">$15.53</td>
+           <td class="sort-100">$15.80</td>
+           <td class="sort-50">$16.43</td>
+           <td class="sort-1">$18.23</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 165 FROZEN</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$115.54</td>
+           <td class="sort-1000">$117.72</td>
+           <td class="sort-500">$119.90</td>
+           <td class="sort-100">$122.08</td>
+           <td class="sort-50">$124.52</td>
+           <td class="sort-1">$130.80</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 17 CHICAGO Y CALIFORNIA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$22.47</td>
+           <td class="sort-1000">$23.52</td>
+           <td class="sort-500">$24.15</td>
+           <td class="sort-100">$24.57</td>
+           <td class="sort-50">$25.55</td>
+           <td class="sort-1">$28.35</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 172 SOFT</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$83.46</td>
+           <td class="sort-1000">$87.36</td>
+           <td class="sort-500">$89.70</td>
+           <td class="sort-100">$91.26</td>
+           <td class="sort-50">$94.91</td>
+           <td class="sort-1">$105.30</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 174 GOKU</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$27.07</td>
+           <td class="sort-1000">$28.34</td>
+           <td class="sort-500">$29.10</td>
+           <td class="sort-100">$29.60</td>
+           <td class="sort-50">$30.79</td>
+           <td class="sort-1">$34.16</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 18 GYM</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$54.57</td>
+           <td class="sort-1000">$57.12</td>
+           <td class="sort-500">$58.65</td>
+           <td class="sort-100">$59.67</td>
+           <td class="sort-50">$62.06</td>
+           <td class="sort-1">$68.85</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 19 POP</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$14.34</td>
+           <td class="sort-1000">$15.01</td>
+           <td class="sort-500">$15.41</td>
+           <td class="sort-100">$15.68</td>
+           <td class="sort-50">$16.31</td>
+           <td class="sort-1">$18.09</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 19P POP</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$14.34</td>
+           <td class="sort-1000">$15.01</td>
+           <td class="sort-500">$15.41</td>
+           <td class="sort-100">$15.68</td>
+           <td class="sort-50">$16.31</td>
+           <td class="sort-1">$18.09</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 205 NAMOR</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$123.38</td>
+           <td class="sort-1000">$125.71</td>
+           <td class="sort-500">$128.04</td>
+           <td class="sort-100">$130.37</td>
+           <td class="sort-50">$132.98</td>
+           <td class="sort-1">$139.68</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 206 GOAL</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad de 1,500 ml.</td>
+           <td class="sort-10000">$152.96</td>
+           <td class="sort-1000">$155.84</td>
+           <td class="sort-500">$158.73</td>
+           <td class="sort-100">$161.62</td>
+           <td class="sort-50">$164.85</td>
+           <td class="sort-1">$173.16</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 215 MISO</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$22.31</td>
+           <td class="sort-1000">$23.35</td>
+           <td class="sort-500">$23.98</td>
+           <td class="sort-100">$24.39</td>
+           <td class="sort-50">$25.37</td>
+           <td class="sort-1">$28.15</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 216 PAI</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$17.12</td>
+           <td class="sort-1000">$17.92</td>
+           <td class="sort-500">$18.40</td>
+           <td class="sort-100">$18.72</td>
+           <td class="sort-50">$19.47</td>
+           <td class="sort-1">$21.60</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 219 MOTIVA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO 2,000 ml.</td>
+           <td class="sort-10000">$69.90</td>
+           <td class="sort-1000">$73.17</td>
+           <td class="sort-500">$75.13</td>
+           <td class="sort-100">$76.44</td>
+           <td class="sort-50">$79.49</td>
+           <td class="sort-1">$88.20</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 220 DANUBIO</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad: 2,000 ml.</td>
+           <td class="sort-10000">$164.62</td>
+           <td class="sort-1000">$167.72</td>
+           <td class="sort-500">$170.83</td>
+           <td class="sort-100">$173.94</td>
+           <td class="sort-50">$177.41</td>
+           <td class="sort-1">$186.36</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 221 GANGES</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad: 2,200 ml.</td>
+           <td class="sort-10000">$241.68</td>
+           <td class="sort-1000">$246.24</td>
+           <td class="sort-500">$250.80</td>
+           <td class="sort-100">$255.36</td>
+           <td class="sort-50">$260.47</td>
+           <td class="sort-1">$273.60</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 222 APEROL</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad: 2,000 ml.</td>
+           <td class="sort-10000">$124.34</td>
+           <td class="sort-1000">$126.68</td>
+           <td class="sort-500">$129.03</td>
+           <td class="sort-100">$131.38</td>
+           <td class="sort-50">$134.00</td>
+           <td class="sort-1">$140.76</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 223 SIROP</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad: 2,000 ml.</td>
+           <td class="sort-10000">$185.18</td>
+           <td class="sort-1000">$188.68</td>
+           <td class="sort-500">$192.17</td>
+           <td class="sort-100">$195.66</td>
+           <td class="sort-50">$199.58</td>
+           <td class="sort-1">$209.64</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 224 BLONDE</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad: 2,000 ml.</td>
+           <td class="sort-10000">$125.08</td>
+           <td class="sort-1000">$127.44</td>
+           <td class="sort-500">$129.80</td>
+           <td class="sort-100">$132.16</td>
+           <td class="sort-50">$134.80</td>
+           <td class="sort-1">$141.60</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 225 NILO</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO Capacidad 1,000 ml.</td>
+           <td class="sort-10000">$86.99</td>
+           <td class="sort-1000">$91.06</td>
+           <td class="sort-500">$93.50</td>
+           <td class="sort-100">$95.12</td>
+           <td class="sort-50">$98.93</td>
+           <td class="sort-1">$109.76</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 227 FRAISE</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO con difusor</td>
+           <td class="sort-10000">$58.10</td>
+           <td class="sort-1000">$60.82</td>
+           <td class="sort-500">$62.45</td>
+           <td class="sort-100">$63.53</td>
+           <td class="sort-50">$66.07</td>
+           <td class="sort-1">$73.31</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 239 MIDEX</td>
+           <td class="sort-descripcion"></td>
+           <td class="sort-10000">$22.31</td>
+           <td class="sort-1000">$23.35</td>
+           <td class="sort-500">$23.98</td>
+           <td class="sort-100">$24.39</td>
+           <td class="sort-50">$25.37</td>
+           <td class="sort-1">$28.15</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 29 ENZO</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$28.46</td>
+           <td class="sort-1000">$29.79</td>
+           <td class="sort-500">$30.59</td>
+           <td class="sort-100">$31.12</td>
+           <td class="sort-50">$32.37</td>
+           <td class="sort-1">$35.91</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 50 LAYS</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$17.53</td>
+           <td class="sort-1000">$18.35</td>
+           <td class="sort-500">$18.84</td>
+           <td class="sort-100">$19.16</td>
+           <td class="sort-50">$19.93</td>
+           <td class="sort-1">$22.11</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 68 IBIZA</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$56.92</td>
+           <td class="sort-1000">$59.58</td>
+           <td class="sort-500">$61.18</td>
+           <td class="sort-100">$62.24</td>
+           <td class="sort-50">$64.73</td>
+           <td class="sort-1">$71.82</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 90 JADE</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$17.53</td>
+           <td class="sort-1000">$18.35</td>
+           <td class="sort-500">$18.84</td>
+           <td class="sort-100">$19.16</td>
+           <td class="sort-50">$19.93</td>
+           <td class="sort-1">$22.11</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 91 MIX</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$146.50</td>
+           <td class="sort-1000">$158.22</td>
+           <td class="sort-500">$161.15</td>
+           <td class="sort-100">$164.08</td>
+           <td class="sort-50">$167.36</td>
+           <td class="sort-1">$175.80</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 92 FLEX</td>
+           <td class="sort-descripcion">CILINDROS DE PLÁSTICO</td>
+           <td class="sort-10000">$154.76</td>
+           <td class="sort-1000">$157.68</td>
+           <td class="sort-500">$160.60</td>
+           <td class="sort-100">$163.52</td>
+           <td class="sort-50">$166.79</td>
+           <td class="sort-1">$175.20</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 07 ZURICH</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$88.81</td>
+           <td class="sort-1000">$92.96</td>
+           <td class="sort-500">$95.45</td>
+           <td class="sort-100">$97.11</td>
+           <td class="sort-50">$100.99</td>
+           <td class="sort-1">$112.05</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 159 TROPICANA</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$77.04</td>
+           <td class="sort-1000">$80.64</td>
+           <td class="sort-500">$82.80</td>
+           <td class="sort-100">$84.24</td>
+           <td class="sort-50">$87.61</td>
+           <td class="sort-1">$97.20</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 184 JAGUAR</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$145.22</td>
+           <td class="sort-1000">$147.96</td>
+           <td class="sort-500">$150.70</td>
+           <td class="sort-100">$153.44</td>
+           <td class="sort-50">$156.51</td>
+           <td class="sort-1">$164.40</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 203 LIMA</td>
+           <td class="sort-descripcion">CILINDRO METÁLICO</td>
+           <td class="sort-10000">$97.91</td>
+           <td class="sort-1000">$102.48</td>
+           <td class="sort-500">$105.23</td>
+           <td class="sort-100">$107.06</td>
+           <td class="sort-50">$111.34</td>
+           <td class="sort-1">$123.53</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 53 HANNAH</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$125.08</td>
+           <td class="sort-1000">$127.44</td>
+           <td class="sort-500">$129.80</td>
+           <td class="sort-100">$132.16</td>
+           <td class="sort-50">$134.80</td>
+           <td class="sort-1">$141.60</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 79 BELINI</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$94.16</td>
+           <td class="sort-1000">$98.56</td>
+           <td class="sort-500">$101.20</td>
+           <td class="sort-100">$102.96</td>
+           <td class="sort-50">$107.08</td>
+           <td class="sort-1">$118.80</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 83 LAGER</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$137.51</td>
+           <td class="sort-1000">$140.11</td>
+           <td class="sort-500">$142.70</td>
+           <td class="sort-100">$145.30</td>
+           <td class="sort-50">$148.20</td>
+           <td class="sort-1">$155.68</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 93 PROTEIN</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$153.70</td>
+           <td class="sort-1000">$156.60</td>
+           <td class="sort-500">$159.50</td>
+           <td class="sort-100">$162.40</td>
+           <td class="sort-50">$165.65</td>
+           <td class="sort-1">$174.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 94 THAI</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$98.44</td>
+           <td class="sort-1000">$103.04</td>
+           <td class="sort-500">$105.80</td>
+           <td class="sort-100">$107.64</td>
+           <td class="sort-50">$111.95</td>
+           <td class="sort-1">$124.20</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 95 TUCAN</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$85.60</td>
+           <td class="sort-1000">$89.60</td>
+           <td class="sort-500">$92.00</td>
+           <td class="sort-100">$93.60</td>
+           <td class="sort-50">$97.34</td>
+           <td class="sort-1">$108.00</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 96 ACQUA</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$96.30</td>
+           <td class="sort-1000">$100.80</td>
+           <td class="sort-500">$103.50</td>
+           <td class="sort-100">$105.30</td>
+           <td class="sort-50">$109.51</td>
+           <td class="sort-1">$121.50</td>
+          </tr>
+          <tr>
+           <td class="sort-modelo">T 97 QUARTZ</td>
+           <td class="sort-descripcion">CILINDROS METÁLICOS</td>
+           <td class="sort-10000">$104.33</td>
+           <td class="sort-1000">$109.20</td>
+           <td class="sort-500">$112.13</td>
+           <td class="sort-100">$114.08</td>
+           <td class="sort-50">$118.64</td>
+           <td class="sort-1">$131.63</td>
+          </tr>
+          
+
+         </tbody>
+        </table>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer class="footer footer-transparent d-print-none">
+    <div class="container-xl">
+     <div class="row text-center align-items-center flex-row-reverse">
+      <div class="col-lg-auto ms-lg-auto">
+       <ul class="list-inline list-inline-dots mb-0">
+        <li class="list-inline-item"><a href="https://tabler.io/docs" target="_blank" class="link-secondary" rel="noopener">Documentation</a></li>
+        <li class="list-inline-item">
+         <a href="https://github.com/sponsors/codecalm" target="_blank" class="link-secondary" rel="noopener">
+          <!-- Download SVG icon from http://tabler-icons.io/i/heart -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon text-pink icon-filled icon-inline" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+           <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+           <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+          </svg>
+          Sponsor
+         </a>
+        </li>
+       </ul>
+      </div>
+      <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+       <ul class="list-inline list-inline-dots mb-0">
+        <li class="list-inline-item">
+         Copyright &copy; 2023
+         <a href="." class="link-secondary">Tabler</a>.
+         All rights reserved.
+        </li>
+        <li class="list-inline-item">
+         <a href="./changelog.html" class="link-secondary" rel="noopener">
+          v1.0.0-beta20
+         </a>
+        </li>
+       </ul>
+      </div>
+     </div>
+    </div>
+   </footer>
+  </div>
+ </div>
+ <!-- Libs JS -->
+ <script src="https://preview.tabler.io/dist/libs/list.js/dist/list.min.js?1695847769" defer></script>
+ <!-- Tabler Core -->
+ <script src="https://preview.tabler.io/dist/js/tabler.min.js?1695847769" defer></script>
+ <script src="https://preview.tabler.io/dist/js/demo.min.js?1695847769" defer></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   const list = new List('table-default', {
+    sortClass: 'table-sort',
+    listClass: 'table-tbody',
+    valueNames: ['sort-modelo', 'sort-descripcion', 'sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1']
+   });
+  });
+ </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   const list = new List('table-default', {
+    sortClass: 'table-sort',
+    listClass: 'table-tbody',
+    valueNames: ['sort-modelo', 'sort-descripcion', 'sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1']
+   });
+   const toggleColumnsButton = document.getElementById('toggleColumns');
+   const columnsToToggle = ['sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1'];
+   toggleColumnsButton.addEventListener('click', function() {
+    columnsToToggle.forEach(column => {
+     const elements = document.querySelectorAll(`.${column}`);
+     elements.forEach(element => {
+      element.classList.toggle('hide-column');
+     });
+    });
+   });
+  });
+ </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   const list = new List('table-default', {
+    sortClass: 'table-sort',
+    listClass: 'table-tbody',
+    valueNames: ['sort-modelo', 'sort-descripcion', 'sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1']
+   });
+   const toggleColumnCheckboxes = document.querySelectorAll('.toggle-column');
+   toggleColumnCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+     const columnClass = this.getAttribute('data-column');
+     const elements = document.querySelectorAll(`.${columnClass}`);
+     elements.forEach(element => {
+      element.classList.toggle('hide-column', !this.checked);
+     });
+    });
+   });
+  });
+ </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   const list = new List('table-default', {
+    sortClass: 'table-sort',
+    listClass: 'table-tbody',
+    valueNames: ['sort-modelo', 'sort-descripcion', 'sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1']
+   });
+   // Función para seleccionar/deseleccionar todos los checkboxes
+   const selectAllCheckbox = document.getElementById('selectAll');
+   const toggleColumnCheckboxes = document.querySelectorAll('.toggle-column');
+   selectAllCheckbox.addEventListener('change', function() {
+    toggleColumnCheckboxes.forEach(checkbox => {
+     checkbox.checked = this.checked;
+    });
+    toggleColumns();
+   });
+   // Función para ocultar/revelar columnas basado en los checkboxes seleccionados
+   function toggleColumns() {
+    const columnsToToggle = ['sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1'];
+    columnsToToggle.forEach(column => {
+     const elements = document.querySelectorAll(`.${column}`);
+     elements.forEach(element => {
+      element.classList.toggle('hide-column', !document.querySelector(`.toggle-column[data-column="${column}"]`).checked);
+     });
+    });
+   }
+   toggleColumns();
+   toggleColumnCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', toggleColumns);
+   });
+  });
+ </script>
+
+ <script src="https://preview.tabler.io/dist/libs/list.min.js?1695847769"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   const list = new List('table-default', {
+    sortClass: 'table-sort',
+    listClass: 'table-tbody',
+    valueNames: ['sort-modelo', 'sort-descripcion', 'sort-10000', 'sort-1000', 'sort-500', 'sort-100', 'sort-50', 'sort-1']
+   });
+   const toggleColumnCheckboxes = document.querySelectorAll('.toggle-column');
+   toggleColumnCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', function() {
+     const columnClass = this.getAttribute('data-column');
+     const elements = document.querySelectorAll(`.${columnClass}`);
+     const columnHeader = document.querySelector(`.column-${columnClass.split('-')[1]}`);
+     elements.forEach(element => {
+      element.classList.toggle('hide-column', !this.checked);
+     });
+     if (this.checked) {
+      columnHeader.classList.remove('hide-column');
+     } else {
+      columnHeader.classList.add('hide-column');
+     }
+    });
+   });
+   // Seleccionar/deseleccionar todos los checkboxes
+   const selectAllCheckbox = document.getElementById('selectAll');
+   const allToggleColumnCheckboxes = document.querySelectorAll('.toggle-column');
+   selectAllCheckbox.addEventListener('change', function() {
+    allToggleColumnCheckboxes.forEach(checkbox => {
+     checkbox.checked = this.checked;
+     checkbox.dispatchEvent(new Event('change'));
+    });
+   });
+   // Mostrar/Ocultar todos los campos al hacer clic en el botón "Ocultar/Revelar Campos"
+   const toggleColumnsButton = document.getElementById('toggleColumns');
+   toggleColumnsButton.addEventListener('click', function() {
+    allToggleColumnCheckboxes.forEach(checkbox => {
+     checkbox.checked = !checkbox.checked;
+     checkbox.dispatchEvent(new Event('change'));
+    });
+   });
+  });
+ </script>
+ <script>
+  function searchTable() {
+   // Variables declaradas
+   let input, filter, table, tr, td, i, txtValue;
+   input = document.getElementById("searchInput");
+   filter = input.value.toUpperCase();
+   table = document.getElementById("priceTable");
+   tr = table.getElementsByTagName("tr");
+   // Recorre todas las filas y oculta las que no coincidan con la búsqueda
+   for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0]; // Selecciona la primera columna
+    if (td) {
+     txtValue = td.textContent || td.innerText;
+     if (txtValue.toUpperCase().indexOf(filter) > -1) {
+      tr[i].style.display = "";
+     } else {
+      tr[i].style.display = "none";
+     }
+    }
+   }
+  }
+ </script>
+</body>
