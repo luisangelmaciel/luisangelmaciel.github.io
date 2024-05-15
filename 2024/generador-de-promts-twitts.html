@@ -1,0 +1,503 @@
+ 
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ptHSI4JHlrVV5amjSmUCd-atcp5xlGhB4Rq_bqIg31JbzATy-n4MWpOQoWpYxIxOkBf4YV5UD8mC1LyGT5LfuWvcXw7vorTNI_tAbO3lkkT3Th-O5TSrKqmu-bTZRWSH" charset="UTF-8"></script><style>
+@keyframes shrink {
+	to {
+		scale: 0.8;
+		opacity: 0.5;
+	}
+}
+@keyframes grow {
+	from {
+		scale: 0.8;
+		opacity: 0.5;
+	}
+}
+@keyframes slide-in {
+	from {
+		translate: 100% 0;
+	}
+}
+@keyframes slide-out {
+	to {
+		translate: 100% 0;
+	}
+}
+
+::view-transition {
+	background: black;
+}
+
+:root {
+	view-transition-name: none;
+}
+body {
+	view-transition-name: page;
+}
+
+::view-transition-group(page) {
+	animation-duration: 0.7s;
+}
+
+:root[data-transition="push"] {
+	&::view-transition-old(page) {
+		&::view-transition-old(page) {
+			animation-name: shrink;
+			transform-origin: 100% 50%;
+		}
+	}
+	&::view-transition-new(page) {
+		animation-name: slide-in;
+	}
+}
+
+:root[data-transition="pop"] {
+	&::view-transition-old(page) {
+		animation-name: slide-out;
+		z-index: 1;
+	}
+	&::view-transition-new(page) {
+		animation-name: grow;
+		transform-origin: 100% 50%;
+	}
+}
+
+@layer reset {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	ul[class] {
+		list-style: none;
+	}
+
+	img {
+		display: inline-block;
+	}
+
+	h1 {
+		margin-bottom: 0.5em;
+	}
+}
+
+@layer layout {
+	@layer general {
+		html {
+			background: white;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		body {
+			background: white;
+			font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+				"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+		}
+	}
+	
+	@layer views {
+		.view {
+			position: fixed;
+			inset: 0;
+			overflow-y: auto;
+		}
+		
+		.view h1 {
+			padding: 2rem 1rem 0.2rem 1rem;
+			position: sticky;
+			top: 0;
+			background: #fff;
+		}
+		
+		.view .col {
+			padding: 0 1rem 2rem 1rem;
+		}
+	}
+
+	@layer components {
+		.tweets {
+			display: flex;
+			flex-direction: column;
+
+			> li {
+				border-bottom: 1px solid #ccc;
+			}
+			
+			& a, span {
+				padding: 0.5em 0;
+				color: inherit !important;
+			}
+		}
+
+		:has(> img) {
+			display: flex;
+			gap: 0.5em;
+
+			&:hover {
+				background: aliceblue;
+				cursor: pointer;
+			}
+		}
+
+		.author {
+			font-weight: bold;
+		}
+
+		img {
+			align-self: start;
+			width: 3em;
+			height: auto;
+			aspect-ratio: 1;
+			border-radius: 50%;
+		}
+
+		a, span  {
+			text-decoration: none;
+			color: lightblue;
+
+			&:hover, &:active, &:focus, &:visited {
+				color: blue;
+			}
+		}
+
+		.tweet {
+			display: flex;
+			flex-direction: column;
+			gap: 0.5em;
+
+			.handle {
+				font-size: 0.9em;
+			}
+
+			.content {
+				font-size: 1.2em;
+			}
+
+			.meta, .rt {
+				color: #6a6a6a;
+				font-size: 0.8em;
+				padding: 0.4rem 0;
+			}
+
+			.rt {
+				border-top: 1px solid #ccc;
+				border-bottom: 1px solid #ccc;
+				text-transform: uppercase;
+				padding: 0.8rem 0;
+
+				display: flex;
+				flex-direction: row;
+				gap: 0.4rem;
+
+				& b {
+						color: black;
+				}
+			}
+		}
+	}
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Feed</title>
+    <style>
+        .view {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="home" class="view visible">
+        <h1>Home</h1>
+        <div class="col">
+            <ul class="tweets">
+            </ul>
+        </div>
+    </div>
+
+    <div id="detail" class="view" style="background:white">
+        <h1><a href="#back" class="back">&larr;</a> Detalle del Tweet</h1>
+        <div class="col">
+            <div class="tweet">
+                <header>
+                    <img src="" alt="Avatar" width="100" height="100">
+                    <div>
+                        <div class="author"></div>
+                        <div class="handle"></div>
+                    </div>
+                </header>
+                <div class="content"></div>
+                <div class="meta"></div>
+                <div class="copiar">copiar</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+            // Rellenar la vista de detalle con los datos del tweet seleccionado
+            function fillDetailView(tweet) {
+                const detailAuthor = detailView.querySelector(".author");
+                const detailHandle = detailView.querySelector(".handle");
+                const detailContent = detailView.querySelector(".content");
+                const detailMeta = detailView.querySelector(".meta");
+                const detailAvatar = detailView.querySelector("img");
+
+                detailAuthor.textContent = tweet.author;
+                detailHandle.textContent = tweet.handle;
+                detailContent.textContent = tweet.contenidoLargo;
+                detailMeta.textContent = tweet.timestamp;
+                detailAvatar.src = tweet.url;
+
+                detailView.classList.add("visible");
+
+                // Copiar contenido largo al hacer clic en "copiar"
+                const copiarButton = detailView.querySelector(".copiar");
+                copiarButton.addEventListener("click", () => {
+                    const contenidoLargo = detailView.querySelector(".content").textContent;
+                    navigator.clipboard.writeText(contenidoLargo).then(() => {
+                        showToast("Contenido copiado al portapapeles");
+                    });
+                });
+            }
+
+            // Manejar el botón de retroceso
+            const backButton = document.querySelector(".back");
+            backButton.addEventListener("click", () => {
+                detailView.classList.remove("visible");
+            });
+
+            // Función para mostrar un toast
+            function showToast(message) {
+                const toast = document.createElement("div");
+                toast.classList.add("toast");
+                toast.textContent = message;
+                document.body.appendChild(toast);
+                setTimeout(() => {
+                    toast.remove();
+                }, 3000);
+            }
+        });
+    </script>
+
+    <style>
+        /* Estilos para el toast */
+        .toast {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            z-index: 9999;
+        }
+    </style>
+
+</body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal Full con iframe</title>
+    <style>
+        /* Estilos para el modal */
+        .modal {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 9999;
+            display: none;
+					width: 80%;
+        }
+
+        .modal.active {
+            display: block;
+        }
+
+        .modal-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .modal iframe {
+            width: 100%;
+            height: calc(100vh - 120px); /* Ajusta el tamaño del iframe según la altura disponible */
+            border: none;
+        }
+
+        .modal-button {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            background-color: #007bff;
+            color: white;
+            border-radius: 50%;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 9999;
+        }
+
+        .modal-button:hover {
+            background-color: #0056b3;
+        }
+
+        .close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-button" id="modalButton">+</div>
+
+    <div class="modal" id="myModal">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <iframe src="https://codepen.io/Android07/full/ZENGPay" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() {
+            const modal = document.getElementById("myModal");
+            modal.classList.remove("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const modalButton = document.getElementById("modalButton");
+            const modal = document.getElementById("myModal");
+
+            // Mostrar o ocultar el modal al hacer clic en el botón
+            modalButton.addEventListener("click", function () {
+                modal.classList.toggle("active");
+            });
+        });
+    </script>
+</body>
+
+</html>
+  
+      <script id="rendered-js" >
+document.addEventListener("DOMContentLoaded", function () {
+    const tweetsContainer = document.querySelector(".tweets");
+    const detailView = document.getElementById("detail");
+
+    const data = [
+        {
+            "author": "angel",
+            "handle": "@usuario",
+            "timestamp": "6:49pm - 5 Dec 2023",
+            "url": "https://brm.us/avatar",
+            "contenidoCorto": "uscipit, leo sed malesuada vehicula, ante est consequat neque, vel congue elit nibh quis tellus. Lorem ipsum dolor sit amet, consectetur adipiscin",
+            "contenidoLargo": "uscipit, leo sed malesuada vehicula, ante est consequat neque, vel congue elit nibh quis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus, nunc sit amet semper venenatis, ex urna pulvinar tortor, id scelerisque augue leo sed ligula."
+        },
+        {
+            "author": "luis",
+            "handle": "@usuarioLuis",
+            "timestamp": "6:49pm - 5 Dec 2023",
+            "url": "https://brm.us/avatar",
+            "contenidoCorto": "Aenean suscipit, leo sed malesuada vehicula, ante est consequat neque, vel congue elit nibh quis tellus. Lorem ipsum dolor sit amet, consectetur adipiscin",
+            "contenidoLargo": "Aenean suscipit, leo sed malesuada vehicula, ante est consequat neque, vel congue elit nibh quis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut maximus, nunc sit amet semper venenatis, ex urna pulvinar tortor, id scelerisque augue leo sed ligula."
+        }
+    ];
+
+    // Rellenar la vista de inicio con los tweets
+    data.forEach(tweet => {
+        const listItem = document.createElement("li");
+        const link = document.createElement("a");
+        link.href = "#detail";
+        link.classList.add("tweet-link");
+        link.addEventListener("click", () => {
+            fillDetailView(tweet);
+        });
+
+        const avatarImg = document.createElement("img");
+        avatarImg.src = tweet.url;
+        avatarImg.alt = "Avatar " + tweet.author;
+        avatarImg.width = 100;
+        avatarImg.height = 100;
+
+        const authorDiv = document.createElement("div");
+        authorDiv.classList.add("author");
+        authorDiv.textContent = tweet.author;
+
+        const contentDiv = document.createElement("div");
+        contentDiv.classList.add("content");
+        contentDiv.textContent = tweet.contenidoCorto;
+
+        const innerDiv = document.createElement("div");
+        innerDiv.appendChild(authorDiv);
+        innerDiv.appendChild(contentDiv);
+
+        link.appendChild(avatarImg);
+        link.appendChild(innerDiv);
+
+        listItem.appendChild(link);
+        tweetsContainer.appendChild(listItem);
+    });
+
+    // Rellenar la vista de detalle con los datos del tweet seleccionado
+    function fillDetailView(tweet) {
+        const detailAuthor = detailView.querySelector(".author");
+        const detailHandle = detailView.querySelector(".handle");
+        const detailContent = detailView.querySelector(".content");
+        const detailMeta = detailView.querySelector(".meta");
+        const detailAvatar = detailView.querySelector("img");
+
+        detailAuthor.textContent = tweet.author;
+        detailHandle.textContent = tweet.handle;
+        detailContent.textContent = tweet.contenidoLargo;
+        detailMeta.textContent = tweet.timestamp;
+        detailAvatar.src = tweet.url;
+
+        detailView.classList.add("visible");
+    }
+
+    // Manejar el botón de retroceso
+    const backButton = document.querySelector(".back");
+    backButton.addEventListener("click", () => {
+        detailView.classList.remove("visible");
+    });
+});
+    </script>
