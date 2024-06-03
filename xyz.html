@@ -431,7 +431,10 @@
                     <!-- Download SVG icon from http://tabler-icons.io/i/search -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                   </span>
-                  <input type="text" value="" class="form-control" placeholder="Search…" aria-label="Search in website">
+                  
+                  <input type="text" class="form-control" placeholder="Buscar...">
+
+
                 </div>
               </form>
             </div>
@@ -457,7 +460,9 @@
                 <a href="#tabs-teste-1" class="nav-link" title="teste" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/settings -->
                  *
                 </a>
-              </li>              
+              </li>  
+         
+            
               <li class="nav-item ms-auto">
                 <a href="#" class="nav-link d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
                   <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
@@ -1548,6 +1553,8 @@
                                         <input type="text" class="form-control form-control-sm" aria-label="Search invoice">
                                       </div>
                                     </div>
+
+                                    
                                   </div>
                                 </div>
                                 <div class="table-responsive">
@@ -1859,9 +1866,84 @@
                   </div>
                   <div class="tab-pane" id="tabs-settings-1">
                     
- <div id="jsonData"></div>
-    <script src="https://luisangelmaciel.github.io/json/promts.json"></script>
-      
+                    <!DOCTYPE html>
+                    <html lang="en">
+                    <head>
+                      <meta charset="UTF-8">
+                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                      <title>JSON Data Display</title>
+                    </head>
+                    <body>
+                      <input type="text" id="searchInput" placeholder="Buscar...">
+                      <button id="showFavorites">Ver favoritos</button>
+                      <button id="showAll">Ver todos</button>
+                      <div id="jsonData"></div>
+                    
+                      <script>
+                        const jsonContainer = document.getElementById('jsonData');
+                        const searchInput = document.getElementById('searchInput');
+                        const showFavoritesButton = document.getElementById('showFavorites');
+                        const showAllButton = document.getElementById('showAll');
+                    
+                        let jsonData = [];
+                        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+                    
+                        fetch('https://luisangelmaciel.github.io/json/prompts.json')
+                          .then(response => response.json())
+                          .then(data => {
+                            jsonData = data;
+                            mostrarData(jsonData);
+                          })
+                          .catch(error => console.error('Error al cargar el JSON:', error));
+                    
+                        searchInput.addEventListener('input', () => {
+                          const searchTerm = searchInput.value.toLowerCase();
+                          const results = jsonData.filter(item => item.name.toLowerCase().includes(searchTerm));
+                          mostrarData(results);
+                        });
+                    
+                        showFavoritesButton.addEventListener('click', () => {
+                          mostrarData(favoritos);
+                        });
+                    
+                        showAllButton.addEventListener('click', () => {
+                          mostrarData(jsonData);
+                        });
+                    
+                        function mostrarData(data) {
+                          jsonContainer.innerHTML = '';
+                          data.forEach(item => {
+                            const div = document.createElement('div');
+                            const name = document.createElement('h3');
+                            name.textContent = item.name;
+                            const description = document.createElement('div');
+                            description.innerHTML = item.description;
+                            const favoriteButton = document.createElement('button');
+                            favoriteButton.textContent = favoritos.includes(item) ? 'Quitar favorito' : 'Añadir favorito';
+                    
+                            favoriteButton.addEventListener('click', () => {
+                              if (favoritos.includes(item)) {
+                                favoritos = favoritos.filter(fav => fav !== item);
+                                favoriteButton.textContent = 'Añadir favorito';
+                              } else {
+                                favoritos.push(item);
+                                favoriteButton.textContent = 'Quitar favorito';
+                              }
+                              localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                            });
+                    
+                            div.appendChild(name);
+                            div.appendChild(description);
+                            div.appendChild(favoriteButton);
+                            jsonContainer.appendChild(div);
+                          });
+                        }
+                      </script>
+                    </body>
+                    </html>
+                    
+
+                    
              <!-- el de settings 1-->
                   </div>
                   <div class="tab-pane" id="tabs-teste-1">
