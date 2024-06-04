@@ -78,13 +78,11 @@
               </div>
             </div>
             <div class="d-none d-lg-flex">
-              <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip"
-		   data-bs-placement="bottom">
+              <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip"		   data-bs-placement="bottom">
                 <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
               </a>
-              <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip"
-		   data-bs-placement="bottom">
+              <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip"		   data-bs-placement="bottom">
                 <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
               </a>
@@ -415,11 +413,11 @@
               </a>
               <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
                 <a href="#" class="dropdown-item">Status</a>
-                <a href="./profile.html" class="dropdown-item">Profile</a>
+                <a href="#profile.html" class="dropdown-item">Profile</a>
                 <a href="#" class="dropdown-item">Feedback</a>
                 <div class="dropdown-divider"></div>
-                <a href="./settings.html" class="dropdown-item">Settings</a>
-                <a href="./sign-in.html" class="dropdown-item">Logout</a>
+                <a href="#settings.html" class="dropdown-item">Settings</a>
+                <a href="#sign-in.html" class="dropdown-item">Logout</a>
               </div>
             </div>
           </div>
@@ -431,10 +429,7 @@
                     <!-- Download SVG icon from http://tabler-icons.io/i/search -->
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" /><path d="M21 21l-6 -6" /></svg>
                   </span>
-                  
-                  <input type="text" class="form-control" placeholder="Buscar...">
-
-
+                  <input type="text" id="searchInput" placeholder="Buscar..." class="form-control">
                 </div>
               </form>
             </div>
@@ -445,8 +440,11 @@
         <div class="card">
           <div class="card-header">
             <ul class="nav nav-tabs card-header-tabs" data-bs-toggle="tabs">
-              <li class="nav-item">
-                <a href="#tabs-home-1" class="nav-link active" data-bs-toggle="tab">Home</a>
+              <li class="nav-item" id="showAll">
+                <a href="#tabs-home-1" class="nav-link active" data-bs-toggle="tab"> Ver todos</a>
+              </li>
+              <li class="nav-item" id="showFavorites">
+                <a href="#tabs-home-1" class="nav-link " data-bs-toggle="tab">   Ver favoritos</a>
               </li>
               <li class="nav-item">
                 <a href="#tabs-profile-1" class="nav-link" data-bs-toggle="tab">Profile</a>
@@ -456,13 +454,12 @@
                   <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
                 </a>
               </li>  
+                                                     
               <li class="nav-item ">
                 <a href="#tabs-teste-1" class="nav-link" title="teste" data-bs-toggle="tab"><!-- Download SVG icon from http://tabler-icons.io/i/settings -->
                  *
                 </a>
-              </li>  
-         
-            
+              </li>
               <li class="nav-item ms-auto">
                 <a href="#" class="nav-link d-none d-sm-inline-block" data-bs-toggle="modal" data-bs-target="#modal-report">
                   <!-- Download SVG icon from http://tabler-icons.io/i/plus -->
@@ -479,8 +476,135 @@
           <div class="card-body">
             <div class="tab-content">
               <div class="tab-pane active show" id="tabs-home-1">
-                <h4>Home tab</h4>
-                <div>Cursus turpis vestibulum, dui in pharetra vulputate id sed non turpis ultricies fringilla at sed facilisis lacus pellentesque purus nibh</div>
+               
+                <html lang="en">
+                  <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>JSON Data Display</title>
+                  </head>
+                  <body>                     
+                   
+                    <div id="jsonData"></div>
+                  
+                    <script>
+                      const jsonContainer = document.getElementById('jsonData');
+                      const searchInput = document.getElementById('searchInput');
+                      const showFavoritesButton = document.getElementById('showFavorites');
+                      const showAllButton = document.getElementById('showAll');
+                  
+                      let jsonData = [];
+                      let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
+                  
+                      fetch('https://luisangelmaciel.github.io/json/prompts.json')
+                        .then(response => response.json())
+                        .then(data => {
+                          jsonData = data;
+                          mostrarData(jsonData);
+                        })
+                        .catch(error => console.error('Error al cargar el JSON:', error));
+                  
+                      searchInput.addEventListener('input', () => {
+                        const searchTerm = searchInput.value.toLowerCase();
+                        const results = jsonData.filter(item => item.name.toLowerCase().includes(searchTerm));
+                        mostrarData(results);
+                      });
+                  
+                      showFavoritesButton.addEventListener('click', () => {
+                        mostrarData(favoritos);
+                      });
+                  
+                      showAllButton.addEventListener('click', () => {
+                        mostrarData(jsonData);
+                      });
+                  
+                      function mostrarData(data) {
+                        jsonContainer.innerHTML = '';
+                        data.forEach(item => {
+                          const div = document.createElement('div');
+                          const name = document.createElement('h3');
+                          name.textContent = item.name;
+                          const description = document.createElement('div');
+                          description.innerHTML = item.description;
+                          const favoriteButton = document.createElement('button');
+                          favoriteButton.textContent = favoritos.includes(item) ? 'Quitar favorito' : 'Añadir favorito';
+                  
+                          favoriteButton.addEventListener('click', () => {
+                            if (favoritos.includes(item)) {
+                              favoritos = favoritos.filter(fav => fav !== item);
+                              favoriteButton.textContent = 'Añadir favorito';
+                            } else {
+                              favoritos.push(item);
+                              favoriteButton.textContent = 'Quitar favorito';
+                            }
+                            localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                          });
+                  
+                          div.appendChild(name);
+                          div.appendChild(description);
+                          div.appendChild(favoriteButton);
+                          jsonContainer.appendChild(div);
+                        });
+                      }
+                    </script>
+                    <script>
+                      // ... (código anterior sin cambios)
+                  
+                      function mostrarData(data) {
+                        jsonContainer.innerHTML = '';
+                        data.forEach(item => {
+                          const div = document.createElement('div');
+                          const name = document.createElement('h3');
+                          name.textContent = item.name;
+                          const type = document.createElement('p');
+                          type.textContent = `Tipo: ${item.type}`;
+                          const description = document.createElement('div');
+                          description.innerHTML = item.description;
+                          const favoriteButton = document.createElement('button');
+                          favoriteButton.textContent = favoritos.includes(item) ? 'Quitar favorito' : 'Añadir favorito';
+                          const editButton = document.createElement('button');
+                          editButton.textContent = 'Editar';
+                          const deleteButton = document.createElement('button');
+                          deleteButton.textContent = 'Borrar';
+                  
+                          favoriteButton.addEventListener('click', () => {
+                            // ... (código anterior sin cambios)
+                          });
+                  
+                          editButton.addEventListener('click', () => {
+                            const newName = prompt('Nuevo nombre:', item.name);
+                            const newDescription = prompt('Nueva descripción:', item.description);
+                  
+                            if (newName !== null && newDescription !== null) {
+                              item.name = newName;
+                              item.description = newDescription;
+                              mostrarData(data);
+                            }
+                          });
+                  
+                          deleteButton.addEventListener('click', () => {
+                            if (confirm('¿Estás seguro de que quieres borrar este registro?')) {
+                              jsonData = jsonData.filter(element => element !== item);
+                              if (favoritos.includes(item)) {
+                                favoritos = favoritos.filter(fav => fav !== item);
+                                localStorage.setItem('favoritos', JSON.stringify(favoritos));
+                              }
+                              mostrarData(jsonData);
+                            }
+                          });
+                  
+                          div.appendChild(name);
+                          div.appendChild(type);
+                          div.appendChild(description);
+                          div.appendChild(favoriteButton);
+                          div.appendChild(editButton);
+                          div.appendChild(deleteButton);
+                          jsonContainer.appendChild(div);
+                        });
+                      }
+                    </script>
+                  </body>
+                  </html>
               </div>
               <div class="tab-pane" id="tabs-profile-1">
                 <div class="page-wrapper">                                 
@@ -1865,82 +1989,8 @@
                     </div>
                   </div>
                   <div class="tab-pane" id="tabs-settings-1">
-                    
-                    <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                      <meta charset="UTF-8">
-                      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                      <title>JSON Data Display</title>
-                    </head>
-                    <body>
-                      <input type="text" id="searchInput" placeholder="Buscar...">
-                      <button id="showFavorites">Ver favoritos</button>
-                      <button id="showAll">Ver todos</button>
-                      <div id="jsonData"></div>
-                    
-                      <script>
-                        const jsonContainer = document.getElementById('jsonData');
-                        const searchInput = document.getElementById('searchInput');
-                        const showFavoritesButton = document.getElementById('showFavorites');
-                        const showAllButton = document.getElementById('showAll');
-                    
-                        let jsonData = [];
-                        let favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
-                    
-                        fetch('https://luisangelmaciel.github.io/json/prompts.json')
-                          .then(response => response.json())
-                          .then(data => {
-                            jsonData = data;
-                            mostrarData(jsonData);
-                          })
-                          .catch(error => console.error('Error al cargar el JSON:', error));
-                    
-                        searchInput.addEventListener('input', () => {
-                          const searchTerm = searchInput.value.toLowerCase();
-                          const results = jsonData.filter(item => item.name.toLowerCase().includes(searchTerm));
-                          mostrarData(results);
-                        });
-                    
-                        showFavoritesButton.addEventListener('click', () => {
-                          mostrarData(favoritos);
-                        });
-                    
-                        showAllButton.addEventListener('click', () => {
-                          mostrarData(jsonData);
-                        });
-                    
-                        function mostrarData(data) {
-                          jsonContainer.innerHTML = '';
-                          data.forEach(item => {
-                            const div = document.createElement('div');
-                            const name = document.createElement('h3');
-                            name.textContent = item.name;
-                            const description = document.createElement('div');
-                            description.innerHTML = item.description;
-                            const favoriteButton = document.createElement('button');
-                            favoriteButton.textContent = favoritos.includes(item) ? 'Quitar favorito' : 'Añadir favorito';
-                    
-                            favoriteButton.addEventListener('click', () => {
-                              if (favoritos.includes(item)) {
-                                favoritos = favoritos.filter(fav => fav !== item);
-                                favoriteButton.textContent = 'Añadir favorito';
-                              } else {
-                                favoritos.push(item);
-                                favoriteButton.textContent = 'Quitar favorito';
-                              }
-                              localStorage.setItem('favoritos', JSON.stringify(favoritos));
-                            });
-                    
-                            div.appendChild(name);
-                            div.appendChild(description);
-                            div.appendChild(favoriteButton);
-                            jsonContainer.appendChild(div);
-                          });
-                        }
-                      </script>
-                    </body>
-                    </html>
+                    <h4>Home tab</h4>
+                    <div>Cursus turpis vestibulum, dui in pharetra vulputate id sed non turpis ultricies fringilla at sed facilisis lacus pellentesque purus nibh</div>                   
                     
 
                     

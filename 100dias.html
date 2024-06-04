@@ -1,0 +1,1248 @@
+
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  
+  
+  
+
+  <title>CodePen - A Pen by Luis Angel Maciel</title>
+
+    <link rel="canonical" href="https://codepen.io/luisangelmaciel/pen/YzbqZvo">
+  
+  
+  
+  
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=qahSp-_LE5MkeIQEksNAq69Kdo50HJkSp0jEvU7jFs4aoqVSUNdgrA4wQEaZi4SXdgdqgYfi6BA-RH9dGvQKdOE8ET64Bx_HGwbdKp3-KTzFbcbeSrp9a7LJbvezzE49" charset="UTF-8"></script><style>
+html {
+ color: #000;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+ margin: 0;
+ padding: 0;
+}
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+fieldset,
+img {
+ border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var,
+optgroup {
+ font-style: inherit;
+ font-weight: inherit;
+}
+del,
+ins {
+ text-decoration: none;
+}
+li {
+ list-style: none;
+}
+caption,
+th {
+ text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-size: 100%;
+ font-weight: normal;
+}
+q:before,
+q:after {
+ content: "";
+}
+abbr,
+acronym {
+ border: 0;
+ font-variant: normal;
+}
+sup {
+ vertical-align: baseline;
+}
+sub {
+ vertical-align: baseline;
+}
+legend {
+ color: #000;
+}
+input,
+button,
+textarea,
+select,
+optgroup,
+option {
+ font-family: inherit;
+ font-size: inherit;
+ font-style: inherit;
+ font-weight: inherit;
+}
+input,
+button,
+textarea,
+select {
+ font-size: 100%;
+}
+input[type="text"] {
+ border: none;
+}
+@font-face {
+ font-family: "Inter";
+ font-style: normal;
+ font-weight: 400;
+ src: url("https://onepagelove.com/wp-content/themes/onepagelove/frontend/fonts/i-r.woff2")
+  format("woff2");
+}
+@font-face {
+ font-family: "Inter";
+ font-style: normal;
+ font-weight: 700;
+ src: url("https://yarticulospromocionales.vercel.app/fonts/Inter-Regular.woff2")
+  format("woff2");
+}
+* {
+ margin: 0;
+}
+html,
+body {
+ height: 100%;
+ padding: 0;
+ margin: 0;
+ -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+html {
+ background-color: #18253f;
+ background: url("https://tse2.mm.bing.net/th/id/OIG3.DMMsTAwCCxVyfQ_V4qTN?pid=ImgGn")
+  no-repeat center center fixed;
+ background-size: cover;
+ scroll-behavior: smooth;
+}
+@media (max-width: 500px) {
+ html {
+  background-image: none;
+  background-color: #101a2b;
+ }
+}
+body {
+ font-family: "Inter", sans-serif;
+ color: #fff;
+ font-size: 100%;
+ font-size: 16px;
+ line-height: 16px;
+ text-decoration: none;
+ text-shadow: none;
+ font-style: normal;
+ font-weight: 400;
+ letter-spacing: -0.4px;
+ position: relative;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ -moz-font-feature-settings: "liga" on;
+}
+a {
+ text-decoration: none;
+ color: black;
+}
+a:visited {
+ text-decoration: none;
+ color: black;
+}
+a:hover {
+ text-decoration: none;
+ color: black;
+}
+a:focus {
+ text-decoration: none;
+ color: black;
+}
+a:hover,
+a:active {
+ text-decoration: none;
+ color: black;
+}
+textarea,
+input.text,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+.input-checkbox {
+ -webkit-appearance: none;
+ border-radius: 0;
+}
+strong {
+ font-weight: 600;
+}
+@-webkit-keyframes fadein {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+@keyframes fadein {
+ from {
+  opacity: 0;
+ }
+ to {
+  opacity: 1;
+ }
+}
+#hottips-container {
+ width: 100%;
+ max-width: 680px;
+ margin: 0 auto;
+}
+@media (max-width: 774px) {
+ #hottips-container {
+  max-width: none;
+ }
+}
+@media (max-width: 774px) {
+ #hottips-info {
+  padding-left: 48px;
+  padding-right: 48px;
+ }
+}
+@media (max-width: 500px) {
+ #hottips-info {
+  padding-left: 24px;
+  padding-right: 24px;
+ }
+}
+@media (max-width: 774px) {
+ #hottips-preview {
+  padding-left: 48px;
+  padding-right: 48px;
+ }
+}
+@media (max-width: 500px) {
+ #hottips-preview {
+  padding-left: 24px;
+  padding-right: 24px;
+ }
+}
+.hottips-top {
+ -webkit-animation: fadein 0.5s;
+ animation: fadein 0.5s;
+}
+.hottips-headline {
+ -webkit-animation: fadein 1s;
+ animation: fadein 1s;
+}
+.hottips-testimonials {
+ -webkit-animation: fadein 1.5s;
+ animation: fadein 1.5s;
+}
+.hottips-signup {
+ -webkit-animation: fadein 2s;
+ animation: fadein 2s;
+}
+.hottips-top {
+ padding: 96px 0;
+}
+@media (max-width: 500px) {
+ .hottips-top {
+  padding: 48px 0;
+ }
+}
+.header-logo-name {
+ display: inline-block;
+ height: 24px;
+ position: relative;
+ vertical-align: top;
+}
+.header-logo-name a {
+ color: #fff;
+ text-shadow: 0 1px #080b13;
+ font-size: 18px;
+ line-height: 20px;
+ font-weight: 700;
+ letter-spacing: 0px;
+ margin: 0 4px 4px 4px;
+ -webkit-font-smoothing: subpixel-antialiased;
+}
+.header-logo-name .tagline {
+ color: #c3d3f0;
+ text-shadow: 0 1px #080b13;
+ font-size: 15px;
+ line-height: 20px;
+ font-weight: 400;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ text-rendering: optimizeLegibility;
+ -moz-font-feature-settings: "liga" on;
+}
+@media (max-width: 500px) {
+ .header-logo-name .tagline {
+  display: none;
+ }
+}
+.hottips-headline {
+ display: block;
+ font-size: 52px;
+ line-height: 60px;
+ letter-spacing: -2.8px;
+ font-weight: 700;
+ max-width: 800px;
+ margin-bottom: 24px;
+ text-shadow: 0 1px #080b13;
+}
+@media (max-width: 920px) {
+ .hottips-headline {
+  font-size: 46.8px;
+  line-height: 54px;
+  letter-spacing: -2.52px;
+ }
+ .hottips-headline .inspo {
+  display: block;
+ }
+}
+@media (max-width: 774px) {
+ .hottips-headline {
+  font-size: 36.4px;
+  line-height: 42px;
+  letter-spacing: -1.96px;
+ }
+}
+@media (max-width: 500px) {
+ .hottips-headline {
+  font-size: 23.4px;
+  line-height: 27px;
+  letter-spacing: -0.84px;
+ }
+}
+.digestable {
+ color: #fbda81;
+}
+.hottips-testimonials {
+ display: -webkit-flex;
+ display: flex;
+ max-width: 680px;
+ -webkit-flex-wrap: wrap;
+ flex-wrap: wrap;
+ -webkit-justify-content: space-between;
+ justify-content: space-between;
+}
+.testimonial {
+ max-width: 48%;
+ margin-bottom: 48px;
+}
+@media (max-width: 500px) {
+ .testimonial {
+  max-width: 100%;
+  margin-bottom: 24px;
+ }
+}
+.testimonial .t-text {
+ box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+ background-color: #18253f;
+ padding: 24px;
+ border-radius: 4px;
+ margin-bottom: 12px;
+ color: #c3d3f0;
+ font-size: 16px;
+ line-height: 22px;
+ letter-spacing: -0.4px;
+}
+.testimonial .t-credit {
+ display: -webkit-flex;
+ display: flex;
+}
+.testimonial .t-img {
+ width: 48px;
+}
+.testimonial .t-img img {
+ max-width: 36px;
+ border-radius: 9999px;
+}
+.testimonial .t-credentials {
+ -webkit-flex: 1;
+ flex: 1;
+ display: -webkit-flex;
+ display: flex;
+ -webkit-align-items: center;
+ align-items: center;
+ -webkit-justify-content: center;
+ justify-content: center;
+ -webkit-flex-direction: column;
+ flex-direction: column;
+}
+.testimonial .t-name {
+ display: block;
+ width: 100%;
+ margin-bottom: 6px;
+ font-size: 14px;
+ line-height: 14px;
+}
+.testimonial .t-title {
+ width: 100%;
+ color: #c3d3f0;
+ opacity: 0.7;
+ display: block;
+ font-size: 12px;
+ line-height: 12px;
+}
+.hottips-signup {
+ margin-bottom: 96px;
+}
+.hottips-signup .emailoctopus-form-row {
+ display: block;
+}
+.hottips-signup .emailoctopus-form-row label {
+ display: block;
+ color: #c3d3f0;
+ font-size: 13px;
+ line-height: 13px;
+ margin-bottom: 6px;
+}
+.hottips-signup .emailoctopus-form-row input {
+ background: #fff;
+ color: #666;
+ width: 100%;
+ max-width: 656px;
+ height: 100%;
+ border: none;
+ border-radius: 4px;
+ margin-bottom: 12px;
+ padding: 11px 12px 15px 12px;
+ font-size: 24px;
+ letter-spacing: -0.3px;
+}
+@media (max-width: 500px) {
+ .hottips-signup .emailoctopus-form-row input {
+  font-size: 18px;
+  padding-right: 0;
+  padding-left: 2%;
+  width: 98%;
+ }
+}
+.hottips-signup .emailoctopus-form-row input:focus {
+ color: #333;
+}
+@media (max-width: 500px) {
+ .hottips-signup .emailoctopus-form-row input {
+  border-radius: 4px;
+  border-right: 1px solid #668898;
+  margin-bottom: 8px;
+ }
+}
+.hottips-signup .emailoctopus-form-row-subscribe button {
+ margin-top: 12px;
+ width: 100%;
+ max-width: 680px;
+ height: 100%;
+ font-size: 20px;
+ line-height: 18px;
+ font-weight: 700;
+ padding: 16px 0;
+ text-decoration: none;
+ letter-spacing: 0;
+ border-radius: 4px;
+ border: 1px solid #eb3656;
+ background: #eb3656;
+ color: #fff;
+ transition: background-color 500ms, color 500ms;
+}
+.hottips-signup .emailoctopus-form-row-subscribe button:hover {
+ background: #e02747;
+ border: 1px solid #e02747;
+ cursor: pointer;
+ transition: background-color 100ms, color 100ms;
+}
+@media (max-width: 500px) {
+ .hottips-signup .emailoctopus-form-row-subscribe button {
+  font-size: 14px;
+  line-height: 14px;
+  border-radius: 4px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  margin-top: 8px;
+ }
+}
+#slayer {
+ width: 100%;
+ font-size: 24px;
+ line-height: 24px;
+ margin-bottom: 48px;
+}
+#slayer .validation_error,
+#slayer .validation_message {
+ background: #ffd4d4;
+ color: #fd4c4c;
+ border: 1px solid #fd4c4c;
+ display: inline-block;
+ padding: 2px 4px;
+ margin: 4px 0 4px 0;
+ display: inline-block;
+ font-size: 16px;
+ line-height: 16px;
+ padding: 10px 12px 8px;
+ border-radius: 4px;
+}
+#slayer .gform_confirmation_message {
+ background: #d9ffd4;
+ color: #1b5722;
+ border: 1px solid #a0e090;
+ display: inline-block;
+ padding: 2px 4px;
+ margin: 4px 0 4px 0;
+ display: inline-block;
+ font-size: 16px;
+ line-height: 16px;
+ padding: 10px 12px 8px;
+ border-radius: 4px;
+}
+#slayer .slayer-pitch {
+ margin-top: 8px;
+ font-size: 14px;
+ line-height: 18px;
+ color: #c3d3f0;
+}
+#slayer .slayer-pitch a {
+ color: #fbda81;
+ font-weight: 500;
+}
+.hottips-browser {
+ margin-top: 96px;
+ border-radius: 8px;
+ box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.2);
+ max-width: 680px;
+ background-color: #1c2c38;
+ border-bottom-left-radius: 0px;
+ border-bottom-right-radius: 0px;
+}
+.hottips-browser .browser-row {
+ font-size: 12px;
+ line-height: 12px;
+ color: #d6dddd;
+ background-color: #1e1d1e;
+ padding: 8px 0 8px 8px;
+ border-bottom: 1px solid #343434;
+}
+.hottips-browser .row-field {
+ display: inline-block;
+ font-size: 11px;
+ color: #8b8b8b;
+ width: 48px;
+ margin-right: 8px;
+}
+.hottips-browser .browser-row a {
+ color: #d6dddd;
+}
+.hottips-browser .browser-content {
+ padding: 48px;
+ background-color: #1c2c38;
+ color: #bdcfde;
+}
+@media (max-width: 500px) {
+ .hottips-browser .browser-content {
+  padding: 24px;
+ }
+}
+.hottips-browser .browser-content p.preview-paragraph {
+ color: #bdcfde;
+ font-size: 18px;
+ line-height: 24px;
+ letter-spacing: -0.4px;
+ max-width: 480px;
+ margin-bottom: 24px;
+}
+.hottips-browser .browser-content img {
+ display: block;
+ width: 100%;
+ max-width: 600px;
+ vertical-align: bottom;
+ margin-bottom: 8px;
+}
+.hottips-browser .browser-content a.preview-title {
+ display: block;
+ color: #bdcfde;
+ font-size: 16px;
+ line-height: 24px;
+ letter-spacing: -0.4px;
+ font-weight: bold;
+ text-decoration: none;
+ margin-bottom: 24px;
+}
+.email-client {
+ box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+ border-radius: 4px;
+ line-height: 14px;
+}
+.email-client .browser {
+ background: #3a3a3a;
+ padding: 10px 10px;
+ display: -webkit-flex;
+ display: flex;
+ width: auto;
+ -webkit-align-items: center;
+ align-items: center;
+ border-top-left-radius: 4px;
+ border-top-right-radius: 4px;
+}
+.email-client .buttons {
+ display: -webkit-inline-flex;
+ display: inline-flex;
+}
+.email-client .button {
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ background: #b3b3b3;
+ margin-right: 5px;
+}
+.email-client .button-close {
+ background: #ff6058;
+}
+.email-client .button-minimize {
+ background: #ffbd2e;
+}
+.email-client .button-fullscreen {
+ background: #28c940;
+}
+.unsub {
+ color: #668898;
+ border-bottom: 1px solid #668898;
+ font-size: 12px;
+ line-height: 12px;
+ letter-spacing: -0.1px;
+}
+#pre-sale {
+ background: #122733;
+ background: radial-gradient(circle, #122733 0%, #0e1d26 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#122733",endColorstr="#0e1d26",GradientType=1);
+ display: -webkit-flex;
+ display: flex;
+ max-height: 320px;
+ overflow: hidden;
+ -webkit-justify-content: center;
+ justify-content: center;
+ -webkit-align-items: center;
+ align-items: center;
+ box-shadow: inset 0 -20px 10px -10px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 774px) {
+ #pre-sale {
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-bottom: 48px;
+  max-height: none;
+  text-align: center;
+ }
+}
+.pre-sale-cover {
+ -webkit-align-self: flex-start;
+ align-self: flex-start;
+ width: 280px;
+ padding-right: 48px;
+ padding-left: 48px;
+ overflow: hidden;
+}
+@media (max-width: 774px) {
+ .pre-sale-cover {
+  -webkit-align-self: center;
+  align-self: center;
+  padding-right: 0;
+  padding-left: 0;
+ }
+}
+.pre-sale-cover img {
+ margin-top: 48px;
+ width: 100%;
+ height: auto;
+ -webkit-transform: rotate(-5deg);
+ transform: rotate(-5deg);
+}
+@media (max-width: 774px) {
+ .pre-sale-cover img {
+  width: 80%;
+ }
+}
+.pre-sale-info {
+ padding-right: 48px;
+}
+@media (max-width: 774px) {
+ .pre-sale-info {
+  padding-right: 0;
+ }
+}
+.pre-sale-info .open {
+ font-weight: 600;
+ color: white;
+ font-size: 32px;
+ line-height: 32px;
+ margin-bottom: 8px;
+}
+.pre-sale-info .save {
+ color: #c3d3f0;
+ font-size: 22px;
+ line-height: 22px;
+ margin-bottom: 12px;
+}
+.pre-sale-info .thirty {
+ border-bottom: 1px solid;
+}
+.pre-sale-info .sep {
+ color: #668898;
+ font-size: 16px;
+ line-height: 16px;
+}
+.pre-sale-buy {
+ padding-right: 48px;
+}
+@media (max-width: 774px) {
+ .pre-sale-buy {
+  padding-right: 0;
+ }
+}
+.pre-sale-buy .buy {
+ margin-top: 24px;
+ text-align: center;
+}
+.pre-sale-buy .buy a {
+ display: inline-block;
+ background-color: #a6e2b1;
+ border-radius: 9999px;
+ line-height: auto;
+ font-size: 18px;
+ font-weight: 600;
+ color: #0b6514;
+ padding: 16px 32px;
+}
+.pre-sale-buy .old {
+ color: #ffffff;
+ text-decoration: line-through;
+}
+.pre-sale-buy .remaining {
+ padding: 12px 0;
+ text-align: center;
+ font-family: Courier, monospace;
+ color: #fff466;
+}
+.pre-sale-buy .remaining #countdown {
+ display: inline;
+}
+
+/**/
+
+.emailoctopus-form-wrapper-small label {
+ font-size: 10px;
+}
+.emailoctopus-form-wrapper-small button,
+.emailoctopus-form-wrapper-small div,
+.emailoctopus-form-wrapper-small input,
+.emailoctopus-form-wrapper-small p {
+ font-size: 12px;
+}
+.emailoctopus-form-wrapper-small h2 {
+ font-size: 16px;
+}
+.emailoctopus-form-wrapper-medium label {
+ font-size: 12px;
+}
+.emailoctopus-form-wrapper-medium button,
+.emailoctopus-form-wrapper-medium div,
+.emailoctopus-form-wrapper-medium input,
+.emailoctopus-form-wrapper-medium p {
+ font-size: 15px;
+}
+.emailoctopus-form-wrapper-medium h2 {
+ font-size: 20px;
+}
+.emailoctopus-form-wrapper-large label {
+ font-size: 14px;
+}
+.emailoctopus-form-wrapper-large button,
+.emailoctopus-form-wrapper-large div,
+.emailoctopus-form-wrapper-large input,
+.emailoctopus-form-wrapper-large p {
+ font-size: 18px;
+}
+.emailoctopus-form-wrapper-large h2 {
+ font-size: 26px;
+}
+.emailoctopus-form-wrapper-largest label {
+ font-size: 18px;
+}
+.emailoctopus-form-wrapper-largest button,
+.emailoctopus-form-wrapper-largest div,
+.emailoctopus-form-wrapper-largest input,
+.emailoctopus-form-wrapper-largest p {
+ font-size: 24px;
+}
+.emailoctopus-form-wrapper-largest h2 {
+ font-size: 32px;
+}
+.emailoctopus-form-row-hp {
+ position: absolute;
+ left: -5000px;
+}
+.emailoctopus-form-default.emailoctopus-form-wrapper h2 {
+ margin: 1em 0;
+}
+.emailoctopus-form-default .emailoctopus-form-row {
+ margin-bottom: 1em;
+}
+.emailoctopus-form-default .emailoctopus-form-row label {
+ display: block;
+}
+.emailoctopus-form-default .emailoctopus-form-row input {
+ width: 100%;
+ max-width: 400px;
+ padding: 8px 12px;
+ border: 1px solid #ccc;
+}
+.emailoctopus-form-default .emailoctopus-form-row-consent {
+ margin-bottom: 1em;
+}
+.emailoctopus-form-default .emailoctopus-form-row-consent label {
+ vertical-align: top;
+}
+.emailoctopus-form-default .emailoctopus-form-row-subscribe {
+ margin-top: 0;
+}
+.emailoctopus-form-default .emailoctopus-form-row-subscribe button {
+ background-color: #e0e0e0;
+ padding: 10px 12px;
+ font-weight: 700;
+ font-family: inherit;
+ color: #000;
+ display: block;
+ margin: 0 0 1em;
+ border: none;
+ border-radius: 5px;
+}
+.emailoctopus-form-default .emailoctopus-error-message {
+ color: #e74c3c;
+}
+.emailoctopus-form-default .emailoctopus-referral,
+.emailoctopus-form-default .emailoctopus-rewards {
+ margin-top: 1.2em;
+}
+.emailoctopus-form-centered.emailoctopus-form-wrapper {
+ width: 100%;
+ max-width: 400px;
+ text-align: center;
+}
+.emailoctopus-form-centered.emailoctopus-form-wrapper h2 {
+ margin: 15px 0;
+}
+.emailoctopus-form-centered .emailoctopus-form-row {
+ width: 100%;
+ padding: 12px 0;
+}
+.emailoctopus-form-centered .emailoctopus-form-row label {
+ display: block;
+ text-align: left;
+}
+.emailoctopus-form-centered .emailoctopus-form-row input {
+ width: 100%;
+ max-width: 400px;
+ padding: 8px 12px;
+ box-sizing: border-box;
+ border: 1px solid #ccc;
+}
+.emailoctopus-form-centered .emailoctopus-form-row-subscribe button {
+ background-color: #e0e0e0;
+ color: #000;
+ display: block;
+ margin: 0 auto 12px;
+ width: 100%;
+ max-width: 400px;
+ border: none;
+ font-size: 1em;
+ padding: 10px;
+ border-radius: 5px;
+ font-family: inherit;
+ font-weight: 700;
+}
+.emailoctopus-form-centered .emailoctopus-form-row-consent {
+ margin-bottom: 15px;
+}
+.emailoctopus-form-centered .emailoctopus-referral,
+.emailoctopus-form-centered .emailoctopus-rewards {
+ margin-top: 1.2em;
+}
+</style>
+
+  
+  
+  
+</head>
+
+<body>
+  <!DOCTYPE HTML>
+<html lang="es-MX">
+
+<head>
+
+ <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+ <!-- SEO -->
+ <title>100 Consejos Prácticos para Marketing y Artículos Promocionales</title>
+ <meta name="description" content="Recibe un consejo diario directamente en tu correo" />
+ <meta name="author" content="Luis Maciel, @luisangelmaciel" />
+ <meta name="robots" content="index, follow" />
+ <meta name="referrer" content="always" />
+
+ <!-- Social -->
+ <meta property="og:title" content="🔥100 Consejos Prácticos para Marketing y Artículos Promocionales" />
+ <meta property="og:description" content="Recibe un consejo diario directamente en tu correo" />
+ <meta property="og:image" content="img/hottips-promo.png">
+ <meta property="og:url" content="https://onepagelove.com/100" />
+ <meta name="twitter:title" content="🔥Landing Page Hot Tips with Rob Hope">
+ <meta name="twitter:description" content="Recibe un consejo diario directamente en tu correo" />
+ <meta name="twitter:image" content="img/hottips-promo.png" />
+ <meta name="twitter:card" content="summary_large_image" />
+ <meta name="twitter:site" content="@luisangelmaciel" />
+ <meta name="twitter:creator" content="@luisangelmaciel" />
+
+ <!-- Favicons -->
+ <link rel="icon" type="image/png" href="img/fire.png" sizes="32x32">
+
+ <!-- Preload that sweet Inter typeface -->
+ <link rel="preload" href="https://yarticulospromocionales.vercel.app/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+ <link rel="preload" href="https://yarticulospromocionales.vercel.app/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+ <!-- Stylesheets -->
+ <link rel='stylesheet' id='hottips-stylesheet-css' href='' type='text/css' media='all' />
+
+</head>
+
+<body>
+
+ <div id="pre-sale">
+
+  <div class="pre-sale-cover">
+
+   <a href="https://robhope.gumroad.com/l/hottips/100lp"><img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/cover.png" alt="Landing Page Hot Tips EBook Cover" /></a>
+
+  </div>
+
+  <div class="pre-sale-info">
+
+   <div class="open">🔥 ¡Venta de libros electrónicos!</div>
+   <div class="save"><span class="thirty">Ahorra 20%</span> durante junio</span></div>
+   <div class="sep">Ebook ISBN: 978-1-64999-225-3 </div>
+
+  </div>
+
+  <div class="pre-sale-buy">
+
+   <div class="buy"><a href="https://robhope.gumroad.com/l/hottips/100lp">Compra ahora por solo $39 <span class="old">$49</span></a></div>
+   <div class="remaining">Obtenga $10 de descuento para mayo (ahorre 20%)<br /><br />⏳<div id="countdown"></div> remaining<br /> </div>
+
+  </div>
+
+ </div>
+
+ </div>
+
+ <div id="hottips-container">
+
+  <div id="hottips-info">
+
+   <div class="hottips-content">
+
+    <div class="hottips-top">
+
+     <div class="hottips-logo">
+
+      <div class="logo-wrapper">
+
+       <div class="header-logo-name">
+        <a href="https://onepagelove.com" title="Go back to One Page Love">🔥 Consejos útiles Hot Tips</a> <span class="tagline">con YapYap</span>
+       </div>
+
+      </div>
+
+     </div>
+
+    </div>
+    <div class="hottips-headline">
+     <span class="inspo">Mejore sus páginas de destino con <span class="digestable">100 consejos digeribles</span> para enviar por correo electrónico durante 100 días.</span>
+    </div>
+    <div class="hottips-signup">
+
+     <link rel="stylesheet" href="https://emailoctopus.com/bundles/emailoctopuslist/css/1.6/form.cssx">
+     <div class="emailoctopus-form-wrapper emailoctopus-form-unstyled null">
+      <p class="emailoctopus-success-message">
+      </p>
+      <p class="emailoctopus-error-message">
+      </p>
+      <form action="https://emailoctopus.com/lists/be22bea7-9f30-11ea-a3d0-06b4694bee2a/members/embedded/1.3s/add" method="post" data-message-success="Check your inbox for your first tip!" data-message-missing-email-address="Your email address is required." data-message-invalid-email-address="Your email address looks incorrect, please try again." data-message-bot-submission-error="This doesn't look like a human submission." data-message-consent-required="Please check the checkbox to indicate your consent." data-message-invalid-parameters-error="This form has missing or invalid fields." data-message-unknown-error="Sorry, an unknown error has occurred. Please try again later." class="emailoctopus-form" data-sitekey="6LdYsmsUAAAAAPXVTt-ovRsPIJ_IVhvYBBhGvRV6">
+       <div class="emailoctopus-form-row">
+        <label for="field_1">
+         Nombre de pila*
+        </label>
+        <input id="field_1" name="field_1" type="text" placeholder="Benito Juarez">
+       </div>
+       <div class="emailoctopus-form-row">
+        <label for="field_0">
+         Email address*
+        </label>
+        <input id="field_0" name="field_0" type="email" placeholder="benito.juarez@email.com" required="required">
+       </div>
+       <div aria-hidden="true" class="emailoctopus-form-row-hp">
+        <input type="text" name="hpc4b27b6e-eb38-11e9-be00-06b4694bee2a" tabindex="-1" autocomplete="nope">
+       </div>
+       <div class="emailoctopus-form-row-subscribe">
+        <input type="hidden" name="successRedirectUrl" value="https://onepagelove.com/100-tips-thanks">
+        <button type="submit">
+         ¡Suscríbete gratis y recibe el primer consejo!
+        </button>
+       </div>
+      </form>
+     </div>
+     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-recaptcha.js">
+     </script>
+     <script src="https://emailoctopus.com/bundles/emailoctopuslist/js/1.6/form-embed.js">
+     </script>
+
+     <div id="slayer">
+      <div class="slayer-pitch">Solo un consejo útil por correo electrónico. Darse de baja al instante. <a href="#hottips-preview">¿Cómo se ve un envío?</a></div>
+     </div>
+
+    </div>
+    <div class="hottips-testimonials">
+
+     <div class="testimonial">
+      <div class="t-text">Esto es fantástico Rob. <strong>El mejor formato y contenido</strong>que he visto para el diseño de páginas de destino. </div>
+      <div class="t-credit">
+       <span class="t-img"><img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/mikael-cho.jpg" alt="Miguel Romero" /></span>
+       <span class="t-credentials">
+        <span class="t-name">Miguel Romero</span>
+        <span class="t-title">Terapia Familiar Sistemica</span>
+       </span>
+      </div>
+     </div>
+
+     <div class="testimonial">
+      <div class="t-text">Un cofre del tesoro abierto por Rob sobre cómo dominar una página de destino. Suscríbete para recibir toneladas de conocimiento.</div>
+      <div class="t-credit">
+       <span class="t-img"><img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/dhruvin-shah.jpg" alt="Marcelo Cruz" /></span>
+       <span class="t-credentials">
+        <span class="t-name">Marcelo Cruz</span>
+        <span class="t-title">Abarratos San Jose Del Progreso</span>
+       </span>
+      </div>
+     </div>
+
+     <div class="testimonial">
+      <div class="t-text">Gracias por compartir estos consejos de una manera digerible, Rob, y recordarnos los conceptos básicos.</div>
+      <div class="t-credit">
+       <span class="t-img"><img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/priya-nain.jpg" alt="Priya Nain" /></span>
+       <span class="t-credentials">
+        <span class="t-name">LiElizabeth Padilla</span>
+        <span class="t-title">Mueganitos, libros didacticos</span>
+       </span>
+      </div>
+     </div>
+
+     <div class="testimonial">
+      <div class="t-text">Cuando recibo el correo electrónico de sugerencias, sé que puedo leerlo en cualquier lugar . Además, aportan valor; la mayor parte del tiempo tengo la impresión de que Rob está hablando de mi página de destino.</div>
+      <div class="t-credit">
+       <span class="t-img"><img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/bruno-raljic.jpg" alt="Francisco Escamilla" /></span>
+       <span class="t-credentials">
+        <span class="t-name">Francisco Escamilla</span>
+        <span class="t-title">IngeContructor</span>
+       </span>
+      </div>
+     </div>
+
+    </div>
+   </div><!-- /.hottips-content -->
+
+  </div><!-- /#hottips-info -->
+
+  <div id="hottips-preview">
+
+   <div class="hottips-browser">
+
+    <div class="email-client">
+     <div class="browser">
+      <div class="buttons">
+       <div class="button button-close"></div>
+       <div class="button button-minimize"></div>
+       <div class="button button-fullscreen"></div>
+      </div>
+     </div>
+    </div>
+    <div class="browser-row"><span class="row-field">From:</span> YapYap - Luis Maciel &lt;<a href="/cdn-cgi/l/email-protection" class="__cf_email__"> xbr.pw&#160;my.com</a>&gt;</div>
+    <div class="browser-row"><span class="row-field">To:</span> Eugenio Rosas &lt;<a href="https://www.youtube.com/watch?v=mwtaM0GC-js&feature=youtu.be&t=13" target="_blank"><span class="__cf_email__">[eugeniorosas&#160;gmail.com]</span></a>&gt;</div>
+
+    <div class="browser-row"><span class="row-field">Subject:</span> 🔥 Marketing y promoción Hot Tip #07 - Reemplazar, no agregar</div>
+    <div class="browser-content">
+     <p class="preview-paragraph">
+      Hola Eugenio
+      <br /><br />
+      El consejo n.° 08 es reemplazar el contenido antiguo cuando llega contenido nuevo.
+      <br /><br />
+      Tu Landing Page con 8 testimonios, no necesita un 9º. Echa al más débil del grupo.
+      <br /><br />
+      <br />
+      <img src="https://onepagelove.com/wp-content/themes/onepagelove/frontend/img/pages/hottips/08.jpeg" alt="Hot Tip" width="520" />
+      <br /><br />
+      Los 6 mejores ejemplos de fotografía de tu boda.
+      <br /><br />
+      Tus 4 mejores opiniones de clientes
+      <br /><br />
+      El objetivo es persuadir al visitante de su página de destino con lo menos posible, no tanto.
+      <br /><br />
+      Saludos,<br />Luis Maciel - YapYap
+      <br />
+      <br />
+      <span class="unsub">Cancelar suscripción a estos consejos interesantes.</span>
+     </p>
+    </div>
+
+   </div>
+  </div><!-- /#hottips-preview -->
+
+ </div><!-- /#hottips-container -->
+
+</body>
+
+</html>
+  
+      <script id="rendered-js" >
+!(function () {
+ "use strict";
+ var a = window.location,
+  r = window.document,
+  o = r.currentScript,
+  l = o.getAttribute("data-api") || new URL(o.src).origin + "/api/event";
+ function s(t, e) {
+  t && console.warn("Ignoring Event: " + t), e && e.callback && e.callback();
+ }
+ function t(t, e) {
+  if (
+   /^localhost$|^127(\.[0-9]+){0,2}\.[0-9]+$|^\[::1?\]$/.test(a.hostname) ||
+   "file:" === a.protocol
+  )
+   return s("localhost", e);
+  if (
+   window._phantom ||
+   window.__nightmare ||
+   window.navigator.webdriver ||
+   window.Cypress
+  )
+   return s(null, e);
+  try {
+   if ("true" === window.localStorage.plausible_ignore)
+    return s("localStorage flag", e);
+  } catch (t) {}
+  var n = {},
+   i =
+    ((n.n = t),
+    (n.u = a.href),
+    (n.d = o.getAttribute("data-domain")),
+    (n.r = r.referrer || null),
+    e && e.meta && (n.m = JSON.stringify(e.meta)),
+    e && e.props && (n.p = e.props),
+    new XMLHttpRequest());
+  i.open("POST", l, !0),
+   i.setRequestHeader("Content-Type", "text/plain"),
+   i.send(JSON.stringify(n)),
+   (i.onreadystatechange = function () {
+    4 === i.readyState && e && e.callback && e.callback();
+   });
+ }
+ var e = (window.plausible && window.plausible.q) || [];
+ window.plausible = t;
+ for (var n, i = 0; i < e.length; i++) t.apply(this, e[i]);
+ function p() {
+  n !== a.pathname && ((n = a.pathname), t("pageview"));
+ }
+ var c,
+  w = window.history;
+ w.pushState &&
+  ((c = w.pushState),
+  (w.pushState = function () {
+   c.apply(this, arguments), p();
+  }),
+  window.addEventListener("popstate", p)),
+  "prerender" === r.visibilityState
+   ? r.addEventListener("visibilitychange", function () {
+      n || "visible" !== r.visibilityState || p();
+     })
+   : p();
+})();
+
+///
+
+var end = new Date();
+end.setDate(1), end.setMonth(end.getMonth() + 1), end.setHours(0, 0, 0, 0);
+var timer,
+ _second = 1e3,
+ _minute = 60 * _second,
+ _hour = 60 * _minute,
+ _day = 24 * _hour;
+function showRemaining() {
+ var e = new Date(),
+  n = end - e;
+ if (n < 0)
+  return (
+   clearInterval(timer),
+   void (document.getElementById("countdown").innerHTML = "Pre-sale over")
+  );
+ var t = Math.floor(n / _day),
+  o = Math.floor((n % _day) / _hour),
+  d = Math.floor((n % _hour) / _minute),
+  r = Math.floor((n % _minute) / _second);
+ (document.getElementById("countdown").innerHTML = t + "d "),
+  (document.getElementById("countdown").innerHTML += o + "h "),
+  (document.getElementById("countdown").innerHTML += d + "m "),
+  (document.getElementById("countdown").innerHTML += r + "s");
+}
+timer = setInterval(showRemaining, 1e3);
+    </script>
+
+  
+</body>
+
+</html>
