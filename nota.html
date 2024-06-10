@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Nota</title>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+ <style>
+  html,
+  body {
+   height: 100%;
+   margin: 0;
+   overflow: hidden;
+  }
+
+  body,
+  input,
+  textarea {
+   font-family: sans-serif;
+   color: #555;
+   letter-spacing: 0.04em;
+  }
+
+  .legal-pad {
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   margin: 0 0 0 0;
+   width: 100%;
+   position: absolute;
+   overflow: hidden;
+  }
+
+  .pad-binding {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   position: fixed;
+   top: 70px;
+   left: 10px;
+   right: 0px;
+   z-index: 3;
+  }
+
+  .pad-binding .button-group {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+  }
+
+  .pad-binding .button {
+   background: #8e3838;
+   border: 0;
+   border-radius: 4px;
+   color: #e1b1b1;
+   text-transform: uppercase;
+   letter-spacing: 0.1em;
+   font-weight: 600;
+   padding: 0.5rem 1rem;
+   cursor: pointer;
+   width: 67px;
+  }
+
+  .pad-binding .button:hover,
+  .pad-binding .button:focus {
+   background: #c46868;
+  }
+
+  .pad-binding .button:active {
+   background: #8e3838;
+  }
+
+  .pad-content {
+   background: #ffffcc;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+   z-index: 1;
+  }
+
+  .pad-content.dummy {
+   z-index: 0;
+  }
+
+  .pad-content.removing-page {
+   animation: remove-page 1000ms;
+  }
+
+  .pad-margin {
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   border-right: 2px solid #ffcccc;
+   width: 90px;
+   z-index: 333;
+  }
+
+  .pad-margin:before {
+   position: absolute;
+   right: 6px;
+   content: "";
+   width: 2px;
+   display: block;
+   height: 100%;
+   background: #ffcccc;
+  }
+
+  .pad-header {
+   z-index: 2;
+   height: 60px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   transition: box-shadow 0.2s ease;
+  }
+
+  .pad-header.is-overlapping {
+   box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .pad-header .pad-title {
+   border: 0;
+   background: #fcf75e;
+   font-size: 18px;
+   padding-left: 100px;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: block;
+   box-sizing: border-box;
+  }
+
+  .pad-header .pad-title:focus {
+   outline: none;
+  }
+
+  .pad-body {
+   position: absolute;
+   top: 60px;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background: repeating-linear-gradient(#cce0ff,
+     #cce0ff 2px,
+     transparent 2px,
+     transparent 2rem);
+   background-attachment: local;
+   background-size: 32px 32px;
+  }
+
+  .pad-body .pad-input {
+   background: transparent;
+   line-height: 2rem;
+   font-size: 1rem;
+   border: 0;
+   width: 100%;
+   height: 100%;
+   resize: none;
+   padding-left: 110px;
+   padding-right: 20px;
+   box-sizing: border-box;
+  }
+
+  .pad-body .pad-input:focus {
+   outline: none;
+  }
+
+  @keyframes remove-page {
+   100% {
+    transform: rotate(-20deg) translateY(120%);
+   }
+  }
+
+  /* Dark Mode Adjustments */
+  .dark-mode .pad-content {
+   background: #1b1811;
+  }
+
+  .dark-mode .pad-binding {
+   color: #fff;
+  }
+
+  .dark-mode .pad-title {
+   background: #2c272b;
+   color: #ccc;
+  }
+
+  .dark-mode .pad-input {
+   background: #1b1811;
+   color: #ccc;
+  }
+
+  .dark-mode .pad-input::placeholder,
+  .dark-mode .pad-title::placeholder {
+   color: #aaa;
+  }
+
+  .dark-mode .pad-margin {
+   border-right: 2px solid #444;
+  }
+
+  .dark-mode .pad-margin:before {
+   background: #444;
+  }
+
+  /* Hide scrollbar */
+  .pad-input::-webkit-scrollbar {
+   display: none;
+  }
+
+  .pad-input {
+   -ms-overflow-style: none;
+   /* IE and Edge */
+   scrollbar-width: none;
+   /* Firefox */
+  }
+
+  /* Hide scrollbar in dummy pad-content */
+  .pad-content.dummy .pad-input::-webkit-scrollbar {
+   display: none;
+  }
+
+  .pad-content.dummy .pad-input {
+   -ms-overflow-style: none;
+   /* IE and Edge */
+   scrollbar-width: none;
+   /* Firefox */
+  }
+ </style>
+</head>
+
+<body>
+ <div class="legal-pad">
+  <div class="pad-binding">
+   <div class="button-group"> <button class="button">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-home-search">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M21 12l-9 -9l-9 9h2v7a2 2 0 0 0 2 2h4.7" />
+      <path d="M9 21v-6a2 2 0 0 1 2 -2h2" />
+      <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+      <path d="M20.2 20.2l1.8 1.8" />
+     </svg> <button class="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-file-search">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+       <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+       <path d="M16.5 17.5m-2.5 0a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0" />
+       <path d="M18.5 19.5l2.5 2.5" />
+      </svg>
+     </button>
+     <button class="button">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-circle-plus">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+       <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+       <path d="M9 12h6" />
+       <path d="M12 9v6" />
+      </svg>
+     </button>
+     <button class="button" onclick="saveTextAsFile()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+       <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
+       <path d="M7 11l5 5l5 -5" />
+       <path d="M12 4l0 12" />
+      </svg></button>
+     <button class="button" onclick="removePage()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-trash">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+       <path d="M4 7l16 0" />
+       <path d="M10 11l0 6" />
+       <path d="M14 11l0 6" />
+       <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />
+       <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" />
+      </svg></button>
+     <button class="button" onclick="toggleDarkMode()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-moon-stars">
+       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+       <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+       <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2" />
+       <path d="M19 11h2m-1 -1v2" />
+      </svg></button>
+   </div>
+  </div>
+
+  <div id="pad-content" class="pad-content">
+   <div id="pad-header" class="pad-header">
+    <div class="pad-margin"></div>
+    <input type="text" id="pad-title" class="pad-title" placeholder="Nota vacía">
+   </div>
+   <div id="pad-body" class="pad-body">
+    <div class="pad-margin"></div>
+    <textarea id="pad-input" class="pad-input" placeholder="Nota vacía, ¿listo? empecemos..."></textarea>
+   </div>
+  </div>
+
+  <div class="pad-content dummy">
+   <div class="pad-header">
+    <div class="pad-margin"></div>
+    <input type="text" class="pad-title" placeholder="Untitled Note">
+   </div>
+   <div class="pad-body">
+    <div class="pad-margin"></div>
+    <textarea class="pad-input" placeholder="Start typing here..."></textarea>
+   </div>
+  </div>
+ </div>
+
+ <script>
+  var padContent = document.getElementById("pad-content"),
+   padHeader = document.getElementById("pad-header"),
+   padTitle = document.getElementById("pad-title"),
+   padBody = document.getElementById("pad-body"),
+   padInput = document.getElementById("pad-input");
+
+  function toggleHeaderShadow() {
+   var scrollTop = padInput.scrollTop;
+   if (scrollTop > 0) {
+    padHeader.classList.add("is-overlapping");
+    padBody.style.backgroundPosition = "0 " + -scrollTop + "px";
+   } else {
+    padHeader.classList.remove("is-overlapping");
+    padBody.style.backgroundPosition = "0 0";
+   }
+  }
+
+  function removePage() {
+   localStorage.clear();
+   padContent.classList.add("removing-page");
+   setTimeout(function() {
+    padContent.classList.remove("removing-page");
+    padTitle.value = "";
+    padInput.value = "";
+   }, 1000);
+  }
+
+  function saveTextAsFile() {
+   var documentContent = padInput.value;
+   var textFileAsBlob = new Blob([documentContent], {
+    type: "text/plain"
+   });
+   var fileNameToSaveAs = padTitle.value ? padTitle.value : "Untitled Note";
+   var downloadLink = document.createElement("a");
+   downloadLink.download = fileNameToSaveAs;
+   downloadLink.href = window.URL.createObjectURL(textFileAsBlob);
+   document.getElementsByClassName("pad-binding")[0].appendChild(downloadLink);
+   downloadLink.click();
+   downloadLink.remove();
+  }
+
+  function saveToLocalStorage() {
+   var documentTitle = padTitle.value;
+   var documentContent = padInput.value;
+   localStorage.setItem("title", documentTitle);
+   localStorage.setItem("content", documentContent);
+  }
+
+  function loadFromLocalStorage() {
+   if (localStorage.content) {
+    padInput.value = localStorage.content;
+   }
+   if (localStorage.title) {
+    padTitle.value = localStorage.title;
+   }
+  }
+
+  function toggleDarkMode() {
+   var isDarkMode = document.body.classList.toggle('dark-mode');
+   localStorage.setItem("darkMode", isDarkMode);
+  }
+  // Check and apply dark mode on page load
+  var isDarkMode = localStorage.getItem("darkMode");
+  if (isDarkMode === "true") {
+   document.body.classList.add("dark-mode");
+  }
+  padTitle.addEventListener("input", saveToLocalStorage);
+  padInput.addEventListener("scroll", toggleHeaderShadow);
+  padInput.addEventListener("input", saveToLocalStorage);
+  loadFromLocalStorage();
+  toggleHeaderShadow();
+ </script>
+</body>
+
+</html>
+  
+  

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Formulario de Prompts</title>
+ <link href="https://preview.tabler.io/dist/libs/tinymce/skins/ui/oxide-dark/skin.min.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=8J-kSLFX1x5JNu5J4wgZg2sRN-_TRn9gYv_ArdQW7pDwFe3GvOuXW16xvMckOMskre35nPlVke77kCPzheATCw" charset="UTF-8"></script>
+ <script src="https://preview.tabler.io//dist/libs/tinymce/tinymce.min.js?1695847769" defer></script>
+ <!-- Tabler Core -->
+ <script src="https://preview.tabler.io/dist/js/tabler.min.js?1695847769" defer></script>
+ <script src="https://preview.tabler.io/dist/js/demo.min.js?1695847769" defer></script>
+ <style>
+  ::-webkit-scrollbar {
+   width: 1px;
+  }
+
+  ::-webkit-scrollbar-track {
+   background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+   background-color: transparent;
+   border-radius: 1px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+   background-color: transparent;
+   width: 1px;
+  }
+
+  /* Estilos para la barra de navegación */
+  .navbar {
+   position: fixed;
+   top: 0;
+   width: 100%;
+   z-index: 1000;
+  }
+
+  .content {
+   margin-top: 80px;
+   /* Ajustar según la altura de la barra de navegación */
+  }
+
+  /* Estilos para el modo oscuro */
+  body {
+   background-color: transparent;
+   color: black;
+  }
+
+  body.dark-mode {
+   background-color: #333;
+   color: #fff;
+  }
+
+  .card {
+   background-color: transparent;
+  }
+
+  .modal-dialog.dark-mode {
+   background-color: #333;
+   color: #fff;
+  }
+
+  #buttonsContainer {
+   display: none;
+  }
+
+  body.dark-mode textarea,
+  body.dark-mode input,
+  body.dark-mode select {
+   background-color: #333;
+   color: #fff;
+  }
+
+  body.dark-mode label {
+   color: #fff;
+  }
+
+  tinymce.init( {
+    selector: '#tinymce-mytextarea',
+    skin: 'oxide-dark',
+    content_css: 'dark',
+    content_style: 'body { color: #fff; background-color: #333; }',
+   }
+
+  );
+
+  ::-webkit-scrollbar {
+   width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+   background-color: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+   background-color: rgba(255, 255, 255, 0.3);
+   border-radius: 5px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+   background-color: rgba(255, 255, 255, 0.5);
+  }
+ </style>
+</head>
+
+<body>
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="navbar-brand mx-auto" href="#" id="myBtnFull">Save Data</span>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+   <ul class="navbar-nav ml-auto">
+    <li class="nav-item">
+     <a class="nav-link " id="phiphi-tab" data-toggle="tab" href="#phiphi" role="tab" aria-controls="phiphi" aria-selected="true">Inicio</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" id="eevee-tab" data-toggle="tab" href="#eevee" role="tab" aria-controls="eevee" aria-selected="false">Nuevos</a>
+    </li>
+    <li class="nav-item">
+     <a class="nav-link" id="sharon-tab" data-toggle="tab" href="#sharon" role="tab" aria-controls="sharon" aria-selected="false">Sugerencias</a>
+    </li>
+    <li class="nav-item">
+     <span id="downloadJson" class="nav-link">Descargar JSON</span>
+    </li>
+    <li class="nav-item" id="buttonToggle">
+     <span class="nav-link" onclick="toggleButtons()">Mostrar/Ocultar botones</span>
+    </li>
+    <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" id="darkModeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Modo Oscuro
+     </a>
+     <div class="dropdown-menu" aria-labelledby="darkModeDropdown">
+      <a class="dropdown-item" href="#" id="darkModeOn">Encender</a>
+      <a class="dropdown-item" href="#" id="darkModeOff">Apagar</a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </nav>
+ <br>
+ <div class="container mt-5 content darkmode card">
+  <br>
+  <!-- h2 class="mt-5">Buscar y Filtrar</h2-->
+  <input type="text" id="search" class="form-control mb-3" placeholder="Buscar por nombre o descripción">
+  <select id="filter" class="form-control mb-3">
+   <option value="">Todos</option>
+   <option value="perfil">Perfil</option>
+   <option value="contenido">Contenido</option>
+   <option value="seo">SEO</option>
+   <option value="extra">Extra</option>
+  </select>
+
+ </div>
+ <div class="container">
+
+  <!-- Tab content -->
+  <div class="tab-content" id="myTabContent">
+   <div class="tab-pane fade show active" id="phiphi" role="tabpanel" aria-labelledby="phiphi-tab"><br>
+    <div id="records" class="row row-cards darkmode"></div><br>
+   </div>
+   <div class="tab-pane fade" id="sharon" role="tabpanel" aria-labelledby="sharon-tab">
+    <br>
+    <p>Sugerencias</p>
+
+   </div>
+   <div class="tab-pane fade" id="eevee" role="tabpanel" aria-labelledby="eevee-tab">
+    <br>
+    <p>Nuevos</p>
+   </div>
+  </div>
+  <style>
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+   html,
+   body {
+    height: 100vh;
+    width: 100%;
+   }
+
+   a {
+    color: white;
+   }
+
+   .modalFull {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999999999;
+    display: none;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+    overflow: hidden;
+    background-color: #333
+   }
+
+   .closeModalFull {
+    /* font-size: 50px;
+    font-weight: 900;
+    line-height: 1;
+    color: #aaaaaa;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 0.5;
+    position: fixed;
+    top: 30px;
+    right: 40px;
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;*/
+    border: none;
+   }
+
+   .closeModalFull:hover,
+   .closeModalFull:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+   }
+
+   .closeModalFull:focus {
+    outline: none;
+   }
+
+   #modalContent {
+    height: 100%;
+    width: 100%;
+    background-color: #333
+   }
+
+   .card {
+    background-color: inherit;
+    color: inherit
+   }
+  </style>
+
+  <div id="myModalFull" class="modalFull" style="color: white; ; margin: 5px 5px 5px 5px; ">
+   <div>
+    <div class="modal-contente">
+     <div class="modal-headert">
+      <span id="addPromptModalLabel"></span>
+     </div>
+     <div class="modal-bodyt ">
+      <form id="promptForm">
+       <div class="mb-3">
+        <input type="text" id="name" required class="form-control" placeholder="Prompt name">
+       </div>
+       <div class="mb-3">
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="perfil" required>
+         <span class="form-check-label">Perfil</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="contenido">
+         <span class="form-check-label">Contenido</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="seo">
+         <span class="form-check-label">SEO</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="extra">
+         <span class="form-check-label">Extra</span>
+        </label>
+       </div>
+       <div class="mb-3">
+        <textarea id="tinymce-mytextarea" class="form-control" placeholder="Description"></textarea>
+       </div>
+      </form>
+     </div>
+     <div class="modal-footer"> <button type="button" id="saveInfo" class="btn btn-primary l" data-dismiss="modal"><span class="closeModalFull">Cerrar</span></button>
+      <button type="button" id="saveInfo" class="btn btn-primary l" data-dismiss="modal"><span class="closeModalFulle">Guardar</span></button>
+     </div>
+    </div>
+   </div>
+  </div>
+
+  <script>
+   // Get the modal
+   var modal = document.getElementById("myModalFull");
+   // Get the button that opens the modal
+   var btn = document.getElementById("myBtnFull");
+   // Get the <span> element that closes the modal
+   var span = document.querySelector(".closeModalFull");
+   // Get all modal links
+   var modalLinks = document.querySelectorAll(".modalLink");
+   // Get the iframe
+   var iframe = document.getElementById("modalContent");
+   // When the user clicks the button, open the modal
+   btn.addEventListener("click", function() {
+    modal.style.display = "block";
+   });
+   // When the user clicks on <span> (x), close the modal
+   span.addEventListener("click", function() {
+    modal.style.display = "none";
+   });
+   // When the user clicks anywhere outside of the modal, close it
+   window.addEventListener("click", function(event) {
+    if (event.target === modal) {
+     modal.style.display = "none";
+    }
+   });
+   // Add event listeners to modal links
+   modalLinks.forEach(function(link) {
+    link.addEventListener("click", function(e) {
+     e.preventDefault();
+     var src = this.getAttribute("data-src");
+     iframe.src = src;
+     modal.style.display = "block";
+    });
+   });
+  </script>
+
+  <!-- Modal for Adding and Editing Prompt -->
+  <div class="modal fade" id="addPromptModal" tabindex="-1" role="dialog" aria-labelledby="addPromptModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-header">
+      <h5 class="modal-title" id="addPromptModalLabel">Agregar Prompt</h5>
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+       <span aria-hidden="true" dismiss="modal">&times;</span>
+      </button>
+     </div>
+     <div class="modal-body ">
+      <form id="promptForm">
+       <div class="mb-3">
+        <input type="text" id="name" required class="form-control" placeholder="Prompt name">
+       </div>
+       <div class="mb-3">
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="perfil" required>
+         <span class="form-check-label">Perfil</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="contenido">
+         <span class="form-check-label">Contenido</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="seo">
+         <span class="form-check-label">SEO</span>
+        </label>
+        <label class="form-check form-check-inline">
+         <input class="form-check-input" type="radio" name="type" value="extra">
+         <span class="form-check-label">Extra</span>
+        </label>
+       </div>
+       <div class="mb-3">
+        <textarea id="tinymce-mytextarea" class="form-control" placeholder="Description"></textarea>
+       </div>
+      </form>
+     </div>
+     <div class="modal-footerr">
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" id="saveInfo" class="btn btn-primary" dismiss="modal">Guardar</button>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <!-- Modal for Deleting Prompt -->
+ <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+   <div class="modal-content ">
+    <div class="modal-header ">
+     <h5 class="modal-title" id="deleteModalLabel">Confirmar Eliminación</h5>
+     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+     </button>
+    </div>
+    <div class="modal-body card">
+     ¿Seguro que deseas borrar este prompt?
+    </div>
+    <div class="modal-footer ">
+     <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
+     <button type="button" id="confirmDelete" class="btn btn-danger">Sí</button>
+    </div>
+   </div>
+  </div>
+ </div>
+
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   tinymce.init({
+    selector: '#tinymce-mytextarea'
+   });
+   let prompts = JSON.parse(localStorage.getItem('prompts')) || [];
+   let deleteId = null;
+   let editId = null;
+
+   function renderPrompts() {
+    const recordsDiv = document.getElementById('records');
+    recordsDiv.innerHTML = '';
+    const search = document.getElementById('search').value.toLowerCase();
+    const filter = document.getElementById('filter').value;
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleString();
+    const filteredPrompts = prompts.filter(prompt => {
+     return (prompt.name.toLowerCase().includes(search) || prompt.description.toLowerCase().includes(search)) &&
+      (filter === '' || prompt.type === filter);
+    });
+    filteredPrompts.forEach((prompt, index) => {
+     const card = document.createElement('div');
+     card.className = 'col-sm-6 col-lg-4';
+     card.innerHTML = `
+                <div class="card darkmode">
+                    <div class="card-body">
+                        <h5 class="card-title">${prompt.name}</h5>
+                        <p class="card-text">${prompt.description}</p>
+                        <p class="card-text"><small class="text-muted">${prompt.type}</small></p>
+                       <div id="buttonsContainer"> <button class="btn btn-warning btn-sm" onclick="editPrompt(${index})">Editar</button>
+                        <button class="btn btn-danger btn-sm" onclick="deletePrompt(${index})">Eliminar</button>
+                    </div></div>
+                </div>
+            `;
+     recordsDiv.appendChild(card);
+    });
+   }
+   document.getElementById('saveInfo').addEventListener('click', function() {
+    const name = document.getElementById('name').value;
+    const type = document.querySelector('input[name="type"]:checked').value;
+    const description = tinymce.get('tinymce-mytextarea').getContent();
+    const currentDate = new Date();
+    const formattedDate = currentDate.toLocaleString();
+    if (name && type && description) {
+     if (editId !== null) {
+      prompts[editId] = {
+       name,
+       type,
+       description
+      };
+      editId = null;
+     } else {
+      prompts.push({
+       name,
+       type,
+       description,
+       createdAt: formattedDate
+      });
+     }
+     localStorage.setItem('prompts', JSON.stringify(prompts));
+     $('#addPromptModal').modal('hide');
+     renderPrompts();
+     document.getElementById('promptForm').reset();
+     tinymce.get('tinymce-mytextarea').setContent('');
+    }
+   });
+   window.deletePrompt = function(index) {
+    deleteId = index;
+    $('#deleteModal').modal('show');
+   };
+   document.getElementById('confirmDelete').addEventListener('click', function() {
+    if (deleteId !== null) {
+     prompts.splice(deleteId, 1);
+     localStorage.setItem('prompts', JSON.stringify(prompts));
+     $('#deleteModal').modal('hide');
+     renderPrompts();
+    }
+   });
+   window.editPrompt = function(index) {
+    editId = index;
+    const prompt = prompts[index];
+    document.getElementById('name').value = prompt.name;
+    document.querySelector(`input[name="type"][value="${prompt.type}"]`).checked = true;
+    tinymce.get('tinymce-mytextarea').setContent(prompt.description);
+    $('#addPromptModal').modal('show');
+   };
+   document.getElementById('search').addEventListener('input', renderPrompts);
+   document.getElementById('filter').addEventListener('change', renderPrompts);
+   document.getElementById('downloadJson').addEventListener('click', function() {
+    const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(prompts));
+    const downloadAnchorNode = document.createElement('a');
+    downloadAnchorNode.setAttribute("href", dataStr);
+    downloadAnchorNode.setAttribute("download", "prompts.json");
+    document.body.appendChild(downloadAnchorNode);
+    downloadAnchorNode.click();
+    downloadAnchorNode.remove();
+   });
+   renderPrompts();
+  });
+ </script>
+
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   let prompts = JSON.parse(localStorage.getItem('prompts')) || [];
+   let deleteId = null;
+   let editId = null;
+
+   function renderPrompts() {
+    // rest of your renderPrompts function here
+   }
+   // Rest of your existing code for adding, editing, deleting prompts
+   // Dark mode functionality
+   const darkModeToggle = document.getElementById('darkModeDropdown');
+   const darkModeOn = document.getElementById('darkModeOn');
+   const darkModeOff = document.getElementById('darkModeOff');
+   darkModeOn.addEventListener('click', function() {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'on');
+   });
+   darkModeOff.addEventListener('click', function() {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'off');
+   });
+   // Check local storage for dark mode preference
+   const darkMode = localStorage.getItem('darkMode');
+   if (darkMode === 'on') {
+    document.body.classList.add('dark-mode');
+   }
+  });
+ </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   let buttonsVisible = false; // Variable para controlar el estado de visibilidad de los botones
+   let prompts = JSON.parse(localStorage.getItem('prompts')) || [];
+
+   function toggleButtons() {
+    buttonsVisible = !buttonsVisible; // Cambiar el estado de visibilidad
+    const buttonsContainer = document.querySelectorAll(".card #buttonsContainer");
+    buttonsContainer.forEach(container => {
+     container.style.display = buttonsVisible ? "block" : "none"; // Mostrar u ocultar los botones
+    });
+   }
+   // Resto de tu código aquí...
+  });
+ </script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function() {
+   let buttonsVisible = false; // Variable para controlar el estado de visibilidad de los botones
+   let prompts = JSON.parse(localStorage.getItem('prompts')) || [];
+   const darkMode = localStorage.getItem('darkMode');
+
+   function toggleButtons() {
+    buttonsVisible = !buttonsVisible; // Cambiar el estado de visibilidad
+    const buttonsContainer = document.querySelectorAll("#buttonsContainer");
+    buttonsContainer.forEach(container => {
+     container.style.display = buttonsVisible ? "block" : "none"; // Mostrar u ocultar los botones
+    });
+   }
+
+   function renderPrompts() {
+    const recordsDiv = document.getElementById('records');
+    recordsDiv.innerHTML = '';
+    const search = document.getElementById('search').value.toLowerCase();
+    const filter = document.getElementById('filter').value;
+    const filteredPrompts = prompts.filter(prompt => {
+     return (prompt.name.toLowerCase().includes(search) || prompt.description.toLowerCase().includes(search)) &&
+      (filter === '' || prompt.type === filter);
+    });
+    filteredPrompts.forEach((prompt, index) => {
+     const card = document.createElement('div');
+     card.className = 'col-sm-6 col-lg-4';
+     card.innerHTML = `
+                <div class="card darkmode">
+                    <div class="card-body">
+                        <h5 class="card-title">${prompt.name}</h5>
+                        <p class="card-text">${prompt.description}</p>
+                        <p class="card-text"><small class="text-muted">${prompt.type} - ${prompt.createdAt}</small></p>
+                        <p class="card-text"><small class="text-muted">${prompt.type}</small></p>
+                       <div id="buttonsContainer"> <button class="btn btn-warning btn-sm" onclick="editPrompt(${index})">Editar</button>
+                        <button class="btn btn-danger btn-sm" onclick="deletePrompt(${index})">Eliminar</button>
+                    </div></div>
+                </div>
+            `;
+     recordsDiv.appendChild(card);
+    });
+   }
+   document.getElementById('buttonToggle').addEventListener('click', toggleButtons);
+   document.getElementById('search').addEventListener('input', renderPrompts);
+   document.getElementById('filter').addEventListener('change', renderPrompts);
+   const darkModeToggle = document.getElementById('darkModeDropdown');
+   const darkModeOn = document.getElementById('darkModeOn');
+   const darkModeOff = document.getElementById('darkModeOff');
+   darkModeOn.addEventListener('click', function() {
+    document.body.classList.add('dark-mode');
+    localStorage.setItem('darkMode', 'on');
+   });
+   darkModeOff.addEventListener('click', function() {
+    document.body.classList.remove('dark-mode');
+    localStorage.setItem('darkMode', 'off');
+   });
+   if (darkMode === 'on') {
+    document.body.classList.add('dark-mode');
+   }
+   renderPrompts(); // Renderizar los prompts al cargar la página
+  });
+ </script>
+</body>
+
+</html>
