@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Evaluación de Desafíos Empresariales</title>
+  <link rel="stylesheet" href="https://preline.co/assets/css/main.min.css?v=1.0.0">
+  <style>
+    .hidden { display: none; }
+    #thankyou-message { }
+  </style>
+</head>
+<body>
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div class="mx-auto max-w-2xl">
+      <div class="text-center">
+        <h2 class="text-xl text-gray-800 font-bold sm:text-3xl dark:text-white">
+          Formulario de Evaluación de Desafíos Empresariales
+        </h2>
+      </div>
+
+      <!-- Card -->
+      <div class="mt-5 p-4 relative z-10 bg-white border rounded-xl sm:mt-10 md:p-10 dark:bg-neutral-900 dark:border-neutral-700">
+        <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxTGK4gTASuWPs8s9LXAssHPcgWl9vdA0p-f5XthELqmYwbx2ZCu-r5HkqoljPMG9LOnw/exec">
+          <div id="question1">
+            <label for="Empezando" class="block mb-2 text-sm font-medium dark:text-white"><b>¿Cuál es tu mayor desafío en este momento?</b></label><br>
+            <div class="mb-4 sm:mb-8">
+              <div class="flex items-center mb-2">
+                <input type="radio" id="trafico" name="Empezando" value="Aumentar-el-tráfico-y-los-clientes-potenciales" class="mr-2">
+                <label for="trafico" class="text-sm font-medium dark:text-white">Aumentar el tráfico y los clientes potenciales</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="estrategia" name="Empezando" value="Estrategia-para-el-crecimiento" class="mr-2">
+                <label for="estrategia" class="text-sm font-medium dark:text-white">Estrategia para el crecimiento</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="ventas" name="Empezando" value="Ventas-y-Marketing" class="mr-2">
+                <label for="ventas" class="text-sm font-medium dark:text-white">Ventas y Marketing</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="dinero" name="Empezando" value="Dinero-y-finanzas" class="mr-2">
+                <label for="dinero" class="text-sm font-medium dark:text-white">Dinero y finanzas</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="operaciones" name="Empezando" value="Operaciones-o-trabajo-en-equipo" class="mr-2">
+                <label for="operaciones" class="text-sm font-medium dark:text-white">Operaciones o trabajo en equipo</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="mentalidad" name="Empezando" value="Mentalidad-y-bienestar" class="mr-2">
+                <label for="mentalidad" class="text-sm font-medium dark:text-white">Mentalidad y bienestar</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="conseguir" name="Empezando" value="Conseguir-dinero" class="mr-2">
+                <label for="conseguir" class="text-sm font-medium dark:text-white">Conseguir dinero</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="question2" class="hidden">
+            <label for="Escalar" class="block mb-2 text-sm font-medium dark:text-white"><b>¿Qué le impide escalar?</b></label><br>
+            <div class="mb-4 sm:mb-8">
+              <div class="flex items-center mb-2">
+                <input type="radio" id="empezando" name="Escalar" value="Estoy-apenas-empezando" class="mr-2">
+                <label for="empezando" class="text-sm font-medium dark:text-white">Estoy apenas empezando</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="definicion" name="Escalar" value="Definición-de-estrategia" class="mr-2">
+                <label for="definicion" class="text-sm font-medium dark:text-white">Definición de estrategia</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="adquisicion" name="Escalar" value="Adquisición-de-clientes" class="mr-2">
+                <label for="adquisicion" class="text-sm font-medium dark:text-white">Adquisición de clientes</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="cuello" name="Escalar" value="Soy-el-cuello-de-botella" class="mr-2">
+                <label for="cuello" class="text-sm font-medium dark:text-white">Soy el cuello de botella</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="equipo" name="Escalar" value="El-equipo-adecuado" class="mr-2">
+                <label for="equipo" class="text-sm font-medium dark:text-white">El equipo adecuado</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="caos" name="Escalar" value="Caos-operacional" class="mr-2">
+                <label for="caos" class="text-sm font-medium dark:text-white">Caos operacional</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="gestion" name="Escalar" value="Gestión-financiera" class="mr-2">
+                <label for="gestion" class="text-sm font-medium dark:text-white">Gestión financiera</label>
+              </div>
+              <div class="flex items-center mb-2">
+                <input type="radio" id="fondos" name="Escalar" value="Fondos" class="mr-2">
+                <label for="fondos" class="text-sm font-medium dark:text-white">Fondos</label>
+              </div>
+            </div>
+          </div>
+
+          <div id="question3" class="hidden">
+            <label for="Contexto" class="block mb-2 text-sm font-medium dark:text-white">Quiero saber cómo puedo ayudarte mejor. ¿Te importaría compartir un poco más de contexto sobre lo que te frena en este momento?</label><br>
+            <div class="mt-1">
+              <textarea id="Contexto" name="Contexto" rows="3" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Escribe aquí..."></textarea>
+            </div>
+          </div>
+
+          <div id="question4" class="hidden">
+            <label for="Detener" class="block mb-2 text-sm font-medium dark:text-white">¿Qué te detiene en este momento?</label>
+            <div class="mt-1">
+              <textarea id="Detener" name="Detener" rows="3" class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-neutral-400 dark:placeholder-neutral-500 dark:focus:ring-neutral-600" placeholder="Escribe aquí..."></textarea>
+            </div>
+          </div>
+
+          <input type="hidden" id="emailSubject" name="emailSubject" value="¿Cuál es tu mayor desafío en este momento? Quiero brindarte los recursos que necesitas.">
+          <div class="mt-6 grid">
+            <button type="button" id="submit-button" class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">
+              <span id="button-text">Siguiente</span>
+              <span id="wait-message" class="hidden">Espere un momento, por favor...</span>
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- End Card -->
+    </div>
+  </div>
+  <div id="thankyou-message" class="hidden">
+    <div class="text-center">
+      <h2 class="text-xl text-gray-800 font-bold sm:text-3xl dark:text-white">
+        ¡Gracias por tu respuesta!
+      </h2><br>
+      <p class="text-sm text-gray-600 dark:text-neutral-400">
+        Te invitamos a leer más sobre cómo <br>aumentar el tráfico y los clientes potenciales para que puedas aprender más y <br>encontrar una respuesta a tus desafíos.
+      </p>
+    </div>
+  </div>
+
+  <script data-cfasync="false" type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function() {
+      const form = document.getElementById("gform");
+      const submitButton = document.getElementById("submit-button");
+      const buttonText = document.getElementById("button-text");
+      const waitMessage = document.getElementById("wait-message");
+      const thankYouMessage = document.getElementById("thankyou-message");
+      const question1 = document.getElementById("question1");
+      const question2 = document.getElementById("question2");
+      const question3 = document.getElementById("question3");
+      const question4 = document.getElementById("question4");
+
+      const radioButtons1 = document.querySelectorAll('input[name="Empezando"]');
+      radioButtons1.forEach(radio => {
+        radio.addEventListener("change", function() {
+          question1.classList.add("hidden");
+          question2.classList.remove("hidden");
+          buttonText.textContent = "Siguiente";
+        });
+      });
+
+      const radioButtons2 = document.querySelectorAll('input[name="Escalar"]');
+      radioButtons2.forEach(radio => {
+        radio.addEventListener("change", function() {
+          question2.classList.add("hidden");
+          question3.classList.remove("hidden");
+          buttonText.textContent = "Siguiente";
+        });
+      });
+
+      document.getElementById("Contexto").addEventListener("blur", function() {
+        if (this.value.trim() !== "") {
+          question3.classList.add("hidden");
+          question4.classList.remove("hidden");
+          buttonText.textContent = "Enviar";
+        }
+      });
+
+      submitButton.addEventListener("click", function() {
+        if (buttonText.textContent === "Enviar") {
+          handleFormSubmit();
+        } else {
+          const currentQuestion = document.querySelectorAll('div[id^="question"]:not(.hidden)')[0];
+          const nextQuestion = currentQuestion.nextElementSibling;
+          if (nextQuestion) {
+            currentQuestion.classList.add("hidden");
+            nextQuestion.classList.remove("hidden");
+            if (nextQuestion.id === "question4") {
+              buttonText.textContent = "Enviar";
+            }
+          }
+        }
+      });
+
+      function handleFormSubmit() {
+        const data = getFormData(form);
+        localStorage.setItem("formData", JSON.stringify(data));
+        setSubmitting(true);
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", form.action);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4) {
+            console.log(xhr.status, xhr.statusText);
+            console.log(xhr.responseText);
+            setSubmitting(false);
+            showThankYouMessage();
+            hideFormContent();
+          }
+        };
+        const encoded = Object.keys(data).map(k =>
+          encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+        ).join("&");
+        xhr.send(encoded);
+      }
+
+      function setSubmitting(isSubmitting) {
+        submitButton.disabled = isSubmitting;
+        buttonText.classList.toggle("hidden", isSubmitting);
+        waitMessage.classList.toggle("hidden", !isSubmitting);
+      }
+
+      function showThankYouMessage() {
+        thankYouMessage.classList.remove("hidden");
+      }
+
+      function hideFormContent() {
+        form.classList.add("hidden");
+      }
+
+      function getFormData(form) {
+        const elements = form.elements;
+        const fields = Object.keys(elements).filter(k =>
+          elements[k].name !== "honeypot"
+        ).map(k =>
+          elements[k].name !== undefined ? elements[k].name :
+          elements[k].length > 0 ? elements[k].item(0).name : null
+        ).filter((item, pos, self) =>
+          item && self.indexOf(item) == pos
+        );
+        const formData = {};
+        fields.forEach(name => {
+          const element = elements[name];
+          formData[name] = element.value;
+          if (element.length) {
+            formData[name] = Array.from(element)
+              .filter(item => item.checked || item.selected)
+              .map(item => item.value)
+              .join(", ");
+          }
+        });
+        formData.formDataNameOrder = JSON.stringify(fields);
+        formData.formGoogleSheetName = form.dataset.sheet || "Accesos";
+        formData.formGoogleSendEmail = form.dataset.email || "luis.el.de.las.tarjetas@gmail.com";
+        formData.emailSubject = form.querySelector("#emailSubject").value || "Nuevo formulario de contacto";
+        return formData;
+      }
+    });
+  </script>
+</body>
+</html>
