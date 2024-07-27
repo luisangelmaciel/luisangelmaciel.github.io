@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Reels with swiper #swiper.js</title>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css'>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #202948;
+      font-family: "Poppins", sans-serif;
+    }
+
+    .gallery {
+      width: 100%;
+      position: relative;
+      min-height: 31.25rem;
+      height: 100vh;
+    }
+
+    .gallery .content {
+      position: absolute;
+      z-index: 50;
+      left: 4rem;
+      top: 50%;
+      transform: translatey(-50%);
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.175rem;
+    }
+
+    .gallery .content span {
+      font-size: clamp(1.85rem, 1.7053rem + 0.5447vw, 2.25rem);
+      font-weight: 300;
+      display: block;
+      margin-bottom: -0.625rem;
+    }
+
+    @media screen and (min-width: 42.5rem) {
+      .gallery .content span {
+        margin-bottom: -1.875rem;
+      }
+    }
+
+    .gallery .content h1 {
+      font-size: clamp(3.5rem, 1.8723rem + 6.1277vw, 8rem);
+      font-weight: 400;
+      margin-inline: -0.313rem;
+    }
+
+    .gallery .content p {
+      font-size: clamp(1.2rem, 1.0191rem + 0.6809vw, 1.7rem);
+      margin-top: -0.313rem;
+    }
+
+    @media screen and (min-width: 42.5rem) {
+      .gallery .content p {
+        margin-top: -1.563rem;
+      }
+    }
+
+    .gallery .content hr {
+      display: block;
+      width: 3rem;
+      border: none;
+      height: 0.125rem;
+      background: #fff;
+      margin-top: 0.938rem;
+      margin-inline: 0.313rem;
+    }
+
+    .gallery footer {
+      position: absolute;
+      z-index: 50;
+      left: 2rem;
+      bottom: 1rem;
+      transform: translatey(-50%);
+    }
+
+    @media screen and (min-width: 37.5rem) {
+      .gallery footer {
+        left: 4rem;
+      }
+    }
+
+    .gallery footer ul {
+      list-style: none;
+      display: flex;
+      gap: 1.563rem;
+    }
+
+    .gallery footer ul li {
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 0.1rem;
+      font-weight: 600;
+      font-size: 1.75rem;
+      color: #1aad8a;
+    }
+
+    .gallery footer ul li span {
+      font-size: 0.8rem;
+      opacity: 0.4;
+      color: #fff;
+      font-weight: 400;
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    .gallery-slider {
+      width: 100%;
+      height: 100%;
+    }
+
+    .gallery-slider .swiper-slide {
+      width: auto;
+      height: 100%;
+    }
+
+    .gallery-slider .swiper-slide::after {
+      position: absolute;
+      content: "";
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom, rgba(255, 0, 0, 0) 0%, #0000001c 100%);
+    }
+
+    .gallery-slider .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .gallery .swiper-pagination {
+      position: relative;
+      bottom: -0.313rem;
+      text-align: left;
+    }
+
+    .gallery .swiper-pagination-bullet {
+      border-radius: 0;
+      width: 1.125rem;
+      height: 0.25rem;
+      background: #fff;
+    }
+
+    .gallery .swiper-pagination-bullet-active {
+      background: #fff;
+    }
+
+    .gallery .more {
+      text-transform: uppercase;
+      color: #fff;
+      text-decoration: none;
+      opacity: 0.3;
+      font-size: 0.8rem;
+      transform: translateY(-0.938rem);
+      position: absolute;
+      z-index: 10;
+      right: 1.875rem;
+      letter-spacing: 0.1rem;
+      display: none;
+    }
+
+    @media screen and (min-width: 37.5rem) {
+      .gallery .more {
+        display: inline-block;
+      }
+    }
+
+    .gallery .more:hover {
+      opacity: 1;
+    }
+
+    .gallery-thumbs {
+      width: 14.375rem;
+      padding: 0;
+      overflow: hidden;
+      position: absolute;
+      bottom: 8rem;
+      right: 0;
+    }
+
+    @media screen and (min-width: 37.5rem) {
+      .gallery-thumbs {
+        width: 25rem;
+      }
+    }
+
+    .gallery-thumbs .swiper-slide {
+      width: 6.25rem;
+      height: 6.25rem;
+      text-align: center;
+      overflow: hidden;
+      opacity: 0.5;
+    }
+
+    .gallery-thumbs .swiper-slide-active {
+      opacity: 1;
+    }
+
+    .gallery-thumbs .swiper-slide img {
+      width: auto;
+      height: 100%;
+    }
+
+    @media screen and (max-width: 62.188rem) and (max-height: 43.75rem) {
+      .content {
+        top: 30% !important;
+        transform: translatey(-30%);
+      }
+    }
+
+    .close-button {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 10px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 100;
+      transition: background-color 0.3s;
+    }
+
+    .close-button:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Botón flotante -->
+  <button class="close-button" onclick="goBack()">x</button>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <div class="gallery">
+    <div class="content">
+      <span>every</span>
+      <h1>picture</h1>
+      <p>tells a story</p>
+      <hr>
+    </div>
+    <footer>
+      <ul>
+        <li><span>likes</span>87</li>
+        <li><span>views</span>173</li>
+      </ul>
+    </footer>
+    <div class="swiper-container gallery-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://images.pexels.com/photos/1478685/pexels-photo-1478685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1676557059846-2dad064ae6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1676557060416-1418aefb165d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1675685468877-8cda3a02c49f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1677108581323-7050fbfd528f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+      </div>
+    </div>
+
+    <div class="swiper-container gallery-thumbs">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://images.pexels.com/photos/1478685/pexels-photo-1478685.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1676557059846-2dad064ae6e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1676557060416-1418aefb165d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1675685468877-8cda3a02c49f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1677108581323-7050fbfd528f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+        <div class="swiper-slide"><img src="https://images.unsplash.com/photo-1442328166075-47fe7153c128?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <a href="#" class="more">see more</a>
+    </div>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js'></script>
+  <script id="rendered-js">
+    var slider = new Swiper(".gallery-slider", {
+      slidesPerView: 1,
+      loop: true,
+      loopedSlides: 6,
+      noSwiping: true,
+      noSwipingClass: "swiper-slide",
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true
+      }
+    });
+
+    var thumbs = new Swiper(".gallery-thumbs", {
+      slidesPerView: "auto",
+      spaceBetween: 10,
+      centeredSlides: false,
+      loop: true,
+      slideToClickedSlide: true
+    });
+
+    slider.controller.control = thumbs;
+    thumbs.controller.control = slider;
+
+    /*
+    inspiration
+    https://dribbble.com/shots/4675498-Photography-Website/attachments/10530248?mode=media
+    */
+
+    // Función para regresar a la página anterior
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</body>
+
+</html>
