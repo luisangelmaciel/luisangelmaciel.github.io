@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>URL Cleaner - Help Me SOS Code</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <meta property="og\:image" content="https://luisangelmaciel.github.io/img/og-image.webp" />
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@toast-me/core/toastme.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/@toast-me/core/toastme.min.js"></script>
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+ <style>
+  /* Estilos generales */
+  body {
+   font-family: 'Roboto', sans-serif;
+   line-height: 1.6;
+   color: #333;
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   background-color: #f4f4f4;
+  }
+
+  /* Estilos del formulario */
+  .form-container {
+   max-width: 600px;
+   padding: 30px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Estilos para las estrellas de valoración */
+  .rating {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: flex-end;
+  }
+
+  .rating input {
+   display: none;
+  }
+
+  .rating label {
+   cursor: pointer;
+   width: 50px;
+   height: 40px;
+   margin-top: 0;
+   background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 76%;
+   transition: .3s;
+  }
+
+  .rating input:checked~label,
+  .rating label:hover,
+  .rating label:hover~label {
+   background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" fill="%23ffd700"/></svg>');
+  }
+
+  /* Estilos para el campo de texto */
+  input[type="text"],
+  input[type="email"] {
+   width: 100%;
+   padding: 10px;
+   margin-top: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 16px;
+  }
+
+  /* Estilos para el botón de envío */
+  .submit-button {
+   background-color: #4CAF50;
+   color: white;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 20px;
+   transition: background-color 0.3s ease;
+  }
+
+  .submit-button:hover {
+   background-color: #45a049;
+  }
+
+  /* Estilos para el mensaje de espera y agradecimiento */
+  .wait-message,
+  .thankyou-message {
+   margin-top: 20px;
+   font-style: italic;
+   color: white;
+  }
+
+  .thankyou-message {
+   font-size: 18px;
+   text-align: center;
+   color: black;
+  }
+
+  /* Clase para ocultar elementos */
+  .hidden {
+   display: none;
+  }
+
+  a {
+   text-decoration: none;
+   color: grey
+  }
+
+  a:hover {
+   text-decoration: none;
+   color: white
+  }
+
+  .enotromomento {
+   /*background-color: #4CAF50;*/
+   color: grey;
+   padding: 12px 20px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+   margin-top: 20px;
+   transition: background-color 0.3s ease;
+  }
+
+  .enotromomento:hover {
+   background-color: #45a049;
+   color: white
+  }
+
+  /* Estilos para el modal */
+  .modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0, 0, 0);
+   background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .modal-content {
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+  }
+
+  .close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+  }
+
+  /* Estilos para la notificación toast */
+  .toast {
+   visibility: hidden;
+   max-width: 300px;
+   margin: 0 auto;
+   background-color: #333;
+   color: #fff;
+   text-align: center;
+   border-radius: 2px;
+   padding: 16px;
+   position: fixed;
+   z-index: 1;
+   left: 50%;
+   bottom: 30px;
+   transform: translateX(-50%);
+   transition: visibility 0.5s, opacity 0.5s;
+  }
+
+  .toast.show {
+   visibility: visible;
+   opacity: 1;
+  }
+ </style>
+</head>
+
+<body>
+ <!-- Hero Section -->
+ <div class="relative overflow-hidden">
+  <div class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-24">
+   <div class="text-center">
+    <h1 class="text-4xl sm:text-6xl font-bold text-gray-800 dark:text-neutral-200">
+     URL Cleaner
+    </h1>
+
+    <p class="mt-3 text-gray-600 dark:text-neutral-400">
+     Simplifica tus URLs y mejora tu flujo de trabajo
+    </p>
+
+    <div class="mt-7 sm:mt-12 mx-auto max-w-xl relative form-container">
+     <!-- Convertidor Form -->
+     <form>
+      <div class="relative z-10 flex flex-col sm:flex-row gap-3 p-3 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-neutral-900 dark:border-neutral-700 dark:shadow-gray-900/20">
+       <div class="w-full">
+        <label for="textoEntrada" class="sr-only">Ingrese su texto aquí</label>
+        <input type="text" id="textoEntrada" name="textoEntrada" class="py-3 px-4 block w-full border-transparent rounded-md focus:border-blue-500 focus:ring-blue-500 dark:bg-neutral-800 dark:border-transparent dark:text-neutral-400" placeholder="Ingrese su texto aquí" oninput="convertirTexto()" maxlength="2048">
+       </div>
+      </div>
+     </form>
+     <!-- End Convertidor Form -->
+
+     <!-- Resultado -->
+     <div class="mt-4 p-4 bg-white border rounded-lg shadow-md dark:bg-neutral-800 dark:border-neutral-700">
+      <p id="resultadoTexto" class="font-medium text-gray-800 dark:text-neutral-200">Resultado</p>
+      <p id="textoResultado" class="mt-2 text-gray-600 dark:text-neutral-400 break-all cursor-pointer" onclick="copiarTexto()"></p>
+     </div>
+     <!-- End Resultado -->
+    </div>
+    <span style="height:25vh"></span>
+   </div>
+  </div>
+ </div>
+ <!-- End Hero Section -->
+
+ <!-- Blog Article -->
+ <div class="max-w-3xl px-4 pt-6 lg:pt-10 pb-12 sm:px-6 lg:px-8 mx-auto">
+  <div class="max-w-2xl">
+   <!-- Avatar Media -->
+   <div class="flex justify-between items-center mb-6">
+    <div class="flex w-full sm:items-center gap-x-5 sm:gap-x-3">
+     <div class="shrink-0">
+      <img class="size-12 rounded-full" src="/api/placeholder/100/100" alt="Avatar">
+     </div>
+
+     <div class="grow">
+      <div class="flex justify-between items-center gap-x-2">
+       <div>
+        <div class="hs-tooltip [--trigger:hover] [--placement:bottom] inline-block">
+         <div class="hs-tooltip-toggle sm:mb-1 block text-start cursor-pointer">
+          <span class="font-semibold text-gray-800 dark:text-neutral-200">
+           Tu Nombre
+          </span>
+         </div>
+        </div>
+
+        <ul class="text-xs text-gray-500 dark:text-neutral-500">
+         <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          Jul 24, 2024
+         </li>
+         <li class="inline-block relative pe-6 last:pe-0 last-of-type:before:hidden before:absolute before:top-1/2 before:end-2 before:-translate-y-1/2 before:size-1 before:bg-gray-300 before:rounded-full dark:text-neutral-400 dark:before:bg-neutral-600">
+          8 min read
+         </li>
+        </ul>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <!-- End Avatar Media -->
+
+   <!-- Content -->
+   <div class="space-y-5 md:space-y-8">
+    <div class="space-y-3">
+     <h2 class="text-2xl font-bold md:text-3xl dark:text-white">Simplifica tus URLs con nuestro URL Cleaner</h2>
+
+     <p class="text-lg text-gray-800 dark:text-neutral-200">En el mundo digital actual, la claridad y la eficiencia son esenciales. URL Cleaner es una herramienta diseñada para simplificar tus URLs y mejorar tu flujo de trabajo, especialmente útil para diseñadores, mercadólogos y creadores de contenido.</p>
+    </div>
+
+    <h3 class="text-xl font-semibold dark:text-white">¿Cómo funciona?</h3>
+
+    <p class="text-lg text-gray-800 dark:text-neutral-200">
+     Nuestro convertidor realiza las siguientes transformaciones:
+    </p>
+
+    <ul class="list-disc list-inside space-y-2 ps-5 text-lg text-gray-800 dark:text-neutral-200">
+     <li>Convierte todo el texto a minúsculas</li>
+     <li>Elimina acentos y caracteres especiales</li>
+     <li>Reemplaza espacios con guiones</li>
+     <li>Elimina signos de puntuación innecesarios</li>
+    </ul>
+
+    <p class="text-lg text-gray-800 dark:text-neutral-200">
+     El resultado es una URL limpia, legible y optimizada para SEO.
+    </p>
+
+    <h3 class="text-xl font-semibold dark:text-white">Ventajas de usar URL Cleaner</h3>
+
+    <ul class="list-disc list-outside space-y-2 ps-5 text-lg text-gray-800 dark:text-neutral-200">
+     <li><strong>Mejora la legibilidad:</strong> URLs limpias y fáciles de leer.</li>
+     <li><strong>Optimización SEO:</strong> URLs amigables para motores de búsqueda.</li>
+     <li><strong>Consistencia:</strong> Mantén un formato uniforme en todos tus enlaces.</li>
+     <li><strong>Ahorro de tiempo:</strong> Evita editar manualmente cada URL.</li>
+    </ul>
+
+    <p class="text-lg text-gray-800 dark:text-neutral-200">
+     ¿Necesitas personalizar la herramienta para tus necesidades específicas? ¡No dudes en contactarnos! Estamos listos para crear herramientas que optimicen tu presencia en línea y mejoren tu productividad.
+    </p>
+   </div>
+   <!-- End Content -->
+  </div>
+ </div>
+ <!-- End Blog Article -->
+
+ <!-- Formulario de Evaluación -->
+ <div id="form-container" class="form-container">
+  <form id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbxTGK4gTASuWPs8s9LXAssHPcgWl9vdA0p-f5XthELqmYwbx2ZCu-r5HkqoljPMG9LOnw/exec">
+   <h2>Valora tu experiencia</h2>
+   <div class="rating">
+    <input type="radio" id="star5" name="Valoración" value="Muy satisfecho" /><label for="star5" title="Muy satisfecho"></label>
+    <input type="radio" id="star4" name="Valoración" value="Satisfecho" /><label for="star4" title="Satisfecho"></label>
+    <input type="radio" id="star3" name="Valoración" value="Neutral" /><label for="star3" title="Neutral"></label>
+    <input type="radio" id="star2" name="Valoración" value="Insatisfecho" /><label for="star2" title="Insatisfecho"></label>
+    <input type="radio" id="star1" name="Valoración" value="Muy insatisfecho" /><label for="star1" title="Muy insatisfecho"></label>
+   </div>
+
+   <h3>Tu opinión es muy importante para nosotros</h3>
+   <input type="text" id="Reseña" name="Reseña" placeholder="Tu reseña" />
+
+   <h3>Información de contacto</h3>
+   <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" />
+   <input type="email" id="email" name="email" placeholder="Tu email" />
+
+   <h3>Recordar datos</h3>
+   <label>
+    <input type="checkbox" id="recordarDatos" name="recordarDatos" />
+    Recordar mis datos (<a href="#privacidad.html" target="_blank">Aviso de privacidad</a> | <a href="#terminos.html" target="_blank">Términos y condiciones</a>)
+   </label>
+
+   <input type="hidden" id="emailSubject" name="emailSubject" value="Reseña de Pokelorem - URL Cleaner">
+   <input type="hidden" id="formUrl" name="formUrl" />
+   <button id="submit-button" type="submit" class="submit-button">
+    <span id="button-text">Enviar</span>
+    <span id="wait-message" class="hidden">¡Enviando!</span>
+   </button>
+   <button class="enotromomento"> <a href="javascript:history.back()">En otro momento</a></button>
+  </form>
+ </div>
+
+ <!-- Modal de confirmación -->
+ <div id="confirmModal" class="modal">
+  <div class="modal-content">
+   <span class="close">&times;</span>
+   <p>¿Seguro que desea borrar sus datos?</p>
+   <button id="confirmYes">Sí, continuar</button>
+   <button id="confirmNo">No</button>
+  </div>
+ </div>
+
+ <!-- Modal de agradecimiento -->
+ <div id="thankyouModal" class="modal">
+  <div class="modal-content">
+   <span class="close">&times;</span>
+   <h2>😊¡Muchas gracias por tu valoración⭐</h2>
+   <button class="submit-button" id="closeThankyouModal">Regresar</button>
+  </div>
+ </div>
+
+ <!-- Notificación toast -->
+ <div id="toast" class="toast">Tus datos han sido eliminados</div>
+
+ <script data-cfasync="false" type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function() {
+   const form = document.getElementById("gform");
+   const submitButton = document.getElementById("submit-button");
+   const buttonText = document.getElementById("button-text");
+   const waitMessage = document.getElementById("wait-message");
+   const thankYouModal = document.getElementById("thankyouModal");
+   const closeThankyouModal = document.getElementById("closeThankyouModal");
+   const nombreInput = document.getElementById("nombre");
+   const emailInput = document.getElementById("email");
+   const recordarDatosCheckbox = document.getElementById("recordarDatos");
+   const confirmModal = document.getElementById("confirmModal");
+   const confirmYes = document.getElementById("confirmYes");
+   const confirmNo = document.getElementById("confirmNo");
+   const toast = document.getElementById("toast");
+   const formUrlInput = document.getElementById("formUrl");
+   // Establecer la URL del formulario
+   formUrlInput.value = window.location.href;
+   // Recuperar datos del localStorage
+   const savedData = JSON.parse(localStorage.getItem("formData"));
+   if (savedData) {
+    nombreInput.value = savedData.nombre || "";
+    emailInput.value = savedData.email || "";
+    recordarDatosCheckbox.checked = savedData.recordarDatos || false;
+   }
+   form.addEventListener("submit", handleFormSubmit);
+   recordarDatosCheckbox.addEventListener("change", handleRecordarDatosChange);
+   confirmYes.addEventListener("click", handleConfirmYes);
+   confirmNo.addEventListener("click", handleConfirmNo);
+   closeThankyouModal.addEventListener("click", closeThankyouModalHandler);
+
+   function handleFormSubmit(event) {
+    event.preventDefault();
+    const data = getFormData(form);
+    if (recordarDatosCheckbox.checked) {
+     localStorage.setItem("formData", JSON.stringify(data));
+    } else {
+     localStorage.removeItem("formData");
+    }
+    setSubmitting(true);
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST", form.action);
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.onreadystatechange = function() {
+     if (xhr.readyState === 4) {
+      console.log(xhr.status, xhr.statusText);
+      console.log(xhr.responseText);
+      setSubmitting(false);
+      showThankYouModal();
+     }
+    };
+    const encoded = Object.keys(data).map(k =>
+     encodeURIComponent(k) + "=" + encodeURIComponent(data[k])
+    ).join("&");
+    xhr.send(encoded);
+   }
+
+   function handleRecordarDatosChange(event) {
+    if (!event.target.checked) {
+     showConfirmModal();
+    }
+   }
+
+   function showConfirmModal() {
+    confirmModal.style.display = "block";
+   }
+
+   function hideConfirmModal() {
+    confirmModal.style.display = "none";
+   }
+
+   function handleConfirmYes() {
+    localStorage.removeItem("formData");
+    hideConfirmModal();
+    showToast();
+   }
+
+   function handleConfirmNo() {
+    recordarDatosCheckbox.checked = true;
+    hideConfirmModal();
+   }
+
+   function showToast() {
+    toast.classList.add("show");
+    setTimeout(function() {
+     toast.classList.remove("show");
+    }, 3000);
+   }
+
+   function setSubmitting(isSubmitting) {
+    submitButton.disabled = isSubmitting;
+    buttonText.classList.toggle("hidden", isSubmitting);
+    waitMessage.classList.toggle("hidden", !isSubmitting);
+   }
+
+   function showThankYouModal() {
+    thankYouModal.style.display = "block";
+   }
+
+   function closeThankyouModalHandler() {
+    thankYouModal.style.display = "none";
+   }
+
+   function getFormData(form) {
+    const elements = form.elements;
+    const fields = Object.keys(elements).filter(k =>
+     elements[k].name !== "honeypot"
+    ).map(k =>
+     elements[k].name !== undefined ? elements[k].name :
+     elements[k].length > 0 ? elements[k].item(0).name : null
+    ).filter((item, pos, self) =>
+     item && self.indexOf(item) == pos
+    );
+    const formData = {};
+    fields.forEach(name => {
+     const element = elements[name];
+     formData[name] = element.value;
+     if (element.length) {
+      formData[name] = Array.from(element)
+       .filter(item => item.checked || item.selected)
+       .map(item => item.value)
+       .join(", ");
+     }
+    });
+    formData.formDataNameOrder = JSON.stringify(fields);
+    formData.formGoogleSheetName = form.dataset.sheet || "DATA";
+    formData.formGoogleSendEmail = form.dataset.email || "luis.el.de.las.tarjetas@gmail.com";
+    formData.emailSubject = form.querySelector("#emailSubject").value || "URL Cleaner";
+    return formData;
+   }
+  });
+ </script>
+</body>
+
+</html>
