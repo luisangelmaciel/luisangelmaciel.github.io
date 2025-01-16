@@ -1,0 +1,472 @@
+{
+  "autor": {
+    "nombre": "Luis Ángel Maciel",
+    "especializacion": {
+      "principal": ["gestión ágil", "marketing digital", "diseño web"],
+      "secundaria": ["diseño gráfico", "personalización de proyectos para desarrolladores y equipos de software"]
+    },
+    "personalidad": {
+      "descripcion": "Dinámica, accesible y orientada a resultados, con un enfoque fuerte en la innovación, creatividad y colaboración. Tiene una mentalidad ágil que lo lleva a adaptarse a los cambios rápidamente y a ofrecer soluciones efectivas.",
+      "frases_caracteristicas": [
+        "La creatividad es la clave para transformar proyectos.",
+        "Adaptarse al cambio es lo que nos hace más fuertes.",
+        "La innovación comienza con una idea, pero se realiza a través de la acción.",
+        "Lo único constante es el cambio, y la agilidad nos permite afrontarlo.",
+        "En el mundo digital, si no eres único, no eres visible."
+      ]
+    }
+  },
+  "blog": {
+    "mapa_del_sitio": {
+      "inicio": "Resumen del blog y enlaces destacados.",
+      "categorias": {
+        "gestion_agil": {
+          "descripcion": "Transforma la dinámica de tu equipo con metodologías ágiles que impulsan la productividad y la colaboración. Desde Scrum hasta Kanban, aprende cómo implementar prácticas modernas que permiten adaptarte al cambio y mejorar el rendimiento de tus proyectos. Descubre guías, ejemplos prácticos y estrategias para crear equipos más eficientes y felices.",
+          "articulos": [
+            {
+              "titulo": "Maximizando la Eficiencia y Eficacia del Equipo con la Gestión Ágil",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/maximizando-la-eficiencia-y-eficacia-del-equipo-con-la-gesti%C3%B3n-agill/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/gestion-agil.jpg",
+              "descripcion": "Descubre cómo la gestión ágil puede transformar la dinámica de tu equipo con estrategias flexibles y colaborativas.",
+              "etiquetas": ["Gestión Ágil", "Scrum", "Kanban", "Eficiencia"]
+            },
+            {
+              "titulo": "Ejercicio Completo: Crear un Acuerdo de Trabajo para un Proyecto Ágil",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/maximizando-la-eficiencia-y-eficacia-del-equipo-con-la-gesti%C3%B3n-agill/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/acuerdos-trabajo.jpg",
+              "descripcion": "Guía práctica para establecer acuerdos efectivos que potencien la colaboración en proyectos ágiles.",
+              "etiquetas": ["Gestión Ágil", "Acuerdos", "Equipos", "Proyectos"]
+            }
+          ]
+        },
+        "marketing_digital": {
+          "descripcion": "Lleva tu negocio al siguiente nivel con estrategias de marketing digital que funcionan. Aprende sobre SEO, publicidad en redes sociales, optimización de Google My Business y creación de contenido que atraiga y convierta. Explora cómo una buena estrategia puede posicionar tu marca en el mundo digital y aumentar tu audiencia.",
+          "articulos": [
+            {
+              "titulo": "Beneficios de Utilizar Schema JSON para Mejorar la Estructura de Datos en tu Sitio Web",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/los-beneficios-que-he-obtenido-despues-de-conocer-y-utlizar-schema-json/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/schema-json.jpg",
+              "descripcion": "Aprende cómo Schema JSON mejora tu SEO, la visibilidad de tu sitio y la experiencia del usuario.",
+              "etiquetas": ["SEO", "Schema JSON", "Datos Estructurados", "Marketing"]
+            },
+            {
+              "titulo": "¿Estás iniciando un negocio? Descubre por qué el marketing digital es tu mejor aliado",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/2024-06-25-carta%20de%20servicio%20fria/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/marketing-digital.jpg",
+              "descripcion": "Conoce cómo el marketing digital puede impulsar tu negocio desde el inicio con estrategias efectivas.",
+              "etiquetas": ["Marketing Digital", "Negocios", "Estrategias", "SEO"]
+            },
+            {
+              "titulo": "UTM’s: Urchin Tracking Module para Conocer el Comportamiento de los Visitantes",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/UTMs%20Urchin%20Tracking%20Module%20para%20conocer%20el%20comportamiento%20de%20los%20visitantes/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/utm.jpg",
+              "descripcion": "Descubre cómo los códigos UTM te ayudan a analizar y optimizar tus campañas de marketing.",
+              "etiquetas": ["UTM", "Analítica", "Marketing", "Comportamiento"]
+            }
+          ]
+        },
+        "diseno_desarrollo_web": {
+          "descripcion": "Convierte tu sitio web en tu mejor herramienta de ventas. Aprende sobre UI/UX, diseño gráfico y personalización para destacar en un mercado competitivo. Desde efectos interactivos con CSS hasta optimización para dispositivos móviles, aquí encuentras ideas que inspiran y herramientas que transforman.",
+          "articulos": [
+            {
+              "titulo": "Página Web Optimizada con SEO y UI/UX",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/2024-06-25-carta%20de%20servicio%20fria/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/seo-uiux.jpg",
+              "descripcion": "Crea una página web que no solo atraiga usuarios, sino que también convierta con un diseño optimizado.",
+              "etiquetas": ["Diseño Web", "SEO", "UI/UX", "Optimización"]
+            },
+            {
+              "titulo": "Efecto de Desaturación y Seguimiento de Cursor",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/2024-12-de-mayo-2024-css/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/desaturacion-cursor.jpg",
+              "descripcion": "Explora efectos visuales innovadores con CSS para hacer tu sitio más interactivo y dinámico.",
+              "etiquetas": ["CSS", "Interactividad", "Diseño Web", "Creatividad"]
+            },
+            {
+              "titulo": "El Poder de la Inspiración: Dragón Ball y el Universo del Diseño Web",
+              "enlace": "https://luisangelmaciel.vercel.app/el-poder-de-la-inspiraci%C3%B3n-drag%C3%B3n-ball-y-el-universo-del-dise%C3%B1o-web/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/inspiracion-disenoweb.jpg",
+              "descripcion": "Descubre cómo el diseño web se puede inspirar en la cultura pop para crear experiencias únicas.",
+              "etiquetas": ["Diseño Web", "Inspiración", "Dragón Ball", "Creatividad"]
+            }
+          ]
+        },
+        "analitica_seo": {
+          "descripcion": "Conoce a tu audiencia y optimiza tu presencia digital. Aprende a utilizar herramientas como Google Analytics y Fathom para interpretar datos y tomar decisiones basadas en resultados. Descubre cómo mejorar tu posicionamiento en buscadores con estrategias de palabras clave, enlaces internos y estructura de datos.",
+          "articulos": [
+            {
+              "titulo": "Importancia y Diferencias entre Análisis Web: Google vs Fathom",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/2024-09-de-mayo-Qu%C3%A9%20son%20los%20an%C3%A1lisis%20de%20sitios%20web/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/google-vs-fathom.jpg",
+              "descripcion": "Conoce las principales diferencias entre Google Analytics y Fathom Analytics y cuál elegir.",
+              "etiquetas": ["Analítica Web", "Google Analytics", "Fathom", "SEO"]
+            },
+            {
+              "titulo": "SEO y SEM: Herramientas Clave para Mejorar tu Visibilidad Online",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/los-beneficios-que-he-obtenido-despues-de-conocer-y-utlizar-schema-json/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/seo-sem.jpg",
+              "descripcion": "Aprende cómo mejorar tu visibilidad online con SEO y SEM.",
+              "etiquetas": ["SEO", "SEM", "Visibilidad Online", "Herramientas"]
+            }
+          ]
+        },
+        "tecnologia_herramientas": {
+          "descripcion": "Domina las herramientas que impulsan tus proyectos. Desde chatbots gratuitos hasta códigos UTM, esta categoría te enseña a elegir y aplicar soluciones tecnológicas que facilitan tu trabajo y mejoran tus resultados. Una selección de guías prácticas para implementarlas como un experto.",
+          "articulos": [
+            {
+              "titulo": "Chatbots Gratuitos",
+              "enlace": "https://luisangelmaciel.vercel.app/blog/2024-06-01-Chatbots%20gratuitos/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/chatbots.jpg",
+              "descripcion": "Explora las mejores opciones de chatbots gratuitos para mejorar la atención al cliente.",
+              "etiquetas": ["Chatbots", "Atención al Cliente", "Herramientas", "Automatización"]
+            },
+            {
+              "titulo": "Optimiza tu Gestión de Proyectos con Registro en JavaScript",
+              "enlace": "https://luisangelmaciel.vercel.app/simplifica-con-registro-personalizado-en-javascript-yo-te-ayudo-hacerlo/",
+              "ogImage": "https://luisangelmaciel.vercel.app/assets/images/javascript.jpg",
+              "descripcion": "Aprende a optimizar la gestión de proyectos con registros personalizados en JavaScript.",
+              "etiquetas": ["JavaScript", "Gestión de Proyectos", "Optimización", "Herramientas"]
+            }
+          ]
+        }
+      },
+      "proyectos": "Portafolio de proyectos destacados.",
+      "sobre_mi": {
+        "descripcion": "Soy Luis Ángel Maciel, un apasionado del diseño digital, la optimización web y las estrategias de marketing digital. Con más de 15 años de experiencia, he trabajado en proyectos que abarcan desde la implementación de metodologías ágiles hasta el desarrollo de soluciones creativas para marcas y empresas en diferentes sectores. He ayudado a startups a duplicar sus ingresos y he diseñado estrategias personalizadas para negocios que buscan destacar en un entorno digital competitivo. Mi enfoque se basa en la creatividad, la innovación y la atención a los detalles, buscando siempre soluciones que reflejen la personalidad única de cada proyecto. Además, mi experiencia incluye la creación de empresas exitosas, como una agencia de viajes, donde aprendí a conectar con las personas y cumplir sus sueños a través de un servicio excepcional. Ahora, estoy en una nueva etapa de reinvención, aplicando todo lo aprendido para seguir ayudando a empresas y personas a lograr sus metas digitales.",
+        "experiencia_profesional": "Información personal y experiencia profesional."
+      },
+      "contacto": {
+        "descripcion": "Formulario de contacto y redes sociales.",
+        "formulario_contacto": {
+          "campos": [
+            {
+              "nombre": "Nombre Completo",
+              "tipo": "Campo de texto"
+            },
+            {
+              "nombre": "Correo Electrónico",
+              "tipo": "Campo de texto"
+            },
+            {
+              "nombre": "Número de Teléfono",
+              "tipo": "Campo de texto",
+              "opcional": true
+            },
+            {
+              "nombre": "Categoría de tu interés",
+              "tipo": "Menú desplegable",
+              "opciones": [
+                "Gestión Ágil",
+                "Marketing Digital",
+                "Diseño y Desarrollo Web",
+                "Analítica y SEO",
+                "Tecnología y Herramientas",
+                "Otro (especificar)"
+              ]
+            },
+            {
+              "nombre": "Breve descripción de tu solicitud",
+              "tipo": "Campo de texto largo"
+            },
+            {
+              "nombre": "¿Es un proyecto nuevo o existente?",
+              "tipo": "Opciones de selección",
+              "opciones": [
+                "Nuevo proyecto",
+                "Mejora de un proyecto existente"
+              ]
+            },
+            {
+              "nombre": "Presupuesto estimado",
+              "tipo": "Campo de texto",
+              "opcional": true
+            },
+            {
+              "nombre": "Plazo deseado para la entrega",
+              "tipo": "Campo de texto corto o calendario"
+            },
+            {
+              "nombre": "¿Cómo te gustaría que nos comuniquemos contigo?",
+              "tipo": "Opciones de selección",
+              "opciones": [
+                "Correo electrónico",
+                "Llamada telefónica",
+                "Videollamada"
+              ]
+            },
+            {
+              "nombre": "¿Cómo nos encontraste?",
+              "tipo": "Opciones de selección",
+              "opciones": [
+                "Blog",
+                "Redes Sociales",
+                "Recomendación",
+                "Otro (especificar)"
+              ]
+            },
+            {
+              "nombre": "Adjunta archivos relevantes",
+              "tipo": "Campo de carga de archivo",
+              "opcional": true
+            }
+          ],
+          "boton_enviar": "Botón de Enviar"
+        }
+      }
+    }
+  },
+  "lector_ideal": {
+    "descripcion": "El lector ideal del blog de Luis Ángel Maciel es una persona emprendedora, dinámica y orientada al aprendizaje, con un interés profundo en temas de tecnología, marketing digital, gestión ágil y diseño web. Este lector busca soluciones prácticas, innovadoras y fáciles de aplicar para mejorar su presencia digital, optimizar sus proyectos o transformar su manera de trabajar.",
+    "caracteristicas": {
+      "emprendedores_pequenos_empresarios": "Personas que están comenzando su propio negocio o buscan formas de mejorar sus operaciones, especialmente en áreas como marketing digital, diseño web y optimización de procesos mediante herramientas ágiles.",
+      "profesionales_marketing_tecnologia": "Personas que ya tienen experiencia en áreas como marketing digital, diseño web, desarrollo de software o gestión de proyectos, y desean mejorar sus habilidades, aprender nuevas herramientas o estar al tanto de las últimas tendencias.",
+      "desarrolladores_disenadores_web": "Aquellos que buscan inspiración o consejos prácticos sobre cómo mejorar la experiencia de usuario (UI/UX), optimizar el SEO de sus sitios, o crear sitios web interactivos y visualmente atractivos.",
+      "equipos_agiles_lideres_proyectos": "Profesionales interesados en implementar metodologías ágiles para mejorar la eficiencia y colaboración dentro de sus equipos. Esto incluye líderes de proyectos y equipos de software que desean optimizar sus procesos de trabajo.",
+      "lectores_valoran_innovacion_creatividad": "Personas que buscan mejorar su enfoque hacia la creatividad en sus proyectos digitales, que no solo quieren aprender la teoría sino también aplicarla en su día a día de manera efectiva."
+    },
+    "intereses": {
+      "marketing_digital": "SEO, SEM, publicidad digital, estrategias de contenido, redes sociales.",
+      "tecnologia_herramientas": "Herramientas de automatización, chatbots, analítica web, nuevas plataformas y tecnologías emergentes.",
+      "gestion_agil_productividad": "Scrum, Kanban, eficiencia organizacional, liderazgo de equipos ágiles.",
+      "diseno_web_experiencia_usuario": "Optimización de sitios web, diseño atractivo, interacción, accesibilidad web.",
+      "innovacion_continua": "Les gusta mantenerse actualizados sobre las últimas tendencias y herramientas que pueden impulsar sus negocios o proyectos."
+    },
+    "motivaciones": {
+      "busqueda_conocimiento_practico": "Este lector quiere aprender, pero sobre todo, aplicar lo aprendido para mejorar su trabajo y resultados.",
+      "superar_desafios": "Ya sea un reto de marketing, mejorar el diseño de un sitio web, o gestionar un equipo de manera más eficiente, busca soluciones y herramientas para resolver sus problemas.",
+      "mejora_continua": "Está comprometido con la mejora constante, tanto de sus habilidades como de sus proyectos o negocios.",
+      "innovacion_creatividad": "Está dispuesto a probar nuevas ideas y metodologías que mejoren su trabajo o proyectos."
+    },
+    "atraccion_blog": {
+      "consejos_practicos_herramientas_utiles": "Consejos prácticos y herramientas útiles que pueden implementarse fácilmente.",
+      "enfoque_innovador_motivador": "Enfoque innovador y motivador que inspira a la acción.",
+      "contenido_centrado_usuario": "Contenido centrado en el usuario que se adapta a las necesidades reales de los lectores.",
+      "actualizacion_tendencias_mejores_practicas": "Actualización constante sobre tendencias y mejores prácticas en el mundo digital."
+    }
+  },
+  "servicios_productos": {
+    "consultoria_gestion_agil": {
+      "descripcion": "Ofrecer servicios de asesoría para implementar metodologías ágiles como Scrum o Kanban en empresas o equipos. Ayudar a optimizar los procesos de trabajo y mejorar la productividad de los equipos.",
+      "publico_objetivo": "Empresas que quieren adoptar o mejorar su gestión ágil, equipos de desarrollo de software, líderes de proyectos.",
+      "formatos": [
+        "Consultoría 1 a 1",
+        "Talleres",
+        "Sesiones de coaching",
+        "Diagnósticos de procesos",
+        "Implementación de herramientas de gestión"
+      ]
+    },
+    "desarrollo_optimizacion_sitios_web": {
+      "descripcion": "Crear o mejorar sitios web con enfoque en SEO, UI/UX y optimización para conversión. Asegurarse de que los sitios sean atractivos, fáciles de navegar y estén optimizados para motores de búsqueda.",
+      "publico_objetivo": "Pequeñas empresas, emprendedores, startups, empresas que necesitan rediseñar su presencia online.",
+      "formatos": [
+        "Diseño de sitios web",
+        "Rediseño",
+        "Optimización SEO",
+        "Personalización de temas (por ejemplo, en WordPress)",
+        "Implementación de herramientas de análisis (Google Analytics, Fathom)"
+      ]
+    },
+    "estrategias_marketing_digital": {
+      "descripcion": "Ofrecer planes personalizados de marketing digital, incluyendo SEO, SEM, publicidad en redes sociales y creación de contenido estratégico.",
+      "publico_objetivo": "Empresas que buscan aumentar su visibilidad online y generar leads de manera efectiva.",
+      "formatos": [
+        "Estrategias de contenido",
+        "Campañas publicitarias",
+        "Optimización de Google My Business",
+        "Análisis y optimización SEO",
+        "Creación de estrategias de email marketing"
+      ]
+    },
+    "implementacion_herramientas_digitales": {
+      "descripcion": "Ayudar a empresas a implementar chatbots gratuitos o herramientas de automatización para optimizar la atención al cliente o la gestión de tareas repetitivas.",
+      "publico_objetivo": "Empresas que buscan mejorar su eficiencia operativa y mejorar la interacción con los clientes.",
+      "formatos": [
+        "Instalación y configuración de chatbots",
+        "Automatización de tareas mediante herramientas como Zapier o Integromat"
+      ]
+    },
+    "talleres_formacion_marketing_gestion_agil": {
+      "descripcion": "Organizar talleres interactivos y formaciones en vivo sobre marketing digital, SEO, gestión ágil, y diseño web.",
+      "publico_objetivo": "Profesionales del marketing, emprendedores, pequeños empresarios, equipos de trabajo.",
+      "formatos": [
+        "Cursos online",
+        "Talleres en vivo",
+        "Webinars",
+        "Formación en empresas"
+      ]
+    },
+    "asesoramiento_personalizado_posicionamiento_web": {
+      "descripcion": "Ofrecer auditorías SEO y recomendaciones personalizadas para mejorar el posicionamiento de sitios web en motores de búsqueda.",
+      "publico_objetivo": "Emprendedores, propietarios de pequeñas empresas, bloggers, tiendas online.",
+      "formatos": [
+        "Auditoría SEO",
+        "Consultoría continua",
+        "Creación de estrategias de contenido",
+        "Optimización de la estructura del sitio web"
+      ]
+    }
+  },
+  "productos": {
+    "plantillas_recursos_sitios_web": {
+      "descripcion": "Vender plantillas de sitios web personalizables y otros recursos de diseño (como iconos, ilustraciones, temas para WordPress, y otros componentes visuales).",
+      "publico_objetivo": "Desarrolladores web, diseñadores, emprendedores que quieren crear su sitio de forma rápida y profesional.",
+      "formatos": [
+        "Plantillas de landing pages",
+        "Themes de WordPress",
+        "Paquetes de iconos",
+        "Kits de UI/UX"
+      ]
+    },
+    "guias_ebooks_marketing_digital_seo": {
+      "descripcion": "Crear y vender guías detalladas o E-books sobre cómo implementar estrategias de marketing digital efectivas o cómo mejorar el SEO de un sitio web.",
+      "publico_objetivo": "Empresarios, marketers, freelancers que buscan mejorar sus habilidades o conocimientos en marketing digital.",
+      "formatos": [
+        "E-books descargables",
+        "Guías paso a paso",
+        "Checklists de SEO",
+        "Plantillas de estrategias de marketing"
+      ]
+    },
+    "cursos_programas_formacion_online": {
+      "descripcion": "Crear cursos completos sobre temas clave como SEO, marketing digital, gestión ágil o diseño web. Estos cursos pueden incluir videos, ejercicios prácticos y recursos descargables.",
+      "publico_objetivo": "Personas que buscan aprender habilidades digitales de manera estructurada, estudiantes y profesionales.",
+      "formatos": [
+        "Cursos en plataformas como Udemy, Teachable, o en su propio sitio web"
+      ]
+    },
+    "herramientas_scripts_automatizacion_chatbots": {
+      "descripcion": "Ofrecer scripts o herramientas personalizadas para ayudar a los usuarios a integrar chatbots o automatizar ciertas tareas en su sitio web.",
+      "publico_objetivo": "Emprendedores, desarrolladores web y empresas que desean integrar herramientas automatizadas para mejorar la productividad.",
+      "formatos": [
+        "Scripts para integrar chatbots",
+        "Plantillas de automatización de emails",
+        "Soluciones de CRM integradas con chatbots"
+      ]
+    }
+  },
+  "modelos_ofrecimiento": {
+    "suscripciones_mensuales_anuales": {
+      "descripcion": "Ofrecer servicios de mantenimiento continuo o de actualización de contenido, donde los clientes puedan suscribirse a planes mensuales o anuales para recibir asistencia constante, actualizaciones y optimización de sus proyectos.",
+      "formatos": [
+        "Suscripciones mensuales",
+        "Suscripciones anuales"
+      ]
+    },
+    "paquetes_personalizados": {
+      "descripcion": "Crear paquetes personalizados que combinen varias ofertas (por ejemplo, diseño web + SEO + estrategia de marketing digital) para proporcionar una solución integral a los clientes.",
+      "formatos": [
+        "Paquetes personalizados"
+      ]
+    },
+    "consultoria_proyectos_medida": {
+      "descripcion": "Ofrecer consultoría personalizada o proyectos completamente a medida según las necesidades de cada cliente, adaptando los servicios y precios a la complejidad y tamaño de cada empresa o proyecto.",
+      "formatos": [
+        "Consultoría personalizada",
+        "Proyectos a medida"
+      ]
+    }
+  },
+  "promocion_servicios_productos": {
+    "blog": {
+      "descripcion": "Utilizar el blog para educar y generar confianza, incorporando casos de éxito y testimonios de clientes que han utilizado sus servicios. También incluir llamados a la acción para contratar sus servicios o comprar productos.",
+      "formatos": [
+        "Artículos de blog",
+        "Casos de éxito",
+        "Testimonios de clientes",
+        "Llamados a la acción"
+      ]
+    },
+    "redes_sociales": {
+      "descripcion": "Promocionar los servicios y productos a través de plataformas como Instagram, LinkedIn, Twitter o Facebook, mostrando contenido visual de los productos y enlaces a sus servicios.",
+      "formatos": [
+        "Publicaciones en redes sociales",
+        "Contenido visual",
+        "Enlaces a servicios"
+      ]
+    },
+    "webinars_cursos_gratuitos": {
+      "descripcion": "Realizar seminarios en línea sobre temas clave donde se pueda ofrecer una introducción a sus servicios y productos premium al final.",
+      "formatos": [
+        "Webinars",
+        "Cursos gratuitos"
+      ]
+    }
+  },
+  "valor_agregado_unico": {
+    "descripcion": "El valor agregado único de Luis Ángel Maciel radica en su capacidad para combinar metodologías ágiles, estrategias de marketing digital, diseño web y tecnología en un enfoque integrado y personalizado que no solo optimiza la presencia online de sus clientes, sino que también transforma la forma en que trabajan y colaboran sus equipos.",
+    "aspectos_clave": {
+      "enfoque_integral_multidisciplinario": "Luis Ángel ofrece un enfoque holístico que combina gestión ágil, marketing digital, SEO y diseño web. Esto permite a sus clientes no solo mejorar su presencia digital, sino también optimizar sus procesos internos para ser más productivos y eficientes. Su capacidad para abordar el diseño y la gestión de equipos a través de metodologías ágiles es algo poco común en otros proveedores de servicios de marketing y diseño. Esto lo convierte en un experto en la optimización integral.",
+      "aplicacion_practica_personalizacion": "Luis Ángel se distingue por su capacidad para personalizar cada solución según las necesidades y objetivos específicos del cliente, en lugar de ofrecer soluciones genéricas. Esto incluye tanto el diseño de sitios web como la creación de estrategias de marketing y la implementación de herramientas ágiles. A través de consultorías personalizadas y formaciones adaptadas, puede ayudar a equipos a adoptar metodologías ágiles para optimizar su rendimiento y colaborar de manera más efectiva.",
+      "innovacion_creatividad": "Un enfoque innovador que no solo está enfocado en la optimización digital, sino en crear experiencias únicas que capturan la atención de la audiencia. Esto se refleja en su enfoque en el diseño visual (como el uso de efectos interactivos en el diseño web) y la personalización de herramientas (por ejemplo, chatbots o estrategias de marketing creativo). Además, su capacidad para fusionar creatividad con tecnología ofrece soluciones que no solo son funcionales, sino también visualmente atractivas y altamente efectivas.",
+      "capacitacion_formacion": "Luis Ángel no solo ofrece soluciones, sino que también empodera a sus clientes mediante la educación continua. A través de cursos, talleres y formaciones personalizadas, sus clientes aprenden a utilizar herramientas de manera efectiva, lo que les da la autonomía para seguir mejorando después de haber trabajado con él.",
+      "enfoque_agilidad": "Como experto en gestión ágil, Luis Ángel enseña a sus clientes a ser más flexibles y adaptativos frente a los cambios. Esto no solo mejora los resultados de marketing y diseño web, sino que también fortalece la colaboración interna de los equipos, ayudando a las empresas a optimizar sus flujos de trabajo.",
+      "combinacion_tecnologia_empatia": "Además de ofrecer soluciones altamente técnicas, tiene un enfoque humano y empático que se refleja en su manera de conectar con las necesidades de los clientes. Luis Ángel logra combinar la tecnología con una atención personalizada que hace que cada cliente se sienta comprendido y apoyado en su crecimiento."
+    },
+    "frases_refuerzo": [
+      "No solo optimizo tu sitio web, optimizo cómo trabajas.",
+      "Cada proyecto es único, y cada solución debe ser única también.",
+      "Con mi enfoque ágil, tu equipo no solo será más eficiente, sino también más feliz.",
+      "Mejora continua: no solo enseñamos, también acompañamos.",
+      "La tecnología es poderosa, pero solo cuando se adapta a tus necesidades."
+    ],
+    "resumen": "El valor agregado único de Luis Ángel Maciel es su capacidad para ofrecer soluciones integradas y personalizadas que no solo mejoran la presencia digital de sus clientes, sino que también transforman sus procesos internos y potencian la colaboración en equipo mediante metodologías ágiles. Además, lo que lo diferencia es su enfoque humano y su capacidad para educar, asegurando que sus clientes no solo obtengan resultados, sino también las herramientas para continuar mejorando por sí mismos."
+  },
+  "colores_recomendados": {
+    "gestion_agil": {
+      "colores_principales": [
+        "Verde",
+        "Azul",
+        "Amarillo"
+      ],
+      "combinacion_sugerida": "Verde oscuro + Azul claro + Amarillo para acentuar los puntos de innovación y energía sin perder el sentido de profesionalismo y estabilidad."
+    },
+    "marketing_digital": {
+      "colores_principales": [
+        "Naranja",
+        "Rojo",
+        "Gris oscuro"
+      ],
+      "combinacion_sugerida": "Naranja + Rojo + Gris oscuro para crear un contraste llamativo pero equilibrado. Usar el naranja como color principal para destacar la acción y el rojo para llamadas a la acción."
+    },
+    "diseno_web_ui_ux": {
+      "colores_principales": [
+        "Blanco",
+        "Negro",
+        "Azul marino"
+      ],
+      "combinacion_sugerida": "Blanco + Azul marino + Negro para un diseño minimalista, limpio y profesional, perfecto para aplicaciones web y plataformas donde la UX sea fundamental."
+    },
+    "tecnologia_herramientas": {
+      "colores_principales": [
+        "Azul eléctrico",
+        "Gris claro",
+        "Verde lima o neon"
+      ],
+      "combinacion_sugerida": "Azul eléctrico + Gris claro + Verde neon para crear un ambiente futurista y tecnológico, sin perder la profesionalidad."
+    },
+    "general": {
+      "colores_principales": [
+        "Azul",
+        "Verde",
+        "Blanco",
+        "Gris oscuro"
+      ],
+      "combinacion_sugerida": "Azul + Verde + Blanco + Gris oscuro: Esta paleta de colores ofrece un equilibrio entre profesionalismo, creatividad y accesibilidad. Es perfecta para un blog enfocado en compartir conocimientos técnicos, digitales y creativos, mientras mantiene la simplicidad y claridad visual."
+    }
+  },
+  "tono_estilo": {
+    "gestion_agil": {
+      "tono": "Profesional y orientado a la acción. Busca ser motivador y práctico, con un enfoque en la mejora continua y la colaboración.",
+      "estilo": "Claro, directo y estructurado. El contenido es accesible y proporciona pasos prácticos para la implementación de metodologías ágiles."
+    },
+    "marketing_digital": {
+      "tono": "Educativo y persuasivo. Enfocado en proporcionar soluciones efectivas y estratégicas.",
+      "estilo": "Utiliza un lenguaje claro y accesible, dirigido a emprendedores y pequeños empresarios, con ejemplos claros y consejos prácticos."
+    },
+    "diseno_desarrollo_web": {
+      "tono": "Creativo y enfocado en la innovación. Busca inspirar y mostrar el potencial visual y técnico de las herramientas y tendencias actuales.",
+      "estilo": "Visualmente descriptivo y detallado, con una orientación hacia la interactividad y la estética en el desarrollo web."
+    },
+    "analitica_seo": {
+      "tono": "Técnico y analítico. Busca educar y proporcionar comprensión sobre cómo las herramientas y las métricas 
